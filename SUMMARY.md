@@ -30,6 +30,13 @@
 
 * [Untitled](data/untitled.md)
 
+## Gradient Node
+
+* [Requirements](gradient-node/requirements.md)
+* [Setup](gradient-node/setup.md)
+* [Usage](gradient-node/usage.md)
+* [Job Scheduling & Node Attributes](gradient-node/job-scheduling-and-node-attributes.md)
+
 ## Python Client
 
 * [Paperspace Python](python-client/paperspace-python.md)
