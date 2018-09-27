@@ -10,7 +10,11 @@ Gradient is a Paperspace product that simplifies developing, training, and deplo
 
 The platform is made up of two parts: **Infrastructure automation** and a software **toolkit** built for Machine Learning developers.
 
- The best way to discover Gradient is to try it out. You can get started in seconds with the following guide:
+#### Register [here](https://www.paperspace.com/account/signup) to get access to Gradient.
+
+![](.gitbook/assets/image.png)
+
+The best way to discover Gradient is to try it out. You can get started in seconds with the following guide:
 
 {% page-ref page="get-started/quick-start.md" %}
 

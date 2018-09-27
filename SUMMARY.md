@@ -30,3 +30,7 @@
 
 * [Untitled](data/untitled.md)
 
+## Python Client
+
+* [Paperspace Python](python-client/paperspace-python.md)
+
