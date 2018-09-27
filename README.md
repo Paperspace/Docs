@@ -10,9 +10,7 @@ This is the documentation for the [Gradient°](https://paperspace.com/gradient) 
 
 Gradient is a Paperspace product that simplifies developing, training, and deploying deep learning models.  
 
-The platform is made up of two parts: **Infrastructure automation** and a **toolkit** built for Machine Learning developers.
-
-
+The platform is made up of two parts: **Infrastructure automation** and a software **toolkit** built for Machine Learning developers.
 
  The best way to discover Gradient is to try it out. You can get started in seconds with the following guide:
 
@@ -20,9 +18,9 @@ The platform is made up of two parts: **Infrastructure automation** and a **tool
 
 ## Other Resources
 
-Please visit the community forum to post questions or tutorials for other other Gradient users.  
+Please visit the [community](http://community.paperspace.com/) to post questions or tutorials for other other Gradient users.  
 
-Our Help Center includes 
+Our [Help Center](https://support.paperspace.com) is a great resource for general Paperspace information.
 
 
 
