@@ -1,5 +1,13 @@
 # Setup
 
+## Download
+
+{% hint style="warning" %}
+Request access to the downloadable binary here: [https://paperspace.com/console/clusters](https://dev.paperspace.io/console/clusters) 
+{% endhint %}
+
+## Installation
+
 Here is an example set of commands to install the prerequisites on an Ubuntu 16.04 machine:
 
 {% hint style="info" %}
@@ -7,8 +15,6 @@ See the Docker and NVIDIA sites for updated installation instructions for more r
 {% endhint %}
 
 ```text
-
-
 sudo apt-get update && apt-get install ca-certificates curl software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -

@@ -4,19 +4,19 @@
 
 Show job information for the job with the given id.
 
-**Properties**
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `jobId` | string | Id of the job to show |
-
-## Example
+## Example Use
 
 ```text
 $ paperspace jobs show --jobId "j123abc"
 ```
 
-### Example return value
+### **Properties**
+
+| Name |  | Type | Description |
+| :--- | :--- | :--- | :--- |
+| `jobId` |  | string | Id of the job to show |
+
+### Example Return Value
 
 ```text
 {

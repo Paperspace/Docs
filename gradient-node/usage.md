@@ -2,30 +2,41 @@
 
 ## **Usage of gradient-node**
 
-gradient-node \[--apiKey \] \[--name \] \[--id \] \[--cluster \] \[--clusterId \] \[--logHost \]
+```text
+$ gradient-node [--apiKey ] [--name ] [--id ] [--cluster ] [--clusterId ] [--logHost ]
+```
 
---apiHost string Gradient API Host \(default "[https://gradient-api.paperspace.io](https://gradient-api.paperspace.io)"\).
+`--apiHost string` Gradient API Host \(default "[https://gradient-api.paperspace.io](https://gradient-api.paperspace.io)"\).
 
---apiKey string Paperspace api key value.
+`--apiKey string` Paperspace api key value.
 
---cluster string Cluster Name for this node. If no cluster with this name exists a new one will be created.
+`--cluster string` Cluster Name for this node. If no cluster with this name exists a new one will be created.
 
---clusterId string Cluster ID for this node, e.g. "cXXXXXXXX". Takes precedence over the Cluster Name option if both are specified.
+`--clusterId string` Cluster ID for this node, e.g. "cXXXXXXXX". Takes precedence over the Cluster Name option if both are specified.
 
---debug Debug mode.
+`--debug` Debug mode.
 
---id string Node ID, e.g. "cmXXXXXXXXXXXXXX". If specified with the Node Name option, the node name will be updated.
+`--id string` Node ID, e.g. "cmXXXXXXXXXXXXXX". If specified with the Node Name option, the node name will be updated.
 
---logHost string Gradient Log Host \(default "[https://logs.paperspace.io](https://logs.paperspace.io)"\).
+`--logHost string` Gradient Log Host \(default "[https://logs.paperspace.io](https://logs.paperspace.io)"\).
 
---name string Node Name; defaults to the current hostname. Specify with the --id  option to changed the name of an existing node.
+`--name string` Node Name; defaults to the current hostname. Specify with the --id  option to changed the name of an existing node.
 
-Optional ENVIRONMENT VARIABLES: \(These can be used to configure the options above via environment settings. Note that any command line options take precedence over the environment settings.\)
+Optional ENVIRONMENT VARIABLES: 
+
+{% hint style="info" %}
+These can be used to configure the options above via environment settings. Note that any command line options take precedence over the environment settings.
+{% endhint %}
 
 ```text
-GRADIENT_NODE_API_KEY= GRADIENT_NODE_NAME= GRADIENT_NODE_ID= 
-GRADIENT_NODE_CLUSTER= GRADIENT_NODE_CLUSTERID= GRADIENT_NODE_API_HOST= 
-GRADIENT_NODE_LOG_HOST= GRADIENT_NODE_DEBUG=[‘true’|’false’]
+GRADIENT_NODE_API_KEY=<key> 
+GRADIENT_NODE_NAME=<name> 
+GRADIENT_NODE_ID=<id> 
+GRADIENT_NODE_CLUSTER=<cluster_name> 
+GRADIENT_NODE_CLUSTERID=<cluster_id> 
+GRADIENT_NODE_API_HOST=<api_host_url> 
+GRADIENT_NODE_LOG_HOST=<log_host_url> 
+GRADIENT_NODE_DEBUG=[‘true’|’false’]
 ```
 
 ## **Root privileges**
@@ -52,13 +63,28 @@ If you want to change the name of a gradient-node instance you can specify the `
 
 ## Specifying a Cluster
 
-Each gradient-node instance is part of a unique private cluster within the user’s account. When starting gradient-node you can specify the cluster to register in using the --cluster  or the `--clusterId`  option. However if both are provided, the `--clusterId`  option takes precedence.
+Each gradient-node instance is part of a unique private cluster within the user’s account. When starting gradient-node you can specify the cluster to register in using the `--cluster <name>`  or the `--clusterId <cluster_id>`  option. However if both are provided, the `--clusterId <cluster_id>`  option takes precedence.
 
 If no cluster name or cluster id is specified when running gradient-node the instance is registered in the user account’s default cluster. The initial name for this cluster is “GradientNode Cluster”.
 
-If you are a registering gradient-node for the first time in your account, you can pick a different name for the default cluster using the `--cluster`  option. On subsequent runs you can omit the cluster name option if you want to register the gradient-node instance in the same default cluster.
+If you are a registering gradient-node for the first time in your account, you can pick a different name for the default cluster using the `--cluster <cluster_name>`  option. On subsequent runs you can omit the cluster name option if you want to register the gradient-node instance in the same default cluster.
 
 After the first cluster is created, if you register a node specifying a different cluster name, then a new cluster with that new name will automatically be created. However, it will not be the default cluster for the account.
 
 In the Gradient web UI you can change the cluster name for any cluster in your account and/or switch which cluster is currently the default. When scheduling jobs you can select the targeted cluster using the paperspace CLI or API job create options.
+
+## Example Output on Startup
+
+The following shows a sample of log messages generated when starting and registering gradient-node. The `name`, `id`, `cluster`, and `cluserId`parameters are displayed, along with the node attributes structure, `nodeAttrs`, which is described below.
+
+```text
+2018/10/09 19:53:48 Starting gradient-node 6.7 ba95b2d 2018-10-09_18:12:45_UTC
+2018/10/09 19:53:49 GradientNode name: ubuntu
+2018/10/09 19:53:49 GradientNode id: cmdc2sjlenkhwx
+2018/10/09 19:53:49 GradientNode cluster: GradientNode Cluster
+2018/10/09 19:53:49 GradientNode clusterId: clfu7y1y6
+2018/10/09 19:53:49 GradientNode nodeAttrs: {"cpuHostname":"ubuntu","cpuCount":2,"cpuModel":"Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz","cpuFlags":"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ibrs ibpb stibp kaiser fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 invpcid rtm mpx rdseed adx smap clflushopt xsaveopt xsavec arat arch_capabilities","cpuMem":"8156872 kB","gradientNodeVersion":"6.7"}
+```
+
+
 

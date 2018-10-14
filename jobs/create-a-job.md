@@ -20,7 +20,7 @@ $ paperspace jobs create <namespace> <command> [options...]
 * Container: Such as `--tensorflow/tensorflow:1.5.1-gpu`
 * Command: Such as `"./do.sh"`
 
-## Example
+## Example Use
 
 ```
 $ paperspace jobs create \
