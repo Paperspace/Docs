@@ -51,8 +51,8 @@ $ paperspace jobs create \
       <td style="text-align:left">A required reference to a docker image in a public or private docker registry,
         or a container name provided by Paperspace. Docker image repository references
         must be in lowercase and may include a tag and a hostname prefix followed
-        by a slash; if ommitted the hostname defaults to that of the public Docker
-        Hub registry. An example docker image reference: 'docker.io/mynamespace/myimage:mytag'.
+        by a slash; if committed the hostname defaults to that of the public Docker
+        Hub registry. An example docker image reference: <code>docker.io/mynamespace/myimage:mytag</code>.
         A container name may be mixed case. (Designated container names are currently
         only provided as part of various Gradient tutorials and samples.)</td>
     </tr>
@@ -70,7 +70,7 @@ $ paperspace jobs create \
         <p>Defaults to 'K80'.</p>
         <p>Note: the 'K80', 'P100', and 'TPU' machineTypes run on Google Cloud Platform
           (GCP). The other machineTypes run on the Paperspace Cloud. Google Cloud
-          platform and Paperspace Cloud have distict Job Storage spaces; Job storage
+          platform and Paperspace Cloud have distinct Job Storage spaces; Job storage
           is not currently shared between these two cloud environments.</p>
       </td>
     </tr>
@@ -80,9 +80,8 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
-      <td style="text-align:left">An optional name or description for this job. If ommitted, the job name
+      <td style="text-align:left">An optional name or description for this job. If committed, the job name
         defaults to 'job N' where N represents the Nth job instance for the given
         project.</td>
     </tr>
@@ -92,7 +91,6 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">The name of the project for this job. If not provided, this is taken from
         the .ps_project/config.json file, or the current directory name.</td>
@@ -105,7 +103,7 @@ $ paperspace jobs create \
         <optional>
           <br />
       </td>
-      <td style="text-align:left">The poject id of an existing project for this job. Note: if projectId
+      <td style="text-align:left">The project id of an existing project for this job. Note: if projectId
         is specified, the project parameter cannot be specified.</td>
     </tr>
     <tr>
@@ -114,7 +112,6 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">An optional command to run within the workspace or container.</td>
     </tr>
@@ -124,7 +121,6 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">An optional path to a workspace, or link to a git repository to upload
         and merge with the container. If a zip file name is provided it is uploaded
@@ -142,7 +138,6 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">An optional reference to a dataset to be merged with the container.</td>
     </tr>
@@ -152,7 +147,6 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">An optional username for accessing an image hosted on a private container
         registry. Note: you must specify this option every time a private image
@@ -164,7 +158,6 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">An optional password for accessing an image hosted on a private container
         registry. Note: you must specify this option every time a private image
@@ -176,7 +169,6 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">An optional username for accessing a private git repository. Note: you
         must specify this option every time a private git repository is specified
@@ -188,9 +180,8 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
-      <td style="text-align:left">An optional password for accessing a private git repository. We recommned
+      <td style="text-align:left">An optional password for accessing a private git repository. We recommend
         using an OAuth token (GitHub instructions can be found <a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/">here</a>).
         Note: you must specify this option every time a private git repository
         is specified for the workspace.</td>
@@ -201,11 +192,10 @@ $ paperspace jobs create \
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">An optional list of port mappings to open on the job cluster machine while
         the job is running. The port mappings are specified as 'XXXX:YYYY' where
-        XXXX is an external port number and YYYY is an internal port number. Mulitple
+        XXXX is an external port number and YYYY is an internal port number. Multiple
         port mappings can be provided as a comma separated list. Port numbers must
         be greater than 1023. Note: only /tcp protocol usage is supported.</td>
     </tr>
@@ -215,7 +205,6 @@ $ paperspace jobs create \
       <td style="text-align:left">boolean</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
       <td style="text-align:left">Optional; defaults to true in command line mode only. Specify false to
         disable automatic tailing.</td>
@@ -226,9 +215,8 @@ $ paperspace jobs create \
       <td style="text-align:left">boolean</td>
       <td style="text-align:left">
         <optional>
-          <br />
       </td>
-      <td style="text-align:left">Optional; if true, do not write progress to standard out. '--json' with
+      <td style="text-align:left">Optional; if true, do not write progress to standard out. <code>--json</code>with
         no value is equivalent to true.</td>
     </tr>
   </tbody>
