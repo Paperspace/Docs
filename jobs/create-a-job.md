@@ -2,25 +2,25 @@
 
 ## About
 
-Create a new Paperspace job, and tail its log output. To disable the tailing behavior specify `--tail false`. 
+Create a new Paperspace job, and tail its log output. 
 
 {% hint style="info" %}
-**Note:** if a project is not defined for the current working directory, and you are running in command line mode, a project configuration settings file will be created. Use `--init false` or specify `--project [projectname]` to override this behavior.
+**Note:** if a project is not defined for the current working directory, and you are running in command line mode, a project configuration settings file will be created. Use`--init false` or specify`--project [projectname]`to override this behavior.
 {% endhint %}
 
-## Run a Job
+## Syntax
 
 ```text
 $ paperspace jobs create <namespace> <command> [options...]
 ```
 
-### Job Parameters Summary
+### Job Parameters Basics
 
 * Machine Type: Such as `--P100` or `--C7` or `--TPU`
 * Container: Such as `--tensorflow/tensorflow:1.5.1-gpu`
 * Command: Such as `"./do.sh"`
 
-### Example
+## Example
 
 ```
 $ paperspace jobs create \
@@ -29,7 +29,7 @@ $ paperspace jobs create \
     --command "/paperspace/run.sh" 
 ```
 
-### Job Parameters Complete List
+## Job Parameters Complete List
 
 **Properties**
 
