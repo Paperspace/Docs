@@ -17,7 +17,7 @@ States available to query for are:
 
 When the callback is called, the returned object will be information about the job.
 
-## Examples
+## Example Use
 
 ```text
 $ paperspace jobs waitfor \
@@ -25,5 +25,10 @@ $ paperspace jobs waitfor \
     --state "Stopped"
 ```
 
+### Properties
 
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `jobId` | string | Id of the job to wait for |
+| `state` | string | Name of the state to wait for |
 

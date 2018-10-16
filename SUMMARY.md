@@ -18,6 +18,7 @@
 * [Create a Job](jobs/create-a-job.md)
 * [Stop a Job](jobs/stop-a-job.md)
 * [Destroy a Job](jobs/destroy-a-job.md)
+* [Clone](jobs/clone.md)
 * [Show Job info](jobs/show-job-info.md)
 * [List your Jobs](jobs/list-your-jobs.md)
 * [Job Logs](jobs/job-logs.md)
@@ -39,7 +40,7 @@
 
 * [Paperspace Python](python-client/paperspace-python.md)
 
-## Gradient Node
+## Gradient Private Cloud
 
 * [About](gradient-node/about.md)
 * [Requirements](gradient-node/requirements.md)
