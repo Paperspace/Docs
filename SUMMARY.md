@@ -26,11 +26,14 @@
 
 ## Notebooks
 
-* [Untitled](notebooks/untitled.md)
+* [About](notebooks/untitled.md)
+* [Containers](notebooks/containers.md)
 
 ## Data
 
-* [Untitled](data/untitled.md)
+* [Types of Storage](data/untitled.md)
+* [Managing Data in Gradient](data/managing-data-in-gradient.md)
+* [Public Datasets Repository](data/public-datasets-repository.md)
 
 ## Python Client
 

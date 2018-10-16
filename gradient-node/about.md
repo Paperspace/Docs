@@ -14,7 +14,7 @@ The Gradient Agent transforms raw infrastructure into a complete Deep Learning p
 * **On-prem** or **cloud**
 
 {% hint style="info" %}
-Request access to the Gradient° Agent here: [https://paperspace.com/console/clusters](https://www.paperspace.com/console/clusters) 
+Request access to the Gradient° Agent here: [https://paperspace.com/console/clusters](https://dev.paperspace.io/console/clusters) 
 {% endhint %}
 
 
