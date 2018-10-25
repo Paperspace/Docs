@@ -22,6 +22,8 @@ $ gradient-node [--apiKey ] [--name ] [--id ] [--cluster ] [--clusterId ] [--log
 
 `--name string` Node Name; defaults to the current hostname. Specify with the --id  option to changed the name of an existing node.
 
+`--mount string` Used for mapping one or multiple user mounted volumes to the docker container running the job. 
+
 Optional ENVIRONMENT VARIABLES: 
 
 {% hint style="info" %}
@@ -49,7 +51,14 @@ sudo ./gradient-node --apiKey XXXXXXXXXXXXXXXX
 
 ## **Required Parameters**
 
-The `--apiKey <key>` option is the only required parameter.  However it may also be provided via an environment variable, `GRADIENT_NODE_API_KEY=<key>`.
+The `--apiKey <key>` option is the only required parameter. It may also be provided via an environment variable, `GRADIENT_NODE_API_KEY=<key>`.
+The API key can also be passed in at runtime by placing it in the `~/.paperspace/config.json` file on your local machine running gradient-node. The config.json format should be as follows:
+```
+{
+  "apiKey": "ps6a...393",
+  "name": "my-api-key-name"
+}
+```
 
 ## Naming and Registration
 
@@ -75,7 +84,7 @@ In the Gradient web UI you can change the cluster name for any cluster in your a
 
 ## Example Output on Startup
 
-The following shows a sample of log messages generated when starting and registering gradient-node. The `name`, `id`, `cluster`, and `cluserId`parameters are displayed, along with the node attributes structure, `nodeAttrs`, which is described below.
+The following shows a sample of log messages generated when starting and registering gradient-node. The `name`, `id`, `cluster`, and `cluserId` parameters are displayed, along with the node attributes structure, `nodeAttrs`, which is described below.
 
 ```text
 2018/10/09 19:53:48 Starting gradient-node 6.7 ba95b2d 2018-10-09_18:12:45_UTC
@@ -86,5 +95,17 @@ The following shows a sample of log messages generated when starting and registe
 2018/10/09 19:53:49 GradientNode nodeAttrs: {"cpuHostname":"ubuntu","cpuCount":2,"cpuModel":"Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz","cpuFlags":"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ibrs ibpb stibp kaiser fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 invpcid rtm mpx rdseed adx smap clflushopt xsaveopt xsavec arat arch_capabilities","cpuMem":"8156872 kB","gradientNodeVersion":"6.7"}
 ```
 
+## Node Attributes 
 
+The `nodeAttrs` variable describes the CPU and GPU specs associated with the gradient-node. It also outputs all CPU flags which may be relevant for certain high performance machine learning libraries. You may specificy node attributes as arguments to the job - for example specify to run jobs only on a node with cpuCount = 4. If you do not have a node associated with your account that fulfills those parameters the job will stay in a pending state. 
+
+## User Mounted Volumes
+The `--mount` command is used for mapping one or multiple user mounted volumes to the docker container running the job. The syntax is as follows for each mount: 
+```
+/path/to/local:path/inside/job-container
+```
+Multiple volume mounts can be specified in one command by seperating via comma. Certain paths are restricted: do not mount /artifacts, /paperspace or / (root) volumes. Note the home directory inside the container is `/paperspace`. Example:
+```
+--mounts "/home/paperspace/gradient-node:/paperspace/hi,/home/paperspace/volume-test:/paperspace/bye"
+```
 
