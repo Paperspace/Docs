@@ -36,5 +36,18 @@ sudo apt-get update && sudo apt-get install nvidia-container-runtime=2.0.0+docke
 sudo apt-get install nfs-common=1:1.2.8-9ubuntu12.1
 ```
 
+## \(Optional\) Set up docker group
+
+If you would like to use gradient-node as a non-root user you should be a member of the `docker` group.
+
+```text
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER
+```
+
+Log out and log back in so that your group membership is re-evaluated. 
+
+At this point you should be able to run gradient-node and docker without sudo privileges. To test, run `docker run hello-world`
+
 
 
