@@ -4,6 +4,8 @@
 
 {% hint style="warning" %}
 Request access to the downloadable binary here: [https://paperspace.com/console/clusters](https://dev.paperspace.io/console/clusters) 
+
+Do not change the name of the binary from gradient-node or functionality will be impaired.
 {% endhint %}
 
 ## Installation
