@@ -47,8 +47,6 @@ Gradient-node needs to run with root privileges in order to communicate with doc
 sudo ./gradient-node --apiKey XXXXXXXXXXXXXXXX    
 ```
 
-Note that if you added your user to the `docker` group you can run gradient-node without using sudo. 
-
 ## **Required Parameters**
 
 The `--apiKey <key>` option is the only required parameter.  However it may also be provided via an environment variable, `GRADIENT_NODE_API_KEY=<key>`.
