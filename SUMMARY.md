@@ -24,7 +24,6 @@
 * [Job Logs](jobs/job-logs.md)
 * [View Machine Types](jobs/view-machine-types.md)
 * [Wait for State](jobs/wait-for-state.md)
-* [Untitled](jobs/untitled.md)
 
 ## Notebooks
 
