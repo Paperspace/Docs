@@ -42,9 +42,9 @@
 
 ## Gradient Private Cloud
 
-* [About](gradient-node/about.md)
-* [Requirements](gradient-node/requirements.md)
-* [Setup](gradient-node/setup.md)
-* [Usage](gradient-node/usage.md)
-* [Job Scheduling & Node Attributes](gradient-node/job-scheduling-and-node-attributes.md)
+* [About](node/about.md)
+* [Requirements](node/requirements.md)
+* [Setup](node/setup.md)
+* [Usage](node/usage.md)
+* [Job Scheduling & Node Attributes](node/job-scheduling-and-node-attributes.md)
 
