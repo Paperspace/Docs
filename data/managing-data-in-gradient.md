@@ -2,7 +2,7 @@
 
 ## Persistent Storage
 
-[Persistent Storage](untitled.md#persistent-storage) is accessible across Paperspace VM instances and Gradient Jobs and Notebooks.  Uploading and downloading data is possible from any of these endpoints. 
+[Persistent Storage](storage.md#persistent-storage) is accessible across Paperspace VM instances and Gradient Jobs and Notebooks.  Uploading and downloading data is possible from any of these endpoints. 
 
 Once you have set up either a Gradient Notebook or a Job you will have access to Persistent Storage in `/storage`.
 

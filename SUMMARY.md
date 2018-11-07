@@ -32,7 +32,7 @@
 
 ## Data
 
-* [Types of Storage](data/untitled.md)
+* [Types of Storage](data/storage.md)
 * [Managing Data in Gradient](data/managing-data-in-gradient.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 
