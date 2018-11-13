@@ -3,9 +3,13 @@
 ## Download
 
 {% hint style="warning" %}
-Request access to the downloadable binary here: [https://paperspace.com/console/clusters](https://dev.paperspace.io/console/clusters) 
+Request access to the Gradient Private Cloud here: [https://paperspace.com/console/clusters](https://www.paperspace.com/console/clusters). Your account will need to be approved access before you can use the Gradient Node software  to manage your own cluster of GPUs. 
 
-Do not change the name of the binary from gradient-node or functionality will be impaired.
+After getting access granted for your account, download the Gradient Node binary from the following link. 
+
+Download: [https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node](https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node)
+
+SHA-256 Hash: 2b6d36cc65cb221ab08486e7d4d6e66c2f0b2b5c847793aba0bfd69dd8842591
 {% endhint %}
 
 ## Installation
