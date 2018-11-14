@@ -14,7 +14,7 @@ Installing the Gradient° Agent transforms raw infrastructure into a complete De
 * On-prem or cloud
 
 {% hint style="info" %}
-Request access to the Gradient° Agent here: [https://paperspace.com/console/clusters](https://dev.paperspace.io/console/clusters) 
+Request access to the Gradient° Agent here: [https://www.paperspace.com/console/clusters](https://www.paperspace.com/console/clusters)
 {% endhint %}
 
 

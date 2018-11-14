@@ -3,13 +3,13 @@
 ## Download
 
 {% hint style="warning" %}
-Request access to the Gradient Private Cloud here: [https://paperspace.com/console/clusters](https://www.paperspace.com/console/clusters). Your account will need to be approved access before you can use the Gradient Node software  to manage your own cluster of GPUs. 
+Request access to the Gradient Private Cloud here: [https://paperspace.com/console/clusters](https://www.paperspace.com/console/clusters). Your account will need to be approved access before you can use the Gradient Agent software  to manage your own cluster of GPUs. 
 
-After getting access granted for your account, download the Gradient Node binary from the following link. 
+After getting access granted for your account, download the gradient-node binary from the following link. 
 
 Download: [https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node](https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node)
 
-SHA-256 Hash: 2b6d36cc65cb221ab08486e7d4d6e66c2f0b2b5c847793aba0bfd69dd8842591
+SHA-256 Hash: [https://s3.amazonaws.com/gradient-node/latest/linux/sha256](https://s3.amazonaws.com/gradient-node/latest/linux/sha256)
 {% endhint %}
 
 ## Installation
@@ -18,6 +18,10 @@ Here is an example set of commands to install the prerequisites on an Ubuntu 16.
 
 {% hint style="info" %}
 See the Docker and NVIDIA sites for updated installation instructions for more recent versions.
+
+[https://www.nvidia.com/drivers](https://www.nvidia.com/drivers) 
+
+[https://www.docker.com/get-started](https://www.docker.com/get-started)
 {% endhint %}
 
 ```text

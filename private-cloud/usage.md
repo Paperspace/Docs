@@ -6,8 +6,6 @@
 $ gradient-node [--apiKey ] [--name ] [--id ] [--cluster ] [--clusterId ] [--logHost ]
 ```
 
-`--apiHost string` Gradient API Host \(default "[https://gradient-api.paperspace.io](https://gradient-api.paperspace.io)"\).
-
 `--apiKey string` Paperspace api key value.
 
 `--cluster string` Cluster Name for this node. If no cluster with this name exists a new one will be created.
@@ -17,8 +15,6 @@ $ gradient-node [--apiKey ] [--name ] [--id ] [--cluster ] [--clusterId ] [--log
 `--debug` Debug mode.
 
 `--id string` Node ID, e.g. "cmXXXXXXXXXXXXXX". If specified with the Node Name option, the node name will be updated.
-
-`--logHost string` Gradient Log Host \(default "[https://logs.paperspace.io](https://logs.paperspace.io)"\).
 
 `--name string` Node Name; defaults to the current hostname. Specify with the --id  option to changed the name of an existing node.
 
@@ -34,8 +30,6 @@ GRADIENT_NODE_NAME=<name>
 GRADIENT_NODE_ID=<id> 
 GRADIENT_NODE_CLUSTER=<cluster_name> 
 GRADIENT_NODE_CLUSTERID=<cluster_id> 
-GRADIENT_NODE_API_HOST=<api_host_url> 
-GRADIENT_NODE_LOG_HOST=<log_host_url> 
 GRADIENT_NODE_DEBUG=[‘true’|’false’]
 ```
 
