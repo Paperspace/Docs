@@ -220,5 +220,17 @@ $ paperspace jobs create \
         no value is equivalent to true.</td>
     </tr>
   </tbody>
-</table>
+</table>{% hint style="info" %}
+Environmental variables are available for use within the context of your job. The following host config options are currently exposed within the container:
+
+`$PS_HOST_PUBLIC_IP_ADDRESS` - the public IP address of the host machine running the job
+
+`$PS_HOST_PRIVATE_IP_ADDRESS` - the private IP address of the host machine running the job
+
+`$PS_HOSTNAME` - the hostname of the host machine running the job
+
+These can be used in conjuction with the `ports` option to send HTTP traffic to the job while it's in progress for example. 
+{% endhint %}
+
+
 
