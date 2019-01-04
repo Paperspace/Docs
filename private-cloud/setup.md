@@ -12,7 +12,7 @@ Download: [https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node](ht
 SHA-256 Hash: [https://s3.amazonaws.com/gradient-node/latest/linux/sha256](https://s3.amazonaws.com/gradient-node/latest/linux/sha256)
 {% endhint %}
 
-## Installation
+## Installing dependencies
 
 Here is an example set of commands to install the prerequisites on an Ubuntu 16.04 machine:
 
@@ -48,5 +48,21 @@ sudo apt-get update && sudo apt-get install nvidia-container-runtime=2.0.0+docke
 sudo apt-get install nfs-common=1:1.2.8-9ubuntu12.1
 ```
 
+### Running for the first time
 
+```text
+wget https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node
+
+wget https://s3.amazonaws.com/gradient-node/latest/linux/sha256
+
+chmod a+x gradient-node
+
+shasum -a 256 gradient-node
+
+cat sha256
+#checksums should match!
+
+./gradient-node --version
+#show version information
+```
 
