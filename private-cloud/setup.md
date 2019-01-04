@@ -79,3 +79,9 @@ cat sha256
 ./gradient-node --version
 ```
 
+## Getting Help with commands
+
+```text
+./gradient-node --help
+```
+
