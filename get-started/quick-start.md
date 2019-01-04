@@ -74,3 +74,9 @@ A Job can complete with the following states: **Success**, **Cancelled**, or **E
 
 Jobs have a ton of functionality that this quick example doesn't cover.  To learn more, view the [Jobs section](../jobs/create-a-job.md).
 
+{% hint style="info" %}
+The full Paperspace API documentation is available here: 
+
+[https://paperspace.github.io/paperspace-node/](https://paperspace.github.io/paperspace-node/)
+{% endhint %}
+

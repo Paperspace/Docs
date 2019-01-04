@@ -10,3 +10,9 @@ Custom containers feature lets you pull your own image from Docker Hub. This art
 
 See a tutorial on using custom containers [here](https://support.paperspace.com/hc/en-us/articles/360008256453-Creating-Using-Custom-Containers-with-Notebooks).
 
+{% hint style="info" %}
+This page provides help about pulling containers from various public and private repositories:
+
+[https://support.paperspace.com/hc/en-us/articles/360003415434-Containers-Public-Private](https://support.paperspace.com/hc/en-us/articles/360003415434-Containers-Public-Private) 
+{% endhint %}
+
