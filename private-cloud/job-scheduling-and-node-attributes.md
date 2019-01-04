@@ -1,10 +1,4 @@
-# Job Scheduling & Node Attributes
-
-Here are the job create options which are used to run a job to run on a specific gradient-node instance:
-
-* `--machineType "GradientNode"`  \(Restricts the job to running on a gradient-node instance. If no other scheduling option is given the job will be scheduled in the default cluster for the account.\)
-* `--cluster <cluster_name>` or `--clusterId <cluster_id>`  \(Restricts the job to running on a cluster in the user’s account with the given name or id. If this option is specified, machineType “GradientNode” is assumed.\)
-* `--nodeAttrs <json_object>`  \(Restricts the job to running on a gradient-node instance which has the specified node attribute values, expressed in the form of a JSON object definition. See below.\)
+# Node Attributes
 
 Each gradient-node instance has a set of environment related attributes, such as cpu\_count and gpu\_model, which can be used in the `nodeAttrs` scheduling option at job creation in order to select a compatible gradient-node instance for the job.  For example this option would select a machine with 4 cpus:
 

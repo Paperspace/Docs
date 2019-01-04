@@ -12,7 +12,7 @@ $ gradient-node [--apiKey ] [--name ] [--id ] [--cluster ] [--clusterId ] [--log
 
 `--clusterId string` Cluster ID for this node, e.g. "cXXXXXXXX". Takes precedence over the Cluster Name option if both are specified.
 
-`--debug` Debug mode.
+`--debug` Debug mode \(verbose logging\).
 
 `--id string` Node ID, e.g. "cmXXXXXXXXXXXXXX". If specified with the Node Name option, the node name will be updated.
 
@@ -65,7 +65,15 @@ If you are a registering gradient-node for the first time in your account, you c
 
 After the first cluster is created, if you register a node specifying a different cluster name, then a new cluster with that new name will automatically be created. However, it will not be the default cluster for the account.
 
-In the Gradient web UI you can change the cluster name for any cluster in your account and/or switch which cluster is currently the default. When scheduling jobs you can select the targeted cluster using the paperspace CLI or API job create options. You may target a specific node within a cluster by specifiying the name or the node attributes of the node. 
+In the Gradient web UI you can change the cluster name for any cluster in your account and/or switch which cluster is currently the default. When scheduling jobs you can select the targeted cluster using the Paperspace CLI or API job create options. You may target a specific node within a cluster by specifying the name or the node attributes of the node. 
+
+## Jobs Scheduling
+
+Here are the job create options which are used to run a job to run on a specific gradient-node instance:
+
+* `--machineType "GradientNode"`  \(Restricts the job to running on a gradient-node instance. If no other scheduling option is given the job will be scheduled in the default cluster for the account.\)
+* `--cluster <cluster_name>` or `--clusterId <cluster_id>`  \(Restricts the job to running on a cluster in the user’s account with the given name or id. If this option is specified, machineType “GradientNode” is assumed.\)
+* `--nodeAttrs <json_object>`  \(Restricts the job to running on a gradient-node instance which has the specified node attribute values, expressed in the form of a JSON object definition. See [Node Attributes](job-scheduling-and-node-attributes.md).\)
 
 ## Example Output on Startup
 

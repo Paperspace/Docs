@@ -46,6 +46,6 @@
 * [Requirements](private-cloud/requirements.md)
 * [Setup](private-cloud/setup.md)
 * [Usage](private-cloud/usage.md)
-* [Job Scheduling & Node Attributes](private-cloud/job-scheduling-and-node-attributes.md)
+* [Node Attributes](private-cloud/job-scheduling-and-node-attributes.md)
 * [Storage](private-cloud/storage.md)
 
