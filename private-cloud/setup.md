@@ -37,8 +37,10 @@ sudo apt-get update && apt-get install docker-ce=17.12.1~ce-0~ubuntu
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 
 sudo add-apt-repository "deb https://nvidia.github.io/libnvidia-container/ubuntu16.04/amd64 /"
+
 sudo add-apt-repository \
 "deb https://nvidia.github.io/nvidia-container-runtime/ubuntu16.04/amd64 /"
+
 sudo add-apt-repository "deb https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64 /"
 
 sudo apt-get update && sudo apt-get install nvidia-container-runtime=2.0.0+docker17.12.1-1 nvidia-docker2=2.0.3+docker17.12.1-1
