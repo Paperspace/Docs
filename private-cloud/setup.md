@@ -25,10 +25,10 @@ See the Docker and NVIDIA sites for updated installation instructions for more r
 {% endhint %}
 
 ```text
-# Updating apt-get cache and installing base certificates package
+# Updating apt-get cache and installing base certificates package.
 sudo apt-get update && apt-get install ca-certificates curl software-properties-common
 
-# Adding Docker's apt repository's GPG key. Necessary for trusting Docker's apt repo which is used in next step.
+# Adding Docker's apt repository's GPG key. Necessary for trusting Docker's apt repo.
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 # Adding Docker's apt repo to system.
@@ -37,46 +37,45 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 # Pulling down info from Docker apt repo previously added. Then we're installing Docker.
 sudo apt-get update && apt-get install docker-ce=17.12.1~ce-0~ubuntu
 
-# Grabbing GPG key to trust NVIDIA apt repository.
+# Grabbing GPG key to trust NVIDIA apt repo.
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 
-# Adding NVIDIA library apt repository to the system.
+# Adding NVIDIA library apt repo to the system.
 sudo add-apt-repository "deb https://nvidia.github.io/libnvidia-container/ubuntu16.04/amd64 /"
 
-# Adding NVIDIA container runtime apt repository to system.
+# Adding NVIDIA container runtime apt repo to system.
 sudo add-apt-repository \
 "deb https://nvidia.github.io/nvidia-container-runtime/ubuntu16.04/amd64 /"
 
-# Adding NVIDIA Docker apt repository to system.
+# Adding NVIDIA Docker apt repo to system.
 sudo add-apt-repository "deb https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64 /"
 
 # Updating apt-get cache and installing necessary NVIDIA packages.
 sudo apt-get update && sudo apt-get install nvidia-container-runtime=2.0.0+docker17.12.1-1 nvidia-docker2=2.0.3+docker17.12.1-1
 
-# Installing NFS tools (without the server & client).
+# Installing NFS tools.
 sudo apt-get install nfs-common=1:1.2.8-9ubuntu12.1
 ```
 
 ### Running for the first time
 
 ```text
-# Download latest binary 
+# Download the latest binary.
 wget https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node
 
-# Optional: Download hash to validate authenticity of binary
+# Optional: Download the matching hash to validate authenticity of binary.
 wget https://s3.amazonaws.com/gradient-node/latest/linux/sha256
 
-# Make binary executable (for all users):
+# Make binary executable (for all users).
 chmod a+x gradient-node
 
-# Optional: Checksum matches binary:
+# Optional: Verify checksum matches binary.
 shasum -a 256 gradient-node
 
-# Optional: Display the downloaded sha256 (against previous command):
+# Optional: Display the downloaded sha256 (against previous command).
 cat sha256
 
-# Test install:
+# Test install (show version info).
 ./gradient-node --version
-#show version information
 ```
 
