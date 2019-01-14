@@ -85,3 +85,13 @@ cat sha256
 ./gradient-node --help
 ```
 
+## Updating
+
+To update, simply remove the binary and download the latest version. 
+
+```text
+rm -f gradient-node
+wget https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node
+chmod a+x gradient-node
+```
+
