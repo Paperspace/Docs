@@ -248,12 +248,12 @@ The following new job fields are available:
 
 | Name  | Type  | Attributes | Description |
 | :--- | :--- | :--- | :--- |
-| `use_dockerfile` | boolean | &lt;optional&gt; | determines whether to build from Dockerfile \(default false\) |
-| `build_only` | boolean | &lt;optional&gt; | determines whether to only build and not run image \(default false\) |
-| `registry_target` | string | &lt;optional&gt; | registry location to push image to |
-| `registry_target_username` | string | &lt;optional&gt; | registry username |
-| `registry_target_password` | string | &lt;optional&gt; | registry password |
-| `rel_dockerfile_path` | string | &lt;optional&gt; | relative location of dockerfile in workspace \(default "./Dockerfile"\) |
+| `useDockerfile` | boolean | &lt;optional&gt; | determines whether to build from Dockerfile \(default false\) |
+| `buildOnly` | boolean | &lt;optional&gt; | determines whether to only build and not run image \(default false\) |
+| `registryTarget` | string | &lt;optional&gt; | registry location to push image to |
+| `registryTargetUsername` | string | &lt;optional&gt; | registry username |
+| `registryTargetPassword` | string | &lt;optional&gt; | registry password |
+| `relDockerfilePath` | string | &lt;optional&gt; | relative location of dockerfile in workspace \(default "./Dockerfile"\) |
 
 For example, to run a job that only builds a container image and pushes to a remote registry:
 
