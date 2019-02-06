@@ -261,7 +261,7 @@ For example, to run a job that only builds a container image and pushes to a rem
 paperspace jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly true  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
 ```
 
-Note that if you selected `build_only` you should supply always a registry target and credentials. 
+Note that if you selected `buildOnly` you should supply always a registry target and credentials. 
 
 To run a job that builds a container image, pushes to a remote registry, and then runs a command inside an instance of the running container:
 
