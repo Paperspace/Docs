@@ -47,8 +47,10 @@ $ paperspace jobs create \
       <td style="text-align:left"><code>container</code>
       </td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">A required reference to a docker image in a public or private docker registry,
+      <td style="text-align:left">
+        <optional>
+      </td>
+      <td style="text-align:left">A reference to a docker image in a public or private docker registry,
         or a container name provided by Paperspace. Docker image repository references
         must be in lowercase and may include a tag and a hostname prefix followed
         by a slash; if committed the hostname defaults to that of the public Docker
@@ -231,6 +233,51 @@ Environmental variables are available for use within the context of your job. Th
 
 These can be used in conjuction with the `ports` option to send HTTP traffic to the job while it's in progress for example. 
 {% endhint %}
+
+### New: Run jobs from Dockerfiles
+
+Gradient job containers can now be created from a Dockerfile. Three options are available:
+
+1\) The job can build the container image and push it to a remote registry only. This is useful in cases where you want access to a GPU to build a GPU-enabled container but do not have one on-hand. 
+
+2\) The job can build the container image and run commands against a running instance of the container without uploading to a remote registry. Useful for experimenting with gradient jobs defined by Dockerfiles and cases where you are only interested in the results of the job.
+
+3\) The job can build the container image, upload the image to a remote registry, and then run commands against a running instance of the container . Useful for building images and experimenting with gradient jobs defined by Dockerfiles while retaining the original image used.
+
+The following new job fields are available:
+
+| Name  | Type  | Attributes | Description |
+| :--- | :--- | :--- | :--- |
+| `use_dockerfile` | boolean | &lt;optional&gt; | determines whether to build from Dockerfile \(default false\) |
+| `build_only` | boolean | &lt;optional&gt; | determines whether to only build and not run image \(default false\) |
+| `registry_target` | string | &lt;optional&gt; | registry location to push image to |
+| `registry_target_username` | string | &lt;optional&gt; | registry username |
+| `registry_target_password` | string | &lt;optional&gt; | registry password |
+| `rel_dockerfile_path` | string | &lt;optional&gt; | relative location of dockerfile in workspace \(default "./Dockerfile"\) |
+
+For example, to run a job that only builds a container image and pushes to a remote registry:
+
+```text
+paperspace jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly true  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
+```
+
+Note that if you selected `build_only` you should supply always a registry target and credentials. 
+
+To run a job that builds a container image, pushes to a remote registry, and then runs a command inside an instance of the running container:
+
+```text
+paperspace jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
+```
+
+To run a job that builds the container image and then runs an instace of the container, without pushing to a remote registry:
+
+```text
+paperspace jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"
+```
+
+
+
+
 
 
 
