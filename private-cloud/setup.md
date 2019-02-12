@@ -55,6 +55,9 @@ sudo apt-get update && sudo apt-get install nvidia-container-runtime=2.0.0+docke
 
 # Installing NFS tools.
 sudo apt-get install nfs-common=1:1.2.8-9ubuntu12.1
+
+# (Optional) Install kaniko container image to run gradient jobs from Dockerfiles
+docker images | grep -q gcr.io/kaniko-project/executor || docker pull gcr.io/kaniko-project/executor:latest
 ```
 
 ### Running for the first time
