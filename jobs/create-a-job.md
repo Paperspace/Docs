@@ -248,7 +248,7 @@ The following new job fields are available:
 
 | Name  | Type  | Attributes | Description |
 | :--- | :--- | :--- | :--- |
-| `useDockerfile` | boolean | &lt;optional&gt; | determines whether to build from Dockerfile \(default false\) |
+| `useDockerfile` | boolean | &lt;optional&gt; | determines whether to build from Dockerfile \(default false\). Do not include a --container argument when using this flag.  |
 | `buildOnly` | boolean | &lt;optional&gt; | determines whether to only build and not run image \(default false\) |
 | `registryTarget` | string | &lt;optional&gt; | registry location to push image to |
 | `registryTargetUsername` | string | &lt;optional&gt; | registry username |
@@ -275,9 +275,13 @@ To run a job that builds the container image and then runs an instace of the con
 paperspace jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"
 ```
 
+{% hint style="info" %}
+Note: commands run during the build step from the Dockerfile, like CMD \["command", "arg1"...\] are run inside the image layers as it's being built. Once the container image is ready to run the --command argument is used to determine what command to run against the built image. 
+{% endhint %}
 
-
-
+{% hint style="info" %}
+Note: logs during the container build process are not currently streamed back to the client. However once the container is built, if it is run, the logs will be displayed from the running container as normal. 
+{% endhint %}
 
 
 
