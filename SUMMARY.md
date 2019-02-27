@@ -24,6 +24,7 @@
 * [Job Logs](jobs/job-logs.md)
 * [View Machine Types](jobs/view-machine-types.md)
 * [Wait for State](jobs/wait-for-state.md)
+* [Graphing Custom Metrics](jobs/graphing-custom-metrics.md)
 
 ## Notebooks
 
