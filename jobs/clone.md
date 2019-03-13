@@ -1,6 +1,6 @@
 # Clone
 
-Clone an exiting job and queue the cloned copy to run.
+Clone an existing job and queue the cloned copy to run.
 
 ## Example Use
 
