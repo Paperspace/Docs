@@ -47,6 +47,7 @@ write_files:
 You are free to customize your gradient instance as you see fit, by adding dependencies and libraries for example. The name of the gradient agent is called `gradient-node`.  The agent is run as a systemd service that starts on launch and restarts on errors. Customizing your instance is straightforward:
 
 * ssh into the running instance via `ssh -i your-key.pem ubuntu@public-dns-address`
+* Switch to root user via `sudo su`
 * Stop the running gradient service via `service gradient-node stop`
 * Update the instance, install dependencies, etc. May require a reboot. 
 * Start the gradient service again via `service gradient-node start` 
