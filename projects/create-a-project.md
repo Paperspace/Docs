@@ -4,7 +4,7 @@
 
 As of 7.0, a Gradientº Project is a creative workspace for a team or user to run Experiments.
 
-Projects can be powered by GradientCI (and GitHub), or alternatively they can be "Standalone".
+Projects can be powered by GradientCI (via GitHub), or alternatively they can be "Standalone".
 
 GradientCI Projects allow you to automatically run experiments simply based on pushing code to a GitHub repository.
 
