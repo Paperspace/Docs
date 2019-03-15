@@ -2,7 +2,7 @@
 
 ## About
 
-As of 7.0, a Gradientº Project represents a container for running Experiments.
+As of 7.0, a Gradientº Project is a creative workspace for a team or user to run Experiments.
 
 Projects can be powered by GradientCI (and GitHub), or alternatively they can be "Standalone".
 
