@@ -2,9 +2,9 @@
 
 ## About
 
-As of 7.0, a Gradientº Project that represents a container for running Experiments.
+As of 7.0, a Gradientº Project represents a container for running Experiments.
 
-They can be powered by GradientCI (and GitHub), or alternately they can be "Standalone".
+Projects can be powered by GradientCI (and GitHub), or alternatively they can be "Standalone".
 
 GradientCI Projects allow you to automatically run experiments simply based on pushing code to a GitHub repository.
 
@@ -15,7 +15,7 @@ Standalone Projects require you to provide the code and run new experiments manu
 To create a Gradient° Project with continuous integration powered by GradientCI and GitHub:</p>
 
 1. Install the [GradientCI](https://github.com/apps/gradientci) GitHub app on your repository. (GitHub Admin privilege is required.)
-1. Navigate to the Projects page.
+1. Navigate to the [Projects page](https://www.paperspace.com/console/projects).
 1. Click Create Project.
 1. Select GitHub Project.
 1. Grant Paperspace access to your GitHub repos via OAuth.
@@ -24,7 +24,7 @@ To create a Gradient° Project with continuous integration powered by GradientCI
 Voilà! GradientCI will run a new experiment whenever:
 1. a new commit is pushed to the linked repo's default branch;
 1. a PR is opened against that default branch;
-1. a commit is pushed such a PR's branch.
+1. a commit is pushed to such a PR's branch.
 
 ## Creating a Standalone Paperspace Project via the Paperspace Console
 1. Begin the Create Project flow and supply a project name.
@@ -42,4 +42,4 @@ If you do not initialize a particular name or directory, job commands will be gi
 $ paperspace project init
 ```
 
-This creates a `.ps_project/config.json` file in the current directory to cache information about the project, such as the name, or the last job created.
+This creates a `.ps_project/config.yaml` file in the current directory to cache information about the project, such as the name, or the last job created.
