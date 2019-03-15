@@ -10,7 +10,7 @@ GradientCI Projects allow you to automatically run experiments simply based on p
 
 Standalone Projects require you to provide the code and run new experiments manually, just like running Jobs prior to 7.0.
 
-## Creating a GradientCI Project via the Paperspace Web App
+## Creating a GradientCI Project via the Paperspace Console
 
 To create a Gradient° Project with continuous integration powered by GradientCI and GitHub:</p>
 
@@ -26,7 +26,7 @@ Voilà! GradientCI will run a new experiment whenever:
 1. a PR is opened against that default branch;
 1. a commit is pushed such a PR's branch.
 
-## Creating a Standalone Paperspace Project via the Paperspace Web App
+## Creating a Standalone Paperspace Project via the Paperspace Console
 1. Begin the Create Project flow and supply a project name.
 1. Run experiments manually for the Project via the Experiment Builder or [the CLI](https://github.com/Paperspace/paperspace-python).
 
