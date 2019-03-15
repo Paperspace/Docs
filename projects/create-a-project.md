@@ -6,9 +6,9 @@ As of 7.0, a Gradientº Project is a creative workspace for a team or user to ru
 
 Projects can be powered by GradientCI (via GitHub), or alternatively they can be "Standalone".
 
-GradientCI Projects allow you to automatically run experiments simply based on pushing code to a GitHub repository.
+GradientCI Projects allow you to run Experiments automatically simply by pushing code to a GitHub repository.
 
-Standalone Projects require you to provide the code and run new experiments manually, just like running Jobs prior to 7.0.
+Standalone Projects require you to provide the code and run new Experiments manually, just like running Jobs prior to 7.0.
 
 ## Creating a GradientCI Project via the Paperspace Console
 
@@ -27,8 +27,8 @@ Voilà! GradientCI will run a new experiment whenever:
 1. a commit is pushed to such a PR's branch.
 
 ## Creating a Standalone Paperspace Project via the Paperspace Console
-1. Begin the Create Project flow and supply a project name.
-1. Run experiments manually for the Project via the Experiment Builder or [the CLI](https://github.com/Paperspace/paperspace-python).
+1. Begin the Create Project flow and supply a Project name.
+1. Run Experiments manually for the Project via the Experiment Builder or [the CLI](https://github.com/Paperspace/paperspace-python).
 
 # Create a pre-7.0 Project
 
