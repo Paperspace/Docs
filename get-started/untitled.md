@@ -2,7 +2,7 @@
 
 ## Projects
 
-A project is a collection of jobs, code, metrics, and artifacts. Projects can be created manually or automatically from a Job corresponding to the current working directory name. 
+A Gradient Project is a collection of experiments, code, metrics, and artifacts. Projects can be created manually or automatically from a Job corresponding to the current working directory name. 
 
 ## Jobs
 
@@ -14,13 +14,13 @@ Jobs are part of a larger suite of tools that work seamlessly with Gradient Note
 
 #### A Job consists of:
 
-1. a collection of files \(code, resources, etc\) from your local computer or GitHub
+1. a collection of files \(code, resources, etc.\) from your local computer or GitHub
 2. a container \(with code dependencies and packages pre-installed\)
 3. a command to execute \(i.e. python `main.py` or `nvidia-smi`\)
 
 ## Notebooks
 
-A Notebook is an interactive coding environment that allows you to mix code or formulas with text and diagrams, visualizations, and other media. Notebooks make it easy to explore data and coding concepts, and collaborate with other people on projects, Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.    
+A Notebook is an interactive coding environment that allows you to mix code or formulas with text and diagrams, visualizations, and other media. Notebooks make it easy to explore data and coding concepts, and collaborate with other people on projects. Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.    
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
@@ -28,13 +28,13 @@ A Notebook is an interactive coding environment that allows you to mix code or f
 
 ### Persistent Storage
 
-Persistent storage is a separate area where you can read and write files during a Job or a Notebook. You can also read and write data from your Workspace, but as the name indicates, persistent storage persists across job runs. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here.](https://support.paperspace.com/hc/en-us/articles/360001468133-Persistent-Storage)
+Persistent storage is a separate area where you can read and write files while using a Job or a Notebook. You can also read and write data from your Workspace, but as the name indicates, persistent storage persists across job runs. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more about persistent storage [here.](https://support.paperspace.com/hc/en-us/articles/360001468133-Persistent-Storage)
 
 ### Artifact Storage
 
 Artifact storage is collected and made available after the job run in the CLI and web interface. You can find the Artifacts in the Paperspace console by going to the Gradient° Job Runner, clicking on the job run, and scrolling to the bottom of the output. From there you can download any files that your job has placed in the `/artifacts` directory.  If you need to get result data from a job run out of Paperspace, use the Artifacts directory.
 
-The total of Workspace storage and Artifact storage cannot exceed the available storage on the host machine \(about 2 Terabytes\). If you think you will write enough files to fill this up, be sure to check for errors from the OS.
+The total of Workspace storage and Artifact storage cannot exceed the available storage on the host machine \(about 2 terabytes\). If you think you will write enough files to fill this up, be sure to check for errors from the OS.
 
 ### Workspace Storage
 
