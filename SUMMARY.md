@@ -43,11 +43,11 @@
 
 ## Gradient Private Cloud
 
-* [About](private-cloud/about.md)
-* [Requirements](private-cloud/requirements.md)
-* [Setup](private-cloud/setup.md)
-* [Gradient AMI](private-cloud/gradient-ami.md)
-* [Usage](private-cloud/usage.md)
-* [Node Attributes](private-cloud/job-scheduling-and-node-attributes.md)
-* [Storage](private-cloud/storage.md)
+* [About](gradient-private-cloud/about.md)
+* [Requirements](gradient-private-cloud/requirements.md)
+* [Setup](gradient-private-cloud/setup.md)
+* [Gradient AMI](gradient-private-cloud/gradient-ami.md)
+* [Usage](gradient-private-cloud/usage.md)
+* [Node Attributes](gradient-private-cloud/job-scheduling-and-node-attributes.md)
+* [Storage](gradient-private-cloud/storage.md)
 
