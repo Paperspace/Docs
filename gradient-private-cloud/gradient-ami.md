@@ -17,6 +17,19 @@ As an alternative to setting up Gradient nodes in your cluster manually, Papersp
 
 Starting a gradient-node from the AMI is simple: select the AMI from the AWS Marketplace when configuring the EC2 instance details. You may either pass in your settings \(like API key, node name, and node cluster\) via user-data \(easy\) or by SSH-ing into the running instance and configuring these options manually \(more difficult\).
 
+#### Configuration Steps in AWS 
+
+1. Choose the AMI from the Marketeplace
+2. Select the Instance Type
+3. On the Configure Instance step, provide your API key, the node name, node cluster in the Advanced Details dropdown \(using the text option\).  See the [step below](gradient-ami.md#passing-credentials-via-user-data-preferred) for more details.
+4. Add your preferred storage 
+5. Optional: Add your preferred Tags
+6. Set your preferred Security Group.  See the [ports & connectivity](gradient-ami.md#ports-and-connectivity-to-the-gradient-ami-vpc-settings) section below.
+7. Launch your new instance
+8. On boot, the instance will automatically register with your Gradient account and will be ready to accept Jobs.  See the [usage](usage.md) section for submitting jobs to a Gradient node.
+
+![Once provisioned, the Gradient node will auto register with your account.](../.gitbook/assets/image%20%286%29.png)
+
 ## Passing credentials via user-data \(preferred\)
 
 You can pass credentials into the Gradient° instance at launch time, which enables the node to start automatically and associate itself in your account. You would not have to SSH into the running instance to configure the gradient-node. Below is the text you should copy into the user-data field under "Advanced Details" in Step 3, "Configure Instance Details," when launching an EC2 instance:
