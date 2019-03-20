@@ -1,7 +1,10 @@
+# GradientCI
+
+## Set Up GradientCI
 To set up GradientCI, our continuous integration service, include a directory in your GitHub repository called `.ps_project`
 with a configuration file `config.yaml`.
 
-# Template
+## Template
 
 ```
 # .ps_project/config.yaml:
