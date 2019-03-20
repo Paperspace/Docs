@@ -52,3 +52,7 @@ You are free to customize your Gradient° instance as you see fit, by adding dep
 * Update the instance, install dependencies, etc. May require a reboot. 
 * Start the Gradient° service again via `service gradient-node start` 
 
+## Ports & connectivity to the Gradient AMI \(VPC settings\)
+
+The only required ports required for the Gradient AMI to function are 6006 and 8888.  Please ensure TCP traffic can flow on these ports.
+
