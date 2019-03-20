@@ -11,9 +11,9 @@
 
 * [Create a Project](projects/create-a-project.md)
 * [GradientCI](projects/gradientci.md)
+* [Experiments](projects/experiments.md)
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
-* [Experiments](projects/experiments.md)
 
 ## Jobs
 
