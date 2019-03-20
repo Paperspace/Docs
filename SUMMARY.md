@@ -10,6 +10,7 @@
 ## Projects
 
 * [Create a Project](projects/create-a-project.md)
+* [GradientCI](projects/GradientCI.md)
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
 
