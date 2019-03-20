@@ -1,3 +1,7 @@
+---
+description: Set up continuous integration between your GitHub repository and Gradient
+---
+
 # GradientCI
 
 ## Set Up GradientCI
@@ -30,11 +34,11 @@ parameter-server: [required for multi-node]
   count: 1
 ```
 
-Examples with only required fields
+### Examples with only required fields
+
+#### Single-node example
 
 ```text
-# single node example:
-
 version: 1
 
 type: "single"
@@ -44,9 +48,9 @@ worker:
   machine-type: "K80"
 ```
 
-```text
-# multinode example:
+#### Multinode example
 
+```text
 version: 1
 
 type: "multi-grpc"
@@ -62,11 +66,11 @@ parameter-server:
   count: 1
 ```
 
-Examples with optional fields included
+### Examples with optional fields included
+
+#### Single-node example
 
 ```text
-# single node example:
-
 version: 1
 
 project: "fko0j2xs3mqqi"
@@ -82,9 +86,9 @@ worker:
   machine-type: "K80"
 ```
 
-```text
-# multinode example:
+#### Multinode example
 
+```text
 version: 1
 
 project: "fko0j2xs3mqqi"
