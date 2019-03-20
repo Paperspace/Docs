@@ -1,12 +1,12 @@
 # GradientCI
 
 ## Set Up GradientCI
-To set up GradientCI, our continuous integration service, include a directory in your GitHub repository called `.ps_project`
-with a configuration file `config.yaml`.
+
+To set up GradientCI, our continuous integration service, include a directory in your GitHub repository called `.ps_project` with a configuration file `config.yaml`.
 
 ## Template
 
-```
+```text
 # .ps_project/config.yaml:
 
 version: 1
@@ -32,7 +32,7 @@ parameter-server: [required for multi-node]
 
 Examples with only required fields
 
-```
+```text
 # single node example:
 
 version: 1
@@ -44,7 +44,7 @@ worker:
   machine-type: "K80"
 ```
 
-```
+```text
 # multinode example:
 
 version: 1
@@ -62,10 +62,9 @@ parameter-server:
   count: 1
 ```
 
-
 Examples with optional fields included
 
-```
+```text
 # single node example:
 
 version: 1
@@ -83,8 +82,7 @@ worker:
   machine-type: "K80"
 ```
 
-
-```
+```text
 # multinode example:
 
 version: 1
@@ -107,3 +105,4 @@ parameter-server:
   machine-type: "K80"
   count: 1
 ```
+

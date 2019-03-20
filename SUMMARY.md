@@ -10,9 +10,10 @@
 ## Projects
 
 * [Create a Project](projects/create-a-project.md)
-* [GradientCI](projects/GradientCI.md)
+* [GradientCI](projects/gradientci.md)
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
+* [Experiments](projects/experiments.md)
 
 ## Jobs
 
