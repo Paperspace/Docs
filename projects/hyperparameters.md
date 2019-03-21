@@ -5,7 +5,8 @@ Gradient provides users the ability to tune hyperparameters for their machine le
 
 ## Initiating 
 ### For a GradientCI (GitHub-integrated) project
-* In your `config.yaml` file, specify the domain of parameters over which Hyperopt should search.
+* In your `main.py` file, specify the domain of parameters over which Hyperopt should search.
+* For an alternate product example that is a `config.yaml` (we're not doing it like this right now), see: https://github.com/kubeflow/katib
 * See GradientCI docs for information on how experiments will be triggered from code pushed to your GitHub repository.
 
 ### For a standalone projects
