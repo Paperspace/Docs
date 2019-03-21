@@ -6,9 +6,22 @@ description: Set up continuous integration between your GitHub repository and Gr
 
 ## Set Up GradientCI
 
+### Creating a GradientCI Project via the Paperspace Console
+
+To create a Gradient Project with continuous integration powered by GradientCI and GitHub:
+
+1. Install the [GradientCI](https://github.com/apps/gradientci) GitHub app on your repository. \(GitHub Admin privilege is required.\)
+2. Navigate to the [Projects page](https://www.paperspace.com/console/projects).
+3. Click Create Project.
+4. Select GitHub Project.
+5. Grant Paperspace access to your GitHub repos via OAuth.
+6. Confirm a repo with GradientCI installed for your new Gradient° Project.
+
+### Configure GradientCI Settings
+
 To set up GradientCI, our continuous integration service, include a directory in your GitHub repository called `.ps_project` with a configuration file `config.yaml`.
 
-## Template
+#### Template
 
 ```text
 # .ps_project/config.yaml:
@@ -34,9 +47,9 @@ parameter-server: [required for multi-node]
   count: 1
 ```
 
-### Examples with only required fields
+#### Examples with only required fields
 
-#### Single-node example
+Single-node example
 
 ```text
 version: 1
@@ -48,7 +61,7 @@ worker:
   machine-type: "K80"
 ```
 
-#### Multinode example
+Multinode example
 
 ```text
 version: 1
@@ -66,9 +79,9 @@ parameter-server:
   count: 1
 ```
 
-### Examples with optional fields included
+#### Examples with optional fields included
 
-#### Single-node example
+Single-node example
 
 ```text
 version: 1
@@ -86,7 +99,7 @@ worker:
   machine-type: "K80"
 ```
 
-#### Multinode example
+Multinode example
 
 ```text
 version: 1
