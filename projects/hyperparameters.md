@@ -6,8 +6,22 @@ Gradient provides users the ability to tune hyperparameters for their machine le
 ## Initiating 
 ### For a GradientCI (GitHub-integrated) project
 * In your `main.py` file, specify the domain of parameters over which Hyperopt should search.
-* For an alternate product example that is a `config.yaml` (we're not doing it like this right now), see: https://github.com/kubeflow/katib
-* See GradientCI docs for information on how experiments will be triggered from code pushed to your GitHub repository.
+```
+from paperspace-sdk import hyper_tune
+from  .model import train_model
+hparam_def = {
+        'dense_len': 8 + hp.randint('dense_len', 120),
+        'dropout': hp.uniform('dropout', 0., 0.8),
+        'activation': hp.choice('activation', ['relu', 'tanh', 'sigmoid'])
+        hyper_tune(train_model, hparam_def,algo=tpe.suggest, max_evals=25)
+}
+```
+* `dense_len` is how many layers the DNN has
+* `dropout` here is a uniform distribution between 0% and 80% dropout
+* `activation` here tests different common activation functions
+
+
+See GradientCI docs for information on how experiments will be triggered from code pushed to your GitHub repository.
 
 ### For a standalone projects
 * CLI commands?
