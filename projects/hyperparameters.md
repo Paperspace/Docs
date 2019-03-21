@@ -1,7 +1,7 @@
 # Hyperparameter Tuning
 
 ## About
-Gradient 
+Gradient provides users the ability to tune hyperparameters for their machine learning models, harnessing the power of our cloud to explore different model configurations and discover an optimal model.
 
 ## Initiating 
 ### For a GradientCI (GitHub-integrated) project
