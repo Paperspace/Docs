@@ -12,5 +12,17 @@ Experiments are the new unit of computation in Gradient Projects, intended to be
 
 ## Multinode
 
-Gradient utilizes gRPC to support distributed TensorFlow model training.
+Gradient supports both gRPC and MPI protocols for distributed TensorFlow model training. In your `config.yaml`, specify the experiment `type` as either `multi-grpc` or `multi-mpi`:
+
+```text
+type: "multi-grpc"
+```
+
+or
+
+```text
+type: "multi-mpi"
+```
+
+
 
