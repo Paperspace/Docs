@@ -15,6 +15,9 @@
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
 
+## CLI
+* [Install the CLI]
+
 ## Jobs
 
 * [Create a Job](jobs/create-a-job.md)
