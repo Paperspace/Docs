@@ -16,7 +16,7 @@
 * [Show](projects/show.md)
 
 ## CLI
-* [Install the CLI](cli/installing_the_cli.md)
+* [Install the CLI](CLI/install-the-CLI.md)
 
 ## Jobs
 
