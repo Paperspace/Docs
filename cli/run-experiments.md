@@ -1,11 +1,12 @@
 # Run Experiments from the CLI
 
-Gradient supports [GitHub-integrated projects](/projects/gradientci.md) and standalone projects. In a standalone project, you can use the GUI experiment builder directly in the application, or the CLI, which enables you to run experiments manually and programmatically from your command line for maximum flexibility.
+Gradient supports [GitHub-integrated projects](../projects/gradientci.md) and standalone projects. In a standalone project, you can use the GUI experiment builder directly in the application, or the CLI, which enables you to run experiments manually and programmatically from your command line for maximum flexibility.
 
 ## How to run a single-node or multinode experiment
 
 Use the `--help` flag to bring up information in the CLI.
-```
+
+```text
 $ paperspace-python experiments create singlenode --help
 Usage: paperspace-python experiments create singlenode [OPTIONS]
 
@@ -15,7 +16,7 @@ Usage: paperspace-python experiments create multinode [OPTIONS]
 
 ### Walkthrough of a multinode example
 
-```
+```text
 $ paperspace-python experiments createAndStart multinode
   --name multiEx
   --projectId prjsrr8ee
@@ -31,14 +32,15 @@ $ paperspace-python experiments createAndStart multinode
   --workspaceUrl https://github.com/Paperspace/multinode-mnist.git
 ```
 
-This command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project `prjsrr8ee`. (To get your `projectId`, go to [your projects list](https://www.paperspace.com/console/projects) and copy it.)
+This command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project `prjsrr8ee`. \(To get your `projectId`, go to [your projects list](https://www.paperspace.com/console/projects) and copy it.\)
 
 The command specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server.
 
 Finally, the command specifies the workspace to pull the Python script from as a public GitHub repository.
 
 ## Parameters common to both experiment types
-```
+
+```text
 Options:
   --name              TEXT        [required]  // Defines your experiment name.
   --ports             INTEGER                 // Defines what ports the experiment service accesses.
@@ -61,7 +63,7 @@ Options:
 
 ## Special parameters for multinode experiments
 
-```
+```text
 Options
   --experimentType    TEXT [GRPC|MPI] [required] // Determines which protocol to use: gRPC or MPI.
   --workerContainer   TEXT            [required]
@@ -79,4 +81,6 @@ Options
   --parameterServerRegistryContainerUser TEXT
   --parameterServerRegistryPassword TEXT
 ```
+
 * As above, both workers and parameters need a container, machine type, command, count, and registry username and password.
+
