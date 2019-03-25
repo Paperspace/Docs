@@ -34,7 +34,7 @@ Starting a gradient-node from the AMI is simple: select the AMI from the AWS Mar
 
 You can pass credentials into the Gradient° instance at launch time, which enables the node to start automatically and associate itself in your account. You would not have to SSH into the running instance to configure the gradient-node. Below is the text you should copy into the user-data field under "Advanced Details" in Step 3, "Configure Instance Details," when launching an EC2 instance:
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 ```text
 #cloud-config

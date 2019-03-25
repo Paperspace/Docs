@@ -2,13 +2,15 @@
 
 ## Projects
 
-A Gradient Project is a collection of experiments, code, metrics, and artifacts. Projects can be created manually or automatically from a Job corresponding to the current working directory name. 
+A Gradient Project is a collection of experiments, code, metrics, and artifacts. Projects can be created manually or automatically from a Job corresponding to the current working directory name.
+
+![](../.gitbook/assets/object-model%20%281%29.png) 
 
 ## Jobs
 
 The [Gradient Jobs](https://www.paperspace.com/console/jobs) are designed for executing code \(such as training a deep neural network\) on a cluster of GPUs without managing any infrastructure.
 
-Jobs are part of a larger suite of tools that work seamlessly with Gradient Notebooks, and our Core product, which together form a production-ready ML/AI pipeline.  
+Jobs are part of a larger suite of tools that work seamlessly with Gradient Notebooks, and our Core product, which together form a production-ready ML/AI pipeline.
 
 ![](https://support.paperspace.com/hc/article_attachments/360008627173/mceclip1.png)
 
@@ -20,7 +22,7 @@ Jobs are part of a larger suite of tools that work seamlessly with Gradient Note
 
 ## Notebooks
 
-A Notebook is an interactive coding environment that allows you to mix code or formulas with text and diagrams, visualizations, and other media. Notebooks make it easy to explore data and coding concepts, and collaborate with other people on projects. Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.    
+A Notebook is an interactive coding environment that allows you to mix code or formulas with text and diagrams, visualizations, and other media. Notebooks make it easy to explore data and coding concepts, and collaborate with other people on projects. Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
@@ -32,7 +34,7 @@ Persistent storage is a separate area where you can read and write files while u
 
 ### Artifact Storage
 
-Artifact storage is collected and made available after the job run in the CLI and web interface. You can find the Artifacts in the Paperspace console by going to the Gradient° Job Runner, clicking on the job run, and scrolling to the bottom of the output. From there you can download any files that your job has placed in the `/artifacts` directory.  If you need to get result data from a job run out of Paperspace, use the Artifacts directory.
+Artifact storage is collected and made available after the job run in the CLI and web interface. You can find the Artifacts in the Paperspace console by going to the Gradient° Job Runner, clicking on the job run, and scrolling to the bottom of the output. From there you can download any files that your job has placed in the `/artifacts` directory. If you need to get result data from a job run out of Paperspace, use the Artifacts directory.
 
 The total of Workspace storage and Artifact storage cannot exceed the available storage on the host machine \(about 2 terabytes\). If you think you will write enough files to fill this up, be sure to check for errors from the OS.
 

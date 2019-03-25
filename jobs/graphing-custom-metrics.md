@@ -18,7 +18,7 @@ You as the developer must create appropriate names for your metrics. Metrics in 
 
 In order for our platform to plot your custom metrics you must inform Gradient when create the job. The Job Builder form now includes a section titled `Custom Metrics`
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image.png)
 
 Once your metrics are defined you may submit the job.
 
@@ -60,5 +60,5 @@ if __name__ ==  '__main__':
 
 Once the job is submitted the gradient platform will begin streaming metrics to the Metrics tab in the Job Info page.  These metrics will remain available to you until you delete your job. 
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
