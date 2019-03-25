@@ -1,6 +1,6 @@
 # Run Experiments from the CLI
 
-Gradient supports GitHub-integrated projects and standalone projects. Beyond the GUI experiment builder in the application, the CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.
+Gradient supports [GitHub-integrated projects](projects/gradientci.md) and standalone projects. Beyond the GUI experiment builder in the application, the CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.
 
 ## How to run a single-node or multinode experiment
 
