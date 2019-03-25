@@ -1,6 +1,6 @@
 # Run Experiments from the CLI
 
-Gradient supports [GitHub-integrated projects](projects/gradientci.md) and standalone projects. Beyond the GUI experiment builder in the application, the CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.
+Gradient supports [GitHub-integrated projects](/projects/gradientci.md) and standalone projects. Beyond the GUI experiment builder in the application, the CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.
 
 ## How to run a single-node or multinode experiment
 
@@ -79,5 +79,4 @@ Options
   --parameterServerRegistryContainerUser TEXT
   --parameterServerRegistryPassword TEXT
 ```
-
 * As above, both workers and parameters need a container, machine type, command, count, and registry username and password.
