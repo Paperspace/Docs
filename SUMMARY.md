@@ -4,7 +4,7 @@
 
 ## Get Started
 
-* [Core Concepts](get-started/untitled.md)
+* [Core Concepts](get-started/core-concepts.md)
 * [Quick Start](get-started/quick-start.md)
 
 ## Projects
