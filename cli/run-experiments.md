@@ -29,7 +29,11 @@ $ paperspace-python experiments createAndStart multinode
   --workspaceUrl https://github.com/Paperspace/multinode-mnist.git
 ```
 
-This command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project `prjsrr8ee`. (To get your `projectId`, go to [your projects list](https://www.paperspace.com/console/projects) and copy it.) The command specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server. Finally, the command specifies the workspace to pull the Python script from as a public GitHub repository.
+This command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project `prjsrr8ee`. (To get your `projectId`, go to [your projects list](https://www.paperspace.com/console/projects) and copy it.)
+
+The command specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server.
+
+Finally, the command specifies the workspace to pull the Python script from as a public GitHub repository.
 
 ## Parameters common to both experiment types
 ```
