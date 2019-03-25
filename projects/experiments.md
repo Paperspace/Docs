@@ -10,6 +10,12 @@ Experiments are the new unit of computation in Gradient Projects, intended to be
 
 ## Single Node
 
+In your `config.yaml`, specify the experiment `type` as `single`:
+
+```text
+type: "single"
+```
+
 ## Multinode
 
 Gradient supports both gRPC and MPI protocols for distributed TensorFlow model training. In your `config.yaml`, specify the experiment `type` as either `multi-grpc` or `multi-mpi`:
