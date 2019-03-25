@@ -26,3 +26,9 @@ type: "multi-mpi"
 
 
 
+### State Transitions
+
+An experiment goes through a number of "states" between being submitted to Gradient \(through the CLI, SDK, the GradientCI GitHub App, or Job Builder GUI\). These states are enumerated below:
+
+![](../.gitbook/assets/image%20%287%29.png)
+
