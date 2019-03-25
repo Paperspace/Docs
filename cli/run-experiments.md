@@ -74,4 +74,4 @@ Options
 ```
 
 * `--experimentType` determines which protocol to use: gRPC or MPI.
-* As above, both workers and parameters need a container, machine type, command, count, and registry. username and password.
+* As above, both workers and parameters need a container, machine type, command, count, and registry username and password.
