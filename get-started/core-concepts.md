@@ -4,6 +4,8 @@
 
 A Gradient Project is a collection of experiments, code, metrics, and artifacts. Projects can be created manually or automatically from a Job corresponding to the current working directory name.
 
+![](../.gitbook/assets/object_model.jpg) 
+
 ## Jobs
 
 The [Gradient Jobs](https://www.paperspace.com/console/jobs) are designed for executing code \(such as training a deep neural network\) on a cluster of GPUs without managing any infrastructure.
