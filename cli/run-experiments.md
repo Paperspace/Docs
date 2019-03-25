@@ -38,42 +38,24 @@ Finally, the command specifies the workspace to pull the Python script from as a
 ## Parameters common to both experiment types
 ```
 Options:
-  --name TEXT                  [required]
-  --ports INTEGER
-  --workspaceUrl TEXT
-  --workingDirectory TEXT
-  --artifactDirectory TEXT
-  --cluster TEXT
-  --experimentEnv JSON_STRING
-  --triggerEventId TEXT
-  --projectId TEXT
-  --container TEXT             [required]
-  --machineType TEXT           [required]
-  --command TEXT               [required]
-  --count INTEGER
-  --containerUser TEXT
-  --registryUsername TEXT
-  --registryPassword TEXT
-  --help 
+  --name              TEXT        [required]  // Defines your experiment name.
+  --ports             INTEGER                 // Defines what ports the experiment service accesses.
+  --workspaceUrl      TEXT                    // Points to a workspace, such as a GitHub repository.
+  --workingDirectory  TEXT                    // Specifies the node's working directory.
+  --artifactDirectory TEXT                    // Locates the directory in which the worker will place any outputs.
+  --cluster           TEXT                    // Defines what cluster the experiment will run on.
+  --experimentEnv     JSON_STRING             // ?
+  --triggerEventId    TEXT                    // Defines an event that will trigger your experiment to run, like a Git commit.
+  --projectId         TEXT                    // Specifies the Gradient Project to perform the experiment in.
+  --container         TEXT         [required] // Specifies what Docker container the worker node should use.
+  --machineType       TEXT         [required] // Specifies what kind of chip to use.
+  --command           TEXT         [required] // Tells the worker what script to execute.
+  --count             INTEGER                 // ?
+  --containerUser     TEXT                    // ? (duplicate of `registryUsername`?)
+  --registryUsername  TEXT                    // Your username, if you're using a private Docker image.
+  --registryPassword  TEXT                    // Your password, if you're using a private Docker image.
+  --help                                      // Brings up the help menu.
 ```
-
-* `--name` defines your experiment name.
-* `--ports` defines what ports the experiment service accesses on the worker node.
-* `--workspaceUrl` points to a workspace like a Git repository.
-* `--workingDirectory` specifies the node's working directory.
-* `--artifactDirectory` locates the directory in which the worker will place any outputs.
-* `--cluster` defines what cluster the experiment will run on. (?)
-* `--experimentEnv` = ?
-* `--triggerEventID` defines an event that will trigger your experiment to run.
-* `--projectId` specifies the Gradient Project to perform the experiment in.
-* `--container` specifies what Docker container the worker node should use.
-* `--machineType` specifies what kind of chip to use.
-* `--command` tells the worker what script to execute.
-* `--count` ? (should this even BE in single node?)
-* `--containerUser` ?
-* `--registryUsername` is your username if you're using a private Docker image.
-* `--registryPassword` is your password if you're using a private Docker image.
-* `--help` brings up the help menu.
 
 ## Special parameters for multinode experiments
 
