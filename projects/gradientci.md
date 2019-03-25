@@ -26,7 +26,7 @@ To set up GradientCI, our continuous integration service, include a directory in
 ```text
 # .ps_project/config.yaml:
 
-version: 1
+version: 0
 
 project: "project-handle"
 experiment: "experiment-name" [optional, default:<repo name>]
@@ -52,7 +52,7 @@ parameter-server: [required for multi-node]
 Single-node example
 
 ```text
-version: 1
+version: 0
 
 type: "single"
 worker:
@@ -64,7 +64,7 @@ worker:
 Multinode example
 
 ```text
-version: 1
+version: 0
 
 type: "multi-grpc"
 worker:
@@ -84,7 +84,7 @@ parameter-server:
 Single-node example
 
 ```text
-version: 1
+version: 0
 
 project: "fko0j2xs3mqqi"
 experiment: "momo/perfect-run"
@@ -102,7 +102,7 @@ worker:
 Multinode example
 
 ```text
-version: 1
+version: 0
 
 project: "fko0j2xs3mqqi"
 experiment: "momo/perfect-runner"
