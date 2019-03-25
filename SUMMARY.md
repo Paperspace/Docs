@@ -18,6 +18,7 @@
 ## CLI
 
 * [Install the CLI](cli/install-the-cli.md)
+* [Run Experiments from the CLI](cli/run-experiments.md)
 
 ## Jobs
 
