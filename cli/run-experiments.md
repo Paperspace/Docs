@@ -61,24 +61,21 @@ Options:
 
 ```
 Options
-  --experimentType [GRPC|MPI] TEXT   [required]
-  --workerContainer TEXT          [required]
-  --workerMachineType TEXT        [required]
-  --workerCommand TEXT            [required]
-  --workerCount INTEGER           [required]
-  --parameterServerContainer TEXT
-                                  [required]
-  --parameterServerMachineType TEXT
-                                  [required]
-  --parameterServerCommand TEXT   [required]
-  --parameterServerCount INTEGER  [required]
-  --workerContainerUser TEXT
-  --workerRegistryUsername TEXT
-  --workerRegistryPassword TEXT
-  --parameterServerContainerUser TEXT
+  --experimentType    TEXT [GRPC|MPI] [required] // Determines which protocol to use: gRPC or MPI.
+  --workerContainer   TEXT            [required]
+  --workerMachineType TEXT            [required]
+  --workerCommand     TEXT            [required]
+  --workerCount       INTEGER         [required]
+  --parameterServerContainer   TEXT   [required]
+  --parameterServerMachineType TEXT   [required]
+  --parameterServerCommand     TEXT   [required]
+  --parameterServerCount     INTEGER  [required]
+  --workerContainerUser        TEXT             // ?
+  --workerRegistryUsername     TEXT
+  --workerRegistryPassword     TEXT
+  --parameterServerContainerUser TEXT           // ?
   --parameterServerRegistryContainerUser TEXT
   --parameterServerRegistryPassword TEXT
 ```
 
-* `--experimentType` determines which protocol to use: gRPC or MPI.
 * As above, both workers and parameters need a container, machine type, command, count, and registry username and password.
