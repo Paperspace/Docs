@@ -4,7 +4,7 @@ Gradient supports [GitHub-integrated projects](../projects/gradientci.md) and st
 
 ## How to run a single-node or multinode experiment
 
-Use the `--help` flag to bring up information in the CLI.
+Use the `--help` flag to bring up information in your terminal.
 
 ```text
 $ paperspace-python experiments create singlenode --help
