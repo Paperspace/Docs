@@ -2,6 +2,7 @@
 
 ## How to run a single-node or multinode experiment
 
+Use the `--help` flag to bring up information in the CLI.
 ```
 $ paperspace-python experiments create singlenode --help
 Usage: paperspace-python experiments create singlenode [OPTIONS]
@@ -9,6 +10,26 @@ Usage: paperspace-python experiments create singlenode [OPTIONS]
 $ paperspace-python experiments create multinode --help
 Usage: paperspace-python experiments create multinode [OPTIONS]
 ```
+
+### Walkthrough of a multinode example
+
+```
+$ paperspace-python experiments createAndStart multinode
+  --name multiEx
+  --projectId prjsrr8ee
+  --experimentTypeId GRPC
+  --workerContainer tensorflow/tensorflow:1.13.1-gpu-py3
+  --workerMachineType K80
+  --workerCommand "python mnist.py"
+  --workerCount 2
+  --parameterServerContainer tensorflow/tensorflow:1.13.1-gpu-py3
+  --parameterServerMachineType K80
+  --parameterServerCommand "python mnist.py"
+  --parameterServerCount 1
+  --workspaceUrl https://github.com/Paperspace/multinode-mnist.git
+```
+
+This command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project `prjsrr8ee`. (To get your `projectId`, go to [your projects list](https://www.paperspace.com/console/projects) and copy it.) The command specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server. Finally, the command specifies the workspace to pull the Python script from as a public GitHub repository.
 
 ## Parameters common to both experiment types
 ```
