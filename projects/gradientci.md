@@ -4,6 +4,10 @@ description: Set up continuous integration between your GitHub repository and Gr
 
 # GradientCI
 
+##  
+
+![](../.gitbook/assets/gradientci%20%281%29.gif)
+
 ## Set Up GradientCI
 
 ### Creating a GradientCI Project via the Paperspace Console
