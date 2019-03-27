@@ -36,5 +36,19 @@ type: "multi-mpi"
 
 An experiment goes through a number of "states" between being submitted to Gradient \(through the CLI, SDK, the GradientCI GitHub App, or Job Builder GUI\). These states are enumerated below:
 
+| State | Name |
+| :--- | :--- |
+| `EXPERIMENT_STATE_CREATED` | Created |
+| `EXPERIMENT_STATE_PENDING` | Pending |
+| `EXPERIMENT_STATE_PROVISIONING` | Provisioning |
+| `EXPERIMENT_STATE_PROVISIONED` | Provisioned |
+| `EXPERIMENT_STATE_NETWORK_SETUP` | Network Setup |
+| `EXPERIMENT_STATE_RUNNING` | Running |
+| `EXPERIMENT_STATE_NETWORK_TEARDOWN` | Network Teardown |
+| `EXPERIMENT_STATE_STOPPED` | Stopped \(aka Success\) |
+| `EXPERIMENT_STATE_FAILED` | Failed |
+| `EXPERIMENT_STATE_CANCELLED` | Cancelled |
+| `EXPERIMENT_STATE_ERROR` | Error |
+
 ![](../.gitbook/assets/statetransition.png)
 
