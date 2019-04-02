@@ -16,6 +16,10 @@
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
 
+## Models
+
+* [Create a Model](models/model-types.md)
+
 ## CLI
 
 * [Install the CLI](cli/install-the-cli.md)

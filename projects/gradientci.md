@@ -61,7 +61,7 @@ Our GradientCI service can help you from degrading your model. When we run an ex
 
 In addition to the status checks, GradientCI writes a detailed summary of the experiment to a comment on the pull request so you have your critical data at a glance while reviewing code!
 
-![GitHub pull request blocked by failing GradientCI metric checks.](pr-status.png)
+![GitHub pull request blocked by failing GradientCI metric checks.](../.gitbook/assets/pr-status.png)
 
 ### Configuration
 
@@ -122,7 +122,6 @@ Note these numbers are parsed as floats and relying on precise equality with the
 * `only-pulls`: only perform this check on pull requests
 * `if-not-found`: return a default status if job has no data for `<identifier>`, defaults to “failure”
 * `comment-on-pr`: include this metric in a summary content if the metrics were generated from a pull-request
-
 
 ## Examples
 
@@ -235,3 +234,4 @@ checks:
     target: ..0.025
     aggregation: max
 ```
+
