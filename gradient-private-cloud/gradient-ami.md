@@ -4,9 +4,11 @@ description: Launch Gradient° on AWS in Seconds
 
 # Gradient AMI
 
-As an alternative to setting up Gradient nodes in your cluster manually, Paperspace also publishes an official AMI image that contains the gradient-node software alongside all required dependencies like NVIDIA drivers, CUDA, and nvidia-docker. The AMI is available in the AWS Marketplace and is kept up to date with the latest version of Gradient°. The Paperpsace AMI works with all EC2 instances, but GPU acceleration will only work on GPU-enabled instance types.
+As an alternative to setting up Gradient nodes in your cluster manually, Paperspace also publishes an official AMI image that contains the gradient-node software alongside all required dependencies like NVIDIA drivers, CUDA, and nvidia-docker. The AMI is available in the AWS Marketplace and is kept up to date with the latest version of Gradient°. The Paperspace AMI works with all EC2 instances, but GPU acceleration will only work on GPU-enabled instance types.
 
-## Technical Details
+[Click here to install Gradient on AWS](https://aws.amazon.com/marketplace/pp/B07Q473W7M)
+
+### Technical Details
 
 * AMI Base OS: Ubuntu 16.04 LTS
 * Nvidia Drivers: Tesla 410.104
