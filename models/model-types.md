@@ -14,7 +14,7 @@ Paperspace experiments can generate machine learning models, which can be interp
 
 **Currently Supported Models:**
 
-* TensorFlow 1.x
+* [TensorFlow 1.x](https://www.tensorflow.org/guide/saved_model)
 
 **Future Supported Models:**
 
