@@ -33,7 +33,7 @@
 * [Wait for State](jobs/wait-for-state.md)
 * [Job Metrics](jobs/graphing-custom-metrics/README.md)
   * [System Metrics](jobs/graphing-custom-metrics/system-metrics.md)
-  * [Custom Metrics](jobs/graphing-custom-metrics/graphing-custom-metrics.md)
+  * [Custom Metrics](jobs/graphing-custom-metrics/custom-metrics.md)
 
 ## Experiments
 
