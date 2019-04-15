@@ -7,6 +7,10 @@
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
 
+## CLI
+
+* [Install the CLI](cli/install-the-cli.md)
+
 ## Projects
 
 * [Create a Project](projects/create-a-project.md)
@@ -15,15 +19,6 @@
 * [Hyperparameter Tuning](projects/hyperparameters.md)
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
-
-## Models
-
-* [Create a Model](models/model-types.md)
-
-## CLI
-
-* [Install the CLI](cli/install-the-cli.md)
-* [Run Experiments from the CLI](cli/run-experiments.md)
 
 ## Jobs
 
@@ -36,12 +31,27 @@
 * [Job Logs](jobs/job-logs.md)
 * [View Machine Types](jobs/view-machine-types.md)
 * [Wait for State](jobs/wait-for-state.md)
-* [Graphing Custom Metrics](jobs/graphing-custom-metrics.md)
+* [Job Metrics](jobs/job-metrics/README.md)
+  * [System Metrics](jobs/job-metrics/system-metrics.md)
+  * [Custom Metrics](jobs/job-metrics/graphing-custom-metrics.md)
+
+## Experiments
+
+* [About](experiments/about.md)
+* [Run Experiments from the CLI](experiments/run-experiments.md)
 
 ## Notebooks
 
 * [About](notebooks/untitled.md)
 * [Containers](notebooks/containers.md)
+
+## Models
+
+* [Create a Model](models/model-types.md)
+
+## Deployments
+
+* [Create a Deployment](deployments/create-a-deployment.md)
 
 ## Data
 

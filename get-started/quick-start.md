@@ -18,10 +18,6 @@ Your job will get uploaded to our cluster of machines. Behind the scenes, we are
 
 There are several optional Job parameters.  See the full list [here](../jobs/create-a-job.md#job-parameters).
 
-{% hint style="info" %}
-**Note:** the zipped upload of your working directory is limited to 100MB
-{% endhint %}
-
 ## Monitor your Job progress
 
 Job states go from **Queued** &gt; **Pending** &gt; **Running**

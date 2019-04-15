@@ -41,7 +41,7 @@ hyper_tune(train_model, hparam_def,algo=tpe.suggest, max_evals=25)
 
 ### For a standalone projects
 
-In your [experiment call to the Paperspace CLI](../cli/run-experiments.md), enter this script file name as `--command`.
+In your [experiment call to the Paperspace CLI](../experiments/run-experiments.md), enter this script file name as `--command`.
 
 ## Viewing hyperparameter search progress
 

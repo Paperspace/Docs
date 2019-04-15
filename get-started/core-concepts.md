@@ -4,9 +4,13 @@
 
 A Gradient Project is a collection of experiments, code, metrics, and artifacts. Projects can be created manually or automatically from a Job corresponding to the current working directory name.
 
+## Experiments
+
+Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
+
 ## Jobs
 
-The [Gradient Jobs](https://www.paperspace.com/console/jobs) are designed for executing code \(such as training a deep neural network\) on a cluster of GPUs without managing any infrastructure.
+The [Gradient Jobs](https://www.paperspace.com/console/jobs) are designed for executing code \(such as training a deep neural network\) on a CPU or GPU without managing any infrastructure.
 
 Jobs are part of a larger suite of tools that work seamlessly with Gradient Notebooks, and our Core product, which together form a production-ready ML/AI pipeline.
 
@@ -44,9 +48,9 @@ The Workspace exists for the duration of the job run. This directory is the curr
 
 ## Models
 
-Coming soon!
+Paperspace experiments can generate machine learning models, which can be interpreted and stored in the Paperspace Model Repository.  
 
-## Deployments
+## Deployments \(inference/model serving\)
 
-Coming soon!
+Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. 
 

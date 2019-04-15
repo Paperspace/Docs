@@ -11,7 +11,7 @@ import paperspace
 
 Using paperspace-python:
 
-```text
+```python
 paperspace-python run [options] [[-m] <script> [args] | -c "python code" | --command "shell cmd"]
   options:
   [--python 2|3]

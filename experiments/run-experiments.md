@@ -6,7 +6,7 @@ Gradient supports [GitHub-integrated projects](../projects/gradientci.md) and st
 
 Use the `--help` flag to bring up information in your terminal.
 
-```text
+```bash
 $ paperspace-python experiments create singlenode --help
 Usage: paperspace-python experiments create singlenode [OPTIONS]
 
@@ -16,7 +16,7 @@ Usage: paperspace-python experiments create multinode [OPTIONS]
 
 ### Walkthrough of a multinode example
 
-```text
+```bash
 $ paperspace-python experiments createAndStart multinode
   --name multiEx
   --projectHandle prjsrr8ee
