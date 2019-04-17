@@ -7,6 +7,10 @@
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
 
+## Deployments \[BETA\]
+
+* [Deployments](deployments/deployments.md)
+
 ## CLI
 
 * [Install the CLI](cli/install-the-cli.md)
@@ -51,7 +55,7 @@
 
 ## Deployments
 
-* [Create a Deployment](deployments/create-a-deployment.md)
+* [Create a Deployment](deployments-1/create-a-deployment.md)
 
 ## Data
 
