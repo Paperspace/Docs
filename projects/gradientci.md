@@ -145,6 +145,39 @@ model:
 
 * For more information see: [Create a Model](https://docs.paperspace.com/gradient/models/model-types)
 
+## Dockerfiles
+
+To use dockerfiles for experiment containers, the following configurations are available:
+
+* **worker.dockerfile.use**: indicates whether a supplied dockerfile should be used for worker nodes.
+* **worker.dockerfile.path**: defines the relative path of the dockerfile for worker nodes. If no value is provided (and dockerfile.use is set to true) the assumed location is "./Dockerfile"
+* **parameter-server.dockerfile.use**: indicates whether a supplied dockerfile should be used for multinode configuration parameter servers.
+* **parameter-server.dockerfile.path**: defines the relative path of the dockerfile for multinode configuration parameter servers. If no value is provided (and dockerfile.use is set to true) the assumed location is "./Dockerfile"
+
+```yaml
+worker:
+  [...]
+  dockerfile:
+    use: true
+parameter-server:
+  [...]
+  dockerfile:
+    use: true
+```
+
+```yaml
+worker:
+  [...]
+  dockerfile:
+    use: true
+    path: "./docker/worker-Dockerfile"
+parameter-server:
+  [...]
+  dockerfile:
+    use: true
+    path: "./docker/parameter-server-Dockerfile"
+```
+
 ## Examples
 
 ### Repositories
@@ -190,6 +223,7 @@ parameter-server:
 ```yaml
 version: 1
 
+
 project: "fko0j2xs3mqqi"
 experiment: "momo/perfect-run"
 type: "single"
@@ -203,12 +237,15 @@ worker:
   container: "tensorflow/tensorflow:1.8.0-gpu"
   command: "nvidia-smi"
   machine-type: "K80"
+  dockerfile:
+    use: true
 ```
 
 #### Multinode
 
 ```yaml
 version: 1
+
 
 project: "fko0j2xs3mqqi"
 experiment: "momo/perfect-runner"
@@ -224,11 +261,17 @@ worker:
   command: "nvidia-smi"
   machine-type: "K80"
   count: 2
+  dockerfile:
+    use: true
+    path: "./docker/worker-Dockerfile"
 parameter-server:
   container: "tensorflow/tensorflow:1.8.0-gpu"
   command: "nvidia-smi"
   machine-type: "K80"
   count: 1
+  dockerfile:
+    use: true
+    path: "./docker/parameter-server-Dockerfile"
 ```
 
 #### TensorFlow Model Summary Checks
