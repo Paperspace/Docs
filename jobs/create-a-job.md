@@ -252,9 +252,5 @@ paperspace jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com
 Note: commands run during the build step from the Dockerfile, like CMD \["command", "arg1"...\] are run inside the image layers as it's being built. Once the container image is ready to run the --command argument is used to determine what command to run against the built image. 
 {% endhint %}
 
-{% hint style="info" %}
-Note: logs during the container build process are not currently streamed back to the client. However once the container is built, if it is run, the logs will be displayed from the running container as normal. 
-{% endhint %}
-
 
 

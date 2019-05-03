@@ -9,7 +9,7 @@
 
 ## Deployments \[BETA\]
 
-* [Deployments](deployments/deployments.md)
+* [Deployments](deployments-beta/deployments.md)
 
 ## CLI
 
@@ -55,7 +55,7 @@
 
 ## Deployments
 
-* [Create a Deployment](deployments-1/create-a-deployment.md)
+* [Create a Deployment](deployments/create-a-deployment.md)
 
 ## Data
 

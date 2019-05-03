@@ -150,9 +150,9 @@ model:
 To use dockerfiles for experiment containers, the following configurations are available:
 
 * **worker.dockerfile.use**: indicates whether a supplied dockerfile should be used for worker nodes.
-* **worker.dockerfile.path**: defines the relative path of the dockerfile for worker nodes. If no value is provided (and dockerfile.use is set to true) the assumed location is "./Dockerfile"
+* **worker.dockerfile.path**: defines the relative path of the dockerfile for worker nodes. If no value is provided \(and dockerfile.use is set to true\) the assumed location is "./Dockerfile"
 * **parameter-server.dockerfile.use**: indicates whether a supplied dockerfile should be used for multinode configuration parameter servers.
-* **parameter-server.dockerfile.path**: defines the relative path of the dockerfile for multinode configuration parameter servers. If no value is provided (and dockerfile.use is set to true) the assumed location is "./Dockerfile"
+* **parameter-server.dockerfile.path**: defines the relative path of the dockerfile for multinode configuration parameter servers. If no value is provided \(and dockerfile.use is set to true\) the assumed location is "./Dockerfile"
 
 ```yaml
 worker:
