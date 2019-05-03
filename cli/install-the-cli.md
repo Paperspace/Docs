@@ -8,7 +8,11 @@ description: How to install the Paperspace CLI
 
 The Paperspace CLI is available on [pypi](https://pypi.org/project/paperspace/) and [anaconda](https://anaconda.org/paperspace/paperspace) and works on Windows, MacOS, and Linux.
 
-### Option 1: Using **pip** or **conda**
+{% hint style="info" %}
+**ProTip!** We recommend using installing and using CLI within a virtual environment. This will minimize any conflicts with existing libraries on your computer. 
+{% endhint %}
+
+## Install the CLI
 
 #### **Using pip**
 
@@ -29,13 +33,13 @@ You can either stash your API key on your computer or include your API key on ea
 ### Set your active API key
 
 ```bash
-paperspace-python apiKey XXXXXXXXXXXXXXXXXXXXXXX
+paperspace-python apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
 #### Alternative: Include your API key for each command
 
 ```bash
-paperspace-python experiments createAndStart ... --apiKey XXXXXXXXXXXXXXXXXXXXXXX
+paperspace-python experiments createAndStart ... --apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
 ## Obtaining an API key
