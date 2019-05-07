@@ -10,6 +10,35 @@ The Paperspace CLI is available on [pypi](https://pypi.org/project/paperspace/) 
 
 {% hint style="info" %}
 **ProTip!** We recommend using installing and using CLI within a virtual environment. This will minimize any conflicts with existing libraries on your computer. 
+
+**Python 2.7 - 3.2**
+
+Install virtualenv:
+```bash
+pip install virtualenv
+```
+
+Create new virtualenv:
+```bash
+virtualenv <env_folder_name>
+```
+
+Activate virtualenv:
+```bash
+source /path/to/<env_folder_name>/bin/activate
+```
+
+**Python 3.3+**
+
+Create new virtualenv:
+```bash
+python3 -m venv /path/to/new/virtual/environment
+```
+
+Activate virtualenv:
+```bash
+source /path/to/new/virtual/environment/bin/activate
+```
 {% endhint %}
 
 ## Install the CLI
