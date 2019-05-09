@@ -51,7 +51,7 @@
 
 ## Models
 
-* [Create a Model](models/model-types.md)
+* [Create a Model](models/create-a-model.md)
 
 ## Deployments
 
