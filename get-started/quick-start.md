@@ -10,11 +10,11 @@
 
 You are now ready to run a job \(even without any code!\). You can run:
 
-```text
-$ paperspace jobs create --container Test-Container --command "nvidia-smi"
+```bash
+$ paperspace jobs create --container Test-Container --command "nvidia-smi" --workspace none
 ```
 
-Your job will get uploaded to our cluster of machines. Behind the scenes, we are zipping the current working directory, creating a Docker container, and running the command you provided.
+Your job will get uploaded to our cluster of machines. Behind the scenes, we are creating a Docker container, and running the command you provided.
 
 There are several optional Job parameters.  See the full list [here](../jobs/create-a-job.md#job-parameters).
 
@@ -29,10 +29,4 @@ A Job can complete with the following states: **Success**, **Cancelled**, or **E
  Congratulations! You ran your first job on Gradient 🚀
 
 Jobs have a ton of functionality that this quick example doesn't cover.  To learn more, view the [Jobs section](../jobs/create-a-job.md).
-
-{% hint style="info" %}
-The full Paperspace API documentation is available here: 
-
-[https://paperspace.github.io/paperspace-node/](https://paperspace.github.io/paperspace-node/)
-{% endhint %}
 
