@@ -38,11 +38,5 @@ To store model information in the Model Repository, add model specific parameter
 
 `--modelPath` defines where in the context of the experiment the model checkpoint files are being stored. This is a key argument that enables the evaluation and upload of the generated model files. One option is to set `--modelPath '/artifacts'` and keep the checkpoint files around only in the context of the experiment. Another option is to set `--modelPath '/storage/my-experiment'` to have permanent access to the model generated files in  your Paperspace storage. 
 
-### Examples
-
-Here is an example command for running an TensorFlow based experiment which generates a model summary, used in GradientCI, and also uploads model checkpoint files to permanent storage. 
-
-`paperspace-python experiments createAndStart singlenode --name Test1 --workspaceUrl https://github.com/Paperspace/mnist-sample --projectHandle <projectHandle> --container tensorflow/tensorflow:1.13.1-py3 --machineType K80 --command 'python mnist.py --data_format=channels_last' --modelType Tensorflow --modelPath '/artifacts'`
-
  
 

@@ -12,7 +12,7 @@ Gradient provides users the ability to tune hyperparameters for their machine le
 
 ### For a GradientCI \(GitHub-integrated\) project
 
-See [GradientCI documentation](gradientci.md) for information on how experiments can be triggered from code pushed to your GitHub repository.
+See [GradientCI documentation](../projects/gradientci.md) for information on how experiments can be triggered from code pushed to your GitHub repository.
 
 In the Python script file you configure as your `command`, specify the domain of parameters over which Hyperopt should search.
 
@@ -41,7 +41,7 @@ hyper_tune(train_model, hparam_def,algo=tpe.suggest, max_evals=25)
 
 ### For a standalone projects
 
-In your [experiment call to the Paperspace CLI](../experiments/run-experiments.md), enter this script file name as `--command`.
+In your [experiment call to the Paperspace CLI](run-experiments.md), enter this script file name as `--command`.
 
 ## Viewing hyperparameter search progress
 

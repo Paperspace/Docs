@@ -16,15 +16,14 @@
 * [About](projects/about.md)
 * [Create a Project](projects/create-a-project.md)
 * [GradientCI](projects/gradientci.md)
-* [Experiments](projects/experiments.md)
-* [Hyperparameter Tuning](projects/hyperparameters.md)
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
 
 ## Notebooks
 
-* [About](notebooks/untitled.md)
-* [Containers](notebooks/containers.md)
+* [About](notebooks/about.md)
+* [Create a Notebook](notebooks/create-a-notebook.md)
+* [Notebook Containers](notebooks/notebook-containers.md)
 
 ## Jobs
 
@@ -44,7 +43,9 @@
 ## Experiments
 
 * [About](experiments/about.md)
+* [Experiment Builder interface](experiments/experiment-builder-interface.md)
 * [Run Experiments from the CLI](experiments/run-experiments.md)
+* [Hyperparameter Tuning](experiments/hyperparameters.md)
 
 ## Models
 

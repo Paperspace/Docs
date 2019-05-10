@@ -11,8 +11,7 @@ The Paperspace CLI is available on [pypi](https://pypi.org/project/paperspace/) 
 {% hint style="info" %}
 **ProTip!** We recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer.
 
-**Python 2.7 - 3.2**
-
+**Python 2.7 - 3.2**  
 Install virtualenv:
 
 ```bash
@@ -31,8 +30,7 @@ Activate virtualenv:
 source <env_directory_path>/bin/activate
 ```
 
-**Python 3.3+**
-
+**Python 3.3+**  
 Create new virtualenv:
 
 ```bash
@@ -80,5 +78,5 @@ paperspace-python experiments createAndStart ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 First, sign in to your [Paperspace account](https://paperspace.com/). On the left of your home console, you should find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
 
-![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%283%29.png)
+![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%285%29.png)
 
