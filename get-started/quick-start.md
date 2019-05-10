@@ -6,17 +6,25 @@
 2. [Install the Paperspace CLI ](../cli/install-the-cli.md#installation)
 3. [Connecting your account](../cli/install-the-cli.md#connecting-your-account)
 
-## Submit a job
+## Create a Notebook
 
-You are now ready to run a job \(even without any code!\). You can run:
+Notebooks 
+
+## Submit an Experiment
+
+You can run Experiments from the web interface or CLI:
+
+### Interface
+
+![](../.gitbook/assets/untitled-1.jpg)
+
+### CLI
 
 ```bash
-$ paperspace jobs create --container Test-Container --command "nvidia-smi" --workspace none
+paperspace-python experiments createAndStart singlenode --projectHandle prj0ztwij --container Test-Container --machineType P4000 --command "nvidia-smi --name test-01
 ```
 
-Your job will get uploaded to our cluster of machines. Behind the scenes, we are creating a Docker container, and running the command you provided.
-
-There are several optional Job parameters.  See the full list [here](../jobs/create-a-job.md#job-parameters).
+Your Experiment will get uploaded to our cluster of machines. Behind the scenes, we are creating a Docker container, and running the command you provided. There are several optional Experiment parameters.  See the full list [here](../jobs/create-a-job.md#job-parameters).
 
 ## Monitor your Job progress
 

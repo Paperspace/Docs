@@ -2,7 +2,7 @@
 description: The Paperspace Model Repository
 ---
 
-# Overview
+# About
 
 {% hint style="info" %}
 The Model Repository is in beta and currently under active development. To gain access contact support@paperspace.com. 

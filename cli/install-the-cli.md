@@ -80,5 +80,5 @@ paperspace-python experiments createAndStart ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 First, sign in to your [Paperspace account](https://paperspace.com/). On the left of your home console, you should find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
 
-![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%282%29.png)
+![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%283%29.png)
 

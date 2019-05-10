@@ -7,23 +7,24 @@
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
 
-## Deployments \[BETA\]
-
-* [Deployments](deployments-beta/deployments.md)
-
 ## CLI
 
 * [Install the CLI](cli/install-the-cli.md)
 
 ## Projects
 
-* [Overview](projects/overview.md)
+* [About](projects/about.md)
 * [Create a Project](projects/create-a-project.md)
 * [GradientCI](projects/gradientci.md)
 * [Experiments](projects/experiments.md)
 * [Hyperparameter Tuning](projects/hyperparameters.md)
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
+
+## Notebooks
+
+* [About](notebooks/untitled.md)
+* [Containers](notebooks/containers.md)
 
 ## Jobs
 
@@ -45,19 +46,14 @@
 * [About](experiments/about.md)
 * [Run Experiments from the CLI](experiments/run-experiments.md)
 
-## Notebooks
-
-* [About](notebooks/untitled.md)
-* [Containers](notebooks/containers.md)
-
 ## Models
 
-* [Overview](models/overview.md)
+* [About](models/about.md)
 * [Create a Model](models/create-a-model.md)
 
 ## Deployments
 
-* [Overview](deployments/overview.md)
+* [About](deployments/about.md)
 * [Create a Deployment](deployments/create-a-deployment.md)
 
 ## Data

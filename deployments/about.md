@@ -5,25 +5,17 @@ description: >-
   “end-to-end” services from R&D to production.
 ---
 
-# Deployments
+# About
 
-![](../.gitbook/assets/artboard-1-copy.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 {% hint style="info" %}
- Note: Gradient Deployments are still in BETA. During the Beta period we do not recommend running mission-critical services. Additionally, API endpoints could be renamed/updated and there are certain restrictions placed on accounts. Learn more about restrictions below
+**Note:** Gradient Deployments are still in Beta. During the Beta period we do not recommend running mission-critical services. Additionally, API endpoints could be renamed/updated and there are certain restrictions placed on accounts. Learn more about restrictions below
 {% endhint %}
 
 ## Overview
 
-Deployments take a pretrained model and expose them as a persistent service at a known URI.
-
-## Creating a Deployment
-
-Deployments can be created through the web console. Deployments can be found under the `Deployments` tab of any Project. A list of all deployments across projects can be found in the `Deployments` tab on the sidebar. 
-
-{% hint style="info" %}
- Gradient Deployments are not yet supported in the CLI, but we plan to add that functionality.
-{% endhint %}
+Deploy any model as a high-performance, low-latency micro-service with a RESTful API. Easily monitor, scale, and version deployments.  Deployments take a trained model and expose them as a persistent service at a known URI.
 
 ## Current Limitations
 
