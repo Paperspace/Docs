@@ -52,6 +52,7 @@
 
 ## Models
 
+* [Overview](models/overview.md)
 * [Create a Model](models/create-a-model.md)
 
 ## Deployments
