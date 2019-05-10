@@ -23,6 +23,13 @@
 
 * [About](notebooks/about.md)
 * [Create a Notebook](notebooks/create-a-notebook.md)
+* [Notebook Actions](notebooks/notebook-actions/README.md)
+  * [Start a Notebook](notebooks/notebook-actions/start-a-notebook.md)
+  * [Stop a Notebook](notebooks/notebook-actions/stop-a-notebook.md)
+  * [Fork a Notebook](notebooks/notebook-actions/fork-a-notebook.md)
+  * [Delete a Notebook](notebooks/notebook-actions/delete-a-notebook.md)
+  * [Rename a Notebook](notebooks/notebook-actions/rename-a-notebook.md)
+  * [View and Download Artifacts](notebooks/notebook-actions/view-and-download-artifacts.md)
 * [Notebook Containers](notebooks/notebook-containers.md)
 
 ## Jobs
