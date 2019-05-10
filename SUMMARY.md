@@ -17,6 +17,7 @@
 
 ## Projects
 
+* [Overview](projects/overview.md)
 * [Create a Project](projects/create-a-project.md)
 * [GradientCI](projects/gradientci.md)
 * [Experiments](projects/experiments.md)
@@ -55,6 +56,7 @@
 
 ## Deployments
 
+* [Overview](deployments/overview.md)
 * [Create a Deployment](deployments/create-a-deployment.md)
 
 ## Data
