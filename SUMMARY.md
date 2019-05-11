@@ -34,6 +34,7 @@
 
 ## Jobs
 
+* [About](jobs/about.md)
 * [Create a Job](jobs/create-a-job.md)
 * [Stop a Job](jobs/stop-a-job.md)
 * [Destroy a Job](jobs/destroy-a-job.md)
@@ -46,6 +47,7 @@
 * [Job Metrics](jobs/graphing-custom-metrics/README.md)
   * [System Metrics](jobs/graphing-custom-metrics/system-metrics.md)
   * [Custom Metrics](jobs/graphing-custom-metrics/custom-metrics.md)
+* [Public Jobs](jobs/public-jobs.md)
 
 ## Experiments
 
