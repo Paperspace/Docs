@@ -6,18 +6,7 @@
 
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
-
-## CLI
-
-* [Install the CLI](cli/install-the-cli.md)
-
-## Projects
-
-* [About](projects/about.md)
-* [Create a Project](projects/create-a-project.md)
-* [GradientCI](projects/gradientci.md)
-* [Clear](projects/clear.md)
-* [Show](projects/show.md)
+* [Install the Command Line Interface](get-started/install-the-cli.md)
 
 ## Notebooks
 
@@ -31,6 +20,14 @@
   * [Rename a Notebook](notebooks/notebook-actions/rename-a-notebook.md)
   * [View and Download Artifacts](notebooks/notebook-actions/view-and-download-artifacts.md)
 * [Notebook Containers](notebooks/notebook-containers.md)
+
+## Projects
+
+* [About](projects/about.md)
+* [Create a Project](projects/create-a-project.md)
+* [GradientCI](projects/gradientci.md)
+* [Clear](projects/clear.md)
+* [Show](projects/show.md)
 
 ## Jobs
 

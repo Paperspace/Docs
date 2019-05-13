@@ -2,7 +2,7 @@
 description: How to install the Paperspace CLI
 ---
 
-# Install the CLI
+# Install the Command Line Interface
 
 ## Installation
 

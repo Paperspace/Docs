@@ -3,8 +3,8 @@
 ## Prerequisites 
 
 1. [Create a Paperspace account ](https://www.paperspace.com/account/signup)
-2. [Install the Paperspace CLI ](../cli/install-the-cli.md#installation)
-3. [Connecting your account](../cli/install-the-cli.md#connecting-your-account)
+2. [Install the Paperspace Command Line Interface ](install-the-cli.md#installation)
+3. [Connecting your account](install-the-cli.md#connecting-your-account)
 
 ## Create a Notebook
 
