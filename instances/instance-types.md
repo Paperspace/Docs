@@ -26,7 +26,7 @@ A range of dedicated GPU instances with single and multi-GPU configurations.
 | **K80** | Low-cost instance with 12GB GPU, 2 vCPU, 12GB RAM | 12 GB | 12 GB | 2 vCPUs | $0.59/hr | $0.25/hr |
 | **P100** | High-end instance with 16GB Pascal GPU, 4 vCPU, 24GB RAM | 16 GB | 24 GB | 4 vCPUs | $1.72/hr | $0.59/hr |
 | **GV100** | Ultra high-performance instance with 16GB Volta GPU, 8 vCPU, 30GB RAM | 16 GB | 30 GB | 8 vCPUs | $2.89/hr | $1.15/hr |
-| **GV100x8** | \*Multi-GPU\* instance with 128GB Volta GPU, 20 vCPU, 130GB RAM | 128 GB | 130 GB | 20 vCPUs | $20.99/hr | $8.43/hr |
+| **GV100x8** | **Multi-GPU** instance with 128GB Volta GPU, 20 vCPU, 130GB RAM | 128 GB | 130 GB | 20 vCPUs | $20.99/hr | $8.43/hr |
 
 ## TPU Instances
 
@@ -34,5 +34,5 @@ The most advanced AI accelerator chip available.
 
 | Name | Description | GPU | Memory | vCPUs | Price |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **TPUv2** | Low-cost instance with 8GB GPU, 8 vCPU, 30GB RAM | 16 GB | - | - | $8.42/hr |
+| **TPUv2** | The most advanced AI accelerator chip available. | 16 GB | - | - | $8.42/hr |
 
