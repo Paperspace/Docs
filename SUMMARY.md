@@ -83,3 +83,8 @@
 * [Node Attributes](gradient-private-cloud/job-scheduling-and-node-attributes.md)
 * [Storage](gradient-private-cloud/storage.md)
 
+## Instances
+
+* [Instance Types](instances/instance-types.md)
+* [Preemptible Instances](instances/preemptible-instances.md)
+
