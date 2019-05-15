@@ -5,7 +5,7 @@
 The Custom Containers feature lets you pull your own image from a container registry eg Docker Hub. This article will help you prepare a custom Docker container and show you how to bring that Container into Gradient by creating either a Notebook or an Experiment with your custom container. We recommend using Docker to get the container image from your system to Gradient. 
 
 {% hint style="info" %}
-**ProTip!**: Using a Custom Container does not require building one from scratch.  See this [article](./) for using one of the many freely available and up-to-date containers hosted on various container registries \(eg [Docker Hub](https://hub.docker.com/), [NGC](https://ngc.nvidia.com/catalog/landing) etc.\).
+**ProTip!** Using a Custom Container does not require building one from scratch.  See this [article](./) for using one of the many freely available and up-to-date containers hosted on various container registries \(eg [Docker Hub](https://hub.docker.com/), [NGC](https://ngc.nvidia.com/catalog/landing) etc.\).
 {% endhint %}
 
 ## Build a Custom Container with Gradient
