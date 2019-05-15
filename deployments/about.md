@@ -7,7 +7,7 @@ description: >-
 
 # About
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 {% hint style="info" %}
 **Note:** Gradient Deployments are still in Beta. During the Beta period we do not recommend running mission-critical services. Additionally, API endpoints could be renamed/updated and there are certain restrictions placed on accounts. Learn more about restrictions below
