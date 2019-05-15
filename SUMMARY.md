@@ -19,7 +19,8 @@
   * [Delete a Notebook](notebooks/notebook-actions/delete-a-notebook.md)
   * [Rename a Notebook](notebooks/notebook-actions/rename-a-notebook.md)
   * [View and Download Artifacts](notebooks/notebook-actions/view-and-download-artifacts.md)
-* [Notebook Containers](notebooks/notebook-containers.md)
+* [Notebook Containers](notebooks/notebook-containers/README.md)
+  * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)
 
 ## Projects
 

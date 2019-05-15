@@ -12,7 +12,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 
 ### Custom Containers \(Advanced\)
 
-If you need to import an existing container, visit the Custom Containers section. Learn more [here](notebook-containers.md).
+If you need to import an existing container, visit the Custom Containers section. Learn more [here](notebook-containers/).
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
