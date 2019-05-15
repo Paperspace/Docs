@@ -22,23 +22,33 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 
 You can run Experiments from the web interface or CLI:
 
-### Experiment Builder interface
+### Using the Experiment Builder
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-### CLI
+### Using the CLI
+
+Before creating an experiment using the CLI, you must first create a Project for your Experiments to live in. To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**. Then select **Create Standalone Project** and provide a project name. Now, you can use the created Project's **Project ID** in order to create Experiments in that Project via the CLI.
+
+**Example command**
+
+The following command will work and will create and start an Experiment that will display properties of the attached GPU. Be sure to replace `<your-project-id>` with your **Project ID**.
+
+**Note:** _Currently_, we recommend adding your API Key as an option.
 
 ```bash
-paperspace-python experiments createAndStart singlenode --projectHandle prj0ztwij --container Test-Container --machineType P4000 --command "nvidia-smi --name test-01
+paperspace-python experiments createAndStart singlenode --projectId <your-project-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspaceUrl none --apiKey <your-api-key>
 ```
 
-Your Experiment will get uploaded to our cluster of machines. Behind the scenes, we are creating a Docker container, and running the command you provided. There are several optional Experiment parameters.  
+Your commands will look similar. Note that you can also create `multi-node`Experiments, and you can use the `create` command to simply create Experiments that can be started later.
+
+These Experiments will be uploaded to our cluster of machines. Behind the scenes, Paperspace is creating a Docker container and running the command you provided. There are [several optional Experiment parameters](https://docs.paperspace.com/gradient/experiments/run-experiments#parameters-common-to-both-experiment-types), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.
 
 ### Monitor your Experiment progress
 
-Experiments states go from **Queued** &gt; **Pending** &gt; **Running**  Once the Experiment is in a **Running** state, you can watch your Job run in the CLI and web UI.  An Experiment can complete with the following states: **Success**, **Cancelled**, or **Error**.
+Experiments states transition from **Queued** &gt; **Pending** &gt; **Running**. ****Once the Experiment is in the **Running** state, you can watch your Experiment run in the CLI and web UI. An Experiment can complete with the following states: **Success**, **Cancelled**, **Error**, or **Failed**.
 
- Congratulations! You ran your first job on Gradient 🚀
+ Congratulations! You ran your first Experiment on Gradientº 🚀
 
-Jobs have a ton of functionality that this quick example doesn't cover.  To learn more, view the [Experiments section](../experiments/about.md).
+Experiments have a ton of functionality that this quick example doesn't cover. To learn more, view the [Experiments section](../experiments/about.md).
 
