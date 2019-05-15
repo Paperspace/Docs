@@ -8,10 +8,12 @@ description: How to install the Paperspace CLI
 
 The Paperspace CLI is available on [pypi](https://pypi.org/project/paperspace/) and [anaconda](https://anaconda.org/paperspace/paperspace) and works on Windows, MacOS, and Linux.
 
-{% hint style="info" %}
-**ProTip!** We recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer.
+The CLI requires **Python 2.7** or **Python 3.4+**. Be sure to use a compatible version of **pip** depending on your Python version.
 
-**Python 2.7 - 3.2**  
+{% hint style="info" %}
+**ProTip!** We recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**.
+
+**Python 2.7**  
 Install virtualenv:
 
 ```bash
@@ -30,7 +32,7 @@ Activate virtualenv:
 source <env_directory_path>/bin/activate
 ```
 
-**Python 3.3+**  
+**Python 3.4+**  
 Create new virtualenv:
 
 ```bash
