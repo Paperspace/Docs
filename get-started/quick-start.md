@@ -3,6 +3,8 @@
 ## Prerequisites 
 
 1. [Create a Paperspace account ](https://www.paperspace.com/account/signup)
+   1. Add a valid credit card to enable Paperspace's features
+   2. Create a team if higher tiers of service and collaboration features are desired
 2. [Install the Paperspace Command Line Interface ](install-the-cli.md#installation)
 3. [Connecting your account](install-the-cli.md#connecting-your-account)
 
