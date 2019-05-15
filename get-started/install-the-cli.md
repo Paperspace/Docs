@@ -46,17 +46,25 @@ source /path/to/new/virtual/environment/bin/activate
 
 ## Install the CLI
 
-#### **Using pip**
+#### **Using pip to install the latest stable release** 
 
 ```bash
-pip install paperspace
+pip install -U paperspace
 ```
 
-#### **Using conda**
+#### **Using conda to install the latest stable release**
 
 ```bash
 conda install -c paperspace paperspace
 ```
+
+**Using pip to install the latest prerelease**
+
+```text
+pip install -U --pre paperspace
+```
+
+**Note: Although the CLI package is called "paperspace",** _**currently**_ **you run it locally using the command `paperspace-python`, which is installed as part of the package.**
 
 ## Connecting your account
 
