@@ -14,73 +14,95 @@ $ paperspace-python experiments create multinode --help
 Usage: paperspace-python experiments create multinode [OPTIONS]
 ```
 
-### Walkthrough of a multinode example
+### Walkthrough of a multinode experiment
+
+The following command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project identified by the `--projectId` option.  \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
 
 ```bash
-$ paperspace-python experiments createAndStart multinode
-  --name multiEx
-  --projectHandle prjsrr8ee
-  --experimentTypeId GRPC
-  --workerContainer tensorflow/tensorflow:1.13.1-gpu-py3
-  --workerMachineType K80
-  --workerCommand "python mnist.py"
-  --workerCount 2
-  --parameterServerContainer tensorflow/tensorflow:1.13.1-gpu-py3
-  --parameterServerMachineType K80
-  --parameterServerCommand "python mnist.py"
-  --parameterServerCount 1
-  --workspaceUrl https://github.com/Paperspace/multinode-mnist.git
+paperspace-python experiments createAndStart multinode \
+  --name multiEx \
+  --projectId <your project id> \
+  --experimentTypeId GRPC \ 
+  --workerContainer tensorflow/tensorflow:1.13.1-gpu-py3 \
+  --workerMachineType K80 \
+  --workerCommand "python mnist.py" \
+  --workerCount 2 \
+  --parameterServerContainer tensorflow/tensorflow:1.13.1-gpu-py3 \
+  --parameterServerMachineType K80 \
+  --parameterServerCommand "python mnist.py" \
+  --parameterServerCount 1 \
+  --workspaceUrl https://github.com/Paperspace/multinode-mnist.git \
+  --modelType Tensorflow
 ```
 
-This command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project `prjsrr8ee`. \(To get your `projectId`, go to [your projects list](https://www.paperspace.com/console/projects) and copy it.\)
+To run this command substitute an existing project ID for &lt;your project id&gt;.  You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value.  You can also get a list of existing projects and their IDs from the command line using the command `paperspace-python projects list`.
 
-The command specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server.
+The command above specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server.
 
 Finally, the command specifies the workspace to pull the Python script from as a public GitHub repository.
 
-## Parameters common to both experiment types
+## Options common to both singnode and multinode experiments
 
 ```text
-Options:
-  --name              TEXT        [required]  // Defines your experiment name.
-  --ports             INTEGER                 // Defines what ports the experiment service accesses.
-  --workspaceUrl      TEXT                    // Points to a workspace, such as a GitHub repository.
-  --workingDirectory  TEXT                    // Specifies the node's working directory.
-  --artifactDirectory TEXT                    // Locates the directory in which the worker will place any outputs.
-  --cluster           TEXT                    // Defines what cluster the experiment will run on.
-  --experimentEnv     JSON_STRING             // ?
-  --triggerEventId    TEXT                    // Defines an event that will trigger your experiment to run, like a Git commit.
-  --projectId         TEXT                    // Specifies the Gradient Project to perform the experiment in.
-  --container         TEXT         [required] // Specifies what Docker container the worker node should use.
-  --machineType       TEXT         [required] // Specifies what kind of chip to use.
-  --command           TEXT         [required] // Tells the worker what script to execute.
-  --count             INTEGER                 // ?
-  --containerUser     TEXT                    // ? (duplicate of `registryUsername`?)
-  --registryUsername  TEXT                    // Your username, if you're using a private Docker image.
-  --registryPassword  TEXT                    // Your password, if you're using a private Docker image.
-  --help                                      // Brings up the help menu.
+  --name TEXT                  Name of new experiment  [required]
+  --ports TEXT                 Port to use in new experiment
+  --workspace TEXT             Path to workspace directory
+  --workspaceArchive TEXT      Path to workspace .zip archive
+  --workspaceUrl TEXT          Project git repository url
+  --workingDirectory TEXT      Working directory for the experiment
+  --artifactDirectory TEXT     Artifacts directory
+  --clusterId TEXT             Cluster ID
+  --experimentEnv JSON_STRING  Environment variables in a JSON
+  --projectId TEXT             Project ID  [required]
+  --modelType TEXT             Model type
+  --modelPath TEXT             Model path
+  --apiKey TEXT                API key to use this time only
+  --help                       Show this message and exit
 ```
 
-## Special parameters for multinode experiments
+## Options specific to singlenode experiments
 
 ```text
-Options
-  --experimentType    TEXT [GRPC|MPI] [required] // Determines which protocol to use: gRPC or MPI.
-  --workerContainer   TEXT            [required]
-  --workerMachineType TEXT            [required]
-  --workerCommand     TEXT            [required]
-  --workerCount       INTEGER         [required]
-  --parameterServerContainer   TEXT   [required]
-  --parameterServerMachineType TEXT   [required]
-  --parameterServerCommand     TEXT   [required]
-  --parameterServerCount     INTEGER  [required]
-  --workerContainerUser        TEXT             // ?
-  --workerRegistryUsername     TEXT
-  --workerRegistryPassword     TEXT
-  --parameterServerContainerUser TEXT           // ?
+  --container TEXT             Container  [required]
+  --machineType TEXT           Machine type  [required]
+  --command TEXT               Container entrypoint command  [required]
+  --containerUser TEXT         Container user
+  --registryUsername TEXT      Registry username
+  --registryPassword TEXT      Registry password
+```
+
+A container, machine type, and command are required.
+
+Optionally a Docker registry username and password can be provided for accessing private docker registry container images via the `--registryUsername` and `--registryPassword` options.
+
+Also, using the `--containerUser` option, you can specify a UNIX user name to be used as the UNIX identity for running the specified command in the container.  If no containerUser  is specified, the user will default to 'root' in the container.  This is useful when running a public container image with a different expected user, or when building a container image from a Dockerfile.
+
+## Options specific to multinode experiments
+
+```text
+  --experimentTypeId [GRPC|MPI]   Experiment Type ID  [required]
+  --workerContainer TEXT          Worker container  [required]
+  --workerMachineType TEXT        Worker machine type  [required]
+  --workerCommand TEXT            Worker command  [required]
+  --workerCount INTEGER           Worker count  [required]
+  --parameterServerContainer TEXT
+                                  Parameter server container  [required]
+  --parameterServerMachineType TEXT
+                                  Parameter server machine type  [required]
+  --parameterServerCommand TEXT   Parameter server command  [required]
+  --parameterServerCount INTEGER  Parameter server count  [required]
+  --workerContainerUser TEXT      Worker container user
+  --workerRegistryUsername TEXT   Worker container registry username
+  --workerRegistryPassword TEXT   Worker registry password
+  --parameterServerContainerUser TEXT
+                                  Parameter server container user
   --parameterServerRegistryContainerUser TEXT
+                                  Parameter server registry container user
   --parameterServerRegistryPassword TEXT
+                                  Parameter server registry password
 ```
 
-As above, both workers and parameters need a container, machine type, command, count, and registry username and password.
+In the case of multinode experiments, both worker and parameter server instances need a container, machine type, command, count, and optionally a Docker registry username and password.
+
+Note: `--containerUser` is not a supported option for multinode experiments currently.
 
