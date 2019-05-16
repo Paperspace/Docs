@@ -14,7 +14,28 @@ $ paperspace-python experiments create multinode --help
 Usage: paperspace-python experiments create multinode [OPTIONS]
 ```
 
-### Walkthrough of a multinode experiment
+### Creating a singlenode experiment using the CLI
+
+The following command creates and starts a singlenode experiment called `singleEx` and places it within the Gradient Project identified by the `--projectId` option.  \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
+
+```bash
+paperspace-python experiments createAndStart singlenode \
+  --projectId <your project id> \
+  --name singleEx \
+  --experimentEnv "{\"EPOCHS_EVAL\":5,\"TRAIN_EPOCHS\":10,\"MAX_STEPS\":1000,\"EVAL_SECS\":10}" \
+  --container tensorflow/tensorflow:1.13.1-gpu-py3 \
+  --machineType K80 \
+  --command "python mnist.py" \
+  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
+  --modelType Tensorflow \
+  --modelPath /artifacts
+```
+
+To run this command substitute an existing project ID for &lt;your project id&gt;.  You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value.  You can also get a list of existing projects and their IDs from the command line using the command `paperspace-python projects list`.
+
+For more information about this sample experiment see the README in the mnist-sample github repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
+
+### Creating a multinode experiment using the CLI
 
 The following command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project identified by the `--projectId` option.  \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
 
@@ -41,7 +62,9 @@ The command above specifies the use of the gRPC framework and names the same Doc
 
 Finally, the command specifies the workspace to pull the Python script from as a public GitHub repository.
 
-## Options common to both singnode and multinode experiments
+For more information about this sample experiment see the README in the mnist-sample github repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
+
+## Options common to both singlenode and multinode experiments
 
 ```text
   --name TEXT                  Name of new experiment  [required]
