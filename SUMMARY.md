@@ -50,7 +50,7 @@
 ## Experiments
 
 * [About](experiments/about.md)
-* [Experiment Builder interface](experiments/experiment-builder-interface.md)
+* [Run Experiments from the UI](experiments/experiment-builder-interface.md)
 * [Run Experiments from the CLI](experiments/run-experiments.md)
 * [Hyperparameter Tuning](experiments/hyperparameters.md)
 
