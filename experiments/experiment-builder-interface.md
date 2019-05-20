@@ -1,6 +1,6 @@
 # Run Experiments from the UI
 
-### Experiment Builder: A GUI for Running Jobs <a id="h_15322951121524587990731"></a>
+### Experiment Builder: A GUI for Running Single-Node Experiments <a id="h_15322951121524587990731"></a>
 
 You can run Experiments in Gradient without ever leaving your web browser! The Experiment Builder is a great way to learn more about how Experiments are structured, and you can easily run your first GPU-based Experiment on Gradient without writing a single line of code!
 
