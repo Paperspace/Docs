@@ -18,7 +18,7 @@ There are several ways to run a Job in Gradient: You can use the [Job Builder](.
 
 #### Optional Job features
 
-There are many features you will want to check out like outputting your model to the `/artifacts` directory, the persistent data layer at /storage, graphing with [Job Metrics](graphing-custom-metrics/), sharing Jobs with the [Public Jobs](public-jobs.md) feature, and [opening ports](https://support.paperspace.com/hc/en-us/articles/360003412574-Public-IPs-and-Port-Forwarding) eg for accessing TensorBoard.
+There are many features you will want to check out like outputting your model to the `/artifacts` directory, the persistent data layer at /storage, graphing with [Job Metrics](job-metrics/), sharing Jobs with the [Public Jobs](public-jobs.md) feature, and [opening ports](https://support.paperspace.com/hc/en-us/articles/360003412574-Public-IPs-and-Port-Forwarding) eg for accessing TensorBoard.
 
 ## Compute Types
 
