@@ -10,7 +10,7 @@
 * Create a long-running job \(web service\) that serves the model
 * Access the REST endpoint exposed by a job
 
-There are two Gradient jobs involved in this workflow—a training job and deployment job. The first job generates a Python pickle file that gets stored in the shared storage service of Gradient. The same pickle file will be used by the second job running a Flask web server to expose a REST endpoint. This job will serve the model through the inferencing endpoint.
+There are two Gradient experiments involved in this workflow--training and deployment. The first experiment generates a Python pickle file that gets stored in the shared storage service of Gradient. The same pickle file will be used by the second experiment running a Flask web server to expose a REST endpoint. This experiment will serve the model through the inferencing endpoint.
 
 ## Installing and Configuring the Paperspace CLI
 
@@ -66,9 +66,11 @@ paperspace-python apiKey XXXXXXXXXXXXXXXXXXX
 
 ## Creating a Gradient Experiment to Train the Model
 
-In this step, we will generate a fully-trained model by submitting the dataset and Python code to Gradient. The output from this job is stored in a centrally accessible storage location that will be used in the next step of this tutorial.
+In this step, we will generate a fully-trained model by submitting the dataset and Python code to Gradient. The output from this experiment is stored in a centrally accessible storage location that will be used in the next step of this tutorial.
 
-Let’s take a minute to get familiar with the dataset. To keep this really simple, we are using one feature \(x\) that represents the years of experience of a candidate and a label \(y\) associated with the salary.![](https://lh4.googleusercontent.com/3itUeDXAUr6skoWDtEhtWFnlFlxZexkEhM-r9uk54n2awZkfcamZtr_IA9NCBPYA8yQ9cft8U-AyHjMASir0k6d0e-rkdH-oJAtuJIYkwzo-Hhiflctfm0gOZNEvPVFANlODg-ie)
+Let’s take a minute to get familiar with the dataset. To keep this really simple, we are using one feature \(x\) that represents the years of experience of a candidate and a label \(y\) associated with the salary.
+
+![](https://lh4.googleusercontent.com/3itUeDXAUr6skoWDtEhtWFnlFlxZexkEhM-r9uk54n2awZkfcamZtr_IA9NCBPYA8yQ9cft8U-AyHjMASir0k6d0e-rkdH-oJAtuJIYkwzo-Hhiflctfm0gOZNEvPVFANlODg-ie)
 
 The dataset, _sal.csv_, is available in the _data_ folder of the [GitHub](https://github.com/janakiramm/Salary) repo.  Clone the repo to your local machien and open it in your favorite text editor to explore the data.
 
@@ -120,9 +122,9 @@ joblib.dump(lm, filename)
 
 Apart from applying linear regression, the code prints parameters such as intercept, slope, and MSE to stdout. The trained model is stored in the directory named _salary_ under `/storage` as a _.pkl_ file.
 
-We are ready to kick off the training job on Gradient 🚀 Run the below command to submit the job.
+We are ready to kick off the training experiment on Gradient 🚀 Run the below command to submit the experiment.
 
-The location `/storage` maps to Gradient persistent storage location. Anything stored at this location will be available even after the job is terminated. By storing the _.pkl_ file at `/storage`, we will be able to access it from the model serving job that exposes the REST endpoint.
+The location `/storage` maps to Gradient persistent storage location. Anything stored at this location will be available even after the experiment is terminated. By storing the _.pkl_ file at `/storage`, we will be able to access it from the model serving experiment that exposes the REST endpoint.
 
 ```bash
 paperspace-python experiments createAndStart singlenode \
@@ -134,9 +136,9 @@ paperspace-python experiments createAndStart singlenode \
 --workspaceUrl https://github.com/janakiramm/Salary
 ```
 
-This command does quite a bit of heavy lifting for us.  It schedules the training job in one of the chosen machine types and kicks off the training process.
+This command does quite a bit of heavy lifting for us.  It schedules the training experiment in one of the chosen machine types and kicks off the training process.
 
-Let’s analyze the steps taken by Gradient to finish the job.
+Let’s analyze the steps taken by Gradient to finish the experiment.
 
 1. The CLI downloads all the files \(including the dataset\) and uploads it to Gradient
    1. You can also run the experiment from your local system by not specifying the `--workspaceUrl` parameter! This compress all the files into a .zip file and upload it to Gradient.
@@ -145,15 +147,15 @@ Let’s analyze the steps taken by Gradient to finish the job.
 4. Gradient maps the command sent via the CLI parameter \(`--command 'python train/train.py -i ./data/sal.csv -o /storage/salary'`\) to the docker run command
 5. Gradient schedules the container in one of the machines that match the type mentioned in the CLI \(`--machineType C2`\)
 
-Once the job’s status moves into run mode, it simply executes the code in the Python file. In _train.py_ that we uploaded, we do two things - print the coefficients like intercept, slope, MSE and copy the model into the `/storage` location.
+Once the experiment's status moves into run mode, it simply executes the code in the Python file. In _train.py_ that we uploaded, we do two things - print the coefficients like intercept, slope, MSE and copy the model into the `/storage` location.
 
-The output from Paperspace CLI confirms that the job has been successfully executed. If you navigate to the experiment in the UI, you will see the logs printed the coefficients used in the script along with the message `PSEOF` which is a healthy sign.
+The output from Paperspace CLI confirms that the experiment has been successfully executed. If you navigate to the experiment in the UI, you will see the logs printed the coefficients used in the script along with the message `PSEOF` which is a healthy sign.
 
 We are using a custom Docker container image with prerequisites such as NumPy, Scipy, Pandas, and Scikit-learn. This image was built from the official Python 3 Docker image.
 
-## Creating a Gradient Job to Deploy and Host the Model
+## Creating a Gradient Experiment to Deploy and Host the Model
 
-We are now ready to host the trained model in a Gradient job that runs a Flask web server. The job loads the pickle file created and stored by the last job at the _/storage_ location.
+We are now ready to host the trained model in a Gradient experiment that runs a Flask web server. The experiment loads the pickle file created and stored by the last experiment at the `/storage` location.
 
 Navigate to the deploy directory of the cloned repo to find _infer.py_.
 
@@ -194,9 +196,9 @@ Since Flask is not a part of the container image used in the tutorial, we will n
 
 To access the REST endpoint, we also need to instruct Gradient to map the container port to the host port. This is done through the CLI parameter `--ports`_._
 
-Unlike the previous job, this wouldn’t get terminated unless it is manually stopped or destroyed. The Flask web server turns the job into a long-running job that doesn’t exit automatically.
+Unlike the previous experiment, this wouldn’t get terminated unless it is manually stopped or destroyed. The Flask web server turns the experiment into a long-running experiment that doesn’t exit automatically.
 
-Let’s go ahead and submit the job to Gradient.
+Let’s go ahead and submit the experiment to Gradient.
 
 ```text
 paperspace jobs create \
@@ -208,97 +210,15 @@ paperspace jobs create \
 
 
 
-The logs shown by the CLI confirms that the web server is up and running. Before we can access the endpoint, we need to get the DNS name of the job.
+The logs shown by the CLI confirms that the web server is up and running. Before we can access the endpoint, we need to get the DNS name of the experiment.
 
-Hit _Ctrl+C_ to get back to the command prompt. Don’t worry! this doesn’t terminate the job but only exits the CLI.
+Hit _Ctrl+C_ to get back to the command prompt. Don’t worry! this doesn’t terminate the experiment but only exits the CLI.
 
-Let’s explore the job details with the below command:
+Let’s explore the experiment details with the below command:
 
-$ paperspace jobs list
-
-{
-
-"id": "jjvw0fyddg4ss",
-
-"name": "job 17",
-
-"state": "Running",
-
-"workspaceUrl": "s3://ps-projects/prtiibbm8/jjvw0fyddg4ss/deploy.zip",
-
-"workingDirectory": "/paperspace",
-
-"artifactsDirectory": "/artifacts",
-
-"entrypoint": "pip install flask && python deploy/infer.py -m /storage/salary/model.pkl",
-
-"projectId": "prtiibbm8",
-
-"project": "deploy",
-
-"container": "janakiramm/python:3",
-
-"containerUrl": "janakiramm/python:3",
-
-"baseContainer": "janakiramm/python:3",
-
-"baseContainerUrl": "janakiramm/python:3",
-
-"machineType": "C2",
-
-"cluster": "PS Jobs",
-
-"clusterId": "cls28l0qm",
-
-"usageRate": "C2 hourly",
-
-"startedByUserId": "u7bijlbx",
-
-"parentJobId": null,
-
-"jobError": null,
-
-"dtCreated": "2019-04-06T02:01:11.861Z",
-
-"dtModified": "2019-04-06T02:01:11.861Z",
-
-"dtProvisioningStarted": "2019-04-06T02:01:19.052Z",
-
-"dtProvisioningFinished": "2019-04-06T02:01:22.636Z",
-
-"dtStarted": "2019-04-06T02:01:22.636Z",
-
-"dtFinished": null,
-
-"dtTeardownStarted": null,
-
-"dtTeardownFinished": null,
-
-"dtDeleted": null,
-
-"exitCode": null,
-
-"queuePosition": null,
-
-"seqNum": 17,
-
-"storageRegion": "East Coast \(NY2\)",
-
-"clusterMachine": "pshs4fqvr",
-
-"fqdn": "jjvw0fyddg4ss.gradient.paperspace.com",
-
-"ports": "8080:8080",
-
-....
-
-"metricsURL": "metrics-ny2.paperspace.io",
-
-"customMetrics": null,
-
-"experimentId": "estdd32ibf4rjh"
-
-}
+```bash
+paperspace jobs list
+```
 
 Make a note of the _fqdn_ parameter mentioned in the output. We need that to access the REST endpoint. Since we are using the _jq_ utility, we can also grab the _fqdn_ with a simple command.  
 
@@ -312,17 +232,19 @@ $ curl $GRAD\_HOST:8080/sal/25
 
 Congratulations! You have successfully completed the end-to-end workflow involved in training and deploying machine learning models with Gradient.
 
-Let’s do the clean up by stopping and destroying the job.
+Let’s do the clean up by stopping and destroying the experiment.
 
-$ export JOB\_ID=\`paperspace jobs list \| jq .\[\].id\`
-
-$ paperspace jobs stop $JOB\_ID
-
-$ paperspace jobs destroy $JOB\_ID
+```bash
+export JOB_ID=`paperspace jobs list | jq .[].id`
+paperspace jobs stop $JOB_ID
+paperspace jobs destroy $JOB_ID
+```
 
 ## Summary
 
 Gradient is an ML PaaS that removes the friction involved in configuring pipelines for data science and machine learning. Similar to a PaaS, developers, and data scientists can upload data and code to Gradient to train sophisticated models. The scalable infrastructure of Gradient can be used for model serving.
 
-Apart from CLI, users can submit Jobs through the web UI available within Paperspace Console. For interactive development, Jupyter Notebooks can be launched.![](https://lh6.googleusercontent.com/YDq5E3UdaxjwXFE5N5j5Q66T3m1_OSckWMVgLzbMi6ZNtCXhKhFdOnfvD06vE6zMZE_MoacaIW4qScgzewO-e0t-Sc-JmhZapHt0BomM_U9WhqzkJexeNcSzstF3Y9WqoXM0oo3Z)
+Apart from CLI, users can submit experiment through the web UI available within Paperspace Console. For interactive development, Jupyter Notebooks can be launched.
+
+![](https://lh6.googleusercontent.com/YDq5E3UdaxjwXFE5N5j5Q66T3m1_OSckWMVgLzbMi6ZNtCXhKhFdOnfvD06vE6zMZE_MoacaIW4qScgzewO-e0t-Sc-JmhZapHt0BomM_U9WhqzkJexeNcSzstF3Y9WqoXM0oo3Z)
 
