@@ -31,6 +31,8 @@ paperspace-python experiments createAndStart singlenode \
   --modelPath /artifacts
 ```
 
+Note that `--modelPath /artifacts` is currently required for singlenode experiments if you need your model to appear under the Models tab so that you can deploy it.
+
 To run this command substitute an existing project ID for &lt;your project id&gt;.  You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value.  You can also get a list of existing projects and their IDs from the command line using the command `paperspace-python projects list`.
 
 For more information about this sample experiment see the README in the mnist-sample github repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
