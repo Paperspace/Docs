@@ -6,7 +6,7 @@ You can run Experiments in Gradient without ever leaving your web browser! The E
 
 The Experiment Builder is very similar to our Job Builder that you may be familiar with, but it allows you to create Experiments in the context of a Project. Experiments created using the Builder are currently limited to creating single-node jobs.
 
-![](../.gitbook/assets/screen-shot-2019-05-22-at-10.56.54-am.png)
+![](../.gitbook/assets/screen-shot-2019-05-22-at-11.14.57-am.png)
 
 ### Run an Experiment Using the Builder <a id="h_39323868261524588004147"></a>
 
