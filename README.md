@@ -1,4 +1,4 @@
-# Home
+# About Paperspace Gradient
 
 Welcome to Gradient! Get familiar with the Gradient CLI and web interface.
 
