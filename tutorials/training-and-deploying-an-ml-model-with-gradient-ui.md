@@ -1,4 +1,4 @@
-# Training & Deploying an ML Model with Gradient \(UI\)
+# Training & Deploying an ML Model with Experiment Builder
 
 ## **Objectives**
 

@@ -8,6 +8,11 @@
 * [Core Concepts](get-started/core-concepts.md)
 * [Install the Command Line Interface](get-started/install-the-cli.md)
 
+## Tutorials
+
+* [Training & Deploying an ML Model with the Gradient CLI](tutorials/training-and-deploying-an-ml-model-with-gradient-cli.md)
+* [Training & Deploying an ML Model with Experiment Builder](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
+
 ## Notebooks
 
 * [About](notebooks/about.md)
@@ -88,9 +93,4 @@
 
 * [Instance Types](instances/instance-types.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
-
-## Tutorials
-
-* [Training & Deploying an ML Model with Gradient \(CLI\)](tutorials/training-and-deploying-an-ml-model-with-gradient-cli.md)
-* [Training & Deploying an ML Model with Gradient \(UI\)](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
 
