@@ -89,3 +89,8 @@
 * [Instance Types](instances/instance-types.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
 
+## Tutorials
+
+* [Training & Deploying an ML Model with Gradient \(CLI\)](tutorials/training-and-deploying-an-ml-model-with-gradient-cli.md)
+* [Training & Deploying an ML Model with Gradient \(UI\)](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
+
