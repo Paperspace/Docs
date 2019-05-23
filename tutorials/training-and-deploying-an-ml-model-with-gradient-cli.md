@@ -246,5 +246,3 @@ Gradient is an ML PaaS that removes the friction involved in configuring pipelin
 
 Apart from CLI, users can submit experiment through the web UI available within Paperspace Console. For interactive development, Jupyter Notebooks can be launched.
 
-![](https://lh6.googleusercontent.com/YDq5E3UdaxjwXFE5N5j5Q66T3m1_OSckWMVgLzbMi6ZNtCXhKhFdOnfvD06vE6zMZE_MoacaIW4qScgzewO-e0t-Sc-JmhZapHt0BomM_U9WhqzkJexeNcSzstF3Y9WqoXM0oo3Z)
-
