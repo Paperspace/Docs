@@ -6,7 +6,9 @@ Visit [www.paperspace.com/console/projects](https://www.paperspace.com/console/p
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-If you haven't yet connected your GitHub account, follow the prompts to grant access to your GitHub repositories and to your GradientCI App installation.
+If you haven't yet connected your GitHub account, follow the prompts to grant access to your GitHub repositories and to your GradientCI App installation:
+
+![](../.gitbook/assets/screen-shot-2019-05-28-at-3.57.31-pm.png)
 
 Then, select the GitHub repo from the dropdown list:
 
