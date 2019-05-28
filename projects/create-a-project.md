@@ -2,9 +2,11 @@
 
 ## Create a GradientCI Project
 
-Visit [www.paperspace.com/console/projects](https://www.paperspace.com/console/projects) and select **Create GradientCI Project**.  Then link your GitHub account by installing **GradientCI**.  
+Visit [www.paperspace.com/console/projects](https://www.paperspace.com/console/projects), click _Create Project_, and select **Create GradientCI Project**. Make sure you have installed **GradientCI** on the target repository to which you'll link your Project.
 
 ![](../.gitbook/assets/image%20%2818%29.png)
+
+If you haven't yet connected your GitHub account, follow the prompts to grant access to your GitHub repositories and to your GradientCI App installation.
 
 Then, select the GitHub repo from the dropdown list:
 
@@ -12,7 +14,9 @@ Then, select the GitHub repo from the dropdown list:
 
 ## Create a Standalone Project
 
-Click _Create Project_ and then provide a name. 
+On the Projects page, click _Create Project_ and select _Create Standalone Project_.
 
-![](../.gitbook/assets/image%20%2825%29.png)
+Provide a name and then click _Create Project_.
+
+![](../.gitbook/assets/screen-shot-2019-05-28-at-2.38.20-pm.png)
 
