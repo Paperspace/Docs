@@ -77,7 +77,7 @@ The following command creates and starts a multinode experiment called `multiEx`
 paperspace-python experiments createAndStart multinode \
   --name multiEx \
   --projectId <your project id> \
-  --experimentTypeId GRPC \
+  --experimentType GRPC \
   --workerContainer tensorflow/tensorflow:1.13.1-gpu-py3 \
   --workerMachineType K80 \
   --workerCommand "python mnist.py" \
