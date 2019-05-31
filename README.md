@@ -11,7 +11,7 @@ Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies 
 Gradient is comprised of the following components:
 
 * \*\*\*\*[**Web dashboard**](https://www.paperspace.com/console)**:** A simple yet powerful interface for managing your projects, data, users, and account.
-* \*\*\*\*[**CLI**](get-started/quick-start.md#installation): A command-line tool for executing Jobs from Windows, Mac, or Linux. 
+* \*\*\*\*[**CLI**](https://github.com/Paperspace/paperspace-python): An open-source command-line tool for executing Jobs from Windows, Mac, or Linux. 
 
 #### Register [here](https://www.paperspace.com/account/signup) to get access to Gradient.
 
