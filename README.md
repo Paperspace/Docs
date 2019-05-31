@@ -12,7 +12,6 @@ Gradient is comprised of the following components:
 
 * \*\*\*\*[**Web dashboard**](https://www.paperspace.com/console)**:** A simple yet powerful interface for managing your projects, data, users, and account.
 * \*\*\*\*[**CLI**](get-started/quick-start.md#installation): A command-line tool for executing Jobs from Windows, Mac, or Linux. 
-* [**`paperspace-python`**](python-client/paperspace-python.md): A lightweight library for running Jobs directly from within a python project.
 
 #### Register [here](https://www.paperspace.com/account/signup) to get access to Gradient.
 
