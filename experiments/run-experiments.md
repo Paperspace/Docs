@@ -86,7 +86,7 @@ paperspace-python experiments createAndStart multinode \
   --parameterServerMachineType K80 \
   --parameterServerCommand "python mnist.py" \
   --parameterServerCount 1 \
-  --workspaceUrl https://github.com/Paperspace/multinode-mnist.git \
+  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
   --modelType Tensorflow
 ```
 
