@@ -1,16 +1,48 @@
 # Run Experiments from the CLI
 
-Gradient supports [GitHub-integrated projects](../projects/gradientci.md) and standalone projects. In a standalone project, you can use the GUI experiment builder directly in the application, or the CLI, which enables you to run experiments manually and programmatically from your command line for maximum flexibility.
+Gradient supports GitHub-enabled [GradientCI Projects](../projects/gradientci.md) and Standalone Projects, and these projects contain any Experiments that you create.
 
-## How to run a single-node or multinode experiment
+GradientCI Projects allow you to create and run Experiments automatically based on code pushes, but often you will want to manually create Experiments. To do this, you can use Experiment Builder in the GUI, or you can use the CLI.
 
-Use the `--help` flag to bring up information in your terminal.
+The Gradient CLI \(currently called "paperspace-python"\) enables you to run experiments manually and programmatically from your command line for maximum flexibility.
+
+Once you have the CLI installed, use the alias `paperspace-python` plus any further commands you wish to run.
+
+Note that you can use the `--help` option at any time to reveal information in your terminal about the current command you wish to use. Alternately, if you simply try to run a command, the CLI will prompt you for additional subcommands that you may be intending to use, as well as required options that are missing from your command.
 
 ```bash
-$ paperspace-python experiments create singlenode --help
+Usage: paperspace-python [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  apiKey           Save your api key
+  deployments      Manage deployments
+  experiments      Manage experiments
+  hyperparameters  Manage hyperparameters
+  jobs             Manage gradient jobs
+  logout           Log out / remove apiKey from config file
+  machines         Manage machines
+  models           Manage models
+  projects         Manage projects
+  run              Run script or command on remote cluster
+  version          Show the version and exit
+```
+
+## Running single-node and multinode experiments
+
+There are separate subcommands `singlenode` and `multinode` experiments.
+
+For programmatic use of the CLI, there is the `create` command, which simply creates an experiment in a target project, with the specified options. 
+
+Alternately, for more interactive use of the CLI, there is `createAndStart`, which allows you to both create and automatically start an experiment with one command. With this command, logs will automatically stream once the experiment has been created and started.
+
+```bash
+paperspace-python experiments create singlenode --help
 Usage: paperspace-python experiments create singlenode [OPTIONS]
 
-$ paperspace-python experiments create multinode --help
+paperspace-python experiments create multinode --help
 Usage: paperspace-python experiments create multinode [OPTIONS]
 ```
 
