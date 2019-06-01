@@ -1,4 +1,4 @@
-# Using Custom Containers with Gradient
+# Use a Custom Container
 
 ## **Objectives**
 
@@ -10,7 +10,7 @@
 
 The jobs submitted to Gradient run in the context of a container. Though the platform comes with mainstream container images, there may be a need to run a job within a custom container.
 
-In this tutorial, we will learn how to build and custom container for training a model based on Apache MXNet. The container encapsulates all the dependencies needed for the job and Jupyter Notebooks for interactive development.
+In this tutorial, we will learn how to build a custom container for training a model based on Apache MXNet. The container encapsulates all the dependencies needed for the job and Jupyter Notebooks for interactive development.
 
 You may want to clone the [Github repository](https://github.com/janakiramm/mxnet-mnist) that has the Dockerfile and Jupyter Notebook.
 
@@ -18,7 +18,7 @@ You may want to clone the [Github repository](https://github.com/janakiramm/mxne
 
 Custom containers are Docker images that can be easily built on any machine that has Docker CE installed.
 
-Make sure that Docker is running by executing the below command:
+Make sure that Docker is running by executing the following command:
 
 ```bash
 $ docker version
@@ -140,7 +140,7 @@ In the next step, we will launch a Jupyter Notebook based on the container image
 
 Access the Notebooks from the left navigation bar of Gradient. Choose Custom Container to pull the Apache MXNet image that we built.
 
-![](../../.gitbook/assets/grad-custom-container-0.jpg)
+![](../.gitbook/assets/grad-custom-container-0.jpg)
 
 Under the container name, type the full container image name including the tag. If you are accessing a private registry, populate the username and password sections.
 
@@ -150,13 +150,13 @@ Follow the remaining steps involved in launching a Gradient Notebook. Refer to t
 
 After the Notebook instance is launched successfully, click on the URL to access it.
 
-![](../../.gitbook/assets/grad-custom-container-1.jpg)
+![](../.gitbook/assets/grad-custom-container-1.jpg)
 
-![](../../.gitbook/assets/grad-custom-container-2.jpg)
+![](../.gitbook/assets/grad-custom-container-2.jpg)
 
 You can upload the Notebook, `MNIST.ipynb`, cloned from the Github repo.
 
-![](../../.gitbook/assets/grad-custom-container-3.jpg)
+![](../.gitbook/assets/grad-custom-container-3.jpg)
 
 You can now train and test the CNN model based Lenet architecture trained with the popular MNIST dataset.
 

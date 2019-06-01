@@ -11,8 +11,8 @@
 ## Tutorials
 
 * [Train & Deploy an ML Model with the Gradient CLI](tutorials/training-and-deploying-an-ml-model-with-gradient-cli.md)
-* [Train & Deploy an ML Model with Experiment Builder](tutorials/training-and-deploying-an-ml-model-with-gradient-ui/README.md)
-  * [Using Custom Containers with Gradient](tutorials/training-and-deploying-an-ml-model-with-gradient-ui/using-custom-containers-with-gradient.md)
+* [Train & Deploy an ML Model with Experiment Builder](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
+* [Use a Custom Container](tutorials/using-custom-containers-with-gradient.md)
 
 ## Notebooks
 
