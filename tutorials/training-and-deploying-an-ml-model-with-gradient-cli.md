@@ -1,4 +1,4 @@
-# Training & Deploying an ML Model with the Gradient CLI
+# Train & Deploy an ML Model with the Gradient CLI
 
 ## Objectives
 
