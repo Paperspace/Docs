@@ -14,7 +14,7 @@ Gradient Jobs part of a larger suite of tools that work seamlessly with Gradient
 
 ## Running a Job in Gradient
 
-There are several ways to run a Job in Gradient: You can use the [Job Builder](../experiments/experiment-builder-interface.md), a web interface for submitting Jobs, the [Paperspace CLI](../get-started/install-the-cli.md), or you can clone a Public Job. 
+There are several ways to run a Job in Gradient: You can use the [Job Builder](../experiments/run-experiments-ui.md), a web interface for submitting Jobs, the [Paperspace CLI](../get-started/install-the-cli.md), or you can clone a Public Job. 
 
 #### Optional Job features
 

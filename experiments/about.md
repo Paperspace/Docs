@@ -8,11 +8,11 @@ Experiments are intended to be used for intensive computational tasks like neura
 
 Experiments can be run from the **Experiment Builder** web interface, the **GradientCI** bot, or the **CLI**. 
 
-{% page-ref page="experiment-builder-interface.md" %}
+{% page-ref page="run-experiments-ui.md" %}
 
 {% page-ref page="../projects/gradientci.md" %}
 
-{% page-ref page="run-experiments.md" %}
+{% page-ref page="run-experiments-cli.md" %}
 
 ## Experiment Types
 

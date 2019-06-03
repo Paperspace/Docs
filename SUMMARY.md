@@ -56,8 +56,8 @@
 ## Experiments
 
 * [About](experiments/about.md)
-* [Run Experiments from the UI](experiments/experiment-builder-interface.md)
-* [Run Experiments from the CLI](experiments/run-experiments.md)
+* [Run Experiments from the UI](experiments/run-experiments-ui.md)
+* [Run Experiments from the CLI](experiments/run-experiments-cli.md)
 * [Hyperparameter Tuning](experiments/hyperparameters.md)
 
 ## Models
