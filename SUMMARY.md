@@ -37,6 +37,14 @@
 * [Clear](projects/clear.md)
 * [Show](projects/show.md)
 
+## Experiments
+
+* [About](experiments/about.md)
+* [Run Experiments from the UI](experiments/run-experiments-ui.md)
+* [Run Experiments from the CLI](experiments/run-experiments-cli.md)
+* [Multi-node Training](experiments/multi-node-training.md)
+* [Hyperparameter Tuning](experiments/hyperparameters.md)
+
 ## Jobs
 
 * [About](jobs/about.md)
@@ -53,14 +61,6 @@
   * [System Metrics](jobs/job-metrics/system-metrics.md)
   * [Custom Metrics](jobs/job-metrics/custom-metrics.md)
 * [Public Jobs](jobs/public-jobs.md)
-
-## Experiments
-
-* [About](experiments/about.md)
-* [Run Experiments from the UI](experiments/run-experiments-ui.md)
-* [Run Experiments from the CLI](experiments/run-experiments-cli.md)
-* [Hyperparameter Tuning](experiments/hyperparameters.md)
-* [Multi-node Training](experiments/multi-node-training.md)
 
 ## Models
 
