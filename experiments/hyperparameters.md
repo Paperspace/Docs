@@ -19,7 +19,7 @@ In the Python script file you configure as your `command`, specify the domain of
 {% code-tabs %}
 {% code-tabs-item title="main.py" %}
 ```python
-from paperspace-sdk import hyper_tune
+from gradient-sdk import hyper_tune
 from .model import train_model
 hparam_def = {
         'dense_len': 8 + hp.randint('dense_len', 120),

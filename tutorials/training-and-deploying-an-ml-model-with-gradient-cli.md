@@ -45,10 +45,8 @@ source gradient/bin/activate
 ### **Install the CLI**
 
 ```bash
-pip install -U paperspace
+pip install -U gradient
 ```
-
-**Note: Although the CLI package is called "paperspace",** _**currently**_ **you run it locally using the command `paperspace-python`, which is installed as part of the package.**
 
 Once you’ve created a Paperspace account and installed the CLI, you’ll next need to obtain an API key. Your API key will allow you to access the Gradient features from the command line. Each API key has an API Token name associated with it.
 
@@ -127,7 +125,7 @@ We are ready to kick off the training experiment on Gradient 🚀 Run the below 
 The location `/storage` maps to Gradient persistent storage location. Anything stored at this location will be available even after the experiment is terminated. By storing the _.pkl_ file at `/storage`, we will be able to access it from the model serving experiment that exposes the REST endpoint.
 
 ```bash
-paperspace-python experiments createAndStart singlenode \
+gradient experiments createAndStart singlenode \
 --name train \
 --projectId prj0ztwij \
 --container janakiramm/python:3 \
@@ -201,7 +199,7 @@ Unlike the previous experiment, this wouldn’t get terminated unless it is manu
 Let’s go ahead and submit the experiment to Gradient.
 
 ```text
-paperspace jobs create \
+gradient jobs create \
 --container janakiramm/python:3 \
 --machineType C2 \
 --ports 8080:8080 \
@@ -217,7 +215,7 @@ Hit _Ctrl+C_ to get back to the command prompt. Don’t worry! this doesn’t te
 Let’s explore the experiment details with the below command:
 
 ```bash
-paperspace jobs list
+gradient jobs list
 ```
 
 Make a note of the _fqdn_ parameter mentioned in the output. We need that to access the REST endpoint. Since we are using the _jq_ utility, we can also grab the _fqdn_ with a simple command.  
@@ -235,9 +233,9 @@ Congratulations! You have successfully completed the end-to-end workflow involve
 Let’s do the clean up by stopping and destroying the experiment.
 
 ```bash
-export JOB_ID=`paperspace jobs list | jq .[].id`
-paperspace jobs stop $JOB_ID
-paperspace jobs destroy $JOB_ID
+export JOB_ID=`gradient jobs list | jq .[].id`
+gradient jobs stop $JOB_ID
+gradient jobs destroy $JOB_ID
 ```
 
 ## Summary
