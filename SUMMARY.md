@@ -60,6 +60,7 @@
 * [Run Experiments from the UI](experiments/run-experiments-ui.md)
 * [Run Experiments from the CLI](experiments/run-experiments-cli.md)
 * [Hyperparameter Tuning](experiments/hyperparameters.md)
+* [Multi-node Training](experiments/multi-node-training.md)
 
 ## Models
 
