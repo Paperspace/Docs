@@ -7,7 +7,7 @@ Show job information for the job with the given id.
 ## Example Use
 
 ```text
-$ gradient jobs show --jobId "j123abc"
+$ paperspace jobs show --jobId "j123abc"
 ```
 
 ### **Properties**

@@ -7,7 +7,7 @@ List information about all jobs available to either the current authenticated us
 ## Example Use
 
 ```text
-$ gradient jobs list --project "MyProject" --state Running --summary
+$ paperspace jobs list --project "MyProject" --state Running --summary
 ```
 
 ### **Properties**

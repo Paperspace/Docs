@@ -7,7 +7,7 @@ Stop an individual job. If the job is already stopped, this action is a no-op. I
 ## Example Use
 
 ```text
-$ gradient jobs stop --jobId "j123abc"
+$ paperspace jobs stop --jobId "j123abc"
 ```
 
 ### **Properties**

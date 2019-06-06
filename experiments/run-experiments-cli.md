@@ -11,7 +11,7 @@ Once you have the CLI installed, use the alias `paperspace-python` plus any furt
 Note that you can use the `--help` option at any time to reveal information in your terminal about the current command you wish to use. Alternately, if you simply try to run a command, the CLI will prompt you for additional subcommands that you may be intending to use, as well as required options that are missing from your command.
 
 ```bash
-Usage: gradient [OPTIONS] COMMAND [ARGS]...
+Usage: paperspace-python [OPTIONS] COMMAND [ARGS]...
 
 Options:
   --help  Show this message and exit.
@@ -39,11 +39,11 @@ For programmatic use of the CLI, there is the `create` command, which simply cre
 Alternately, for more interactive use of the CLI, there is `createAndStart`, which allows you to both create and automatically start an experiment with one command. With this command, logs will automatically stream once the experiment has been created and started.
 
 ```bash
-gradient experiments create singlenode --help
-Usage: gradient experiments create singlenode [OPTIONS]
+paperspace-python experiments create singlenode --help
+Usage: paperspace-python experiments create singlenode [OPTIONS]
 
-gradient experiments create multinode --help
-Usage: gradient experiments create multinode [OPTIONS]
+paperspace-python experiments create multinode --help
+Usage: paperspace-python experiments create multinode [OPTIONS]
 ```
 
 ### Creating a singlenode experiment using the CLI
@@ -51,7 +51,7 @@ Usage: gradient experiments create multinode [OPTIONS]
 The following command creates and starts a singlenode experiment called `singleEx` and places it within the Gradient Project identified by the `--projectId` option.  \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
 
 ```bash
-gradient experiments createAndStart singlenode \
+paperspace-python experiments createAndStart singlenode \
   --projectId <your project id> \
   --name singleEx \
   --experimentEnv "{\"EPOCHS_EVAL\":5,\"TRAIN_EPOCHS\":10,\"MAX_STEPS\":1000,\"EVAL_SECS\":10}" \
@@ -74,7 +74,7 @@ For more information about this sample experiment see the README in the mnist-sa
 The following command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project identified by the `--projectId` option.  \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
 
 ```bash
-gradient experiments createAndStart multinode \
+paperspace-python experiments createAndStart multinode \
   --name multiEx \
   --projectId <your project id> \
   --experimentType GRPC \
@@ -90,7 +90,7 @@ gradient experiments createAndStart multinode \
   --modelType Tensorflow
 ```
 
-To run this command substitute an existing project ID for &lt;your project id&gt;.  You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value.  You can also get a list of existing projects and their IDs from the command line using the command `gradient projects list`.
+To run this command substitute an existing project ID for &lt;your project id&gt;.  You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value.  You can also get a list of existing projects and their IDs from the command line using the command `paperspace-python projects list`.
 
 The command above specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server.
 
@@ -132,7 +132,7 @@ A container, machine type, and command are required.
 
 Optionally a Docker registry username and password can be provided for accessing private docker registry container images via the `--registryUsername` and `--registryPassword` options.
 
-Also, using the `--containerUser` option, you can specify a UNIX user name to be used as the UNIX identity for running the specified command in the container.  If no `containerUser`  is specified, the user will default to 'root' in the container.  This is useful when running a public container image with a different expected user, or when building a container image from a Dockerfile.
+Also, using the `--containerUser` option, you can specify a UNIX user name to be used as the UNIX identity for running the specified command in the container.  If no containerUser  is specified, the user will default to 'root' in the container.  This is useful when running a public container image with a different expected user, or when building a container image from a Dockerfile.
 
 ## Options specific to multinode experiments
 

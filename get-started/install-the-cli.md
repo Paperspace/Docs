@@ -51,19 +51,19 @@ source /path/to/new/virtual/environment/bin/activate
 #### **Using pip to install the latest stable release** 
 
 ```bash
-pip install -U gradient
+pip install -U paperspace
 ```
 
 #### **Using conda to install the latest stable release**
 
 ```bash
-conda install -c paperspace gradient
+conda install -c paperspace paperspace
 ```
 
 **Using pip to install the latest prerelease**
 
 ```text
-pip install -U --pre gradient
+pip install -U --pre paperspace
 ```
 
 **Note: Although the CLI package is called "paperspace",** _**currently**_ **you run it locally using the command `paperspace-python`, which is installed as part of the package.**
@@ -75,13 +75,13 @@ You can either stash your API key on your computer or include your API key on ea
 ### Set your active API key
 
 ```bash
-gradient apiKey XXXXXXXXXXXXXXXXXXX
+paperspace-python apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
 #### Alternative: Include your API key for each command
 
 ```bash
-gradient experiments createAndStart ... --apiKey XXXXXXXXXXXXXXXXXXX
+paperspace-python experiments createAndStart ... --apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
 ## Obtaining an API key

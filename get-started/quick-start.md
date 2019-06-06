@@ -37,7 +37,7 @@ The following command will work and will create and start an Experiment that wil
 **Note:** _Currently_, we recommend adding your API Key as an option.
 
 ```bash
-gradient experiments createAndStart singlenode --projectId <your-project-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspaceUrl none --apiKey <your-api-key>
+paperspace-python experiments createAndStart singlenode --projectId <your-project-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspaceUrl none --apiKey <your-api-key>
 ```
 
 Your commands will look similar. Note that you can also create `multi-node`Experiments, and you can use the `create` command to simply create Experiments that can be started later.

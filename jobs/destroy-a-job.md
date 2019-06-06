@@ -7,7 +7,7 @@ Destroy the job with the given id. When this action is performed, the job is imm
 ## Example Use
 
 ```text
-$ gradient jobs destroy --jobId "j123abc"
+$ paperspace jobs destroy --jobId "j123abc"
 ```
 
 ### **Properties**
