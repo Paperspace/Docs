@@ -16,5 +16,3 @@ $ gradient jobs destroy --jobId "j123abc"
 | :--- | :--- | :--- |
 | `jobId` | string | The id of the job to destroy |
 
-
-

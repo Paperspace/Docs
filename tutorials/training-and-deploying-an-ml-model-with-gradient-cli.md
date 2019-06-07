@@ -24,7 +24,7 @@ Once you’ve created your account, install the Gradient CLI.
 
 ### **Creating a virtual environment \(optional\)**
 
-Creating a directory ****for my virtual environment:
+Creating a directory _\*\*_for my virtual environment:
 
 ```bash
 mkdir gradient
@@ -50,13 +50,13 @@ pip install -U gradient
 
 Once you’ve created a Paperspace account and installed the CLI, you’ll next need to obtain an API key. Your API key will allow you to access the Gradient features from the command line. Each API key has an API Token name associated with it.
 
-## Obtaining an API key <a id="obtaining-an-api-key"></a>
+## Obtaining an API key  <a id="obtaining-an-api-key"></a>
 
 First, sign in to your [Paperspace account](https://paperspace.com/). On the left of your home console, you should find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests. API keys section of the console:
 
 ![API keys section of the console \(https://www.paperspace.com/console/account/api\)](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LHZRFUkajubOAmgu6Rd%2F-LdfHAvW1SCTEgQCIMBL%2F-LdfHBpYjeIWaedlGyv4%2Fimage.png?alt=media&token=2213be47-bdb4-4cee-a592-b8cc904eb01c)
 
-### Set your active API key <a id="set-your-active-api-key"></a>
+### Set your active API key  <a id="set-your-active-api-key"></a>
 
 ```text
 paperspace-python apiKey XXXXXXXXXXXXXXXXXXX
@@ -70,7 +70,7 @@ Let’s take a minute to get familiar with the dataset. To keep this really simp
 
 ![](https://lh4.googleusercontent.com/3itUeDXAUr6skoWDtEhtWFnlFlxZexkEhM-r9uk54n2awZkfcamZtr_IA9NCBPYA8yQ9cft8U-AyHjMASir0k6d0e-rkdH-oJAtuJIYkwzo-Hhiflctfm0gOZNEvPVFANlODg-ie)
 
-The dataset, _sal.csv_, is available in the _data_ folder of the [GitHub](https://github.com/janakiramm/Salary) repo.  Clone the repo to your local machien and open it in your favorite text editor to explore the data.
+The dataset, _sal.csv_, is available in the _data_ folder of the [GitHub](https://github.com/janakiramm/Salary) repo. Clone the repo to your local machien and open it in your favorite text editor to explore the data.
 
 In the _train_ directory, you’ll find _train.py_, which is responsible for generating the model by applying linear regression to the dataset.
 
@@ -134,7 +134,7 @@ gradient experiments createAndStart singlenode \
 --workspaceUrl https://github.com/janakiramm/Salary
 ```
 
-This command does quite a bit of heavy lifting for us.  It schedules the training experiment in one of the chosen machine types and kicks off the training process.
+This command does quite a bit of heavy lifting for us. It schedules the training experiment in one of the chosen machine types and kicks off the training process.
 
 Let’s analyze the steps taken by Gradient to finish the experiment.
 
@@ -176,14 +176,13 @@ def index():
 
 @app.route('/sal/<int:x>', methods=['GET'])
 def predict(x):
-	loaded_model=joblib.load(filename)
-	y=loaded_model.predict([[x]])[0]
-	sal=jsonify({'salary': round(y,2)})
-	return sal
+    loaded_model=joblib.load(filename)
+    y=loaded_model.predict([[x]])[0]
+    sal=jsonify({'salary': round(y,2)})
+    return sal
 
 if __name__ == '__main__':
       app.run(host='0.0.0.0', port=8080)
-
 ```
 
 This is a standard Flask web server listening on port 8080. It exposes `/sal` endpoint which takes the number of years of experience and returns the predicted salary.
@@ -206,8 +205,6 @@ gradient jobs create \
 --command 'pip install flask && python deploy/infer.py -m /storage/salary/model.pkl'
 ```
 
-
-
 The logs shown by the CLI confirms that the web server is up and running. Before we can access the endpoint, we need to get the DNS name of the experiment.
 
 Hit _Ctrl+C_ to get back to the command prompt. Don’t worry! this doesn’t terminate the experiment but only exits the CLI.
@@ -218,7 +215,7 @@ Let’s explore the experiment details with the below command:
 gradient jobs list
 ```
 
-Make a note of the _fqdn_ parameter mentioned in the output. We need that to access the REST endpoint. Since we are using the _jq_ utility, we can also grab the _fqdn_ with a simple command.  
+Make a note of the _fqdn_ parameter mentioned in the output. We need that to access the REST endpoint. Since we are using the _jq_ utility, we can also grab the _fqdn_ with a simple command.
 
 $ export GRAD\_HOST=\`paperspace jobs list \| jq -r .\[\].fqdn\`
 

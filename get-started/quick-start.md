@@ -14,7 +14,7 @@ Now you can create Notebooks, Jobs, Projects, Experiments, and more!
 
 ## Create a Notebook
 
-Notebooks can be created by clicking _Create Notebook_ button on the Notebooks tab. You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own.  See more info [here](../notebooks/about.md).
+Notebooks can be created by clicking _Create Notebook_ button on the Notebooks tab. You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own. See more info [here](../notebooks/about.md).
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
@@ -46,9 +46,9 @@ These Experiments will be uploaded to our cluster of machines. Behind the scenes
 
 ### Monitor your Experiment progress
 
-Experiments states transition from **Queued** &gt; **Pending** &gt; **Running**. ****Once the Experiment is in the **Running** state, you can watch your Experiment run in the CLI and web UI. An Experiment can complete with the following states: **Success**, **Cancelled**, **Error**, or **Failed**.
+Experiments states transition from **Queued** &gt; **Pending** &gt; **Running**. **\*\*Once the Experiment is in the** Running **state, you can watch your Experiment run in the CLI and web UI. An Experiment can complete with the following states:** Success**,** Cancelled**,** Error**, or** Failed\*\*.
 
- Congratulations! You ran your first Experiment on Gradientº 🚀
+Congratulations! You ran your first Experiment on Gradientº 🚀
 
 Experiments have a ton of functionality that this quick example doesn't cover. To learn more, view the [Experiments section](../experiments/about.md).
 

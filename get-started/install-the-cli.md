@@ -48,7 +48,7 @@ source /path/to/new/virtual/environment/bin/activate
 
 ## Install the CLI
 
-#### **Using pip to install the latest stable release** 
+#### **Using pip to install the latest stable release**
 
 ```bash
 pip install -U gradient
@@ -65,8 +65,6 @@ conda install -c paperspace gradient
 ```text
 pip install -U --pre gradient
 ```
-
-**Note: Although the CLI package is called "paperspace",** _**currently**_ **you run it locally using the command `paperspace-python`, which is installed as part of the package.**
 
 ## Connecting your account
 
