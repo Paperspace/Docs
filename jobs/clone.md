@@ -5,7 +5,7 @@ Clone an existing job and queue the cloned copy to run.
 ## Example Use
 
 ```text
-$ paperspace jobs clone --jobId "j123abc"
+$ gradient jobs clone --jobId "j123abc"
 ```
 
 ### **Properties**
