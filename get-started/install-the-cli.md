@@ -79,7 +79,7 @@ gradient apiKey XXXXXXXXXXXXXXXXXXX
 #### Alternative: Include your API key for each command
 
 ```bash
-gradient experiments createAndStart ... --apiKey XXXXXXXXXXXXXXXXXXX
+gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
 ## Obtaining an API key
