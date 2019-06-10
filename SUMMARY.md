@@ -80,7 +80,7 @@
 
 ## Python Client
 
-* [Paperspace Python](python-client/paperspace-python.md)
+* [Gradient CLI](python-client/paperspace-python.md)
 
 ## Gradient Private Cloud
 

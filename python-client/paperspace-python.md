@@ -1,18 +1,18 @@
-# Paperspace Python
+# Gradient CLI
 
-## Paperspace Python
+## Gradient CLI
 
-Import Paperspace directly into your python project:
+Import Gradient directly into your python project:
 
 ```text
 # within your python file at the top
-import paperspace
+import gradient
 ```
 
-Using paperspace-python:
+Using the `gradient` cli:
 
 ```python
-paperspace-python run [options] [[-m] <script> [args] | -c "python code" | --command "shell cmd"]
+gradient run [options] [[-m] <script> [args] | -c "python code" | --command "shell cmd"]
   options:
   [--python 2|3]
   [--init [<init.sh>]]
