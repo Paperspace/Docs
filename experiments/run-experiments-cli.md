@@ -51,7 +51,7 @@ Usage: gradient experiments create multinode [OPTIONS]
 The following command creates and starts a singlenode experiment called `singleEx` and places it within the Gradient Project identified by the `--projectId` option. \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
 
 ```bash
-gradient experiments createAndStart singlenode \
+gradient experiments run singlenode \
   --projectId <your project id> \
   --name singleEx \
   --experimentEnv "{\"EPOCHS_EVAL\":5,\"TRAIN_EPOCHS\":10,\"MAX_STEPS\":1000,\"EVAL_SECS\":10}" \
@@ -74,7 +74,7 @@ For more information about this sample experiment see the README in the mnist-sa
 The following command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project identified by the `--projectId` option. \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
 
 ```bash
-gradient experiments createAndStart multinode \
+gradient experiments run multinode \
   --name multiEx \
   --projectId <your project id> \
   --experimentType GRPC \

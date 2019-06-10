@@ -125,7 +125,7 @@ We are ready to kick off the training experiment on Gradient 🚀 Run the below 
 The location `/storage` maps to Gradient persistent storage location. Anything stored at this location will be available even after the experiment is terminated. By storing the _.pkl_ file at `/storage`, we will be able to access it from the model serving experiment that exposes the REST endpoint.
 
 ```bash
-gradient experiments createAndStart singlenode \
+gradient experiments run singlenode \
 --name train \
 --projectId prj0ztwij \
 --container janakiramm/python:3 \

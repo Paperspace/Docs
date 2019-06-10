@@ -95,7 +95,7 @@ Everytime you create a hyperparameter tuning experiment we create at least 3 job
 Assuming that you have configured an API Key for the paperspace cli enter:
 
 ```text
-paperspace-python hyperparameters createAndStart \
+paperspace-python hyperparameters run \
   --name HyperoptKerasExperimentCLI1 \
   --projectId <your-project-id> \
   --tuningCommand 'make run_hyperopt' \
