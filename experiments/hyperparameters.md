@@ -3,7 +3,7 @@
 ## About
 
 {% hint style="warning" %}
-This feature is in beta. The documentation is not yet complete.
+This feature is in beta. 
 {% endhint %}
 
 Gradient provides users the ability to tune hyperparameters for their machine learning models, harnessing the power of our cloud to explore different model configurations and discover an optimal model.
@@ -95,7 +95,7 @@ Everytime you create a hyperparameter tuning experiment we create at least 3 job
 Assuming that you have configured an API Key for the paperspace cli enter:
 
 ```text
-paperspace-python hyperparameters run \
+gradient hyperparameters run \
   --name HyperoptKerasExperimentCLI1 \
   --projectId <your-project-id> \
   --tuningCommand 'make run_hyperopt' \
