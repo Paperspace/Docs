@@ -18,7 +18,11 @@ It is thus a good method for meta-optimizing a neural network. Whereas a neural 
 
 This kind of Oriented Random Search is Hyperopt's strength, as opposed to a simpler Grid Search where hyperparameters are pre-established with fixed-step increases. Random Search for Hyperparameter Optimization has proven to be an effective search technique. The paper about this technique sits among the most cited deep learning papers. In summary, it is more efficient to randomly search through values and intelligently narrow the search space, rather than looping on fixed sets of hyperparameter values.
 
-If you want to learn more about Hyperopt, you'll probably want to [watch this video](https://www.youtube.com/watch?v=Mp1xnPfE4PY), made by the creator of Hyperopt
+If you want to learn more about Hyperopt, you'll probably want to watch the video below, made by the creator of Hyperopt
+
+{% embed url="https://www.youtube.com/watch?v=Mp1xnPfE4PY" %}
+
+
 
 #### How to define Hyperopt parameters
 
