@@ -6,6 +6,10 @@ description: How to install the Paperspace CLI
 
 ## Installation
 
+{% embed url="https://youtu.be/t1-PqoeqFuo" %}
+
+\*\*\*\*
+
 The Paperspace CLI is available on [pypi](https://pypi.org/project/paperspace/) and [anaconda](https://anaconda.org/paperspace/paperspace) and works on Windows, MacOS, and Linux.
 
 The CLI requires **Python 2.7** or **Python 3.4+**. Be sure to use a compatible version of **pip** depending on your Python version.
