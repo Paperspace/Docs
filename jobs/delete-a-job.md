@@ -1,4 +1,4 @@
-# Destroy a Job
+# Delete a Job
 
 ## About
 
