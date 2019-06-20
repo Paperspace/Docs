@@ -75,7 +75,8 @@
 
 ## Python Client
 
-* [Gradient CLI](python-client/paperspace-python.md)
+* [Gradient CLI](python-client/paperspace-python/README.md)
+  * [Release Notes](python-client/paperspace-python/release-notes.md)
 
 ## Gradient Private Cloud
 
