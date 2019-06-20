@@ -1,5 +1,7 @@
 # Create a Job
 
+### Job Parameters
+
 <table>
   <thead>
     <tr>
@@ -10,19 +12,22 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">--name</td>
+      <td style="text-align:left"><code>name</code>
+      </td>
       <td style="text-align:left">[required]</td>
       <td style="text-align:left">Job name</td>
     </tr>
     <tr>
-      <td style="text-align:left">--machineType</td>
+      <td style="text-align:left"><code>machineType</code>
+      </td>
       <td style="text-align:left">K80</td>
       <td style="text-align:left">An optional machine type to run the job on: either &apos;GPU+&apos;, &apos;P4000&apos;,
         &apos;P5000&apos;, &apos;P6000&apos;, &apos;V100&apos;, &apos;K80&apos;,
         &apos;P100&apos;, or &apos;TPU&apos;.container</td>
     </tr>
     <tr>
-      <td style="text-align:left">--container</td>
+      <td style="text-align:left"><code>container</code>
+      </td>
       <td style="text-align:left">paperspace/tensorflow-python</td>
       <td style="text-align:left">A reference to a docker image in a public or private docker registry,
         or a container name provided by Paperspace. Docker image repository references
@@ -33,12 +38,14 @@
         only provided as part of various Gradient tutorials and samples.)</td>
     </tr>
     <tr>
-      <td style="text-align:left">--command</td>
+      <td style="text-align:left"><code>command</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Job command/entrypoint</td>
     </tr>
     <tr>
-      <td style="text-align:left">--ports</td>
+      <td style="text-align:left"><code>ports</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">An optional list of port mappings to open on the job cluster machine while
         the job is running. The port mappings are specified as &apos;XXXX:YYYY&apos;
@@ -47,32 +54,38 @@
         numbers must be greater than 1023. Note: only /tcp protocol usage is supported.</td>
     </tr>
     <tr>
-      <td style="text-align:left">--workspace</td>
+      <td style="text-align:left"><code>workspace</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Path to workspace directory</td>
     </tr>
     <tr>
-      <td style="text-align:left">--workspaceArchive</td>
+      <td style="text-align:left"><code>workspaceArchive</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Path to workspace archive</td>
     </tr>
     <tr>
-      <td style="text-align:left">--workspaceUrl</td>
+      <td style="text-align:left"><code>workspaceUrl</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Project git repository url</td>
     </tr>
     <tr>
-      <td style="text-align:left">--workingDirectory</td>
+      <td style="text-align:left"><code>workingDirectory</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Working directory for the experiment</td>
     </tr>
     <tr>
-      <td style="text-align:left">--experimentId</td>
+      <td style="text-align:left"><code>experimentId</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Experiment Id</td>
     </tr>
     <tr>
-      <td style="text-align:left">--jobEnv</td>
+      <td style="text-align:left"><code>jobEnv</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>Environmental variables in JSON String Format. Example:</p>
@@ -81,23 +94,27 @@
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">--project</td>
+      <td style="text-align:left"><code>project</code>
+      </td>
       <td style="text-align:left">$CWD</td>
       <td style="text-align:left">The name of the project for this job. If not provided, this is taken from
         the .ps_project/config.json file, or the current directory name.</td>
     </tr>
     <tr>
-      <td style="text-align:left">--projectID</td>
+      <td style="text-align:left"><code>projectID</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Project ID</td>
     </tr>
     <tr>
-      <td style="text-align:left">--apiKey</td>
+      <td style="text-align:left"><code>apiKey</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">API key to use this time only</td>
     </tr>
     <tr>
-      <td style="text-align:left">--ignoreFiles</td>
+      <td style="text-align:left"><code>ignoreFiles</code>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Ignore certain files from uploading</td>
     </tr>

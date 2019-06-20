@@ -1,5 +1,7 @@
 # List your Jobs
 
+### Parameters
+
 | Name | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
 | `project` | string | &lt;optional&gt; | Optional project to match on. If neither project nor projectId are provided, this is taken from the .ps\_project/config.json file, or the current directory name. Specify 'all' to list jobs for all projects associated with the user or team if the user is on a team. |
@@ -28,6 +30,5 @@ $ gradient jobs list --project "MyProject" --state Running --summary
 | `container` | string | &lt;optional&gt; | Optional container to match on |
 | `command` | string | &lt;optional&gt; | Optional command to match on |
 | `workspace` | string | &lt;optional&gt; | Optional workspace path to match on. Note: the original workspace path will be modified on upload to point to a temporary location. |
-| `dataset` | string | &lt;optional&gt; | Optional dataset to match on |
 | `dataset` | string | &lt;optional&gt; | Optional dataset to match on |
 

@@ -59,7 +59,7 @@ First, sign in to your [Paperspace account](https://paperspace.com/). On the lef
 ### Set your active API key  <a id="set-your-active-api-key"></a>
 
 ```text
-paperspace-python apiKey XXXXXXXXXXXXXXXXXXX
+gradient apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
 ## Creating a Gradient Experiment to Train the Model
