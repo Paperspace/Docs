@@ -4,9 +4,9 @@ Gradient supports GitHub-enabled [GradientCI Projects](../projects/gradientci.md
 
 GradientCI Projects allow you to create and run Experiments automatically based on code pushes, but often you will want to manually create Experiments. To do this, you can use Experiment Builder in the GUI, or you can use the CLI.
 
-The Gradient CLI \(currently called "paperspace-python"\) enables you to run experiments manually and programmatically from your command line for maximum flexibility.
+The Gradient CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.
 
-Once you have the CLI installed, use the alias `paperspace-python` plus any further commands you wish to run.
+Once you have the CLI installed, use the alias `gradient` plus any further commands you wish to run.
 
 Note that you can use the `--help` option at any time to reveal information in your terminal about the current command you wish to use. Alternately, if you simply try to run a command, the CLI will prompt you for additional subcommands that you may be intending to use, as well as required options that are missing from your command.
 

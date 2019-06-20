@@ -32,10 +32,9 @@
 ## Projects
 
 * [About](projects/about.md)
-* [Create a Project](projects/create-a-project.md)
+* [Create a Project](projects/create-a-project/README.md)
+  * [Create a Project Using CLI](projects/create-a-project/create-a-project-using-cli.md)
 * [GradientCI](projects/gradientci.md)
-* [Clear](projects/clear.md)
-* [Show](projects/show.md)
 
 ## Experiments
 
