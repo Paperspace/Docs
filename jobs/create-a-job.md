@@ -5,7 +5,7 @@
 Create a new Paperspace job, and tail its log output.
 
 {% hint style="info" %}
-**Note:** if a project is not defined for the current working directory, and you are running in command line mode, a project configuration settings file will be created. Use`--init false` or specify`--project <projectname>`to override this behavior.
+**Note:** if a project is not defined for the current working directory, and you are running in command line mode, a project configuration settings file will be created. Use`--init false` or specify`--project <your-project-name>`to override this behavior.
 {% endhint %}
 
 ## Syntax
