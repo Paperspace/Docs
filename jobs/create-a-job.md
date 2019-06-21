@@ -5,7 +5,7 @@
 Create a new Paperspace job, and tail its log output.
 
 {% hint style="info" %}
-**Note:** if a project is not defined for the current working directory, and you are running in command line mode, a project configuration settings file will be created. Use`--init false` or specify`--project [projectname]`to override this behavior.
+**Note:** if a project is not defined for the current working directory, and you are running in command line mode, a project configuration settings file will be created. Use`--init false` or specify`--project <projectname>`to override this behavior.
 {% endhint %}
 
 ## Syntax
@@ -24,24 +24,13 @@ $ gradient jobs create <namespace> <command> [options...]
 
 ```text
 $ gradient jobs create \
+    --name "my job" \
     --container "http://dockerhub.com/mycontainer" \
     --machineType "P5000" \
     --command "/paperspace/run.sh"
 ```
 
 ## Job Parameters Complete List
-
-**Properties**
-
-| Name | Type | Attributes | Description |
-| :--- | :--- | :--- | :--- |
-
-
-| `container` | string | &lt;optional&gt; | A reference to a docker image in a public or private docker registry, or a container name provided by Paperspace. Docker image repository references must be in lowercase and may include a tag and a hostname prefix followed by a slash; if committed the hostname defaults to that of the public Docker Hub registry. An example docker image reference: `docker.io/mynamespace/myimage:mytag`. A container name may be mixed case. \(Designated container names are currently only provided as part of various Gradient tutorials and samples.\) |
-| :--- | :--- | :--- | :--- |
-
-
-### Job Parameters
 
 <table>
   <thead>
@@ -160,10 +149,7 @@ $ gradient jobs create \
       <td style="text-align:left">Ignore certain files from uploading</td>
     </tr>
   </tbody>
-</table>
-
-
-{% hint style="info" %}
+</table>{% hint style="info" %}
 Environmental variables are available for use within the context of your job. The following host config options are currently exposed within the container:
 
 `$PS_HOST_PUBLIC_IP_ADDRESS` - the public IP address of the host machine running the job
@@ -199,7 +185,7 @@ The following new job fields are available:
 For example, to run a job that only builds a container image and pushes to a remote registry:
 
 ```text
-gradient jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly true  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
+gradient jobs create --name "my job" --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly true  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
 ```
 
 Note that if you selected `buildOnly` you should supply always a registry target and credentials.
@@ -207,16 +193,16 @@ Note that if you selected `buildOnly` you should supply always a registry target
 To run a job that builds a container image, pushes to a remote registry, and then runs a command inside an instance of the running container:
 
 ```text
-gradient jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
+gradient jobs create --name "my job" --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
 ```
 
 To run a job that builds the container image and then runs an instace of the container, without pushing to a remote registry:
 
 ```text
-gradient jobs create --apiKey XXXXXXXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"
+gradient jobs create --name "my job" --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"
 ```
 
 {% hint style="info" %}
-Note: commands run during the build step from the Dockerfile, like CMD \["command", "arg1"...\] are run inside the image layers as it's being built. Once the container image is ready to run the --command argument is used to determine what command to run against the built image.
+Note: commands run during the build step from the Dockerfile, like CMD \["command", "arg1"...\] are run inside the image layers as it's being built. Once the container image is ready to run, the `--command` argument is used to determine what command to run against the built image.
 {% endhint %}
 
