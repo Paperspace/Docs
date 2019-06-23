@@ -17,7 +17,8 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       <td style="text-align:left">
         <p><em><b>Fast.ai</b></em>
         </p>
-        <p>/datasets/fastai/</p>
+        <p><code>/datasets/fastai/</code>
+        </p>
       </td>
       <td style="text-align:left">Paperspace&apos;s Fast.ai template is built for getting up and running
         with the enormously popular <a href="http://www.fast.ai/">Fast.ai online MOOC called Practical Deep Learning for Coders</a>.</td>
@@ -29,7 +30,8 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       <td style="text-align:left">
         <p><em><b>CelebA</b></em>
         </p>
-        <p>/datasets/celebA/</p>
+        <p><code>/datasets/celebA/</code>
+        </p>
       </td>
       <td style="text-align:left">CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes
         dataset with more than 200K celebrity images, each with 40 attribute annotations.</td>
@@ -41,7 +43,8 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       <td style="text-align:left">
         <p><em><b>LSUN</b></em>
         </p>
-        <p>/datasets/lsun/</p>
+        <p><code>/datasets/lsun/</code>
+        </p>
       </td>
       <td style="text-align:left">Contains around one million labeled images for each of 10 scene categories
         and 20 object categories.</td>
@@ -56,7 +59,8 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       <td style="text-align:left">
         <p><em><b>MNIST</b></em>
         </p>
-        <p>/datasets/mnist/</p>
+        <p><code>/datasets/mnist/</code>
+        </p>
       </td>
       <td style="text-align:left">The MNIST database of handwritten digits, available from this page, has
         a training set of 60,000 examples, and a test set of 10,000 examples</td>
@@ -68,7 +72,8 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       <td style="text-align:left">
         <p><em><b>COCO</b></em>
         </p>
-        <p>/datasets/coco</p>
+        <p><code>/datasets/coco</code>
+        </p>
       </td>
       <td style="text-align:left">COCO is a large-scale object detection, segmentation, and captioning dataset.</td>
       <td
@@ -79,7 +84,8 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       <td style="text-align:left">
         <p><em><b>Selfie</b></em>
         </p>
-        <p>/datasets/selfie</p>
+        <p><code>/datasets/selfie</code>
+        </p>
       </td>
       <td style="text-align:left">Selfie dataset contains 46,836 selfie images annotated with 36 different
         attributes divided into several categories.</td>
@@ -90,7 +96,8 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       <td style="text-align:left">
         <p><em><b>StyleGan</b></em>
         </p>
-        <p>/datasets/stylegan</p>
+        <p><code>/datasets/stylegan</code>
+        </p>
       </td>
       <td style="text-align:left">StyleGan is a Style-Based Generator Architecture for Generative Adversarial
         Networks. This dataset allows for photographs of people to be produced
