@@ -17,7 +17,7 @@ Deploy any model as a high-performance, low-latency micro-service with a RESTful
 
 ## Current Capabilities
 
-* Support for any tensorflow model \(ONNX coming soon\)
+* Out-of-the-box integration with TensorFlow models, but can be easily extended to serve other types of models and data.\(ONNX coming soon\)
 * A variety of GPU & CPU SKUs to deploy to
 * Per Second Billing
 * Multi instance deployments with load balancing
