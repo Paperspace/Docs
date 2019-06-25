@@ -1,4 +1,4 @@
-# Creating Deployments from the CLI
+# Create a Deployment via the CLI
 
 Make sure you have the CLI installed as outlined here: [https://docs.paperspace.com/gradient/get-started/install-the-cli](https://docs.paperspace.com/gradient/get-started/install-the-cli). 
 

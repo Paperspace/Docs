@@ -2,7 +2,7 @@
 description: How to perform inference using a Deployment's TF Serving RESTful API
 ---
 
-# Deployed Model RESTful APIs
+# A Deployed Model's RESTful API
 
 When you specify the default Deployment type via `--deploymentType TFServing`, Gradient deploys your Model using a [TensorFlow ModelServer](https://www.tensorflow.org/tfx/guide/serving). This Deployment comes with a built-in RESTful API.
 

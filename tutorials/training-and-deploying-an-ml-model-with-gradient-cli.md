@@ -153,7 +153,7 @@ We are using a custom Docker container image with prerequisites such as NumPy, S
 
 ## Creating a Gradient Experiment to Deploy and Host the Model
 
-_Note: check out the_ [_Create a Deployment docs_](../deployments/create-a-deployment.md#create-a-deployment) _for a more up-to-date way to deploy your models using the newer first-class Deployments feature in Gradient. The following section describes a how to deploy models with Gradient using Jobs._
+_Note: check out the_ [_Create a Deployment docs_](../deployments/create-a-deployment-ui.md#create-a-deployment) _for a more up-to-date way to deploy your models using the newer first-class Deployments feature in Gradient. The following section describes a how to deploy models with Gradient using Jobs._
 
 We are now ready to host the trained model in a Gradient experiment that runs a Flask web server. The experiment loads the pickle file created and stored by the last experiment at the `/storage` location.
 
