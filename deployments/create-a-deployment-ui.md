@@ -68,7 +68,7 @@ The number of running instances and the instance count are visible as well.
 
 Congrats, you've created a Deployment and can perform inference!
 
-Learn more about a Deployment's RESTful API here.
+[Learn more about a Deployment's RESTful API here](deployment-restful-api.md).
 
 
 
