@@ -65,7 +65,12 @@
 ## Deployments
 
 * [About](deployments/about.md)
-* [Create a Deployment](deployments/create-a-deployment.md)
+* [Create a Deployment via the UI](deployments/create-a-deployment.md)
+* [Creating Deployments from the CLI](deployments/untitled.md)
+* [Using your deployed model for inference](deployments/using-your-deployed-model-for-inference.md)
+* [Optimizing Tensorflow models for inference](deployments/optimizing-tensorflow-models-for-inference.md)
+* [Import your model to gradient](deployments/import-your-model-to-gradient.md)
+* [Deployment States](deployments/deployment-states.md)
 
 ## Data
 

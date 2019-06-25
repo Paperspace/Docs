@@ -9,34 +9,20 @@ description: >-
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
-{% hint style="info" %}
-**Note:** Gradient Deployments are still in Beta. During the Beta period we do not recommend running mission-critical services. Additionally, API endpoints could be renamed/updated and there are certain restrictions placed on accounts. Learn more about restrictions below
-{% endhint %}
+\*\*\*\*
 
 ## Overview
 
 Deploy any model as a high-performance, low-latency micro-service with a RESTful API. Easily monitor, scale, and version deployments.  Deployments take a trained model and expose them as a persistent service at a known URI.
 
-## Current Limitations
+## Current Capabilities
 
-During the Beta period, Gradient Deployments have a number of restrictions.
+* Support for any tensorflow model \(ONNX coming soon\)
+* A variety of GPU & CPU SKUs to deploy to
+* Per Second Billing
+* Multi instance deployments with load balancing
+* Dedicated endpoint URI per deployment
+* Accessible via the CLI, Web UI or API
 
-* Teams are limited to a single running deployment. 
-* Only K80 and CPU nodes are supported.
-* The exposed endpoint URI is subject to change.
-* Billing for deployments is not currently enabled. You will not see Gradient Deployments on your invoice.
-
-## Deployment States
-
-Deployments go through a series of states. They are enumerated here:
-
-| ID | Name |
-| :--- | :--- |
-| 1 |  `Building`  |
-| 2 | `Provisioning` |
-| 3 | `Starting` |
-| 4 | `Running` |
-| 5 | `Stopping` |
-| 6 | `Stopped` |
-| 7 | `Error` |
+## 
 
