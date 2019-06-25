@@ -70,7 +70,7 @@ Let’s take a minute to get familiar with the dataset. To keep this really simp
 
 ![](https://lh4.googleusercontent.com/3itUeDXAUr6skoWDtEhtWFnlFlxZexkEhM-r9uk54n2awZkfcamZtr_IA9NCBPYA8yQ9cft8U-AyHjMASir0k6d0e-rkdH-oJAtuJIYkwzo-Hhiflctfm0gOZNEvPVFANlODg-ie)
 
-The dataset, _sal.csv_, is available in the _data_ folder of the [GitHub](https://github.com/janakiramm/Salary) repo. Clone the repo to your local machien and open it in your favorite text editor to explore the data.
+The dataset, _sal.csv_, is available in the _data_ folder of the [GitHub](https://github.com/janakiramm/Salary) repo. Clone the repo to your local machine and open it in your favorite text editor to explore the data.
 
 In the _train_ directory, you’ll find _train.py_, which is responsible for generating the model by applying linear regression to the dataset.
 
@@ -152,6 +152,8 @@ The output from Paperspace CLI confirms that the experiment has been successfull
 We are using a custom Docker container image with prerequisites such as NumPy, Scipy, Pandas, and Scikit-learn. This image was built from the official Python 3 Docker image.
 
 ## Creating a Gradient Experiment to Deploy and Host the Model
+
+_Note: check out the_ [_Create a Deployment docs_](../deployments/create-a-deployment.md#create-a-deployment) _for a more up-to-date way to deploy your models using the newer first-class Deployments feature in Gradient. The following section describes a how to deploy models with Gradient using Jobs._
 
 We are now ready to host the trained model in a Gradient experiment that runs a Flask web server. The experiment loads the pickle file created and stored by the last experiment at the `/storage` location.
 

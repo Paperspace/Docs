@@ -52,7 +52,7 @@ The following command creates and starts a singlenode experiment called `singleE
 
 ```bash
 gradient experiments run singlenode \
-  --projectId <your project id> \
+  --projectId <your-project-id> \
   --name singleEx \
   --experimentEnv "{\"EPOCHS_EVAL\":5,\"TRAIN_EPOCHS\":10,\"MAX_STEPS\":1000,\"EVAL_SECS\":10}" \
   --container tensorflow/tensorflow:1.13.1-gpu-py3 \
@@ -63,9 +63,9 @@ gradient experiments run singlenode \
   --modelPath /artifacts
 ```
 
-Note that `--modelPath /artifacts` is currently required for singlenode experiments if you need your model to appear under the Models tab so that you can deploy it.
+_Note: `--modelType Tensorflow` is currently required if you wish you create a Deployment from your model, since Deployments currently only use Tensorflow Serving to serve models. Also, `--modelPath /artifacts` is currently required for singlenode experiments if you need your model to appear in your Model Repository so that you can deploy it using Deployments._
 
-To run this command substitute an existing project ID for &lt;your project id&gt;. You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value. You can also get a list of existing projects and their IDs from the command line using the command `paperspace-python projects list`.
+To run this command substitute an existing project ID for &lt;your-project-id&gt;. You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value. You can also get a list of existing projects and their IDs from the command line using the command `gradient projects list`.
 
 For more information about this sample experiment see the README in the mnist-sample github repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
 
@@ -76,7 +76,7 @@ The following command creates and starts a multinode experiment called `multiEx`
 ```bash
 gradient experiments run multinode \
   --name multiEx \
-  --projectId <your project id> \
+  --projectId <your-project-id> \
   --experimentType GRPC \
   --workerContainer tensorflow/tensorflow:1.13.1-gpu-py3 \
   --workerMachineType K80 \
@@ -90,13 +90,15 @@ gradient experiments run multinode \
   --modelType Tensorflow
 ```
 
-To run this command substitute an existing project ID for &lt;your project id&gt;. You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value. You can also get a list of existing projects and their IDs from the command line using the command `gradient projects list`.
+_Note: `--modelType Tensorflow` is currently required if you wish you create a Deployment from your model, since Deployments currently only use Tensorflow Serving to serve models._
+
+To run this command substitute an existing project ID for &lt;your-project-id&gt;. You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value. You can also get a list of existing projects and their IDs from the command line using the command `gradient projects list`.
 
 The command above specifies the use of the gRPC framework and names the same Docker container, machine type, and programmatic command for both the 2 workers and the 1 parameter server.
 
 Finally, the command specifies the workspace to pull the Python script from as a public GitHub repository.
 
-For more information about this sample experiment see the README in the mnist-sample github repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
+For more information about this sample experiment see the README in the mnist-sample GitHub repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
 
 ## Options common to both singlenode and multinode experiments
 
