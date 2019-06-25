@@ -2,7 +2,7 @@
 
 ### Deployment States
 
-Deployments go through a series of states. They are enumerated here & are useful if querying the status of deployment via the API.
+Deployments go through a series of states. They are enumerated here & are useful if querying the status of a deployment via the API.
 
 | ID | Name |
 | :--- | :--- |

@@ -69,8 +69,8 @@
 * [Preparing Model for Deployment](deployments/preparing-model-for-deployment.md)
 * [Create a Deployment via the UI](deployments/create-a-deployment.md)
 * [Creating Deployments from the CLI](deployments/untitled.md)
-* [Deployed model RESTful APIs](deployments/using-your-deployed-model-for-inference.md)
-* [Optimizing Tensorflow models for inference](deployments/optimizing-tensorflow-models-for-inference.md)
+* [Deployed Model RESTful APIs](deployments/using-your-deployed-model-for-inference.md)
+* [Optimizing TensorFlow Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
 
 ## Data
