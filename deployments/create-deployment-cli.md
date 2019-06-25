@@ -1,67 +1,62 @@
 # Create a Deployment via the CLI
 
-Make sure you have the CLI installed as outlined here: [https://docs.paperspace.com/gradient/get-started/install-the-cli](https://docs.paperspace.com/gradient/get-started/install-the-cli). 
+To create Deployments from the CLI, be sure first to [install the CLI](https://docs.paperspace.com/gradient/get-started/install-the-cli).
 
-The gradient cli contains the following options for deployments: create, list, start, stop. Get access to this by typing the following. You can always get help for a particular command by appending --help
+The Gradient CLI contains the following subcommands for Deployments: `create`, `list`, `start`, `stop`. You can always see the available subcommands simply by entering `gradient deployments`, and you can always learn more about any command by appending `--help` to it.
 
-```text
-gradient deployments
-```
+### Available Deployments Commands
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-10.57.30-pm.png)
+![](../.gitbook/assets/screen-shot-2019-06-25-at-6.09.33-pm.png)
 
-#### gradient deployments create
+### Create a Deployment
 
-This creates a brand new deployment, requiring you to already have a model saved via running an experiment. Specify all of the following parameters \(the deployment type, the base image, the name, the machine type, the container image for serving along with the instance count.  
+To create a new Deployment, you must first [create a Model](../models/create-a-model.md). With a Model available, use the `create` subcommand and specify all of the following parameters: deployment type, base image, name, machine type, and container image for serving, as well as the instance count:
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-10.57.59-pm.png)
+![](../.gitbook/assets/screen-shot-2019-06-25-at-6.12.27-pm.png)
 
-A sample workflow to create the same deployment as in the UI example would be to run the following once you have your api key saved
-
-```text
-#get list of models & select 1 for deployment
-gradient models list
-```
+A sample command to create the same Deployment as in the [UI example](create-a-deployment-ui.md) would be:
 
 ```text
 gradient deployments create \
     --deploymentType TFServing \
-    --modelId [your-model-id] \
+    --modelId <your-model-id> \
     --name "Sample Model"
     --machineType K80
     --imageUrl tensorflow/serving:latest-gpu
     --instanceCount 2
 ```
 
-#### gradient deployments list
+To obtain your Model ID, you can use the command `gradient models list` and copy the target Model ID from your available Models.
 
-List deployments with optional filtering
+### List Deployments
 
-![](../.gitbook/assets/screen-shot-2019-06-25-at-2.59.35-pm.png)
+To list your Deployments with optional filtering, use the `list` subcommand:
 
-For example, to view all running deployments in your team
+![](../.gitbook/assets/screen-shot-2019-06-25-at-6.17.46-pm.png)
+
+For example, to view all running deployments in your team, run:
 
 ```text
 gradient list --state RUNNING
 ```
 
-#### gradient deployments start
+### Start a Deployment
 
-Start a previously created but inactive deployment by id
+To start a previously created but Stopped deployment by ID, use the `start` subcommand:
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-10.58.55-pm.png)
+![](../.gitbook/assets/screen-shot-2019-06-25-at-6.17.15-pm.png)
 
 ```text
-gradient deployments start --id [deployment-id]
+gradient deployments start --id <your-deployment-id>
 ```
 
-#### gradient deployments stop
+### Stop a Deployment
 
-Stop a active deployment by id
+To stop a Running deployment by ID, use the `stop` subcommand:
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-10.59.08-pm.png)
+![](../.gitbook/assets/screen-shot-2019-06-25-at-6.20.33-pm.png)
 
 ```text
-gradient deployments stop --id [deployment-id]
+gradient deployments stop --id <your-deployment-id>
 ```
 
