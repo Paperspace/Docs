@@ -1,4 +1,4 @@
-# Run Experiments from the CLI
+# Run Experiments via the CLI
 
 Gradient supports GitHub-enabled [GradientCI Projects](../projects/gradientci.md) and Standalone Projects, and these projects contain any Experiments that you create.
 

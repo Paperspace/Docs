@@ -1,4 +1,4 @@
-# Run Experiments from the UI
+# Run Experiments via the UI
 
 ### Experiment Builder: A GUI for Running Single-Node Experiments <a id="h_15322951121524587990731"></a>
 

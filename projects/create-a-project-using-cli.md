@@ -1,4 +1,4 @@
-# Create a Project Using CLI
+# Create a Project via the CLI
 
 {% hint style="info" %}
  This feature is currently only supported in gradient &gt; 0.2.2
@@ -12,15 +12,15 @@ gradient projects create --name ExampleProject [OPTIONS]
 
 
 
-Options: 
+Parameters: 
 
 | Option | Description |
 | :--- | :--- |
-| --name | Name of new project \[required\] |
-| --repositoryName | Name of the repository |
-| --repositoryUrl | URL to the repository |
-| --apiKey | Key to use this time only |
-| --help  | Help for this feature |
+| `--name` | Name of new project \[required\] |
+| `--repositoryName` | Name of the repository |
+| `--repositoryUrl` | URL to the repository |
+| `--apiKey` | Key to use this time only |
+| `--help`  | Help for this feature |
 
 
 

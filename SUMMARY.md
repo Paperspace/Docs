@@ -6,7 +6,7 @@
 
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
-* [Install the Command Line Interface](get-started/install-the-cli.md)
+* [Install the CLI \(Command Line Interface\)](get-started/install-the-cli.md)
 
 ## Tutorials
 
@@ -32,15 +32,15 @@
 ## Projects
 
 * [About](projects/about.md)
-* [Create a Project](projects/create-a-project/README.md)
-  * [Create a Project Using CLI](projects/create-a-project/create-a-project-using-cli.md)
+* [Create a Project via the UI](projects/create-a-project.md)
+* [Create a Project via the CLI](projects/create-a-project-using-cli.md)
 * [GradientCI](projects/gradientci.md)
 
 ## Experiments
 
 * [About](experiments/about.md)
-* [Run Experiments from the UI](experiments/run-experiments-ui.md)
-* [Run Experiments from the CLI](experiments/run-experiments-cli.md)
+* [Run Experiments via the UI](experiments/run-experiments-ui.md)
+* [Run Experiments via the CLI](experiments/run-experiments-cli.md)
 * [Multi-node Training](experiments/multi-node-training.md)
 * [Hyperparameter Tuning](experiments/hyperparameters.md)
 
