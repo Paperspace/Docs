@@ -162,7 +162,5 @@ You can now train and test the CNN model based Lenet architecture trained with t
 
 ## Summary
 
-Gradient is an ML PaaS that removes the friction involved in configuring pipelines for data science and machine learning. Similar to a PaaS, developers, and data scientists can upload data and code to Gradient to train sophisticated models. The scalable infrastructure of Gradient can be used for model serving.
-
 The custom containers feature of Gradient allows developers to add additional runtimes, frameworks, and tools to the platform.
 

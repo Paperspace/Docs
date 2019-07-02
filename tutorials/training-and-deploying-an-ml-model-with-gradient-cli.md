@@ -239,7 +239,5 @@ gradient jobs destroy $JOB_ID
 
 ## Summary
 
-Gradient is an ML PaaS that removes the friction involved in configuring pipelines for data science and machine learning. Similar to a PaaS, developers, and data scientists can upload data and code to Gradient to train sophisticated models. The scalable infrastructure of Gradient can be used for model serving.
-
 Apart from CLI, users can submit experiment through the web UI available within Paperspace Console. For interactive development, Jupyter Notebooks can be launched.
 
