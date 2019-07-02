@@ -21,9 +21,8 @@ Finished; returning exit code 0
 
 | Name | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
-| `jobId` | string |  | Id of the job to logs |
-| `tail` | boolean | &lt;optional&gt; | Optional; if tail is specified logs will be streamed until the job stops. |
+| `jobId` | string | Required | Id of the job to logs |
+| `follow` | string | &lt;optional&gt; |  |
 | `line` | number | &lt;optional&gt; | Optional; if line is specified logs only logs after that line will be returned \(up to limit\). |
 | `limit` | number | &lt;optional&gt; | Optional; number of log lines to retrieve on each request; default limit is 2000. |
-| `json` | boolean | &lt;optional&gt; | Optional; return JSON object instead of writing to standard out. '--json' with no value is equivalent to true. |
 

@@ -54,6 +54,7 @@
 * [Delete a Job](jobs/delete-a-job.md)
 * [List your Jobs](jobs/list-your-jobs.md)
 * [Job Logs](jobs/job-logs.md)
+* [Job Artifacts](jobs/job-artifacts.md)
 * [Job Metrics](jobs/job-metrics/README.md)
   * [System Metrics](jobs/job-metrics/system-metrics.md)
   * [Custom Metrics](jobs/job-metrics/custom-metrics.md)
