@@ -35,7 +35,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 # Pulling down info from Docker apt repo previously added. Then we're installing Docker.
-sudo apt-get update && apt-get install docker-ce=17.12.1~ce-0~ubuntu
+sudo apt-get update && apt-get install docker-ce=18.06.0~ce~3-0~ubuntu
 
 # Grabbing GPG key to trust NVIDIA apt repo.
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
@@ -51,7 +51,7 @@ sudo add-apt-repository \
 sudo add-apt-repository "deb https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64 /"
 
 # Updating apt-get cache and installing necessary NVIDIA packages.
-sudo apt-get update && sudo apt-get install nvidia-container-runtime=2.0.0+docker17.12.1-1 nvidia-docker2=2.0.3+docker17.12.1-1
+sudo apt-get update && sudo apt-get install nvidia-container-runtime=2.0.0+docker18.06.0-1 nvidia-docker2=2.0.3+docker18.06.0-1
 
 # Installing NFS tools.
 sudo apt-get install nfs-common=1:1.2.8-9ubuntu12.1
