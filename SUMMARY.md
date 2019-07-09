@@ -76,6 +76,10 @@
 * [Optimizing TensorFlow Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
 
+## Machines
+
+* [Create a virtual machine](machines/create-a-virtual-machine.md)
+
 ## Data
 
 * [Types of Storage](data/storage.md)
