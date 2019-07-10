@@ -79,6 +79,9 @@
 ## Machines
 
 * [Create a virtual machine](machines/create-a-virtual-machine.md)
+* [Check machine availability](machines/check-machine-availability.md)
+* [Destroy machine](machines/destroy-machine.md)
+* [List machines](machines/list-machines.md)
 
 ## Data
 
