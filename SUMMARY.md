@@ -82,6 +82,7 @@
 * [Check machine availability](machines/check-machine-availability.md)
 * [Destroy machine](machines/destroy-machine.md)
 * [List machines](machines/list-machines.md)
+* [Restart machines](machines/restart-machines.md)
 
 ## Data
 
