@@ -83,6 +83,7 @@
 * [Destroy machine](machines/destroy-machine.md)
 * [List machines](machines/list-machines.md)
 * [Restart machines](machines/restart-machines.md)
+* [Show machine](machines/show-machine.md)
 
 ## Data
 
