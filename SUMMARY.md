@@ -84,6 +84,7 @@
 * [List machines](machines/list-machines.md)
 * [Restart machines](machines/restart-machines.md)
 * [Show machine](machines/show-machine.md)
+* [Start machine](machines/start-machine.md)
 
 ## Data
 
