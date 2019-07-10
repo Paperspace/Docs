@@ -87,6 +87,8 @@
 * [Start machine](machines/start-machine.md)
 * [Stop machine](machines/stop-machine.md)
 * [Update machine](machines/update-machine.md)
+* [Machine utilization](machines/machine-utilization.md)
+* [Wait for the machine](machines/wait-for-the-machine.md)
 
 ## Data
 
