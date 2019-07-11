@@ -1,4 +1,4 @@
-# Destroy machine
+# Destroy a Machine
 
 **Usage:**
 

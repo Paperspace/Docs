@@ -1,4 +1,4 @@
-# Stop machine
+# Stop a Machine
 
 **Usage:** 
 

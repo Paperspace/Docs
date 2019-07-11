@@ -1,4 +1,4 @@
-# Restart machines
+# Restart a Machine
 
 **Usage:** 
 

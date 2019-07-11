@@ -1,4 +1,4 @@
-# Machine utilization
+# Check a Machine's utilization
 
 **Usage:** 
 

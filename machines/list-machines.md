@@ -1,4 +1,4 @@
-# List machines
+# List Machines
 
 **Usage:** 
 

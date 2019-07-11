@@ -1,4 +1,4 @@
-# Wait for the machine
+# Wait For a Machine
 
 **Usage:** 
 

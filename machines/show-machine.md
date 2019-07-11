@@ -1,4 +1,4 @@
-# Show machine
+# Show a Machine
 
 **Usage:** 
 

@@ -78,17 +78,19 @@
 
 ## Machines
 
-* [Create a virtual machine](machines/create-a-virtual-machine.md)
-* [Check machine availability](machines/check-machine-availability.md)
-* [Destroy machine](machines/destroy-machine.md)
-* [List machines](machines/list-machines.md)
-* [Restart machines](machines/restart-machines.md)
-* [Show machine](machines/show-machine.md)
-* [Start machine](machines/start-machine.md)
-* [Stop machine](machines/stop-machine.md)
-* [Update machine](machines/update-machine.md)
-* [Machine utilization](machines/machine-utilization.md)
-* [Wait for the machine](machines/wait-for-the-machine.md)
+* [About](machines/about.md)
+* [Create a Machine via the GUI](machines/create-a-machine-via-the-gui.md)
+* [Create a Machine via the CLI](machines/create-a-virtual-machine.md)
+* [Check a Machine's availability](machines/check-machine-availability.md)
+* [Destroy a Machine](machines/destroy-machine.md)
+* [List Machines](machines/list-machines.md)
+* [Restart a Machine](machines/restart-machines.md)
+* [Show a Machine](machines/show-machine.md)
+* [Start a Machine](machines/start-machine.md)
+* [Stop a Machine](machines/stop-machine.md)
+* [Update a Machine](machines/update-machine.md)
+* [Check a Machine's utilization](machines/machine-utilization.md)
+* [Wait For a Machine](machines/wait-for-the-machine.md)
 
 ## Data
 

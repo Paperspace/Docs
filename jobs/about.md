@@ -1,10 +1,10 @@
 # About
 
-The[ Gradient Jobs](https://www.paperspace.com/console/jobs) are designed for executing code \(such as training a deep neural network\) on a cluster of GPUs without managing any infrastructure.
+[Gradient Jobs](https://www.paperspace.com/console/jobs) are designed for executing code \(such as training a deep neural network\) on a cluster of GPUs without managing any infrastructure.
 
-Gradient Jobs part of a larger suite of tools that work seamlessly with Gradient Notebooks.  
+Gradient Jobs can be created using the GUI or via the CLI, and they form part of a larger suite of tools that work seamlessly with Gradient Notebooks.  
 
-![](https://support.paperspace.com/hc/article_attachments/360008627173/mceclip1.png)
+![Gradient Job Runner in the GUI](https://support.paperspace.com/hc/article_attachments/360008627173/mceclip1.png)
 
 #### A Job consists of:
 
