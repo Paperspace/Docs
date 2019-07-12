@@ -53,7 +53,7 @@ $ gradient jobs create \
       <td style="text-align:left">K80</td>
       <td style="text-align:left">An optional machine type to run the job on: either &apos;GPU+&apos;, &apos;P4000&apos;,
         &apos;P5000&apos;, &apos;P6000&apos;, &apos;V100&apos;, &apos;K80&apos;,
-        &apos;P100&apos;, or &apos;TPU&apos;.container</td>
+        &apos;P100&apos;, or &apos;TPU&apos;.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>container</code>
@@ -87,19 +87,22 @@ $ gradient jobs create \
       <td style="text-align:left"><code>workspace</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Path to workspace directory</td>
+      <td style="text-align:left">Path to workspace directory. (Soon also will support a path to a workspace
+        archive or git repository URL.)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>workspaceArchive</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Path to workspace archive</td>
+      <td style="text-align:left">Path to workspace archive. (Currently being deprecated in an upcoming
+        version.)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>workspaceUrl</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Project git repository url</td>
+      <td style="text-align:left">Project git repository URL. (Currently being deprecated in an upcoming
+        version.)</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>workingDirectory</code>
