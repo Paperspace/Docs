@@ -116,14 +116,14 @@ To get this create a service account JSON key file for your project, following t
   
 Once you have downloaded your JSON key file, rename it to "keyfile.json".
 
-Use the contents of the keyfile as the password value in the paperspace jobs create method:
+Use the contents of the keyfile as the password value in the gradient jobs create method:
 
 ```text
-paperspace jobs create ... --container "gcr.io/myproject/my_private_repo:latest" \
+gradient jobs create ... --container "gcr.io/myproject/my_private_repo:latest" \
 --registryUsername "_json_key" --registryPassword "$(cat keyfile.json)"
 ```
 
-Note: do not base64 encode the contents of the keyfile. It will be encoded by the paperspace job runner at runtime.
+Note: do not base64 encode the contents of the keyfile. It will be encoded by the gradient job runner at runtime.
 
 For more details and other options see: [https://cloud.google.com/container-registry/docs/advanced-authentication](https://cloud.google.com/container-registry/docs/advanced-authentication)
 
