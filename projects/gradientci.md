@@ -308,3 +308,18 @@ checks:
     aggregation: max
 ```
 
+## Uninstalling GradientCI
+
+Note this can only be done by an organization level administrator or on your personal repositories.
+
+1. Navigate to the repository or organization that you wish to remove GradientCI from.
+2. Click the "Settings" tab in the top row
+3. Select "Integration & services" from the left menu, you should be presented with a list that includes "GradientCI" that looks like
+![Integration & services pane](./settings-pane.png)
+4. Select "Configure" next to "GradientCI", you will be prompted to enter your password.
+5. From the "GradientCI" settings menu, you can then either
+![GradientCI Settings](./gradient-ci-settings.png)
+
+    a. Uninstall the application from all repositories on the organization or personal account by clicking the red "Uninstall" button
+
+    b. Select the "Only select repositories" and choosing which repositories should have GradientCI from the dropdown, or unselecting them by clicking the "x" next to their name.
