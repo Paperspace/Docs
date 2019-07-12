@@ -45,6 +45,7 @@
 * [Run Experiments via the CLI](experiments/run-experiments-cli.md)
 * [Multi-node Training](experiments/multi-node-training.md)
 * [Hyperparameter Tuning](experiments/hyperparameters.md)
+* [Containers: Public & Private](experiments/containers-public-and-private.md)
 
 ## Jobs
 
