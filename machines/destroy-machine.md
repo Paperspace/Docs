@@ -10,6 +10,6 @@ Destroy the machine with the given id. When this action is performed, the machin
 
 | `Name` | Description |
 | :--- | :--- |
-| `--machineId TEXT` | Id of the machine to destroy \(required\) |
-| `--releasePublicIp  BOOL` | Releases any assigned public ip address for the machine; ****defaults to false |
+| `machineId (TEXT)` | Id of the machine to destroy \(required\) |
+| `releasePublicIp  BOOL` | Releases any assigned public ip address for the machine; ****defaults to false |
 

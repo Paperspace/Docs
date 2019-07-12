@@ -4,13 +4,11 @@
 
 `gradient machines show [OPTIONS]`
 
-  Show machine information for the machine with the given id.
+Show machine information for the machine with the given id.
 
-**Options:**
+**Parameters:**
 
-`--machineId TEXT` Id of the machine to show  \[required\]
-
-`--apiKey TEXT` API key to use this time only
-
-`--help` Show this message and exit.
+| **Name** | Description |
+| :--- | :--- |
+| `machineId (TEXT)` | Id of the machine to show \(required\) |
 

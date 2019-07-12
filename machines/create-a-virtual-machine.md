@@ -37,7 +37,7 @@ Create a new Paperspace virtual machine. If you are using an individual account,
       <td style="text-align:left">Machine type (required), pick one</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>size  INTEGER</code>
+      <td style="text-align:left"><code>size (INTEGER)</code>
       </td>
       <td style="text-align:left">Storage size for the machine in GB (required)</td>
     </tr>
@@ -70,52 +70,52 @@ Create a new Paperspace virtual machine. If you are using an individual account,
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>networkId TEXT</code>
+      <td style="text-align:left"><code>networkId (TEXT)</code>
       </td>
       <td style="text-align:left">If creating on a specific network, specify its id</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>teamId TEXT</code>
+      <td style="text-align:left"><code>teamId (TEXT)</code>
       </td>
       <td style="text-align:left">If creating the machine for a team, specify the team id</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>userId TEXT</code>
+      <td style="text-align:left"><code>userId (TEXT)</code>
       </td>
       <td style="text-align:left">If assigning to an existing user other than yourself, specify the user
         id (mutually exclusive with email, password, firstName, lastName)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>email TEXT</code>
+      <td style="text-align:left"><code>email (TEXT)</code>
       </td>
       <td style="text-align:left">If creating a new user for this machine, specify their email address (mutually
         exclusive with userId)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>password TEXT</code>
+      <td style="text-align:left"><code>password (TEXT)</code>
       </td>
       <td style="text-align:left">If creating a new user, specify their password (mutually exclusive with
         userId)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>firstName TEXT</code>
+      <td style="text-align:left"><code>firstName (TEXT)</code>
       </td>
       <td style="text-align:left">If creating a new user, specify their first name (mutually exclusive with
         userId)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>lastName TEXT</code>
+      <td style="text-align:left"><code>lastName (TEXT)</code>
       </td>
       <td style="text-align:left">If creating a new user, specify their last name (mutually exclusive with
         userId)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>notificationEmail TEXT</code>
+      <td style="text-align:left"><code>notificationEmail (TEXT)</code>
       </td>
       <td style="text-align:left">Send a notification to this email address when complete</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>scriptId TEXT</code>
+      <td style="text-align:left"><code>scriptId (TEXT)</code>
       </td>
       <td style="text-align:left">The script id of a script to be run on startup. See the Script Guide for
         more info on using scripts</td>
