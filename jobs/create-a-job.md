@@ -2,7 +2,7 @@
 
 ## About
 
-Create a new Paperspace job, and tail its log output.
+Create a new Paperspace job
 
 {% hint style="info" %}
 **Note:** if a project is not defined for the current working directory, and you are running in command line mode, a project configuration settings file will be created. Use`--init false` or specify`--project <your-project-name>`to override this behavior.
@@ -166,7 +166,7 @@ These can be used in conjunction with the `ports` option to send HTTP traffic to
 
 ### Run jobs from Dockerfiles
 
-_Note: to run jobs from Dockerfiles, use_ [_paperspace-node_](https://github.com/Paperspace/paperspace-node)_, not gradient-cli._
+_Note: to run jobs from Dockerfiles, use_ [_paperspace-node_](https://github.com/Paperspace/paperspace-node)_, or gradient-cli._
 
 Gradient job containers can be created from a Dockerfile. Three options are available:
 
@@ -190,7 +190,7 @@ The following new job fields are available:
 For example, to run a job that only builds a container image and pushes to a remote registry:
 
 ```text
-paperspace jobs create --apiKey XXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly true  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
+gradient jobs create --apiKey XXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly true  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
 ```
 
 Note that if you selected `buildOnly` you should supply always a registry target and credentials.
@@ -198,13 +198,13 @@ Note that if you selected `buildOnly` you should supply always a registry target
 To run a job that builds a container image, pushes to a remote registry, and then runs a command inside an instance of the running container:
 
 ```text
-paperspace jobs create --apiKey XXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
+gradient jobs create --apiKey XXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"  --registryTarget my-registry/image:0.1-test --registryTargetUsername myusername --registryTargetPassword 123456
 ```
 
-To run a job that builds the container image and then runs an instace of the container, without pushing to a remote registry:
+To run a job that builds the container image and then runs an instance of the container, without pushing to a remote registry:
 
 ```text
-paperspace jobs create --apiKey XXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"
+gradient jobs create --apiKey XXXXXXXXXXXX --workspace https://github.com/ianmiell/simple-dockerfile --useDockerfile true --buildOnly false --command "echo hello"
 ```
 
 {% hint style="info" %}
