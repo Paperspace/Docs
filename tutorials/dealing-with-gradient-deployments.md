@@ -1,4 +1,4 @@
-# Dealing with Gradient Deployments
+# Using Gradient Deployments
 
 ## Objectives 
 
