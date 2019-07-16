@@ -90,7 +90,7 @@ If you would like to build additional non-pull request branches or tags you must
 This will build all branches and no tags.
 Once that is complete you can filter additional branches in your `config.yaml` by providing a `filters` section.
 You can place the keys `branches` or `tags` to apply filters to the default.
-Under each key you can provide `only` or `ignore` fields, but not both, containing a regex or array of regex to match on.
+Under each key you can provide `only` or `ignore` fields, but not both, containing a [Posix compatible regex](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) or array of regex to match on.
 Branches or tags filtered by an `only` key must match one or more of the regex provided.
 Branches or tags filtered by an `ignore` key will be skipped if they match one or more of the regex provided.
 
