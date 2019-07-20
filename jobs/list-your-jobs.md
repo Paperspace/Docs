@@ -1,4 +1,4 @@
-# List your Jobs
+# List Jobs
 
 ## About
 

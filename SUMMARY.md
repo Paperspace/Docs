@@ -53,7 +53,7 @@
 * [Create a Job](jobs/create-a-job.md)
 * [Stop a Job](jobs/stop-a-job.md)
 * [Delete a Job](jobs/delete-a-job.md)
-* [List your Jobs](jobs/list-your-jobs.md)
+* [List Jobs](jobs/list-your-jobs.md)
 * [Job Logs](jobs/job-logs.md)
 * [Job Artifacts](jobs/job-artifacts.md)
 * [Job Metrics](jobs/job-metrics/README.md)
