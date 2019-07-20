@@ -1,4 +1,4 @@
-# Launch a Notebook from a Custom Container
+# Launching Notebooks from Custom Containers
 
 ## **Objectives**
 
