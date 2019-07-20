@@ -6,11 +6,11 @@ Welcome to Gradient! Get familiar with the Gradient CLI and web interface.
 This is the documentation for the [Gradient°](https://paperspace.com/gradient) platform. You can view the Paperspace API Reference [here](https://paperspace.github.io/paperspace-node/). If you are looking for general information on Paperspace including our Knowledge Base, head to [support.paperspace.com](https://support.paperspace.com).
 {% endhint %}
 
-Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies developing, training, and deploying deep learning models. The platform provides **infrastructure automation** and a **software toolkit** built for machine learning developers.
+Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies developing, training, and deploying deep learning models. The platform provides **infrastructure automation** and a **software development kit** for machine learning developers.
 
 Gradient is comprised of the following components:
 
-* [**Web interface**](https://www.paperspace.com/console)**:** A simple yet powerful interface for managing your projects, data, users, and account.
+* [**Web User Interface**](https://www.paperspace.com/console)**:** A simple yet powerful interface for managing your projects, data, users, and account.
 * [**CLI**](https://github.com/Paperspace/gradient-cli): An open-source command-line tool for executing Jobs from Windows, Mac, or Linux.
 
 ### Register [here](https://www.paperspace.com/account/signup?gradient=true) to get access to Gradient.
