@@ -136,7 +136,7 @@ latest: digest: sha256:8e525774d076a84935348539740418bf4726ce349685733d8787e49c9
 
 In the next step, we will launch a Jupyter Notebook based on the container image we just built.
 
-## **Launching a Gradient Notebook Based on Custom Container**
+## **Launching a Notebook based on a Custom Container**
 
 Access the Notebooks from the left navigation bar of Gradient. Choose Custom Container to pull the Apache MXNet image that we built.
 
