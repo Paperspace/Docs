@@ -6,7 +6,7 @@ description: For inference/model serving
 
 ## Create a Deployment
 
-Deployments can be created through the Paperspace web console. They can be found under the "Deployments" tab of any Project. A list of all deployments across projects can be found by clicking Deployments tab on the side nav. 
+Deployments can be created through the Paperspace web console. They can be found under the "Deployments" tab of any Project. A list of deployments across all projects can be found by clicking Deployments on the side navigation bar. 
 
 ### Navigate to your Models list
 
@@ -30,17 +30,17 @@ The following section shows the region of the selected machine and where the Dep
 
 In section **2. Name**, add a name for your deployment, such as `Sample Deployment`.
 
-In section **3. Base Image,** use the `tensorflow/serving:latest-gpu` container, which is selected by default. ****As both CPU & GPU serving are available, be sure to select the container corresponding to your selected machine type and what your Model was optimized for. Only TensorFlow Serving can be selected as base image \(support for any base image will be available for serving soon\).
+In section **3. Base Image,** use the `tensorflow/serving:latest-gpu` container, which is selected by default for GPU machine types. ****As both CPU & GPU serving are available, be sure to select the container corresponding to your selected machine type and what your Model was optimized for. Only TensorFlow Serving can be selected as base image \(support for any base image will be available for serving soon\).
 
 ![](../.gitbook/assets/screen-shot-2019-06-24-at-8.05.42-pm.png)
 
 In section **4. Instance Count**, select the number of instances to run the Deployment on.
 
-Below we chose 2, meaning there will be 2x K80 GPU instances backing this Deployment. Load balancing is provided for all multi-instance deployments.
+Below we chose 2, meaning there will be 2x K80 GPU instances backing this Deployment. Automatic load balancing is provided for all multi-instance deployments.
 
 In section **5. Command,** choose a command run at container launch, if applicable.
 
-_Note: for the TensorFlow Serving base container used here, the command to run the job is unnecessary. This option can be changed when choosing a different base image to deploy on._
+_Note: for the TensorFlow Serving base container used here, the command to run the job is unnecessary and thus disabled. This option can be changed when choosing a different base image to deploy on._
 
 ![](../.gitbook/assets/screen-shot-2019-06-24-at-8.15.24-pm.png)
 

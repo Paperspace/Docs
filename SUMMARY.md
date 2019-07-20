@@ -65,7 +65,7 @@
 
 * [About](models/about.md)
 * [Create a Model](models/create-a-model.md)
-* [Import your model to Gradient](models/import-your-model-to-gradient.md)
+* [Import models to Gradient](models/import-your-model-to-gradient.md)
 
 ## Deployments
 
