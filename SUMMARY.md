@@ -6,14 +6,14 @@
 
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
-* [Install the CLI \(Command Line Interface\)](get-started/install-the-cli.md)
+* [Install the Gradient CLI](get-started/install-the-cli.md)
 
 ## Tutorials
 
-* [Getting Started with Gradient Notebooks](tutorials/getting-started-with-gradient-notebooks.md)
-* [Launch a Notebook from a Custom Container](tutorials/using-custom-containers-with-gradient.md)
+* [Getting Started with Notebooks](tutorials/getting-started-with-gradient-notebooks.md)
+* [Launching Notebooks from Custom Containers](tutorials/using-custom-containers-with-gradient.md)
 * [Train & Deploy an ML Model with the Gradient CLI](tutorials/training-and-deploying-an-ml-model-with-gradient-cli.md)
-* [Train & Deploy an ML Model with Experiment Builder](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
+* [Train & Deploy an ML Model with the Experiment Builder](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
 * [Registering Models in Gradient](tutorials/registering-models-in-gradient.md)
 * [Using Gradient Deployments](tutorials/dealing-with-gradient-deployments.md)
 
@@ -53,7 +53,7 @@
 * [Create a Job](jobs/create-a-job.md)
 * [Stop a Job](jobs/stop-a-job.md)
 * [Delete a Job](jobs/delete-a-job.md)
-* [List your Jobs](jobs/list-your-jobs.md)
+* [List Jobs](jobs/list-your-jobs.md)
 * [Job Logs](jobs/job-logs.md)
 * [Job Artifacts](jobs/job-artifacts.md)
 * [Job Metrics](jobs/job-metrics/README.md)
@@ -65,7 +65,7 @@
 
 * [About](models/about.md)
 * [Create a Model](models/create-a-model.md)
-* [Import your model to Gradient](models/import-your-model-to-gradient.md)
+* [Import models to Gradient](models/import-your-model-to-gradient.md)
 
 ## Deployments
 
@@ -74,7 +74,7 @@
 * [Create a Deployment via the UI](deployments/create-a-deployment-ui.md)
 * [Create a Deployment via the CLI](deployments/create-deployment-cli.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
-* [Optimizing TensorFlow Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
+* [Optimizing Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
 
 ## Machines

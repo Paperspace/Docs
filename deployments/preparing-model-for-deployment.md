@@ -1,11 +1,12 @@
 ---
-description: >-
-  This tutorial shows you how to use TensorFlow Serving components to export a
-  trained TensorFlow model and use the Gradient model deployments to serve it.
-  Train and export TensorFlow model
+description: Train and output a Tensorflow Model
 ---
 
 # Preparing Model for Deployment
+
+This example code demonstrates how to use TensorFlow to export a trained model so that it is compatible Tensorflow Serving and Gradient Model Deployments.  The code below should be incorporated into your experiment, and assumes you are using Tensorflow 1.x with python.
+
+Note: you must also specify `--modelType Tensorfow` and provide a desired `--modelPath` location when running the experiment, in order to have the model parsed and uploaded by Gradient.
 
 ### Example 
 
@@ -35,7 +36,9 @@ tf.logging.debug('Model Exported')
 
 ```
 
-We use TensorFlow's [SavedModelBuilder module](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/builder.py) to export the model. `SavedModelBuilder` saves a "snapshot" of the trained model to 
+The code above first gets the specified `--modelPath` from parameters used to run the experiment using the environment variable `PS_MODEL_PATH`, which is available to the experiment while it is running. \(Note: if `--modelPath` was not specified, the model export directory defaults to `./models` using the code above.\)
+
+It then uses TensorFlow's [SavedModelBuilder module](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/builder.py) to export the model. `SavedModelBuilder` saves a "snapshot" of the trained model to 
 
 ```text
 os.path.abspath(os.environ.get('PS_MODEL_PATH', os.getcwd() + '/models'))

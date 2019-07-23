@@ -1,8 +1,8 @@
 ---
-description: How to install the Paperspace CLI
+description: How to install the Gradient Command Line Interface
 ---
 
-# Install the CLI \(Command Line Interface\)
+# Install the Gradient CLI
 
 ## Installation
 

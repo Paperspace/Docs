@@ -1,4 +1,4 @@
-# Train & Deploy an ML Model with Experiment Builder
+# Train & Deploy an ML Model with the Experiment Builder
 
 ## **Objectives**
 
