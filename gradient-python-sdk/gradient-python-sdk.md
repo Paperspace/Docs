@@ -1,6 +1,6 @@
-# Gradient CLI
+# Gradient SDK
 
-## Gradient CLI
+## Gradient SDK
 
 Import Gradient directly into your python project:
 

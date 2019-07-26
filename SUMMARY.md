@@ -99,10 +99,9 @@
 * [Managing Data in Gradient](data/managing-data-in-gradient.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 
-## Python Client
+## Gradient SDK <a id="gradient-python-sdk"></a>
 
-* [Gradient CLI](python-client/paperspace-python/README.md)
-  * [Release Notes](python-client/paperspace-python/release-notes.md)
+* [Gradient SDK](gradient-python-sdk/gradient-python-sdk.md)
 
 ## Gradient Private Cloud
 
@@ -118,4 +117,8 @@
 
 * [Instance Types](instances/instance-types.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
+
+## Release Notes CLI & SDK
+
+* [Release Notes](release-notes-cli-and-sdk/release-notes.md)
 
