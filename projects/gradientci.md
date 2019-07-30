@@ -25,11 +25,12 @@ To set up GradientCI, our continuous integration service, include a directory in
 
 ### Building Branches and Tags
 
+GradientCI supports building and sourcing project configuration from arbitrary branches or tags.
 By default we only build configuration sourced from your default branch \(typically `master`\).
 You can [change your repositories default branch from within Github](https://help.github.com/en/articles/setting-the-default-branch), if you only need the configuration from one branch.
 You can relax or tighten this rule by selecting "All" or "None" from the "Build Branches" dropdown in the project settings pane of the Gradient console.
-If you would like to build a subset of branches that are not the default branch or build Git tags, select "All" from this menu and provide filters in your `config.yaml`.
-See [branch and tag filters](#filtering-branches-and-tags).
+If you would like to build any tags or a subset of branches that are not the default branch, select "All" from this menu and provide filters in your `config.yaml`.
+To list the specific patterns of tags and branches to build, see [branch and tag filters](#filtering-branches-and-tags).
 
 You may additionally disable the builds of pull requests, enabled by default.
 Or enable builds of pull requests that originate from forked repositories, disabled by default to prevent unauthorized use of Gradient resources.
