@@ -21,7 +21,22 @@ To create a Gradient Project with continuous integration powered by GradientCI a
 
 ### Configure GradientCI Settings
 
-To set up GradientCI, our continuous integration service, include a directory in your GitHub repository called `.ps_project` with a configuration file `config.yaml`. This file _must_ exist on your default branch \(typically `master`\) in GitHub. We do not yet read the configuration from pull-requests or alternative branches.
+To set up GradientCI, our continuous integration service, include a directory in your GitHub repository called `.ps_project` with a configuration file `config.yaml`, example below.
+
+### Building Branches and Tags
+
+GradientCI supports building and sourcing project configuration from arbitrary branches or tags.
+By default we only build configuration sourced from your default branch \(typically `master`\).
+You can [change your repositories default branch from within Github](https://help.github.com/en/articles/setting-the-default-branch), if you only need the configuration from one branch.
+You can relax or tighten this rule by selecting "All" or "None" from the "Build Branches" dropdown in the project settings pane of the Gradient console.
+If you would like to build any tags or a subset of branches that are not the default branch, select "All" from this menu and provide filters in your `config.yaml`.
+To list the specific patterns of tags and branches to build, see [branch and tag filters](#filtering-branches-and-tags).
+
+You may additionally disable the builds of pull requests, enabled by default.
+Or enable builds of pull requests that originate from forked repositories, disabled by default to prevent unauthorized use of Gradient resources.
+Each of these options will allow configuration to be sourced from the relevant Git branch.
+
+![Gradient console project settings pane](./project-settings.png)
 
 #### Template
 
@@ -29,7 +44,6 @@ To set up GradientCI, our continuous integration service, include a directory in
 # .ps_project/config.yaml:
 
 version: 1
-
 
 project: "project-handle"
 experiment: "experiment-name" #[optional, default:<repo name>]
@@ -53,14 +67,32 @@ parameter-server: #[required for multi-node]
   command: "nvidia-smi"
   machine-type: "K80"
   count: 1
+filters:
+  branches:
+    ignore: irrelevant-branch
+  tags:
+    only:
+      - v.*
+      - latest
 
 checks: #[optional]
   tensorflow:loss:
-    target: 0.0..0.5
+    target: "0.0..0.5"
     aggregate: "mean"
   defaults: #[optional]
     precision: 3
 ```
+
+## Filtering Branches and Tags
+
+By default GradientCI will only build the default branch and no tags.
+If you would like to build additional non-pull request branches or tags you must select "All" from the "Build Branches" project configuration dropdown.
+This will build all branches and no tags.
+Once that is complete you can filter additional branches in your `config.yaml` by providing a `filters` section.
+You can place the keys `branches` or `tags` to apply filters to the default.
+Under each key you can provide `only` or `ignore` fields, but not both, containing a [Posix compatible regex](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) or array of regex to match on.
+Branches or tags filtered by an `only` key must match one or more of the regex provided.
+Branches or tags filtered by an `ignore` key will be skipped if they match one or more of the regex provided.
 
 ## Metrics Checks
 
