@@ -31,7 +31,9 @@ Custom containers feature lets you pull your own image from a container registry
 
 #### Require field:
 
-* Container Name = Path and tags of image eg ufoym/deepo:all-jupyter-py36
+* Container Name = Path and tags of image eg `ufoym/deepo:all-jupyter-py36`
+
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 #### Optional Parameters:
 
@@ -40,11 +42,5 @@ Custom containers feature lets you pull your own image from a container registry
 * Default Entrypoint = must be Jupyter compatible, defaults to 'jupyter notebook' if left blank
 * Container user = optional user, defaults to 'root' if left blank
 
-See a tutorial on using custom containers [here](https://support.paperspace.com/hc/en-us/articles/360008256453-Creating-Using-Custom-Containers-with-Notebooks).
-
-{% hint style="info" %}
-This page provides help about pulling containers from various public and private repositories:
-
-[https://support.paperspace.com/hc/en-us/articles/360003415434-Containers-Public-Private](https://support.paperspace.com/hc/en-us/articles/360003415434-Containers-Public-Private) 
-{% endhint %}
+See a tutorial on using custom containers [here](building-a-custom-container.md).
 
