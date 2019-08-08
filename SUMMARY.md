@@ -97,6 +97,7 @@
 
 * [Types of Storage](data/storage.md)
 * [Managing Data in Gradient](data/managing-data-in-gradient.md)
+* [Managing Persistent Storage with VMs](data/managing-persistent-storage-with-vms.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 
 ## Gradient SDK <a id="gradient-python-sdk"></a>
