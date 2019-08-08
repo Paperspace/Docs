@@ -90,7 +90,7 @@ that can be used for inference.
 
 Switch to the infer folder of the cloned repo and execute the following command:
 
-`SERVE_URL=`[`https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict`](https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict)`python infer.py`
+`export SERVE_URL=`[`https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict`](https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict)`python infer.py`
 
 ```text
 The model predicted this as a Ankle boot, and it was actually a Ankle boot
