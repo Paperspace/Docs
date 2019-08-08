@@ -144,7 +144,7 @@ js3v54dfgz1zcu	56	PSEOF
 
 We can check if the output of the job is registered as a valid TensorFlow model with the following command.
 
-```text
+```bash
 gradient models list
 ```
 

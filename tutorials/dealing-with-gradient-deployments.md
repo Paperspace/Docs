@@ -21,7 +21,7 @@ Once a model is registered and available in Gradient, it can be used for model s
 
 Make sure that the model is registered with Gradient.
 
-```text
+```bash
 gradient models list
 ```
 
@@ -35,7 +35,7 @@ gradient models list
 
 Run the below command to convert the registered model into a scalable deployment.
 
-```text
+```bash
 gradient deployments create \
     --deploymentType TFServing \
     --modelId mosdnkkv1o1xuem \
@@ -63,13 +63,21 @@ The above command has multiple switches that are important for the deployment co
 
 Now, start the deployment with the below command:
 
-`gradient deployments start --id deslid8n74p4bvs`
+```bash
+gradient deployments start --id deslid8n74p4bvs
+```
 
-`Deployment started`
+This should return:
+
+```text
+Deployment started
+```
 
 You can list all the deployments with gradient Deployments list command.
 
-`gradient deployments list` 
+```bash
+gradient deployments list
+```
 
 ```text
 +---------------------+-----------------+----------------------------------------------------------------------+----------+---------------------------+

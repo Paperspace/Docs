@@ -15,7 +15,7 @@ Gradient is comprised of the following components:
 
 ### Register [here](https://www.paperspace.com/account/signup?gradient=true) to get access to Gradient.
 
-![](.gitbook/assets/image%20%2812%29.png)
+![](.gitbook/assets/image%20%2814%29.png)
 
 The best way to discover Gradient is to try it out. You can get started in seconds with the following guide:
 

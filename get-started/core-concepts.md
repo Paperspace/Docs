@@ -6,7 +6,7 @@ A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs,
 
 ## Notebooks
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 A [Notebook](../notebooks/about.md) is an interactive coding environment that allows you to mix code or formulas with text and diagrams, visualizations, and other media. Notebooks make it easy to explore data and coding concepts, and collaborate with other people on projects. Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.
 

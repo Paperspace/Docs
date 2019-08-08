@@ -128,11 +128,15 @@ The fully trained and pickled model \(`model.pkl`\) is now available at `/storag
 
 With the training job done, we will now host a long-running job that exposes a REST endpoint for serving the model. The GitHub repo has the code for loading the pickled model file and running a Flask-based web server.
 
-Start by creating a new job with the following parameters. Notice that it is similar to the training job except the command `pip install flask && python deploy/infer.py -m /storage/salary/model.pkl`.
+Start by creating a new job with the following parameters. Notice that it is similar to the training job except the command.
+
+```bash
+pip install flask && python deploy/infer.py -m /storage/salary/model.pkl
+```
 
 We first install the Flask module and then launch `infer.py` which picks up the model file `/storage/salary/model.pkl`. Feel free to explore the code of `infer.py` to understand how I load the pickled model file and wire it to the GET request.
 
-Since we are running a web server, we also need to enable port mapping. This is done by entering 8080:8080 in the Ports section of the job.
+Since we are running a web server, we also need to enable port mapping. This is done by entering `8080:8080` in the Ports section of the job.
 
 ![](https://lh3.googleusercontent.com/w0SWsgKE2hQ7DlKZrKeSntlWssuVc-pz8E8mFyVxJhBll3fcmWnJrrMevU0py9PS2gtF78uRskM76G21vQvbdQuSHjBeX6uV1st_OlSdjtAflcQK2uKUrQfYEwUnvCBVgzCi5SZ0)
 

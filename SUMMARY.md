@@ -11,11 +11,11 @@
 ## Tutorials
 
 * [Getting Started with Notebooks](tutorials/getting-started-with-gradient-notebooks.md)
-* [Launching Notebooks from Custom Containers](tutorials/using-custom-containers-with-gradient.md)
 * [Train & Deploy an ML Model with the Gradient CLI](tutorials/training-and-deploying-an-ml-model-with-gradient-cli.md)
 * [Train & Deploy an ML Model with the Experiment Builder](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
 * [Registering Models in Gradient](tutorials/registering-models-in-gradient.md)
 * [Using Gradient Deployments](tutorials/dealing-with-gradient-deployments.md)
+* [Launching Notebooks from Custom Containers](tutorials/using-custom-containers-with-gradient.md)
 
 ## Notebooks
 
