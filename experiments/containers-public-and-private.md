@@ -116,7 +116,7 @@ To get this create a service account JSON key file for your project, following t
   
 Once you have downloaded your JSON key file, rename it to "keyfile.json".
 
-Use the contents of the keyfile as the password value in the gradient jobs create method:
+Use the contents of the keyfile as the password value in the Gradient experiments method:
 
 ```text
 gradient jobs create ... --container "gcr.io/myproject/my_private_repo:latest" \
