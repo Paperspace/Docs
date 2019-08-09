@@ -63,7 +63,7 @@ The `singlenode` parameter runs the job on a single host.
 
 `--command` instructs the job to execute the script along with the passed parameters. The script expects the path to store the final model artifacts along with the version number. Since we are using a sub-directory under the `/storage` directory, the files stored are persisted across experiments. The model files stored here are used to register the TensorFlow model with Gradient. Feel free to explore [train.py](https://github.com/janakiramm/fashionmnist/blob/master/train/train.py) to understand how environment variables and command line parameters can be used to target Gradient specific features while keeping the code independent.
 
-`--modelType` switch indicates that the job generates a valid TensorFlow model which can be managed by Gradient. Frameworks other than TensorFlow will be supported in the future.
+`--modelType Tensorflow`switch indicates that the job generates a valid TensorFlow model which can be managed and served by Gradient. Frameworks other than TensorFlow will be supported in the near future, such as `ONNX` and `Custom`.
 
 `--modelPath` tells Gradient where to look for the model artifacts. This is typically `/artifacts` or `/storage` location. We are passing `/storage/model` directory which was used within the code.
 
@@ -144,17 +144,17 @@ js3v54dfgz1zcu	56	PSEOF
 
 We can check if the output of the job is registered as a valid TensorFlow model with the following command.
 
-```text
+```bash
 gradient models list
 ```
 
 `+------+-----------------+------------+------------+----------------+   
-| Name | ID | Model Type | Project ID | Experiment ID |   
+| Name | ID              | Model Type | Project ID | Experiment ID  |   
 +------+-----------------+------------+------------+----------------+   
-| None | mosdnkkv1o1xuem | Tensorflow | prioax2c4 | e720893n7f5vx |   
+| None | mosdnkkv1o1xuem | Tensorflow | prioax2c4  | e720893n7f5vx  |   
 +------+-----------------+------------+------------+----------------+`
 
-The project id `(prioax2c4)` and experiment id `(e720893n7f5vx)` confirm that it is the model associated with the latest experiment.
+The project id `prioax2c4` and experiment id `e720893n7f5vx` confirm that it is the model associated with the latest experiment.
 
 You can also visit the Models section of Gradient UI to see a list of registered models.
 

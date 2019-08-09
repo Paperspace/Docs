@@ -1,6 +1,6 @@
 # About
 
-As of 7.0, a Gradient Project is a creative workspace for a team or user to run Experiments. Projects can be powered by GradientCI \(via GitHub\), or they can be "Standalone."
+As of 7.0, a Gradient Project is a creative workspace for a team or user to run Experiments, Job, and store Artifacts such as Models. Projects can be powered by GradientCI \(via GitHub\), or they can be "Standalone."
 
 **GradientCI Projects** allow you to run Experiments automatically simply by pushing code to a GitHub repository. See [GradientCI](gradientci.md) for information on setting up our continuous integration service that will run a new experiment whenever:
 

@@ -2,7 +2,13 @@
 
 ## Objectives
 
-* Install and configure the Paperspace CLI
+**Prerequisites:** 
+
+* [Install Gradient CLI](../get-started/install-the-cli.md)
+* [Obtain an API Key](../get-started/install-the-cli.md#connecting-your-account)
+
+**Steps**
+
 * Learn the workflow involved in training a model
 * Use custom containers with experiments
 * Create an experiment that trains a Scikit-learn model
@@ -10,57 +16,7 @@
 * Create a long-running job \(web service\) that serves the model
 * Access the REST endpoint exposed by a job
 
-There are two Gradient experiments involved in this workflow--training and deployment. The first experiment generates a Python pickle file that gets stored in the shared storage service of Gradient. The same pickle file will be used by the second experiment running a Flask web server to expose a REST endpoint. This experiment will serve the model through the inferencing endpoint.
-
-## Installing and Configuring the Paperspace CLI
-
-To install the Gradient CLI, you'll first need to sign up for a [Paperspace account](https://www.paperspace.com/account/signup).
-
-Once you’ve created your account, install the Gradient CLI.
-
-{% hint style="info" %}
-**ProTip!** We recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**.
-{% endhint %}
-
-### **Creating a virtual environment \(optional\)**
-
-Creating a directory _\*\*_for my virtual environment:
-
-```bash
-mkdir gradient
-```
-
-Create new virtual environment:
-
-```bash
-virtualenv gradient
-```
-
-Activate my new virtual environment:
-
-```bash
-source gradient/bin/activate
-```
-
-### **Install the CLI**
-
-```bash
-pip install -U gradient
-```
-
-Once you’ve created a Paperspace account and installed the CLI, you’ll next need to obtain an API key. Your API key will allow you to access the Gradient features from the command line. Each API key has an API Token name associated with it.
-
-## Obtaining an API key  <a id="obtaining-an-api-key"></a>
-
-First, sign in to your [Paperspace account](https://paperspace.com/). On the left of your home console, you should find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests. API keys section of the console:
-
-![API keys section of the console \(https://www.paperspace.com/console/account/api\)](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LHZRFUkajubOAmgu6Rd%2F-LdfHAvW1SCTEgQCIMBL%2F-LdfHBpYjeIWaedlGyv4%2Fimage.png?alt=media&token=2213be47-bdb4-4cee-a592-b8cc904eb01c)
-
-### Set your active API key  <a id="set-your-active-api-key"></a>
-
-```text
-gradient apiKey XXXXXXXXXXXXXXXXXXX
-```
+There are two Gradient experiments involved in this workflow -- training and deployment. The first experiment generates a Python pickle file that gets stored in the shared storage service of Gradient. The same pickle file will be used by the second experiment running a Flask web server to expose a REST endpoint. This experiment will serve the model through the inferencing endpoint.
 
 ## Creating a Gradient Experiment to Train the Model
 
@@ -153,7 +109,9 @@ We are using a custom Docker container image with prerequisites such as NumPy, S
 
 ## Creating a Gradient Experiment to Deploy and Host the Model
 
+{% hint style="info" %}
 _Note: check out the_ [_Create a Deployment docs_](../deployments/create-a-deployment-ui.md#create-a-deployment) _for a more up-to-date way to deploy your models using the newer first-class Deployments feature in Gradient. The following section describes a how to deploy models with Gradient using Jobs._
+{% endhint %}
 
 We are now ready to host the trained model in a Gradient experiment that runs a Flask web server. The experiment loads the pickle file created and stored by the last experiment at the `/storage` location.
 
@@ -199,7 +157,7 @@ Unlike the previous experiment, this wouldn’t get terminated unless it is manu
 
 Let’s go ahead and submit the experiment to Gradient.
 
-```text
+```bash
 gradient jobs create \
 --container janakiramm/python:3 \
 --machineType C2 \
@@ -219,13 +177,21 @@ gradient jobs list
 
 Make a note of the _fqdn_ parameter mentioned in the output. We need that to access the REST endpoint. Since we are using the _jq_ utility, we can also grab the _fqdn_ with a simple command.
 
-$ export GRAD\_HOST=\`paperspace jobs list \| jq -r .\[\].fqdn\`
+```bash
+export GRAD_HOST=`paperspace jobs list | jq -r .[].fqdn`
+```
 
 It’s time for us to hit the REST endpoint to get the predictions. Let’s check the expected salary of a candidate with 25 years of experience.
 
-$ curl $GRAD\_HOST:8080/sal/25
+```bash
+curl $GRAD_HOST:8080/sal/25
+```
 
+This should return:
+
+```text
 {"salary":149121.27}
+```
 
 Congratulations! You have successfully completed the end-to-end workflow involved in training and deploying machine learning models with Gradient.
 
@@ -236,8 +202,4 @@ export JOB_ID=`gradient jobs list | jq .[].id`
 gradient jobs stop $JOB_ID
 gradient jobs destroy $JOB_ID
 ```
-
-## Summary
-
-Apart from CLI, users can submit experiment through the web UI available within Paperspace Console. For interactive development, Jupyter Notebooks can be launched.
 

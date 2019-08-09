@@ -57,7 +57,7 @@ Container link format: "docker.io/&lt;organization-or-username&gt;/&lt;repositor
 Example:
 
 ```text
-paperspace jobs create ... --container "docker.io/myorganization/my_private_repo:latest" \
+gradient experiments run ... --container "docker.io/myorganization/my_private_repo:latest" \
 --registryUsername "myusername" --registryPassword "mypassword"
 ```
 
@@ -116,14 +116,14 @@ To get this create a service account JSON key file for your project, following t
   
 Once you have downloaded your JSON key file, rename it to "keyfile.json".
 
-Use the contents of the keyfile as the password value in the Gradient experiments method:
+Use the contents of the keyfile as the password value in the `gradient experiments` method:
 
 ```text
 gradient experiments run ... --container "gcr.io/myproject/my_private_repo:latest" \
 --registryUsername "_json_key" --registryPassword "$(cat keyfile.json)"
 ```
 
-Note: do not base64 encode the contents of the keyfile. It will be encoded by the Gradient experiment runner at runtime.
+Note: do not base64 encode the contents of the keyfile. It will be encoded by the Gradient Experiments job runner at runtime.
 
 For more details and other options see: [https://cloud.google.com/container-registry/docs/advanced-authentication](https://cloud.google.com/container-registry/docs/advanced-authentication)
 

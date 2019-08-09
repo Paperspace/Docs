@@ -1,9 +1,9 @@
-# Dealing with Gradient Deployments
+# Using Gradient Deployments
 
 ## Objectives 
 
 * Understand the workflow involved in deploying models 
-* Consuming a deployment URI for model inferencing
+* Consuming a deployment URL for model inferencing
 
 ## Introduction
 
@@ -21,23 +21,21 @@ Once a model is registered and available in Gradient, it can be used for model s
 
 Make sure that the model is registered with Gradient.
 
-```text
+```bash
 gradient models list
 ```
 
 ```text
 +------+-----------------+------------+------------+----------------+ 
-| Name | ID | Model Type | Project ID | Experiment ID | 
+| Name | ID              | Model Type | Project ID | Experiment ID  | 
 +------+-----------------+------------+------------+----------------+ 
-| None | mosdnkkv1o1xuem | Tensorflow | prioax2c4 | e720893n7f5vx | 
+| None | mosdnkkv1o1xuem | Tensorflow | prioax2c4  | e720893n7f5vx  | 
 +------+-----------------+------------+------------+----------------+
 ```
 
-
-
 Run the below command to convert the registered model into a scalable deployment.
 
-```text
+```bash
 gradient deployments create \
     --deploymentType TFServing \
     --modelId mosdnkkv1o1xuem \
@@ -51,9 +49,9 @@ gradient deployments create \
 
 The above command has multiple switches that are important for the deployment configuration. Let’s understand each of them.
 
-`--deploymentType` specifies the model serving mechanism. In this tutorial, we are using TFServing which represents TensorFlow Serving.
+`--deploymentType` specifies the model serving mechanism. In this tutorial, we are using `TFServing` which represents TensorFlow Serving.
 
-`--modelId` indicates the id of the registered model. This should be already present in the model list. Notice that we are using mosdnkkv1o1xuem which is the id of the model registered in the previous tutorial.
+`--modelId` indicates the id of the registered model. This should be already present in the model list. Notice that we are using `mosdnkkv1o1xuem` which is the id of the model registered in the previous tutorial.
 
 `--name` provides an arbitrary name to the deployment.
 
@@ -65,35 +63,45 @@ The above command has multiple switches that are important for the deployment co
 
 Now, start the deployment with the below command:
 
-`gradient deployments start --id deslid8n74p4bvs`
+```bash
+gradient deployments start --id deslid8n74p4bvs
+```
 
-`Deployment started`
+This should return:
+
+```text
+Deployment started
+```
 
 You can list all the deployments with gradient Deployments list command.
 
-`gradient deployments list` 
+```bash
+gradient deployments list
+```
 
 ```text
 +---------------------+-----------------+----------------------------------------------------------------------+----------+---------------------------+
-| Name | ID | Endpoint | Api Type | Deployment Type | 
+| Name                | ID              | Endpoint                                                             | Api Type | Deployment Type           | 
 +---------------------+-----------------+----------------------------------------------------------------------+----------+---------------------------+ 
-| Fashion MNIST Model | deslid8n74p4bvs | 
-https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict
- | REST | Tensorflow Serving on K8s | 
- +---------------------+-----------------+----------------------------------------------------------------------+----------+---------------------------+
+| Fashion MNIST Model | deslid8n74p4bvs | https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict | REST     | Tensorflow Serving on K8s | 
++---------------------+-----------------+----------------------------------------------------------------------+----------+---------------------------+
 ```
 
-The list of deployments can also be accessed from the UI.
+The list of deployments can also be accessed from the web UI.
 
 ![](../.gitbook/assets/grad-deploy-0.jpg)
 
 ## Accessing the Deployment for Inferencing
 
-Each Gradient Deployment results in a URI that’s compatible with TF Serving scheme. The last step of this tutorial generated a URL [https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict](https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict) that can be used for inferencing.
+Each Gradient Deployment results in a endpoint URL that’s compatible with Tensorfow Serving scheme. The last step of this tutorial generated an endpoint URL [https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict](https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict)   
+that can be used for inference.
 
 Switch to the infer folder of the cloned repo and execute the following command:
 
-`SERVE_URL=`[`https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict`](https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict)`python infer.py`
+```text
+export SERVE_URL=https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict
+python infer.py
+```
 
 ```text
 The model predicted this as a Ankle boot, and it was actually a Ankle boot
@@ -103,11 +111,11 @@ The model predicted this as a Trouser, and it was actually a Trouser
 The model predicted this as a Shirt, and it was actually a Shirt
 ```
 
-For inferencing, we load the test data along with the associated labels and send the first five images to the TF Serving REST endpoint. 
+For inferencing, we load the test data along with the associated labels and send the first five images to the Tensorflow Serving REST endpoint. 
 
 From the output, it is clear that the model is performing well in predicting the type of apparel.
 
-Feel free to explore [infer.py](https://github.com/janakiramm/fashionmnist/blob/master/infer/infer.py) to learn how to perform inferencing with Gradient Deployments based on TF Serving.
+Feel free to explore [infer.py](https://github.com/janakiramm/fashionmnist/blob/master/infer/infer.py) as an example of how to perform inferencing with Gradient Deployments based on Tensorflow Serving.
 
 ## Summary 
 

@@ -4,16 +4,26 @@
 
 When you launch a Notebook, it runs inside a container preloaded with the notebook files and dependencies.  The following is a list of containers that Paperspace maintains:
 
-| Name | Description | URL |
-| :--- | :--- | :--- |
-| _Fast.ai + PyTorch_ | Paperspace's Fast.ai template is built for getting up and running with the enormously popular [Fast.ai online MOOC called Practical Deep Learning for Coders](http://www.fast.ai/).  | [GitHub](https://github.com/Paperspace/fastai-docker) |
-| _TensorFlow \(1.5.0 GPU Py3\)_ | Official docker images for deep learning framework TensorFlow \([http://www.tensorflow.org](http://www.tensorflow.org/)\) | [DockerHub](https://hub.docker.com/r/tensorflow/tensorflow/) |
-| _TensorFlow \(1.5.0 CPU Py3\)_ | Official docker images for deep learning framework TensorFlow \([http://www.tensorflow.org](http://www.tensorflow.org/)\) | [DockerHub](https://hub.docker.com/r/tensorflow/tensorflow/) |
-| _Deepo \(Python 2.7\)_ | A series of Docker images \(and their generator\) that allows you to quickly set up your deep learning research environment. \([https://hub.docker.com/r/ufoym/deepo](https://hub.docker.com/r/ufoym/deepo)\) | [GitHub](https://github.com/ufoym/deepo) |
-| _Deepo \(Python 3.6\)_ | A series of Docker images \(and their generator\) that allows you to quickly set up your deep learning research environment. \([https://hub.docker.com/r/ufoym/deepo](https://hub.docker.com/r/ufoym/deepo)\) | [GitHub](https://github.com/ufoym/deepo) |
-| _JupyterLab Data Science Stack_ | Jupyter Notebook Data Science Stack | [DockerHub](https://hub.docker.com/r/jupyter/datascience-notebook/) |
-| _JupyterLab Data R Stack_ | Jupyter Notebook R Stack | [DockerHub](https://hub.docker.com/r/jupyter/r-notebook/) |
-| _NVIDIA RAPIDS dev ubuntu18.04_ | Suite of open source libraries to execute end-to-end data science and analytics pipelines. Written in Python, and built on Apache Arrow.  |  [Nvidia](https://developer.nvidia.com/rapids) |
+### Popular Containers
+
+| Name | Description | Container Tag | URL |
+| :--- | :--- | :--- | :--- |
+| _**Fast.ai**_                | Paperspace's Fast.ai template is built for getting up and running with the enormously popular [Fast.ai online MOOC](http://www.fast.ai/).  | `paperspace/fastai:1.0-CUDA9.2-base-3.0-v1.0.6` | [GitHub](https://github.com/Paperspace/fastai-docker) |
+| _**All-in-one**_ | All ML/DL frameworks in a single template with CUDA/cuDNN and other libraries. Python 36. | `ufoym/deepo:all-py36-jupyter` | [GitHub](https://github.com/ufoym/deepo) |
+| _**TensorFlow 2.0**_ | Preview of TensorFlow 2.0 with GPU support. Python 36. | `tensorflow/tensorflow:2.0.0a0-gpu-py3-jupyter` | \*\*\*\*[DockerHub](https://hub.docker.com/r/tensorflow/tensorflow) |
+| _**NVIDIA RAPIDS**_ | NVIDIA's open source libraries to execute end-to-end data science and analytics pipelines. v0.8. | `cuda10.0-devel-ubuntu18.04` |  [NVIDIA](https://hub.docker.com/r/rapidsai/rapidsai/tags) |
+| _**PyTorch**_ | Latest PyTorch release \(1.2\) with GPU support. Python 36. | `paperspace/dl-containers:pytorch-py36-cu100-jupyter` | [DockerHub](https://hub.docker.com/r/pytorch/pytorch) |
+| _**TensorFlow**_ | Latest stable release \(1.14.0\) with GPU support. Python 36. | `paperspace/dl-containers:tensorflow1140-py36-cu100-cdnn7-jupyter` | [DockerHub](https://hub.docker.com/r/tensorflow/tensorflow) |
+
+### Other Containers
+
+| Name | Description | Container Tag | URL |
+| :--- | :--- | :--- | :--- |
+| _**TensorFlow \(1.5.0 GPU Py3\)**_ | Official docker images for deep learning framework TensorFlow \([http://www.tensorflow.org](http://www.tensorflow.org/)\) | `tensorflow/tensorflow:1.5.0-gpu-py3` | [DockerHub](https://hub.docker.com/r/tensorflow/tensorflow/) |
+| _**TensorFlow \(1.5.0 CPU Py3\)**_ | Official docker images for deep learning framework TensorFlow \([http://www.tensorflow.org](http://www.tensorflow.org/)\) | `tensorflow/tensorflow:1.5.0-py3` | [DockerHub](https://hub.docker.com/r/tensorflow/tensorflow/) |
+| _**Deepo \(Python 2.7\)**_ | A series of Docker images \(and their generator\) that allows you to quickly set up your deep learning research environment. \([https://hub.docker.com/r/ufoym/deepo](https://hub.docker.com/r/ufoym/deepo)\) | `ufoym/deepo:all-py27-jupyter` | [GitHub](https://github.com/ufoym/deepo) |
+| _**JupyterLab Data Science Stack**_ | Jupyter Notebook Data Science Stack | `jupyter/datascience-notebook` | [DockerHub](https://hub.docker.com/r/jupyter/datascience-notebook/) |
+| _**JupyterLab Data R Stack**_ | Jupyter Notebook R Stack | `jupyter/r-notebook` | [DockerHub](https://hub.docker.com/r/jupyter/r-notebook/) |
 
 ## Custom Containers
 
@@ -21,7 +31,9 @@ Custom containers feature lets you pull your own image from a container registry
 
 #### Require field:
 
-* Container Name = Path and tags of image eg ufoym/deepo:all-jupyter-py36
+* Container Name = Path and tags of image eg `ufoym/deepo:all-jupyter-py36`
+
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 #### Optional Parameters:
 
@@ -30,11 +42,5 @@ Custom containers feature lets you pull your own image from a container registry
 * Default Entrypoint = must be Jupyter compatible, defaults to 'jupyter notebook' if left blank
 * Container user = optional user, defaults to 'root' if left blank
 
-See a tutorial on using custom containers [here](https://support.paperspace.com/hc/en-us/articles/360008256453-Creating-Using-Custom-Containers-with-Notebooks).
-
-{% hint style="info" %}
-This page provides help about pulling containers from various public and private repositories:
-
-[https://support.paperspace.com/hc/en-us/articles/360003415434-Containers-Public-Private](https://support.paperspace.com/hc/en-us/articles/360003415434-Containers-Public-Private) 
-{% endhint %}
+See a tutorial on using custom containers [here](building-a-custom-container.md).
 

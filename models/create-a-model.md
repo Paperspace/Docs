@@ -39,5 +39,5 @@ The following parameters can be used with the `list` subcommand:
 | `--experimentId` | Filter models list by Experiment ID |
 | `--projectId` | Filter models list by Project ID |
 
-_Note: `list` is currently the only `models` subcommand in the Gradient CLI. And more soon!_
+_Note: `list` is currently the only `models` subcommand in the Gradient CLI. More coming soon._
 

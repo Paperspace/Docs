@@ -1,4 +1,4 @@
-# Getting Started with Gradient Notebooks
+# Getting Started with Notebooks
 
 ## **Objectives**
 

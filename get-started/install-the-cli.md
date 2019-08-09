@@ -1,8 +1,8 @@
 ---
-description: How to install the Paperspace CLI
+description: How to install the Gradient Command Line Interface
 ---
 
-# Install the CLI \(Command Line Interface\)
+# Install the Gradient CLI
 
 ## Installation
 
@@ -10,7 +10,7 @@ description: How to install the Paperspace CLI
 
 \*\*\*\*
 
-The Paperspace CLI is available on [pypi](https://pypi.org/project/paperspace/) and [anaconda](https://anaconda.org/paperspace/paperspace) and works on Windows, MacOS, and Linux.
+The Gradient CLI is available on [pypi](https://pypi.org/project/paperspace/) and [anaconda](https://anaconda.org/paperspace/paperspace) and works on Windows, MacOS, and Linux.
 
 The CLI requires **Python 2.7** or **Python 3.4+**. Be sure to use a compatible version of **pip** depending on your Python version.
 
@@ -90,5 +90,5 @@ gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 First, sign in to your [Paperspace account](https://paperspace.com/). On the left of your home console, you should find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
 
-![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%285%29.png)
+![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%288%29.png)
 

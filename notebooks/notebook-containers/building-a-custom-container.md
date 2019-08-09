@@ -90,7 +90,7 @@ Just pass in the container when creating your Experiment
 
 #### Using the Experiment Builder UI
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 #### Using the CLI
 

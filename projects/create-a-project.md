@@ -18,7 +18,7 @@ If you haven't yet connected your GitHub account, follow the prompts to grant ac
 
 Then, select the GitHub repo from the dropdown list:
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 ## Create a Standalone Project
 
