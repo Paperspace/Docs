@@ -123,7 +123,7 @@ gradient jobs create ... --container "gcr.io/myproject/my_private_repo:latest" \
 --registryUsername "_json_key" --registryPassword "$(cat keyfile.json)"
 ```
 
-Note: do not base64 encode the contents of the keyfile. It will be encoded by the gradient job runner at runtime.
+Note: do not base64 encode the contents of the keyfile. It will be encoded by the Gradient experiment runner at runtime.
 
 For more details and other options see: [https://cloud.google.com/container-registry/docs/advanced-authentication](https://cloud.google.com/container-registry/docs/advanced-authentication)
 
