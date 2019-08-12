@@ -61,7 +61,7 @@ We will now load the MNIST dataset from `/datasets` location. You can browse the
 
 The _loadMNIST_ helper function loads the dataset and converts into a NumPy array.
 
-![](../.gitbook/assets/step-5-9.jpg)
+![](https://lh4.googleusercontent.com/Y3pndStlAy97SeauOMDIsflYY8u5bFIVmRY9s89ZUtrwrxfkHa6Ww7Cct1zHHuVTTMR98gNR5LuYbgGHRP0rfgCoq0m8RZvhr5dgoKj-JhV79TzOUN5YkHuOwAbnL0wCrhHVpFlL)
 
 Let us verify if the dataset is loaded correctly by randomly visualizing a few data points.
 
@@ -75,8 +75,7 @@ We are now ready to fit the data into a logistic regression model.
 
 ![](../.gitbook/assets/step-5-10.jpg)
 
-Let’s call the predict method to see how accurate our model is. We will use the output of this to generate a confusion matrix.  
-
+Let’s call the predict method to see how accurate our model is. We will use the output of this to generate a confusion matrix.
 
 ![](../.gitbook/assets/step-5-11.jpg)
 
