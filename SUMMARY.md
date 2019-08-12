@@ -30,6 +30,7 @@
   * [View and Download Artifacts](notebooks/notebook-actions/view-and-download-artifacts.md)
 * [Notebook Containers](notebooks/notebook-containers/README.md)
   * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)
+* [Public Notebooks](notebooks/public-notebooks.md)
 
 ## Projects
 
