@@ -10,7 +10,7 @@ description: How to install the Gradient Command Line Interface
 
 \*\*\*\*
 
-The Gradient CLI is available on [pypi](https://pypi.org/project/paperspace/) and [anaconda](https://anaconda.org/paperspace/paperspace) and works on Windows, MacOS, and Linux.
+The Gradient CLI is available on [pypi](https://pypi.org/project/paperspace/) and works on Windows, MacOS, and Linux.
 
 The CLI requires **Python 2.7** or **Python 3.4+**. Be sure to use a compatible version of **pip** depending on your Python version.
 
