@@ -18,9 +18,3 @@ The SDK is bundled with the Gradient CLI.  You'll need the latest version which 
 
 There are examples for each section of the SDK starting [here](projects-client.md).  We also offer a full end-to-end tutorial [here](../sdk-tutorial.md).
 
-
-
-
-
-
-
