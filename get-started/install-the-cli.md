@@ -6,9 +6,7 @@ description: How to install the Gradient Command Line Interface
 
 ## Installation
 
-{% embed url="https://youtu.be/t1-PqoeqFuo" %}
-
-\*\*\*\*
+{% embed url="https://youtu.be/t1-PqoeqFuo" caption="" %}
 
 The Gradient CLI is available on [pypi](https://pypi.org/project/paperspace/) and works on Windows, MacOS, and Linux.
 
