@@ -12,7 +12,7 @@ Get help anytime by calling the `help` function on any object.
 
 ## Install
 
-The SDK is bundled with the Gradient CLI.  You'll need the latest version which you can download by adding `--pre` when i[nstalling \(or upgrading\) the CLI](../../get-started/install-the-cli.md).  
+The SDK is bundled with the Gradient CLI.  You'll need the latest version which you can download by adding `--pre` when [installing \(or upgrading\) the CLI](../../get-started/install-the-cli.md).  
 
 ## Examples
 
