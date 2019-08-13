@@ -58,15 +58,9 @@ source /path/to/new/virtual/environment/bin/activate
 pip install -U gradient
 ```
 
-#### **Using conda to install the latest stable release**
-
-```bash
-conda install -c paperspace gradient
-```
-
 **Using pip to install the latest prerelease**
 
-```text
+```bash
 pip install -U --pre gradient
 ```
 

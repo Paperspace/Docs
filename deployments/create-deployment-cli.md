@@ -1,4 +1,4 @@
-# Create a Deployment via the CLI
+# Create a Deployment \(CLI\)
 
 To create Deployments from the CLI, be sure first to [install the CLI](https://docs.paperspace.com/gradient/get-started/install-the-cli).
 

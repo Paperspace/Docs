@@ -72,8 +72,8 @@
 
 * [About](deployments/about.md)
 * [Preparing Model for Deployment](deployments/preparing-model-for-deployment.md)
-* [Create a Deployment via the UI](deployments/create-a-deployment-ui.md)
-* [Create a Deployment via the CLI](deployments/create-deployment-cli.md)
+* [Create a Deployment \(UI\)](deployments/create-a-deployment-ui.md)
+* [Create a Deployment \(CLI\)](deployments/create-deployment-cli.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
 * [Optimizing Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
@@ -103,7 +103,14 @@
 
 ## Gradient SDK <a id="gradient-python-sdk"></a>
 
-* [Gradient SDK](gradient-python-sdk/gradient-python-sdk.md)
+* [Gradient SDK](gradient-python-sdk/gradient-python-sdk/README.md)
+  * [Projects Client](gradient-python-sdk/gradient-python-sdk/projects-client.md)
+  * [Experiments Client](gradient-python-sdk/gradient-python-sdk/experiments-client.md)
+  * [Models Client](gradient-python-sdk/gradient-python-sdk/models-client.md)
+  * [Deployments Client](gradient-python-sdk/gradient-python-sdk/deployments-client.md)
+  * [Jobs Client](gradient-python-sdk/gradient-python-sdk/jobs-client.md)
+* [End to end tutorial](gradient-python-sdk/sdk-tutorial.md)
+* [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
 
 ## Gradient Private Cloud
 
