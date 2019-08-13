@@ -2,15 +2,15 @@
 
 ## Prerequisites
 
-To begin using Paperspace, follow these preliminary steps:
+To begin using Gradient, follow these preliminary steps:
 
 1. [Create a Paperspace account ](https://www.paperspace.com/account/signup)
 2. Add a valid credit card to enable Paperspace's features
 3. Create a team if higher tiers of service and collaboration features are desired
-4. [Install the Paperspace Command Line Interface ](install-the-cli.md#installation)
+4. [Install the Gradient CLI ](install-the-cli.md#installation)
 5. [Connecting your account](install-the-cli.md#connecting-your-account)
 
-Now you can create Notebooks, Jobs, Projects, Experiments, and more!
+Now you can create Notebooks, Jobs, Projects, Experiments, Deployments, and more!
 
 ## Create a Notebook
 
@@ -22,7 +22,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 
 You can run Experiments from the web interface or CLI:
 
-### Using the Experiment Builder
+### Using the Experiment Builder \(UI\)
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
