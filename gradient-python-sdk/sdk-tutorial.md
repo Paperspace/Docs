@@ -51,14 +51,12 @@ print("project_id: "+proj_id)
 
 ```python
 #list experiments in the project
-print(experiment_client.list([proj_id])
+print(experiment_client.list([project_id])
 ```
 
 ## Parameters of the experiment
 
 ```python
-single_node_path = "/artifacts"
-
 env_variable = {
     "EPOCHS_EVAL":2,
     "TRAIN_EPOCHS":3,
@@ -74,8 +72,7 @@ single_node_parameters = {
     "experiment_env": env_variable,
     "container": "tensorflow/tensorflow:1.13.1-gpu-py3",
     "workspace_url": "https://github.com/Paperspace/mnist-sample.git",
-    "model_type": "Tensorflow",
-    "model_path": single_node_path
+    "model_type": "Tensorflow"
 }
 ```
 
@@ -95,7 +92,7 @@ print("state: "+constants.ExperimentState.get_state_str(state))
 ## Start experiment
 
 ```python
-experiment_client.start(exp_id)
+experiment_client.start(experiment_id)
 
 print("PAPERSPACE LINK FOR EXPERIMENT")
 print("_______EXPERIMENT STARTING_____")
@@ -145,7 +142,8 @@ print(model)
 ## View Model Accuracy
 
 ```python
-if len(model) > 0: print("model accuracy: "+model[0]['accuracy'])
+if len(model) > 0: 
+    print("model accuracy: "+model[0]['accuracy'])
 ```
 
 ## Create a deployment from the model
