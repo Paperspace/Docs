@@ -166,7 +166,7 @@ These can be used in conjunction with the `ports` option to send HTTP traffic to
 
 ### Run jobs from Dockerfiles
 
-_Note: to run jobs from Dockerfiles, use_ [_paperspace-python_](https://github.com/Paperspace/paperspace-python)_, or gradient-cli._
+_Note: to run jobs from Dockerfiles, use_ [gradient-cli](https://github.com/Paperspace/gradient-cli)
 
 Gradient job containers can be created from a Dockerfile. Three options are available:
 
