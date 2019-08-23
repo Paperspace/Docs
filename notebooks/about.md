@@ -8,5 +8,5 @@ Within that instance you can have limitless notebook documents.
 
 ## File Storage
 
-Any data stored in `/storage` will be preserved for you, across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here.](https://support.paperspace.com/hc/en-us/articles/360001468133-Persistent-Storage)
+Any data stored in `/storage` will be preserved for you, across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here](../data/storage.md#persistent-storage).
 
