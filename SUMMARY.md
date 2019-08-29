@@ -127,7 +127,8 @@
 * [Instance Types](instances/instance-types.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
 
-## Release Notes CLI & SDK
+## Release Notes
 
-* [Release Notes](release-notes-cli-and-sdk/release-notes.md)
+* [Product release notes](https://support.paperspace.com/hc/en-us/articles/217560197)
+* [CLI/SDK Release notes](https://github.com/Paperspace/gradient-cli/releases)
 
