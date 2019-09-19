@@ -1,12 +1,10 @@
 # Run Experiments via the CLI
 
-Gradient supports GitHub-enabled [GradientCI Projects](../projects/gradientci.md) and Standalone Projects, and these projects contain any Experiments that you create.
-
-GradientCI Projects allow you to create and run Experiments automatically based on code pushes, but often you will want to manually create Experiments. To do this, you can use Experiment Builder in the GUI, or you can use the CLI.
+Gradient supports GitHub-enabled [GradientCI Projects](../projects/gradientci.md) and Standalone Projects, and these projects contain any Experiments that you create.  GradientCI Projects allow you to create and run Experiments automatically based on code pushes, but often you will want to manually create Experiments. To do this, you can use Experiment Builder in the GUI, or you can use the CLI.
 
 The Gradient CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.
 
-Once you have the CLI installed, use the alias `gradient` plus any further commands you wish to run.
+Once you have the [CLI installed](../get-started/install-the-cli.md), use the alias `gradient` plus any further commands you wish to run.
 
 Note that you can use the `--help` option at any time to reveal information in your terminal about the current command you wish to use. Alternately, if you simply try to run a command, the CLI will prompt you for additional subcommands that you may be intending to use, as well as required options that are missing from your command.
 
@@ -30,19 +28,19 @@ Commands:
   version          Show the version and exit
 ```
 
-## Running single-node and multinode experiments
+## Running singlenode and multinode experiments
 
 There are separate subcommands `singlenode` and `multinode` experiments.
 
 For programmatic use of the CLI, there is the `create` command, which simply creates an experiment in a target project, with the specified options.
 
-Alternately, for more interactive use of the CLI, there is `createAndStart`, which allows you to both create and automatically start an experiment with one command. With this command, logs will automatically stream once the experiment has been created and started.
+Alternately, for more interactive use of the CLI, there is `run`, which allows you to both create and automatically start an experiment with one command. With this command, logs will automatically stream once the experiment has been created and started.
 
 ```bash
-gradient experiments create singlenode --help
+gradient experiments run singlenode --help
 Usage: gradient experiments create singlenode [OPTIONS]
 
-gradient experiments create multinode --help
+gradient experiments run multinode --help
 Usage: gradient experiments create multinode [OPTIONS]
 ```
 
