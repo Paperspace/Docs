@@ -1,8 +1,10 @@
 # Free Instances
 
-Gradient has a Free CPU and GPU instance tier currently offered in beta. 
+Gradient offers Free CPU and GPU instances, currently available to users who are part of the Gradient Community Notebooks Early Access beta.
 
-### Instance available in the Free tier
+These free instances are available to all G\* subscription tiers \(not T\*\), and all free instances have the same restrictions as described below regardless of subscription tier.
+
+### Instance types available in the Free pool
 
 Free CPU \(C3\)
 
