@@ -6,7 +6,7 @@ Gradient includes three types of storage that are available within the context o
 
 ## Persistent Storage
 
-Persistent storage is a high-performance storage directory located at `/storage` where you can read and write files. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  As the name implies, anything you store in the `/storage` directory will be accessible across multiple runs of Experiments, Jobs and Notebooks in a given storage region. 
+Persistent storage is a high-performance storage directory located at `/storage` where you can read and write files. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Anything you store in the `/storage` directory will be accessible across multiple runs of Experiments, Jobs and Notebooks in a given storage region. 
 
 Persistent Storage is kept in two regions based on your machine type:
 
