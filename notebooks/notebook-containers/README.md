@@ -33,7 +33,7 @@ Custom containers feature lets you pull your own image from a container registry
 
 * Container Name = Path and tags of image eg `ufoym/deepo:all-jupyter-py36`
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](../../.gitbook/assets/image%20%2832%29.png)
 
 #### Optional Parameters:
 

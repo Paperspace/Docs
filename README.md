@@ -3,7 +3,7 @@
 Welcome to Gradient! Get familiar with the Gradient CLI and web interface.
 
 {% hint style="info" %}
-This is the documentation for the [Gradient°](https://paperspace.com/gradient) platform. You can view the Paperspace API Reference [here](https://paperspace.github.io/paperspace-node/). If you are looking for general information on Paperspace including our Knowledge Base, head to [support.paperspace.com](https://support.paperspace.com).
+This is the documentation for the [Gradient°](https://paperspace.com/gradient) platform. If you are looking for general information on Paperspace or to contact Support, visit our [Help Center](https://support.paperspace.com).
 {% endhint %}
 
 Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies developing, training, and deploying deep learning models. The platform provides **infrastructure automation** and a **software development kit** for machine learning developers.
@@ -14,9 +14,17 @@ Gradient is comprised of the following components:
 * \*\*\*\*[**CLI**](get-started/install-the-cli.md): An open-source command-line tool for executing Jobs from Windows, Mac, or Linux.
 * [**SDK**](gradient-python-sdk/gradient-python-sdk/): Programmatically interact with the Gradient platform.
 
-### Register [here](https://www.paperspace.com/account/signup?gradient=true) to get access to Gradient.
+![](.gitbook/assets/image%20%281%29.png)
 
-![](.gitbook/assets/image%20%2814%29.png)
+## Getting Access
+
+{% hint style="success" %}
+#### Request a Walkthrough
+
+Prefer a guided tour? [Click here](https://use.paperspace.com/contact-sales) to get in touch with a Gradient expert.
+{% endhint %}
+
+### Individuals can signup [here](https://www.paperspace.com/account/signup?gradient=true) for Gradient. 
 
 The best way to discover Gradient is to try it out. You can get started in seconds with the following guide:
 
