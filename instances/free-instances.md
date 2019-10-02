@@ -1,24 +1,31 @@
 # Free Instances
 
-Gradient offers Free CPU and GPU instance tiers, currently available to users who have early access via the Gradient Community Notebooks beta.
+### About
 
-These free instances are available to all G\* subscription plans \(not T\*\), and all free instances have the same restrictions as described below regardless of subscription plans.
+Gradient offers a free tier of GPU and CPU instances, currently available to beta users of Gradient Community Notebooks.
+
+These free instances are available to all _Private Workspace_ plans \(G\* subscriptions, not T\*\).  
 
 ### Instance types available in the Free tier
 
-Free CPU \(C3\)
+**Free-CPU** — C3 CPU instance
 
-Free GPU \(M4000\)
+**Free-GPU+** — NVIDIA M4000 GPU
 
-Free GPU \(P5000\)
+**Free-P5000** — NVIDIA P5000 GPU
 
-See the [Instance Types](instance-types.md) page for the details of what compute resources are available with these instances.
+See the [Instance Types](instance-types.md) page for the details on these instances.
 
 ### Limits of the Free tier
 
-* Instances will automatically shutdown after 6 hours.
-* All Notebooks and Jobs \(coming soon\) will be set to public and cannot be toggled to private.
-* 5GB of [persistent storage](../data/storage.md#persistent-storage) is included for free. This cannot be expanded.
+All free instances have the same limits, regardless of subscription plan:
+
+* Notebooks will automatically shutdown after 6 hours per session
+  * There are currently no limits to the number of sessions you can run
+* All Notebooks \(and Jobs coming soon\) will be set to public and cannot be set to private
+* 5GB of [persistent storage](../data/storage.md#persistent-storage) is included for free — this cannot be expanded
+
+Note: We are currently offering a limited pool of free instances so your notebook may be Pending in the queue as you wait for a free instance to become available. 
 
 
 
