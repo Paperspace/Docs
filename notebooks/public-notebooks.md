@@ -1,16 +1,24 @@
 # Gradient Community Notebooks
 
+### Beta Release
+
 In October, 2019, we launched the beta of Gradient Community Notebooks – [register here](https://docs.google.com/forms/d/1VtgyUJxwWo5HQIW_GKZvue_sW9R7PJANa_USdQJ4yaE)!
 
-Gradient Community Notebooks allow you to create, run, and share your Jupyter Notebooks with the world. The goal is to offer a product that makes it easy and fun to share your work with others, to discover and fork notebooks from other users, and to introduce social features to Gradient.
+Gradient Community Notebooks allow you to create, run, and share your Jupyter Notebooks with the world.
+
+The goal is to offer a product that makes it free, easy, and fun to share your work with others, to discover and fork notebooks from other users, and to introduce social features to Gradient. We are working to release Community Notebooks to the general public in the coming weeks!
 
 Gradient Community Notebooks can be viewed with anyone, regardless of having a Paperspace account.
 
-With this launch, you can now create a [Public Profile](https://www.paperspace.com/jared) and a user or team handle.
+#### Public Profiles
 
-During the Beta, we are stabilizing this new product offering, and we'd love to hear your feedback on Community Notebooks, whether [feature requests](https://paperspace.canny.io/feature-requests) or [bug reports](https://feedback.canny.io/bug-reports)!
+With this launch, you can now create a [Public Profile](https://www.paperspace.com/jared) and a user or team handle. This is the start of social features on Gradient!
 
- Our goal is to release Community Notebooks to the general public in the coming weeks!
+#### Submitting Your Beta Feedback
+
+During the Beta, we are stabilizing this new product offering, and we'd love to hear your feedback on Community Notebooks, whether [feature requests](https://paperspace.canny.io/feature-requests) or [bug reports](https://feedback.canny.io/bug-reports) on our Canny board.
+
+#### Limitations
 
 Community Notebooks take advantage of the newly released [Free Instances](../instances/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
 
