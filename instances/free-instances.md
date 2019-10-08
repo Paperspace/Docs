@@ -4,7 +4,7 @@
 
 Gradient offers a Free Tier of free GPU and CPU instances, currently available to beta users of Gradient Community Notebooks.
 
-These Free Instances are available to all _Private Workspace_ plans \(G\* subscriptions, not T\*\).  
+These Free Instances are available to all _Private Workspace_ plans, i.e. G\* subscriptions, not T\*.  
 
 ### Instance Types available in the Free Tier
 
