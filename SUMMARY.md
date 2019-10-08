@@ -126,7 +126,7 @@
 ## Instances
 
 * [Instance Types](instances/instance-types.md)
-* [Free Instances](instances/free-instances.md)
+* [Free Instances \(Free Tier\)](instances/free-instances.md)
 * [Instance Tiers](instances/instance-tiers.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
 
