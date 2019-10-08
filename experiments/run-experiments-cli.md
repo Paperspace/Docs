@@ -106,6 +106,9 @@ For more information about this sample experiment see the README in the mnist-sa
   --workspace TEXT             Path to workspace directory
   --workspaceArchive TEXT      Path to workspace .zip archive
   --workspaceUrl TEXT          Project git repository url
+  --workspaceUsername          Github username for private repo
+  --workspacePassword          Github password for private repo
+  --workspacePassword wd3gG9WyReTWbMpmkKTFJ \
   --workingDirectory TEXT      Working directory for the experiment
   --artifactDirectory TEXT     Artifacts directory
   --clusterId TEXT             Cluster ID
