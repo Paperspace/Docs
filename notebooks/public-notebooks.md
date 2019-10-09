@@ -10,6 +10,18 @@ The goal is to offer a product that makes it free, easy, and fun to share your w
 
 Gradient Community Notebooks can be viewed by anyone, with or without a Paperspace account.
 
+#### Making a Notebook Public or Private
+
+Navigate to the Notebooks list under the Gradient menu.
+
+Click Share on the Notebook that you wish to make Public.
+
+![](../.gitbook/assets/share-notebook.png)
+
+This will launch the Share Notebook modal, where you can then click the toggle \(pictured green already below\) to make the notebook Public or Private.
+
+![](../.gitbook/assets/screen-shot-2019-10-09-at-12.19.40-am.png)
+
 #### Public Profiles
 
 With this launch, you can now create a [Public Profile](https://www.paperspace.com/jared) and a user or team handle. This is the start of social features on Gradient!
