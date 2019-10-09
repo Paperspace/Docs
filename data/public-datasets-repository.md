@@ -106,5 +106,17 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       style="text-align:left"><a href="https://github.com/NVlabs/stylegan">https://github.com/NVlabs/stylegan</a> 
         </td>
     </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><em><b>Tiny ImageNet</b></em>
+        </p>
+        <p><code>/datasets/tiny-imagenet-200</code>
+        </p>
+      </td>
+      <td style="text-align:left">The Tiny ImageNet is a subset of the ImageNet dataset and contains 200 classes with each class having         500 training images, 50 validation images and 50 test images. It is the default course project of the Stanford CS231n Class.            </td>
+      <td
+      style="text-align:left"><a href="https://tiny-imagenet.herokuapp.com/">https://tiny-imagenet.herokuapp.com/</a> 
+        </td>
+    </tr>
   </tbody>
 </table>
