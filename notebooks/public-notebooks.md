@@ -44,7 +44,7 @@ With this launch, you can now create a [Public Profile](https://www.paperspace.c
 
 #### Submitting Your Beta Feedback
 
-During the Beta, we'd love to hear your feedback on Community Notebooks as we work to stabilize and round out the UX of this new product offering. Click the buttons in the Community Notebook app, or directly open and track [feature requests](https://paperspace.canny.io/feature-requests) or [bug reports](https://feedback.canny.io/bug-reports) here!
+During the Beta, we'd love to hear your feedback on Community Notebooks as we work to stabilize and round out the UX of this new product offering. Click the buttons in the Community Notebook app, or directly open and track [feature requests](https://paperspace.canny.io/feature-requests) or [bug reports](https://paperspace.canny.io/bug-reports) here!
 
 #### Limitations
 
