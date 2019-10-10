@@ -30,7 +30,7 @@
   * [Rename a Notebook](notebooks/notebook-actions/rename-a-notebook.md)
 * [Notebook Containers](notebooks/notebook-containers/README.md)
   * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)
-* [Community \(Public\) Notebooks](notebooks/public-notebooks.md)
+* [Community & Public Notebooks](notebooks/public-notebooks.md)
 
 ## Projects
 
