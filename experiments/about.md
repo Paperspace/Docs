@@ -62,5 +62,5 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 

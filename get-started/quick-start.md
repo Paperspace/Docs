@@ -5,10 +5,9 @@
 To begin using Gradient, follow these preliminary steps:
 
 1. [Create a Paperspace account ](https://www.paperspace.com/account/signup)
-2. Add a valid credit card to enable Paperspace's features
-3. Create a team if higher tiers of service and collaboration features are desired
-4. [Install the Gradient CLI ](install-the-cli.md#installation)
-5. [Connecting your account](install-the-cli.md#connecting-your-account)
+2. Create a team if higher tiers of service and collaboration features are desired
+3. [Install the Gradient CLI ](install-the-cli.md#installation)
+4. [Connecting your account](install-the-cli.md#connecting-your-account)
 
 Now you can create Notebooks, Jobs, Projects, Experiments, Deployments, and more!
 
@@ -16,7 +15,7 @@ Now you can create Notebooks, Jobs, Projects, Experiments, Deployments, and more
 
 Notebooks can be created by clicking _Create Notebook_ button on the Notebooks tab. You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own. See more info [here](../notebooks/about.md).
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 ## Submit an Experiment
 
