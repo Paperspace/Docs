@@ -16,6 +16,12 @@ The Free Instances are available to all _Private Workspace_ plans, i.e. G\* subs
 
 See the [Instance Types](instance-types.md) page for the details on these instances.
 
+### Persistent Storage for Free Instances
+
+Free Instances have their own dedicated persistent storage of 5GB for you to do your machine learning work. This 5GB of storage is dedicated and persistent regardless of which Private Workspace subscription plan you're on.
+
+For example, you can be on a G2 subscription plan with 1TB of Persistent Storage, which will be used for your paid work, and any Free Instances that you use \(which you will still have access to\) will still use their dedicated 5GB of persistent storage.
+
 ### Limits of Free Instances
 
 All free instances have the same limits, regardless of your subscription plan:
