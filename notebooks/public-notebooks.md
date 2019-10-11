@@ -56,3 +56,13 @@ With this launch, you can now create a [Public Profile](https://www.paperspace.c
 
 Community Notebooks take advantage of the newly released [Free Instances](../instances/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
 
+### More Info
+
+Learn more about [Persistent Storage for Gradient Community Notebooks on free instances](../instances/free-instances.md#persistent-storage-for-free-instances).
+
+Learn more about [Free Instances](../instances/free-instances.md).
+
+Learn more about the various [Instance Types](../instances/instance-types.md).
+
+Learn more about our [Instance Tiers](../instances/instance-tiers.md).
+
