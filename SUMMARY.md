@@ -32,6 +32,10 @@
   * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)
 * [Community \(Public\) Notebooks](notebooks/public-notebooks.md)
 
+## Public Profiles
+
+* [Gradient Public Profiles](public-profiles/gradient-public-profiles.md)
+
 ## Projects
 
 * [About](projects/about.md)
@@ -134,8 +138,4 @@
 
 * [Product release notes](https://support.paperspace.com/hc/en-us/articles/217560197)
 * [CLI/SDK Release notes](https://github.com/Paperspace/gradient-cli/releases)
-
-## Public Profiles
-
-* [Gradient Public Profiles](public-profiles/gradient-public-profiles.md)
 
