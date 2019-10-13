@@ -1,10 +1,8 @@
 # Community \(Public\) Notebooks
 
-### Beta Release
-
-In early October, 2019, we launched the beta of Gradient Community Notebooks – [register here](https://docs.google.com/forms/d/1VtgyUJxwWo5HQIW_GKZvue_sW9R7PJANa_USdQJ4yaE)!
-
-During the Beta, we'd love to hear your feedback on Community Notebooks as we work to stabilize and round out the UX of this new product offering. Click the buttons in the Community Notebook app, or directly open and track [feature requests](https://paperspace.canny.io/feature-requests) or [bug reports](https://paperspace.canny.io/bug-reports) here!
+{% hint style="info" %}
+Gradient Community Notebooks were launched as a public Beta in October 2019. We'd love to hear your feedback on Community Notebooks as we work to stabilize and round out the UX of this new product offering. Click the buttons in the Community Notebook app, or directly open and track [feature requests](https://paperspace.canny.io/feature-requests) or [bug reports](https://paperspace.canny.io/bug-reports) here!
+{% endhint %}
 
 ### Gradient Community Notebooks
 
