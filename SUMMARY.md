@@ -135,3 +135,7 @@
 * [Product release notes](https://support.paperspace.com/hc/en-us/articles/217560197)
 * [CLI/SDK Release notes](https://github.com/Paperspace/gradient-cli/releases)
 
+## Public Profiles
+
+* [Gradient Public Profiles](public-profiles/gradient-public-profiles.md)
+
