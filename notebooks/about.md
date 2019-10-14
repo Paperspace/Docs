@@ -7,10 +7,14 @@ Gradient notebooks are an interactive environment \(based on [Jupyter Notebook](
 Within that instance you can have limitless notebook documents.
 
 {% hint style="info" %}
-**NEW!**  Visit the new [ML Showcase](https://ml-showcase.paperspace.com/) for a list of sample projects you can clone into your own account.
+**NEW!**  Visit the new [ML Showcase](https://ml-showcase.paperspace.com/) for a list of sample projects you can fork into your own account.
 {% endhint %}
 
 ## File Storage
 
 Any data stored in `/storage` will be preserved for you, across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here](../data/storage.md#persistent-storage).
+
+### Containers
+
+Because everything is running in a Docker container behind the scenes, we support any kernel you would like. We have a handful of pre-built containers and you can also add a custom container very easily or build one off of a base template, such as the Jupyter R stack.
 
