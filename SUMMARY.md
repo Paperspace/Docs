@@ -34,7 +34,7 @@
 
 ## Public Profiles
 
-* [Gradient Public Profiles](public-profiles/gradient-public-profiles.md)
+* [Public Profiles](public-profiles/gradient-public-profiles.md)
 
 ## Projects
 
