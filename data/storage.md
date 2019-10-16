@@ -12,7 +12,7 @@ Persistent Storage is kept in three regions based on your machine type or tier:
 
 1. PS East Coast \(NY2\)
 2. GCP West
-3. PS West Coast \(for the [Free Tier](../instances/free-instances.md)\)
+3. PS West Coast \(for the [Free Tier](../instances/free-instances.md) on Gradient\)
 
 Artifact storage is collected and made available after the Experiment, Job, or Notebook run in the CLI and web interface. You can find the Artifacts in the Gradient console, clicking on the job run, and scrolling to the bottom of the output. From there you can download any files that your job has placed in the `/artifacts` directory.  If you need to get result data from an Experiment, Job, or Notebook run out of Gradient, use the Artifacts directory.
 
