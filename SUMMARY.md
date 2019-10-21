@@ -48,7 +48,10 @@
 * [About](experiments/about.md)
 * [Run Experiments via the UI](experiments/run-experiments-ui.md)
 * [Run Experiments via the CLI](experiments/run-experiments-cli.md)
-* [Multi-node Training](experiments/multi-node-training.md)
+* [Distributed Machine Learning with Tensorflow](experiments/multi-node-training.md)
+* [Distributed Machine Learning with MPI](experiments/distributed-machine-learning-with-mpi/README.md)
+  * [Distributed Training using Horovod](experiments/distributed-machine-learning-with-mpi/distributed-training-using-horovod.md)
+  * [Distributed Training Using ChainerMN](experiments/distributed-machine-learning-with-mpi/distributed-training-using-chainermn.md)
 * [Hyperparameter Tuning](experiments/hyperparameters.md)
 * [Containers: Public & Private](experiments/containers-public-and-private.md)
 
