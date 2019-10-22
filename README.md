@@ -10,7 +10,7 @@ Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies 
 
 Gradient is comprised of the following components:
 
-* [**Web User Interface**](https://www.paperspace.com/console)**:** A simple yet powerful interface for managing your projects, data, users, and account.
+* [**User Interface**](https://www.paperspace.com/console)**:** A simple yet powerful interface for managing your projects, data, users, and account.
 * \*\*\*\*[**CLI**](get-started/install-the-cli.md): An open-source command-line tool for executing Jobs from Windows, Mac, or Linux.
 * [**SDK**](gradient-python-sdk/gradient-python-sdk/): Programmatically interact with the Gradient platform.
 
@@ -35,4 +35,6 @@ The best way to discover Gradient is to try it out. You can get started in secon
 Please visit the [community](http://community.paperspace.com/) to post questions or tutorials for other other Gradient users.
 
 Our [Help Center](https://support.paperspace.com) is a great resource for general Paperspace information.
+
+Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a curated list of interactive ML sample projects.
 

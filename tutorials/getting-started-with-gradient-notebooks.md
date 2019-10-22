@@ -7,6 +7,10 @@
 * Train a machine learning model
 * Save the model for inferencing
 
+{% hint style="success" %}
+This example is available in our ML Showcase!  You can clone the notebook [here](https://ml-showcase.paperspace.com/projects/logistic-regression-with-scikit-learn). 
+{% endhint %}
+
 ## **Introduction**
 
 Gradient provides one-click access to Jupyter Notebooks. You can choose pre-configured environments to launch Notebook instances or create a container with custom environments.
