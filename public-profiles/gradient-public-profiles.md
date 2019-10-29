@@ -15,17 +15,17 @@ Gradient Public Profiles are still in BETA. The look and feel will change during
 
 To create your public profile, [visit the Console](https://www.paperspace.com/console) and hover over your user/team icon at the top-right.
 
-There, click `Profile` in the dropdown menu. This will take you to your current public profile. By default your namespace is set to your auto-generated internal private workspace or team id \(e.g. `t98sga1`\).
+There, click `Profile` in the dropdown menu. This will take you to your current public profile. By default your user or team handle is set to your auto-generated internal private workspace or team id \(e.g. `t98sga1`\).
 
 ![](../.gitbook/assets/image%20%288%29.png)
 
 
 
-Click `Edit Profile` to set your username, public profile description, and more.
+Click `Edit Profile` to set your user or team handle, public profile description, and more.
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
-Your username follows a GitHub-style convention and will be accessible at **https://www.paperspace.com/{your\_username}**
+Your user/team handle follows a GitHub-style convention and will be accessible at **https://www.paperspace.com/{your\_handle}**
 
 ## **Sharing public notebooks**
 
@@ -39,7 +39,7 @@ Once a notebook is made `Public` it will show up under your public profile for o
 
 Gradient Public profiles are still very much a work-in-progress. Notebooks are the first feature to be enabled for showing up on profiles, but soon we will be adding [Projects](../projects/create-a-project.md), [Models](../models/create-a-model.md), [Datasets](../data/managing-data-in-gradient.md), and more.
 
-As always, we are eager to hear your feedback. Now go claim your username – we are excited to see what you build! 🙌
+As always, we are eager to hear your feedback. Now go claim your user/team handle – we are excited to see what you build! 🙌
 
 
 
