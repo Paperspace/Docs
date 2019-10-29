@@ -101,10 +101,56 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
       </td>
       <td style="text-align:left">StyleGan is a Style-Based Generator Architecture for Generative Adversarial
         Networks. This dataset allows for photographs of people to be produced
-        by the generator that allows control over different aspects of the image</td>
-      <td
-      style="text-align:left"><a href="https://github.com/NVlabs/stylegan">https://github.com/NVlabs/stylegan</a> 
-        </td>
+        by the generator.</td>
+      <td style="text-align:left"><a href="https://github.com/NVlabs/stylegan">https://github.com/NVlabs/stylegan</a> 
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><em><b>OpenSLR</b></em>
+        </p>
+        <p><code>/datasets/openslr</code>
+        </p>
+      </td>
+      <td style="text-align:left">Open Speech and Language Resources</td>
+      <td style="text-align:left"><a href="https://www.openslr.org/resources.php">https://www.openslr.org/resources.php</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><em><b>Self Driving Demo</b></em>
+        </p>
+        <p><code>/datasets/self-driving-demo-data</code>
+        </p>
+      </td>
+      <td style="text-align:left">A dataset by comma.ai that includes over 33 hours of commute in California&apos;s
+        280 highway.</td>
+      <td style="text-align:left">https://github.com/commaai/comma2k19</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><em><b>Sentiment140</b></em>
+        </p>
+        <p><code>/datasets/sentiment140</code>
+        </p>
+      </td>
+      <td style="text-align:left">Sentiment140 allows you to discover the sentiment of a brand, product,
+        or topic on Twitter.</td>
+      <td style="text-align:left"><a href="http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip">http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><em><b>Tiny-imagenet-200</b></em>
+        </p>
+        <p><code>/datasets/tiny-imagenet-200</code>
+        </p>
+      </td>
+      <td style="text-align:left">A subset of the ImageNET dataset created by the Stanford <a href="http://cs231n.stanford.edu/">CS231n</a> course.
+        It spans 200 image classes with 500 training examples per class. It also
+        has 50 validation and 50 test examples per class.</td>
+      <td style="text-align:left"><a href="http://cs231n.stanford.edu/tiny-imagenet-200.zip">http://cs231n.stanford.edu/tiny-imagenet-200.zip</a>
+      </td>
     </tr>
   </tbody>
 </table>
