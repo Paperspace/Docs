@@ -44,7 +44,7 @@ This means that if you're trying to share a Gradient Community Notebook via its 
 
 You can fork any Gradient Community Notebook by clicking the green Play button at the top of that Community Notebook's page. For now, this will fork the notebook into your private workspace. Soon it will allow you to fork into a team of your choice.
 
-_Note: By making your notebook Public, the underlying container will be able to be forked to other users' accounts, including if they are within a private container registry. So, as with anytime you would share a container, be sure not to remove any sensitive data, such as API keys or secrets, before making that notebook Public!_
+_Note: By making your notebook Public, the underlying container will be able to be forked to other users' accounts, including if they are within a private container registry. So, as with anytime you would share a container, be sure to remove any sensitive data, such as API keys or secrets, before making that notebook Public!_
 
 #### Public Profiles
 
