@@ -21,7 +21,7 @@ Gradient is comprised of the following components:
 {% hint style="success" %}
 #### Request a Walkthrough
 
-Prefer a guided tour? [Click here](https://use.paperspace.com/contact-sales) to get in touch with a Gradient expert.
+Prefer a guided tour? [Click here](https://info.paperspace.com/contact-sales) to get in touch with a Gradient expert.
 {% endhint %}
 
 ### Individuals can signup [here](https://www.paperspace.com/account/signup?gradient=true) for Gradient. 
