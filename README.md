@@ -32,7 +32,7 @@ The best way to discover Gradient is to try it out. You can get started in secon
 
 ## Other Resources
 
-Please visit the [community](http://community.paperspace.com/) to post questions or tutorials for other other Gradient users.
+Please visit the [community](http://community.paperspace.com/) to post questions or tutorials for other Gradient users.
 
 Our [Help Center](https://support.paperspace.com) is a great resource for general Paperspace information.
 
