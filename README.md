@@ -24,7 +24,7 @@ Gradient is comprised of the following components:
 Prefer a guided tour? [Click here](https://info.paperspace.com/contact-sales) to get in touch with a Gradient expert.
 {% endhint %}
 
-### Individuals can signup [here](https://www.paperspace.com/account/signup?gradient=true) for Gradient. 
+### Individuals can sign up [here](https://www.paperspace.com/account/signup?gradient=true) for Gradient. 
 
 The best way to discover Gradient is to try it out. You can get started in seconds with the following guide:
 
