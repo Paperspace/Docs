@@ -41,6 +41,7 @@
 * [About](projects/about.md)
 * [Create a Project via the UI](projects/create-a-project.md)
 * [Create a Project via the CLI](projects/create-a-project-using-cli.md)
+* [Deleting a Project](projects/deleting-a-project.md)
 * [GradientCI](projects/gradientci.md)
 
 ## Experiments
