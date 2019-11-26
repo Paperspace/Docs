@@ -87,6 +87,10 @@
 * [Optimizing Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
 
+## TensorBoards
+
+* [About](tensorboards/about.md)
+
 ## Machines
 
 * [About](machines/about.md)
@@ -110,6 +114,13 @@
 * [Managing Persistent Storage with VMs](data/managing-persistent-storage-with-vms.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 
+## Instances
+
+* [Instance Types](instances/instance-types.md)
+* [Free Instances \(Free Tier\)](instances/free-instances.md)
+* [Instance Tiers](instances/instance-tiers.md)
+* [Preemptible Instances](instances/preemptible-instances.md)
+
 ## Gradient SDK <a id="gradient-python-sdk"></a>
 
 * [Gradient SDK](gradient-python-sdk/gradient-python-sdk/README.md)
@@ -130,13 +141,6 @@
 * [Usage](gradient-private-cloud/usage.md)
 * [Node Attributes](gradient-private-cloud/job-scheduling-and-node-attributes.md)
 * [Storage](gradient-private-cloud/storage.md)
-
-## Instances
-
-* [Instance Types](instances/instance-types.md)
-* [Free Instances \(Free Tier\)](instances/free-instances.md)
-* [Instance Tiers](instances/instance-tiers.md)
-* [Preemptible Instances](instances/preemptible-instances.md)
 
 ## Release Notes
 
