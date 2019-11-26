@@ -314,7 +314,7 @@ model:
   path: "/storage/models"
 
 checks:
-  default:
+  defaults:
     precision: 3
     round: up
     only-prs: true
