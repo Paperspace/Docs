@@ -29,7 +29,7 @@ For example, you can be on a G2 subscription plan with 1TB of Persistent Storage
 All free instances have the same limits, regardless of your subscription plan:
 
 * Notebooks will automatically shutdown after 6 hours per session
-  * There are currently no limits to the number of sessions you can run
+  * Only 1 Free Notebook can be run at a time 
 * All Notebooks \(and Jobs coming soon\) will be set to public and cannot be set to private
 * 5GB of [persistent storage](../data/storage.md#persistent-storage) is included for free — this cannot be expanded
 
