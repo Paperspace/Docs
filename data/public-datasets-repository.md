@@ -9,7 +9,6 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
     <tr>
       <th style="text-align:left">Name &amp; Path</th>
       <th style="text-align:left">Description</th>
-      <th style="text-align:left">Source</th>
     </tr>
   </thead>
   <tbody>
@@ -20,11 +19,14 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/fastai/</code>
         </p>
       </td>
-      <td style="text-align:left">Paperspace&apos;s Fast.ai template is built for getting up and running
-        with the enormously popular <a href="http://www.fast.ai/">Fast.ai online MOOC called Practical Deep Learning for Coders</a>.</td>
-      <td
-      style="text-align:left"><a href="http://files.fast.ai/data/">http://files.fast.ai/data/</a>
-        </td>
+      <td style="text-align:left">
+        <p>Paperspace&apos;s Fast.ai template is built for getting up and running
+          with the enormously popular Fast.ai online MOOC called Practical Deep Learning
+          for Coders.</p>
+        <p></p>
+        <p>Source: <a href="http://files.fast.ai/data/">http://files.fast.ai/data/</a>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -33,11 +35,15 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/celebA/</code>
         </p>
       </td>
-      <td style="text-align:left">CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes
-        dataset with more than 200K celebrity images, each with 40 attribute annotations.</td>
-      <td
-      style="text-align:left"><a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html">http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html</a>
-        </td>
+      <td style="text-align:left">
+        <p>CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes
+          dataset with more than 200K celebrity images, each with 40 attribute annotations.
+          <br
+          />
+        </p>
+        <p>Source: <a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html">http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html</a>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -46,10 +52,11 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/lsun/</code>
         </p>
       </td>
-      <td style="text-align:left">Contains around one million labeled images for each of 10 scene categories
-        and 20 object categories.</td>
       <td style="text-align:left">
-        <p><a href="http://lsun.cs.princeton.edu/2017/">http://lsun.cs.princeton.edu/2017/</a>
+        <p>Contains around one million labeled images for each of 10 scene categories
+          and 20 object categories.</p>
+        <p>
+          <br />Source: <a href="http://lsun.cs.princeton.edu/2017/">http://lsun.cs.princeton.edu/2017/</a>
         </p>
         <p><a href="http://www.yf.io/p/lsun">http://www.yf.io/p/lsun</a>
         </p>
@@ -62,11 +69,13 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/mnist/</code>
         </p>
       </td>
-      <td style="text-align:left">The MNIST database of handwritten digits, available from this page, has
-        a training set of 60,000 examples, and a test set of 10,000 examples</td>
-      <td
-      style="text-align:left"><a href="http://yann.lecun.com/exdb/mnist/">http://yann.lecun.com/exdb/mnist/</a>
-        </td>
+      <td style="text-align:left">
+        <p>The MNIST database of handwritten digits, available from this page, has
+          a training set of 60,000 examples, and a test set of 10,000 examples</p>
+        <p>
+          <br />Source: <a href="http://yann.lecun.com/exdb/mnist/">http://yann.lecun.com/exdb/mnist/</a>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -75,10 +84,12 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/coco</code>
         </p>
       </td>
-      <td style="text-align:left">COCO is a large-scale object detection, segmentation, and captioning dataset.</td>
-      <td
-      style="text-align:left"><a href="http://cocodataset.org/">http://cocodataset.org/</a>
-        </td>
+      <td style="text-align:left">
+        <p></p>
+        <p>
+          <br />Source: <a href="http://cocodataset.org/">http://cocodataset.org/</a>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -87,9 +98,12 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/selfie</code>
         </p>
       </td>
-      <td style="text-align:left">Selfie dataset contains 46,836 selfie images annotated with 36 different
-        attributes divided into several categories.</td>
-      <td style="text-align:left"><a href="http://crcv.ucf.edu/data/Selfie/"> http://crcv.ucf.edu/data/Selfie/</a>
+      <td style="text-align:left">
+        <p>Selfie dataset contains 46,836 selfie images annotated with 36 different
+          attributes divided into several categories.</p>
+        <p>
+          <br />Source: <a href="http://crcv.ucf.edu/data/Selfie/"> http://crcv.ucf.edu/data/Selfie/</a>
+        </p>
       </td>
     </tr>
     <tr>
@@ -99,10 +113,13 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/stylegan</code>
         </p>
       </td>
-      <td style="text-align:left">StyleGan is a Style-Based Generator Architecture for Generative Adversarial
-        Networks. This dataset allows for photographs of people to be produced
-        by the generator.</td>
-      <td style="text-align:left"><a href="https://github.com/NVlabs/stylegan">https://github.com/NVlabs/stylegan</a> 
+      <td style="text-align:left">
+        <p>StyleGan is a Style-Based Generator Architecture for Generative Adversarial
+          Networks. This dataset allows for photographs of people to be produced
+          by the generator.</p>
+        <p>
+          <br />Source: <a href="https://github.com/NVlabs/stylegan">https://github.com/NVlabs/stylegan</a> 
+        </p>
       </td>
     </tr>
     <tr>
@@ -112,8 +129,11 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/openslr</code>
         </p>
       </td>
-      <td style="text-align:left">Open Speech and Language Resources</td>
-      <td style="text-align:left"><a href="https://www.openslr.org/resources.php">https://www.openslr.org/resources.php</a>
+      <td style="text-align:left">
+        <p>Open Speech and Language Resources.</p>
+        <p>
+          <br />Source: <a href="https://www.openslr.org/resources.php">https://www.openslr.org/resources.php</a>
+        </p>
       </td>
     </tr>
     <tr>
@@ -123,9 +143,12 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/self-driving-demo-data</code>
         </p>
       </td>
-      <td style="text-align:left">A dataset by comma.ai that includes over 33 hours of commute in California&apos;s
-        280 highway.</td>
-      <td style="text-align:left">https://github.com/commaai/comma2k19</td>
+      <td style="text-align:left">
+        <p>A dataset by comma.ai that includes over 33 hours of commute in California&apos;s
+          280 highway.</p>
+        <p>
+          <br />Source: https://github.com/commaai/comma2k19</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -134,9 +157,12 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/sentiment140</code>
         </p>
       </td>
-      <td style="text-align:left">Sentiment140 allows you to discover the sentiment of a brand, product,
-        or topic on Twitter.</td>
-      <td style="text-align:left"><a href="http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip">http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip</a>
+      <td style="text-align:left">
+        <p>Sentiment140 allows you to discover the sentiment of a brand, product,
+          or topic on Twitter.</p>
+        <p>
+          <br />Source: <a href="http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip">http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip</a>
+        </p>
       </td>
     </tr>
     <tr>
@@ -146,10 +172,13 @@ Jobs and notebooks have access to a read-only directory that is mounted at `/dat
         <p><code>/datasets/tiny-imagenet-200</code>
         </p>
       </td>
-      <td style="text-align:left">A subset of the ImageNET dataset created by the Stanford <a href="http://cs231n.stanford.edu/">CS231n</a> course.
-        It spans 200 image classes with 500 training examples per class. It also
-        has 50 validation and 50 test examples per class.</td>
-      <td style="text-align:left"><a href="http://cs231n.stanford.edu/tiny-imagenet-200.zip">http://cs231n.stanford.edu/tiny-imagenet-200.zip</a>
+      <td style="text-align:left">
+        <p>A subset of the ImageNET dataset created by the Stanford CS231n course.
+          It spans 200 image classes with 500 training examples per class. It also
+          has 50 validation and 50 test examples per class.</p>
+        <p>
+          <br />Source: <a href="http://cs231n.stanford.edu/tiny-imagenet-200.zip">http://cs231n.stanford.edu/tiny-imagenet-200.zip</a>
+        </p>
       </td>
     </tr>
   </tbody>
