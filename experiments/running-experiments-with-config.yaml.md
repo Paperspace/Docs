@@ -1,12 +1,12 @@
-# Running experiments with config.yaml
+# Gradient Config File
 
 ## Using config.yaml to run experiments
 
-Gradient supports using a config.yaml to execute experiments using the CLI. If you find yourself typing the required parameters, doing various kinds of automation or pipelining & want the configuration to be reusable & checked into source control, this is for you. 
+Gradient supports using a config.yaml to execute experiments using the CLI. If you find yourself repeatedly typing the same commands or doing various kinds of automation or pipelining and want the configuration to be reusable and checked into source control, this tool is for you. 
 
 ### Generating a config.yaml template
 
-You can create a config.yaml template with all of the possible parameters defined by using the --createOptionsFile flag.
+You can create a config.yaml template with all of the possible parameters defined by using the `--createOptionsFile` flag.
 
 ```bash
 $ gradient experiments run singlenode --createOptionsFile config_file_name.yaml
@@ -14,7 +14,7 @@ $ gradient experiments run singlenode --createOptionsFile config_file_name.yaml
 
 ### Running experiments using a config.yaml
 
-Once you have filled out the needed parameters, execute an experiment with the --optionsFile flag set.
+Once you have filled out the needed parameters, execute an experiment with the `--optionsFile` flag set.
 
 ```
  gradient experiments run singlenode --optionsFile config.yaml
