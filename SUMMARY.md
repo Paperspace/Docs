@@ -48,6 +48,7 @@
 
 * [About](experiments/about.md)
 * [Run Experiments via the UI](experiments/run-experiments-ui.md)
+* [Running experiments with config.yaml](experiments/running-experiments-with-config.yaml.md)
 * [Run Experiments via the CLI](experiments/run-experiments-cli.md)
 * [Distributed Machine Learning with Tensorflow](experiments/multi-node-training.md)
 * [Distributed Machine Learning with MPI](experiments/distributed-machine-learning-with-mpi/README.md)
