@@ -49,7 +49,7 @@
 * [About](experiments/about.md)
 * [Run Experiments via the UI](experiments/run-experiments-ui.md)
 * [Run Experiments via the CLI](experiments/run-experiments-cli.md)
-* [Gradient Config File](experiments/running-experiments-with-config.yaml.md)
+* [Gradient Config File](experiments/gradient-config.yaml.md)
 * [Distributed Machine Learning with Tensorflow](experiments/multi-node-training.md)
 * [Distributed Machine Learning with MPI](experiments/distributed-machine-learning-with-mpi/README.md)
   * [Distributed Training using Horovod](experiments/distributed-machine-learning-with-mpi/distributed-training-using-horovod.md)
