@@ -68,11 +68,13 @@ You can either stash your API key on your computer or include your API key on ea
 
 ### Set your active API key
 
+First, [obtain an API Key](install-the-cli.md#obtaining-an-api-key), and then:
+
 ```bash
 gradient apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
-#### Alternative: Include your API key for each command
+Alternatively, you can include your API key with each command:
 
 ```bash
 gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
