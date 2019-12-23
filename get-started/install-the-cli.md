@@ -10,41 +10,41 @@ description: How to install the Gradient Command Line Interface
 
 The Gradient CLI is available on [pypi](https://pypi.org/project/paperspace/) and works on Windows, MacOS, and Linux.
 
-The CLI requires **Python 2.7** or **Python 3.4+**. Be sure to use a compatible version of **pip** depending on your Python version.
+The CLI requires **Python 3.4+ \(**or **Python 2.7\)**. Be sure to use a compatible version of **pip** \(or **pip3**\) depending on your Python version.
 
 {% hint style="info" %}
-**ProTip!** We recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**.
+**Pro Tip!** We highly recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**.
 
-**Python 2.7**  
-Install virtualenv:
+First, install **virtualenv**:
 
 ```bash
 pip install virtualenv
 ```
 
-Create new virtualenv:
-
-```bash
-virtualenv <env_directory_path>
-```
-
-Activate virtualenv:
-
-```bash
-source <env_directory_path>/bin/activate
-```
-
 **Python 3.4+**  
-Create new virtualenv:
+Create new virtual environment:
 
 ```bash
-python3 -m venv /path/to/new/virtual/environment
+python3 -m virtualenv <virtual_env_dir_path>
 ```
 
-Activate virtualenv:
+Activate virtual environment:
 
 ```bash
-source /path/to/new/virtual/environment/bin/activate
+source <virtual_env_dir_path>/bin/activate
+```
+
+**Python 2.7 \(note that Python 2.7 will be deprecated in 2020\)**  
+Create new virtual environment:
+
+```bash
+virtualenv <virtual_env_dir_path>
+```
+
+Activate virtual environment:
+
+```
+source <virtual_env_dir_path>/bin/activate
 ```
 {% endhint %}
 
