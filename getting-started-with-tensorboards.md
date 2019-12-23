@@ -1,4 +1,4 @@
-# Getting Started with TensorBoards
+# TensorBoards via TensorFlow Scripting
 
 Taking advantage of TensorBoards from within a TensorFlow script requires just a few lines of code.
 
