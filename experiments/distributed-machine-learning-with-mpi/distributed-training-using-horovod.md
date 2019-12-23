@@ -67,5 +67,5 @@ gradient experiments create multinode \
 
 ### More info
 
-Horovod's GitHub [repo](https://github.com/uber/horovod/blob/master/docs/running.md) has good explanation of the -mca params. They also have good set of [examples](https://github.com/uber/horovod/tree/master/examples).
+Horovod's GitHub [repo](https://github.com/horovod/horovod/) has good explanation of the -mca params. They also have good set of [examples](https://github.com/horovod/horovod/tree/master/examples).
 

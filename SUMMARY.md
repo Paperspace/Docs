@@ -90,7 +90,9 @@
 
 ## TensorBoards
 
-* [About](tensorboards/about.md)
+* [About](about.md)
+* [Tensorboard CLI](tensorboard-cli.md)
+* [Getting Started with TensorBoards](getting-started-with-tensorboards.md)
 
 ## Machines
 
