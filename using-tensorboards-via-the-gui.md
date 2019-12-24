@@ -28,11 +28,31 @@ Note that although you can technically add an Experiment that has not completed,
 
 ![](.gitbook/assets/screen-shot-2019-12-23-at-7.17.07-pm.png)
 
-If a TensorBoard has had Experiments added to it, simply click Launch to open the TensorBoard and view the resultant visualizations.
+#### Viewing a TensorBoard
+
+If a TensorBoard has had Experiments added to it, simply click Launch to open the TensorBoard in order to view the resultant TensorBoard and experiment visualizations:
+
+![Launch a TensorBoard that&apos;s had Experiments added to it](.gitbook/assets/launch-tensorboard.png)
+
+Here's a TensorBoard showing the Experiment that I added above, which is displaying a model from a simple MNIST sample experiment:
+
+![Experiment visualized on a TensorBoard in Gradient](.gitbook/assets/screen-shot-2019-12-23-at-9.27.42-pm.png)
 
 #### Adding and Removing Experiments to/from TensorBoards
 
 You can manually **Add** or **Remove** an experiment from a TensorBoard by clicking the green toggle under Experiment Status. In other words, if you wish to _add_ an Experiment to a TensorBoard \(thus including it on that TensorBoard\), click the Experiment Status toggle to be active / green / to the right.To _remove_ an Experiment from a TensorBoard, click the toggle to be inactive / gray / to the left.
 
+![Removing an Experiment from a TensorBoard](.gitbook/assets/remove-experiment%20%281%29.gif)
 
+As noted above, you can re-add an Experiment to a TensorBoard simply by toggling the Experiment Status back to active / green / to the right.
+
+{% hint style="info" %}
+Note that because TensorBoards spin up on dedicated CPU-only machine instances, and Experiments must have completed checkpoints in order to be added to TensorBoards, the Create, Add, and Remove operations can take time.
+{% endhint %}
+
+And that's it! Stay tuned for further iteration as we continue to make TensorBoards an even more powerful feature.
+
+#### Learn More
+
+You can also [use TensorBoards via the CLI](tensorboard-cli.md), as well as by [scripting them within a TensorFlow script](getting-started-with-tensorboards.md).
 
