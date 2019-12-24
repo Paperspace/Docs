@@ -91,7 +91,8 @@
 ## TensorBoards
 
 * [About](about.md)
-* [Tensorboard CLI](tensorboard-cli.md)
+* [Using TensorBoards via the GUI](using-tensorboards-via-the-gui.md)
+* [Using Tensorboards via the CLI](tensorboard-cli.md)
 * [TensorBoards via TensorFlow Scripting](getting-started-with-tensorboards.md)
 
 ## Machines

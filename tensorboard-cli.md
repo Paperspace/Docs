@@ -2,7 +2,7 @@
 description: Create a new Tensorboard and add experiments to it with CLI
 ---
 
-# Tensorboard CLI
+# Using Tensorboards via the CLI
 
 ```text
 Usage: gradient tensorboards [OPTIONS] COMMAND [ARGS]...
