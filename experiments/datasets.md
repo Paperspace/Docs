@@ -109,7 +109,7 @@ datasets: [
 
 Because shared storage datasets are stored in your team storage they are not automatically deleted.
 Datasets are downloaded to `/<TEAMHANDLE>/data/<DATASET_NAME-ETAG>`, where `DATASET_NAME` is derived from the bucket or the user supplied parameter.
-If the dataset was downloaded without an `etag` the `-ETAG` portion of the download path is omitted.
+If the dataset was downloaded without an `etag`, the `-ETAG` portion of the download path is omitted.
 
 #### Archive Expansion
 
