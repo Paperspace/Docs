@@ -115,7 +115,7 @@ If the dataset was downloaded without an `etag`, the `-ETAG` portion of the down
 
 If the object supplied is in a recognized archive format, such as zip, the archive will automatically be expanded in the root of the mount path.
 For example, `s3://my-bucket/dataset.zip` would be downloaded and expanded so that the contents of `dataset.zip` are accessible inside the container at `/data/global/dataset`.
-Archive formats are detected by their extension, these are the supported extensions:
+Archive formats are detected by their extension. These are the supported archive extensions:
 * .zip
 * .tar
 * .tar.bz2
