@@ -4,6 +4,11 @@
 
 To create a Model using the CLI, run an Experiment, such as by [using one of the sample Experiment commands](../experiments/run-experiments-ui.md#h_39323868261524588004147), and set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Models list](about.md#model-repository).
 
+### Custom Metadata
+
+You can add metadata to your custom model(`--modelType is empty`) by outputing a JSON file to: gradient-model-metadata.json during your experiment.
+
+
 ## View Your Models List
 
 You can view your Models in your Models list in the GUI or in the CLI, as seen below.
