@@ -2,11 +2,11 @@
 description: Train and output a Tensorflow Model
 ---
 
-# Preparing Model for Deployment
+# Prepare Models for Deployment
 
 This example code demonstrates how to use TensorFlow to export a trained model so that it is compatible Tensorflow Serving and Gradient Model Deployments.  The code below should be incorporated into your experiment, and assumes you are using Tensorflow 1.x with python.
 
-Note: you must also specify `--modelType Tensorfow` and provide a desired `--modelPath` location when running the experiment, in order to have the model parsed and uploaded by Gradient.
+Note: you must also specify `--modelType Tensorfow` and provide a desired `--modelPath` location when running the experiment, in order to have the model parsed and uploaded by Gradient. Learn more about [model path options](../models/model-path.md) here.
 
 ### Example 
 

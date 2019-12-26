@@ -81,11 +81,11 @@
 ## Deployments
 
 * [About](deployments/about.md)
-* [Preparing Model for Deployment](deployments/preparing-model-for-deployment.md)
+* [Prepare Models for Deployment](deployments/preparing-model-for-deployment.md)
 * [Create a Deployment \(UI\)](deployments/create-a-deployment-ui.md)
 * [Create a Deployment \(CLI\)](deployments/create-deployment-cli.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
-* [Optimizing Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
+* [Optimize Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
 
 ## TensorBoards
