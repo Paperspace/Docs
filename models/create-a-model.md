@@ -6,7 +6,7 @@ To create a Model using the CLI, run an Experiment, such as by [using one of the
 
 ### Custom Metadata
 
-You can add metadata to your custom model(`--modelType is empty`) by outputing a JSON file to: gradient-model-metadata.json during your experiment.
+You can add metadata to a custom model(`when modelType is empty`) by outputing a JSON file to: gradient-model-metadata.json during your experiment.
 
 
 ## View Your Models List
