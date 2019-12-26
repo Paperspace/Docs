@@ -4,6 +4,7 @@
 
 When executing an experiment in Gradient you may optionally supply one or more datasets that will be downloaded into your experiment's environment prior to execution.
 These datasets can be downloaded from an S3 object or folder (including the full bucket).
+Gradient allows teams to run reproducible machine learning experiments by taking advantage of S3 ETags and Version IDs, which combine to allow you to be sure that datasets exactly match between training sets, and to be sure which version of a dataset you are using.
 
 ### S3 Datasets
 
