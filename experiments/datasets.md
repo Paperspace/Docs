@@ -77,7 +77,7 @@ datasets: [
 ]
 ```
 
-Size units maybe specified with the SI prefix for base-10 units (K, M, G, T).
+Size units may be specified with the SI prefix for base-10 units (K, M, G, T).
 Or for base-2 quantities you may add an `i` specifier at the end (Ki, Mi, Gi, Ti).
 
 #### Downloading to Shared Storage
