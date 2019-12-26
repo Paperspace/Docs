@@ -82,7 +82,7 @@ Or for base-2 quantities you may add an `i` specifier at the end (Ki, Mi, Gi, Ti
 
 #### Downloading to Shared Storage
 
-Datasets are normally downloaded in transient storage per experiment job.
+Datasets are normally downloaded to transient storage per experiment job.
 This means that for a 3 worker, 2 parameter server experiment the dataset will be downloaded 5 times.
 This can be very inefficient, to decrease job start up time you may choose to download your artifact to your team shared storage space.
 This will download the dataset to a unique path within your shared storage and mount it into your experiment jobs at the same path as if you had downloaded it to a dynamic volume.
