@@ -42,7 +42,7 @@ datasets: [
 
 #### VersionId
 
-When downloading a dataset you may optionally supply an optional `versionId` parameter that will tell the dataset downloader to fetch your S3 object at the specified version.
+When downloading a dataset you may supply an optional `versionId` parameter, which will tell the dataset downloader to fetch your S3 object at the specified version.
 This feature is only supported on versioned S3 buckets and is not supported on downloads of folders.
 
 ```
