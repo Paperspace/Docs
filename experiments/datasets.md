@@ -61,7 +61,7 @@ datasets: [
 When downloading a dataset they are by default downloaded to an ephemeral volume that lasts for the duration of the experiment job.
 These volumes are 5 GB (`"5Gi"`) by default; if you need a larger volume you may supply a size parameter with your dataset.
 
-For example, this will start an experiment with a dataset that downloads to a 10 GB volume.
+For example, this snippet will start an experiment with a dataset that downloads to a 10 GB volume:
 
 ```
 datasets: [
