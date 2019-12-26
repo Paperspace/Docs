@@ -2,7 +2,7 @@
 
 ## About
 
-When executing an experiment in Gradient you may optionally supply one or more datasets that will be downloaded in to your experiment's environment prior to execution.
+When executing an experiment in Gradient you may optionally supply one or more datasets that will be downloaded into your experiment's environment prior to execution.
 These datasets can be downloaded from an S3 object or folder (including the full bucket).
 
 ### S3 Datasets
