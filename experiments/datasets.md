@@ -25,7 +25,7 @@ datasets: [
 
 #### ETag
 
-When downloading a dataset you may optionally supply an optional `etag` parameter that will tell the dataset downloader to verify that the object stored at the path matches the supplied etag.
+When downloading a dataset you may supply an optional `etag` parameter, which will tell the dataset downloader to verify that the object stored at the path matches the supplied etag.
 If it does not match the etag the experiment will end with an error.
 This feature is only supported on S3 objects and not buckets.
 
