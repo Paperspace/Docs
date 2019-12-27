@@ -2,7 +2,7 @@
 description: How to create GradientCI or Standalone Projects
 ---
 
-# Create a Project via the UI
+# Create a Project via the GUI
 
 ## Create a GradientCI Project
 

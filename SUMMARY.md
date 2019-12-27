@@ -39,7 +39,7 @@
 ## Projects
 
 * [About](projects/about.md)
-* [Create a Project via the UI](projects/create-a-project.md)
+* [Create a Project via the GUI](projects/create-a-project.md)
 * [Create a Project via the CLI](projects/create-a-project-using-cli.md)
 * [Deleting a Project](projects/deleting-a-project.md)
 * [GradientCI](projects/gradientci.md)
@@ -47,7 +47,7 @@
 ## Experiments
 
 * [About](experiments/about.md)
-* [Run Experiments via the UI](experiments/run-experiments-ui.md)
+* [Run Experiments via the GUI](experiments/run-experiments-ui.md)
 * [Run Experiments via the CLI](experiments/run-experiments-cli.md)
 * [Gradient Config File](experiments/gradient-config.yaml.md)
 * [Distributed Machine Learning with Tensorflow](experiments/multi-node-training.md)
@@ -82,8 +82,8 @@
 
 * [About](deployments/about.md)
 * [Prepare Models for Deployment](deployments/preparing-model-for-deployment.md)
-* [Create a Deployment \(UI\)](deployments/create-a-deployment-ui.md)
-* [Create a Deployment \(CLI\)](deployments/create-deployment-cli.md)
+* [Create a Deployment via the GUI](deployments/create-a-deployment-ui.md)
+* [Create a Deployment via the CLI](deployments/create-deployment-cli.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
 * [Optimize Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)

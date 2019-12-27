@@ -2,7 +2,7 @@
 description: For inference/model serving
 ---
 
-# Create a Deployment \(UI\)
+# Create a Deployment via the GUI
 
 ## Create a Deployment
 
