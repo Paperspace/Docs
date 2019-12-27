@@ -37,6 +37,7 @@
 * [Overview](projects/about.md)
 * [Managing Projects](projects/managing-projects.md)
 * [GradientCI](projects/gradientci-v2.md)
+  * [GradientCI V1 (Deprecated)](projects/gradientci-v2.md)
 
 ## Experiments
 
