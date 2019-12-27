@@ -7,7 +7,7 @@ With **Standalone Projects,** you submit Experiments from the UI or CLI manually
 1. Begin the Create Project flow and supply a Project name.
 2. Run Experiments manually for the Project via the Experiment Builder or the CLI. See instructions on [installing the CLI](../get-started/install-the-cli.md), and instructions on how to [run an experiment from the CLI]().
 
-**GradientCI Projects** allow you to run Experiments automatically simply by pushing code to a GitHub repository. See [GradientCI](gradientci.md) for information on setting up our continuous integration service that will run a new experiment whenever:
+**GradientCI Projects** allow you to run Experiments automatically simply by pushing code to a GitHub repository. See [GradientCI](gradientci-v2.md) for information on setting up our continuous integration service that will run a new experiment whenever:
 
 1. a new commit is pushed to the linked repo's default branch;
 2. a PR is opened against that default branch;

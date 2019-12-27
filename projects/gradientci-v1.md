@@ -2,7 +2,10 @@
 description: Set up continuous integration between your GitHub repository and Gradient
 ---
 
-# GradientCI
+# GradientCI V1 (Deprecated)
+
+GradientCI config version 1 is deprecated.
+[Please upgrade your configuration to v2.](gradientci-v2.md)
 
 ![gradientci logo](../.gitbook/assets/gradientci%20%281%29.gif)
 
@@ -25,7 +28,7 @@ To set up GradientCI, our continuous integration service, include a directory in
 
 ### Building Branches and Tags
 
-GradientCI supports building and sourcing project configuration from arbitrary branches or tags. By default we only build configuration sourced from your default branch \(typically `master`\). You can [change your repositories default branch from within Github](https://help.github.com/en/articles/setting-the-default-branch), if you only need the configuration from one branch. You can relax or tighten this rule by selecting "All" or "None" from the "Build Branches" dropdown in the project settings pane of the Gradient console. If you would like to build any tags or a subset of branches that are not the default branch, select "All" from this menu and provide filters in your `config.yaml`. To list the specific patterns of tags and branches to build, see [branch and tag filters](gradientci.md#filtering-branches-and-tags).
+GradientCI supports building and sourcing project configuration from arbitrary branches or tags. By default we only build configuration sourced from your default branch \(typically `master`\). You can [change your repositories default branch from within Github](https://help.github.com/en/articles/setting-the-default-branch), if you only need the configuration from one branch. You can relax or tighten this rule by selecting "All" or "None" from the "Build Branches" dropdown in the project settings pane of the Gradient console. If you would like to build any tags or a subset of branches that are not the default branch, select "All" from this menu and provide filters in your `config.yaml`. To list the specific patterns of tags and branches to build, see [branch and tag filters](gradientci-v1.md#filtering-branches-and-tags).
 
 You may additionally disable the builds of pull requests, enabled by default. Or enable builds of pull requests that originate from forked repositories, disabled by default to prevent unauthorized use of Gradient resources. Each of these options will allow configuration to be sourced from the relevant Git branch.
 
