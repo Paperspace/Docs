@@ -114,6 +114,7 @@
 * [Managing Data in Gradient](data/managing-data-in-gradient.md)
 * [Managing Persistent Storage with VMs](data/managing-persistent-storage-with-vms.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
+* [Experiment Datasets](experiments/datasets.md)
 
 ## Instances
 
@@ -147,4 +148,3 @@
 
 * [Product release notes](https://support.paperspace.com/hc/en-us/articles/217560197)
 * [CLI/SDK Release notes](https://github.com/Paperspace/gradient-cli/releases)
-
