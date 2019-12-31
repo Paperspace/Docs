@@ -6,11 +6,11 @@ description: To deploy a trained model as a continuous web service
 
 In this section, we cover how to perform the following via the GUI:
 
-1. [Create a Deployment](create-a-deployment-ui.md#starting-the-create-deployment-flow)
-2. [Edit a Deployment](create-a-deployment-ui.md#edit-a-deployment)
-3. [View, Start, & Stop a Deployment](create-a-deployment-ui.md#viewing-starting-and-stopping-deployments)
+1. Create a Deployment
+2. Edit a Deployment
+3. View, Start, & Stop a Deployment
 
-## Create a Deployment
+## Create a Deployment <a id="create-a-deployment-gui"></a>
 
 ### Starting the Create Deployment flow
 
