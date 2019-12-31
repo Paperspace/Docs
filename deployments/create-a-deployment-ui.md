@@ -144,7 +144,7 @@ Navigate to the **Deployments** page in the side nav to see your list of Deploym
 
 Each Deployment has: a **Name** and a unique **ID**; links to its associated **Experiment** and **Model** \(by ID\) that it was created from; its **Container Type; Date Created; Status;** and **Actions** you can perform.
 
-To start a _Stopped_ Deployment, click **Start** from among that Deployment's **Actions**. The Status will change to _Provisioning_ and, if all goes smoothly, will soon say _Running_.
+To start a _Stopped_ Deployment, click **Start** from among that Deployment's **Actions**. The Status will change to _Provisioning_ and, if all goes smoothly, will soon say _Running_. Learn more about [Deployment States](deployment-states.md).
 
 Click the Deployment's row to show its details:
 
