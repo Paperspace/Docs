@@ -17,12 +17,12 @@ Deploy any model as a high-performance, low-latency micro-service with a RESTful
 
 ## Current Capabilities
 
-* Out-of-the-box integration with TensorFlow, but can be easily extended to serve other types of models and data. \(ONNX and Custom model types coming soon.\)
+* Out-of-the-box integration with TensorFlow, ONNX, TensorRT, and Custom models
 * A variety of GPU & CPU types to deploy on
 * Per second pay-as-you-go billing
 * Multi-instance deployments with automatic load balancing
 * A dedicated, secure endpoint URL per deployment
-* Accessible via the Gradient CLI, Web UI or API, or from your own custom applications
+* Accessible via the Gradient CLI, GUI, or API, or from your own custom applications
 
 ## 
 

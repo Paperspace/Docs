@@ -2,7 +2,7 @@
 description: To deploy a trained model as a continuous web service
 ---
 
-# Create, Edit, & View a Deployment via the GUI
+# Create & Managing Deployments via the GUI
 
 In this section, we cover how to perform the following via the GUI:
 

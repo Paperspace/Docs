@@ -1,6 +1,6 @@
 # Default Model path
 
-For an experiment to output a model in the Gradient system the resulting model files need to be written to the specified or default model path.
+For an experiment to output a model in Gradient, the resulting model files need to be written to the specified or default model path.
 
 ## PS\_MODEL\_PATH
 
@@ -19,7 +19,9 @@ from gradient_sdk.utils import model_dir
 **Multinode:** The default model path for multinode experiments is `/storage/models/<experiment_id>/`
 
 {% hint style="info" %}
-When in an on-premise or VPC environment, the default model path will be `/shared/models/<experiment_id>`
+In Gradient Enterprise environments, the default model path will be `/shared/models/<experiment_id>`
+
+SaaS users should specify `--modelPath /artifacts` in order to be able to deploy that model via Gradient.
 {% endhint %}
 
 ## Custom model metadata

@@ -82,7 +82,7 @@
 
 * [About](deployments/about.md)
 * [Prepare Models for Deployment](deployments/preparing-model-for-deployment.md)
-* [Create, Edit, & View a Deployment via the GUI](deployments/create-a-deployment-ui.md)
+* [Create & Managing Deployments via the GUI](deployments/create-a-deployment-ui.md)
 * [Create a Deployment via the CLI](deployments/create-deployment-cli.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
 * [Optimize Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
