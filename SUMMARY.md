@@ -82,7 +82,7 @@
 
 * [About](deployments/about.md)
 * [Prepare Models for Deployment](deployments/preparing-model-for-deployment.md)
-* [Create a Deployment via the GUI](deployments/create-a-deployment-ui.md)
+* [Create, Edit, & View a Deployment via the GUI](deployments/create-a-deployment-ui.md)
 * [Create a Deployment via the CLI](deployments/create-deployment-cli.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
 * [Optimize Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
@@ -90,10 +90,10 @@
 
 ## TensorBoards
 
-* [About](about.md)
-* [Using TensorBoards via the GUI](using-tensorboards-via-the-gui.md)
-* [Using Tensorboards via the CLI](tensorboard-cli.md)
-* [TensorBoards via TensorFlow Scripting](getting-started-with-tensorboards.md)
+* [About](tensorboards/about.md)
+* [Using TensorBoards via the GUI](tensorboards/using-tensorboards-via-the-gui.md)
+* [Using Tensorboards via the CLI](tensorboards/tensorboard-cli.md)
+* [TensorBoards via TensorFlow Scripting](tensorboards/getting-started-with-tensorboards.md)
 
 ## Machines
 

@@ -233,7 +233,7 @@ Done writing the summaries
 
 Now, if you open your TensorBoard like before and switch to the **IMAGES** tab, you'll see images that have been output, like these:
 
-![Fig. 9. generated images in TensorBoard](.gitbook/assets/3_9.png)
+![Fig. 9. generated images in TensorBoard](../.gitbook/assets/3_9.png)
 
 _\*\*\*\*_
 

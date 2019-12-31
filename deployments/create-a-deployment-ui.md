@@ -1,58 +1,130 @@
 ---
-description: For inference/model serving
+description: To deploy a trained model as a continuous web service
 ---
 
-# Create a Deployment via the GUI
+# Create, Edit, & View a Deployment via the GUI
+
+In this section, we cover how to perform the following via the GUI:
+
+1. [Create a Deployment](create-a-deployment-ui.md#starting-the-create-deployment-flow)
+2. [Edit a Deployment](create-a-deployment-ui.md#edit-a-deployment)
+3. [View, Start, & Stop a Deployment](create-a-deployment-ui.md#viewing-starting-and-stopping-deployments)
 
 ## Create a Deployment
 
-Deployments can be created through the Paperspace web console. They can be found under the "Deployments" tab of any Project. A list of deployments across all projects can be found by clicking Deployments on the side navigation bar. 
+### Starting the Create Deployment flow
 
-### Navigate to your Models list
+To create a Deployment via the GUI, there are two pathways to start the Create Deployment flow: **a\)** from a Model on the **Models** page; **b\)** from the **Deployments** page. Both of these pathways are shown below, after which we will step through the Create Deployment flow.
 
-![You can view your list of pretrained models at https://www.paperspace.com/console/models](../.gitbook/assets/screen-shot-2019-06-24-at-7.52.52-pm.png)
+#### a\) From the Models page:
 
-### Select the model & click "Deploy Model"
+1. Navigate to your list of trained Models by clicking **Models** in the side nav.
+2. Find the model you want to deploy, and click **Deploy Model**.
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-7.56.06-pm.png)
+![A Model shown in the &quot;cards&quot; view on the Models page](../.gitbook/assets/deploy-model-from-model.png)
 
-### Choose a machine type to run the Deployment
+#### b\) From the Deployments page:
 
-In section **1. Choose Machine**, select the GPU or CPU machine type to run your Deployment.
+1. Navigate to your list of Deployments by clicking **Deployments** in the side nav.
+2. Click **Create Deployment +**.
 
-![K80 machine has been selected for deployment](../.gitbook/assets/screen-shot-2019-06-24-at-8.00.25-pm.png)
+![](../.gitbook/assets/create-deployment-from-deployments.png)
 
-The following section shows the region of the selected machine and where the Deployment will be served from:
+Using either of the above **a** or **b** approaches, will let you start the Create Deployment flow.
 
-![K80 in GCP West](../.gitbook/assets/screen-shot-2019-06-24-at-8.02.46-pm.png)
+### Using the Create Deployment flow
 
-### Input Parameters for the Deployment
+Now that you've started the Create Deployment flow, let's walk through the various options and deploy your Model!
 
-In section **2. Name**, add a name for your deployment, such as `Sample Deployment`.
+#### Choose a Model
 
-In section **3. Base Image,** use the `tensorflow/serving:latest-gpu` container, which is selected by default for GPU machine types. ****As both CPU & GPU serving are available, be sure to select the container corresponding to your selected machine type and what your Model was optimized for. Only TensorFlow Serving can be selected as base image \(support for any base image will be available for serving soon\).
+If you started the flow via the Models page \(pathway **a** above\), you'll skip this step since you've already chosen a Model to deploy.
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-8.05.42-pm.png)
+If you started the flow via the Deployments page \(pathway **b** above\), you'll first need to choose a Model by clicking the Model selector dropdown and selecting the Model you want to deploy.
 
-In section **4. Instance Count**, select the number of instances to run the Deployment on.
+![](../.gitbook/assets/create-deployment-header.png)
 
-Below we chose 2, meaning there will be 2x K80 GPU instances backing this Deployment. Automatic load balancing is provided for all multi-instance deployments.
+#### Choose a Container
 
-In section **5. Command,** choose a command run at container launch, if applicable.
+Select the base container that will support your trained model to run it as a continuous web service.
 
-_Note: for the TensorFlow Serving base container used here, the command to run the job is unnecessary and thus disabled. This option can be changed when choosing a different base image to deploy on._
+As both CPU & GPU serving are available, be sure to select the container corresponding to your selected machine type and what your Model was optimized for.
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-8.15.24-pm.png)
+![Recommended container options shown with Tensorflow/serving selected](../.gitbook/assets/screen-shot-2019-12-31-at-1.59.11-pm.png)
 
-### Active Deployment vs Inactive Deployment
+#### Choose a Machine
 
-In the above example, we created an Active Deployment \(selected by default\), which means that it will be created and then will run automatically. You can also choose to create an  Inactive Deployment as well. You are only charged for Deployments when they are running.
+Select the GPU or CPU machine type to run your Deployment.
+
+![If you are using Gradient Enterprise, you&apos;ll want to select from among My Private Clusters](../.gitbook/assets/screen-shot-2019-12-31-at-1.59.02-pm.png)
+
+### Additional Input Parameters
+
+#### Name
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-2.06.14-pm.png)
+
+#### **Instance Count**
+
+Select the number of instances to run the Deployment on.
+
+Below we chose 3, meaning there will be 3x K80 GPU instances backing this Deployment. Automatic load balancing is provided for all multi-instance deployments.
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-2.10.15-pm.png)
+
+#### **Command**
+
+If applicable, choose a command to run at container launch.
+
+_Note: for the Tensorflow/serving base container used here, the command to run the Deployment is unnecessary and thus disabled. This option can be changed when choosing a different base image to deploy on._
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-2.06.32-pm.png)
+
+#### Creative Active Deployment
+
+**Create Active Deployment** \(selected by default\) means that the Deployment will be created and then automatically run:
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-2.15.49-pm.png)
+
+Alternately, if you don't want your Deployment to run automatically after it is created, you can click toggle **Create Inactive Deployment**:
 
 ![](../.gitbook/assets/screen-shot-2019-06-24-at-8.17.48-pm.png)
 
-Finally, now that your Deployment is configured, click "Create Deployment" to create it.
+_Note: You are only charged for Deployments when they are running._
 
-### Viewing, Starting, and Stopping Deployments
+#### Enable Basic Authentication
+
+Since your Deployment will run as a continuous web service on the public internet, you may wish to require basic authentication on any requests to it. If so, be sure that **Enable Basic Authentication** is toggled _on_ and then enter a **username** and **password**:
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-2.37.18-pm.png)
+
+Finally, now that your Deployment is configured, click **Create Deployment** to create it:
+
+![](../.gitbook/assets/create%20%282%29.png)
+
+## Edit a Deployment
+
+You can edit a Deployment's attributes, such as the underlying model, the Deployment's name, instance count, etc.
+
+{% hint style="warning" %}
+Although you can edit a running Deployment, changes to a running Deployment other than **name** will not take effect until that Deployment is Stopped and re-Started.
+{% endhint %}
+
+To edit a Deployment, navigate to the **Deployments** page, find the Deployment you want to edit, and click **Edit** in the Actions column:
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-2.44.20-pm.png)
+
+This will launch the Edit Deployment flow, which is nearly the same as the Create Deployment flow. The differences are that the Edit Deployment flow will display the **Deployment ID**, the **Deployment Endpoint**, and will always allow you to **Choose a Model**; and it will _not_ display the **Create Active Deployment** toggle. \(If you want to edit and start a stopped Deployment, save your changes and then click **Start** back on the Deployments page.\)
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-3.08.58-pm.png)
+
+Besides those differences, you can edit any of the other values of your Deployment just like you did in the Create Deployment flow.
+
+When you are done and want to save your changes, click **Edit Deployment** at the bottom:
+
+![](../.gitbook/assets/edit.png)
+
+## View, Start, & Stop a Deployment
 
 Navigating to the Deployments tab, you can see your list of Running and Stopped deployments. Here we have 3 Deployments:
 
@@ -69,6 +141,4 @@ The number of running instances and the instance count are visible as well.
 Congrats, you've created a Deployment and can perform inference!
 
 [Learn more about a Deployment's RESTful API here](deployment-restful-api.md).
-
-
 
