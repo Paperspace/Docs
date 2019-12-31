@@ -8,9 +8,15 @@ There are two ways to create a Model in Gradient, and both can be done via the G
 
 You can do this [via the GUI](../experiments/run-experiments-ui.md) or [via the CLI](../experiments/run-experiments-cli.md) by [using one of the sample Experiment commands](../experiments/run-experiments-ui.md#h_39323868261524588004147), and set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Models list](about.md#model-repository).
 
-#### 2\) Upload a Model via the GUI
+#### 2\) Upload a Model
 
-Navigate to the **Models** page and click **Upload a Model +**, as follows:
+You can do this via the CLI with the `gradient models upload` command, specifying :
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-6.03.11-pm.png)
+
+You can also do this via the GUI.
+
+First, navigate to the **Models** page and click **Upload a Model +**, as follows:
 
 ![](../.gitbook/assets/click-upload.png)
 
@@ -20,7 +26,11 @@ This will open up the Upload Model modal, where you can drag 'n drop a Model fro
 
 Then click **Upload Model**. This will create the Model in Gradient and persist it to S3.
 
-Then you can use it to create a Deployment; it will not be associated with an Experiment.
+Whether you use the GUI or CLI, you've now successfully uploaded a Model into Gradient!
+
+_Note: Uploaded Models will not be associated with an Experiment._
+
+Now that you have a Model, whether by uploading or by running an experiment, read on to learn how you can use it to create a Deployment.
 
 ## View Your Models List
 
