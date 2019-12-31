@@ -31,7 +31,7 @@ By default we only build configuration sourced from your default branch \(typica
 You can [change your repositories default branch from within Github](https://help.github.com/en/articles/setting-the-default-branch), if you only need the configuration from one branch.
 You can relax or tighten this rule by selecting "All" or "None" from the "Build Branches" dropdown in the project settings pane of the Gradient console.
 If you would like to build any tags or a subset of branches that are not the default branch, select "All" from this menu and provide filters in your `config.yaml`.
-To list the specific patterns of tags and branches to build, see [branch and tag filters](gradientci-v2.md#filtering-branches-and-tags).
+To list the specific patterns of tags and branches to build, see [branch and tag triggers](gradientci-v2.md#branches-and-tags).
 
 You may additionally disable the builds of pull requests, enabled by default.
 Or enable builds of pull requests that originate from forked repositories, disabled by default to prevent unauthorized use of Gradient resources.
@@ -106,7 +106,7 @@ These generally correspond to actions available in the Paperspace CLI/SDK.
 For complex pipelines you may run a single node experiment that contains a python script with a series of Paperspace SDK calls to orchestrate your pipeline.
 The SDK Pipeline style offers more flexibility than can be described by the yaml pipeline configuration as you can describe complex logic using plain python code.
 SDK pipelines offer the latest SDK functionality as soon as it becomes available, often before it can be integrated into the yaml pipeline syntax.
-For an example see [SDK Pipeline.](gradentci-v2.md#sdk-pipeline)
+For an example see [SDK Pipeline.](gradentci-v2.md#examples)
 
 #### Required Properties
 
@@ -229,6 +229,15 @@ Note these numbers are parsed as floats and relying on precise equality with the
 * `only-pulls`: only perform this check on pull requests
 * `if-not-found`: return a default status if job has no data for `<identifier>`, defaults to “failure”
 * `comment-on-pr`: include this metric in a summary content if the metrics were generated from a pull-request
+
+## Job Environment
+
+For some `step`s in your job GradientCI will automatically set environment variables so you can determine the triggering condition.
+These variables are currently set for `experiment.*` steps only.
+* `PS_GRADIENT_CI_GIT_REF` the branch or tag that triggered the build
+* `PS_GRADIENT_CI_GIT_SHA` the git commit currently being built
+* `PS_GRADIENT_CI_GIT_REPO_URL` the repository that received the trigger.
+Note that builds from forks will appear to come from the *target* repository, not the fork.
 
 ## Examples
 
