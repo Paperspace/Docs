@@ -2,7 +2,25 @@
 
 ## Create a Model
 
-To create a Model using the CLI, run an Experiment, such as by [using one of the sample Experiment commands](../experiments/run-experiments-ui.md#h_39323868261524588004147), and set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Models list](about.md#model-repository).
+There are two ways to create a Model in Gradient, and both can be done via the GUI or CLI:
+
+#### 1\) Run an Experiment that outputs a trained Model
+
+You can do this [via the GUI](../experiments/run-experiments-ui.md) or [via the CLI](../experiments/run-experiments-cli.md) by [using one of the sample Experiment commands](../experiments/run-experiments-ui.md#h_39323868261524588004147), and set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Models list](about.md#model-repository).
+
+#### 2\) Upload a Model via the GUI
+
+Navigate to the **Models** page and click **Upload a Model +**, as follows:
+
+![](../.gitbook/assets/click-upload.png)
+
+This will open up the Upload Model modal, where you can drag 'n drop a Model from your local machine \(or click to find it locally\), as well as select the model **Type** and provide a **Name**, custom **Summary**, and any Additional Notes as metadata:
+
+![](../.gitbook/assets/screen-shot-2019-12-31-at-5.58.09-pm.png)
+
+Then click **Upload Model**. This will create the Model in Gradient and persist it to S3.
+
+Then you can use it to create a Deployment; it will not be associated with an Experiment.
 
 ## View Your Models List
 
@@ -10,9 +28,9 @@ You can view your Models in your Models list in the GUI or in the CLI, as seen b
 
 ### In the GUI
 
-You can view your Models in your Model Repository in the GUI by clicking Models in the menu.
+Navigate to **Models** in the side nav to see your list of trained Models:
 
-![Your Models list in the Paperspace Console \(GUI\)](../.gitbook/assets/screen-shot-2019-06-25-at-2.26.37-am%20%281%29.png)
+![](../.gitbook/assets/screen-shot-2019-12-31-at-4.55.35-pm.png)
 
 ![A single Model card in your Models list](../.gitbook/assets/screen-shot-2019-06-25-at-2.30.08-am.png)
 
@@ -23,6 +41,8 @@ You can click "Deploy Model" to [Create a Deployment](../deployments/create-a-de
 ![Expanded Model Details showing performance metrics](../.gitbook/assets/screen-shot-2019-06-25-at-3.00.52-pm.png)
 
 ![Expanded Model Details showing model and checkpoint files](../.gitbook/assets/screen-shot-2019-06-25-at-3.01.13-pm.png)
+
+### Upload a Model
 
 ### In the CLI
 
