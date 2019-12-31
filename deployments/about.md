@@ -17,7 +17,7 @@ Deploy any model as a high-performance, low-latency micro-service with a RESTful
 
 ## Current Capabilities
 
-* Out-of-the-box integration with TensorFlow, ONNX, TensorRT, and Custom models
+* Out-of-the-box integration with TensorFlow, ONNX, and TensorRT, as well as Flask for Custom models
 * A variety of GPU & CPU types to deploy on
 * Per second pay-as-you-go billing
 * Multi-instance deployments with automatic load balancing
