@@ -128,7 +128,11 @@ When you are done and want to save your changes, click **Edit Deployment** at th
 
 If a Deployment is _Stopped_, you can update its **Instance Count** without having to go into the Edit Deployment flow, like so:
 
-![](../.gitbook/assets/instance-count.png)
+![](../.gitbook/assets/instance-count-2.png)
+
+Once you select the updated value for **Instance Count**, it will update automatically. You'll see a Success confirmation message if it was successful:
+
+![](../.gitbook/assets/instance-count-3.png)
 
 ## View, Start, & Stop a Deployment
 
