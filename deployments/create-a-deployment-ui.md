@@ -124,13 +124,25 @@ When you are done and want to save your changes, click **Edit Deployment** at th
 
 ![](../.gitbook/assets/edit.png)
 
+#### Update a Deployment's Instance Count from its Details
+
+If a Deployment is _Stopped_, you can update its **Instance Count** without having to go into the Edit Deployment flow, like so:
+
+![](../.gitbook/assets/instance-count.png)
+
 ## View, Start, & Stop a Deployment
 
-Navigating to the Deployments tab, you can see your list of Running and Stopped deployments. Here we have 3 Deployments:
+Since Deployments are continuous web services, they can be in multiple states, including _Provisioning_, _Provisioned_, _Running_, _Stopped_, and _Error_.
 
-![](../.gitbook/assets/screen-shot-2019-06-24-at-8.25.05-pm.png)
+Navigate to the **Deployments** page in the side nav to see your list of Deployments:
 
-Each Deployment has its own unique ID and is associated with the Experiment and Model it was created from. Click "Start" to launch the Deployment. A Running Deployment and its details \(found by clicking the row\) will appear as follows:
+![](../.gitbook/assets/screen-shot-2019-12-31-at-3.48.12-pm.png)
+
+Each Deployment has: a **Name** and a unique **ID**; links to its associated **Experiment** and **Model** \(by ID\) that it was created from; its **Container Type; Date Created; Status;** and **Actions** you can perform.
+
+To start a _Stopped_ Deployment, click **Start** from among that Deployment's **Actions**. The Status will change to _Provisioning_ and, if all goes smoothly, will soon say _Running_.
+
+Click the Deployment's row to show its details:
 
 ![](../.gitbook/assets/screen-shot-2019-06-24-at-8.37.24-pm.png)
 
