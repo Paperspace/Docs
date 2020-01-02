@@ -8,19 +8,19 @@ Experiments are intended to be used for intensive computational tasks like neura
 
 Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or our new **SDK**. Here is a quick overview and instructions for each option:
 
-The web interface is great for getting familiar with Experiments and running sample projects.  
+The web interface is great for getting familiar with Experiments and running sample projects.
 
 {% page-ref page="run-experiments-ui.md" %}
 
-The CLI \(command-line interface\) is the most popular tool for launching Experiments. It's powerful, flexible, and easy-to-use. 
+The CLI \(command-line interface\) is the most popular tool for launching Experiments. It's powerful, flexible, and easy-to-use.
 
 {% page-ref page="run-experiments-cli.md" %}
 
-The SDK let's you programmatically interact with the Gradient platform.  The SDK can be incorporated into any python project and enables more advanced ML pipelines.
+The SDK let's you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
 
 {% page-ref page="../projects/gradientci.md" %}
 
-GradientCI enables you to submit Experiments directly from a GitHub commit \(or branch\).  You can launch Experiments without ever leaving your code. 
+GradientCI enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
 
 {% page-ref page="../gradient-python-sdk/gradient-python-sdk/" %}
 
@@ -62,11 +62,11 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2834%29.png)
-
+![](../.gitbook/assets/image%20%2835%29.png)
 
 ## Private Datasets
 
 You may mount private datasets hosted in S3 buckets into experiment environment.
 
-{% page-ref page="datasets.md" %}
+{% page-ref page="../data/private-datasets-repository.md" %}
+
