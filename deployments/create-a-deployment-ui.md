@@ -7,6 +7,7 @@ description: To deploy a trained model as a continuous web service
 In this section, we cover how to perform the following via the GUI:
 
 1. Create a Deployment
+   1. Basic Authentication for a Deployment
 2. Edit a Deployment
 3. View, Start, & Stop a Deployment
 
