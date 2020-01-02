@@ -64,3 +64,9 @@ An experiment goes through a number of "states" between being submitted to Gradi
 
 ![](../.gitbook/assets/image%20%2834%29.png)
 
+
+## Private Datasets
+
+You may mount private datasets hosted in S3 buckets into experiment environment.
+
+{% page-ref page="datasets.md" %}
