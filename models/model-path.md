@@ -1,4 +1,4 @@
-# Default Model path
+# Model Paths & Metadata
 
 For an experiment to output a model in Gradient, the resulting model files need to be written to the specified or default model path.
 

@@ -75,7 +75,7 @@
 
 * [About](models/about.md)
 * [Create a Model](models/create-a-model.md)
-* [Default Model path](models/model-path.md)
+* [Model Paths & Metadata](models/model-path.md)
 
 ## Deployments
 
