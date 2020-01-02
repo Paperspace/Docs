@@ -12,5 +12,5 @@ To list your existing machines or create a new one via the GUI, navigate to Core
 
 ![Machines page in the GUI with two sample Machines](../.gitbook/assets/screen-shot-2019-07-11-at-6.34.25-pm.png)
 
-Alternately, you can [List your Machines via the CLI](list-machines.md).
+Alternately, you can [List your Machines via the CLI](machine-actions/list-machines.md).
 
