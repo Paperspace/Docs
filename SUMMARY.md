@@ -76,7 +76,6 @@
 * [About](models/about.md)
 * [Create a Model](models/create-a-model.md)
 * [Default Model path](models/model-path.md)
-* [Import models to Gradient](models/import-your-model-to-gradient.md)
 
 ## Deployments
 
