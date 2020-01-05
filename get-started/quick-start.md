@@ -15,6 +15,10 @@ Now you can create Notebooks, Jobs, Projects, Experiments, Deployments, and more
 
 Notebooks can be created by clicking _Create Notebook_ button on the Notebooks tab. You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own. See more info [here](../notebooks/about.md).
 
+{% hint style="success" %}
+Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
+{% endhint %}
+
 ![](../.gitbook/assets/image%20%2832%29.png)
 
 ## Submit an Experiment

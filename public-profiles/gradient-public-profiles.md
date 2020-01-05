@@ -8,7 +8,7 @@ description: >-
 # Public Profiles
 
 {% hint style="success" %}
-Gradient Public Profiles are still in BETA. The look and feel will change during this development phase. We welcome all [feature requests](https://paperspace.canny.io/feature-requests) and [bug reports](https://paperspace.canny.io/bug-reports) to continue to make this feature more powerful and rich.
+Gradient Public Profiles are still in beta. The look and feel will change during this development phase. We welcome all [feature requests](https://paperspace.canny.io/feature-requests) and [bug reports](https://paperspace.canny.io/bug-reports) to continue to make this feature more powerful and rich.
 {% endhint %}
 
 ## Creating your public profile
