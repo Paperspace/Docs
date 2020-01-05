@@ -4,6 +4,10 @@ description: Launch Gradient° on AWS in Seconds
 
 # Gradient AMI
 
+{% hint style="danger" %}
+Version 1 of the Gradient AMI will soon be deprecated. Please contact your Account Manager or [contact sales](https://info.paperspace.com/contact-sales) for access to the latest version of this software.
+{% endhint %}
+
 As an alternative to setting up Gradient nodes in your cluster manually, Paperspace also publishes an official AMI image that contains the gradient-node software alongside all required dependencies like NVIDIA drivers, CUDA, and nvidia-docker. The AMI is available in the AWS Marketplace and is kept up to date with the latest version of Gradient°. The Paperspace AMI works with all EC2 instances, but GPU acceleration will only work on GPU-enabled instance types.
 
 [Click here to install Gradient on AWS](https://aws.amazon.com/marketplace/pp/B07Q473W7M)
@@ -30,13 +34,13 @@ Starting a gradient-node from the AMI is simple: select the AMI from the AWS Mar
 7. Launch your new instance
 8. On boot, the instance will automatically register with your Gradient account and will be ready to accept Jobs.  See the [usage](usage.md) section for submitting jobs to a Gradient node.
 
-![Once provisioned, the Gradient node will auto register with your account.](../.gitbook/assets/image%20%2833%29.png)
+![Once provisioned, the Gradient node will auto register with your account.](../../.gitbook/assets/image%20%2838%29.png)
 
 ## Passing credentials via user-data \(preferred\)
 
 You can pass credentials into the Gradient° instance at launch time, which enables the node to start automatically and associate itself in your account. You would not have to SSH into the running instance to configure the gradient-node. Below is the text you should copy into the user-data field under "Advanced Details" in Step 3, "Configure Instance Details," when launching an EC2 instance:
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../../.gitbook/assets/image%20%2828%29.png)
 
 ```text
 #cloud-config

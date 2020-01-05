@@ -11,11 +11,11 @@
 ## Tutorials
 
 * [Getting Started with Notebooks](tutorials/getting-started-with-gradient-notebooks.md)
-* [Train & Deploy an ML Model with the Gradient CLI](tutorials/training-and-deploying-an-ml-model-with-gradient-cli.md)
-* [Train & Deploy an ML Model with the Experiment Builder](tutorials/training-and-deploying-an-ml-model-with-gradient-ui.md)
+* [Train a Model with the CLI](tutorials/train-a-model-with-the-cli.md)
+* [Train a Model with the UI](tutorials/train-a-model-with-the-ui.md)
 * [Registering Models in Gradient](tutorials/registering-models-in-gradient.md)
 * [Using Gradient Deployments](tutorials/dealing-with-gradient-deployments.md)
-* [Launching Notebooks from Custom Containers](tutorials/using-custom-containers-with-gradient.md)
+* [Using Custom Containers](tutorials/using-custom-containers-with-gradient.md)
 
 ## Notebooks
 
@@ -31,10 +31,6 @@
 * [Notebook Containers](notebooks/notebook-containers/README.md)
   * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)
 * [Community \(Public\) Notebooks](notebooks/public-notebooks.md)
-
-## Public Profiles
-
-* [Public Profiles](public-profiles/gradient-public-profiles.md)
 
 ## Projects
 
@@ -61,9 +57,10 @@
 
 * [About](jobs/about.md)
 * [Create a Job](jobs/create-a-job.md)
-* [Stop a Job](jobs/stop-a-job.md)
-* [Delete a Job](jobs/delete-a-job.md)
-* [List Jobs](jobs/list-your-jobs.md)
+* [Job Actions](jobs/job-actions/README.md)
+  * [List Jobs](jobs/job-actions/list-your-jobs.md)
+  * [Delete a Job](jobs/job-actions/delete-a-job.md)
+  * [Stop a Job](jobs/job-actions/stop-a-job.md)
 * [Job Logs](jobs/job-logs.md)
 * [Job Artifacts](jobs/job-artifacts.md)
 * [Job Metrics](jobs/job-metrics/README.md)
@@ -75,13 +72,15 @@
 
 * [About](models/about.md)
 * [Create a Model](models/create-a-model.md)
+* [Managing Models](models/managing-models.md)
 * [Model Path, Parameters, & Metadata](models/model-path.md)
+* [Public Models](models/public-models.md)
 
 ## Deployments
 
 * [About](deployments/about.md)
 * [Prepare Models for Deployment](deployments/preparing-model-for-deployment.md)
-* [Create & Manage Deployments via the GUI](deployments/create-a-deployment-ui.md)
+* [Create & Manage Deployments via the UI](deployments/create-a-deployment-ui.md)
 * [Create a Deployment via the CLI](deployments/create-deployment-cli.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
 * [Optimize Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
@@ -94,7 +93,15 @@
 * [Using Tensorboards via the CLI](tensorboards/tensorboard-cli.md)
 * [TensorBoards via TensorFlow Scripting](tensorboards/getting-started-with-tensorboards.md)
 
-## Machines
+## Data
+
+* [Types of Storage](data/storage.md)
+* [Managing Data in Gradient](data/managing-data-in-gradient.md)
+* [Managing Persistent Storage with VMs](data/managing-persistent-storage-with-vms.md)
+* [Public Datasets Repository](data/public-datasets-repository.md)
+* [Private Datasets](data/private-datasets-repository.md)
+
+## Machines \(Paperspace CORE\) <a id="machines"></a>
 
 * [About](machines/about.md)
 * [Create a Machine via the GUI](machines/create-a-machine-via-the-gui.md)
@@ -110,14 +117,6 @@
   * [Show a Machine](machines/machine-actions/show-machine.md)
   * [Wait For a Machine](machines/machine-actions/wait-for-the-machine.md)
   * [Check a Machine's utilization](machines/machine-actions/machine-utilization.md)
-
-## Data
-
-* [Types of Storage](data/storage.md)
-* [Managing Data in Gradient](data/managing-data-in-gradient.md)
-* [Managing Persistent Storage with VMs](data/managing-persistent-storage-with-vms.md)
-* [Public Datasets Repository](data/public-datasets-repository.md)
-* [Private Datasets](data/private-datasets-repository.md)
 
 ## Instances
 
@@ -140,15 +139,22 @@
 ## Gradient Private Cloud
 
 * [About](gradient-private-cloud/about.md)
-* [Requirements](gradient-private-cloud/requirements.md)
-* [Setup](gradient-private-cloud/setup.md)
-* [Gradient AMI](gradient-private-cloud/gradient-ami.md)
+* [Setup](gradient-private-cloud/gradient-vpc.md)
 * [Usage](gradient-private-cloud/usage.md)
-* [Node Attributes](gradient-private-cloud/job-scheduling-and-node-attributes.md)
-* [Storage](gradient-private-cloud/storage.md)
+* [Gradient Node](gradient-private-cloud/gradient-node/README.md)
+  * [Requirements](gradient-private-cloud/gradient-node/requirements.md)
+  * [Setup](gradient-private-cloud/gradient-node/setup.md)
+  * [Usage](gradient-private-cloud/gradient-node/usage.md)
+  * [Node Attributes](gradient-private-cloud/gradient-node/job-scheduling-and-node-attributes.md)
+  * [Storage](gradient-private-cloud/gradient-node/storage.md)
+  * [Gradient AMI](gradient-private-cloud/gradient-node/gradient-ami.md)
+
+## Public Profiles
+
+* [Public Profiles](public-profiles/gradient-public-profiles.md)
 
 ## Release Notes
 
-* [Product release notes](https://support.paperspace.com/hc/en-us/articles/217560197)
+* [Product release notes](https://updates.paperspace.com/)
 * [CLI/SDK Release notes](https://github.com/Paperspace/gradient-cli/releases)
 

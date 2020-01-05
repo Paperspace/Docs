@@ -2,7 +2,7 @@
 description: To deploy a trained model as a continuous web service
 ---
 
-# Create & Manage Deployments via the GUI
+# Create & Manage Deployments via the UI
 
 In this section, we cover how to perform the following via the GUI:
 
@@ -15,7 +15,7 @@ In this section, we cover how to perform the following via the GUI:
 
 ### Starting the Create Deployment flow
 
-To create a Deployment via the GUI, there are two pathways to start the Create Deployment flow: **a\)** from a Model on the **Models** page; **b\)** from the **Deployments** page. Both of these pathways are shown below, after which we will step through the Create Deployment flow.
+To create a Deployment via the UI, there are two pathways to start the Create Deployment flow: **a\)** from a Model on the **Models** page; **b\)** from the **Deployments** page. Both of these pathways are shown below, after which we will step through the Create Deployment flow.
 
 #### a\) From the Models page:
 
@@ -53,7 +53,7 @@ As both CPU & GPU serving are available, be sure to select the container corresp
 
 ![Recommended container options shown with Tensorflow/serving selected](../.gitbook/assets/screen-shot-2019-12-31-at-1.59.11-pm.png)
 
-#### Choose a Machine
+#### Choose an instance type
 
 Select the GPU or CPU machine type to run your Deployment.
 
@@ -124,16 +124,6 @@ Besides those differences, you can edit any of the other values of your Deployme
 When you are done and want to save your changes, click **Edit Deployment** at the bottom:
 
 ![](../.gitbook/assets/edit.png)
-
-### Update a Deployment's Instance Count from its Details
-
-If a Deployment is _Stopped_, you can update its **Instance Count** without having to go into the Edit Deployment flow, like so:
-
-![](../.gitbook/assets/instance-count-2.png)
-
-Once you select the updated value for **Instance Count**, it will update automatically. You'll see a Success confirmation message if it was successful:
-
-![](../.gitbook/assets/instance-count-3.png)
 
 ## View, Start, & Stop a Deployment
 

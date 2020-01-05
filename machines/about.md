@@ -4,7 +4,7 @@ description: Paperspace virtual machines
 
 # About
 
-Paperspace Machines are the basic building blocks of Paperspace Core and can be taken advantage of using the GUI or via the CLI.
+Paperspace Machines are the basic building blocks of Paperspace CORE and can be taken advantage of using the UI or via the CLI.
 
 You can build a Windows or Linux virtual machine quickly, choose a GPU or CPU machine and any additional add-ons.
 

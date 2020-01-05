@@ -1,17 +1,5 @@
 # Setup
 
-## Download
-
-{% hint style="warning" %}
-Request access to the Gradient Private Cloud here: [https://paperspace.com/console/clusters](https://www.paperspace.com/console/clusters). Your account will need to be approved access before you can use the Gradient Agent software to manage your own cluster of GPUs.
-
-After getting access granted for your account, download the gradient-node binary from the following link.
-
-Download: [https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node](https://s3.amazonaws.com/gradient-node/latest/linux/gradient-node)
-
-SHA-256 Hash: [https://s3.amazonaws.com/gradient-node/latest/linux/sha256](https://s3.amazonaws.com/gradient-node/latest/linux/sha256)
-{% endhint %}
-
 ## Installing dependencies
 
 Here is an example set of commands to install the prerequisites on an Ubuntu 16.04 machine:

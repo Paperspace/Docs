@@ -1,8 +1,8 @@
 # Requirements
 
-## **Gradient-node prerequisites:**
+## **Gradient Node prerequisites:**
 
-* Linux OS \(Ubuntu 16.04 or later is recommended, though other should work\)
+* Linux OS \(Ubuntu 16.04 or later is recommended, though others should work\)
 * Docker 17.12 or later
 * NVIDIA Docker, and the NVIDIA drivers if using an NVIDIA GPU
 * A recent CA certificates package for your OS

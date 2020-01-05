@@ -4,9 +4,9 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # About
 
-Experiments are intended to be used for intensive computational tasks like neural network training. Gradient supports single-node experiments as well as distributed training through multinode experiments.
+Experiments are intended to be used for training machine learning models. Gradient supports single-node experiments as well as distributed training through multinode experiments.
 
-Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or our new **SDK**. Here is a quick overview and instructions for each option:
+Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the  **SDK**. Here is a quick overview and instructions for each option:
 
 The web interface is great for getting familiar with Experiments and running sample projects.
 
@@ -62,11 +62,25 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
-## Private Datasets
+## Storage
 
-You may mount private datasets hosted in S3 buckets into experiment environment.
+#### Persistent Storage
+
+Persistent storage is a persistent filesystem automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage.md#persistent-storage).
+
+#### Artifact Storage
+
+Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage.md#artifact-storage).
+
+#### Workspace Storage
+
+The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run.  If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage.md#workspace-storage).
+
+#### Private Datasets
+
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository.md).
 
 {% page-ref page="../data/private-datasets-repository.md" %}
 

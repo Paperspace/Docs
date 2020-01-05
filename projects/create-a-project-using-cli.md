@@ -1,7 +1,7 @@
 # Create a Project via the CLI
 
 {% hint style="info" %}
- This feature is currently only supported in gradient &gt; 0.2.2
+ This feature is supported in the CLI version 0.2.2 or greater.
 {% endhint %}
 
 The following command creates a Project called `ExampleProject` 

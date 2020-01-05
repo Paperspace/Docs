@@ -8,7 +8,7 @@ This example code demonstrates how to use TensorFlow to export a trained model s
 
 Note: you must specify `--modelPath /artifacts` when running the experiment, in order to have the model parsed and uploaded by Gradient. Learn more about [model path options](../models/model-path.md) here.
 
-### Example 
+## Example with TensorFlow
 
 ```text
 # Set export dir
@@ -44,7 +44,7 @@ It then uses TensorFlow's [SavedModelBuilder module](https://github.com/tensorfl
 os.path.abspath(os.environ.get('PS_MODEL_PATH', os.getcwd() + '/models'))
 ```
 
-  so that it can be loaded later for deployments.
+so that it can be loaded later for deployments.
 
 ### SavedModel format
 

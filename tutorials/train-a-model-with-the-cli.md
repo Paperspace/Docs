@@ -1,11 +1,11 @@
-# Train & Deploy an ML Model with the Gradient CLI
+# Train a Model with the CLI
 
-## Objectives
+### Objectives
 
-**Prerequisites:** 
+**Prerequisites:**
 
-* [Install Gradient CLI](../get-started/install-the-cli.md)
-* [Obtain an API Key](../get-started/install-the-cli.md#connecting-your-account)
+* [Install Gradient CLI](https://github.com/dkobran/Docs/blob/master/get-started/install-the-cli.md)
+* [Obtain an API Key](https://github.com/dkobran/Docs/blob/master/get-started/install-the-cli.md#connecting-your-account)
 
 **Steps**
 
@@ -18,19 +18,19 @@
 
 There are two Gradient experiments involved in this workflow -- training and deployment. The first experiment generates a Python pickle file that gets stored in the shared storage service of Gradient. The same pickle file will be used by the second experiment running a Flask web server to expose a REST endpoint. This experiment will serve the model through the inferencing endpoint.
 
-## Creating a Gradient Experiment to Train the Model
+### Creating a Gradient Experiment to Train the Model
 
 In this step, we will generate a fully-trained model by submitting the dataset and Python code to Gradient. The output from this experiment is stored in a centrally accessible storage location that will be used in the next step of this tutorial.
 
 Let’s take a minute to get familiar with the dataset. To keep this really simple, we are using one feature \(x\) that represents the years of experience of a candidate and a label \(y\) associated with the salary.
 
-![](https://lh4.googleusercontent.com/3itUeDXAUr6skoWDtEhtWFnlFlxZexkEhM-r9uk54n2awZkfcamZtr_IA9NCBPYA8yQ9cft8U-AyHjMASir0k6d0e-rkdH-oJAtuJIYkwzo-Hhiflctfm0gOZNEvPVFANlODg-ie)
+[![](https://camo.githubusercontent.com/59b528eaff4f097e23b67ee0c6237cdda1048f09/68747470733a2f2f6c68342e676f6f676c6575736572636f6e74656e742e636f6d2f3369745565445841557236736b6f57447445687457466e6c466c785a65786b45684d2d7239756b35346e3261775a6b6663616d5a74725f4941394e43425059413879513963667438552d4179486a4d41536972306b366430652d726b64482d6f4a4174754a49596b777a6f2d486869666c6374666d30674f5a4e4576505646414e6c4f44672d6965)](https://camo.githubusercontent.com/59b528eaff4f097e23b67ee0c6237cdda1048f09/68747470733a2f2f6c68342e676f6f676c6575736572636f6e74656e742e636f6d2f3369745565445841557236736b6f57447445687457466e6c466c785a65786b45684d2d7239756b35346e3261775a6b6663616d5a74725f4941394e43425059413879513963667438552d4179486a4d41536972306b366430652d726b64482d6f4a4174754a49596b777a6f2d486869666c6374666d30674f5a4e4576505646414e6c4f44672d6965)
 
 The dataset, _sal.csv_, is available in the _data_ folder of the [GitHub](https://github.com/janakiramm/Salary) repo. Clone the repo to your local machine and open it in your favorite text editor to explore the data.
 
 In the _train_ directory, you’ll find _train.py_, which is responsible for generating the model by applying linear regression to the dataset.
 
-```python
+```text
 import numpy as np
 import pandas as pd
 import os
@@ -80,7 +80,7 @@ We are ready to kick off the training experiment on Gradient 🚀 Run the below 
 
 The location `/storage` maps to Gradient persistent storage location. Anything stored at this location will be available even after the experiment is terminated. By storing the _.pkl_ file at `/storage`, we will be able to access it from the model serving experiment that exposes the REST endpoint.
 
-```bash
+```text
 gradient experiments run singlenode \
 --name train \
 --projectId prj0ztwij \
@@ -106,100 +106,4 @@ Once the experiment's status moves into run mode, it simply executes the code in
 The output from Paperspace CLI confirms that the experiment has been successfully executed. If you navigate to the experiment in the UI, you will see the logs printed the coefficients used in the script along with the message `PSEOF` which is a healthy sign.
 
 We are using a custom Docker container image with prerequisites such as NumPy, Scipy, Pandas, and Scikit-learn. This image was built from the official Python 3 Docker image.
-
-## Creating a Gradient Experiment to Deploy and Host the Model
-
-{% hint style="info" %}
-_Note: check out the_ [_Create a Deployment docs_](../deployments/create-a-deployment-ui.md#create-a-deployment) _for a more up-to-date way to deploy your models using the newer first-class Deployments feature in Gradient. The following section describes a how to deploy models with Gradient using Jobs._
-{% endhint %}
-
-We are now ready to host the trained model in a Gradient experiment that runs a Flask web server. The experiment loads the pickle file created and stored by the last experiment at the `/storage` location.
-
-Navigate to the deploy directory of the cloned repo to find _infer.py_.
-
-```python
-from flask import Flask, jsonify
-from sklearn.externals import joblib
-from argparse import ArgumentParser
-
-parser = ArgumentParser()
-parser.add_argument("-m", "--model", dest="model",
-                    help="location of the pickle file")
-
-filename = parser.parse_args().model
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return "Stackoverflow Salary Predictor"
-
-@app.route('/sal/<int:x>', methods=['GET'])
-def predict(x):
-    loaded_model=joblib.load(filename)
-    y=loaded_model.predict([[x]])[0]
-    sal=jsonify({'salary': round(y,2)})
-    return sal
-
-if __name__ == '__main__':
-      app.run(host='0.0.0.0', port=8080)
-```
-
-This is a standard Flask web server listening on port 8080. It exposes `/sal` endpoint which takes the number of years of experience and returns the predicted salary.
-
-Each time a request is made, it loads the latest version of the pickle file, calls the predict method, serializes the output in JSON and returns the response.
-
-Since Flask is not a part of the container image used in the tutorial, we will need to install it with pip before running the script, which can be included in the run command.
-
-To access the REST endpoint, we also need to instruct Gradient to map the container port to the host port. This is done through the CLI parameter `--ports`_._
-
-Unlike the previous experiment, this wouldn’t get terminated unless it is manually stopped or destroyed. The Flask web server turns the experiment into a long-running experiment that doesn’t exit automatically.
-
-Let’s go ahead and submit the experiment to Gradient.
-
-```bash
-gradient jobs create \
---container janakiramm/python:3 \
---machineType C2 \
---ports 8080:8080 \
---command 'pip install flask && python deploy/infer.py -m /storage/salary/model.pkl'
-```
-
-The logs shown by the CLI confirms that the web server is up and running. Before we can access the endpoint, we need to get the DNS name of the experiment.
-
-Hit _Ctrl+C_ to get back to the command prompt. Don’t worry! this doesn’t terminate the experiment but only exits the CLI.
-
-Let’s explore the experiment details with the below command:
-
-```bash
-gradient jobs list
-```
-
-Make a note of the _fqdn_ parameter mentioned in the output. We need that to access the REST endpoint. Since we are using the _jq_ utility, we can also grab the _fqdn_ with a simple command.
-
-```bash
-export GRAD_HOST=`paperspace jobs list | jq -r .[].fqdn`
-```
-
-It’s time for us to hit the REST endpoint to get the predictions. Let’s check the expected salary of a candidate with 25 years of experience.
-
-```bash
-curl $GRAD_HOST:8080/sal/25
-```
-
-This should return:
-
-```text
-{"salary":149121.27}
-```
-
-Congratulations! You have successfully completed the end-to-end workflow involved in training and deploying machine learning models with Gradient.
-
-Let’s do the clean up by stopping and destroying the experiment.
-
-```bash
-export JOB_ID=`gradient jobs list | jq .[].id`
-gradient jobs stop $JOB_ID
-gradient jobs destroy $JOB_ID
-```
 

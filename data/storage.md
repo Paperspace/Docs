@@ -2,7 +2,7 @@
 
 ## Overview
 
-Gradient includes three types of storage that are available within the context of running an Experiment, Job or Notebook. The three storage types are **Persistent, Artifact,** and **Workspace** storage.
+Gradient includes three types of storage that are available within the context of running an Experiment, Job or Notebook. The three storage types are **Persistent, Artifact,** and **Workspace** storage.  Additionally, there is an option to mount S3 compatible object storage datasets to a running experiment which are called **Private Datasets**.  
 
 ## Persistent Storage
 
@@ -35,4 +35,8 @@ Workspace storage is temp storage available on the worker node while the Experim
 The Workspace exists for the duration of the job run. This directory is located at `/home/paperspace` if you need to reference the absolute path. If you need to push code up to Paperspace and run it, using the Workspace storage is the way to do it.
 
 The total of Workspace storage cannot exceed the available storage on the host machine \(about 200 GB\). If you think you will write enough files to fill this up, be sure to check for errors from the OS. 
+
+## Private Datasets
+
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](private-datasets-repository.md).
 

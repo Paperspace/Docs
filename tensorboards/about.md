@@ -4,11 +4,13 @@ description: Visualize and compare experiments with TensorBoards
 
 # About
 
-**TensorBoard** is a visualization software that comes with any standard TensorFlow installation. In Google’s words:
+**TensorBoard** is a popular open source visualization software that comes with any standard TensorFlow installation but is a first class citizen in other frameworks such as PyTorch. 
+
+![](../.gitbook/assets/image%20%2836%29.png)
+
+Here's a description of the TensorBoard project by Google:
 
 > “The computations you’ll use TensorFlow for many things \(like training a massive deep neural network\) and they can be complex and confusing. To make it easier to understand, debug, and optimize TensorFlow programs, we’ve included a suite of visualization tools called TensorBoard.”
-
-![](../.gitbook/assets/image%20%2819%29.png)
 
 TensorBoard was created as a way to help us understand the flow of tensors in your model so that you can debug and optimize it. It is generally used for two main purposes:
 
