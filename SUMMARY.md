@@ -43,7 +43,7 @@
 ## Experiments
 
 * [About](experiments/about.md)
-* [Run Experiments via the GUI](experiments/run-experiments-ui.md)
+* [Run Experiments via the UI](experiments/run-experiments-ui.md)
 * [Run Experiments via the CLI](experiments/run-experiments-cli.md)
 * [Gradient Config File](experiments/gradient-config.yaml.md)
 * [Distributed Machine Learning with Tensorflow](experiments/multi-node-training.md)
@@ -72,16 +72,17 @@
 
 * [About](models/about.md)
 * [Create a Model](models/create-a-model.md)
-* [Managing Models](models/managing-models.md)
 * [Model Path, Parameters, & Metadata](models/model-path.md)
+* [Example: Prepare a TensorFlow Model for Deployments](models/preparing-model-for-deployment.md)
+* [Managing Models](models/managing-models.md)
 * [Public Models](models/public-models.md)
 
 ## Deployments
 
 * [About](deployments/about.md)
-* [Prepare Models for Deployment](deployments/preparing-model-for-deployment.md)
-* [Create & Manage Deployments via the UI](deployments/create-a-deployment-ui.md)
+* [Create a Deployment via the UI](deployments/create-a-deployment-ui.md)
 * [Create a Deployment via the CLI](deployments/create-deployment-cli.md)
+* [Updating Deployments](deployments/updating-deployments.md)
 * [A Deployed Model's RESTful API](deployments/deployment-restful-api.md)
 * [Optimize Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
@@ -97,17 +98,16 @@
 ## TensorBoards
 
 * [About](tensorboards/about.md)
-* [Using TensorBoards via the GUI](tensorboards/using-tensorboards-via-the-gui.md)
+* [Using TensorBoards via the UI](tensorboards/using-tensorboards-via-the-gui.md)
 * [Using Tensorboards via the CLI](tensorboards/tensorboard-cli.md)
 * [TensorBoards via TensorFlow Scripting](tensorboards/getting-started-with-tensorboards.md)
 
 ## Machines \(Paperspace CORE\) <a id="machines"></a>
 
 * [About](machines/about.md)
-* [Create a Machine via the GUI](machines/create-a-machine-via-the-gui.md)
+* [Create a Machine via the UI](machines/create-a-machine-via-the-gui.md)
 * [Create a Machine via the CLI](machines/create-a-virtual-machine.md)
 * [Destroy a Machine](machines/destroy-machine.md)
-* [Check availability](machines/check-machine-availability.md)
 * [Machine Actions](machines/machine-actions/README.md)
   * [Start a Machine](machines/machine-actions/start-machine.md)
   * [Stop a Machine](machines/machine-actions/stop-machine.md)
@@ -117,6 +117,7 @@
   * [Show a Machine](machines/machine-actions/show-machine.md)
   * [Wait For a Machine](machines/machine-actions/wait-for-the-machine.md)
   * [Check a Machine's utilization](machines/machine-actions/machine-utilization.md)
+* [Check availability](machines/check-machine-availability.md)
 
 ## Instances
 

@@ -2,13 +2,11 @@
 
 ## Projects
 
-A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Artifacts, and Models. Projects can be created manually or automatically from a Job corresponding to the current working directory name.
+A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Models, and Deployments. Projects can be synced with GitHub with [GradientCI](../projects/gradientci.md).
 
 ## Notebooks
 
-![](../.gitbook/assets/image%20%284%29.png)
-
-A [Notebook](../notebooks/about.md) is an interactive coding environment that allows you to mix code or formulas with text and diagrams, visualizations, and other media. Notebooks make it easy to explore data and coding concepts, and collaborate with other people on projects. Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.
+Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.  Gradient [Notebooks](../notebooks/about.md) make it easy to explore data and coding concepts, and collaborate with other people on projects. 
 
 {% hint style="success" %}
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
@@ -16,9 +14,9 @@ Check out the [FREE GPU](../instances/free-instances.md) option when launching N
 
 ## Experiments
 
-[Experiments](../experiments/about.md) are designed for executing code \(such as training a deep neural network\) on a CPU or GPU without managing any infrastructure. Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
+[Experiments](../experiments/about.md) are designed for training machine learning models on GPUs \(and other chips\) without managing any infrastructure. Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
 
-Experiments are part of a larger suite of tools that work seamlessly with Gradient Notebooks, and our Core product, which together form a production-ready ML/AI pipeline.
+Experiments are part of a larger suite of tools that work seamlessly with Gradient Notebooks, Models, and Deployments, which together form a production-ready ML/AI pipeline.
 
 ## Jobs
 

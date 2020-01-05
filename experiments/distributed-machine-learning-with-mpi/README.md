@@ -1,7 +1,7 @@
 # Distributed Machine Learning with MPI
 
-{% hint style="danger" %}
- This feature is currently only available to our AWS VPC Customers
+{% hint style="warning" %}
+This feature is currently only available to our Gradient Enterprise Customers. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
 {% endhint %}
 
 MPI \(Message Passing Interface\) is the _de facto_ standard distributed communications framework for scientific and commercial parallel distributed computing. 
@@ -39,7 +39,7 @@ To launch an MPI experiment, all you need is:
 * Docker image with MPI library installed
 * At Least 2 machines \(1 Master, 1 Worker\)
 * Gradient CLI
-* VPC cluster access \(contact [sales@paperspace.com](mailto:sales@paperspace.com) to create your VPC\)
+* A Gradient Enterprise cluster \([contact Sales](https://info.paperspace.com/contact-sales) to get started\)
 
 That's it!
 
@@ -71,7 +71,7 @@ mpirun --allow-run-as-root -np 2 --hostfile /generated/hostfile python main.py
 
 Now that we have a good foundation of how distributed training and inter-node communication works, let's look at two examples.
 
-For simplicity's sake, we present here two examples \(ChainerMN and Horovod\) with relatively simple code, but these examples \(especially Horovod\) should give you a good idea of how to run any MPI jobs on Gradient.
+For simplicity's sake, we present here two examples \([Horovod](distributed-training-using-horovod.md) and [ChainerMN](distributed-training-using-chainermn.md)\) with relatively simple code, but these examples \(especially Horovod\) should give you a good idea of how to run any MPI jobs on Gradient.
 
 
 

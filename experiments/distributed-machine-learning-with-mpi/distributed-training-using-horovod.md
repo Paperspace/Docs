@@ -61,8 +61,6 @@ gradient experiments create multinode \
 --masterCommand "mpirun --allow-run-as-root --hostfile /generated/hostfile -bind-to none -map-by slot -mca pml ob1 -mca btl ^openib python main.py"  \
 --masterCount 1 \
 --workspaceUrl https://github.com/Paperspace/horovod-distributed-example.git \
---apiKey XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \
---vpc
 ```
 
 ### More info

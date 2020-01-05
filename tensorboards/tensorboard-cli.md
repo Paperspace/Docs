@@ -4,7 +4,7 @@ description: Create a new Tensorboard and add experiments to it with CLI
 
 # Using Tensorboards via the CLI
 
-```text
+```bash
 Usage: gradient tensorboards [OPTIONS] COMMAND [ARGS]...
 
   Manage tensorboards

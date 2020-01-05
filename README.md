@@ -3,7 +3,7 @@
 Welcome to Gradient! Get familiar with the Gradient CLI and web interface.
 
 {% hint style="info" %}
-This is the documentation for the [Gradient°](https://paperspace.com/gradient) platform. If you are looking for general information on Paperspace or to contact Support, visit our [Help Center](https://support.paperspace.com).
+This is the documentation for the [Gradient](https://paperspace.com/gradient) platform. If you are looking for general information on Paperspace or to contact Support, visit our [Help Center](https://support.paperspace.com).
 {% endhint %}
 
 Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies developing, training, and deploying deep learning models. The platform provides **infrastructure automation** and a **software development kit** for machine learning developers.

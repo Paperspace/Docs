@@ -4,6 +4,10 @@ description: Paperspace virtual machines
 
 # About
 
+{% hint style="warning" %}
+This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
+{% endhint %}
+
 Paperspace Machines are the basic building blocks of Paperspace CORE and can be taken advantage of using the UI or via the CLI.
 
 You can build a Windows or Linux virtual machine quickly, choose a GPU or CPU machine and any additional add-ons.

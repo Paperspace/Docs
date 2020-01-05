@@ -14,9 +14,9 @@ from gradient_sdk.utils import model_dir
 
 ## Default paths
 
-**Singlenode**: `--modelPath /artifacts` is currently the default for singlenode experiments. Output your model files there to appear in your Model Repository so that you can deploy it using Deployments
+**Single-node**: `--modelPath /artifacts` is currently the default for single-node experiments. Output your model files there to appear in your Model Repository so that you can deploy it using Deployments
 
-**Multinode:** The default model path for multinode experiments is `/storage/models/<experiment_id>/`
+**Multi-node:** The default model path for multi-node experiments is `/storage/models/<experiment_id>/`
 
 {% hint style="info" %}
 In Gradient Enterprise environments, the default model path will be `/shared/models/<experiment_id>`
@@ -46,7 +46,7 @@ One option is to set `--modelPath "/artifacts"` and keep the checkpoint files ar
 
 **Enabling Support for Models with GradientCI**
 
-You can also specify the model path and model type parameters when running experiments with GradientCI . See [GradientCI Models](https://docs.paperspace.com/gradient/projects/gradientci#models) for more info.
+You can also specify the model path and model type parameters when running experiments with GradientCI. See [GradientCI Models](../projects/gradientci.md#models) for more info.
 
 ## Custom model metadata
 

@@ -1,10 +1,6 @@
 # Run Experiments via the CLI
 
-Gradient supports GitHub-enabled [GradientCI Projects](../projects/gradientci.md) and Standalone Projects, and these projects contain any Experiments that you create.  GradientCI Projects allow you to create and run Experiments automatically based on code pushes, but often you will want to manually create Experiments. To do this, you can use Experiment Builder in the GUI, or you can use the CLI.
-
-The Gradient CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.
-
-Once you have the [CLI installed](../get-started/install-the-cli.md), use the alias `gradient` plus any further commands you wish to run.
+The Gradient CLI enables you to run experiments manually and programmatically from your command line for maximum flexibility.  Once you have the [CLI installed](../get-started/install-the-cli.md), use the alias `gradient` plus any further commands you wish to run.
 
 Note that you can use the `--help` option at any time to reveal information in your terminal about the current command you wish to use. Alternately, if you simply try to run a command, the CLI will prompt you for additional subcommands that you may be intending to use, as well as required options that are missing from your command.
 
@@ -28,13 +24,13 @@ Commands:
   version          Show the version and exit
 ```
 
-## Running singlenode and multinode experiments
-
-There are separate subcommands `singlenode` and `multinode` experiments.
+## Running experiments
 
 For programmatic use of the CLI, there is the `create` command, which simply creates an experiment in a target project, with the specified options.
 
 Alternately, for more interactive use of the CLI, there is `run`, which allows you to both create and automatically start an experiment with one command. With this command, logs will automatically stream once the experiment has been created and started.
+
+There are separate subcommands `singlenode` and `multinode` experiments.
 
 ```bash
 gradient experiments run singlenode --help
@@ -44,9 +40,9 @@ gradient experiments run multinode --help
 Usage: gradient experiments create multinode [OPTIONS]
 ```
 
-### Creating a singlenode experiment using the CLI
+### Creating a single-node experiment using the CLI
 
-The following command creates and starts a singlenode experiment called `singleEx` and places it within the Gradient Project identified by the `--projectId` option. \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
+The following command creates and starts a single-node experiment called `singleEx` and places it within the Gradient Project identified by the `--projectId` option. 
 
 ```bash
 gradient experiments run singlenode \
@@ -67,11 +63,11 @@ See more info about [model paths](../models/model-path.md#default-paths) and the
 
 To run this command substitute an existing project ID for &lt;your-project-id&gt;. You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value. You can also get a list of existing projects and their IDs from the command line using the command `gradient projects list`.
 
-For more information about this sample experiment see the README in the mnist-sample github repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
+For more information about this sample experiment see the README in the mnist-sample github repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). Note: the code for this experiment can be run in both singlenode and multi-node training modes.
 
-### Creating a multinode experiment using the CLI
+### Creating a multi-node experiment using the CLI
 
-The following command creates and starts a multinode experiment called `multiEx` and places it within the Gradient Project identified by the `--projectId` option. \(Note: in some early versions of the CLI this option was called `--projectHandle`.\)
+The following command creates and starts a multi-node experiment called `multiEx` and places it within the Gradient Project identified by the `--projectId` option. 
 
 ```bash
 gradient experiments run multinode \
@@ -90,7 +86,9 @@ gradient experiments run multinode \
   --modelType Tensorflow
 ```
 
-_Note: `--modelType Tensorflow` is currently required if you wish you create a Deployment from your model, since Deployments currently only use Tensorflow Serving to serve models._
+{% hint style="info" %}
+Note: `--modelType Tensorflow` is will automatically parse and store the model's performance metrics and prepare it for [Deployment](../deployments/about.md) with TensorFlow Serving.
+{% endhint %}
 
 To run this command substitute an existing project ID for &lt;your-project-id&gt;. You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value. You can also get a list of existing projects and their IDs from the command line using the command `gradient projects list`.
 
@@ -100,7 +98,7 @@ Finally, the command specifies the workspace to pull the Python script from as a
 
 For more information about this sample experiment see the README in the mnist-sample GitHub repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
 
-## Options common to both singlenode and multinode experiments
+## Options common to both single-node and multi-node experiments
 
 ```text
   --name TEXT                  Name of new experiment  [required]
@@ -122,7 +120,7 @@ For more information about this sample experiment see the README in the mnist-sa
   --help                       Show this message and exit
 ```
 
-## Options specific to singlenode experiments
+## Options specific to single-node experiments
 
 ```text
   --container TEXT             Container  [required]
@@ -164,7 +162,7 @@ Also, using the `--containerUser` option, you can specify a UNIX user name to be
                                   Parameter server registry password
 ```
 
-In the case of multinode experiments, both worker and parameter server instances need a container, machine type, command, count, and optionally a Docker registry username and password.
+In the case of multi-node experiments, both worker and parameter server instances need a container, machine type, command, count, and optionally a Docker registry username and password.
 
-Note: `--containerUser` is not a supported option for multinode experiments currently.
+Note: `--containerUser` is not a supported option for multi-node experiments currently.
 

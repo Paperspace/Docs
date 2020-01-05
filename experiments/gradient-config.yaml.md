@@ -24,7 +24,7 @@ Once you have filled out the needed parameters, execute an experiment with the `
 
 A sample config.yaml file for single node experiments is displayed below
 
-{% hint style="warning" %}
+{% hint style="info" %}
 There are many other parameters that you may want to use when running an experiment.
 {% endhint %}
 

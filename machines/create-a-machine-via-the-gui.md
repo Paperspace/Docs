@@ -1,6 +1,6 @@
-# Create a Machine via the GUI
+# Create a Machine via the UI
 
-The steps below describe how to Create a new Machine via the GUI.
+The steps below describe how to Create a new Machine via the UI.
 
 Navigate to the Machines page and click "New Machine +" at the top-right:
 

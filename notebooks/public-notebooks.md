@@ -1,7 +1,7 @@
 # Community \(Public\) Notebooks
 
 {% hint style="info" %}
-Gradient Community Notebooks were launched as a public Beta in October 2019. We'd love to hear your feedback on Community Notebooks as we work to stabilize and round out the UX of this new product offering. 
+Gradient Community Notebooks were launched as a public beta in October 2019. We'd love to hear your feedback on Community Notebooks as we work to stabilize and round out the UX of this new product offering. 
 {% endhint %}
 
 ## Gradient Community Notebooks

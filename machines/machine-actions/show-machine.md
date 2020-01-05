@@ -2,7 +2,9 @@
 
 **Usage:** 
 
-`gradient machines show [OPTIONS]`
+```text
+gradient machines show [OPTIONS]
+```
 
 Show machine information for the machine with the given id.
 

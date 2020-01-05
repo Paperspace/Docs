@@ -2,7 +2,9 @@
 
 **Usage:** 
 
-`gradient machines update [OPTIONS]`
+```text
+gradient machines update [OPTIONS]
+```
 
 Update attributes of a machine.
 

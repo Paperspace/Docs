@@ -6,7 +6,9 @@ There are two ways to create a Model in Gradient, and both can be done via the U
 
 ### 1\) Run an Experiment that generates a Model
 
-You can do this [via the UI](../experiments/run-experiments-ui.md) or [via the CLI](../experiments/run-experiments-cli.md) by [using one of the sample Experiment commands](../experiments/run-experiments-ui.md#h_39323868261524588004147); be sure to set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Model Repository](about.md#model-repository).
+You can do this [via the UI](../experiments/run-experiments-ui.md) or [via the CLI](../experiments/run-experiments-cli.md) by [using one of the sample Experiment commands](../experiments/run-experiments-ui.md#h_39323868261524588004147); be sure to set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Model Repository](about.md#model-repository).  
+
+View an [example](preparing-model-for-deployment.md) using TensorFlow.
 
 ### 2\) Upload a Model
 
@@ -28,7 +30,7 @@ Then click **Upload Model**. This will create the Model in Gradient and persist 
 
 You can upload a Model via the CLI with the `gradient models upload` subcommand:
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/image%20%2845%29.png)
 
 Whether you use the GUI or CLI, you've now successfully uploaded a Model into Gradient!
 

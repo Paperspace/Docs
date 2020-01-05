@@ -16,7 +16,7 @@ tensorflow/tensorflow:1.5.1-gpu where 1.5.1-gpu is the "tag" taken from here: [h
 
 Example use:
 
-```text
+```bash
 gradient experiments run ... --container tensorflow/tensorflow:1.5.1-gpu
 ```
 
@@ -45,7 +45,11 @@ The credential options `--registryUsername` and `--registryPassword` should be s
 * Quay.io
 * Custom registries running Docker Registry v2 protocol, as long as they are publicly accessible on the internet.
 
-The form of the repository link, and the format of the username and password are specific for some of these registries, but are publicly documented. The following provides a summary for Docker Hub, AWS and GCP:
+The form of the repository link, and the format of the username and password are specific for some of these registries, but are publicly documented. 
+
+### Examples using common container registries
+
+The following provides a summary for Docker Hub, AWS and GCP:
 
 #### 1. Docker Hub
 
@@ -68,15 +72,13 @@ Password: &lt;value of '-p' option from output of the AWS SDK command "aws ecr g
 
 Container link format: "&lt;aws\_account\_id&gt;.dkr.ecr.us-east-1.amazonaws.com/\[&lt;namespace&gt;/\]&lt;repository-name&gt;"  
   
-Example:
-
-Install and configure the AWS SDK on your local computer, then execute:
+Example:  Install and configure the AWS SDK on your local computer, then execute:
 
 ```text
 aws ecr get-login --no-include-email
 ```
 
-\(Note: if the --no-include-email is reported as not supported, you may need to update your aws cli using pip3.\)
+Note: if the --no-include-email is reported as not supported, you may need to update your aws cli using pip3.
 
 It will produce output similar to the following:
 
@@ -88,10 +90,9 @@ brla478tq348437rgfqIsImV123jAUhi37rgfq4398yq9sImV4calksdksghlib34ghali4calkIjSIr
 q34t843q98iOjE1MTYyNjUx https://XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com"
 ```
 
-Use the value of the '-p' option from the actual output as the password value in the `gradient experiments` method.  
-\(note: the value may span multiple lines\):
+Use the value of the '-p' option from the actual output as the password value in the `gradient experiments` method. Note: the value may span multiple lines:
 
-```text
+```bash
 gradient experiments run ... --container "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/mynamespace/tom_test_private" \
 --registryUsername "AWS" --registryPassword sb2FkIjSIsImV4calksdhwTTyslia189231qwdgqer3kIjSIsImV4calksd123eiadfviuaigq2 \
 9438hvehraw8437rgfq4398yq934ghalibrla478tqkIjSIsImV4calksd34ariIsImV4calksdhliarhg9q34yt9huargq934t \

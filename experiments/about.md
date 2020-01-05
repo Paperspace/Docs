@@ -4,7 +4,7 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # About
 
-Experiments are intended to be used for training machine learning models. Gradient supports single-node experiments as well as distributed training through multinode experiments.
+Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments.
 
 Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the  **SDK**. Here is a quick overview and instructions for each option:
 
@@ -26,11 +26,11 @@ GradientCI enables you to submit Experiments directly from a GitHub commit \(or 
 
 ## Experiment Types
 
-### Single Node
+### Single-node
 
 In your your CLI command or`config.yaml`, specify the experiment type as `singlenode`
 
-### Multinode
+### Multi-node
 
 Gradient supports both gRPC and MPI protocols for distributed TensorFlow model training. In your CLI command or`config.yaml`, specify the experiment type as either `multinode.` The two types are:
 
@@ -62,7 +62,7 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 ## Storage
 

@@ -4,6 +4,10 @@ description: Learn how to graph metrics you defined using our gradient-statsd cl
 
 # Custom Metrics
 
+{% hint style="warning" %}
+This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
+{% endhint %}
+
 ## Overview
 
 The gradient platform will now graph metrics you define in your gradient jobs. The process begins by you defining the metric names you'd like to gain insight over. Once determined you can provide these metric names to the Job Builder, instrument your code with `gradient-statsd`, and view your metrics under the Metrics tab within the Job info page.
@@ -28,7 +32,7 @@ In order for your job to write metrics to the gradient platform you will need to
 
 Below is a small toy application making use of the gradient-statsd client. 
 
-```text
+```python
 from gradient_statsd import Client
 from datetime import datetime, timedelta
 from random import randint

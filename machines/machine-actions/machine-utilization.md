@@ -2,7 +2,9 @@
 
 **Usage:** 
 
-`gradient machines utilization [OPTIONS]`
+```text
+gradient machines utilization [OPTIONS]
+```
 
 Get machine utilization data for the machine with the given id. Machine upgrades are not represented in utilization data.
 

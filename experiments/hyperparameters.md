@@ -1,14 +1,10 @@
 # Hyperparameter Tuning
 
-## About
-
 {% hint style="warning" %}
-This feature is in beta. 
+This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
 {% endhint %}
 
-Gradient provides users the ability to tune hyperparameters for their machine learning models, harnessing the power of our cloud to explore different model configurations and discover an optimal model.
-
-##  How it works?
+## How it works
 
 Paperspace Hyperparameter Tuning based on [_Hyperopt_](http://hyperopt.github.io/hyperopt/)\_\_
 
@@ -22,9 +18,7 @@ If you want to learn more about Hyperopt, you'll probably want to watch the vide
 
 {% embed url="https://www.youtube.com/watch?v=Mp1xnPfE4PY" %}
 
-
-
-#### How to define Hyperopt parameters
+## How to define Hyperopt parameters
 
 A parameter is defined with either a certain uniform range or a probability distribution, such as:
 
@@ -52,43 +46,9 @@ hp.choice(label, ["list", "of", "potential", "choices"])
 hp.choice(label, [hp.uniform(sub_label_1, low, high), hp.normal(sub_label_2, mu, sigma), None, 0, 1, "anything"])
 ```
 
-## Hyperparameter made easy with [Gradient-SDK](https://github.com/Paperspace/gradient-sdk)
+## How to perform Hyperparameter search on Gradient
 
-**hyper\_tune\(\)**
-
-Function to run hyperparameter tuning.
-
-It accepts the following arguments:
-
-* `train_model` User model to tune.
-* `hparam_def` User definition \(scope\) of search space. To set this value, refer to [hyperopt documentation](https://github.com/hyperopt/hyperopt).
-* `algo` Search algorithm. _Default_: `tpe.suggest` \(from hyperopt\).
-* `max_ecals` Maximum number of function evaluations to allow before returning. _Default_: `25`.
-* `func` Function to be run by hyper tune. _Default_: `fmin` \(from hyperopt\). _Do not change this value if you do not know what you are doing!_
-
-It returns a dict with information about the tuning process.
-
-It can raise a `ConfigError` exception with message if there's no connection to MongoDB.
-
-**Note:** _You do not need to worry about setting your MongoDB version; it will be set within Paperspace infrastructure for hyperparameter tuning._
-
-**Usage example:**
-
-```text
-from gradient_sdk import hyper_tune
-
-# Prepare model and search scope
-
-# minimal version
-argmin1 = hyper_tune(model, scope)
-
-# pass more arguments
-argmin2 = hyper_tune(model, scope, algo=tpe.suggest, max_evals=100)
-```
-
-## How to perform Hyperparameter search on Paperspace
-
-Everytime you create a hyperparameter tuning experiment we create at least 3 jobs:
+Every time you create a hyperparameter tuning experiment we create at least 3 jobs:
 
 1. Hyperparameter Server that will run your tuning command
 2. n amount of workers that will run jobs
@@ -98,7 +58,7 @@ Everytime you create a hyperparameter tuning experiment we create at least 3 job
 
 Assuming that you have configured an API Key for the paperspace cli enter:
 
-```text
+```bash
 gradient hyperparameters run \
   --name HyperoptKerasExperimentCLI1 \
   --projectId <your-project-id> \
@@ -122,9 +82,45 @@ For workers and parameter server you can easily access the logs and outputs of t
 
 ![](../.gitbook/assets/screenshot-2019-06-06-at-15.47.42.png)
 
-## Comparing various runs on Paperspace
+### 
+
+### With the [Gradient-SDK](https://github.com/Paperspace/gradient-sdk)
+
+**hyper\_tune\(\)**
+
+Function to run hyperparameter tuning.
+
+It accepts the following arguments:
+
+* `train_model` User model to tune.
+* `hparam_def` User definition \(scope\) of search space. To set this value, refer to [hyperopt documentation](https://github.com/hyperopt/hyperopt).
+* `algo` Search algorithm. _Default_: `tpe.suggest` \(from hyperopt\).
+* `max_ecals` Maximum number of function evaluations to allow before returning. _Default_: `25`.
+* `func` Function to be run by hyper tune. _Default_: `fmin` \(from hyperopt\). _Do not change this value if you do not know what you are doing!_
+
+It returns a dict with information about the tuning process.
+
+It can raise a `ConfigError` exception with message if there's no connection to MongoDB.
+
+**Note:** _You do not need to worry about setting your MongoDB version; it will be set within Paperspace infrastructure for hyperparameter tuning._
+
+**Usage example:**
+
+```python
+from gradient_sdk import hyper_tune
+
+# Prepare model and search scope
+
+# minimal version
+argmin1 = hyper_tune(model, scope)
+
+# pass more arguments
+argmin2 = hyper_tune(model, scope, algo=tpe.suggest, max_evals=100)
+```
+
+## Comparing results on Gradient
 
 {% hint style="warning" %}
-This feature is coming soon to our platform!
+This feature is coming soon to our platform!  In the meantime, we recommend using a tool like TensorBoard to compare the results of your hyperparameter search.
 {% endhint %}
 

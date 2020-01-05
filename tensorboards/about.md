@@ -4,9 +4,13 @@ description: Visualize and compare experiments with TensorBoards
 
 # About
 
+{% hint style="info" %}
+Gradient TensorBoards are a Gradient Enterprise feature. [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
+{% endhint %}
+
 **TensorBoard** is a popular open source visualization software that comes with any standard TensorFlow installation but is a first class citizen in other frameworks such as PyTorch. 
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 Here's a description of the TensorBoard project by Google:
 
@@ -36,15 +40,13 @@ Different views take inputs of different formats and display them differently. Y
 
 ### TensorBoards on Gradient
 
-Gradient TensorBoards are currently a Gradient Enterprise-only feature. [Contact Sales](https://gradient.paperspace.com/enterprise) for inquiries!
-
 On Gradient, each TensorBoard runs on a dedicated, lowest-horsepower CPU-only machine instance from within your cluster; as such, they are not just database resources. This means that creating TensorBoards, adding experiments to them, and removing experiments from them, can sometimes take a couple of minutes.
 
 When you Add an experiment to a TensorBoard, the experiment status will remain in an Adding state until the experiment has completed.
 
 TensorBoards can be protected via basic authentication, the Username and Password for which can be set upon creation.
 
-Next you'll learn how to use TensorBoards on Gradient using the GUI, the CLI, and via scripting in TensorFlow.
+Next you'll learn how to use TensorBoards on Gradient using the UI, the CLI, and via scripting in TensorFlow.
 
 
 

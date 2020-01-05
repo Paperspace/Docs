@@ -2,7 +2,9 @@
 
 **Usage:** 
 
-`gradient machines list [OPTIONS]`
+```text
+gradient machines list [OPTIONS]
+```
 
 List information about all machines available to either the current authenticated user or the team, if the user belongs to a team. The list method takes an optional first argument to limit the returned machine objects.
 
