@@ -139,7 +139,7 @@
 ## Gradient Private Cloud
 
 * [About](gradient-private-cloud/about.md)
-* [Setup](gradient-private-cloud/gradient-vpc.md)
+* [Setup](gradient-private-cloud/setup.md)
 * [Usage](gradient-private-cloud/usage.md)
 * [Gradient Node](gradient-private-cloud/gradient-node/README.md)
   * [Requirements](gradient-private-cloud/gradient-node/requirements.md)
