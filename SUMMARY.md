@@ -86,13 +86,6 @@
 * [Optimize Models for Inference](deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment States](deployments/deployment-states.md)
 
-## TensorBoards
-
-* [About](tensorboards/about.md)
-* [Using TensorBoards via the GUI](tensorboards/using-tensorboards-via-the-gui.md)
-* [Using Tensorboards via the CLI](tensorboards/tensorboard-cli.md)
-* [TensorBoards via TensorFlow Scripting](tensorboards/getting-started-with-tensorboards.md)
-
 ## Data
 
 * [Types of Storage](data/storage.md)
@@ -100,6 +93,13 @@
 * [Managing Persistent Storage with VMs](data/managing-persistent-storage-with-vms.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 * [Private Datasets](data/private-datasets-repository.md)
+
+## TensorBoards
+
+* [About](tensorboards/about.md)
+* [Using TensorBoards via the GUI](tensorboards/using-tensorboards-via-the-gui.md)
+* [Using Tensorboards via the CLI](tensorboards/tensorboard-cli.md)
+* [TensorBoards via TensorFlow Scripting](tensorboards/getting-started-with-tensorboards.md)
 
 ## Machines \(Paperspace CORE\) <a id="machines"></a>
 
