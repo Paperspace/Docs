@@ -58,7 +58,7 @@ if __name__ ==  '__main__':
 
 ```
 
- Make note that the metric names we use in the application above match exactly with the metrics we provided in the Job Builder form in the previous step.
+Make note that the metric names we use in the application above match exactly with the metrics we provided in the Job Builder form in the previous step.
 
 ## Viewing your metrics
 

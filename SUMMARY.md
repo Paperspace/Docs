@@ -35,7 +35,7 @@
 ## Projects
 
 * [About](projects/about.md)
-* [Create a Project via the GUI](projects/create-a-project.md)
+* [Create a Project via the UI](projects/create-a-project.md)
 * [Create a Project via the CLI](projects/create-a-project-using-cli.md)
 * [Deleting a Project](projects/deleting-a-project.md)
 * [GradientCI](projects/gradientci.md)
@@ -46,6 +46,8 @@
 * [Run Experiments via the UI](experiments/run-experiments-ui.md)
 * [Run Experiments via the CLI](experiments/run-experiments-cli.md)
 * [Gradient Config File](experiments/gradient-config.yaml.md)
+* [Git Commit Tracking](experiments/git-commit-tracking.md)
+* [Environment Variables](experiments/environment-variables.md)
 * [Distributed Machine Learning with Tensorflow](experiments/multi-node-training.md)
 * [Distributed Machine Learning with MPI](experiments/distributed-machine-learning-with-mpi/README.md)
   * [Distributed Training using Horovod](experiments/distributed-machine-learning-with-mpi/distributed-training-using-horovod.md)

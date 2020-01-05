@@ -2,7 +2,7 @@
 description: How to create Standalone or GradientCI Projects
 ---
 
-# Create a Project via the GUI
+# Create a Project via the UI
 
 ## Create a Standalone Project
 
@@ -26,7 +26,7 @@ If you haven't yet connected your GitHub account, follow the prompts to grant ac
 
 Then, select the GitHub repo from the dropdown list:
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2825%29.png)
 
 ## Get Your Project's ID
 
