@@ -104,6 +104,17 @@
 * [Using Tensorboards via the CLI](tensorboards/tensorboard-cli.md)
 * [TensorBoards via TensorFlow Scripting](tensorboards/getting-started-with-tensorboards.md)
 
+## Gradient SDK <a id="gradient-python-sdk"></a>
+
+* [Gradient SDK](gradient-python-sdk/gradient-python-sdk/README.md)
+  * [Projects Client](gradient-python-sdk/gradient-python-sdk/projects-client.md)
+  * [Experiments Client](gradient-python-sdk/gradient-python-sdk/experiments-client.md)
+  * [Models Client](gradient-python-sdk/gradient-python-sdk/models-client.md)
+  * [Deployments Client](gradient-python-sdk/gradient-python-sdk/deployments-client.md)
+  * [Jobs Client](gradient-python-sdk/gradient-python-sdk/jobs-client.md)
+* [End to end tutorial](gradient-python-sdk/sdk-tutorial.md)
+* [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
+
 ## Machines \(Paperspace CORE\) <a id="machines"></a>
 
 * [About](machines/about.md)
@@ -127,17 +138,6 @@
 * [Free Instances \(Free Tier\)](instances/free-instances.md)
 * [Instance Tiers](instances/instance-tiers.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
-
-## Gradient SDK <a id="gradient-python-sdk"></a>
-
-* [Gradient SDK](gradient-python-sdk/gradient-python-sdk/README.md)
-  * [Projects Client](gradient-python-sdk/gradient-python-sdk/projects-client.md)
-  * [Experiments Client](gradient-python-sdk/gradient-python-sdk/experiments-client.md)
-  * [Models Client](gradient-python-sdk/gradient-python-sdk/models-client.md)
-  * [Deployments Client](gradient-python-sdk/gradient-python-sdk/deployments-client.md)
-  * [Jobs Client](gradient-python-sdk/gradient-python-sdk/jobs-client.md)
-* [End to end tutorial](gradient-python-sdk/sdk-tutorial.md)
-* [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
 
 ## Gradient Private Cloud
 
