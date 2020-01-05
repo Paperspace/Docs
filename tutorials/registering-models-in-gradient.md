@@ -35,7 +35,7 @@ Switch to the train directory of the cloned Github repo.
 cd train
 ```
 
-```text
+```bash
 gradient experiments run singlenode \
   --name fmnist \
   --projectId prioax2c4 \
@@ -69,7 +69,7 @@ The `singlenode` parameter runs the job on a single host.
 
 Within a few seconds of running the command, you should see the logs displayed on the screen.
 
-```text
+```bash
 Archiving your working directory for upload as your experiment workspace...(See https://docs.paperspace.com/gradient/experiments/run-experiments for more information.)
 Removing existing archive
 Creating zip archive: train.zip

@@ -13,10 +13,8 @@
 * Use custom containers with experiments
 * Create an experiment that trains a Scikit-learn model
 * Share files and models across experiments
-* Create a long-running job \(web service\) that serves the model
-* Access the REST endpoint exposed by a job
 
-There are two Gradient experiments involved in this workflow -- training and deployment. The first experiment generates a Python pickle file that gets stored in the shared storage service of Gradient. The same pickle file will be used by the second experiment running a Flask web server to expose a REST endpoint. This experiment will serve the model through the inferencing endpoint.
+The experiment generates a Python pickle file that gets stored in the shared storage service of Gradient. 
 
 ### Creating a Gradient Experiment to Train the Model
 
@@ -30,7 +28,7 @@ The dataset, _sal.csv_, is available in the _data_ folder of the [GitHub](https:
 
 In the _train_ directory, you’ll find _train.py_, which is responsible for generating the model by applying linear regression to the dataset.
 
-```text
+```python
 import numpy as np
 import pandas as pd
 import os
@@ -103,7 +101,7 @@ Let’s analyze the steps taken by Gradient to finish the experiment.
 
 Once the experiment's status moves into run mode, it simply executes the code in the Python file. In _train.py_ that we uploaded, we do two things - print the coefficients like intercept, slope, MSE and copy the model into the `/storage` location.
 
-The output from Paperspace CLI confirms that the experiment has been successfully executed. If you navigate to the experiment in the UI, you will see the logs printed the coefficients used in the script along with the message `PSEOF` which is a healthy sign.
+The output from CLI confirms that the experiment has been successfully executed. If you navigate to the experiment in the UI, you will see the logs printed the coefficients used in the script along with the message `PSEOF` which is a healthy sign.
 
 We are using a custom Docker container image with prerequisites such as NumPy, Scipy, Pandas, and Scikit-learn. This image was built from the official Python 3 Docker image.
 

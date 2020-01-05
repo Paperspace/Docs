@@ -11,8 +11,8 @@
 ## Tutorials
 
 * [Getting Started with Notebooks](tutorials/getting-started-with-gradient-notebooks.md)
-* [Train a Model with the CLI](tutorials/train-a-model-with-the-cli.md)
 * [Train a Model with the UI](tutorials/train-a-model-with-the-ui.md)
+* [Train a Model with the CLI](tutorials/train-a-model-with-the-cli.md)
 * [Registering Models in Gradient](tutorials/registering-models-in-gradient.md)
 * [Using Gradient Deployments](tutorials/dealing-with-gradient-deployments.md)
 * [Using Custom Containers](tutorials/using-custom-containers-with-gradient.md)
