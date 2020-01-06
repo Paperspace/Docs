@@ -51,9 +51,8 @@ Behind the scenes, your Experiment will be uploaded and executed on our cluster 
 
 ### Monitor your Experiment progress
 
-Experiments states transition from **Queued** &gt; **Pending** &gt; **Running**. Once the Experiment is in the **Running** state, you can watch your Experiment run in the CLI and web UI. An Experiment can complete with the following states: **Success, Cancelled, Error,** or **Failed**.
+Experiments states transition from **Queued** &gt; **Pending** &gt; **Running**. Once the Experiment is in the **Running** state, you can watch your Experiment run in the CLI and Web UI. An Experiment can complete with the following states: **Success, Cancelled, Error,** or **Failed**.
 
 Congratulations! You ran your first Experiment on Gradient 🚀
 
 Experiments have a ton of functionality that this quick example doesn't cover. To learn more, view the [Experiments section](../experiments/about.md).
-
