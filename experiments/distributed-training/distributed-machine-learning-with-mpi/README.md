@@ -19,7 +19,7 @@ $ gradient experiments create multinode \
 --masterMachineType p2.xlarge \
 --masterCommand "mpirun --allow-run-as-root -np 1 --hostfile /generated/hostfile  -bind-to none -map-by slot  -x NCCL_DEBUG=INFO -mca pml ob1 -mca btl ^openib python examples/keras_mnist.py"  \
 --masterCount 1 \
---workspace https://github.com/horovod/horovod.git \
+--workspaceUrl https://github.com/horovod/horovod.git \
 --apiKey XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \
 --vpc
 ```

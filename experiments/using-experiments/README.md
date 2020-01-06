@@ -95,7 +95,7 @@ gradient experiments run singlenode \
   --container tensorflow/tensorflow:1.13.1-gpu-py3 \
   --machineType K80 \
   --command "python mnist.py" \
-  --workspace https://github.com/Paperspace/mnist-sample.git \
+  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
   --modelType Tensorflow \
   --modelPath /artifacts
 ```
@@ -125,7 +125,7 @@ gradient experiments run multinode \
   --parameterServerMachineType K80 \
   --parameterServerCommand "python mnist.py" \
   --parameterServerCount 1 \
-  --workspace https://github.com/Paperspace/mnist-sample.git \
+  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
   --modelType Tensorflow
 ```
 
@@ -200,7 +200,7 @@ To Delete an Experiment, click the Stop button below the state indicator:
 To delete an Experiment, you can use the following command:
 
 ```text
-gradient experiments delete 
+gradient experiments delete  
 ```
 {% endtab %}
 {% endtabs %}

@@ -43,8 +43,9 @@
     <tr>
       <td style="text-align:left"><code>workspace</code>
       </td>
-      <td style="text-align:left">Path to workspace directory. (Support a path to a workspace archive, git
-        repository URL or s3 bucket)</td>
+      <td style="text-align:left">Path to workspace directory. (Supports a path to a workspace archive,
+        git repository URL, s3 bucket, or &quot;none&quot;). If not specified at
+        all defaults &quot;.&quot; as local workspace</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>workspaceRef</code>
@@ -191,7 +192,8 @@
       <td style="text-align:left">S3 bucket&apos;s Access Key ID</td>
     </tr>
     <tr>
-      <td style="text-align:left">datasetAwsSecretAccessKey</td>
+      <td style="text-align:left"><code>datasetAwsSecretAccessKey</code>
+      </td>
       <td style="text-align:left">S3 bucket&apos;s Secret Access Key</td>
     </tr>
     <tr>
