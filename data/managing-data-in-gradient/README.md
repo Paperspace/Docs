@@ -10,7 +10,7 @@
 
 When opening your notebook you will see a `/storage` folder. Clicking on the folder will take you to Persistent Storage where you can upload your data.  If there are a large amount of files, it's advisable to zip them up first. 
 
-![](../../.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/image%20%2853%29.png)
 
 #### From a Virtual Machine \(VM\)
 

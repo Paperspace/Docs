@@ -8,7 +8,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 
 These are the templates that are most popular on Gradient.  They include the most common ML frameworks and libraries.  [Click here](../notebook-containers/) to discover which Notebook Base Container will best suit your use case, then choose it from the options below:
 
-![](../../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/image%20%2856%29.png)
 
 ### All Containers \(Basic\)
 
