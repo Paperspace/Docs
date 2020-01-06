@@ -82,7 +82,7 @@ Jobs can be chosen to run on a variety of hardware. Pricing and details for all 
 
 ## State Transitions
 
-An experiment goes through a number of "states" between being submitted to Gradient \(through the CLI, SDK, the GradientCI GitHub App, or Job Builder GUI\). These states are enumerated below:
+An experiment goes through a number of "states" between being submitted to Gradient \(through the CLI, SDK, the GradientCI GitHub App, or Job Builder Web UI\). These states are enumerated below:
 
 | State | Name |
 | :--- | :--- |
@@ -99,4 +99,3 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_ERROR` | Error |
 
 ![](../.gitbook/assets/image%20%2859%29.png)
-
