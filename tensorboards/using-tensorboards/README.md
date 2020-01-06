@@ -32,7 +32,7 @@ Note that although you can technically add an Experiment that has not completed,
 {% endtab %}
 
 {% tab title="CLI" %}
-```
+```text
 Usage: gradient tensorboards create [OPTIONS]
 
     Create new tensorboard

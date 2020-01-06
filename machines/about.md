@@ -5,7 +5,7 @@ description: Paperspace virtual machines
 # Overview
 
 {% hint style="warning" %}
-This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
+This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.
 {% endhint %}
 
 Paperspace Machines are the basic building blocks of Paperspace CORE and can be taken advantage of using the UI or via the CLI.
@@ -17,3 +17,4 @@ To list your existing machines or create a new one via the Web UI, navigate to C
 ![Machines page in the Web UI with two sample Machines](../.gitbook/assets/screen-shot-2019-07-11-at-6.34.25-pm.png)
 
 Alternately, you can [List your Machines via the CLI](using-machines/list-machines.md).
+

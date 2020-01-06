@@ -4,13 +4,13 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # Overview
 
-Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments.  Gradient also supports [Hyperparameter Search](hyperparameters.md).
+Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](hyperparameters.md).
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
 ## Creating Experiments
 
-Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the  **SDK**. Here is a quick overview and instructions for each option:
+Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the **SDK**. Here is a quick overview and instructions for each option:
 
 The **web UI** is great for getting familiar with Experiments and running sample projects.
 
@@ -64,11 +64,11 @@ Artifact storage is collected and made available after the Experiment or Job run
 
 #### Workspace Storage
 
-The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run.  If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage.md#workspace-storage).
+The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run. If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage.md#workspace-storage).
 
 #### Private Datasets
 
-Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository.md).
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime. Learn more [here](../data/private-datasets-repository.md).
 
 {% page-ref page="../data/private-datasets-repository.md" %}
 
@@ -98,4 +98,5 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](https://github.com/Paperspace/Docs/tree/88bb207778a90773b85f31e2408447abc280d97b/.gitbook/assets/image%20%2859%29.png)
+

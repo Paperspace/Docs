@@ -153,9 +153,10 @@
   * [Storage](gradient-private-cloud/gradient-node/storage.md)
   * [Gradient AMI](gradient-private-cloud/gradient-node/gradient-ami.md)
 
-## Public Profiles
+## Paperspace Account
 
-* [Public Profiles](public-profiles/gradient-public-profiles.md)
+* [Overview](paperspace-account/overview.md)
+* [Public Profiles](paperspace-account/gradient-public-profiles.md)
 
 ## Release Notes
 

@@ -7,11 +7,11 @@ description: >-
 
 # Overview
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2848%29.png)
 
 ## Overview
 
-Deploy any model as a high-performance, low-latency micro-service with a RESTful API. Easily monitor, scale, and version deployments.  Deployments take a trained model and expose them as a persistent service at a known, secure URL endpoint.
+Deploy any model as a high-performance, low-latency micro-service with a RESTful API. Easily monitor, scale, and version deployments. Deployments take a trained model and expose them as a persistent service at a known, secure URL endpoint.
 
 ## Current Capabilities
 
@@ -22,4 +22,3 @@ Deploy any model as a high-performance, low-latency micro-service with a RESTful
 * A dedicated, secure endpoint URL per deployment
 * Accessible via the Gradient CLI, Web UI, or API, or from your own custom applications
 
-## 
