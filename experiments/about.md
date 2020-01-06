@@ -12,7 +12,7 @@ Experiments are used to train machine learning models. Gradient supports single-
 
 Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the **SDK**. Here is a quick overview and instructions for each option:
 
-The **web UI** is great for getting familiar with Experiments and running sample projects.
+The **Web UI** is great for getting familiar with Experiments and running sample projects.
 
 {% page-ref page="using-experiments/" %}
 

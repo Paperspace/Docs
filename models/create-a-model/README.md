@@ -2,7 +2,7 @@
 
 ## Create a Model
 
-There are two ways to create a Model in Gradient, and both can be done via the web UI or CLI:
+There are two ways to create a Model in Gradient, and both can be done via the Web UI or CLI:
 
 ### 1\) Run an Experiment that generates a Model
 

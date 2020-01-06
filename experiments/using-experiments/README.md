@@ -4,7 +4,7 @@
 
 There are three modes for Experiments:
 
-**Single-node:** An Experiment that runs on a single compute instance.  This option is very simple and is available in the web UI, CLI, and SDK.  
+**Single-node:** An Experiment that runs on a single compute instance.  This option is very simple and is available in the Web UI, CLI, and SDK.  
 
 **Multi-node**: Run a distributed training Experiment on more than one compute instance. This option is more advanced and is available in the CLI and SDK only. You can view examples here and the .
 
@@ -204,6 +204,3 @@ gradient experiments delete
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
