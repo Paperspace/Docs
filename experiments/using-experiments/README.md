@@ -200,7 +200,7 @@ To Delete an Experiment, click the Stop button below the state indicator:
 To delete an Experiment, you can use the following command:
 
 ```text
-gradient experiments stop 
+gradient experiments delete  
 ```
 {% endtab %}
 {% endtabs %}
