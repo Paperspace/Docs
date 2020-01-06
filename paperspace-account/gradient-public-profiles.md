@@ -41,9 +41,3 @@ Gradient Public profiles are still very much a work-in-progress. Notebooks are t
 
 As always, we are eager to hear your feedback. Now go claim your user/team handle – we are excited to see what you build! 🙌
 
-
-
-\*\*\*\*
-
-
-
