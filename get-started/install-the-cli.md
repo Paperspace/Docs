@@ -86,3 +86,17 @@ First, sign in to your [Paperspace account](https://paperspace.com/). On the lef
 
 ![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%2821%29.png)
 
+## Enable autocomplete
+
+Add following to your `.bashrc` \(or `.zshrc`\) to enable autocomplete anytime you activate your shell. If gradient was installed in a virtual environment, the following has to be added to the `activate` script:
+
+`eval "$(_GRADIENT_COMPLETE=source gradient)"`
+
+Alternatively, you can create activation script by:
+
+`(_GRADIENT_COMPLETE=source gradient) > ~/paperspace_complete.sh`
+
+and then add `. ~/paperspace_complete.sh` to your `.bashrc`, `.zshrc` or `activate` script.
+
+More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/)
+
