@@ -19,7 +19,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2846%29.png)
 
 ## Submit an Experiment
 
@@ -27,7 +27,7 @@ You can run Experiments from the web interface or CLI:
 
 ### Using the Experiment Builder \(UI\)
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 ### Using the CLI
 

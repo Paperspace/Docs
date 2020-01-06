@@ -4,6 +4,8 @@ description: Learn how to graph metrics you defined using our gradient-statsd cl
 
 # Custom Metrics
 
+
+
 {% hint style="warning" %}
 This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
 {% endhint %}
@@ -22,7 +24,7 @@ You as the developer must create appropriate names for your metrics. Metrics in 
 
 In order for our platform to plot your custom metrics you must inform Gradient when create the job. The Job Builder form now includes a section titled `Custom Metrics`
 
-![](../../.gitbook/assets/image.png)
+![](../../../.gitbook/assets/image.png)
 
 Once your metrics are defined you may submit the job.
 
@@ -64,5 +66,5 @@ Make note that the metric names we use in the application above match exactly wi
 
 Once the job is submitted the gradient platform will begin streaming metrics to the Metrics tab in the Job Info page.  These metrics will remain available to you until you delete your job. 
 
-![](../../.gitbook/assets/custom-metrics.jpg)
+![](../../../.gitbook/assets/custom-metrics.jpg)
 

@@ -4,7 +4,7 @@ description: Overview of machine learning Models in Gradient
 
 # Overview
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2864%29.png)
 
 The Gradient model repository is a hub for importing, managing, and deploying ML models.  Gradient offers the ability to create your own **custom models** and in addition to launching pre-trained **public models**.  
 

@@ -143,3 +143,67 @@ For more information about this sample experiment see the README in the mnist-sa
 {% endtab %}
 {% endtabs %}
 
+## Viewing an Experiment
+
+{% tabs %}
+{% tab title="Web UI" %}
+Open the Project that contains the Experiment:  
+
+![](../../.gitbook/assets/image%20%2842%29.png)
+
+Then click on the Experiment to view information about it:
+
+![](../../.gitbook/assets/image%20%2835%29.png)
+{% endtab %}
+
+{% tab title="CLI" %}
+You can view an experiment details, you can use the following command:
+
+```text
+gradient experiments details
+```
+{% endtab %}
+{% endtabs %}
+
+## Stop or Cancel an Experiment
+
+{% tabs %}
+{% tab title="Web UI" %}
+To cancel an Experiment, click the Cancel button below the state indicator:
+
+![](../../.gitbook/assets/image%20%2849%29.png)
+
+To Stop an Experiment, click the Stop button below the state indicator:
+
+![](../../.gitbook/assets/image%20%2832%29.png)
+{% endtab %}
+
+{% tab title="CLI" %}
+To stop an Experiment, you can use the following command:
+
+```text
+gradient experiments stop 
+```
+{% endtab %}
+{% endtabs %}
+
+## Delete an Experiment
+
+{% tabs %}
+{% tab title="Web UI" %}
+To Delete an Experiment, click the Stop button below the state indicator:
+
+![](../../.gitbook/assets/image%20%284%29.png)
+{% endtab %}
+
+{% tab title="CLI" %}
+To delete an Experiment, you can use the following command:
+
+```text
+gradient experiments stop 
+```
+{% endtab %}
+{% endtabs %}
+
+
+

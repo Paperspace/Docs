@@ -30,7 +30,7 @@ Then click **Upload Model**. This will create the Model in Gradient and persist 
 
 You can upload a Model via the CLI with the `gradient models upload` subcommand:
 
-![](../.gitbook/assets/image%20%2851%29.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 
 Whether you use the GUI or CLI, you've now successfully uploaded a Model into Gradient!
 
