@@ -53,6 +53,7 @@
     * [Custom Metrics](experiments/using-experiments/experiment-metrics/custom-metrics.md)
   * [Experiment Logs](experiments/using-experiments/experiment-logs.md)
   * [Experiment Ports](experiments/using-experiments/ports.md)
+  * [GradientCI Experiments](experiments/using-experiments/gradientci-experiments.md)
 * [Distributed Training](experiments/distributed-training/README.md)
   * [Distributed Machine Learning with Tensorflow](experiments/distributed-training/multi-node-training.md)
   * [Distributed Machine Learning with MPI](experiments/distributed-training/distributed-machine-learning-with-mpi/README.md)
