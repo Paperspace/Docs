@@ -49,9 +49,9 @@ The `--apiKey <key>` option is the only required parameter.  However it may also
 
 On startup gradient-node will attempt to register in the account associated with the provided api key, using a default or provided node name, and return a unique id for the name. By default it will use the local hostname as the name of the instance. Each time gradient-node is run with a unique name a new cluster machine entry with a unique id is created unless a node id is also provided. The `--name` option can be used to override the default name.
 
-If a gradient-node instance with the same name already exists within the cluster then all running nodes with the same name will be eligible to run jobs. The Gradient Web UI ****will only show one entry for each distinct node id however.
+If a gradient-node instance with the same name already exists within the cluster then all running nodes with the same name will be eligible to run jobs. The Gradient web UI ****will only show one entry for each distinct node id however.
 
-If you run gradient-node on a second machine, either make sure the second machine has a distinct hostname, or provide the `--cluster`  option with a distinct name. If you want the new instance to take over for an existing instance with the same name then you must stop any other currently running instances registered with that name. You can use the Gradient Web UI to check for active running instances with that name.
+If you run gradient-node on a second machine, either make sure the second machine has a distinct hostname, or provide the `--cluster`  option with a distinct name. If you want the new instance to take over for an existing instance with the same name then you must stop any other currently running instances registered with that name. You can use the Gradient web UI to check for active running instances with that name.
 
 If you want to change the name of a gradient-node instance you can specify the `--id`  option, along with the new name using the `--name`  option. This will update the name associated with that gradient-node id.
 
@@ -65,7 +65,7 @@ If you are a registering gradient-node for the first time in your account, you c
 
 After the first cluster is created, if you register a node specifying a different cluster name, then a new cluster with that new name will automatically be created. However, it will not be the default cluster for the account.
 
-In the Gradient Web UI you can change the cluster name for any cluster in your account and/or switch which cluster is currently the default. When scheduling jobs you can select the targeted cluster using the Paperspace CLI or SDK job create options. You may target a specific node within a cluster by specifying the name or the node attributes of the node. 
+In the Gradient web UI you can change the cluster name for any cluster in your account and/or switch which cluster is currently the default. When scheduling jobs you can select the targeted cluster using the Paperspace CLI or API job create options. You may target a specific node within a cluster by specifying the name or the node attributes of the node. 
 
 ## Jobs Scheduling
 

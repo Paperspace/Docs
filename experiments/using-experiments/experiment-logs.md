@@ -1,6 +1,6 @@
 # Experiment Logs
 
-Log streaming is available in both the Web UI and CLI.  It is also possible to stream logs using the SDK.  
+Log streaming is available in both the web UI and CLI.  It is also possible to stream logs using the SDK.  
 
 {% tabs %}
 {% tab title="Web UI" %}

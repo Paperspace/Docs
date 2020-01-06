@@ -4,7 +4,7 @@
 
 There are three modes for Experiments:
 
-**Single-node:** An Experiment that runs on a single compute instance.  This option is very simple and is available in the Web UI, CLI, and SDK.  
+**Single-node:** An Experiment that runs on a single compute instance.  This option is very simple and is available in the web UI, CLI, and SDK.  
 
 **Multi-node**: Run a distributed training Experiment on more than one compute instance. This option is more advanced and is available in the CLI and SDK only. You can view examples here and the .
 
@@ -95,7 +95,7 @@ gradient experiments run singlenode \
   --container tensorflow/tensorflow:1.13.1-gpu-py3 \
   --machineType K80 \
   --command "python mnist.py" \
-  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
+  --workspace https://github.com/Paperspace/mnist-sample.git \
   --modelType Tensorflow \
   --modelPath /artifacts
 ```
@@ -125,7 +125,7 @@ gradient experiments run multinode \
   --parameterServerMachineType K80 \
   --parameterServerCommand "python mnist.py" \
   --parameterServerCount 1 \
-  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
+  --workspace https://github.com/Paperspace/mnist-sample.git \
   --modelType Tensorflow
 ```
 
@@ -200,7 +200,10 @@ To Delete an Experiment, click the Stop button below the state indicator:
 To delete an Experiment, you can use the following command:
 
 ```text
-gradient experiments delete  
+gradient experiments delete 
 ```
 {% endtab %}
 {% endtabs %}
+
+
+

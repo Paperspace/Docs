@@ -48,7 +48,7 @@ _Note: By making your notebook Public, the underlying container will be able to 
 
 ### Public Profiles
 
-With this launch, you can now create a [Public Profile](../paperspace-account/gradient-public-profiles.md) and a user or team handle. This is the start of social features on Gradient!
+With this launch, you can now create a [Public Profile](../public-profiles/gradient-public-profiles.md) and a user or team handle. This is the start of social features on Gradient!
 
 ### Limitations
 

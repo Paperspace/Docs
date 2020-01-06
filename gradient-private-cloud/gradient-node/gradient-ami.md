@@ -34,7 +34,7 @@ Starting a gradient-node from the AMI is simple: select the AMI from the AWS Mar
 7. Launch your new instance
 8. On boot, the instance will automatically register with your Gradient account and will be ready to accept Jobs.  See the [usage](usage.md) section for submitting jobs to a Gradient node.
 
-![Once provisioned, the Gradient node will auto register with your account.](../../.gitbook/assets/image%20%2857%29.png)
+![Once provisioned, the Gradient node will auto register with your account.](../../.gitbook/assets/image%20%2856%29.png)
 
 ## Passing credentials via user-data \(preferred\)
 

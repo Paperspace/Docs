@@ -87,7 +87,7 @@ gradient deployments list
 +---------------------+-----------------+----------------------------------------------------------------------+----------+---------------------------+
 ```
 
-The list of deployments can also be accessed from the Web UI.
+The list of deployments can also be accessed from the web UI.
 
 ![](../.gitbook/assets/grad-deploy-0.jpg)
 
