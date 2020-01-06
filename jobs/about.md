@@ -2,9 +2,9 @@
 
 Gradient Jobs execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation.  When you run an Experiment within Gradient, a job is created and executed \(or multiple jobs in the case of distributed training or hyperparameter sweeps\).     
 
-Gradient Jobs can be created using the GUI or via the CLI, and they form part of a larger suite of tools that work seamlessly with Gradient Notebooks and other features of the Gradient platform.  
+Gradient Jobs can be created using the Web UI or via the CLI, and they form part of a larger suite of tools that work seamlessly with Gradient Notebooks and other features of the Gradient platform.  
 
-![Gradient Job Runner in the GUI](https://support.paperspace.com/hc/article_attachments/360008627173/mceclip1.png)
+![Gradient Job Runner in the Web UI](https://support.paperspace.com/hc/article_attachments/360008627173/mceclip1.png)
 
 #### A Job consists of:
 

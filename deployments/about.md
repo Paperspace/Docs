@@ -20,7 +20,6 @@ Deploy any model as a high-performance, low-latency micro-service with a RESTful
 * Per second pay-as-you-go billing
 * Multi-instance deployments with automatic load balancing
 * A dedicated, secure endpoint URL per deployment
-* Accessible via the Gradient CLI, GUI, or API, or from your own custom applications
+* Accessible via the Gradient CLI, Web UI, or API, or from your own custom applications
 
 ## 
-

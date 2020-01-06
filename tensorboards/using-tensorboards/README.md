@@ -14,7 +14,7 @@ You'll see all of your team's TensorBoards listed under any Experiment Details v
 {% tab title="Web UI" %}
 To create a TensorBoard, whether your team already has multiple or has none, 1\) navigate to **Projects** and click into any Experiment to see its Details page; 2\) click **TensorBoards**; and 3\) click **Create TensorBoard**.
 
-![Steps to Create a TensorBoard via the GUI](../../.gitbook/assets/tensorboards-create.png)
+![Steps to Create a TensorBoard via the Web UI](../../.gitbook/assets/tensorboards-create.png)
 
 Clicking **Create TensorBoard** will launch the following modal, where you can add a Name for your TensorBoard, as well as optional Username and Password for basic authentication. Then click **Create TensorBoard**.
 
