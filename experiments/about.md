@@ -74,7 +74,7 @@ Gradient provides the ability to mount S3 compatible object storage buckets to a
 
 ## **Optional Experiment features**
 
-There are many features you will want to check out like outputting your [models](../models/create-a-model/model-path.md), the [persistent data layer](../data/storage.md#persistent-storage) at `/storage`, graphing with [Experiment Metrics](using-experiments/experiment-metrics/), sharing underling Jobs with the [Public Jobs](https://github.com/dkobran/Docs/blob/master/jobs/public-jobs.md) feature, and [opening ports](using-experiments/ports.md).
+There are many features you will want to check out like outputting your [models](../models/create-a-model/model-path.md), the [persistent data layer](../data/storage.md#persistent-storage) at `/storage`, graphing with [Experiment Metrics](using-experiments/experiment-metrics/), sharing underling Jobs with the [Public Jobs](https://github.com/dkobran/Docs/blob/master/jobs/public-jobs.md) feature, sourcing your code from [private GitHub repositories](using-experiments/experiment-options.md), and [opening ports](using-experiments/ports.md).
 
 ## Instance Types
 
