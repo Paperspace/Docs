@@ -19,7 +19,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 ## Submit an Experiment
 
@@ -45,9 +45,9 @@ The following command will work and will create and start an Experiment that wil
 gradient experiments run singlenode --projectId <your-project-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspaceUrl none --apiKey <your-api-key>
 ```
 
-You can also create `multi-node` and `hyperparameter` Experiments, and you can use the `create` command to simply create Experiments that can be started later. Explore all the advanced options [here](../experiments/run-experiments-cli.md).
+You can also create `multi-node` and `hyperparameter` Experiments, and you can use the `create` command to simply create Experiments that can be started later. Explore all the advanced options [here]().
 
-Behind the scenes, your Experiment will be uploaded and executed on our cluster of machines starting with the command you provided. There are [several optional Experiment parameters](https://docs.paperspace.com/gradient/experiments/run-experiments#parameters-common-to-both-experiment-types), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.
+Behind the scenes, your Experiment will be uploaded and executed on our cluster of machines starting with the command you provided. There are [several optional Experiment parameters](), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.
 
 ### Monitor your Experiment progress
 

@@ -1,4 +1,4 @@
-# Train a Model with the UI
+# Train a Model with the Web UI
 
 ### **Objectives**
 

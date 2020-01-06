@@ -2,7 +2,7 @@
 description: Paperspace virtual machines
 ---
 
-# About
+# Overview
 
 {% hint style="warning" %}
 This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
@@ -16,5 +16,5 @@ To list your existing machines or create a new one via the GUI, navigate to Core
 
 ![Machines page in the GUI with two sample Machines](../.gitbook/assets/screen-shot-2019-07-11-at-6.34.25-pm.png)
 
-Alternately, you can [List your Machines via the CLI](machine-actions/list-machines.md).
+Alternately, you can [List your Machines via the CLI](using-machines/list-machines.md).
 

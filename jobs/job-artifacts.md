@@ -7,7 +7,7 @@ Interact with any job artifacts available to either the current authenticated us
 ### Artifacts List
 
 ```text
-$ gradient jobs artifacts list --size --link --files model.* JOB_ID
+gradient jobs artifacts list --size --link --files model.* JOB_ID
 ```
 
 #### Parameters

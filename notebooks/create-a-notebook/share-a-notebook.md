@@ -2,5 +2,5 @@
 
 Click Share to generate a unique link for the Notebook.  You can make the notebook private by toggling the button on the Share your Notebook dialogue.
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%2812%29.png)
 

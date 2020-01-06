@@ -2,7 +2,7 @@
 description: For multi-node Jobs such as distributed training and hyperparameter tuning.
 ---
 
-# About
+# Overview
 
 Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments.
 
@@ -10,11 +10,7 @@ Experiments can be run from the **Experiment Builder** web interface, our **CLI,
 
 The web interface is great for getting familiar with Experiments and running sample projects.
 
-{% page-ref page="run-experiments-ui.md" %}
-
 The CLI \(command-line interface\) is the most popular tool for launching Experiments. It's powerful, flexible, and easy-to-use.
-
-{% page-ref page="run-experiments-cli.md" %}
 
 The SDK let's you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
 
@@ -62,7 +58,7 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/image%20%2850%29.png)
 
 ## Storage
 

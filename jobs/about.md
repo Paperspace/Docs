@@ -1,4 +1,4 @@
-# About
+# Overview
 
 Gradient Jobs execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation.  When you run an Experiment within Gradient, a job is created and executed \(or multiple jobs in the case of distributed training or hyperparameter sweeps\).     
 
@@ -14,7 +14,7 @@ Gradient Jobs can be created using the GUI or via the CLI, and they form part of
 
 ## Running a Job in Gradient
 
-There are several ways to run a Job in Gradient: You can use the [Job Builder](../experiments/run-experiments-ui.md), a web interface for submitting Jobs, the [Gradient CLI](../get-started/install-the-cli.md), or you can clone a Public Job. 
+There are several ways to run a Job in Gradient: You can use the [Job Builder](), a web interface for submitting Jobs, the [Gradient CLI](../get-started/install-the-cli.md), or you can clone a Public Job. 
 
 #### Optional Job features
 
@@ -22,7 +22,7 @@ There are many features you will want to check out like outputting your model to
 
 #### Job Commands
 
-See a full list of commands [here](job-actions/).
+See a full list of commands [here]().
 
 ## Storage 
 
