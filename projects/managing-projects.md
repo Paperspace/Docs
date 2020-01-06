@@ -80,15 +80,21 @@ gradient projects create --name ExampleProject --repositoryName <name> --reposit
 
 A Project's ID is a required parameter for several commands within Gradient.
 
+{% tabs %}
+{% tab title="Web UI" %}
 To find the ID, click any Project in the Projects List to navigate to its Project Details page, and then click the Project ID to copy the value to your clipboard:
 
 ![](../.gitbook/assets/project-id.gif)
+{% endtab %}
 
-From the CLI, you can also enter the following command:
+{% tab title="CLI" %}
+To get a Project ID, you can use the following command:
 
 ```bash
 gradient projects list
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Deleting a Project
 
@@ -102,9 +108,9 @@ You can delete a project by visiting the project's `Settings` page and hitting t
 {% endtab %}
 
 {% tab title="CLI" %}
+To delete a Project, you can use the following command:
 
-
-```
+```bash
 gradient projects delete --id <project id>
 ```
 {% endtab %}
