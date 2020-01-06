@@ -80,7 +80,7 @@
 ## Models
 
 * [Overview](models/about.md)
-* [Create a Model](models/create-a-model.md)
+* [Managing Models](models/create-a-model.md)
 * [Model Path, Parameters, & Metadata](models/model-path.md)
 * [Example: Prepare a TensorFlow Model for Deployments](models/preparing-model-for-deployment.md)
 * [Managing Models](models/managing-models.md)

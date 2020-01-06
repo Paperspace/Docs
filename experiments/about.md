@@ -4,23 +4,31 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # Overview
 
-Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments.
+Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments.  Gradient also supports [Hyperparameter Search](hyperparameters.md).
+
+![](../.gitbook/assets/image%20%2815%29.png)
+
+## Creating Experiments
 
 Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the  **SDK**. Here is a quick overview and instructions for each option:
 
-The web interface is great for getting familiar with Experiments and running sample projects.
+The **web UI** is great for getting familiar with Experiments and running sample projects.
 
-The CLI \(command-line interface\) is the most popular tool for launching Experiments. It's powerful, flexible, and easy-to-use.
+{% page-ref page="using-experiments/" %}
 
-The SDK let's you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
+The **CLI** \(command-line interface\) is the most popular tool for launching Experiments. It's powerful, flexible, and easy-to-use.
+
+{% page-ref page="using-experiments/" %}
+
+The **SDK** let's you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
 
 {% page-ref page="../projects/gradientci.md" %}
 
-GradientCI enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
+**GradientCI** enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
 
 {% page-ref page="../gradient-python-sdk/gradient-python-sdk/" %}
 
-## Experiment Types
+## Experiment Modes
 
 ### Single-node
 
@@ -40,25 +48,9 @@ or
 type: "multi-mpi"
 ```
 
-## State Transitions
+### Hyperparamater Tuning
 
-An experiment goes through a number of "states" between being submitted to Gradient \(through the CLI, SDK, the GradientCI GitHub App, or Job Builder GUI\). These states are enumerated below:
-
-| State | Name |
-| :--- | :--- |
-| `EXPERIMENT_STATE_CREATED` | Created |
-| `EXPERIMENT_STATE_PENDING` | Pending |
-| `EXPERIMENT_STATE_PROVISIONING` | Provisioning |
-| `EXPERIMENT_STATE_PROVISIONED` | Provisioned |
-| `EXPERIMENT_STATE_NETWORK_SETUP` | Network Setup |
-| `EXPERIMENT_STATE_RUNNING` | Running |
-| `EXPERIMENT_STATE_NETWORK_TEARDOWN` | Network Teardown |
-| `EXPERIMENT_STATE_STOPPED` | Stopped \(aka Success\) |
-| `EXPERIMENT_STATE_FAILED` | Failed |
-| `EXPERIMENT_STATE_CANCELLED` | Cancelled |
-| `EXPERIMENT_STATE_ERROR` | Error |
-
-![](../.gitbook/assets/image%20%2858%29.png)
+See this [article](hyperparameters.md) for more info.
 
 ## Storage
 
@@ -79,4 +71,32 @@ The Workspace storage is typically imported from the local directory in which yo
 Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository.md).
 
 {% page-ref page="../data/private-datasets-repository.md" %}
+
+## **Optional Experiment features**
+
+There are many features you will want to check out like outputting your [models](../models/model-path.md), the [persistent data layer](../data/storage.md#persistent-storage) at `/storage`, graphing with [Experiment Metrics](using-experiments/experiment-metrics/), sharing underling Jobs with the [Public Jobs](https://github.com/dkobran/Docs/blob/master/jobs/public-jobs.md) feature, and [opening ports](using-experiments/ports.md).
+
+## Instance Types
+
+Jobs can be chosen to run on a variety of hardware. Pricing and details for all available options can be found [here](https://gradient.paperspace.com/instances).
+
+## State Transitions
+
+An experiment goes through a number of "states" between being submitted to Gradient \(through the CLI, SDK, the GradientCI GitHub App, or Job Builder GUI\). These states are enumerated below:
+
+| State | Name |
+| :--- | :--- |
+| `EXPERIMENT_STATE_CREATED` | Created |
+| `EXPERIMENT_STATE_PENDING` | Pending |
+| `EXPERIMENT_STATE_PROVISIONING` | Provisioning |
+| `EXPERIMENT_STATE_PROVISIONED` | Provisioned |
+| `EXPERIMENT_STATE_NETWORK_SETUP` | Network Setup |
+| `EXPERIMENT_STATE_RUNNING` | Running |
+| `EXPERIMENT_STATE_NETWORK_TEARDOWN` | Network Teardown |
+| `EXPERIMENT_STATE_STOPPED` | Stopped \(aka Success\) |
+| `EXPERIMENT_STATE_FAILED` | Failed |
+| `EXPERIMENT_STATE_CANCELLED` | Cancelled |
+| `EXPERIMENT_STATE_ERROR` | Error |
+
+![](../.gitbook/assets/image%20%2859%29.png)
 

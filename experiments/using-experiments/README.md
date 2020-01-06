@@ -149,11 +149,11 @@ For more information about this sample experiment see the README in the mnist-sa
 {% tab title="Web UI" %}
 Open the Project that contains the Experiment:  
 
-![](../../.gitbook/assets/image%20%2842%29.png)
+![](../../.gitbook/assets/image%20%2843%29.png)
 
 Then click on the Experiment to view information about it:
 
-![](../../.gitbook/assets/image%20%2835%29.png)
+![](../../.gitbook/assets/image%20%2836%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -171,11 +171,11 @@ gradient experiments details
 {% tab title="Web UI" %}
 To cancel an Experiment, click the Cancel button below the state indicator:
 
-![](../../.gitbook/assets/image%20%2849%29.png)
+![](../../.gitbook/assets/image%20%2850%29.png)
 
 To Stop an Experiment, click the Stop button below the state indicator:
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](../../.gitbook/assets/image%20%2833%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}

@@ -10,7 +10,7 @@ Gradient TensorBoards are a Gradient Enterprise feature. [Contact Sales](https:/
 
 **TensorBoard** is a popular open source visualization software that comes with any standard TensorFlow installation but is a first class citizen in other frameworks such as PyTorch. 
 
-![](../.gitbook/assets/image%20%2852%29.png)
+![](../.gitbook/assets/image%20%2853%29.png)
 
 Here's a description of the TensorBoard project by Google:
 
@@ -46,7 +46,5 @@ When you Add an experiment to a TensorBoard, the experiment status will remain i
 
 TensorBoards can be protected via basic authentication, the Username and Password for which can be set upon creation.
 
-Next you'll learn how to use TensorBoards on Gradient using the UI, the CLI, and via scripting in TensorFlow.
-
-
+Next you'll learn how to use TensorBoards on Gradient using the UI, the CLI, and [via scripting in TensorFlow](using-tensorboards/getting-started-with-tensorboards.md).
 
