@@ -96,7 +96,7 @@ Finally, now that your Deployment is configured, click **Create Deployment** to 
 {% endtab %}
 
 {% tab title="CLI" %}
-To create a new Deployment, you must first [create a Model](../../models/create-a-model.md). With a Model available, use the `create` subcommand and specify all of the following parameters you need to deploy your model.  Here's a sample command to create the same Deployment as in the [UI example]() would be:
+To create a new Deployment, you must first [create a Model](../../models/create-a-model/). With a Model available, use the `create` subcommand and specify all of the following parameters you need to deploy your model.  Here's a sample command to create the same Deployment as in the [UI example]() would be:
 
 ```bash
 gradient deployments create \

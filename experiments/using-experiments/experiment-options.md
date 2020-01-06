@@ -115,12 +115,12 @@
       </td>
       <td style="text-align:left">This option is used to specify the format of your model. Learn more
         <a
-        href="../../models/model-path.md">here</a>.</td>
+        href="../../models/create-a-model/model-path.md">here</a>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>modelPath</code>
       </td>
-      <td style="text-align:left">This option is used to locate your model. Learn more <a href="../../models/model-path.md">here</a>.</td>
+      <td style="text-align:left">This option is used to locate your model. Learn more <a href="../../models/create-a-model/model-path.md">here</a>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>isPreemptible</code>

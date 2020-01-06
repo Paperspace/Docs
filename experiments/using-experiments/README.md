@@ -101,7 +101,7 @@ gradient experiments run singlenode \
 ```
 
 {% hint style="info" %}
-See more info about [model paths](../../models/model-path.md#default-paths) and their default values, including for if you want to deploy your models via Gradient Deployments.
+See more info about [model paths](../../models/create-a-model/model-path.md#default-paths) and their default values, including for if you want to deploy your models via Gradient Deployments.
 {% endhint %}
 
 To run this command substitute an existing project ID for &lt;your-project-id&gt;. You can get an existing project id by going to [your projects list](https://www.paperspace.com/console/projects) and creating a new project or opening an existing project and copying the Project ID value. You can also get a list of existing projects and their IDs from the command line using the command `gradient projects list`.
