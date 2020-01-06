@@ -90,3 +90,23 @@ From the CLI, you can also enter the following command:
 gradient projects list
 ```
 
+## Deleting a Project
+
+{% tabs %}
+{% tab title="Web UI" %}
+You can delete a project by visiting the project's `Settings` page and hitting the `Delete Project` button.  
+
+![](../.gitbook/assets/project-settings.jpg)
+
+![](../.gitbook/assets/deleteproject.jpg)
+{% endtab %}
+
+{% tab title="CLI" %}
+
+
+```
+gradient projects delete --id <project id>
+```
+{% endtab %}
+{% endtabs %}
+

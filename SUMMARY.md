@@ -36,7 +36,6 @@
 
 * [Overview](projects/about.md)
 * [Managing Projects](projects/managing-projects.md)
-* [Deleting a Project](projects/deleting-a-project.md)
 * [GradientCI](projects/gradientci.md)
 
 ## Experiments
