@@ -4,13 +4,13 @@ description: Visualize and compare experiments with TensorBoards
 
 # Overview
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Gradient TensorBoards are a Gradient Enterprise feature. [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
 {% endhint %}
 
 **TensorBoard** is a popular open source visualization software that comes with any standard TensorFlow installation but is a first class citizen in other frameworks such as PyTorch. 
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 Here's a description of the TensorBoard project by Google:
 

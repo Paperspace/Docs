@@ -6,11 +6,11 @@
 {% tab title="Web UI" %}
 On the Projects page, click _Create Project_ and select _Create Standalone Project_.
 
-![](../.gitbook/assets/image%20%2870%29.png)
+![](../.gitbook/assets/image%20%2871%29.png)
 
 Provide a name and then click _Create Project_.
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}

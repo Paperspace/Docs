@@ -1,5 +1,9 @@
 # Managing Persistent Storage with VMs
 
+{% hint style="warning" %}
+This feature is only available in the hosted gradient Gradient version. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.
+{% endhint %}
+
 If you are using both a Paperspace Linux VM and Gradient you can share files between them through Persistent Storage. Learn more about Persistent Storage [here](../storage.md#persistent-storage).
 
 Once you have set up either a Gradient Jupyter Notebook or a Job you will have access to Persistent Storage in `/storage`.  

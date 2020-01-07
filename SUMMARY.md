@@ -70,6 +70,7 @@
     * [System Metrics](jobs/create-a-job/job-metrics/system-metrics.md)
     * [Custom Metrics](jobs/create-a-job/job-metrics/custom-metrics.md)
   * [Job Artifacts](jobs/create-a-job/job-artifacts.md)
+  * [Building Docker Containers with Jobs](jobs/create-a-job/building-docker-containers-with-jobs.md)
 * [Public Jobs](jobs/public-jobs.md)
 
 ## Models
@@ -137,7 +138,7 @@
 
 ## Gradient Private Cloud
 
-* [About](gradient-private-cloud/about.md)
+* [Overview](gradient-private-cloud/about.md)
 * [Setup](gradient-private-cloud/setup.md)
 * [Usage](gradient-private-cloud/usage.md)
 * [Gradient Node](gradient-private-cloud/gradient-node/README.md)

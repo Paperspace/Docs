@@ -32,6 +32,8 @@ Note that although you can technically add an Experiment that has not completed,
 {% endtab %}
 
 {% tab title="CLI" %}
+You can create a TensorBoard with the following command:
+
 ```text
 Usage: gradient tensorboards create [OPTIONS]
 

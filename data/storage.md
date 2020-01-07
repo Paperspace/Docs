@@ -15,11 +15,7 @@ Persistent Storage is kept in three regions based on your machine type or tier:
 3. PS West Coast \(for the [Free Tier](../instances/free-instances.md) on Gradient\)
 
 {% hint style="warning" %}
-Persistent Storage is exclusive per region. This means that data in your Persistent Storage for the Free Tier is not be accessible from paid instance types, and vice versa.
-{% endhint %}
-
-{% hint style="info" %}
-For gradient installations in On-Premise & AWS VPC environments, the shared persistent storage is mounted at at **/shared** instead of /storage like in the hosted SaaS product
+Persistent Storage is specific to each region. This means that data in your Persistent Storage for the Free Tier is not be accessible from paid instance types, and vice versa.
 {% endhint %}
 
 ## Artifact Storage
