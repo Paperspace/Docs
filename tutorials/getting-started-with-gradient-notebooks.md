@@ -97,5 +97,3 @@ You can use the Jupyter environment to navigate to the /storage/mnist directory 
 
 ![](../.gitbook/assets/step-5-15.jpg)
 
-
-

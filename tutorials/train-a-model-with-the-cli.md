@@ -4,8 +4,8 @@
 
 **Prerequisites:**
 
-* [Install Gradient CLI](https://github.com/dkobran/Docs/blob/master/get-started/install-the-cli.md)
-* [Obtain an API Key](https://github.com/dkobran/Docs/blob/master/get-started/install-the-cli.md#connecting-your-account)
+* [Install Gradient CLI](../get-started/install-the-cli.md)
+* [Obtain an API Key](../get-started/install-the-cli.md#obtaining-an-api-key)
 
 **Steps**
 

@@ -10,7 +10,7 @@
 
 When opening your notebook you will see a `/storage` folder. Clicking on the folder will take you to Persistent Storage where you can upload your data.  If there are a large amount of files, it's advisable to zip them up first. 
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2864%29.png)
 
 #### From a Virtual Machine \(VM\)
 
@@ -21,10 +21,6 @@ To upload data into `/storage` , you can either SCP data from a local laptop/des
 Downloading data to `/storage` is as simple as using `curl` or `wget` from a Gradient Job or Notebook or Paperspace VM instance.  Alternatively, you can use a browser from within a Paperspace VM instance to download files.
 
 ## Artifacts
-
-{% hint style="warning" %}
-This feature is only available in the hosted gradient Gradient version. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.
-{% endhint %}
 
 ### Get
 

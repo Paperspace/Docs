@@ -4,7 +4,7 @@
 
 Your clusters are available under the _Private Clusters_ [page](https://www.paperspace.com/console/clusters) in the Paperspace console.  Here you can find information about your cluster, including your cluster ID which you will need to specify in order to execute commands.
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 ## **Usage of Gradient Private Cloud**
 

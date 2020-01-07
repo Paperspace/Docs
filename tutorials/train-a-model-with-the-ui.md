@@ -5,16 +5,16 @@
 * Explore Gradient Projects
 * Learn the workflow involved in training a model
 * Use custom containers with jobs
-* Create a job that trains a Scikit-learn model
+* Create an Experiment that trains a Scikit-learn model
 * Share files and models across jobs
 
-### **Introduction**
+## **Introduction**
 
 In this tutorial, we’ll show you how to train a linear regression model to predict the salary of a software engineer depending on their experience. The dataset is partially based on the [Stack Overflow salary calculator](https://stackoverflow.com/company/salary), which we’ll use to build a single variate linear regression model with one feature \(experience\) and label \(salary\).
 
 The Experiment generates a Python pickle file that gets stored in the shared storage service of Gradient.
 
-### **Create a Project and an Experiment for Training the model**
+## **Create a Project and an Experiment for Training the model**
 
 After signing in, click on Gradient in the navigation bar on the left to choose Projects. Click on the Create Project button and select Create Standalone Project. Enter a name for the project when prompted.
 
@@ -22,13 +22,15 @@ After signing in, click on Gradient in the navigation bar on the left to choose 
 
 ![](https://camo.githubusercontent.com/50a4c6f31b714662d983955f7125f79aca0ef55f/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f477333457434574f78447058765833474e62706930316b7a72434a527438647a33485541735a6f336269736b57655830795f77744f50366a66387a72576c635074397050496b57594f67346b505767347144497867574b363770347770796f626c54474c6539704a57686c483949633174565775426331663267497750694478364e414c6e427771)
 
+## Creating the Experiment
+
 Within this project, we will create an experiment that trains the model.
 
 ![](https://camo.githubusercontent.com/145e2315cd102ca089ca5d8472a3ddd323918aef/68747470733a2f2f6c68342e676f6f676c6575736572636f6e74656e742e636f6d2f735433366e6d3035764b777a4865727a56467a4949636f5a6b4e7a2d79323736643932436134434f7856612d58526c6275676f777a316e4556424e5034643369697152525862666735784f63446c6149474570662d67656d4e73463547667550534a73506d6871414342555771487270584850354848724d697147517379454867584c3853367434)
 
 Experiment Builder is a wizard-style UI tool to submit a job.
 
-The first step is to choose a machine type for scheduling the job. Gradient takes advantage of Google Compute Engine’s preempt**i**ble instances to provide low-cost infrastructure. Make sure you check the Enable low-cost instances checkbox. Choose G1 machine type that comes with 1 CPU core, 1.7GB RAM, and 250GB SDD. This configuration is sufficient for the Scikit-learn training job. For TensorFlow and PyTorch, you can select a GPU-based machine type for accelerating the job.
+The first step is to choose a machine type for scheduling the Experiment. Gradient takes advantage of Google Compute Engine’s preempt**i**ble instances to provide low-cost infrastructure. Make sure you check the Enable low-cost instances checkbox. Choose G1 machine type that comes with 1 CPU core, 1.7GB RAM, and 250GB SDD. This configuration is sufficient for the Scikit-learn training job. For TensorFlow and PyTorch, you can select a GPU-based machine type for accelerating the job.
 
 ![](https://camo.githubusercontent.com/743a7881fbf7e75aae721624c78f6be01de29bc5/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f666641796a413950534e337a2d533779654435637369683446426851414958437a626b6c6571656549527958474b73544d7a6f326133543933485559703859464e31586169574b36707543634b4a454d64696f69447662622d75695931367a63666679685635774e4b4678467337574253513469334959586256776476516b577443396a49354e69)
 

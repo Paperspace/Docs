@@ -4,7 +4,7 @@
 
 When you run a Gradient Experiment you must provide a docker container within which your code will execute. 
 
-There are two types of containers you can provide: [**public**](containers-public-and-private.md#public-containers) ****or [**private**](containers-public-and-private.md#private-containers)**.**
+There are two types of containers you can provide: **public** or **private**
 
 ## Public Containers
 

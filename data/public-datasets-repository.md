@@ -1,9 +1,5 @@
 # Public Datasets Repository
 
-{% hint style="warning" %}
-This feature is only available in the hosted gradient Gradient version. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.
-{% endhint %}
-
 Jobs and notebooks have access to a read-only directory that is mounted at `/datasets`. This directory includes the following public datasets \(with many more to come\).  
 
 ### List of Public Datasets

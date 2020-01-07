@@ -1,9 +1,5 @@
 # Instance Types
 
-{% hint style="info" %}
- [Gradient Enterprise](../gradient-private-cloud/about.md) customers can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.  The following list is specific to our hosted instances.  
-{% endhint %}
-
 ## CPU Instances
 
 A range of affordable and high-end CPU-only instances.
