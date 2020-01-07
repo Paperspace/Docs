@@ -10,7 +10,7 @@ The SDK let's you programmatically interact with the Gradient platform.  The SDK
 
 The SDK is fully compatible with our CLI which uses this SDK under the hood.  
 
-The SDK was built to be "pythonic" in the sense that everything is a python object.  For example, you can add input paramaters to any of the commands as a dictionary which you can then call as a function to unpack the dictionary.  All create commands eg _create experiment_, return the experiment's ID.  These IDs can then be easily be chained together to create a pipeline.  For example, you can query a model for it's accuracy and compare that model to other trained models. 
+The SDK was built to be "pythonic" in the sense that everything is a python object.  For example, you can add input parameters to any of the commands as a dictionary which you can then call as a function to unpack the dictionary.  All create commands eg _create experiment_, return the experiment's ID.  These IDs can then be easily be chained together to create a pipeline.  For example, you can query a model for it's accuracy and compare that model to other trained models. 
 
 Get help anytime by calling the `help` function on any object.  
 

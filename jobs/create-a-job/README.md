@@ -6,7 +6,7 @@ This feature is currently only available to our Gradient hosted offering. [Conta
 
 ## Using the Job Builder UI
 
-![](../../.gitbook/assets/image%20%2827%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 Jobs can be submitted via the Job Builder.  There are a variety of optional and required options for your job including the instance type, the command, the container, etc.  Note: At the top of the screen, you'll see a few job presets which will give a sense for how these options work.  
 

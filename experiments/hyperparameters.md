@@ -59,7 +59,7 @@ Every time you create a hyperparameter tuning experiment we create at least 3 jo
 Assuming that you have configured an API Key for the paperspace cli enter:
 
 ```bash
-gradient hyperparameters run \
+gradient experiments hyperparameters run \
   --name HyperoptKerasExperimentCLI1 \
   --projectId <your-project-id> \
   --tuningCommand 'make run_hyperopt' \
@@ -67,7 +67,7 @@ gradient hyperparameters run \
   --workerMachineType K80 \
   --workerCommand 'make run_hyperopt_worker' 
   --workerCount 2 \
-  --workspaceUrl git+https://github.com/Paperspace/hyperopt-keras-sample
+  --workspace git+https://github.com/Paperspace/hyperopt-keras-sample
 ```
 
 On successfully creating a hyperparameter experiment it should return something like this:

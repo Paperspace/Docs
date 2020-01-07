@@ -6,7 +6,7 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](hyperparameters.md).
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2819%29.png)
 
 ## Creating Experiments
 

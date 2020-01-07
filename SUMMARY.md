@@ -21,10 +21,6 @@
 
 * [Overview](notebooks/about.md)
 * [Using Notebooks](notebooks/create-a-notebook/README.md)
-  * [Start a Notebook](notebooks/create-a-notebook/start-a-notebook.md)
-  * [Stop a Notebook](notebooks/create-a-notebook/stop-a-notebook.md)
-  * [Delete a Notebook](notebooks/create-a-notebook/delete-a-notebook.md)
-  * [Rename a Notebook](notebooks/create-a-notebook/rename-a-notebook.md)
   * [Share a Notebook](notebooks/create-a-notebook/share-a-notebook.md)
   * [Fork a Notebook](notebooks/create-a-notebook/fork-a-notebook.md)
   * [Using Notebooks in the CLI](notebooks/create-a-notebook/using-notebooks-in-the-cli.md)
@@ -82,7 +78,6 @@
 * [Managing Models](models/create-a-model/README.md)
   * [Model Path, Parameters, & Metadata](models/create-a-model/model-path.md)
 * [Example: Prepare a TensorFlow Model for Deployments](models/preparing-model-for-deployment.md)
-* [Managing Models](models/managing-models.md)
 * [Public Models](models/public-models.md)
 
 ## Deployments
@@ -90,8 +85,8 @@
 * [Overview](deployments/about.md)
 * [Managing Deployments](deployments/managing-deployments/README.md)
   * [Deployment States](deployments/managing-deployments/deployment-states.md)
-  * [Optimize Models for Inference](deployments/managing-deployments/optimizing-tensorflow-models-for-inference.md)
   * [A Deployed Model's RESTful API](deployments/managing-deployments/deployment-restful-api.md)
+  * [Optimize Models for Inference](deployments/managing-deployments/optimizing-tensorflow-models-for-inference.md)
 
 ## Data
 

@@ -95,7 +95,7 @@ gradient experiments run singlenode \
   --container tensorflow/tensorflow:1.13.1-gpu-py3 \
   --machineType K80 \
   --command "python mnist.py" \
-  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
+  --workspace https://github.com/Paperspace/mnist-sample.git \
   --modelType Tensorflow \
   --modelPath /artifacts
 ```
@@ -125,7 +125,7 @@ gradient experiments run multinode \
   --parameterServerMachineType K80 \
   --parameterServerCommand "python mnist.py" \
   --parameterServerCount 1 \
-  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
+  --workspace https://github.com/Paperspace/mnist-sample.git \
   --modelType Tensorflow
 ```
 
@@ -149,11 +149,11 @@ For more information about this sample experiment see the README in the mnist-sa
 {% tab title="Web UI" %}
 Open the Project that contains the Experiment:  
 
-![](../../.gitbook/assets/image%20%2843%29.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
 Then click on the Experiment to view information about it:
 
-![](../../.gitbook/assets/image%20%2836%29.png)
+![](../../.gitbook/assets/image%20%2875%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -171,11 +171,11 @@ gradient experiments details
 {% tab title="Web UI" %}
 To cancel an Experiment, click the Cancel button below the state indicator:
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](../../.gitbook/assets/image%20%2860%29.png)
 
 To Stop an Experiment, click the Stop button below the state indicator:
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -193,14 +193,14 @@ gradient experiments stop
 {% tab title="Web UI" %}
 To Delete an Experiment, click the Stop button below the state indicator:
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
 To delete an Experiment, you can use the following command:
 
 ```text
-gradient experiments delete  
+gradient experiments delete 
 ```
 {% endtab %}
 {% endtabs %}
