@@ -10,7 +10,7 @@
 
 When opening your notebook you will see a `/storage` folder. Clicking on the folder will take you to Persistent Storage where you can upload your data.  If there are a large amount of files, it's advisable to zip them up first. 
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/image%20%2865%29.png)
 
 #### From a Virtual Machine \(VM\)
 
@@ -22,14 +22,18 @@ Downloading data to `/storage` is as simple as using `curl` or `wget` from a Gra
 
 ## Artifacts
 
+{% hint style="warning" %}
+This feature is only available in the hosted gradient Gradient version. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.
+{% endhint %}
+
 ### Get
 
 Get the artifacts files for the job with the given id. The name of a particular file, or directory can be specified, and can include a wildcard character at the end, e.g., "myfiles"\*. If no specifc file or directory is specified all artifact files will be retrieved.
 
 #### Example Use
 
-```text
-$ paperspace jobs artifactsGet --jobId "j123abc"
+```bash
+gradient jobs artifacts get --jobId <j123abc>
 ```
 
 #### **Properties**
@@ -47,8 +51,8 @@ List job artifact files for the specified job.
 
 #### Example Use
 
-```text
-$ paperspace jobs artifactsList --jobId "j123abc" --size true
+```bash
+gradient jobs artifacts list --jobId <j123abc> --size true
 ```
 
 #### Properties
@@ -67,8 +71,8 @@ Destroy artifact files of the job with the given id. The name of a particular fi
 
 #### Example Use
 
-```text
-$ paperspace jobs artifactsDestroy --jobId "j123abc" --files "myfiles*"
+```bash
+gradient jobs artifacts destroy --jobId <j123abc> --files <myfiles*>
 ```
 
 #### **Properties**
