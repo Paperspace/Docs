@@ -1,17 +1,13 @@
 # Job Artifacts
 
-{% hint style="warning" %}
-This feature is only available in the hosted gradient Gradient version. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.
-{% endhint %}
-
 ## About
 
 Interact with any job artifacts available to either the current authenticated user or the team, if the user belongs to a team. The artifacts method has 3 sub commands - list, get & destroy. 
 
 ### Artifacts List
 
-```bash
-gradient jobs artifacts list --size --link --files model.* <job id>
+```text
+gradient jobs artifacts list --size --link --files model.* JOB_ID
 ```
 
 #### Parameters
@@ -27,8 +23,8 @@ gradient jobs artifacts list --size --link --files model.* <job id>
 
 Get all of the artifacts associated with a job.
 
-```bash
-gradient jobs artifacts get <job id>
+```text
+$ gradient jobs artifacts get JOB_ID
 ```
 
 #### Parameters
@@ -41,8 +37,8 @@ gradient jobs artifacts get <job id>
 
 Destroy all of the artifacts associated with a job.
 
-```bash
-gradient jobs artifacts destroy <job id>
+```text
+$ gradient jobs artifacts destroy JOB_ID
 ```
 
 #### Parameters

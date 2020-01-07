@@ -142,6 +142,12 @@ Congrats, you've created a Deployment and can perform inference!
 
 To list your Deployments with optional filtering, use the `list` subcommand:
 
+```text
+gradient deployments list 
+```
+
+**Options:**
+
 ```bash
   --state [BUILDING|PROVISIONING|STARTING|RUNNING|STOPPING|STOPPED|ERROR]
                                   Filter by deployment state

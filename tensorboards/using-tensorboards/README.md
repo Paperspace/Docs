@@ -32,6 +32,14 @@ Note that although you can technically add an Experiment that has not completed,
 {% endtab %}
 
 {% tab title="CLI" %}
+You can create a TensorBoard with the following command:
+
+```text
+gradient tensorboards create
+```
+
+**Options:**
+
 ```text
 Usage: gradient tensorboards create [OPTIONS]
 
@@ -81,6 +89,12 @@ And that's it! Stay tuned for further iteration as we continue to make TensorBoa
 ### Adding Experiments
 
 ```text
+gradient tensorboards add-experiments
+```
+
+**Options:**
+
+```text
 Usage: gradient tensorboards add-experiments [OPTIONS]
 
   Update tensorboard experiments
@@ -95,6 +109,12 @@ Options:
 ```
 
 ### Removing Experiments
+
+```text
+gradient tensorboards remove-experiments
+```
+
+**Options:**
 
 ```text
 Usage: gradient tensorboards remove-experiments [OPTIONS]
