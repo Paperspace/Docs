@@ -4,8 +4,8 @@ Stream the logs for the job with the given id, while the job is running or after
 
 ## Example Use
 
-```text
-gradient jobs logs --jobId "j123abc"
+```bash
+gradient jobs logs --jobId <j123abc>
 ```
 
 ### Example Output

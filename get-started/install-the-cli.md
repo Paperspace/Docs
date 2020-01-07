@@ -82,9 +82,9 @@ gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 ## Obtaining an API key
 
-First, sign in to your [Paperspace account](https://paperspace.com/). On the left of your home console, you will find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
+First, sign in to your [Paperspace account](https://www.paperspace.com/account/login). On the left of your home console, you will find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
 
-![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%2827%29.png)
+![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%2828%29.png)
 
 ## Enable autocomplete
 
