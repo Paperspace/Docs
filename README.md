@@ -14,7 +14,7 @@ Gradient is comprised of the following components:
 * [**CLI**](get-started/install-the-cli.md): An open-source command-line tool for executing Jobs from Windows, Mac, or Linux.
 * [**SDK**](gradient-python-sdk/gradient-python-sdk/): Programmatically interact with the Gradient platform.
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%282%29.png)
 
 ## Getting Access
 

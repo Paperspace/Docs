@@ -83,7 +83,7 @@ The following parameters can be used with the `list` subcommand:
 {% tab title="Web UI" %}
 Navigate to **Models** in the side nav to see your list of trained Models.  From here you can delete models by clicking the delete button.  
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
