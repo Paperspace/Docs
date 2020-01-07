@@ -19,7 +19,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 
 ## Submit an Experiment
 
@@ -47,7 +47,7 @@ gradient experiments run singlenode --projectId <your-project-id> --container 'T
 
 You can also create `multi-node` and `hyperparameter` Experiments, and you can use the `create` command to simply create Experiments that can be started later. Explore all the advanced options [here]().
 
-Behind the scenes, your Experiment will be uploaded and executed on our cluster of machines starting with the command you provided. There are [several optional Experiment parameters](), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.
+Behind the scenes, your Experiment will be uploaded and executed on our cluster of machines starting with the command you provided. There are [several optional Experiment parameters](../experiments/using-experiments/experiment-options.md), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.
 
 ### Monitor your Experiment progress
 
@@ -56,4 +56,8 @@ Experiments states transition from **Queued** &gt; **Pending** &gt; **Running**.
 Congratulations! You ran your first Experiment on Gradient 🚀
 
 Experiments have a ton of functionality that this quick example doesn't cover. To learn more, view the [Experiments section](../experiments/about.md).
+
+## Explore the rest of the platform
+
+From [Models](../models/about.md) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../gradient-python-sdk/gradient-python-sdk/).
 
