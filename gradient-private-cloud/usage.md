@@ -14,5 +14,5 @@ gradient <command> ... --clusterId <your cluster ID>
 
 `--clusterId string` Cluster ID for this node, e.g. "cXXXXXXXX". 
 
-You will need to provide your API key to authenticate your requests.  `--apiKey string` Paperspace api key value.  Learn how to obtain and set your API key [here](../get-started/install-the-cli.md#obtaining-an-api-key).
+You will need to provide your API key to authenticate your requests. Learn how to obtain and set your API key [here](../get-started/install-the-cli.md#obtaining-an-api-key).
 
