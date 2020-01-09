@@ -106,6 +106,11 @@ datasets: [
 ]
 ```
 
+##### Usage od Datasets from the Gradient CLI
+
+TBD
+
+
 ##### Cleaning Up Shared Storage
 
 Because shared storage datasets are stored in your team storage they are not automatically deleted.
