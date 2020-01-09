@@ -6,7 +6,7 @@ When executing an experiment in Gradient you may optionally supply one or more d
 These datasets can be downloaded from an S3 object or folder (including the full bucket).
 Gradient allows teams to run reproducible machine learning experiments by taking advantage of S3 ETags and Version IDs, which combine to allow you to be sure that datasets exactly match between training sets, and to be sure which version of a dataset you are using.
 
-### S3 Datasets
+## S3 Datasets
 
 Datasets are downloaded and mounted readonly on `/data/global/DATASET` within your experiment jobs using the supplied AWS credentials.
 The credentials are optional for public buckets.
@@ -24,7 +24,7 @@ datasets: [
 ]
 ```
 
-#### ETag
+### ETag
 
 When downloading a dataset you may supply an optional `etag` parameter, which will tell the dataset downloader to verify that the object stored at the path matches the supplied etag.
 If it does not match the etag, the experiment will end with an error.
@@ -41,7 +41,7 @@ datasets: [
 ]
 ```
 
-#### VersionId
+### VersionId
 
 When downloading a dataset you may supply an optional `versionId` parameter, which will tell the dataset downloader to fetch your S3 object at the specified version.
 This feature is only supported on versioned S3 buckets and is not supported on downloads of folders.
@@ -57,7 +57,7 @@ datasets: [
 ]
 ```
 
-#### Supplying a Different Volume Size
+### Supplying a Different Volume Size
 
 When downloading a dataset they are by default downloaded to an ephemeral volume that lasts for the duration of the experiment job.
 These volumes are 5 GB (`"5Gi"`) by default; if you need a larger volume you may supply a size parameter with your dataset.
@@ -106,12 +106,7 @@ datasets: [
 ]
 ```
 
-##### Usage od Datasets from the Gradient CLI
-
-TBD
-
-
-##### Cleaning Up Shared Storage
+#### Cleaning Up Shared Storage
 
 Because shared storage datasets are stored in your team storage they are not automatically deleted.
 Datasets are downloaded to `/<TEAMHANDLE>/data/<DATASET_NAME-ETAG>`, where `DATASET_NAME` is derived from the bucket or the user supplied parameter.
@@ -132,3 +127,146 @@ Archive formats are detected by their extension. These are the supported archive
 * .tbz2
 * .tgz
 * .txz
+
+### Using Datasets with Gradient CLI
+
+The following options specify datasets on the command line. For all optional options,
+specify a value of `"none"` to indicate no value for that option. For any `datasetUri`
+which specifies a directory, the `datasetVersionId` and `datasetEtag` are ignored.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">CLI Option</th>
+      <th style="text-align:left">SDK Field</th>
+      <th style="text-align:left">Optional?</th>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Example Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <code>--datasetUri</code>
+      </td>
+      <td style="text-align:left">
+        <code>url</code>
+      </td>
+      <td style="text-align:left">
+        No
+      </td>
+      <td style="text-align:left">
+        Dataset URL
+      </td>
+      <td style="text-align:left">
+        <code>"s3://bucket-name/my-dataset.zip"</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <code>--datasetName</code>
+      </td>
+      <td style="text-align:left">
+        <code>name</code>
+      </td>
+      <td style="text-align:left">
+        Yes
+      </td>
+      <td style="text-align:left">
+        Dataset display name
+      </td>
+      <td style="text-align:left">
+        <code>"dataset A"</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <code>--datasetAwsAccessKeyId</code>
+      </td>
+      <td style="text-align:left">
+        <code>awsAccessKeyId</code>
+      </td>
+      <td style="text-align:left">
+        No
+      </td>
+      <td style="text-align:left">
+        AWS Access Key ID for the <code>datasetUri</code>
+      </td>
+      <td style="text-align:left">
+        <code>"ABCDEFGHIJ0123456789"</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <code>--datasetAwsSecretAccessKey</code>
+      </td>
+      <td style="text-align:left">
+        <code>awsSecretAccessKey</code>
+      </td>
+      <td style="text-align:left">
+        No
+      </td>
+      <td style="text-align:left">
+        AWS Secret Access Key paired with the <code>datasetAwsAccessKeyId</code>
+      </td>
+      <td style="text-align:left">
+        <code>"aaaabbbbccccddddeeee11112222333344445555"</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <code>--datasetVersionId</code>
+      </td>
+      <td style="text-align:left">
+        <code>versionId</code>
+      </td>
+      <td style="text-align:left">
+        Yes
+      </td>
+      <td style="text-align:left">
+        AWS S3 object version ID of the object specified in the <code>datasetUri</code>
+      </td>
+      <td style="text-align:left">
+        <code>"bjh023v9dloWEq23VC912zxprrl8.23C"</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <code>--datasetEtag</code>
+      </td>
+      <td style="text-align:left">
+        <code>etag</code>
+      </td>
+      <td style="text-align:left">
+        Yes
+      </td>
+      <td style="text-align:left">
+        AWS S3 object etag of the object specified in the <code>datasetUri</code>
+      </td>
+      <td style="text-align:left">
+        <code>"3823e4ab23cc48ad83e9e3fa99ecc12a"</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+The following command runs an experiment with the above example values for a dataset:
+
+```bash
+gradient experiments run singlenode \
+  --projectId <your-project-id> \
+  --name singleEx \
+  --experimentEnv "{\"EPOCHS_EVAL\":5,\"TRAIN_EPOCHS\":10,\"MAX_STEPS\":1000,\"EVAL_SECS\":10}" \
+  --container tensorflow/tensorflow:1.13.1-gpu-py3 \
+  --machineType K80 \
+  --command "python mnist.py" \
+  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
+  --modelType Tensorflow \
+  --modelPath /artifacts \
+  --datasetUri "s3://bucket-name/my-dataset.zip" \
+  --datasetName "dataset A" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555" \
+  --datasetVersionId "bjh023v9dloWEq23VC912zxprrl8.23C" \
+  --datasetEtag "3823e4ab23cc48ad83e9e3fa99ecc12a"
+```
