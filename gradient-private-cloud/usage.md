@@ -14,6 +14,10 @@ gradient <command> ... --clusterId <your cluster ID>
 
 `--clusterId string` Cluster ID for this processing site, e.g. "clxxxxxxx". 
 
+{% hint style="info" %}
+You will need to provide your API key to authenticate your requests. Learn how to obtain and set your API key [here](../get-started/install-the-cli.md#obtaining-an-api-key).
+{% endhint %}
+
 A complete example of utilizing Gradient features on a Gradient Private Cloud cluster might look like this:
 
 ```bash
@@ -28,9 +32,16 @@ gradient experiments run singlenode --name experiment1 \
 --vpc
 ```
 
-In addition to the Cluster ID, the --vpc flag is required for Gradient Private Cloud processing sites.
+In addition to the Cluster ID, the --vpc flag is required for Gradient Private Cloud processing sites. In order to allocate workloads to your private cluster, the clusterID parameter and --vpc flag must be set on most Gradient primary commands, including:
 
-You will need to provide your API key to authenticate your requests. Learn how to obtain and set your API key [here](../get-started/install-the-cli.md#obtaining-an-api-key).
+* experiments
+* deployments
+* jobs
+* models
+* notebooks
+* tensorboards
+
+To avoid having to re-enter the Cluster ID, and if you want the configuration to be reusable and checked into source control, another option is using the [Gradient Config File](../experiments/using-experiments/gradient-config.yaml.md). This file can contain the clusterID parameter in addition to many other common settings.
 
 ## **Using Gradient Private Cloud via the web console**
 
