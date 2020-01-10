@@ -166,3 +166,9 @@ In the case of multinode experiments, both worker and parameter server instances
 
 Note: `--containerUser` is not a supported option for multinode experiments currently.
 
+## Options for Using Datasets
+
+See the Datasets documentation for options related to using datasets with experiments
+with the Gradient CLI.
+
+{% page-ref page="datasets.md" %}

@@ -270,3 +270,59 @@ gradient experiments run singlenode \
   --datasetVersionId "bjh023v9dloWEq23VC912zxprrl8.23C" \
   --datasetEtag "3823e4ab23cc48ad83e9e3fa99ecc12a"
 ```
+
+Multiple datasets may be specified by specifying more sets of **all of the `dataset` options**.
+Each `dataset` option must be specified for each dataset.
+Consider the following 3 datasets:
+
+1. Name: Dataset A
+    - URI: s3://bucket-name/my-dataset.zip
+    - AWS Access Key ID: ABCDEFGHIJ0123456789
+    - AWS Secret Access Key: aaaabbbbccccddddeeee11112222333344445555
+    - Version ID: bjh023v9dloWEq23VC912zxprrl8.23C
+    - ETag: 3823e4ab23cc48ad83e9e3fa99ecc12a
+2. Name: Dataset B
+    - URI: s3://bucket-name/dataset-dir/
+    - AWS Access Key ID: ABCDEFGHIJ0123456789
+    - AWS Secret Access Key: aaaabbbbccccddddeeee11112222333344445555
+    - Version ID: None
+    - ETag: None
+3. Name: Dataset C
+    - URI: s3://another-bucket/another-dataset.zip
+    - AWS Access Key ID: KLMNOPQRST0123456789
+    - AWS Secret Access Key: eeeeddddccccbbbbaaaa11112222333344445555
+    - Version ID: 9Jqci387dcb8dekdm39ckbhs8nAS8cVV
+    - ETag: None
+
+A command which utilizes all of those datasets looks like the following:
+
+```bash
+gradient experiments run singlenode \
+  --projectId <your-project-id> \
+  --name singleEx \
+  --experimentEnv "{\"EPOCHS_EVAL\":5,\"TRAIN_EPOCHS\":10,\"MAX_STEPS\":1000,\"EVAL_SECS\":10}" \
+  --container tensorflow/tensorflow:1.13.1-gpu-py3 \
+  --machineType K80 \
+  --command "python mnist.py" \
+  --workspaceUrl https://github.com/Paperspace/mnist-sample.git \
+  --modelType Tensorflow \
+  --modelPath /artifacts \
+  --datasetUri "s3://bucket-name/my-dataset.zip" \
+  --datasetName "dataset A" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555" \
+  --datasetVersionId "bjh023v9dloWEq23VC912zxprrl8.23C" \
+  --datasetEtag "3823e4ab23cc48ad83e9e3fa99ecc12a" \
+  --datasetUri "s3://bucket-name/dataset-dir" \
+  --datasetName "dataset B" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555" \
+  --datasetVersionId "none" \
+  --datasetEtag "none" \
+  --datasetUri "s3://another-bucket/another-dataset.zip" \
+  --datasetName "dataset C" \
+  --datasetAwsAccessKeyId "KLMNOPQRST0123456789" \
+  --datasetAwsSecretAccessKey "eeeeddddccccbbbbaaaa11112222333344445555" \
+  --datasetVersionId "9Jqci387dcb8dekdm39ckbhs8nAS8cVV" \
+  --datasetEtag "none"
+```
