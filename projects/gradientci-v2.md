@@ -380,3 +380,11 @@ Note this can only be done by an organization level administrator or on your per
 5. From the "GradientCI" settings menu, you can then either ![GradientCI Settings](../.gitbook/assets/gradient-ci-settings.png)
    a. Uninstall the application from all repositories on the organization or personal account by clicking the red "Uninstall" button
    b. Select the "Only select repositories" and choosing which repositories should have GradientCI from the dropdown, or unselecting them by clicking the "x" next to their name.
+
+## Troubleshooting
+
+### Project Setup Incomplete
+
+This error occurs when GradientCI is unable to find the attached Paperspace project for your GitHub repository.
+The Paperspace project may have been deleted or you may have installed the app only through GitHub's interface.
+Follow the [GradientCI project setup instructions](./managing-projects.md#create-a-gradient-ci-project) to ensure that your Paperspace project is properly configured.
