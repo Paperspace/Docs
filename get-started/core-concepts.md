@@ -2,23 +2,25 @@
 
 ## Projects
 
-A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Artifacts, and Models. Projects can be created manually or automatically from a Job corresponding to the current working directory name.
+A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Models, and Deployments. Projects can be synced with GitHub with [GradientCI](../projects/gradientci.md).
 
 ## Notebooks
 
-![](../.gitbook/assets/image%20%284%29.png)
+Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.  Gradient [Notebooks](../notebooks/about.md) make it easy to explore data and coding concepts, and collaborate with other people on projects. 
 
-A [Notebook](../notebooks/about.md) is an interactive coding environment that allows you to mix code or formulas with text and diagrams, visualizations, and other media. Notebooks make it easy to explore data and coding concepts, and collaborate with other people on projects. Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.
+{% hint style="success" %}
+Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
+{% endhint %}
 
 ## Experiments
 
-[Experiments](../experiments/about.md) are designed for executing code \(such as training a deep neural network\) on a CPU or GPU without managing any infrastructure. Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
+[Experiments](../experiments/about.md) are designed for training machine learning models on GPUs \(and other chips\) without managing any infrastructure. Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
 
-Experiments are part of a larger suite of tools that work seamlessly with Gradient Notebooks, and our Core product, which together form a production-ready ML/AI pipeline.
+Experiments are part of a larger suite of tools that work seamlessly with Gradient Notebooks, Models, and Deployments, which together form a production-ready ML/AI pipeline.
 
 ## Jobs
 
-Jobs are a made up of a collection of code, data, and a container that are packaged together and remotely executed.  Jobs are initiated by a command such as`main.py` or `nvidia-smi.`
+[Jobs](../jobs/about.md) execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation.  Jobs are a made up of a collection of code, data, and a container that are packaged together and remotely executed.  
 
 ## Data
 
@@ -33,6 +35,10 @@ Artifact storage is collected and made available after the Experiment or Job run
 #### Workspace Storage
 
 The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run.  If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage.md#workspace-storage).
+
+#### Private Datasets
+
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository.md).
 
 ## Models
 

@@ -1,14 +1,10 @@
 # Hyperparameter Tuning
 
-## About
-
 {% hint style="warning" %}
-This feature is in beta. 
+This feature is currently only available to our Gradient hosted offering. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
 {% endhint %}
 
-Gradient provides users the ability to tune hyperparameters for their machine learning models, harnessing the power of our cloud to explore different model configurations and discover an optimal model.
-
-##  How it works?
+## How it works
 
 Paperspace Hyperparameter Tuning based on [_Hyperopt_](http://hyperopt.github.io/hyperopt/)\_\_
 
@@ -22,9 +18,7 @@ If you want to learn more about Hyperopt, you'll probably want to watch the vide
 
 {% embed url="https://www.youtube.com/watch?v=Mp1xnPfE4PY" %}
 
-
-
-#### How to define Hyperopt parameters
+## How to define Hyperopt parameters
 
 A parameter is defined with either a certain uniform range or a probability distribution, such as:
 
@@ -52,7 +46,45 @@ hp.choice(label, ["list", "of", "potential", "choices"])
 hp.choice(label, [hp.uniform(sub_label_1, low, high), hp.normal(sub_label_2, mu, sigma), None, 0, 1, "anything"])
 ```
 
-## Hyperparameter made easy with [Gradient-SDK](https://github.com/Paperspace/gradient-sdk)
+## How to perform Hyperparameter search on Gradient
+
+Every time you create a hyperparameter tuning experiment we create at least 3 jobs:
+
+1. Hyperparameter Server that will run your tuning command
+2. n amount of workers that will run jobs
+3. mongoDb server to store job results
+
+### Using the gradient CLI
+
+Assuming that you have configured an API Key for the paperspace cli enter:
+
+```bash
+gradient experiments hyperparameters run \
+  --name HyperoptKerasExperimentCLI1 \
+  --projectId <your-project-id> \
+  --tuningCommand 'make run_hyperopt' \
+  --workerContainer tensorflow/tensorflow:1.13.1-gpu-py3 \
+  --workerMachineType K80 \
+  --workerCommand 'make run_hyperopt_worker' 
+  --workerCount 2 \
+  --workspace git+https://github.com/Paperspace/hyperopt-keras-sample
+```
+
+On successfully creating a hyperparameter experiment it should return something like this:
+
+```text
+Hyperparameter created with ID: <experiment_id> and started
+```
+
+![](../.gitbook/assets/screenshot-2019-06-06-at-15.45.04.png)
+
+For workers and parameter server you can easily access the logs and outputs of the various tasks. 
+
+![](../.gitbook/assets/screenshot-2019-06-06-at-15.47.42.png)
+
+### 
+
+### With the [Gradient-SDK](https://github.com/Paperspace/gradient-sdk)
 
 **hyper\_tune\(\)**
 
@@ -74,7 +106,7 @@ It can raise a `ConfigError` exception with message if there's no connection to 
 
 **Usage example:**
 
-```text
+```python
 from gradient_sdk import hyper_tune
 
 # Prepare model and search scope
@@ -86,45 +118,9 @@ argmin1 = hyper_tune(model, scope)
 argmin2 = hyper_tune(model, scope, algo=tpe.suggest, max_evals=100)
 ```
 
-## How to perform Hyperparameter search on Paperspace
-
-Everytime you create a hyperparameter tuning experiment we create at least 3 jobs:
-
-1. Hyperparameter Server that will run your tuning command
-2. n amount of workers that will run jobs
-3. mongoDb server to store job results
-
-### Using the gradient CLI
-
-Assuming that you have configured an API Key for the paperspace cli enter:
-
-```text
-gradient hyperparameters run \
-  --name HyperoptKerasExperimentCLI1 \
-  --projectId <your-project-id> \
-  --tuningCommand 'make run_hyperopt' \
-  --workerContainer tensorflow/tensorflow:1.13.1-gpu-py3 \
-  --workerMachineType K80 \
-  --workerCommand 'make run_hyperopt_worker' 
-  --workerCount 2 \
-  --workspaceUrl git+https://github.com/Paperspace/hyperopt-keras-sample
-```
-
-On successfully creating a hyperparameter experiment it should return something like this:
-
-```text
-Hyperparameter created with ID: <experiment_id> and started
-```
-
-![](../.gitbook/assets/screenshot-2019-06-06-at-15.45.04.png)
-
-For workers and parameter server you can easily access the logs and outputs of the various tasks. 
-
-![](../.gitbook/assets/screenshot-2019-06-06-at-15.47.42.png)
-
-## Comparing various runs on Paperspace
+## Comparing results on Gradient
 
 {% hint style="warning" %}
-This feature is coming soon to our platform!
+This feature is coming soon to our platform!  In the meantime, we recommend using a tool like TensorBoard to compare the results of your hyperparameter search.
 {% endhint %}
 

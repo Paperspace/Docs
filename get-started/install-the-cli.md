@@ -10,41 +10,41 @@ description: How to install the Gradient Command Line Interface
 
 The Gradient CLI is available on [pypi](https://pypi.org/project/paperspace/) and works on Windows, MacOS, and Linux.
 
-The CLI requires **Python 2.7** or **Python 3.4+**. Be sure to use a compatible version of **pip** depending on your Python version.
+The CLI requires **Python 3.4+ \(**or **Python 2.7\)**. Be sure to use a compatible version of **pip** \(or **pip3**\) depending on your Python version.
 
 {% hint style="info" %}
-**ProTip!** We recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**.
+**Pro Tip!** We highly recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**.
 
-**Python 2.7**  
-Install virtualenv:
+First, install **virtualenv**:
 
 ```bash
 pip install virtualenv
 ```
 
-Create new virtualenv:
-
-```bash
-virtualenv <env_directory_path>
-```
-
-Activate virtualenv:
-
-```bash
-source <env_directory_path>/bin/activate
-```
-
 **Python 3.4+**  
-Create new virtualenv:
+Create new virtual environment:
 
 ```bash
-python3 -m venv /path/to/new/virtual/environment
+python3 -m virtualenv <virtual_env_dir_path>
 ```
 
-Activate virtualenv:
+Activate virtual environment:
 
 ```bash
-source /path/to/new/virtual/environment/bin/activate
+source <virtual_env_dir_path>/bin/activate
+```
+
+**Python 2.7 \(note that Python 2.7 will be deprecated in 2020\)**  
+Create new virtual environment:
+
+```bash
+virtualenv <virtual_env_dir_path>
+```
+
+Activate virtual environment:
+
+```
+source <virtual_env_dir_path>/bin/activate
 ```
 {% endhint %}
 
@@ -68,11 +68,13 @@ You can either stash your API key on your computer or include your API key on ea
 
 ### Set your active API key
 
+First, [obtain an API Key](install-the-cli.md#obtaining-an-api-key), and then:
+
 ```bash
 gradient apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
-#### Alternative: Include your API key for each command
+Alternatively, you can include your API key with each command:
 
 ```bash
 gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
@@ -80,7 +82,21 @@ gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 ## Obtaining an API key
 
-First, sign in to your [Paperspace account](https://paperspace.com/). On the left of your home console, you should find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
+First, sign in to your [Paperspace account](https://www.paperspace.com/account/login). On the left of your home console, you will find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
 
-![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%2813%29.png)
+![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%2828%29.png)
+
+## Enable autocomplete
+
+Add following to your `.bashrc` \(or `.zshrc`\) to enable autocomplete anytime you activate your shell. If gradient was installed in a virtual environment, the following has to be added to the `activate` script:
+
+`eval "$(_GRADIENT_COMPLETE=source gradient)"`
+
+Alternatively, you can create activation script by:
+
+`(_GRADIENT_COMPLETE=source gradient) > ~/paperspace_complete.sh`
+
+and then add `. ~/paperspace_complete.sh` to your `.bashrc`, `.zshrc` or `activate` script.
+
+More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/)
 

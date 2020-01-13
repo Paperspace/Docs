@@ -29,13 +29,13 @@ When you launch a Notebook, it runs inside a container preloaded with the notebo
 
 Custom containers feature lets you pull your own image from a container registry such as Docker Hub. This article will help you prepare a custom Docker container to use with Gradient, show you how to bring that Container into Gradient, and create a notebook with your custom container. We recommend using Docker to get the container image from your system to Gradient. 
 
-#### Require field:
+#### Required field:
 
 * Container Name = Path and tags of image eg `ufoym/deepo:all-jupyter-py36`
 
-![](../../.gitbook/assets/image%20%2836%29.png)
+![](../../.gitbook/assets/image%20%2879%29.png)
 
-#### Optional Parameters:
+#### Optional fields:
 
 * Username = your Docker Hub username, can be left blank for public images
 * Password = your Docker Hub password, can be left blank for public images
