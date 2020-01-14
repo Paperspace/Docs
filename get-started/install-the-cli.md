@@ -80,6 +80,8 @@ Alternatively, you can include your API key with each command:
 gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
+**Note:** You can reveal your current API key with `cat ~/.paperspace/config.json`
+
 ## Obtaining an API key
 
 First, sign in to your [Paperspace account](https://www.paperspace.com/account/login). On the left of your home console, you will find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
@@ -99,4 +101,6 @@ Alternatively, you can create activation script by:
 and then add `. ~/paperspace_complete.sh` to your `.bashrc`, `.zshrc` or `activate` script.
 
 More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/)
+
+
 
