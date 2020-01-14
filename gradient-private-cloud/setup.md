@@ -10,3 +10,9 @@ During the deployment process, the Paperspace team will work closely with you to
 
 For public cloud installs such as AWS and Google Cloud, Paperspace will provide machine images that are fully prepped for running Gradient workloads. 
 
+Gradient Enterprise customers can add one set of S3 credentials for their team to use their own S3 buckets for persistence of artifacts/models/etc. To add these credentials, select your team at the bottom left, which will take you to the “Team management” page. There, you’ll see an S3 Credentials tab. Clicking that, Gradient Enterprise customers will see three fields:
+
+![](../.gitbook/assets/s3-cred.png)
+
+Here you can set S3 credentials. Re-submitting will override your current credentials. These credentials will be used so make sure that your artifacts, models, etc. are persisted to your specified S3 bucket.
+
