@@ -86,7 +86,7 @@ And that's it! Stay tuned for further iteration as we continue to make TensorBoa
 {% endtab %}
 
 {% tab title="CLI" %}
-### Adding Experiments
+### Adding Experiments to a existing tensorboard
 
 ```text
 gradient tensorboards add-experiments
@@ -108,7 +108,7 @@ Options:
   --help                    Show this message and exit.
 ```
 
-### Removing Experiments
+### Removing Experiments from a tensorboard
 
 ```text
 gradient tensorboards remove-experiments
@@ -124,6 +124,35 @@ Usage: gradient tensorboards remove-experiments [OPTIONS]
 Options:
   --id TEXT                 Tensorboard ID  [required]
   --experiment TEXT         IDs of experiments  [required]
+  --apiKey TEXT             API key to use this time only
+  --optionsFile PATH        Path to YAML file with predefined options
+  --createOptionsFile PATH  Generate template options file
+  --help                    Show this message and exit.
+```
+{% endtab %}
+{% endtabs %}
+
+## Delete Tensorboard
+
+You can delete a TensorBoard instance via the CLI, as follows.
+
+{% tabs %}
+{% tab title="CLI" %}
+To delete a TensorBoard, run the following command:
+
+```text
+gradient tensorboards delete --id <tensorboard-id>
+```
+
+**Options:**
+
+```text
+Usage: gradient tensorboards delete [OPTIONS]
+
+  Delete tensorboard
+
+Options:
+  --id <tensorboard ID>     Tensorboard ID  [required]
   --apiKey TEXT             API key to use this time only
   --optionsFile PATH        Path to YAML file with predefined options
   --createOptionsFile PATH  Generate template options file

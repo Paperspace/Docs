@@ -20,5 +20,5 @@ gradient experiments ... --experimentEnv "{\"EPOCHS_EVAL\":5,\"TRAIN_EPOCHS\":2,
 
 These parameters will be injected into the Experiment at runtime and captured in Gradient.
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
