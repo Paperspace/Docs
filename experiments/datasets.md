@@ -8,20 +8,18 @@ Gradient allows teams to run reproducible machine learning experiments by taking
 
 ## S3 Datasets
 
-Datasets are downloaded and mounted readonly on `/data/global/DATASET` within your experiment jobs using the supplied AWS credentials.
+Datasets are downloaded and mounted readonly on `/data/DATASET` within your experiment jobs using the supplied AWS credentials.
 The credentials are optional for public buckets.
 The name of the dataset is the `basename` of the last item in the s3 path, e.g. `s3://my-bucket/mnist.zip` would have the name `mnist` and `s3://my-bucket` would have the name `my-bucket`.
 The name maybe overridden with the optional `name` parameter.
 
+For example these flags would be added to an experiment `run` cli command.
+
 ```
-datasets: [
-    {
-        "url": "s3://my-bucket/mnist-modified.zip",
-        "awsSecretAccessKey": "<KEY>",
-        "awsAccessKeyId": "<ID>",
-        "name": "mnist",
-    },
-]
+  --datasetUri "s3://bucket-name/my-dataset.zip" \
+  --datasetName "dataset A" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555"
 ```
 
 ### ETag
@@ -30,15 +28,14 @@ When downloading a dataset you may supply an optional `etag` parameter, which wi
 If it does not match the etag, the experiment will end with an error.
 This feature is only supported on S3 objects and not buckets.
 
+For example these flags would be added to an experiment `run` cli command.
+
 ```
-datasets: [
-    {
-        "url": "s3://my-bucket/my-dataset.zip",
-        "awsSecretAccessKey": "<KEY>",
-        "awsAccessKeyId": "<ID>",
-        "etag": "d0e2243df4d1e89ead52d51083b2eb523593b38e",
-    },
-]
+  --datasetUri "s3://bucket-name/my-dataset.zip" \
+  --datasetName "dataset A" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555" \
+  --datasetEtag "3823e4ab23cc48ad83e9e3fa99ecc12a"
 ```
 
 ### VersionId
@@ -46,46 +43,19 @@ datasets: [
 When downloading a dataset you may supply an optional `versionId` parameter, which will tell the dataset downloader to fetch your S3 object at the specified version.
 This feature is only supported on versioned S3 buckets and is not supported on downloads of folders.
 
-```
-datasets: [
-    {
-        "url": "s3://my-bucket/my-dataset.zip",
-        "awsSecretAccessKey": "<KEY>",
-        "awsAccessKeyId": "<ID>",
-        "versionId": "1111111",
-    },
-]
-```
-
-### Supplying a Different Volume Size
-
-When downloading a dataset they are by default downloaded to an ephemeral volume that lasts for the duration of the experiment job.
-These volumes are 5 GB (`"5Gi"`) by default; if you need a larger volume you may supply a size parameter with your dataset.
-
-For example, this snippet will start an experiment with a dataset that downloads to a 10 GB volume:
+For example these flags would be added to an experiment `run` cli command.
 
 ```
-datasets: [
-    {
-        "url": "s3://my-bucket/my-dataset.zip",
-        "awsSecretAccessKey": "<KEY>",
-        "awsAccessKeyId": "<ID>",
-        "volumeOptions": {
-            "kind": "dynamic",
-            "size": "10Gi",
-        },
-    },
-]
+  --datasetUri "s3://bucket-name/my-dataset.zip" \
+  --datasetName "dataset A" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555" \
+  --datasetVersionId "bjh023v9dloWEq23VC912zxprrl8.23C" \
 ```
-
-Size units may be specified with the SI prefix for base-10 units (K, M, G, T).
-Or for base-2 quantities you may add an `i` specifier at the end (Ki, Mi, Gi, Ti).
 
 #### Downloading to Shared Storage
 
-Datasets are normally downloaded to transient storage per experiment job.
-This means that for a 3 worker, 2 parameter server experiment the dataset will be downloaded 5 times.
-Since this can be very inefficient, in order to decrease job start up time you may choose to download your artifact to your team shared storage space.
+Datasets are downloaded to team shared storage by default storage per experiment job.
 This will download the dataset to a unique path within your shared storage and mount it into your experiment jobs at the same path as if you had downloaded it to a dynamic volume.
 This can be useful for quickly switching your volume options without changing your experiment code.
 It is *strongly* recommended to supply an etag for shared storage downloads to ensure that you have a consistent dataset between experiment executions.
@@ -93,29 +63,48 @@ It is *strongly* recommended to supply an etag for shared storage downloads to e
 For example,
 
 ```
-datasets: [
-    {
-        "url": "s3://my-bucket/my-dataset.zip",
-        "awsSecretAccessKey": "<KEY>",
-        "awsAccessKeyId": "<ID>",
-        "etag": "d0e2243df4d1e89ead52d51083b2eb523593b38e",
-        "volumeOptions": {
-            "kind": "shared",
-        },
-    },
-]
+  --datasetUri "s3://bucket-name/my-dataset.zip" \
+  --datasetName "dataset A" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555" \
+  --datasetEtag "3823e4ab23cc48ad83e9e3fa99ecc12a"
 ```
+
+### Using Dynamic Volumes
+
+When downloading a dataset they are by default downloaded to shared storage.
+This means that for a 3 worker, 2 parameter server experiment the dataset will be downloaded 5 times.
+This is a good option for when you do not want your datasets to be persisted against your shared storage quota, or are small or frequently changing datasets.
+If you would prefer for your datasets to be downloaded to an ephemeral location you can specify a `volumeKind` of `dynamic`.
+These volumes are 5 GB (`"5Gi"`) by default; if you need a larger volume you may supply a size parameter with your dataset.
+
+For example, this snippet will start an experiment with a dataset that downloads to a 10 GB volume:
+
+```
+  --datasetUri "s3://bucket-name/my-dataset.zip" \
+  --datasetName "dataset A" \
+  --datasetAwsAccessKeyId "ABCDEFGHIJ0123456789" \
+  --datasetAwsSecretAccessKey "aaaabbbbccccddddeeee11112222333344445555" \
+  --datasetVersionId "bjh023v9dloWEq23VC912zxprrl8.23C" \
+  --datasetVolumeKind "dynamic" \
+  --datasetVolumeSize "10Gi"
+```
+
+Size units may be specified with the SI prefix for base-10 units (K, M, G, T).
+Or for base-2 quantities you may add an `i` specifier at the end (Ki, Mi, Gi, Ti).
 
 #### Cleaning Up Shared Storage
 
 Because shared storage datasets are stored in your team storage they are not automatically deleted.
-Datasets are downloaded to `/<TEAMHANDLE>/data/<DATASET_NAME-ETAG>`, where `DATASET_NAME` is derived from the bucket or the user supplied parameter.
+Notebooks and experiments both mount the raw datasets with unique disambiguated names under `/storage/data` and you can use these tool to manually clean up old datasets.
+The datasets under `/storage/data/` will be named `<DATASET_NAME-ETAG-VERSIONID>`, where `DATASET_NAME` is derived from the bucket (`basename` on the key name) or the user supplied name parameter.
 If the dataset was downloaded without an `etag`, the `-ETAG` portion of the download path is omitted.
+If the dataset was downloaded without an `versionId`, the `-VERSIONID` portion of the download path is omitted.
 
 #### Archive Expansion
 
 If the object supplied is in a recognized archive format, such as zip, the archive will automatically be expanded in the root of the mount path.
-For example, `s3://my-bucket/dataset.zip` would be downloaded and expanded so that the contents of `dataset.zip` are accessible inside the container at `/data/global/dataset`.
+For example, `s3://my-bucket/dataset.zip` would be downloaded and expanded so that the contents of `dataset.zip` are accessible inside the container at `/data/dataset`.
 Archive formats are detected by their extension. These are the supported archive extensions:
 * .zip
 * .tar
