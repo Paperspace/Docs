@@ -6,7 +6,7 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](hyperparameters.md).
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 ## Creating Experiments
 
@@ -98,5 +98,5 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../.gitbook/assets/image%20%2860%29.png)
 
