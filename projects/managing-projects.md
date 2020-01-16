@@ -6,11 +6,11 @@
 {% tab title="Web UI" %}
 On the Projects page, click _Create Project_ and select _Create Standalone Project_.
 
-![](../.gitbook/assets/image%20%2873%29.png)
+![](../.gitbook/assets/image%20%2874%29.png)
 
 Provide a name and then click _Create Project_.
 
-![](../.gitbook/assets/image%20%2868%29.png)
+![](../.gitbook/assets/image%20%2869%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -36,7 +36,7 @@ gradient projects create --name ExampleProject [OPTIONS]
 
 {% tabs %}
 {% tab title="Web UI" %}
-[GradientCI](gradientci.md) Projects allow you to connect a GitHub repository to your Project in order to automatically run experiments when you push new commits or open pull requests \(PRs\).
+[GradientCI]() Projects allow you to connect a GitHub repository to your Project in order to automatically run experiments when you push new commits or open pull requests \(PRs\).
 
 Visit [www.paperspace.com/console/projects](https://www.paperspace.com/console/projects), click _Create Project_, and select **Create GradientCI Project**. Make sure you have installed **GradientCI** on the target repository to which you'll link your Project.
 
@@ -48,11 +48,11 @@ If you haven't yet connected your GitHub account, follow the prompts to grant ac
 
 Then, select the GitHub repo from the dropdown list:
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
-[GradientCI](gradientci.md) Projects allow you to connect a GitHub repository to your Project in order to automatically run experiments when you push new commits or open pull requests \(PRs\).
+[GradientCI]() Projects allow you to connect a GitHub repository to your Project in order to automatically run experiments when you push new commits or open pull requests \(PRs\).
 
 Make sure you have installed **GradientCI** on the target repository to which you'll link your Project.
 

@@ -32,8 +32,8 @@
 
 * [Overview](projects/about.md)
 * [Managing Projects](projects/managing-projects.md)
-* [GradientCI](projects/gradientci-v2.md)
-  * [GradientCI V1 (Deprecated)](projects/gradientci-v2.md)
+* [GradientCI](projects/gradientci-v2/README.md)
+  * [GradientCI V1 \(Deprecated\)](projects/gradientci-v2/gradientci-v2.md)
 
 ## Experiments
 
@@ -43,6 +43,7 @@
   * [Single-node & multi-node CLI options](experiments/using-experiments/single-node-and-multi-node-cli-options.md)
   * [Gradient Config File](experiments/using-experiments/gradient-config.yaml.md)
   * [Environment Variables](experiments/using-experiments/environment-variables.md)
+  * [Experiment datasets](experiments/using-experiments/experiment-datasets.md)
   * [Git Commit Tracking](experiments/using-experiments/git-commit-tracking.md)
   * [Experiment Metrics](experiments/using-experiments/experiment-metrics/README.md)
     * [System Metrics](experiments/using-experiments/experiment-metrics/system-metrics.md)

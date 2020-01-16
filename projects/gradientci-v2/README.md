@@ -2,9 +2,9 @@
 description: Set up continuous integration between your GitHub repository and Gradient
 ---
 
-# GradientCI V2
+# GradientCI
 
-![gradientci logo](../.gitbook/assets/gradientci%20%281%29.gif)
+![gradientci logo](../../.gitbook/assets/gradientci%20%281%29.gif)
 
 ## Set Up GradientCI
 
@@ -13,7 +13,9 @@ description: Set up continuous integration between your GitHub repository and Gr
 To create a Gradient Project with continuous integration powered by GradientCI and GitHub:
 
 1. Install the [GradientCI](https://github.com/apps/gradientci) GitHub app on your repository.
-\(GitHub Admin privilege is required.\)
+
+   \(GitHub Admin privilege is required.\)
+
 2. Navigate to the [Projects page](https://www.paperspace.com/console/projects).
 3. Click Create Project.
 4. Select GitHub Project.
@@ -26,18 +28,11 @@ To set up GradientCI, our continuous integration service, include a directory in
 
 ### Building Branches and Tags
 
-GradientCI supports building and sourcing project configuration from arbitrary branches or tags.
-By default we only build configuration sourced from your default branch \(typically `master`\).
-You can [change your repositories default branch from within Github](https://help.github.com/en/articles/setting-the-default-branch), if you only need the configuration from one branch.
-You can relax or tighten this rule by selecting "All" or "None" from the "Build Branches" dropdown in the project settings pane of the Gradient console.
-If you would like to build any tags or a subset of branches that are not the default branch, select "All" from this menu and provide filters in your `config.yaml`.
-To list the specific patterns of tags and branches to build, see [branch and tag triggers](gradientci-v2.md#branches-and-tags).
+GradientCI supports building and sourcing project configuration from arbitrary branches or tags. By default we only build configuration sourced from your default branch \(typically `master`\). You can [change your repositories default branch from within Github](https://help.github.com/en/articles/setting-the-default-branch), if you only need the configuration from one branch. You can relax or tighten this rule by selecting "All" or "None" from the "Build Branches" dropdown in the project settings pane of the Gradient console. If you would like to build any tags or a subset of branches that are not the default branch, select "All" from this menu and provide filters in your `config.yaml`. To list the specific patterns of tags and branches to build, see [branch and tag triggers](gradientci-v2.md#branches-and-tags).
 
-You may additionally disable the builds of pull requests, enabled by default.
-Or enable builds of pull requests that originate from forked repositories, disabled by default to prevent unauthorized use of Gradient resources.
-Each of these options will allow configuration to be sourced from the relevant Git branch.
+You may additionally disable the builds of pull requests, enabled by default. Or enable builds of pull requests that originate from forked repositories, disabled by default to prevent unauthorized use of Gradient resources. Each of these options will allow configuration to be sourced from the relevant Git branch.
 
-![Gradient console project settings pane](../.gitbook/assets/project-settings.png)
+![Gradient console project settings pane](../../.gitbook/assets/project-settings.png)
 
 #### Template
 
@@ -94,72 +89,60 @@ workflows:
 
 ## Workflows
 
-Your CI configuration is separated into individual workflows.
-Workflows are named units of work that are executed in parallel.
-A workflow is comprised of a [`triggers`](gradientci-v2.md#triggers) block and a series of [`steps`](gradientci-v2.md#steps) to execute.
+Your CI configuration is separated into individual workflows. Workflows are named units of work that are executed in parallel. A workflow is comprised of a [`triggers`](gradientci-v2.md#triggers) block and a series of [`steps`](gradientci-v2.md#steps) to execute.
 
 ### Steps
 
-Steps are a series of sequentially executed actions.
-These generally correspond to actions available in the Paperspace CLI/SDK.
-*Currently, only one step per workflow is supported.*
-For complex pipelines you may run a single node experiment that contains a python script with a series of Paperspace SDK calls to orchestrate your pipeline.
-The SDK Pipeline style offers more flexibility than can be described by the yaml pipeline configuration as you can describe complex logic using plain python code.
-SDK pipelines offer the latest SDK functionality as soon as it becomes available, often before it can be integrated into the yaml pipeline syntax.
-For an example see [SDK Pipeline.](gradentci-v2.md#examples)
+Steps are a series of sequentially executed actions. These generally correspond to actions available in the Paperspace CLI/SDK. _Currently, only one step per workflow is supported._ For complex pipelines you may run a single node experiment that contains a python script with a series of Paperspace SDK calls to orchestrate your pipeline. The SDK Pipeline style offers more flexibility than can be described by the yaml pipeline configuration as you can describe complex logic using plain python code. SDK pipelines offer the latest SDK functionality as soon as it becomes available, often before it can be integrated into the yaml pipeline syntax. For an example see [SDK Pipeline.](https://github.com/Paperspace/Docs/tree/dace77bbd70b824f1dfd4bf27fc24deef5218d16/projects/gradentci-v2.md#examples)
 
 #### Required Properties
 
 * `name`: a string identifier for the step, often used in reporting results.
-This name must be unique amongst the steps for a workflow.
+
+  This name must be unique amongst the steps for a workflow.
+
 * `command`: what type of step should be executed.
-These match the qualified names in the Paperspace SDK.
-Supported commands:
+
+  These match the qualified names in the Paperspace SDK.
+
+  Supported commands:
+
   * `experiment.run_single_node`
   * `experiment.run_multi_node`
   * `experiment.run_mpi_multi_node`
+
 * One of `params` or `paramsFile`
   * `paramsFile`: a path to file contained in your project repository containing the yaml arguments for the step.
-  These are the same as those generated by the CLI, see the experiments [config documentation](../experiments/gradient-config.yaml.md) for an example of one of these files and further documentation.
+
+    These are the same as those generated by the CLI, see the experiments [config documentation](https://github.com/Paperspace/Docs/tree/dace77bbd70b824f1dfd4bf27fc24deef5218d16/experiments/gradient-config.yaml.md) for an example of one of these files and further documentation.
+
   * `params` this is a object with the parameters for the relevant step.
-  These are the same as the contents of a `paramsFile` inlined into your `.ps_projects/config.yaml`.
+
+    These are the same as the contents of a `paramsFile` inlined into your `.ps_projects/config.yaml`.
 
 #### Optional Properties
 
 * `checks`: these configure status checks on your GitHub pull requests.
-See [Metrics Checks](gradientci-v2.md#metrics-checks) for the full schema.
+
+  See [Metrics Checks](gradientci-v2.md#metrics-checks) for the full schema.
 
 ### Triggers
 
 #### Branches and Tags
 
-By default GradientCI will only build the default branch and no tags.
-If you would like to build additional non-pull request branches or tags you must select "All" from the "Build Branches" project configuration dropdown.
-This will build all branches and no tags.
-Once that is complete you can filter additional branches in your `config.yaml` by providing a `triggers` section.
-You can place the keys `branches` or `tags` to apply filters to the default.
-Under each key you can provide `only` or `ignore` fields, but not both, containing a [POSIX compatible regex](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) or array of regex to match on.
-Branches or tags filtered by an `only` key must match one or more of the regex provided.
-Branches or tags filtered by an `ignore` key will be skipped if they match one or more of the regex provided.
+By default GradientCI will only build the default branch and no tags. If you would like to build additional non-pull request branches or tags you must select "All" from the "Build Branches" project configuration dropdown. This will build all branches and no tags. Once that is complete you can filter additional branches in your `config.yaml` by providing a `triggers` section. You can place the keys `branches` or `tags` to apply filters to the default. Under each key you can provide `only` or `ignore` fields, but not both, containing a [POSIX compatible regex](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) or array of regex to match on. Branches or tags filtered by an `only` key must match one or more of the regex provided. Branches or tags filtered by an `ignore` key will be skipped if they match one or more of the regex provided.
 
 ### Metrics Checks
 
-The GradientCI service can help you from degrading your model.
-When you run an experiment based on a code change, GradientCI can automatically check properties of the experiment and forward those results to GitHub.
-GitHub can use these statuses to prevent pull requests merges that degrade your model.
-GradientCI will automatically report whether the experiment ran without error or which checks failed if there was an error.
-You may configure additional checks for metrics that are generated by your experiment under the `checks` key in your `config.yaml`.
-Currently, we only support scalar metrics coming from TensorFlow generated summaries.
+The GradientCI service can help you from degrading your model. When you run an experiment based on a code change, GradientCI can automatically check properties of the experiment and forward those results to GitHub. GitHub can use these statuses to prevent pull requests merges that degrade your model. GradientCI will automatically report whether the experiment ran without error or which checks failed if there was an error. You may configure additional checks for metrics that are generated by your experiment under the `checks` key in your `config.yaml`. Currently, we only support scalar metrics coming from TensorFlow generated summaries.
 
 In addition to the status checks, GradientCI writes a detailed summary of the experiment to a comment on the pull request so you have your critical data at a glance while reviewing code.
 
-![GitHub pull request blocked by failing GradientCI metric checks.](../.gitbook/assets/pr-status.png)
+![GitHub pull request blocked by failing GradientCI metric checks.](../../.gitbook/assets/pr-status.png)
 
 #### GitHub Configuration
 
-For best results, especially on repositories with many contributors, we recommend configuring GitHub branch protections to prevent accidental merges of unintended pull requests.
-After your first build, statuses for the metrics will be reported back and you can make passing statuses required for the merge of your pull request.
-To do this follow [GitHub's documentation.](https://help.github.com/en/articles/configuring-protected-branches)
+For best results, especially on repositories with many contributors, we recommend configuring GitHub branch protections to prevent accidental merges of unintended pull requests. After your first build, statuses for the metrics will be reported back and you can make passing statuses required for the merge of your pull request. To do this follow [GitHub's documentation.](https://help.github.com/en/articles/configuring-protected-branches)
 
 #### Checks Schema
 
@@ -185,16 +168,23 @@ checks:
 #### `<identifier>`s:
 
 * `<identifiers>` are split into two parts: 1. the source of the metric and 2. the name of the metric, e.g. `tensorflow:loss`.
-Supported `<identifiers>` are:
+
+  Supported `<identifiers>` are:
+
   * `tensorflow`
   * `onnx`
   * `custom`
+
 * These `<identifiers>` are case-_sensitive_
 * `“defaults”`: reserved for defaults to set for the `<identifiers>`.
-Any of the above keys are valid within this block and will set the default behavior for all other `<identifier>` blocks.
-If `round` is set to `down` all other metrics will be evaluated using the round down behavior.
-If an `<identifier>` has a key specified underneath it it will override the value in the `defaults` block.
-For instance, `round: up` under `tensorflow:loss` will override the `round: down` behavior in the `defaults` block.
+
+  Any of the above keys are valid within this block and will set the default behavior for all other `<identifier>` blocks.
+
+  If `round` is set to `down` all other metrics will be evaluated using the round down behavior.
+
+  If an `<identifier>` has a key specified underneath it it will override the value in the `defaults` block.
+
+  For instance, `round: up` under `tensorflow:loss` will override the `round: down` behavior in the `defaults` block.
 
 #### `<range>`
 
@@ -232,12 +222,13 @@ Note these numbers are parsed as floats and relying on precise equality with the
 
 ## Job Environment
 
-For some `step`s in your job GradientCI will automatically set environment variables so you can determine the triggering condition.
-These variables are currently set for `experiment.*` steps only.
+For some `step`s in your job GradientCI will automatically set environment variables so you can determine the triggering condition. These variables are currently set for `experiment.*` steps only.
+
 * `PS_GRADIENT_CI_GIT_REF` the branch or tag that triggered the build
 * `PS_GRADIENT_CI_GIT_SHA` the git commit currently being built
 * `PS_GRADIENT_CI_GIT_REPO_URL` the repository that received the trigger.
-Note that builds from forks will appear to come from the *target* repository, not the fork.
+
+  Note that builds from forks will appear to come from the _target_ repository, not the fork.
 
 ## Examples
 
@@ -287,7 +278,7 @@ workflows:
           parameterServerCount: 1
 ```
 
-### Examples with (some) optional fields included
+### Examples with \(some\) optional fields included
 
 #### Single-node
 
@@ -374,17 +365,18 @@ Note this can only be done by an organization level administrator or on your per
 2. Click the "Settings" tab in the top row
 3. Select "Integration & services" from the left menu, you should be presented with a list that includes "GradientCI" that looks like
 
-   ![Integration &amp; services pane](../.gitbook/assets/settings-pane.png)
+   ![Integration &amp; services pane](../../.gitbook/assets/settings-pane.png)
 
 4. Select "Configure" next to "GradientCI", you will be prompted to enter your password.
-5. From the "GradientCI" settings menu, you can then either ![GradientCI Settings](../.gitbook/assets/gradient-ci-settings.png)
+5. From the "GradientCI" settings menu, you can then either ![GradientCI Settings](../../.gitbook/assets/gradient-ci-settings.png)
+
    a. Uninstall the application from all repositories on the organization or personal account by clicking the red "Uninstall" button
+
    b. Select the "Only select repositories" and choosing which repositories should have GradientCI from the dropdown, or unselecting them by clicking the "x" next to their name.
 
 ## Troubleshooting
 
 ### Project Setup Incomplete
 
-This error occurs when GradientCI is unable to find the attached Paperspace project for your GitHub repository.
-The Paperspace project may have been deleted or you may have installed the app only through GitHub's interface.
-Follow the [GradientCI project setup instructions](./managing-projects.md#create-a-gradient-ci-project) to ensure that your Paperspace project is properly configured.
+This error occurs when GradientCI is unable to find the attached Paperspace project for your GitHub repository. The Paperspace project may have been deleted or you may have installed the app only through GitHub's interface. Follow the [GradientCI project setup instructions](../managing-projects.md#create-a-gradient-ci-project) to ensure that your Paperspace project is properly configured.
+
