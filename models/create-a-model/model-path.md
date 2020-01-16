@@ -18,12 +18,6 @@ from gradient_sdk.utils import model_dir
 
 **Multi-node:** The default model path for multi-node experiments is `/storage/models/<experiment_id>/`
 
-{% hint style="info" %}
-In Gradient Enterprise environments, the default model path will be: `/storage/models/<experiment_id>`
-
-SaaS users should specify `--modelPath /artifacts` in order to be able to deploy that model via Gradient.
-{% endhint %}
-
 ## Model Parameters
 
 To store Models in the Models list, add the following Model-specific parameters to the Experiment command when running an Experiment.
@@ -46,7 +40,7 @@ One option is to set `--modelPath "/artifacts"` and keep the checkpoint files ar
 
 **Enabling Support for Models with GradientCI**
 
-You can also specify the model path and model type parameters when running experiments with GradientCI. See [GradientCI Models]() for more info.
+You can also specify the model path and model type parameters when running experiments with GradientCI. See [GradientCI Models](../../projects/gradientci-v2/#metrics-checks) for more info.
 
 ## Custom model metadata
 
