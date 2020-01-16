@@ -153,7 +153,7 @@ Open the Project that contains the Experiment:
 
 Then click on the Experiment to view information about it:
 
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](../../.gitbook/assets/image%20%2884%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -171,7 +171,7 @@ gradient experiments details
 {% tab title="Web UI" %}
 To cancel an Experiment, click the Cancel button below the state indicator:
 
-![](../../.gitbook/assets/image%20%2866%29.png)
+![](../../.gitbook/assets/image%20%2868%29.png)
 
 To Stop an Experiment, click the Stop button below the state indicator:
 
