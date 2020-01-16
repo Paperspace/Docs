@@ -22,7 +22,7 @@ The **CLI** \(command-line interface\) is the most popular tool for launching Ex
 
 The **SDK** let's you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
 
-{% page-ref page="../projects/gradientci.md" %}
+{% page-ref page="../projects/gradientci-v2.md" %}
 
 **GradientCI** enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
 
