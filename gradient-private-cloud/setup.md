@@ -10,6 +10,18 @@ During the deployment process, the Paperspace team will work closely with you to
 
 For public cloud installs such as AWS and Google Cloud, Paperspace will provide machine images that are fully prepped for running Gradient workloads. 
 
+#### Autoscaling Groups and node readiness
+
+Kubernetes will scale up worker nodes for Gradient experiments, model deployments, Jupyter notebooks, etc. as needed. This process does require some time, and this time can be minimized by settings in your cloud providers auto-scaling groups. For example, in AWS EC2 you could set the minimum number of nodes for all commonly-used instance types to a number larger than zero. 
+
+![](../.gitbook/assets/screen-shot-2020-01-21-at-3.10.49-pm.png)
+
+{% hint style="info" %}
+Setting auto-scaling groups with non-zero minimums will result in 24x7 nodes, and that will incur cloud expenses
+{% endhint %}
+
+The auto-scaling group configuration could be done through Terraform or another cloud management utility, or manually through the AWS EC2 console.
+
 #### Custom AWS S3 bucket for artifacts
 
 Gradient Enterprise customers can add one set of S3 credentials for their team to use a private S3 bucket for persistence of artifacts/models/etc. To add these credentials, select your team at the bottom left, which will take you to the “Team management” page. Find the S3 Credentials tab:
