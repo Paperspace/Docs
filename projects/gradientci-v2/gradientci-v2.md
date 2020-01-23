@@ -342,19 +342,19 @@ workflows:
           workingDirectory: "/home/playground"
           artifactDirectory: "/artifacts"
           container: tensorflow/tensorflow:1.13.1-gpu-py3
-        modelType: "Tensorflow"
-        modelPath: "/storage/models"
-      checks:
-        defaults:
-          precision: 3
-          round: up
-          only-prs: true
-        tensorflow:accuracy:
-          target: 0.7..
-          aggregation: mean
-        tensorflow:loss:
-          target: ..0.025
-          aggregation: max
+          modelType: "Tensorflow"
+          modelPath: "/storage/models"
+        checks:
+          defaults:
+            precision: 3
+            round: up
+            only-prs: true
+          tensorflow:accuracy:
+            target: 0.7..
+            aggregation: mean
+          tensorflow:loss:
+            target: ..0.025
+            aggregation: max
 ```
 
 ## Uninstalling GradientCI
