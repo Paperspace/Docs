@@ -8,7 +8,7 @@
 | :--- | :--- |
 | **Machine Type** | This is the type of instance to run your Experiment's on. Many Experiments benefit from a machine with a GPU, but some can run just using a CPU. |
 | **Container** | Experiments are run within a docker container. You can run a public or private container. Learn more [here](../containers-public-and-private.md).  |
-| **Workspace** | The workspace is the collection of code that is run. The options in the web UI are a Git repo \(eg [https://github.com/Paperspace/fast-style-transfer.git](https://github.com/Paperspace/fast-style-transfer.git)\) or _none_.  The CLI offers more advanced options such as specifying a local directory, private Git repos, S3 buckets, and more. |
+| **Workspace** | The workspace is the collection of code that is run. The only option in the web UI is a Git repo \(eg [https://github.com/Paperspace/fast-style-transfer.git](https://github.com/Paperspace/fast-style-transfer.git)\).  The CLI offers more advanced options such as specifying a local directory, private Git repos, S3 buckets, and more. |
 | **Command** | The command is the entry point to the container. This is the line of code that will kick off your experiment's job. It could be a bash script `./run.sh` or `python main.py` as a few examples.  |
 | **Ports** | You have the option to attach a public IP automatically. Supports opening multiple ports simultaneously, separated by `:` . Learn more about opening ports [here](ports.md).  |
 | **Custom Metrics** | Enter a list of custom metrics to use with Gradient's statd client, such as percent\_failure or percent\_success. |
@@ -43,9 +43,7 @@
     <tr>
       <td style="text-align:left"><code>workspace</code>
       </td>
-      <td style="text-align:left">Path to workspace directory. (Supports a path to a workspace archive,
-        git repository URL, s3 bucket, or &quot;none&quot;). If not specified at
-        all defaults &quot;.&quot; as local workspace</td>
+      <td style="text-align:left">Supports a path to a local directory, git repository, or s3 bucket.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>workspaceRef</code>
