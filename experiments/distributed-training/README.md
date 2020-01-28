@@ -12,8 +12,6 @@ Gradient supports distributed training via two orchestration options: gRPC and O
 
 gRPC is a modern, open source remote procedure call \(RPC\) framework that can run anywhere. It enables client and server applications to communicate transparently, and makes it easier to build connected systems. It is a generic point-to-point communication library and has no collective communication support. It works in a simple client/server style fashion and has been tightly integrated with [Tensorflow](https://www.tensorflow.org/) and Gradient.
 
-gRPC is widely adopted and can be used by both Pyt
-
 You can learn how to launch and execute distributed experiment using Gradient and gRPC with Tensorflow.  
 
 {% page-ref page="multi-node-training.md" %}
