@@ -1,4 +1,8 @@
-# Using TensorBoards
+---
+description: How to create a Tensorboard instance in Gradient
+---
+
+# Using Tensorboards in Gradient
 
 Gradient Enterprise customers are able to create TensorBoards, add experiments to them, and remove experiments from them. You can do this via the Web UI or the CLI.
 

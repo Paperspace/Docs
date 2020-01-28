@@ -1,8 +1,16 @@
-# TensorBoards via TensorFlow Scripting
+---
+description: Get started with TensorBoard
+---
 
-Taking advantage of TensorBoards from within a TensorFlow script requires just a few lines of code.
+# TensorBoards getting started with Tensorflow
 
-To create a TensorBoard, you need to output your TensorFlow operations into a file, called an event file \(or event log file\).
+Taking advantage of TensorBoards from within a TensorFlow code requires just a few lines of code.
+
+This quickstart will show how to quickly get started with TensorBoard. The remaining guides in this website provide more details on specific capabilities, many of which are not included here.
+
+[Here](./) you can learn how to launch and interact with Gradient Tensorboards. In this tutorial you will learn how to modify your code to output your TensorFlow operations into a file, called an event file \(or event log file\).
+
+[A great tutorial can also be found at the official Tensorflow website.](https://www.tensorflow.org/tensorboard/get_started)
 
 ## First steps with TensorBoards
 
@@ -231,9 +239,21 @@ with tf.Session() as sess:
 Done writing the summaries
 ```
 
+## Create Tensorboard instance to view your data
+
+
+
+{% tabs %}
+{% tab title="CLI" %}
+```text
+gradient tensorboards create --experiment <ID of the experiment>
+```
+{% endtab %}
+{% endtabs %}
+
+After a short while the instance should be up and running.
+
 Now, if you open your TensorBoard like before and switch to the **IMAGES** tab, you'll see images that have been output, like these:
 
 ![Fig. 9. generated images in TensorBoard](../../.gitbook/assets/3_9.png)
-
-_\*\*\*\*_
 

@@ -104,8 +104,8 @@
 ## TensorBoards
 
 * [Overview](tensorboards/about.md)
-* [Using TensorBoards](tensorboards/using-tensorboards/README.md)
-  * [TensorBoards via TensorFlow Scripting](tensorboards/using-tensorboards/getting-started-with-tensorboards.md)
+* [Using Tensorboards in Gradient](tensorboards/using-tensorboards/README.md)
+  * [TensorBoards getting started with Tensorflow](tensorboards/using-tensorboards/getting-started-with-tensorboards.md)
 
 ## Gradient SDK <a id="gradient-python-sdk"></a>
 
