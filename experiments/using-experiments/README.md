@@ -153,7 +153,7 @@ Open the Project that contains the Experiment:
 
 Then click on the Experiment to view information about it:
 
-![](../../.gitbook/assets/image%20%2884%29.png)
+![](../../.gitbook/assets/image%20%2885%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
