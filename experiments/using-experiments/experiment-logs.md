@@ -6,7 +6,7 @@ Log streaming is available in both the web UI and CLI.  It is also possible to s
 {% tab title="Web UI" %}
 Navigate to a Job run part of an Experiment to view its logs.  These logs are streamed in realtime while the Experiment runs.  There are a few options such as Search, View all Logs, and Download Logs available on the page.  
 
-![](../../.gitbook/assets/image%20%2827%29.png)
+![](../../.gitbook/assets/image%20%2826%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}

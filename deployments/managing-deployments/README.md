@@ -96,7 +96,7 @@ Finally, now that your Deployment is configured, click **Create Deployment** to 
 {% endtab %}
 
 {% tab title="CLI" %}
-To create a new Deployment, you must first [create a Model](../../models/create-a-model/). With a Model available, use the `create` subcommand and specify all of the following parameters you need to deploy your model.  Here's a sample command to create the same Deployment as in the [UI example]() would be:
+To create a new Deployment, you must first [create a Model](../../models/create-a-model/). With a Model available, use the `create` subcommand and specify all of the following parameters you need to deploy your model.  Here's a sample command to create the same Deployment as you could do from the UI:
 
 ```bash
 gradient deployments create \
@@ -108,7 +108,52 @@ gradient deployments create \
     --instanceCount 2
 ```
 
-To obtain your Model ID, you can use the command `gradient models list` and copy the target Model ID from your available Models.
+To obtain your Model ID, you can use the command `gradient models list` and copy the target Model ID from your available Models.  
+  
+The full set of creation options for deployments are as follows. This enables you to use of the preset deployment types for Tensorflow Serving, ONNX Inference Runtime & TensorRT. 
+
+```text
+Usage: gradient deployments create [OPTIONS]
+
+  Create new deployment
+
+Options:
+  --deploymentType [TFServing|ONNX|Custom|Flask|TensorRT]
+                                  Model deployment type  [required]
+  --modelId TEXT                  ID of a trained model  [required]
+  --name TEXT                     Human-friendly name for new model deployment
+                                  [required]
+  --machineType TEXT              Type of machine for new deployment
+                                  [required]
+  --imageUrl TEXT                 Docker image for model serving
+                                  [required]
+  --instanceCount INTEGER         Number of machine instances
+                                  [required]
+  --containerModelPath TEXT       Container model path (defaults to /models/) 
+  --imageUsername TEXT            Username used to access docker image
+  --imagePassword TEXT            Password used to access docker image
+  --imageServer TEXT              Docker image server
+  --containerUrlPath TEXT         Container URL path
+  --endpointUrlPath TEXT          Endpoint URL path
+  --method TEXT                   Prediction Method
+  --dockerArgs JSON_STRING        JSON-style list of docker args
+  --env JSON_STRING               JSON-style environmental variables map
+  --apiType TEXT                  Type of API
+  --ports TEXT                    Ports
+  --clusterId TEXT                Cluster ID
+  --authUsername TEXT             Username
+  --authPassword TEXT             Password
+  --auth                          Generate username and password. Mutually
+                                  exclusive with --authUsername and
+                                  --authPassword
+  --vpc
+  --apiKey TEXT                   API key to use this time only
+  --optionsFile PATH              Path to YAML file with predefined options
+  --createOptionsFile PATH        Generate template options file
+  --help                          Show this message and exit. 
+```
+
+Sometimes, a user will want to do inference with a custom model using a custom container. An example of this is building a Flask or Streamlit container which will use the model trained on gradient to do inference but also expose a custom dashboard for the team to use to consume the predictions for making business decisions. This is accomplished by specifying the modelType to be "Custom" & passing in the information for the custom container. 
 {% endtab %}
 {% endtabs %}
 

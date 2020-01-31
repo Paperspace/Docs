@@ -2,7 +2,7 @@
 
 ## Projects
 
-A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Models, and Deployments. Projects can be synced with GitHub with [GradientCI]().
+A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Models, and Deployments. Projects can be synced with GitHub with [GradientCI](../projects/gradientci.md).
 
 ## Notebooks
 
