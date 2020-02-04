@@ -41,17 +41,31 @@ experimentEnv:
 machineType: P4000
 modelPath: /artifacts
 modelType: Tensorflow
-name: mnist-cli-config-yaml
-projectId: pr64qlxl0
+name: experiment name
+projectId: <project id> 
 registryPassword: null
 registryUrl: null
 registryUsername: null
 tensorboard: false
 tensorboard_set: null
 workspace: 'https://github.com/Paperspace/mnist-sample.git'
-workspacePassword: null
 workspaceRef: null
-workspaceUsername: null
+datasetUri:
+  - "s3://some.dataset/uri"
+  - "s3://some.other.dataset/uri"
+datasetName:
+  - "some dataset name"
+  - null
+datasetAwsAccessKeyId:
+  - none
+  - some_other_key_id
+datasetAwsSecretAccessKey:
+  -
+  - some_other_secret
+datasetVersionId:
+datasetEtag:
+  - "some etag"
+  - "some other etag"
 ```
 {% endcode %}
 

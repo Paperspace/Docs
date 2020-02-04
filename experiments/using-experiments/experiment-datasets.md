@@ -34,27 +34,6 @@ $ gradient experiments run singlenode
 --datasetUri s3://my-bucket-name/fashion-mnist.zip 
 
 ```
-
-When launching an experiment using the config.yaml, pass in the multiple datasets using the following structure.
-
-```text
-datasetUri:
-  - "s3://some.dataset/uri"
-  - "s3://some.other.dataset/uri"
-datasetName:
-  - "some dataset name"
-  - null
-datasetAwsAccessKeyId:
-  - none
-  - some_other_key_id
-datasetAwsSecretAccessKey:
-  -
-  - some_other_secret
-datasetVersionId:
-datasetEtag:
-  - "some etag"
-  - "some other etag"
-```
 {% endtab %}
 
 {% tab title="SDK" %}
