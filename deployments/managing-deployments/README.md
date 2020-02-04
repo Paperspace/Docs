@@ -235,7 +235,7 @@ gradient deployments stop --id <your-deployment-id>
 You can edit a Deployment's attributes, such as the underlying model, the Deployment's name, instance count, etc.
 
 {% hint style="warning" %}
-Changes to a running Deployment other than **name** are not possible when the Deployment is running.
+Changes to a running Deployment other than **name** will not take effect until the Deployment is restarted.
 {% endhint %}
 
 To edit a Deployment, navigate to the **Deployments** page, find the Deployment you want to edit, and click **Edit** in the Actions column:
@@ -254,6 +254,12 @@ When you are done and want to save your changes, click **Edit Deployment** at th
 {% endtab %}
 
 {% tab title="CLI" %}
+You can edit a Deployment's attributes, such as the underlying model, the Deployment's name, instance count, etc.
+
+{% hint style="warning" %}
+Changes to a running Deployment other than **name** will not take effect until the Deployment is restarted.
+{% endhint %}
+
 To update a Deployment, use the `update` subcommand:
 
 ```bash
