@@ -24,7 +24,7 @@ You as the developer must create appropriate names for your metrics. Metrics in 
 
 In order for our platform to plot your custom metrics you must inform Gradient when create the job. The Job Builder form now includes a section titled `Custom Metrics`
 
-![](../../../.gitbook/assets/image%20%281%29.png)
+![](../../../.gitbook/assets/image%20%282%29.png)
 
 Once your metrics are defined you may submit the job.
 
