@@ -28,5 +28,5 @@ Gradient Enterprise customers can add one set of S3 credentials for their team t
 
 ![](../.gitbook/assets/s3-cred.png)
 
-Here you can set S3 credentials. Re-submitting will override your current credentials. These credentials will be used for storing artifacts, models, etc. in the specified S3 bucket.
+Here you can set S3 credentials. Re-submitting will override your current credentials. These credentials will be used for storing artifacts, models, etc. in the specified S3 bucket. Additional steps are required to fully set this up – please work with your Paperspace account manager to implement.
 
