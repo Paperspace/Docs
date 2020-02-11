@@ -16,7 +16,7 @@ To add, create, or remove tags on any taggable entity, click the **Tag** button.
 {% endtab %}
 
 {% tab title="CLI" %}
-
+Entity tags are coming soon to the CLI!
 {% endtab %}
 {% endtabs %}
 
@@ -36,7 +36,7 @@ Then, type or select tags to filter that entity on. This will result in all enti
 {% endtab %}
 
 {% tab title="CLI" %}
-
+Entity tags are coming soon to the CLI!
 {% endtab %}
 {% endtabs %}
 

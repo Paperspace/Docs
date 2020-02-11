@@ -18,7 +18,5 @@ Team admins and entity creators can add tags to entities, and all team members c
 
 
 
-_Read on to learn how to add and filter on tags:_
-
-{% page-ref page="using-tags.md" %}
+_Read on to learn how to add and filter on tags._
 
