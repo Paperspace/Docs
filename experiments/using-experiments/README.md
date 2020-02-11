@@ -153,11 +153,11 @@ The gradient SDK enables programmatic automation of machine learning pipelines i
 {% tab title="Web UI" %}
 Open the Project that contains the Experiment:  
 
-![](../../.gitbook/assets/image%20%2858%29.png)
+![](../../.gitbook/assets/image%20%2859%29.png)
 
 Then click on the Experiment to view information about it:
 
-![](../../.gitbook/assets/image%20%2886%29.png)
+![](../../.gitbook/assets/image%20%2887%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -175,7 +175,7 @@ gradient experiments details
 {% tab title="Web UI" %}
 To cancel an Experiment, click the Cancel button below the state indicator:
 
-![](../../.gitbook/assets/image%20%2869%29.png)
+![](../../.gitbook/assets/image%20%2870%29.png)
 
 To Stop an Experiment, click the Stop button below the state indicator:
 
@@ -197,7 +197,7 @@ gradient experiments stop
 {% tab title="Web UI" %}
 To Delete an Experiment, click the Stop button below the state indicator:
 
-![](../../.gitbook/assets/image%20%2840%29.png)
+![](../../.gitbook/assets/image%20%2841%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}

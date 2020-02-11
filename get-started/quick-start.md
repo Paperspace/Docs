@@ -21,7 +21,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 ## Submit an Experiment
 

@@ -164,3 +164,8 @@
 * [Product release notes](https://updates.paperspace.com/)
 * [CLI/SDK Release notes](https://github.com/Paperspace/gradient-cli/releases)
 
+## Tags
+
+* [Overview](tags/overview.md)
+* [Using Tags](tags/using-tags.md)
+

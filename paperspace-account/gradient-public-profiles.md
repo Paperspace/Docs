@@ -23,7 +23,7 @@ There, click `Profile` in the dropdown menu. This will take you to your current 
 
 Click `Edit Profile` to set your user or team handle, public profile description, and more.
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../.gitbook/assets/image%20%2826%29.png)
 
 Your user/team handle follows a GitHub-style convention and will be accessible at **https://www.paperspace.com/{your\_handle}**
 
@@ -31,7 +31,7 @@ Your user/team handle follows a GitHub-style convention and will be accessible a
 
 [Public notebooks](../notebooks/public-notebooks.md) are a new feature in Gradient.  They allow you to run a [Jupyter notebook](https://jupyter.org/) and easily share it with others. A Gradient Notebook is actually an entire self-contained container with all libraries, dependencies, and files contained within it. This means that you can easily create complex ML applications without worrying about having others run install scripts, run into dependency management issues, and more.
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2825%29.png)
 
 Once a notebook is made `Public` it will show up under your public profile for others to view and fork into their own account. 
 
