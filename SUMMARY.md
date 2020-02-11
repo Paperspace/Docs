@@ -154,6 +154,11 @@
   * [Storage](gradient-private-cloud/gradient-node/storage.md)
   * [Gradient AMI](gradient-private-cloud/gradient-node/gradient-ami.md)
 
+## Tags
+
+* [Overview](tags/overview.md)
+* [Using Tags](tags/using-tags.md)
+
 ## Paperspace Account
 
 * [Overview](paperspace-account/overview.md)
@@ -163,9 +168,4 @@
 
 * [Product release notes](https://updates.paperspace.com/)
 * [CLI/SDK Release notes](https://github.com/Paperspace/gradient-cli/releases)
-
-## Tags
-
-* [Overview](tags/overview.md)
-* [Using Tags](tags/using-tags.md)
 
