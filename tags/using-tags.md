@@ -4,7 +4,7 @@
 
 ### Adding Tags to Entities
 
-Team admins can add new and existing tags to any of their team's entities. Team members can add new and existing tags to entities that they created. Any new tag that is added will become available for use across all of a team's entities.
+Team admins can add new and existing tags to any of their team's entities. Team members can add new and existing tags to entities that they created. Any new tag will become available for use across all of a team's entities.
 
 {% tabs %}
 {% tab title="Web UI" %}
@@ -33,6 +33,8 @@ To find entities with a specific tag, first click the **Filter by tags** dropdow
 Type or select tags to filter the entity. This will result in all entities that match the selected tags.
 
 ![Project results that match the tag in question](../.gitbook/assets/screen-shot-2020-02-10-at-7.25.47-pm%20%281%29.png)
+
+You can also add tags to filter the current entity list by clicking on any tag on any entity.
 {% endtab %}
 
 {% tab title="CLI" %}
