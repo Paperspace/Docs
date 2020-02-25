@@ -16,11 +16,23 @@ To add, create, or remove a tag on any taggable entity, click the **Tag** button
 {% endtab %}
 
 {% tab title="CLI" %}
-Entity tags are coming soon to the CLI!
+The Gradient CLI enables you to add tags manually for experiments, projects, deployments and notebooks.
+
+To add a tag to a given entity all you need to do is:
+
+`gradient <entity> tags add <entity id> --tags "tag1, tag2"`
+
+For example to add multiple tag to deployments:
+
+```text
+gradient deployments tags add <deployment id> --tags "tag1,tag2"
+```
 {% endtab %}
 {% endtabs %}
 
-
+{% hint style="info" %}
+Note that you can use the `--help` option at any time to reveal information in your terminal about the current command you wish to use. Alternately, if you simply try to run a command, the CLI will prompt you for additional subcommands that you may be intending to use, as well as required options that are missing from your command.
+{% endhint %}
 
 ### Filtering Entities by Tag
 
@@ -38,7 +50,13 @@ You can also add tags to filter the current entity list by clicking on any tag o
 {% endtab %}
 
 {% tab title="CLI" %}
-Entity tags are coming soon to the CLI!
+To filter for example experiments by tags: 
+
+`gradient experiments list [OPTIONS] --tag 'TAG'`
+
+You can use --tags multiple times:
+
+`gradient experiments list [OPTIONS] --tag 'TAG1' --tag 'TAG2'`
 {% endtab %}
 {% endtabs %}
 
