@@ -297,7 +297,54 @@ Options:
   --optionsFile PATH              Path to YAML file with predefined options
   --createOptionsFile PATH        Generate template options file
   --help                          Show this message and exit.
+
 ```
 {% endtab %}
 {% endtabs %}
+
+## Secure Deployment with Basic HTTPS authentication
+
+The client sends the user name and password as unencrypted base64 encoded text.  
+
+Most web browsers will display a login dialog when this response is received, allowing the user to enter a username and password. 
+
+{% tabs %}
+{% tab title="GUI" %}
+![](../../.gitbook/assets/screenshot-2020-02-25-at-17.34.11.png)
+
+To add HTTP authentication to deployment in GUI - at the bottom of the creation page you have to check _"Enable Basic Authentication"_
+{% endtab %}
+
+{% tab title="CLI" %}
+To secure a deployment with HTTP authentication you have to pass 
+
+```text
+--authUsername 'testuser' 
+--authPassword 'test' 
+```
+
+Example command:
+
+```text
+gradient deployments create 
+--deploymentType TFServing 
+--name "authtest" 
+--modelId <model id> 
+--authUsername 'testuser' 
+--authPassword 'test' 
+--machineType c5.xlarge 
+--clusterId clu7jqg9j 
+--imageUrl 'tensorflow/serving:latest' 
+--instanceCount 1
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+
+
+
 
