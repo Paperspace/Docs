@@ -252,6 +252,21 @@ A request in [columnar format](https://www.tensorflow.org/tfx/serving/api_rest#s
 
 If the output of the model contains only one named tensor, we omit the name and have the `outputs` key map to a list of scalar or list values. If the model outputs multiple named tensors, we output an object instead. Each key of this object corresponds to a named output tensor. The format is similar to the request in column format mentioned above.
 
+## Authentication
+
+**Basic Authentication**
+
+With this method, the sender places a username:password into the request header. The username and password are encoded with Base64, which is an encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission.
+
+This method does not require cookies, session IDs, login pages, and other such specialty solutions, and because it uses the HTTP header itself, there’s no need to handshakes or other complex response systems.
+
+If the deployments endpoint is secured by HTTPS Basic Authentication you need to pass a header with username:password encoded with Base64.
+
+Here’s an example of a Basic Auth in a request header:  
+`Authorization: Basic bG9sOnNlY3VyZQ==`
+
+
+
 ### Example Python REST API Client
 
 Our [mnist-sample repository](https://github.com/Paperspace/mnist-sample) has an example of a REST client that serves as a quick showcase of using a prediction endpoint, reproduced below:
