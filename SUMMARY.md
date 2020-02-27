@@ -141,6 +141,11 @@
 * [Instance Tiers](instances/instance-tiers.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
 
+## Tags
+
+* [Overview](tags/overview.md)
+* [Using Tags](tags/using-tags.md)
+
 ## Gradient Private Cloud
 
 * [Overview](gradient-private-cloud/about.md)
@@ -153,11 +158,6 @@
   * [Node Attributes](gradient-private-cloud/gradient-node/job-scheduling-and-node-attributes.md)
   * [Storage](gradient-private-cloud/gradient-node/storage.md)
   * [Gradient AMI](gradient-private-cloud/gradient-node/gradient-ami.md)
-
-## Tags
-
-* [Overview](tags/overview.md)
-* [Using Tags](tags/using-tags.md)
 
 ## Paperspace Account
 
