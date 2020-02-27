@@ -256,16 +256,19 @@ If the output of the model contains only one named tensor, we omit the name and 
 
 **Basic Authentication**
 
-With this method, the sender places a username:password into the request header. The username and password are encoded with Base64, which is an encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission.
+You can secure your deployment with basic authentication, i.e. a username and password. You can add basic authentication to any deployment when you create or update it, via the Web UI or the CLI.
 
-This method does not require cookies, session IDs, login pages, and other such specialty solutions, and because it uses the HTTP header itself, there’s no need to handshakes or other complex response systems.
+To do so via the CLI, simply append the `authUsername` and `authPassword` parameters, e.g. `--authUsername <username> --authPassword <password>`  to your `gradient deployments create ...` or `gradient deployments update ...` command.
 
-If the deployments endpoint is secured by HTTPS Basic Authentication you need to pass a header with username:password encoded with Base64.
+Then, to authenticate against a secured deployment's API, the request must contain the following header: `Authorization: Basic <base64-encoded-username:password>` , where you supply the Base64-encoded version of the string `<username>:<password>` . Base64 is an encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission.
 
-Here’s an example of a Basic Auth in a request header:  
-`Authorization: Basic bG9sOnNlY3VyZQ==`
+The Base64 encoding method does not require cookies, session IDs, login pages, or other special solutions; because it uses the HTTP request header itself, there’s no need for handshakes or other complex response systems.
 
+For example, if your `username:password` is the string literal `pineapple:fanatic`, then you would supply the request header as follows:
 
+```text
+Authorization: Basic cGluZWFwcGxlOmZhbmF0aWM=
+```
 
 ### Example Python REST API Client
 
