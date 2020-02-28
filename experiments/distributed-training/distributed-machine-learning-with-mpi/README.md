@@ -1,7 +1,7 @@
 # Distributed Machine Learning with MPI
 
 {% hint style="warning" %}
-This feature is currently only available to our Gradient Enterprise Customers. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
+This feature is currently only available to our Gradient Private Cloud Customers. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
 {% endhint %}
 
 MPI \(Message Passing Interface\) is the _de facto_ standard distributed communications framework for scientific and commercial parallel distributed computing. 
@@ -20,8 +20,7 @@ $ gradient experiments create multinode \
 --masterCommand "mpirun --allow-run-as-root -np 1 --hostfile /generated/hostfile  -bind-to none -map-by slot  -x NCCL_DEBUG=INFO -mca pml ob1 -mca btl ^openib python examples/keras_mnist.py"  \
 --masterCount 1 \
 --workspace https://github.com/horovod/horovod.git \
---apiKey XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \
---vpc
+--apiKey XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 ## How does MPI work?

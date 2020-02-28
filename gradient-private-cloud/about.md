@@ -1,9 +1,9 @@
 # Overview
 
-With [_Gradient Private Cloud_](https://gradient.paperspace.com/clusters), you can transform raw infrastructure into a complete Machine Learning platform.  Install Gradient on the infrastructure of your choice to schedule Gradient resources within your cloud environment or on-premise hardware.  
+With [_Gradient Enterprise_](https://gradient.paperspace.com/clusters), you can transform raw infrastructure into a complete Machine Learning platform on your own private cloud cluster\(s\). Install Gradient on the infrastructure of your choice to schedule Gradient resources within your cloud environment or on-premise hardware.
 
 {% hint style="success" %}
-Request access to _Gradient Private Cloud_ here: [https://info.paperspace.com/contact-sales](https://info.paperspace.com/contact-sales)
+Request access to _Gradient Enterprise_ here: [https://info.paperspace.com/contact-sales](https://info.paperspace.com/contact-sales)
 {% endhint %}
 
 #### Key platform capabilities include:

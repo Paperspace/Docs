@@ -1,10 +1,10 @@
 # Setup
 
 {% hint style="info" %}
-Please contact your Account Manager or [contact sales](https://info.paperspace.com/contact-sales) for setting up Gradient Private Cloud.
+Please contact your Account Manager or [contact sales](https://info.paperspace.com/contact-sales) for setting up Gradient Enterprise for your own private cloud cluster.
 {% endhint %}
 
-Gradient Private Cloud is a Kubernetes native application that can be installed in an existing Kubernetes cluster \(in the public cloud or on-premise\) or Kubernetes can be installed during the Gradient Private Cloud deployment process.  
+Gradient Enterprise is a Kubernetes native application that can be installed in an existing Kubernetes cluster \(in the public cloud, your private cloud, or on-premise\), or Kubernetes can be installed during the Gradient Enterprise deployment process, giving you a dedicated Machine Learning platform on your own private cloud cluster\(s\).
 
 During the deployment process, the Paperspace team will work closely with you to implement a private processing site via Kubernetes. The process will include specifying the instance types that will be available in your cluster, providing the domain name where your notebooks and other Gradient features will be hosted, and setting up your Paperspace team membership and permissions. 
 

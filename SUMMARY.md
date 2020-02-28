@@ -146,7 +146,7 @@
 * [Overview](tags/overview.md)
 * [Using Tags](tags/using-tags.md)
 
-## Gradient Private Cloud
+## Gradient Enterprise <a id="gradient-private-cloud"></a>
 
 * [Overview](gradient-private-cloud/about.md)
 * [Setup](gradient-private-cloud/setup.md)

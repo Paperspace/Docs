@@ -146,7 +146,6 @@ Options:
   --auth                          Generate username and password. Mutually
                                   exclusive with --authUsername and
                                   --authPassword
-  --vpc
   --apiKey TEXT                   API key to use this time only
   --optionsFile PATH              Path to YAML file with predefined options
   --createOptionsFile PATH        Generate template options file
