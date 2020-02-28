@@ -20,6 +20,12 @@
   --modelPath TEXT             Model path
 ```
 
+{% hint style="info" %}
+`workspaceArchive` and `workspaceUrl` are deprecated as of the 0.6.0 release version of the CLI. You can just use workspace going forward!
+
+For `workspace`, valid schemes for values specifying a remote URL are: `https`, `git+https`, and `s3`, or you can specify `"none"`. This means that, for example, git@github is _not_ a valid scheme for a workspace.
+{% endhint %}
+
 ### Options specific to single-node experiments
 
 ```text
