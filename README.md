@@ -1,6 +1,6 @@
 # About Paperspace Gradient
 
-Welcome to Gradient! Get familiar with the Gradient CLI and Web UI interface.
+Welcome to Gradient! Get familiar with the Gradient CLI and Web UI.
 
 {% hint style="info" %}
 This is the documentation for the [Gradient](https://paperspace.com/gradient) platform. If you are looking for general information on Paperspace or to contact Support, visit our [Help Center](https://support.paperspace.com).
