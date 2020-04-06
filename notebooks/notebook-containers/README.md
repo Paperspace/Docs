@@ -14,6 +14,7 @@ When you launch a Notebook, it runs inside a container preloaded with the notebo
 | _**NVIDIA RAPIDS**_ | NVIDIA's open source libraries to execute end-to-end data science and analytics pipelines. v0.8. | `cuda10.0-devel-ubuntu18.04` |  [NVIDIA](https://hub.docker.com/r/rapidsai/rapidsai/tags) |
 | _**PyTorch**_ | Latest PyTorch release \(1.2\) with GPU support. Python 36. | `paperspace/dl-containers:pytorch-py36-cu100-jupyter` | [DockerHub](https://hub.docker.com/r/pytorch/pytorch) |
 | _**TensorFlow**_ | Latest stable release \(1.14.0\) with GPU support. Python 36. | `paperspace/dl-containers:tensorflow1140-py36-cu100-cdnn7-jupyter` | [DockerHub](https://hub.docker.com/r/tensorflow/tensorflow) |
+| _**Hugging Face Transformers**_ | A state-of-the-art NLP library from Hugging Face | `paperspace/transformers-gpu:latest` | [DockerHub](https://hub.docker.com/r/paperspace/transformers-gpu) |
 
 ### Other Containers
 
