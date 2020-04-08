@@ -141,10 +141,6 @@ Finally, the command specifies the workspace to pull the Python script from as a
 
 For more information about this sample experiment see the README in the mnist-sample GitHub repo: [https://github.com/Paperspace/mnist-sample](https://github.com/Paperspace/mnist-sample). \(Note: the code for this experiment can be run in both singlenode and multinode training modes.\)
 {% endtab %}
-
-{% tab title="SDK" %}
-The gradient SDK enables programmatic automation of machine learning pipelines in a  
-{% endtab %}
 {% endtabs %}
 
 ## Viewing an Experiment
