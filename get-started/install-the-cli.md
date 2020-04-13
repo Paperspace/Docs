@@ -13,39 +13,7 @@ The Gradient CLI is available on [pypi](https://pypi.org/project/paperspace/) an
 The CLI requires **Python 3.4+ \(**or **Python 2.7\)**. Be sure to use a compatible version of **pip** \(or **pip3**\) depending on your Python version.
 
 {% hint style="info" %}
-**Pro Tip!** We highly recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**.
-
-First, install **virtualenv**:
-
-```bash
-pip install virtualenv
-```
-
-**Python 3.4+**  
-Create new virtual environment:
-
-```bash
-python3 -m virtualenv <virtual_env_dir_path>
-```
-
-Activate virtual environment:
-
-```bash
-source <virtual_env_dir_path>/bin/activate
-```
-
-**Python 2.7 \(note that Python 2.7 will be deprecated in 2020\)**  
-Create new virtual environment:
-
-```bash
-virtualenv <virtual_env_dir_path>
-```
-
-Activate virtual environment:
-
-```
-source <virtual_env_dir_path>/bin/activate
-```
+**Pro Tip!** We highly recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**. [See below](install-the-cli.md#using-a-virtual-environment) for more instructions.
 {% endhint %}
 
 ## Install the CLI
@@ -102,5 +70,38 @@ and then add `. ~/paperspace_complete.sh` to your `.bashrc`, `.zshrc` or `activa
 
 More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/)
 
+## Using a virtual environment
 
+First, install virtualenv:
+
+```bash
+pip install virtualenv
+```
+
+Python 3.4+
+
+Create new virtual environment:
+
+```bash
+python3 -m virtualenv <virtual_env_dir_path>
+```
+
+Activate virtual environment:
+
+```bash
+source <virtual_env_dir_path>/bin/activate
+```
+
+Python 2.7 \(note that Python 2.7 will be deprecated in 2020\)  
+Create new virtual environment:
+
+```bash
+virtualenv <virtual_env_dir_path>
+```
+
+Activate virtual environment:
+
+```bash
+source <virtual_env_dir_path>/bin/activate 
+```
 
