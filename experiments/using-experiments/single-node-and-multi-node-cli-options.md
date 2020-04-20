@@ -10,7 +10,6 @@
   --workspaceUrl TEXT          Project git repository url
   --workspaceUsername          Github username for private repo
   --workspacePassword          Github password for private repo
-  --workspacePassword wd3gG9WyReTWbMpmkKTFJ \
   --workingDirectory TEXT      Working directory for the experiment
   --artifactDirectory TEXT     Artifacts directory
   --clusterId TEXT             Cluster ID
@@ -24,6 +23,8 @@
 `workspaceArchive` and `workspaceUrl` are deprecated as of the 0.6.0 release version of the CLI. You can just use workspace going forward!
 
 For `workspace`, valid schemes for values specifying a remote URL are: `https`, `git+https`, and `s3`, or you can specify `"none"`. This means that, for example, git@github is _not_ a valid scheme for a workspace.
+
+For workspacePassword make sure create an Oauth access token on github
 {% endhint %}
 
 ### Options specific to single-node experiments
