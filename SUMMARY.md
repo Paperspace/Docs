@@ -163,6 +163,7 @@
 
 * [Overview](paperspace-account/overview.md)
 * [Public Profiles](paperspace-account/gradient-public-profiles.md)
+* [Hotkeys](paperspace-account/hotkeys.md)
 
 ## Release Notes
 
