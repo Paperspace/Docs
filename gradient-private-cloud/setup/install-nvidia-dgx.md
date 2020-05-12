@@ -18,10 +18,9 @@ For the NVIDIA DGX-1 hosts:
 * Ubuntu 18.04
 * NFS server available to all nodes
 * Docker installed on all hosts \(or use `"setup_docker = true"` in the main.tf file to have Docker installed by Terraform\)
-* Set default docker runtime to nvidia in /etc/docker/daemon.json \(or just set `"setup_nvidia = true"` in the main.tf file, below\) 
+* Set default docker runtime to nvidia in /etc/docker/daemon.json \(or just set `"setup_nvidia = true"` in the main.tf file, below\): 
 
 ```text
-The following is an example of how the added line appears in the JSON file. Do not remove any pre-existing content when making this change.
 {
     "default-runtime": "nvidia",
     "runtimes": {
@@ -32,6 +31,8 @@ The following is an example of how the added line appears in the JSON file. Do n
     }
 }
 ```
+
+The above is an example of how the added line appears in the JSON file. Do not remove any pre-existing content when making this change.
 
 * Ensure your SSH user has access to the docker group in /etc/group:
 
