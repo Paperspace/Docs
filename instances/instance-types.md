@@ -1,7 +1,7 @@
 # Instance Types
 
 {% hint style="info" %}
- [Gradient Enterprise](../gradient-private-cloud/about.md) customers can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.  The following list is specific to our hosted instances.  
+Customer using the [Gradient Installer](../gradient-private-cloud/about.md) version can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.  The following list is specific to our hosted instances.  
 {% endhint %}
 
 ## CPU Instances

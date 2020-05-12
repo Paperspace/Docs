@@ -42,7 +42,7 @@ Gradient provides the ability to mount S3 compatible object storage buckets to a
 
 ## Models
 
-Paperspace experiments can generate machine learning models, which can be interpreted and stored in the [Gradient Model Repository](../models/about.md).  
+You can either upload a model or generate models from experiments which can be interpreted and stored in the [Gradient Model Repository](../models/about.md).  
 
 ## Deployments \(inference/model serving\)
 

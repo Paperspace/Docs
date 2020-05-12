@@ -38,7 +38,6 @@
 
 ## Experiments
 
-* [Diff Viewer](experiments/diff-viewer.md)
 * [Overview](experiments/about.md)
 * [Using Experiments](experiments/using-experiments/README.md)
   * [Experiment options](experiments/using-experiments/experiment-options.md)
@@ -53,13 +52,14 @@
   * [Experiment Logs](experiments/using-experiments/experiment-logs.md)
   * [Experiment Ports](experiments/using-experiments/ports.md)
   * [GradientCI Experiments](experiments/using-experiments/gradientci-experiments.md)
+  * [Diff Viewer](experiments/using-experiments/diff-viewer.md)
 * [Distributed Training](experiments/distributed-training/README.md)
   * [Distributed Machine Learning with Tensorflow](experiments/distributed-training/multi-node-training.md)
   * [Distributed Machine Learning with MPI](experiments/distributed-training/distributed-machine-learning-with-mpi/README.md)
     * [Distributed Training using Horovod](experiments/distributed-training/distributed-machine-learning-with-mpi/distributed-training-using-horovod.md)
     * [Distributed Training Using ChainerMN](experiments/distributed-training/distributed-machine-learning-with-mpi/distributed-training-using-chainermn.md)
 * [Hyperparameter Tuning](experiments/hyperparameters.md)
-* [Containers: Public & Private](experiments/containers-public-and-private.md)
+* [Containers](experiments/containers-public-and-private.md)
 
 ## Jobs
 

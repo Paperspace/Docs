@@ -5,13 +5,13 @@
 To begin using Gradient, follow these preliminary steps:
 
 1. [Create a Paperspace account ](https://www.paperspace.com/account/signup)
-2. Create a team if higher tiers of service and collaboration features are desired
+2. [Create a team if higher tiers of service and collaboration features are desired](https://support.paperspace.com/hc/en-us/articles/360010359213-Creating-and-Managing-Paperspace-Teams)
 3. [Install the Gradient CLI ](install-the-cli.md#installation)
 4. [Connecting your account](install-the-cli.md#connecting-your-account)
 
-Now you can create Notebooks, Jobs, Projects, Experiments, Deployments, and more! 
+Now you can create Notebooks, Jobs, Projects, Experiments, Models, Deployments, and more! 
 
-Note: if you are a Gradient Enterprise customer, or a Gradient Private Cloud user, please visit the [Gradient Private Cloud section](https://docs.paperspace.com/gradient/gradient-private-cloud/about) for more info on how to utilize private processing site clusters.
+Note: if you are a Gradient Private Cloud user, please visit the [Gradient Private Cloud section](https://docs.paperspace.com/gradient/gradient-private-cloud/about) for more info on how to utilize private processing site clusters.
 
 ## Create a Notebook
 
@@ -21,7 +21,7 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2869%29.png)
 
 ## Submit an Experiment
 

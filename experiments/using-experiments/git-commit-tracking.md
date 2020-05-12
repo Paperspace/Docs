@@ -10,5 +10,5 @@ gradient experiments run ... --workspaceRef 68ace0d9881a968e6470accbff60a6d6728f
 
 The commit is now tracked as an Experiment parameter:
 
-![](../../.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/image%20%2854%29.png)
 

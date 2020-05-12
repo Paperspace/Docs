@@ -6,7 +6,7 @@ Gradient provides the ability to use any public or private Docker container.  Th
 
 {% tabs %}
 {% tab title="Web UI" %}
-![](../../.gitbook/assets/image%20%2862%29.png)
+![](../../.gitbook/assets/image%20%2865%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
