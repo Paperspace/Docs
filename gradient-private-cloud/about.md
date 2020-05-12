@@ -1,10 +1,6 @@
 # Overview
 
-With [_Gradient Enterprise_](https://gradient.paperspace.com/clusters), you can transform raw infrastructure into a complete Machine Learning platform on your own private cloud cluster\(s\). Install Gradient on the infrastructure of your choice to schedule Gradient resources within your cloud environment or on-premise hardware.
-
-{% hint style="success" %}
-Request access to _Gradient Enterprise_ here: [https://info.paperspace.com/contact-sales](https://info.paperspace.com/contact-sales)
-{% endhint %}
+With the Gradient installer, you can transform raw infrastructure into a complete Machine Learning platform on your own private cloud or bare metal cluster\(s\). Install Gradient on the infrastructure of your choice to schedule Gradient resources within your cloud environment or on-premise hardware.
 
 #### Key platform capabilities include:
 
@@ -13,13 +9,11 @@ Request access to _Gradient Enterprise_ here: [https://info.paperspace.com/conta
 * Supports any data source
 * Chip agnostic: CPU, GPU, and other AI chips
 * Native Kubernetes support
-* On-premise or cloud
+* Run on AWS, GCP, NVIDIA DGX-1 or in your private cloud
 * Virtual or bare metal infrastructure
-* True multi-cloud: Leverage multiple environments under a single account 
+* True multi-cloud: bridge workloads across hybrid environments from a single account 
 
-You can read more about Gradient multi-cloud capabilities [here](https://gradient.paperspace.com/enterprise).
+Find out more about Gradient multi-cloud capabilities [here](https://gradient.paperspace.com/clusters).
 
-### Gradient VPC vs Gradient Node
 
-Gradient VPC is an end-to-end Kubernetes native Machine Learning platform offering full infrastructure automation with multi-node capability and the entire Gradient software toolkit.  Gradient Node is a simplified version that runs on a single compute instance \(node\).  It offers a limited subset of the full Gradient platform.  
 

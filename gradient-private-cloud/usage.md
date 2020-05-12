@@ -1,6 +1,6 @@
 # Usage
 
-## Finding your Cluster
+## Finding your Cluster ID
 
 Your clusters are available under the _Private Clusters_ [page](https://www.paperspace.com/console/clusters) in the Paperspace console.  Here you can find information about your cluster, including your cluster ID – you will need to specify this ID in order to designate your private cluster as the place to run experiments, notebooks, etc. 
 
@@ -18,7 +18,7 @@ gradient <command> ... --clusterId <your-cluster-ID>
 You will need to provide your API key to authenticate your requests. Learn how to obtain and set your API key [here](../get-started/install-the-cli.md#obtaining-an-api-key).
 {% endhint %}
 
-A complete example of utilizing Gradient features on a Gradient Enterprise private cloud cluster might look like this:
+A complete example of utilizing Gradient features on a cluster might look like this:
 
 ```bash
 gradient experiments run singlenode --name experiment1 \
@@ -31,7 +31,7 @@ gradient experiments run singlenode --name experiment1 \
 --command "pip install -r requirements.txt && python mnist.py"
 ```
 
-In order to run workloads on your Gradient Enterprise private cloud cluster, you must specify the `clusterID` parameter on most Gradient primary commands, including:
+In order to run workloads on your Gradient cluster, you must specify the `clusterID` parameter on most Gradient primary commands, including:
 
 * experiments
 * deployments
@@ -40,11 +40,11 @@ In order to run workloads on your Gradient Enterprise private cloud cluster, you
 * notebooks
 * tensorboards
 
-If you don't supply the `clusterId` parameter, then your command will default to Gradient SaaS, which is probably not what you want!
+If you don't supply the `clusterId` parameter, then your command will default to run on Paperspace instances, which are not part of your private cluster environment.
 
 To avoid having to re-enter the Cluster ID, and if you want the configuration to be reusable and checked into source control, another option is using the [Gradient Config File](../experiments/using-experiments/gradient-config.yaml.md). This file can contain the `clusterID` parameter in addition to many other common settings.
 
-## **Using Gradient Enterprise via the Web UI**
+## **Using Gradient clusters via the Web UI**
 
 When creating a notebook, an experiment, or a model deployment, select your private cluster in the console, then select an instance type that's available in your cluster.
 
