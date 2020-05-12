@@ -38,6 +38,7 @@
 
 ## Experiments
 
+* [Diff Viewer](experiments/diff-viewer.md)
 * [Overview](experiments/about.md)
 * [Using Experiments](experiments/using-experiments/README.md)
   * [Experiment options](experiments/using-experiments/experiment-options.md)
