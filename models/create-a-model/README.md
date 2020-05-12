@@ -4,13 +4,13 @@
 
 There are two ways to create a Model in Gradient, and both can be done via the web UI or CLI:
 
-### 1\) Run an Experiment that generates a Model
+### 1. Run an Experiment that generates a Model
 
 You can do this via the UI or via the CLI by [using one of the sample Experiment commands](model-path.md); be sure to set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Model Repository](../about.md#model-repository).
 
 View an [example](../preparing-model-for-deployment.md) using TensorFlow.
 
-### 2\) Upload a Model
+### 2. Upload a Model
 
 {% tabs %}
 {% tab title="Web UI" %}

@@ -12,17 +12,13 @@ Experiments are used to train machine learning models. Gradient supports single-
 
 Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the **SDK**. Here is a quick overview and instructions for each option:
 
-The **web UI** is great for getting familiar with Experiments and running sample projects.
-
-{% page-ref page="using-experiments/" %}
-
-The **CLI** \(command-line interface\) is the most popular tool for launching Experiments. It's powerful, flexible, and easy-to-use.
+The **web UI** is great for getting familiar with Experiments and running sample projects and the **CLI** \(command-line interface\) is a more advanced tool for launching Experiments. Both options are powerful, flexible, and easy-to-use.
 
 {% page-ref page="using-experiments/" %}
 
 The **SDK** let's you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
 
-{% page-ref page="../projects/gradientci-v2/gradientci-v2.md" %}
+{% page-ref page="../projects/gradientci-v2/" %}
 
 **GradientCI** enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
 
@@ -56,7 +52,7 @@ See this [article](hyperparameters.md) for more info.
 
 #### Persistent Storage
 
-Persistent storage is a persistent filesystem automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage.md#persistent-storage).
+Persistent storage is a persistent filesystem located at `/storage` which is automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage.md#persistent-storage).
 
 #### Artifact Storage
 

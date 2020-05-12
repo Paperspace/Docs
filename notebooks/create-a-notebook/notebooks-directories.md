@@ -1,4 +1,4 @@
-# Notebooks Directories
+# Notebook Directories
 
 {% hint style="info" %}
 **Note**: This document covers how storage works in Notebook instances only.  See our [Data](../../data/storage.md) section for a comprehensive overview of managing data in Gradient.
@@ -14,7 +14,7 @@ This is the root filesystem of the container \(not the workspace nor persistent 
 
 This is a **local** docker volume mounted onto `/notebooks` and currently has a hard limit of 25GB. This data is uploaded to S3 and downloaded anew on each run. Which means, it is counted against this quota in summation.
 
-### 3. /storage or /noteboks/storage
+### 3. /storage or /notebooks/storage
 
 This is persistent storage which is an NFS mount of a volume on a storage server. This quota/size is determined by the team subscription so can range from 5GB up to 1TB. [Contact sales](https://info.paperspace.com/contact-sales) if you need to increase this limit beyond what is available with the default subscription plans\).
 
