@@ -146,7 +146,11 @@ Managing the Kubernetes cluster manually is not required to use Gradient.
 
 #### Updating the Gradient cluster
 
+Run this command to update Gradient to the latest version:
 
+```text
+docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster paperspace/gradient-terraform apply
+```
 
 #### Uninstalling Gradient
 
