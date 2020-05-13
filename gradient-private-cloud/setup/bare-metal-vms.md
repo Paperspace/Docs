@@ -47,6 +47,8 @@ Be sure to replace the following fields with the appropriate values:
 * artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
 * artifacts\_path \(the full s3 path to the bucket\)
 * artifacts\_secret\_access\_key
+* cpu\_selector \(node selector to run CPU workloads, defaults to "metal-cpu"\)
+* gpu\_selector \(node selector to run GPU workloads, defaults to "metal-gpu"\)
 * cluster\_apikey \(provided during registration of the new cluster\)
 * cluster\_handle \(provided during registration of the new cluster\)
 * domain \(same as what was entered during cluster registration\)
