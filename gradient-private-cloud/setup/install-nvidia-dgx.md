@@ -134,7 +134,7 @@ Gradient installer requires a NFS host for runtime file storage. This server sho
 Next, install and configure the nodes using Docker and Terraform:
 
 ```text
-docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster paperspace/gradient-terraform
+docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster nvcr.io/isv-paperspace/gradient
 ```
 
 Gradient requires two DNS CNAME records to make external services accessible. Use the IP address of the master node as the target for these records, as shown below.
@@ -156,7 +156,7 @@ Managing the Kubernetes cluster manually is not required to use Gradient.
 Run this command to update Gradient to the latest version:
 
 ```text
-docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster paperspace/gradient-terraform apply
+docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster nvcr.io/isv-paperspace/gradient
 ```
 
 #### Uninstalling Gradient
@@ -164,6 +164,6 @@ docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster
 Run this command to uninstall Gradient:
 
 ```text
-docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster paperspace/gradient-terraform terraform destroy
+docker run -ti --rm -v $(pwd)/gradient-cluster:/home/paperspace/gradient-cluster nvcr.io/isv-paperspace/gradient terraform destroy
 ```
 
