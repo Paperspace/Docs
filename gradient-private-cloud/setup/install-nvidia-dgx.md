@@ -61,7 +61,9 @@ Be sure to replace the following fields with the appropriate values:
 * artifacts\_secret\_access\_key
 * cluster\_apikey \(provided during registration of the new cluster\)
 * cluster\_handle \(provided during registration of the new cluster\)
+* cpu\_selector \(node selector to run CPU workloads, defaults to "metal-cpu"\)
 * domain \(same as what was entered during cluster registration\)
+* gpu\_selector \(node selector to run GPU workloads, defaults to "metal-gpu"\)
 * master\_ip1, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
 * shared\_storage\_path and shared\_storage\_server \(see below for NFS info\)
 * ssh\_key\_path \(for the key whose public key is on the nodes being configured\)
