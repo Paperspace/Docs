@@ -82,10 +82,15 @@ module "gradient_metal" {
     cluster_apikey = "cluster-apikey-from-paperspace-com"
     cluster_handle = "cluster-handle-from-paperspace-com"
     domain = "gradient.mycompany.com"
-    global_selector = "dgx.gpu"
+    cpu_selector = "dgx.cpu"
+    gpu_selector = "dgx.gpu"
 
-    k8s_master_ips = [
-        "master_ip1",
+    k8s_master_nodes = [
+        {
+            ip = "master_node_ip1"
+            pool-type = "gpu"
+            pool-name = "dgx.gpu"
+        },
     ]
     k8s_workers = []
     /*
