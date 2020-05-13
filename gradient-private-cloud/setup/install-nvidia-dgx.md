@@ -85,13 +85,12 @@ module "gradient_metal" {
     cpu_selector = "dgx.gpu"
     gpu_selector = "dgx.gpu"
 
-    k8s_master_nodes = [
-        {
-            ip = "master_node_ip1"
-            pool-type = "gpu"
-            pool-name = "dgx.gpu"
-        },
-    ]
+    k8s_master_node = {
+        ip = "master_node_ip1"
+        pool-type = "gpu"
+        pool-name = "dgx.gpu"
+    }
+    
     k8s_workers = []
     /*
     // For multiple nodes
