@@ -82,7 +82,7 @@ module "gradient_metal" {
     cluster_apikey = "cluster-apikey-from-paperspace-com"
     cluster_handle = "cluster-handle-from-paperspace-com"
     domain = "gradient.mycompany.com"
-    cpu_selector = "dgx.cpu"
+    cpu_selector = "dgx.gpu"
     gpu_selector = "dgx.gpu"
 
     k8s_master_nodes = [
@@ -113,8 +113,8 @@ module "gradient_metal" {
     ssh_key_path = "~/gradient_rsa"
     ssh_user = "ubuntu"
 
-    tls_cert = replace(file("./ssl-bundle.crt"), "\n", "\\n")
-    tls_key = replace(file("./ssl.key"), "\n", "\\n")
+    tls_cert = file("./ssl-bundle.crt")
+    tls_key = file("./ssl.key")
 }
 ```
 
