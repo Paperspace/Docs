@@ -73,7 +73,7 @@ Also be sure the SSL certificate files are located in the directory and filename
 
 ```text
 module "gradient_metal" {
-    source = "../gradient-terraform/gradient-metal"
+    source = "../gradient-installer/gradient-metal"
 
     // name should only have letters, numbers, and dashes
     name = "cluster-name"
