@@ -17,8 +17,8 @@ For the NVIDIA DGX-1 hosts:
 
 * Ubuntu 18.04
 * NFS server available to all nodes
-* Docker installed on all hosts \(or use `"setup_docker = true"` in the main.tf file to have Docker installed by Terraform\)
-* Set default docker runtime to nvidia in /etc/docker/daemon.json \(or just set `"setup_nvidia = true"` in the main.tf file, below\): 
+* Docker installed on all hosts \(or use `"setup_docker = true"` in the main.tf file below to have Docker installed during install\)
+* Set default docker runtime to nvidia in /etc/docker/daemon.json \(or set `"setup_nvidia = true"` in the main.tf file, below\): 
 
 ```text
 {
@@ -40,7 +40,7 @@ The above is an example of how the added line appears in the JSON file. Do not r
 docker:x:999:ubuntu
 ```
 
-* Ensure your SSH public key is installed on each host
+* Ensure the SSH public key that was generated above is installed on each host
 * Ensure sudo is enabled for the account you're logging into
 * Ensure /etc/sshd/sshd\_config has the following setting \(and reload: service ssh reload\)
 
@@ -66,7 +66,7 @@ Be sure to replace the following fields with the appropriate values:
 * gpu\_selector \(node selector to run GPU workloads, defaults to "metal-gpu"\)
 * master\_ip1, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
 * shared\_storage\_path and shared\_storage\_server \(see below for NFS info\)
-* ssh\_key\_path \(for the key whose public key is on the nodes being configured\)
+* ssh\_key\_path \(for the key generated above\)
 * ssh\_user \(a ssh user who has the above public key in its authorized\_keys file\)
 
 Also be sure the SSL certificate files are located in the directory and filenames specified \(or change them in your main.tf file\).
@@ -111,7 +111,7 @@ module "gradient_metal" {
 
     shared_storage_path = "/srv/gradient"
     shared_storage_server = "shared-nfs-storage.com"
-    ssh_key_path = "~/gradient_rsa"
+    ssh_key_path = "./gradient_rsa"
     ssh_user = "ubuntu"
 
     tls_cert = file("./ssl-bundle.crt")
