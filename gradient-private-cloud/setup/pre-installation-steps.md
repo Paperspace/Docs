@@ -61,17 +61,6 @@ Example:
 
 * \*.gradient.mycompany.com
 
-#### Set up gradient-installer \(note: skip this step for the NVIDIA DGX installer mode\)
-
-The Gradient installer code is housed in a public GitHub repo, which will need to be cloned to the computer or cloud instance where you plan to run the installer. There's also a pre-install script that needs to be run.
-
-```text
-git clone git@github.com:Paperspace/gradient-installer.git gradient-installer
-gradient-installer/bin/setup
-mkdir gradient-cluster
-cd gradient-cluster
-```
-
 #### Create Terraform provider file in S3 \(optional\)
 
 To maintain Terraform state in a shared location, you should create a file called in the gradient-cluster folder called: `backend.tf` with the information below \(replace `artifacts-bucket` with the name of the artifacts storage bucket you created.
