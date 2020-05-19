@@ -2,10 +2,6 @@
 
 There's several steps that are common to all installed environments, and these are listed below. After completing these steps you'll find links to individual steps for AWS and other cloud/VM/bare metal environments. 
 
-#### Pre-install - cluster registration
-
-Register a new cluster in the [Paperspace web console](https://www.paperspace.com/console/clusters). _Copy the cluster API key and cluster handle to be used later in the install process._
-
 #### Pre-install - artifacts storage
 
 Create an AWS S3 bucket for artifacts. Next, add CORS permissions to the bucket you created:
@@ -51,11 +47,11 @@ Then, create an IAM user / role with the following policy:
 }
 ```
 
-The S3 bucket credentials must also be added into the Paperspace console:
+The S3 bucket credentials will be used when registering your cluster.
 
-To add these credentials, visit the Paperspace web console[ ](https://www.paperspace.com/console/teams/[team_id]/s3)team management page by clicking on your profile icon in the top right. Then find the S3 Credentials tab:
+#### Pre-install - cluster registration
 
-![](../../.gitbook/assets/screen-shot-2020-02-10-at-6.57.48-pm.png)
+Register a new cluster in the [Paperspace web console](https://www.paperspace.com/console/clusters). _Copy the cluster API key and cluster handle to be used later in the install process._
 
 #### Pre-install - SSL certificate 
 
