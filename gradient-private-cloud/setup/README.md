@@ -6,7 +6,7 @@ The installer runs in different modes –  there's an AWS-specific version that
 
 #### General Prerequisites
 
-* Terraform and Git installed on your computer, or on a cloud instance that has network access to the environment where Gradient will run \(not required for DGX installer mode\)
+* Terraform installed on your computer, or on a cloud instance that has network access to the environment where Gradient will run \(not required for DGX installer mode\)
 * Technical familiarity with the cloud provider or private cloud environment where you will install and run Gradient
 * SDK or CLI tools installed from your cloud provider, if necessary \(e.g. aws-cli, aws-iam-authenticator\)
 
