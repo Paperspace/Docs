@@ -21,9 +21,7 @@ Create an AWS S3 bucket for artifacts. Next, add CORS permissions to the bucket 
 
 To add these permissions, navigate to the S3 bucket settings in the AWS console, then select the Permissions tab and the CORS Configuration button:
 
-![](../../.gitbook/assets/s3_management_console.png)
-
-
+![](../../.gitbook/assets/s3_management_console%20%281%29.png)
 
 Next, create a dedicated IAM user for read/write access to the S3 bucket with the following policy:
 
