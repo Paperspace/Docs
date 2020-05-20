@@ -19,7 +19,13 @@ Create an AWS S3 bucket for artifacts. Next, add CORS permissions to the bucket 
 </CORSConfiguration>
 ```
 
-Then, create an IAM user / role with the following policy:
+To add these permissions, navigate to the S3 bucket settings in the AWS console, then select the Permissions tab and the CORS Configuration button:
+
+![](../../.gitbook/assets/s3_management_console.png)
+
+
+
+Next, create a dedicated IAM user for read/write access to the S3 bucket with the following policy:
 
 ```text
 {
@@ -47,11 +53,11 @@ Then, create an IAM user / role with the following policy:
 }
 ```
 
-The S3 bucket credentials will be used when registering your cluster.
+On the user's Security Credentials tab, create an access key for this user, which will be used when registering your cluster in the Paperspace web console.
 
 #### Pre-install - cluster registration
 
-Register a new cluster in the [Paperspace web console](https://www.paperspace.com/console/clusters). _Copy the cluster API key and cluster handle to be used later in the install process._
+Next, you'll need to register a new cluster in the [Paperspace web console](https://www.paperspace.com/console/clusters). After you've registered a cluster you'll be provided an API key and cluster handle, which, along with the cluster name you provided, will be used later in the install process.  
 
 #### Pre-install - SSL certificate 
 
@@ -63,7 +69,7 @@ Example:
 
 #### Create Terraform provider file in S3 \(optional\)
 
-To maintain Terraform state in a shared location, you should create a file called in the gradient-cluster folder called: `backend.tf` with the information below \(replace `artifacts-bucket` with the name of the artifacts storage bucket you created.
+To maintain Terraform state in a shared location, you should create a file in the gradient-cluster folder called: `backend.tf` with the information below \(you can replace `artifacts-bucket` with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts\).
 
 ```text
 terraform {
@@ -75,4 +81,6 @@ terraform {
     }
 }
 ```
+
+Note that using a S3 bucket for shared state will require the ability to access a S3 bucket during Terraform runs. This means you'll need to have the aws-cli installed and appropriate credentials in place to access the bucket. 
 
