@@ -24,7 +24,9 @@ The following is an example of how the added line for configuring nvidia as your
 }
 ```
 
-* Ensure your SSH user has access to the docker group in /etc/group:
+For each node, you must also:
+
+* Ensure your SSH user has access to the docker group in `/etc/group`:
 
 ```text
 docker:x:999:ubuntu
@@ -32,7 +34,7 @@ docker:x:999:ubuntu
 
 * Ensure your SSH public key is installed on each host
 * Ensure sudo is enabled for the account you're logging into
-* Ensure /etc/sshd/sshd\_config has the following setting \(and reload: service ssh reload\)
+* Ensure `/etc/sshd/sshd\_config` has the following setting \(and then reload it by running `service ssh reload`\)
 
 ```text
 AllowTcpForwarding yes
