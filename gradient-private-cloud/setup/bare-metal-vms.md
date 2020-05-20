@@ -43,7 +43,6 @@ Next you should create a file in the gradient-cluster folder you created – th
 Be sure to replace the following fields with the appropriate values:
 
 * name \(the same name used when registering the new cluster in the Paperspace web console\)
-* aws\_region \(your preferred AWS region\)
 * artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
 * artifacts\_path \(the full s3 path to the bucket\)
 * artifacts\_secret\_access\_key
