@@ -7,7 +7,7 @@ For AWS, the Gradient installer will utilize Terraform to provision a Elastic Ku
 There are many ways of passing in your credentials in order for Terraform to authenticate with your cloud provider. Most likely, you already have your cloud provider credentials loaded through the AWS CLI. Terraform will automatically detect those credentials during initialization for you. See [configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) for more information on setting up credentials and user profiles. The AWS user that's responsible for Gradient installation must have broad read/write privileges across services – ideally administrative privileges in the account.
 
 {% hint style="info" %}
-Do not remove the user later or you will lose access to cluster.
+Do not remove the user later or you will lose access to the cluster.
 {% endhint %}
 
 You will also need to have `aws-iam-authenticator` installed on the computer or instance where you plan to run the installer. [https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
@@ -27,7 +27,7 @@ Be sure to replace the following fields with the appropriate values:
 * cluster\_handle \(provided during registration of the new cluster\)
 * domain \(same as what was entered during cluster registration\)
 
-Also be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
+If you don't want to use automatic SSL, be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
 
 ```text
 module "gradient_aws" {
@@ -45,8 +45,9 @@ module "gradient_aws" {
     cluster_handle = "cluster-handle-from-paperspace-com"
     domain = "gradient.mycompany.com"
 
-    tls_cert = file("./certs/ssl-bundle.crt")
-    tls_key = file("./certs/ssl.key")
+    // to disable automatic SSL specify cert files here
+    // tls_cert = file("./certs/ssl-bundle.crt")
+    // tls_key = file("./certs/ssl.key")
 }
 
 output "ELB_HOSTNAME" {
