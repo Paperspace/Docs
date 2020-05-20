@@ -29,11 +29,11 @@ For each node, you must also:
 * Ensure your SSH user has access to the docker group in `/etc/group`:
 
 ```text
-docker:x:999:ubuntu
+docker:x:999:your-user
 ```
 
 * Ensure your SSH public key is installed on each host
-* Ensure sudo is enabled for the account you're logging into
+* Ensure `sudo` is enabled for the account you're logging into
 * Ensure `/etc/sshd/sshd\_config` has the following setting \(and then reload it by running `service ssh reload`\)
 
 ```text
