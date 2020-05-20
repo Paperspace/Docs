@@ -2,15 +2,17 @@
 
 This version can be used for any Ubuntu-based hosts running on bare metal, VMs in a public cloud other than AWS, or some other infrastructure. Terraform will be used to provision a Kubernetes cluster on the hosts and will require ssh access to all hosts in order to connect. Note that in this scenario auto-scaling is not available – all nodes will be running at all times. You must follow the [pre-installation steps](pre-installation-steps.md) before continuing.
 
-#### Requirements
+#### Cluster Node Requirements
+
+Each node in your Gradient cluster must have:
 
 * Ubuntu 18.04
 * NFS server available to all nodes
-* Docker installed on all hosts \(or use `"setup_docker = true"` in the main.tf file to have Docker installed by Terraform\)
-* Set default docker runtime to nvidia in /etc/docker/daemon.json \(or just set `"setup_nvidia = true"` in the main.tf file, below\) 
+* Docker installed on all nodes \(or set `"setup_docker = true"` in your `main.tf` Terraform config below to have gradient-installer set up Docker via Terraform\)
+* Default Docker runtime set to nvidia in `/etc/docker/daemon.json` \(or set `"setup_nvidia = true"` in your `main.tf` Terraform Config below to have gradient-installer configure this via Terraform\) 
 
 ```text
-The following is an example of how the added line appears in the JSON file. Do not remove any pre-existing content when making this change.
+The following is an example of how the added line for configuring nvidia as your default Docker runtime will appear in `/etc/docker/daemon.json`. Do not remove any pre-existing content when making this change.
 {
     "default-runtime": "nvidia",
     "runtimes": {
@@ -36,27 +38,11 @@ docker:x:999:ubuntu
 AllowTcpForwarding yes
 ```
 
-#### Configuration
+#### Terraform Configuration: main.tf
 
-Next you should create a file in the gradient-cluster folder you created – the file must be named `main.tf` and should contain the text in the box below \(note the copy icon in the upper right corner\).
+Next, create a `main.tf` file within the local gradient-cluster directory you created (next to your `backend.tf` file that you may have created already). Note: this file _must_ be named `main.tf` since Terraform looks for this configuration file by name.
 
-Be sure to replace the following fields with the appropriate values:
-
-* name \(the same name used when registering the new cluster in the Paperspace web console\)
-* artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
-* artifacts\_path \(the full s3 path to the bucket\)
-* artifacts\_secret\_access\_key
-* cpu\_selector \(node selector to run CPU workloads, defaults to "metal-cpu"\)
-* cluster\_apikey \(provided during registration of the new cluster\)
-* cluster\_handle \(provided during registration of the new cluster\)
-* domain \(same as what was entered during cluster registration\)
-* gpu\_selector \(node selector to run GPU workloads, defaults to "metal-gpu"\)
-* master\_ip1, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
-* shared\_storage\_path and shared\_storage\_server \(see below for NFS info\)
-* ssh\_key\_path \(for the key whose public key is on the nodes being configured\)
-* ssh\_user \(a ssh user who has the above public key in its authorized\_keys file\)
-
-Also be sure the SSL certificate files are located in the directory and filenames specified \(or change them in your main.tf file\).
+In `main.tf`, copy and paste the Terraform configuration below \(note the copy icon in the upper right corner\). Be sure to follow the value replacement instructions further below, as well.
 
 ```text
 module "gradient_metal" {
@@ -106,6 +92,25 @@ module "gradient_metal" {
 }
 ```
 
+Replace the following fields in the configuration above with the appropriate values:
+
+* name \(the same name used when registering the new cluster in the Paperspace web console\)
+* aws\_region \(your preferred AWS region\)
+* artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
+* artifacts\_path \(the full s3 path to the bucket\)
+* artifacts\_secret\_access\_key
+* cpu\_selector \(node selector to run CPU workloads, defaults to "metal-cpu"\)
+* cluster\_apikey \(provided during registration of the new cluster\)
+* cluster\_handle \(provided during registration of the new cluster\)
+* domain \(same as what was entered during cluster registration\)
+* gpu\_selector \(node selector to run GPU workloads, defaults to "metal-gpu"\)
+* master\_ip1, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
+* shared\_storage\_path and shared\_storage\_server \(see below for NFS info\)
+* ssh\_key\_path \(for the key whose public key is on the nodes being configured\)
+* ssh\_user \(a ssh user who has the above public key in its authorized\_keys file\)
+* _Also_, be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
+
+
 #### IP networking
 
 Each node should have an IP address that's accessible from the computer where the Gradient installer is being run. There must be one master node and at least two workers. All worker nodes must be able to access the master node, and the master node must be accessible from the internet.
@@ -152,4 +157,3 @@ If you created a Terraform provider file in S3 during the pre-install steps then
 #### Uninstalling Gradient
 
 Uninstallation can be handled by Terraform by running: `terraform destroy`
-
