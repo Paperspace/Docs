@@ -118,7 +118,7 @@ Managing the Kubernetes cluster manually is not required to use Gradient.
 
 #### Updating the Gradient cluster
 
-If you created a Terraform provider file in S3 during the pre-install steps then updating to the latest version of Gradient is simple: just run `terraform apply` from the gradient-cluster folder.
+To update Gradient, run `terraform apply` from the gradient-cluster folder.
 
 #### Uninstalling Gradient
 
