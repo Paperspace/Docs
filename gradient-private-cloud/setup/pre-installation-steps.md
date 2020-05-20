@@ -67,7 +67,11 @@ Example:
 
 * \*.gradient.mycompany.com
 
-#### Create Terraform provider file in S3 \(optional\)
+#### Create gradient-cluster folder 
+
+On your local computer create a folder named gradient-cluster
+
+#### Create Terraform provider file \(optional\)
 
 To maintain Terraform state in a shared location, you should create a file in the gradient-cluster folder called: `backend.tf` with the information below \(you can replace `artifacts-bucket` with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts\).
 
