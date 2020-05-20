@@ -73,7 +73,7 @@ On your local computer create a folder named gradient-cluster
 
 #### Create Terraform provider file \(optional\)
 
-To maintain Terraform state in a shared location, you should create a file in the gradient-cluster folder called: `backend.tf` with the information below \(you can replace `artifacts-bucket` with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts\).
+To maintain Terraform state in a shared location, you should create a file in your gradient-cluster folder (where you'll run Terraform from) called: `backend.tf` with the information below \(you can replace `artifacts-bucket` with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts\).
 
 ```text
 terraform {
@@ -87,4 +87,3 @@ terraform {
 ```
 
 Note that using a S3 bucket for shared state will require the ability to access a S3 bucket during Terraform runs. This means you'll need to have the aws-cli installed and appropriate credentials in place to access the bucket. 
-
