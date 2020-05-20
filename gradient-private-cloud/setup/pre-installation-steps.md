@@ -23,7 +23,7 @@ To add these permissions, navigate to the S3 bucket settings in the AWS console,
 
 ![](../../.gitbook/assets/s3_management_console%20%281%29.png)
 
-Next, create a dedicated IAM user for read/write access to the S3 bucket with the following policy:
+Next, create a dedicated IAM user with Programmatic Access for read/write access to the S3 bucket with the following policy:
 
 ```text
 {
@@ -36,7 +36,7 @@ Next, create a dedicated IAM user for read/write access to the S3 bucket with th
             "Resource": "*"
         },
         {
-            "Sid": "AllowListbucket",
+            "Sid": "AllowListBucket",
             "Effect": "Allow",
             "Action": "s3:ListBucket",
             "Resource": "arn:aws:s3:::[bucket_name]"
@@ -45,7 +45,7 @@ Next, create a dedicated IAM user for read/write access to the S3 bucket with th
             "Sid": "AllowBucketAccess",
             "Effect": "Allow",
             "Action": "s3:*",
-            "Resource": "arn:aws:s3:::[bucket]/*"
+            "Resource": "arn:aws:s3:::[bucket_name]/*"
         }
     ]
 }
