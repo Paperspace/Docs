@@ -67,13 +67,12 @@ Example:
 
 * \*.gradient.mycompany.com
 
-#### Create gradient-cluster folder 
+#### Create gradient-cluster directory for your Terraform configuration
+On your local computer, create directory called `gradient-cluster` for your Gradient cluster Terraform files. You'll soon run Terraform from there to create your Gradient cluster during the main installation process. You'll be provided a configuration that will call out to (gradient-installer)[https://github.com/Paperspace/gradient-installer] to create and install Gradient – you don't need to clone down `gradient-installer` or run it directly.
 
-On your local computer create a folder named gradient-cluster
+#### Create Terraform provider file in S3 \(optional\)
 
-#### Create Terraform provider file \(optional\)
-
-To maintain Terraform state in a shared location, you should create a file in your gradient-cluster folder (where you'll run Terraform from) called: `backend.tf` with the information below \(you can replace `artifacts-bucket` with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts\).
+To maintain Terraform state in a shared location (recommended), create a file in your gradient-cluster directory called: `backend.tf` with the information below. \(Suggestion: replace `artifacts-bucket` with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts.\)
 
 ```text
 terraform {
@@ -86,4 +85,4 @@ terraform {
 }
 ```
 
-Note that using a S3 bucket for shared state will require the ability to access a S3 bucket during Terraform runs. This means you'll need to have the aws-cli installed and appropriate credentials in place to access the bucket. 
+Note: using a S3 bucket for shared state will require the ability to access a S3 bucket during Terraform runs. This means you'll need to have the aws-cli installed and appropriate credentials in place to access the bucket. 
