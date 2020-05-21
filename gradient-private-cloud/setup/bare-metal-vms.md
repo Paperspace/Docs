@@ -1,8 +1,8 @@
 # Install on bare metal / VMs
 
-This version can be used for any Ubuntu-based hosts running on bare metal, VMs in a public cloud other than AWS, or some other infrastructure. Terraform will be used to provision a Kubernetes cluster on the hosts and will require ssh access to all hosts in order to connect. Note that in this scenario auto-scaling is not available – all nodes will be running at all times. You must follow the [pre-installation steps](pre-installation-steps.md) before continuing.
+This version can be used for any Ubuntu-based hosts running on bare metal, VMs in a public cloud other than AWS, or some other infrastructure. Terraform will be used to provision a Kubernetes cluster on the hosts and will require ssh access to all hosts in order to connect. Note that in this scenario auto-scaling is not available – all nodes will be running at all times. You must follow the [pre-installation steps](pre-installation-steps.md) before continuing.
 
-#### Cluster Node Requirements
+## Cluster Node Requirements
 
 Each node in your Gradient cluster must have:
 
@@ -34,13 +34,13 @@ docker:x:999:your-user
 
 * Ensure your SSH public key is installed on each host
 * Ensure `sudo` is enabled for the account you're logging into
-* Ensure `/etc/ssh/sshd\_config` has the following setting \(and then reload it by running `service ssh reload`\)
+* Ensure `/etc/ssh/sshd_config` has the following setting \(and then reload it by running `service ssh reload`\)
 
 ```text
 AllowTcpForwarding yes
 ```
 
-#### Terraform Configuration: main.tf
+## Terraform Configuration: main.tf
 
 Next, create a `main.tf` file within your local `gradient-cluster` directory that you created; `main.tf` will be a sibling file to the `backend.tf` file that you may have created already. Note: this file _must_ be named `main.tf` since Terraform looks for this configuration file by name.
 
@@ -55,7 +55,7 @@ module "gradient_metal" {
     artifacts_access_key_id = "artifacts-access-key-id"
     artifacts_path = "s3://artifacts-bucket"
     artifacts_secret_access_key = "artifacts-secret-access-key"
-    
+
     cluster_apikey = "cluster-apikey-from-paperspace-com"
     cluster_handle = "cluster-handle-from-paperspace-com"
     domain = "gradient.mycompany.com"
@@ -80,7 +80,7 @@ module "gradient_metal" {
 
     // Uncomment to set up docker
     // setup_docker = true 
-    
+
     // Uncomment to set up nvidia drivers
     // setup_nvidia = true
 
@@ -97,33 +97,32 @@ module "gradient_metal" {
 Replace the following fields in the configuration above with the appropriate values:
 
 * `name` \(the same name used when registering the new cluster in the Paperspace web console\)
-* `aws\_region` \(your preferred AWS region\)
-* `artifacts\_access\_key\_id` \(the key for the bucket that was set up for artifacts storage\)
-* `artifacts\_path` \(the full s3 path to the bucket\)
-* `artifacts\_secret\_access\_key`
-* `cpu\_selector` \(node selector to run CPU workloads, defaults to "metal-cpu"\)
-* `cluster\_apikey` \(provided during registration of the new cluster\)
-* `cluster\_handle` \(provided during registration of the new cluster\)
+* `aws_region` \(your preferred AWS region\)
+* `artifacts_access_key_id` \(the key for the bucket that was set up for artifacts storage\)
+* `artifacts_path` \(the full s3 path to the bucket\)
+* `artifacts_secret_access_key`
+* `cpu_selector` \(node selector to run CPU workloads, defaults to "metal-cpu"\)
+* `cluster_apikey` \(provided during registration of the new cluster\)
+* `cluster_handle` \(provided during registration of the new cluster\)
 * `domain` \(same as what was entered during cluster registration\)
-* `gpu\_selector` \(node selector to run GPU workloads, defaults to "metal-gpu"\)
-* `master\_ip1`, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
-* `shared\_storage`\_path and shared\_storage\_server \(see below for NFS info\)
-* `ssh\_key\_path` \(for the key whose public key is on the nodes being configured\)
-* `ssh\_user` \(a ssh user who has the above public key in its authorized\_keys file\)
+* `gpu_selector` \(node selector to run GPU workloads, defaults to "metal-gpu"\)
+* `master_ip1`, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
+* `shared_storage`\_path and shared\_storage\_server \(see below for NFS info\)
+* `ssh_key_path` \(for the key whose public key is on the nodes being configured\)
+* `ssh_user` \(a ssh user who has the above public key in its authorized\_keys file\)
 * _Also_, be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
 
-
-#### IP networking
+## IP networking
 
 Each node should have an IP address that's accessible from the computer where the Gradient installer is being run. There must be one master node and at least two workers. All worker nodes must be able to access the master node, and the master node must be accessible from the internet.
 
 All nodes must be able to access various hosts on the internet, including Paperspace's hub sites, logging sites, and Docker Hub.
 
-#### NFS setup
+## NFS setup
 
-Gradient installer requires a NFS host for runtime file storage. This server should have a high-bandwidth, low-latency connection from the cluster – ideally within the same datacenter or cloud region. 
+Gradient installer requires a NFS host for runtime file storage. This server should have a high-bandwidth, low-latency connection from the cluster – ideally within the same datacenter or cloud region.
 
-#### Installation
+## Installation
 
 Next, install and configure the nodes using Terraform:
 
@@ -144,18 +143,17 @@ Example:
 
 `gradient.mycompany.com [master node ip address]`
 
-#### 
-
-#### Managing the Kubernetes cluster with KUBECONFIG
+## Managing the Kubernetes cluster with KUBECONFIG
 
 For those familiar with Kubernetes, a file will be generated in the gradient-cluster folder that contains the Kubernetes `kubeconfig`. To use the generated KUBECONFIG, the computer running kubectl will need to have access to the cluster's master node.
 
 Managing the Kubernetes cluster manually is not required to use Gradient.
 
-#### Updating the Gradient cluster
+## Updating the Gradient cluster
 
 If you created a Terraform provider file in S3 during the pre-install steps then updating to the latest version of Gradient is simple: just run `terraform apply` from the gradient-cluster folder.
 
-#### Uninstalling Gradient
+## Uninstalling Gradient
 
 Uninstallation can be handled by Terraform by running: `terraform destroy`
+
