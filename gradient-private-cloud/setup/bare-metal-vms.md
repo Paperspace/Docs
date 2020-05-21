@@ -42,7 +42,7 @@ AllowTcpForwarding yes
 
 #### Terraform Configuration: main.tf
 
-Next, create a `main.tf` file within the local gradient-cluster directory you created (next to your `backend.tf` file that you may have created already). Note: this file _must_ be named `main.tf` since Terraform looks for this configuration file by name.
+Next, create a `main.tf` file within your local `gradient-cluster` directory that you created; `main.tf will be a sibling file to the `backend.tf` file that you may have created already. Note: this file _must_ be named `main.tf` since Terraform looks for this configuration file by name.
 
 In `main.tf`, copy and paste the Terraform configuration below \(note the copy icon in the upper right corner\). Be sure to follow the value replacement instructions further below, as well.
 
