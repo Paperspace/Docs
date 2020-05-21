@@ -34,7 +34,7 @@ docker:x:999:your-user
 
 * Ensure your SSH public key is installed on each host
 * Ensure `sudo` is enabled for the account you're logging into
-* Ensure `/etc/sshd/sshd\_config` has the following setting \(and then reload it by running `service ssh reload`\)
+* Ensure `/etc/ssh/sshd\_config` has the following setting \(and then reload it by running `service ssh reload`\)
 
 ```text
 AllowTcpForwarding yes
