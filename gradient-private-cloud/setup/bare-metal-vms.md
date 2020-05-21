@@ -96,20 +96,20 @@ module "gradient_metal" {
 
 Replace the following fields in the configuration above with the appropriate values:
 
-* name \(the same name used when registering the new cluster in the Paperspace web console\)
-* aws\_region \(your preferred AWS region\)
-* artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
-* artifacts\_path \(the full s3 path to the bucket\)
-* artifacts\_secret\_access\_key
-* cpu\_selector \(node selector to run CPU workloads, defaults to "metal-cpu"\)
-* cluster\_apikey \(provided during registration of the new cluster\)
-* cluster\_handle \(provided during registration of the new cluster\)
-* domain \(same as what was entered during cluster registration\)
-* gpu\_selector \(node selector to run GPU workloads, defaults to "metal-gpu"\)
-* master\_ip1, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
-* shared\_storage\_path and shared\_storage\_server \(see below for NFS info\)
-* ssh\_key\_path \(for the key whose public key is on the nodes being configured\)
-* ssh\_user \(a ssh user who has the above public key in its authorized\_keys file\)
+* `name` \(the same name used when registering the new cluster in the Paperspace web console\)
+* `aws\_region` \(your preferred AWS region\)
+* `artifacts\_access\_key\_id` \(the key for the bucket that was set up for artifacts storage\)
+* `artifacts\_path` \(the full s3 path to the bucket\)
+* `artifacts\_secret\_access\_key`
+* `cpu\_selector` \(node selector to run CPU workloads, defaults to "metal-cpu"\)
+* `cluster\_apikey` \(provided during registration of the new cluster\)
+* `cluster\_handle` \(provided during registration of the new cluster\)
+* `domain` \(same as what was entered during cluster registration\)
+* `gpu\_selector` \(node selector to run GPU workloads, defaults to "metal-gpu"\)
+* `master\_ip1`, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
+* `shared\_storage`\_path and shared\_storage\_server \(see below for NFS info\)
+* `ssh\_key\_path` \(for the key whose public key is on the nodes being configured\)
+* `ssh\_user` \(a ssh user who has the above public key in its authorized\_keys file\)
 * _Also_, be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
 
 
