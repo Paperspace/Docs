@@ -23,7 +23,7 @@ To add these permissions, navigate to the S3 bucket settings in the AWS console,
 
 ![](../../.gitbook/assets/s3_management_console%20%281%29.png)
 
-Next, create a dedicated IAM user for read/write access to the S3 bucket with the following policy:
+Next, create a dedicated IAM user with Programmatic Access for read/write access to the S3 bucket with the following policy:
 
 ```text
 {
@@ -36,7 +36,7 @@ Next, create a dedicated IAM user for read/write access to the S3 bucket with th
             "Resource": "*"
         },
         {
-            "Sid": "AllowListbucket",
+            "Sid": "AllowListBucket",
             "Effect": "Allow",
             "Action": "s3:ListBucket",
             "Resource": "arn:aws:s3:::[bucket_name]"
@@ -45,7 +45,7 @@ Next, create a dedicated IAM user for read/write access to the S3 bucket with th
             "Sid": "AllowBucketAccess",
             "Effect": "Allow",
             "Action": "s3:*",
-            "Resource": "arn:aws:s3:::[bucket]/*"
+            "Resource": "arn:aws:s3:::[bucket_name]/*"
         }
     ]
 }
@@ -67,13 +67,12 @@ Example:
 
 * \*.gradient.mycompany.com
 
-#### Create gradient-cluster folder 
+#### Create gradient-cluster directory for your Terraform configuration
+On your local computer, create a directory called `gradient-cluster` for your Gradient cluster Terraform files. You'll soon run Terraform from there to create your Gradient cluster during the main installation process. You'll be provided a configuration that will call out to (gradient-installer)[https://github.com/Paperspace/gradient-installer] to create and install Gradient – you don't need to clone down `gradient-installer` or run it directly.
 
-On your local computer create a folder named gradient-cluster
+#### Create Terraform provider file in S3 \(optional\)
 
-#### Create Terraform provider file \(optional\)
-
-To maintain Terraform state in a shared location, you should create a file in the gradient-cluster folder called: `backend.tf` with the information below \(you can replace `artifacts-bucket` with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts\).
+To maintain Terraform state in a shared location (recommended), create a `backend.tf` file in your gradient-cluster directory with the following Terraform configuration code:
 
 ```text
 terraform {
@@ -86,5 +85,6 @@ terraform {
 }
 ```
 
-Note that using a S3 bucket for shared state will require the ability to access a S3 bucket during Terraform runs. This means you'll need to have the aws-cli installed and appropriate credentials in place to access the bucket. 
+Suggestion: replace `artifacts-bucket` above with the name of the artifacts storage bucket you created – that way your Terraform state will be stored in the same S3 bucket as your Gradient job artifacts.
 
+Note: using a S3 bucket for shared state will require the ability to access a S3 bucket during Terraform runs. This means you'll need to have the aws-cli installed and appropriate credentials in place to access the bucket. 
