@@ -12,7 +12,7 @@ Do not remove the user later or you will lose access to the cluster.
 
 You will also need to have `aws-iam-authenticator` installed on the computer or instance where you plan to run the installer. [https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
 
-#### Configuration
+#### General Configuration
 
 Next you should create a file in the gradient-cluster folder you created – the file must be named `main.tf` and should contain the text in the box below \(note the copy icon in the upper right corner\).
 
@@ -27,7 +27,15 @@ Be sure to replace the following fields with the appropriate values:
 * cluster\_handle \(provided during registration of the new cluster\)
 * domain \(same as what was entered during cluster registration\)
 
-If you don't want to use automatic SSL, be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
+#### SSL Configuration
+
+The Gradient installer can use Let's Encrypt to create a SSL certificate, verify it by making entries with your DNS provider, and install the certificate on your cluster to secure access to notebooks, model deployments, etc. For this to work, your domains DNS provider must be [on the supported list](lets-encrypt-dns-providers.md). To use this functionality, create a block in your `main.tf` file similar to the one in the example below. Use the `letsencrypt_dns_name` that matches your provider in the list, and provide the required authentication field\(s\) as specified in the `letsencrypt_dns_settings` column.
+
+If you don't want to use automatic SSL, use `tls_cert` and `tls_key` entries and be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
+
+You can use either the Let's Encrypt block OR the manual certificate block, but not both.
+
+#### main.tf file example
 
 ```text
 module "gradient_aws" {
@@ -45,6 +53,8 @@ module "gradient_aws" {
     cluster_handle = "cluster-handle-from-paperspace-com"
     domain = "gradient.mycompany.com"
 
+    // insert a SSL block below - the first example is for Cloudflare DNS
+    
     /*
     letsencrypt_dns_name = "cloudflare"
     letsencrypt_dns_settings = {
@@ -53,7 +63,7 @@ module "gradient_aws" {
     }
     */
 
-    // to disable automatic SSL specify cert files here
+    // or disable automatic SSL by specifying cert files below
     // tls_cert = file("./certs/ssl-bundle.crt")
     // tls_key = file("./certs/ssl.key")
 }

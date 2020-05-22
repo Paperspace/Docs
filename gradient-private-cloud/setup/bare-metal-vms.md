@@ -144,7 +144,7 @@ The init step should take less than a minute, and the apply step may take 15 min
 
 If NVIDIA Cuda drivers were selected to be installed a reboot of all GPU workers is required
 
-Gradient requires two DNS CNAME records to make external services accessible. Use the IP address of the master node as the target for these records, as shown below.
+Gradient requires two DNS A records to make external services accessible. Use the IP address of the master node as the target for these records, as shown below.
 
 Example:
 
