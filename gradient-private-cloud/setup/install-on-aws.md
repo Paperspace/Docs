@@ -45,6 +45,14 @@ module "gradient_aws" {
     cluster_handle = "cluster-handle-from-paperspace-com"
     domain = "gradient.mycompany.com"
 
+    /*
+    letsencrypt_dns_name = "cloudflare"
+    letsencrypt_dns_settings = {
+        CF_API_KEY = "[Global cloudflare key]"
+        CF_API_EMAIL = "[Cloudflare email address]"
+    }
+    */
+
     // to disable automatic SSL specify cert files here
     // tls_cert = file("./certs/ssl-bundle.crt")
     // tls_key = file("./certs/ssl.key")

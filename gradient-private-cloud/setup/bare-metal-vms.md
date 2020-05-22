@@ -89,6 +89,15 @@ module "gradient_metal" {
     ssh_key_path = "~/.ssh/gradient_rsa"
     ssh_user = "ubuntu"
 
+    /*
+    // Example using cloudflare, check docs for list of supported DNS providers
+    letsencrypt_dns_name = "cloudflare"
+    letsencrypt_dns_settings = {
+        CF_API_KEY = "[Global cloudflare key]"
+        CF_API_EMAIL = "[Cloudflare email address]"
+    }
+    */
+
     tls_cert = file("./certs/ssl-bundle.crt")
     tls_key = file("./certs/ssl.key")
 }
