@@ -171,7 +171,9 @@ gradient jobs create \
       <td style="text-align:left">Ignore certain files from uploading</td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 Environment variables are available for use within the context of your job. The following host config options are currently exposed within the container:
 
 `$PS_HOST_PUBLIC_IP_ADDRESS` - the public IP address of the host machine running the job

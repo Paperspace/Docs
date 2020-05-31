@@ -62,21 +62,30 @@ module "gradient_metal" {
 
     k8s_master_node = {
         ip = "master_node_ip1"
+        // internal_address = "private_master_node_ip1"
         pool-type = "cpu"
         pool-name = "metal-cpu"
     }
     k8s_workers = [
         {
             ip = "worker_ip1"
+            // internal_address = "private_worker_ip1"
             pool-type = "gpu"
             pool-name = "metal-gpu"
         },
         {
             ip = "worker_ip2"
+            // internal_address = "private_worker_ip2"
             pool-type = "cpu"
             pool-name = "metal-cpu"
         }
     ]
+    
+    // Additional hostnames or IPs used to access kubernetes
+    // k8s_sans = [
+    //   "lb.kubernetes.com",
+    //   "8.8.8.8" 
+    // ]
 
     // Uncomment to set up docker
     // setup_docker = true 
