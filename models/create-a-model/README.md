@@ -14,21 +14,17 @@ View an [example](../preparing-model-for-deployment.md) using TensorFlow.
 
 {% tabs %}
 {% tab title="Web UI" %}
-To upload a Model via via the Web UI, first navigate to the **Models** page.
+To upload a Model via the Web UI, first navigate to the **Models** page.
 
 From there, click **Upload a Model +**:
 
 ![](../../.gitbook/assets/click-upload.png)
 
-This will open up a modal to **Upload a Model**, where you can drag 'n drop a Model from your local machine \(or click to find it locally\), as well as select the model **Type** and provide a **Name**, custom **Summary**, and any **Additional Notes** as metadata:
+This will open up a modal to **Upload a Model**, where you can drag 'n drop a Model file from your local machine \(or click to find it locally\), as well as select the model **Type** and provide a **Name**, custom **Summary**, and any **Additional Notes** as metadata.  Additionally, you can click "Or Upload a directory" to select a local folder.
 
-![](../../.gitbook/assets/screen-shot-2019-12-31-at-5.58.09-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-06-04-at-1.15.11-pm.png)
 
 Then click **Upload Model**. This will create the Model in Gradient and persist it to S3.
-
-{% hint style="info" %}
-Only uploads of a single model file is supported at this time
-{% endhint %}
 {% endtab %}
 
 {% tab title="CLI" %}
