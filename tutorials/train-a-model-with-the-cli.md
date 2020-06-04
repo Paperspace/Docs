@@ -1,5 +1,9 @@
 # Train a Model with the CLI
 
+{% embed url="https://www.youtube.com/watch?v=v7M-EzaDqoU" %}
+
+The steps covered in the tutorial video are also explained below.
+
 ### Objectives
 
 **Prerequisites:**
@@ -14,7 +18,7 @@
 * Create an experiment that trains a Scikit-learn model
 * Share files and models across experiments
 
-The experiment generates a Python pickle file that gets stored in the shared storage service of Gradient. 
+The experiment generates a Python pickle file that gets stored in the shared storage service of Gradient.
 
 ### Creating a Gradient Experiment to Train the Model
 
