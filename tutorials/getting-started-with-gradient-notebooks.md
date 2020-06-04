@@ -1,5 +1,7 @@
 # Getting Started with Notebooks
 
+{% embed url="https://youtu.be/37QZBEtWyp0" %}
+
 ## **Objectives**
 
 * Launch a Jupyter Notebook with a single click
