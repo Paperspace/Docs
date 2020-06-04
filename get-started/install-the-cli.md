@@ -52,6 +52,8 @@ gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 ## Obtaining an API key
 
+{% embed url="https://www.youtube.com/watch?v=WS\_xYiaTSIY" %}
+
 First, sign in to your [Paperspace account](https://www.paperspace.com/account/login). On the left of your home console, you will find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
 
 ![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%2831%29.png)
@@ -102,6 +104,6 @@ virtualenv <virtual_env_dir_path>
 Activate virtual environment:
 
 ```bash
-source <virtual_env_dir_path>/bin/activate 
+source <virtual_env_dir_path>/bin/activate
 ```
 
