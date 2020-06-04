@@ -2,6 +2,8 @@
 
 ## Create a Notebook
 
+{% embed url="https://youtu.be/37QZBEtWyp0" %}
+
 ### Choose your Base Container
 
 Notebooks can be created by clicking _Create Notebook_ button on the Notebooks tab.  There are three types of base containers:
