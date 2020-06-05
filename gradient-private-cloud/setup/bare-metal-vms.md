@@ -40,11 +40,19 @@ docker:x:999:your-user
 AllowTcpForwarding yes
 ```
 
-## Terraform Configuration: main.tf
+## Configuration
 
 Next, create a `main.tf` file within your local `gradient-cluster` directory that you created; `main.tf` will be a sibling file to the `backend.tf` file that you may have created already. Note: this file _must_ be named `main.tf` since Terraform looks for this configuration file by name.
 
 In `main.tf`, copy and paste the Terraform configuration below \(note the copy icon in the upper right corner\). Be sure to follow the value replacement instructions further below, as well.
+
+#### SSL Configuration
+
+The Gradient installer can use Let's Encrypt to create a SSL certificate, verify it by making entries with your DNS provider, and install the certificate on your cluster to secure access to notebooks, model deployments, etc. For this to work, your domains DNS provider must be [on the supported list](lets-encrypt-dns-providers.md). To use this functionality, create a block in your `main.tf` file similar to the one in the example below. Use the `letsencrypt_dns_name` that matches your provider in the list, and provide the required authentication field\(s\) as specified in the `letsencrypt_dns_settings` column.
+
+If you don't want to use automatic SSL, use `tls_cert` and `tls_key` entries and be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
+
+You can use either the Let's Encrypt block OR the manual certificate block, but not both.
 
 ```text
 module "gradient_metal" {
@@ -98,6 +106,8 @@ module "gradient_metal" {
     ssh_key_path = "~/.ssh/gradient_rsa"
     ssh_user = "ubuntu"
 
+    // insert a SSL block below - the first example is for Cloudflare DNS
+
     /*
     // Example using cloudflare, check docs for list of supported DNS providers
     letsencrypt_dns_name = "cloudflare"
@@ -107,15 +117,15 @@ module "gradient_metal" {
     }
     */
 
-    tls_cert = file("./certs/ssl-bundle.crt")
-    tls_key = file("./certs/ssl.key")
+    // or disable automatic SSL by specifying cert files below
+    // tls_cert = file("./certs/ssl-bundle.crt")
+    // tls_key = file("./certs/ssl.key")
 }
 ```
 
 Replace the following fields in the configuration above with the appropriate values:
 
 * `name` \(the same name used when registering the new cluster in the Paperspace web console\)
-* `aws_region` \(your preferred AWS region\)
 * `artifacts_access_key_id` \(the key for the bucket that was set up for artifacts storage\)
 * `artifacts_path` \(the full s3 path to the bucket\)
 * `artifacts_secret_access_key`
@@ -128,7 +138,7 @@ Replace the following fields in the configuration above with the appropriate val
 * `shared_storage`\_path and shared\_storage\_server \(see below for NFS info\)
 * `ssh_key_path` \(for the key whose public key is on the nodes being configured\)
 * `ssh_user` \(a ssh user who has the above public key in its authorized\_keys file\)
-* _Also_, be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
+* _Also_, either use automatic SSL or be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
 
 ## IP networking
 
