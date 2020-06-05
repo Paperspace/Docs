@@ -12,20 +12,11 @@ Do not remove the user later or you will lose access to the cluster.
 
 You will also need to have `aws-iam-authenticator` installed on the computer or instance where you plan to run the installer. [https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
 
-#### General Configuration
+### Configuration
 
-Next you should create a file in the gradient-cluster folder you created – the file must be named `main.tf` and should contain the text in the box below \(note the copy icon in the upper right corner\).
+Next, create a `main.tf` file within your local `gradient-cluster` directory that you created; `main.tf` will be a sibling file to the `backend.tf` file that you may have created already. Note: this file _must_ be named `main.tf` since Terraform looks for this configuration file by name.
 
-Be sure to replace the following fields with the appropriate values:
-
-* name \(the same name used when registering the new cluster in the Paperspace web console\)
-* aws\_region \(your preferred AWS region\)
-* artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
-* artifacts\_path \(the full s3 path to the bucket\)
-* artifacts\_secret\_access\_key
-* cluster\_apikey \(provided during registration of the new cluster\)
-* cluster\_handle \(provided during registration of the new cluster\)
-* domain \(same as what was entered during cluster registration\)
+In `main.tf`, copy and paste the Terraform configuration below \(note the copy icon in the upper right corner\). Be sure to follow the value replacement instructions further below, as well.
 
 #### SSL Configuration
 
@@ -34,8 +25,6 @@ The Gradient installer can use Let's Encrypt to create a SSL certificate, verify
 If you don't want to use automatic SSL, use `tls_cert` and `tls_key` entries and be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
 
 You can use either the Let's Encrypt block OR the manual certificate block, but not both.
-
-#### main.tf file example
 
 ```text
 module "gradient_aws" {
@@ -73,7 +62,19 @@ output "ELB_HOSTNAME" {
 }
 ```
 
-#### Installation
+Replace the following fields in the configuration above with the appropriate values:
+
+* name \(the same name used when registering the new cluster in the Paperspace web console\)
+* aws\_region \(your preferred AWS region\)
+* artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
+* artifacts\_path \(the full s3 path to the bucket\)
+* artifacts\_secret\_access\_key
+* cluster\_apikey \(provided during registration of the new cluster\)
+* cluster\_handle \(provided during registration of the new cluster\)
+* domain \(same as what was entered during cluster registration\)
+* _Also_, either use automatic SSL or be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
+
+### Installation
 
 Next, install Gradient using Terraform:
 
