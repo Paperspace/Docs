@@ -48,28 +48,19 @@ docker:x:999:ubuntu
 AllowTcpForwarding yes
 ```
 
-#### Configuration
+### Configuration
 
-Next you should create a file in the gradient-cluster folder you created – the file must be named `main.tf` and should contain the text in the box below \(note the copy icon in the upper right corner\).
+Next, create a `main.tf` file within your local `gradient-cluster` directory that you created; `main.tf` will be a sibling file to the `backend.tf` file that you may have created already. Note: this file _must_ be named `main.tf` since Terraform looks for this configuration file by name.
 
-Be sure to replace the following fields with the appropriate values:
+In `main.tf`, copy and paste the Terraform configuration below \(note the copy icon in the upper right corner\). Be sure to follow the value replacement instructions further below, as well.
 
-* name \(the same name used when registering the new cluster in the Paperspace web console\)
-* aws\_region \(your preferred AWS region\)
-* artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
-* artifacts\_path \(the full s3 path to the bucket\)
-* artifacts\_secret\_access\_key
-* cluster\_apikey \(provided during registration of the new cluster\)
-* cluster\_handle \(provided during registration of the new cluster\)
-* cpu\_selector \(node selector to run CPU workloads, defaults to "metal-cpu"\)
-* domain \(same as what was entered during cluster registration\)
-* gpu\_selector \(node selector to run GPU workloads, defaults to "metal-gpu"\)
-* master\_ip1, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
-* shared\_storage\_path and shared\_storage\_server \(see below for NFS info\)
-* ssh\_key\_path \(for the key generated above\)
-* ssh\_user \(a ssh user who has the above public key in its authorized\_keys file\)
+#### SSL Configuration
 
-Also be sure the SSL certificate files are located in the directory and filenames specified \(or change them in your main.tf file\).
+The Gradient installer can use Let's Encrypt to create a SSL certificate, verify it by making entries with your DNS provider, and install the certificate on your cluster to secure access to notebooks, model deployments, etc. For this to work, your domains DNS provider must be [on the supported list](lets-encrypt-dns-providers.md). To use this functionality, create a block in your `main.tf` file similar to the one in the example below. Use the `letsencrypt_dns_name` that matches your provider in the list, and provide the required authentication field\(s\) as specified in the `letsencrypt_dns_settings` column.
+
+If you don't want to use automatic SSL, use `tls_cert` and `tls_key` entries and be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
+
+You can use either the Let's Encrypt block OR the manual certificate block, but not both.
 
 ```text
 module "gradient_metal" {
@@ -114,6 +105,8 @@ module "gradient_metal" {
     ssh_key_path = "./gradient_rsa"
     ssh_user = "ubuntu"
 
+    // insert a SSL block below - the first example is for Cloudflare DNS
+
     /*
     // Example using cloudflare, check docs for list of supported DNS providers
     letsencrypt_dns_name = "cloudflare"
@@ -122,11 +115,29 @@ module "gradient_metal" {
         CF_API_EMAIL = "[Cloudflare email address]"
     }
     */
-
-    tls_cert = file("./ssl-bundle.crt")
-    tls_key = file("./ssl.key")
+    
+    // or disable automatic SSL by specifying cert files below
+    // tls_cert = file("./ssl-bundle.crt")
+    // tls_key = file("./ssl.key")
 }
 ```
+
+Replace the following fields with the appropriate values:
+
+* `name` \(the same name used when registering the new cluster in the Paperspace web console\)
+* `artifacts_access_key_id` \(the key for the bucket that was set up for artifacts storage\)
+* `artifacts_path` \(the full s3 path to the bucket\)
+* `artifacts_secret_access_key`
+* `cluster_apikey` \(provided during registration of the new cluster\)
+* `cluster_handle` \(provided during registration of the new cluster\)
+* `cpu_selector` \(node selector to run CPU workloads, defaults to "metal-cpu"\)
+* `domain` \(same as what was entered during cluster registration\)
+* `gpu_selector` \(node selector to run GPU workloads, defaults to "metal-gpu"\)
+* `master_ip1, worker_ip1, worker_ip2` \(see below for IP networking info\)
+* `shared_storage_path` and `shared_storage_server` \(see below for NFS info\)
+* `ssh_key_path` \(for the key generated above\)
+* `ssh_user` \(a ssh user who has the above public key in its authorized\_keys file\)
+* _Also_, either use automatic SSL or be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
 
 #### IP networking
 
