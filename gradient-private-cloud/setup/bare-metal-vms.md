@@ -134,8 +134,8 @@ Replace the following fields in the configuration above with the appropriate val
 * `cluster_handle` \(provided during registration of the new cluster\)
 * `domain` \(same as what was entered during cluster registration\)
 * `gpu_selector` \(node selector to run GPU workloads, defaults to "metal-gpu"\)
-* `master_ip1`, worker\_ip1, worker\_ip2 \(see below for IP networking info\)
-* `shared_storage`\_path and shared\_storage\_server \(see below for NFS info\)
+* `master_ip1, worker_ip1, worker_ip2` \(see below for IP networking info\)
+* `shared_storage`\_path and `shared_storage_server` \(see below for NFS info\)
 * `ssh_key_path` \(for the key whose public key is on the nodes being configured\)
 * `ssh_user` \(a ssh user who has the above public key in its authorized\_keys file\)
 * _Also_, either use automatic SSL or be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.

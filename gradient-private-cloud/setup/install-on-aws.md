@@ -64,14 +64,14 @@ output "ELB_HOSTNAME" {
 
 Replace the following fields in the configuration above with the appropriate values:
 
-* name \(the same name used when registering the new cluster in the Paperspace web console\)
-* aws\_region \(your preferred AWS region\)
-* artifacts\_access\_key\_id \(the key for the bucket that was set up for artifacts storage\)
-* artifacts\_path \(the full s3 path to the bucket\)
-* artifacts\_secret\_access\_key
-* cluster\_apikey \(provided during registration of the new cluster\)
-* cluster\_handle \(provided during registration of the new cluster\)
-* domain \(same as what was entered during cluster registration\)
+* `name` \(the same name used when registering the new cluster in the Paperspace web console\)
+* `aws_region` \(your preferred AWS region\)
+* `artifacts_access_key_id` \(the key for the bucket that was set up for artifacts storage\)
+* `artifacts_path` \(the full s3 path to the bucket\)
+* `artifacts_secret_access_key`
+* `cluster_apikey` \(provided during registration of the new cluster\)
+* `cluster_handle` \(provided during registration of the new cluster\)
+* `domain` \(same as what was entered during cluster registration\)
 * _Also_, either use automatic SSL or be sure the SSL certificate files are located in your gradient-cluster directory, and replace the filenames in your `main.tf` configuration to match them as needed.
 
 ### Installation
