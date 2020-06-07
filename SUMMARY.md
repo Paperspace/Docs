@@ -147,6 +147,11 @@
 * [Overview](tags/overview.md)
 * [Using Tags](tags/using-tags.md)
 
+## Secrets
+
+* [Overview](secrets/overview.md)
+* [Using Secrets](secrets/using-secrets.md)
+
 ## Gradient Installer <a id="gradient-private-cloud"></a>
 
 * [Overview](gradient-private-cloud/about.md)

@@ -22,3 +22,15 @@ These parameters will be injected into the Experiment at runtime and captured in
 
 ![](../../.gitbook/assets/image%20%2812%29.png)
 
+#### Injecting Secrets:
+
+{% hint style="warning" %}
+Secrets are currently limited to experiments run on private clusters
+{% endhint %}
+
+[Secrets](../../secrets/using-secrets.md) can be injected into variables using the following syntax:
+
+```python
+gradient experiments ... --experimentEnv '{"MY_SECRET":"secret:<secret_name>"}' 
+```
+
