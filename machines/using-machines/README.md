@@ -53,6 +53,8 @@ Finally, click Create Your Paperspace to create your Machine. You will see the a
 ![](../../.gitbook/assets/screen-shot-2019-07-11-at-6.43.02-pm.png)
 
 Et voilà! Your Machine will spin up in the background, and you'll see it appear back on the Machines list page.
+
+Note that there are additional capabilities to those available in the Web UI that are accessible via the CLI/API, such as machine startup scripts, so be sure to check out the CLI toggle for this section for more information.
 {% endtab %}
 
 {% tab title="CLI" %}
