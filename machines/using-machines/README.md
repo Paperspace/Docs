@@ -169,7 +169,7 @@ Create a new Paperspace virtual machine. If you are using an individual account,
     <tr>
       <td style="text-align:left"><code>scriptId (TEXT)</code>
       </td>
-      <td style="text-align:left">The script id of a script to be run on startup. See the Script Guide for
+      <td style="text-align:left">The script id of a script to be run on startup. See <a href="https://github.com/Paperspace/paperspace-node/blob/master/scripts.md">the Script Guide</a> for
         more info on using scripts</td>
     </tr>
   </tbody>
