@@ -104,7 +104,7 @@ Just click on the name to rename your model.
 {% tab title="Web UI" %}
 Navigate to **Models** in the side nav to see your list of trained Models.  From here you can delete models by clicking the delete button.  
 
-![](../../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 
 ![](../../.gitbook/assets/screen-shot-2020-01-06-at-5.59.03-pm.png)
 {% endtab %}

@@ -109,6 +109,12 @@
 * [Using Tensorboards in Gradient](tensorboards/using-tensorboards/README.md)
   * [TensorBoards getting started with Tensorflow](tensorboards/using-tensorboards/getting-started-with-tensorboards.md)
 
+## Metrics
+
+* [Metrics Overview](metrics/metrics-overview.md)
+* [Query Metrics](metrics/quering-metrics.md)
+* [Push Metrics](metrics/push-metrics.md)
+
 ## Gradient SDK <a id="gradient-python-sdk"></a>
 
 * [Gradient SDK](gradient-python-sdk/gradient-python-sdk/README.md)

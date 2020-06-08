@@ -6,11 +6,11 @@
 {% tab title="Web UI" %}
 On the Projects page, click _Create Project_ and select _Create Standalone Project_.
 
-![](../.gitbook/assets/image%20%2882%29.png)
+![](../.gitbook/assets/image%20%2870%29.png)
 
 Provide a name and then click _Create Project_.
 
-![](../.gitbook/assets/image%20%2876%29.png)
+![](../.gitbook/assets/image%20%2865%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -48,7 +48,7 @@ If you haven't yet connected your GitHub account, follow the prompts to grant ac
 
 Then, select the GitHub repo from the dropdown list:
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
