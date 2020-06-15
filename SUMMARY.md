@@ -115,6 +115,11 @@
 * [Query Metrics](metrics/quering-metrics.md)
 * [Push Metrics](metrics/push-metrics.md)
 
+## Secrets
+
+* [Overview](secrets/overview.md)
+* [Using Secrets](secrets/using-secrets.md)
+
 ## Gradient SDK <a id="gradient-python-sdk"></a>
 
 * [Gradient SDK](gradient-python-sdk/gradient-python-sdk/README.md)
@@ -152,11 +157,6 @@
 
 * [Overview](tags/overview.md)
 * [Using Tags](tags/using-tags.md)
-
-## Secrets
-
-* [Overview](secrets/overview.md)
-* [Using Secrets](secrets/using-secrets.md)
 
 ## Gradient Installer <a id="gradient-private-cloud"></a>
 
