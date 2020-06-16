@@ -22,7 +22,7 @@ A range of dedicated GPU instances with single and multi-GPU configurations.
 
 | Name | Description | GPU | Memory | vCPUs | Price | Low-cost |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **GPU+ \(M4000\)** | Low-cost instance with 8GB GPU, 8 vCPU, 30GB RAM | 8 GB | 30 GB | 8 vCPU | $0.51/hr | - |
+| **GPU+ \(M4000\)** | Low-cost instance with 8GB GPU, 8 vCPU, 30GB RAM | 8 GB | 30 GB | 8 vCPU | $0.45/hr | - |
 | **P4000** | Low-cost instance with 8GB GPU, 8 vCPU, 30GB RAM | 8 GB | 30 GB | 8 vCPU | $0.51/hr | - |
 | **P5000** | Mid-range instance with 16GB Pascal GPU, 8 vCPU, 30GB RAM | 16 GB | 30 GB | 8 vCPU | $0.78/hr | - |
 | **P6000** | High-performance instance with 24GB Pascal GPU, 8 vCPU, 30GB RAM | 24 GB | 30 GB | 8 vCPUs | $1.10/hr | - |
