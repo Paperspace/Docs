@@ -100,6 +100,7 @@ module "gradient_metal" {
 
     // Uncomment to set up nvidia drivers
     // setup_nvidia = true
+    // reboot_gpu_nodes = true
 
     shared_storage_path = "/srv/gradient"
     shared_storage_server = "shared-nfs-storage.com"
