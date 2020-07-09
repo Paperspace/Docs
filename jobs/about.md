@@ -26,7 +26,7 @@ There are many features you will want to check out like outputting your model to
 
 ## Storage
 
-Jobs have access to your persistent storage \(`/storage`\) and can output files to /artifacts. Learn more about Gradient storage [here](../gradient-private-cloud/gradient-node/storage.md).
+Jobs have access to your persistent storage \(`/storage`\) and can output files to /artifacts. Learn more about Gradient storage [here]().
 
 ## Instance Types
 

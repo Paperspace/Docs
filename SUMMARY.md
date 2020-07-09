@@ -168,13 +168,6 @@
   * [Install on NVIDIA DGX](gradient-private-cloud/setup/install-nvidia-dgx.md)
   * [Let's Encrypt DNS Providers](gradient-private-cloud/setup/lets-encrypt-dns-providers.md)
 * [Usage](gradient-private-cloud/usage.md)
-* [Gradient Node](gradient-private-cloud/gradient-node/README.md)
-  * [Requirements](gradient-private-cloud/gradient-node/requirements.md)
-  * [Setup](gradient-private-cloud/gradient-node/setup.md)
-  * [Usage](gradient-private-cloud/gradient-node/usage.md)
-  * [Node Attributes](gradient-private-cloud/gradient-node/job-scheduling-and-node-attributes.md)
-  * [Storage](gradient-private-cloud/gradient-node/storage.md)
-  * [Gradient AMI](gradient-private-cloud/gradient-node/gradient-ami.md)
 
 ## Paperspace Account
 
