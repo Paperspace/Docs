@@ -45,6 +45,7 @@ gradient jobs create \
     --container "http://dockerhub.com/mycontainer" \
     --machineType "P5000" \
     --command "/paperspace/run.sh"
+    --projectId "someProjectID"
 ```
 {% endtab %}
 {% endtabs %}
