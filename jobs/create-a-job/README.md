@@ -67,6 +67,11 @@ gradient jobs create \
       <td style="text-align:left">Job name</td>
     </tr>
     <tr>
+      <td style="text-align:left">projectId</td>
+      <td style="text-align:left">[required]</td>
+      <td style="text-align:left">Project ID</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>machineType</code>
       </td>
       <td style="text-align:left">K80</td>
@@ -151,12 +156,6 @@ gradient jobs create \
       <td style="text-align:left">$CWD</td>
       <td style="text-align:left">The name of the project for this job. If not provided, this is taken from
         the .ps_project/config.json file, or the current directory name.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>projectID</code>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Project ID</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>apiKey</code>
