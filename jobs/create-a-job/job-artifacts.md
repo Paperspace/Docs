@@ -11,7 +11,7 @@ Interact with any job artifacts available to either the current authenticated us
 ### Artifacts List
 
 ```bash
-gradient jobs artifacts list --size --link --files model.* <job id>
+gradient jobs artifacts list --size --link --files model.* --id <job id>
 ```
 
 #### Parameters
@@ -21,33 +21,33 @@ gradient jobs artifacts list --size --link --files model.* <job id>
 | `-s,--size` | boolean | &lt;optional&gt; | Show the file Size |
 | `-l,--links` | boolean | &lt;optional&gt; | Show the file URL |
 | `--files` | string | &lt;optional&gt; | Filter to get only a given file. Can use \* as a wildcard. |
-| JOB\_ID | string | required |  job id to list artifacts for |
+| `--id` JOB\_ID | string | required |  job id to list artifacts for |
 
 ### Artifacts Get
 
 Get all of the artifacts associated with a job.
 
 ```bash
-gradient jobs artifacts get <job id>
+gradient jobs artifacts get --id <job id>
 ```
 
 #### Parameters
 
 | ParameterName          | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
-| JOB\_ID | string | required |  job id to get artifacts for |
+| `--id` JOB\_ID | string | required |  job id to get artifacts for |
 
 ### Artifacts Destroy
 
 Destroy all of the artifacts associated with a job.
 
 ```bash
-gradient jobs artifacts destroy <job id>
+gradient jobs artifacts destroy --id <job id>
 ```
 
 #### Parameters
 
 | ParameterName          | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
-| JOB\_ID | string | required |  job id to destroy artifacts for |
+| `--id` JOB\_ID | string | required |  job id to destroy artifacts for |
 
