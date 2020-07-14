@@ -6,7 +6,7 @@ This feature is only available in the hosted gradient Gradient version. [Contact
 
 ## About
 
-Interact with any job artifacts available to either the current authenticated user or the team, if the user belongs to a team. The artifacts method has 3 sub commands - list, get & destroy. 
+Interact with any job artifacts available to either the current authenticated user or the team, if the user belongs to a team. The artifacts method has 3 sub commands - list, get & destroy.
 
 ### Artifacts List
 
@@ -16,12 +16,12 @@ gradient jobs artifacts list --size --link --files model.* --id <job id>
 
 #### Parameters
 
-| ParameterName          | Type | Attributes | Description |
+| ParameterName | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
 | `-s,--size` | boolean | &lt;optional&gt; | Show the file Size |
 | `-l,--links` | boolean | &lt;optional&gt; | Show the file URL |
 | `--files` | string | &lt;optional&gt; | Filter to get only a given file. Can use \* as a wildcard. |
-| `--id` JOB\_ID | string | required |  job id to list artifacts for |
+| `--id` JOB\_ID | string | required | job id to list artifacts for |
 
 ### Artifacts Get
 
@@ -33,9 +33,9 @@ gradient jobs artifacts get --id <job id>
 
 #### Parameters
 
-| ParameterName          | Type | Attributes | Description |
+| ParameterName | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
-| `--id` JOB\_ID | string | required |  job id to get artifacts for |
+| `--id` JOB\_ID | string | required | job id to get artifacts for |
 
 ### Artifacts Destroy
 
@@ -47,7 +47,7 @@ gradient jobs artifacts destroy --id <job id>
 
 #### Parameters
 
-| ParameterName          | Type | Attributes | Description |
+| ParameterName | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
-| `--id` JOB\_ID | string | required |  job id to destroy artifacts for |
+| `--id` JOB\_ID | string | required | job id to destroy artifacts for |
 

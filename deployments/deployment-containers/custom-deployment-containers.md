@@ -6,7 +6,21 @@ Gradient provides the ability to use any public or private Docker container.  Th
 
 {% tabs %}
 {% tab title="Web UI" %}
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
+
+| Parameter | Description |
+| :--- | :--- |
+| Container Name | The path to the container eg `tensorflow/serving:latest-gpu` |
+| Registry Username | Username used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g. Docker Hub. |
+| Registry Password | Password used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g. Docker Hub. |
+| Image Server | Docker image server eg https://index.docker.io/v1 |
+| Port |  |
+| Container Model Path | Path to the model within the container |
+| Method |  |
+| Container URL Path |  |
+| Endpoint URL Path |  |
+| Docker Arguments \(CSV\) |  |
+| Environment Variables \(JSON\) |  |
 {% endtab %}
 
 {% tab title="CLI" %}

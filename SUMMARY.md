@@ -139,12 +139,12 @@
   * [Stop a Machine](machines/using-machines/stop-machine.md)
   * [Restart a Machine](machines/using-machines/restart-machines.md)
   * [Update a Machine](machines/using-machines/update-machine.md)
+  * [Destroy a Machine](machines/using-machines/destroy-machine.md)
   * [List Machines](machines/using-machines/list-machines.md)
   * [Show a Machine](machines/using-machines/show-machine.md)
   * [Wait For a Machine](machines/using-machines/wait-for-the-machine.md)
   * [Check a Machine's utilization](machines/using-machines/machine-utilization.md)
-* [Destroy a Machine](machines/destroy-machine.md)
-* [Check availability](machines/check-machine-availability.md)
+  * [Check availability](machines/using-machines/check-machine-availability.md)
 
 ## Instances
 
