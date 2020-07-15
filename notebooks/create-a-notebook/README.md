@@ -44,6 +44,10 @@ If you have a [Gradient subscription](https://gradient.paperspace.com/pricing), 
 
 If you do not have a Gradient subscription, your notebook will default to an auto-shutdown interval of 12 hours, to help avoid unexpected runtime charges. Once created, you can stop, start, fork, and swap out the instance type anytime. 
 
+**Workspaces**
+
+Additionally, you have the option to select a remote Github repository to serve as [workspace storage](https://docs.paperspace.com/gradient/data/storage#workspace-storage) for your Notebook.  If the repository is private, you need to provide access credentials \(username and a password/apiKey\) in addition to a Github ref.
+
 ### Click Create
 
 That's it! Your Notebook will start once it has been created 🚀
