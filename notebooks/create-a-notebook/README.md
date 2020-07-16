@@ -50,7 +50,7 @@ If you do not have a Gradient subscription, your notebook will default to an aut
 
 **Workspaces**
 
-Additionally, you have the option to select a remote Github repository to serve as [workspace storage](https://docs.paperspace.com/gradient/data/storage#workspace-storage) for your Notebook.  If the repository is private, you need to provide access credentials \(username and a password/apiKey\).  Also, you can provide an optional Github ref that points to a specific version of the repository.
+Additionally, you have the option to select a remote Github repository to serve as [workspace storage](https://docs.paperspace.com/gradient/data/storage#workspace-storage) for your Notebook.  If the repository is private, you need to provide access credentials \(aka username and a password or api-Key.  Note: an api-Key is required if two-factor-authentication is enabled on your account\).  Also, you can provide an optional Github ref \(tag, branch, or commit\) that points to a specific version of the repository.
 
 ### Click Create
 
