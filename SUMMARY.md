@@ -23,7 +23,6 @@
 * [Using Notebooks](notebooks/create-a-notebook/README.md)
   * [Share a Notebook](notebooks/create-a-notebook/share-a-notebook.md)
   * [Fork a Notebook](notebooks/create-a-notebook/fork-a-notebook.md)
-  * [Using Notebooks in the CLI](notebooks/create-a-notebook/using-notebooks-in-the-cli.md)
   * [Notebook Directories](notebooks/create-a-notebook/notebooks-directories.md)
 * [Notebook Containers](notebooks/notebook-containers/README.md)
   * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)

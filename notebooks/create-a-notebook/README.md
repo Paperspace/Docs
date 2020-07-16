@@ -1,5 +1,7 @@
 # Using Notebooks
 
+{% tabs %}
+{% tab title="Web UI" %}
 ## Create a Notebook
 
 {% embed url="https://youtu.be/37QZBEtWyp0" %}
@@ -23,6 +25,8 @@ These are additional templates that are made available in Gradient as a 1-click 
 #### Custom Containers \(Advanced\)
 
 If you need to import an existing container, visit the Custom Containers section. Learn more [here](../notebook-containers/).
+
+### 
 
 ![](../../.gitbook/assets/image%20%2860%29%20%281%29.png)
 
@@ -56,8 +60,6 @@ Once created, your Notebook will automatically start.  Just click _Open_ and you
 
 ## Start a Notebook
 
-​
-
 ![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LHZRFUkajubOAmgu6Rd%2F-LeX9E8cIJ_UtEyU8jjp%2F-LeXCI4qsQKD3diF1A78%2Fimage.png?alt=media&token=b6f49118-162d-4b0b-b638-07e767605410)
 
 When you click _Start_, a window will appear that presents a few options such as the name, the instance type, and the Auto-Shutdown interval.
@@ -81,4 +83,49 @@ You can only delete a notebook once it has stopped running.
 You can rename any Notebook, whether it is running or stopped, in order to help organize your work. Simply click on the notebook name in the list and it will become an editable text field; press the enter key when you are done to save it:
 
 ![](../../.gitbook/assets/rename_notebook.png)
+{% endtab %}
+
+{% tab title="CLI" %}
+### Syntax
+
+```bash
+gradient notebooks create [command] [options...]
+```
+
+### Notebook Parameters Basics
+
+* Machine Type: Such as `--P100` or `--C7` or `--TPU`
+* Container: Such as `--tensorflow/tensorflow:1.5.1-gpu`
+
+### Example Use
+
+```bash
+Usage: gradient notebooks create \
+    --name "my job" \
+    --container "http://dockerhub.com/mycontainer" \
+    --machineType "P5000" \
+    --command "/paperspace/run.sh"
+    --projectId "someProjectID"
+```
+
+## Notebook Parameters Complete List
+
+| Argument | Description |
+| :--- | :--- |
+| `name` | Notebook name |
+| `projectId` | Project ID |
+| `machineType` \[Required\] | An optional machine type to run the job on: either 'GPU+', 'P4000', 'P5000', 'P6000', 'V100', 'K80', 'P100', or 'TPU'. |
+| `container` \[Required\] | A reference to a docker image in a public or private docker registry. Docker image repository references must be in lowercase and may include a tag and a hostname prefix followed by a slash; if committed the hostname defaults to that of the public Docker Hub registry. An example docker image reference: `docker.io/mynamespace/myimage:mytag`. A container name may be mixed case.  |
+| `containerUser` | Container user |
+| `command` | Command \(executed as `/bin/sh -c 'YOUR COMMAND'`\) |
+| `clusterId` | ID of the cluster to run the notebook. |
+| `registryUsername` | Registry username |
+| `registryPassword` | Registry password |
+| `shutdownTimeout` | Shutdown timeout in hours |
+| `isPreemptible` | Use a preemptible instance type |
+| `tag` |  One or multiple tags that you want to add to the notebook |
+| `workspace` | Coming soon |
+| `apiKey` | API key to use this time only |
+{% endtab %}
+{% endtabs %}
 
