@@ -1,6 +1,6 @@
 # Using Notebooks in the CLI
 
-The Notebooks section of the [CLI](../../get-started/install-the-cli.md) currently provides the ability to manage and inspect Notebooks.  
+The Notebooks section of the [CLI](../../get-started/install-the-cli.md) currently provides the ability to manage and inspect Notebooks.
 
 ```text
 Usage: gradient notebooks [OPTIONS] COMMAND [ARGS]...
@@ -35,33 +35,43 @@ Usage: gradient notebooks create [OPTIONS]
   Create new notebook
 
 Options:
-  --clusterId TEXT           Cluster ID
-  --machineType TEXT         Virtual Machine type label e.g. P5000
-  --containerId INTEGER      Container ID
-  --container TEXT           Container name
-  --name TEXT                Notebook name
-  --registryUsername TEXT    Registry username
-  --registryPassword TEXT    Registry password
-  --command TEXT             Command (executed as `/bin/sh -c 'YOUR COMMAND'`)
-  --containerUser TEXT       Container user
-  --shutdownTimeout INTEGER  Shutdown timeout in hours
-  --isPreemptible            Is preemptible
-  --isPublic                 Is publically viewable
-  --tag TEXT                 One or many tags that you want to add to
-                             experiment
+  --machineType TEXT              Virtual Machine type label e.g. P5000
+                                  [required]
 
-  --tags TEXT                Separated by comma tags that you want add to
-                             experiment
+  --container TEXT                Container name  [required]
+  --clusterId TEXT                Cluster ID
+  --name TEXT                     Notebook name
+  --registryUsername TEXT         Registry username
+  --registryPassword TEXT         Registry password
+  --command TEXT                  Command (executed as `/bin/sh -c 'YOUR
+                                  COMMAND'`)
 
-  --apiKey TEXT              API key to use this time only
-  --optionsFile PATH         Path to YAML file with predefined options
-  --createOptionsFile PATH   Generate template options file
-  --help                     Show this message and exit.
-  ```
+  --containerUser TEXT            Container user
+  --shutdownTimeout INTEGER       Shutdown timeout in hours
+  --isPreemptible                 Is preemptible
+  --isPublic                      Is publically viewable
+  --environment JSON_STRING       Environmental variables
+  --workspace TEXT                S3 url or git repository. Directory uploads
+                                  are not yet supported
+
+  --workspaceRef TEXT             Git commit hash, branch name or tag
+  --workspaceUsername <username>
+  --workspacePassword TEXT        Workspace password
+  --tag TEXT                      One or many tags that you want to add to
+                                  experiment
+
+  --tags TEXT                     Separated by comma tags that you want add to
+                                  experiment
+
+  --apiKey TEXT                   API key to use this time only
+  --optionsFile PATH              Path to YAML file with predefined options
+  --createOptionsFile PATH        Generate template options file
+  --help                          Show this message and exit..
+```
 
 ## Starting a Notebook
 
-You may start a *stopped* notebook again.
+You may start a _stopped_ notebook again.
 The notebook can be started on a different cluster or machine type.
 
 ```
@@ -72,6 +82,8 @@ Usage: gradient notebooks start [OPTIONS]
 Options:
   --id TEXT                  Notebook ID  [required]
   --machineType TEXT         Virtual Machine type label e.g. P5000
+                             [required]
+
   --clusterId TEXT           Cluster ID
   --name TEXT                Notebook name
   --shutdownTimeout INTEGER  Shutdown timeout in hours
