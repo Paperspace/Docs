@@ -16,12 +16,15 @@ Datasets are downloaded and mounted readonly on `/data/DATASET` within your expe
 datasets: [
     {
         "uri": "s3://my-bucket/mnist-modified.zip",
-        "awsSecretAccessKey": "<KEY>",
-        "awsAccessKeyId": "<ID>",
+        "awsSecretAccessKey": "secret:<some_secret_name>",
+        "awsAccessKeyId": "secret:<some_other_secret_name>",
         "name": "mnist",
     },
 ]
 ```
+{% hint style="info" %}
+We highly recommend the use of the secrets feature on S3 datasets as the values get passed in as plain text. Using secrets as `secret:<some_secret_name` ensure that your credentials are encrypted and protected. You can learn more about using secrets [here](https://docs.paperspace.com/gradient/secrets/using-secrets).
+{% endhint %}
 
 {% tabs %}
 {% tab title="CLI" %}
@@ -32,8 +35,8 @@ $ gradient experiments run singlenode
 --projectId prda8mhcq 
 --workspace https://github.com/Paperspace/mnist-sample.git
 ... 
---datasetAwsAccessKeyId <id> 
---datasetAwsSecretAccessKey <key>
+--datasetAwsAccessKeyId secret:<some_secret_name> 
+--datasetAwsSecretAccessKey secret:<some_other_secret_name>
 --datasetName fashion
 --datasetUri s3://my-bucket-name/fashion-mnist.zip 
 
@@ -50,10 +53,10 @@ datasetName:
   - null
 datasetAwsAccessKeyId:
   - none
-  - some_other_key_id
+  - secret:<some_secret_name>
 datasetAwsSecretAccessKey:
   -
-  - some_other_secret
+  - secret:<some_other_secret_name>
 datasetVersionId:
 datasetEtag:
   - "some etag"
