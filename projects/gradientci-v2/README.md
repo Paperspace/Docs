@@ -229,6 +229,11 @@ For some `step`s in your job GradientCI will automatically set environment varia
 * `PS_GRADIENT_CI_GIT_REPO_URL` the repository that received the trigger.
 
   Note that builds from forks will appear to come from the _target_ repository, not the fork.
+  
+## S3 Datasets
+
+We highly recommend the use of secrets on datasets as these get stored as plain text. You may set secrets on Cluster, Project, and/or Team level. If the same secret name is created for more than one scope only one will be applied. Secrets have the following precedence: Cluster > Project > Team. You can learn more about setting and using secrets [here](https://docs.paperspace.com/gradient/secrets/using-secrets).
+
 
 ## Examples
 
@@ -298,6 +303,9 @@ workflows:
           workingDirectory: "/home/playground"
           artifactDirectory: "/artifacts"
           container: tensorflow/tensorflow:1.13.1-gpu-py3
+          datasetUri: "https://some_other_uri/uri"
+          datasetAwsAccessKeyId: "secret:<some_secret_name>"
+          datasetAwsSecretAccessKey: "secret:<some_other_secret_name>"
 ```
 
 #### Multi-Node
