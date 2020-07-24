@@ -59,7 +59,7 @@ Next, you'll need to register a new cluster in the [Paperspace web console](http
 
 ## SSL certificate
 
-Gradient uses a wildcard SSL certificate to secure HTTP traffic into your processing site. The installer can provide an automatic certificate if you have a supported DNS provider \([supported DNS providers](lets-encrypt-dns-providers/)\) or you can provide your own.
+Gradient uses a wildcard SSL certificate to secure HTTP traffic into your processing site. The installer can provide an automatic certificate if you have a supported DNS provider \([supported DNS providers](lets-encrypt-dns-providers.md)\) or you can provide your own.
 
 If you decide to provide your own SSL certificate, you will need two files: one private key file and one .crt file that contains your entire certificate chain including any root or intermediate certificates. \(Example: [https://support.comodo.com/index.php?/Knowledgebase/Article/View/1145/1/how-do-i-make-my-own-bundle-file-from-crt-files](https://support.comodo.com/index.php?/Knowledgebase/Article/View/1145/1/how-do-i-make-my-own-bundle-file-from-crt-files)\)
 
