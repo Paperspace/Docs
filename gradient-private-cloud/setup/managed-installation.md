@@ -1,4 +1,4 @@
-# Managed Service
+# Managed Install
 
 Gradient clusters can be created in just a few clicks in the Web UI as a fully managed service in Paperspace Cloud. Create and run notebooks, experiments, and deployments all in your private cluster from within the Web UI, from the CLI, or using the SDK.
 

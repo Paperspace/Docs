@@ -162,7 +162,7 @@
 * [Overview](gradient-private-cloud/about.md)
 * [Setup](gradient-private-cloud/setup/README.md)
   * [Pre-installation steps](gradient-private-cloud/setup/pre-installation-steps.md)
-  * [Managed Service](gradient-private-cloud/setup/managed-installation.md)
+  * [Managed Install](gradient-private-cloud/setup/managed-installation.md)
   * [Gradient Installer CLI](gradient-private-cloud/setup/gradient-installer-cli.md)
   * [Terraform](gradient-private-cloud/setup/terraform/README.md)
     * [Pre-installation steps](gradient-private-cloud/setup/terraform/pre-installation-steps.md)
