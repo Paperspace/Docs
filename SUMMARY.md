@@ -157,15 +157,20 @@
 * [Overview](tags/overview.md)
 * [Using Tags](tags/using-tags.md)
 
-## Gradient Installer <a id="gradient-private-cloud"></a>
+## Gradient Cluster <a id="gradient-private-cloud"></a>
 
 * [Overview](gradient-private-cloud/about.md)
 * [Setup](gradient-private-cloud/setup/README.md)
   * [Pre-installation steps](gradient-private-cloud/setup/pre-installation-steps.md)
-  * [Install on AWS](gradient-private-cloud/setup/install-on-aws.md)
-  * [Install on bare metal / VMs](gradient-private-cloud/setup/bare-metal-vms.md)
-  * [Install on NVIDIA DGX](gradient-private-cloud/setup/install-nvidia-dgx.md)
-  * [Let's Encrypt DNS Providers](gradient-private-cloud/setup/lets-encrypt-dns-providers.md)
+  * [Managed Service](gradient-private-cloud/setup/managed-installation.md)
+  * [Gradient Installer CLI](gradient-private-cloud/setup/gradient-installer-cli.md)
+  * [Terraform](gradient-private-cloud/setup/terraform/README.md)
+    * [Pre-installation steps](gradient-private-cloud/setup/terraform/pre-installation-steps.md)
+    * [Install on AWS](gradient-private-cloud/setup/terraform/install-on-aws.md)
+    * [Install on bare metal / VMs](gradient-private-cloud/setup/terraform/bare-metal-vms.md)
+    * [Install on NVIDIA DGX](gradient-private-cloud/setup/terraform/install-nvidia-dgx.md)
+  * [Let's Encrypt DNS Providers](gradient-private-cloud/setup/lets-encrypt-dns-providers/README.md)
+    * [Terraform](gradient-private-cloud/setup/lets-encrypt-dns-providers/terraform.md)
 * [Usage](gradient-private-cloud/usage.md)
 
 ## Paperspace Account

@@ -1,6 +1,6 @@
 # Install on AWS
 
-For AWS, the Gradient installer will utilize Terraform to provision a Elastic Kubernetes Service \(EKS\) cluster. You must follow the [pre-installation steps](pre-installation-steps.md) before continuing.
+For AWS, the Gradient installer will utilize Terraform to provision a Elastic Kubernetes Service \(EKS\) cluster. You must follow the [pre-installation steps](../pre-installation-steps.md) before continuing.
 
 #### Requirements
 
@@ -20,7 +20,7 @@ In `main.tf`, copy and paste the Terraform configuration below \(note the copy i
 
 #### SSL Configuration
 
-The Gradient installer can use Let's Encrypt to create a SSL certificate, verify it by making entries with your DNS provider, and install the certificate on your cluster to secure access to notebooks, model deployments, etc. For this to work, your domains DNS provider must be [on the supported list](lets-encrypt-dns-providers.md). To use this functionality, create a block in your `main.tf` file similar to the one in the example below. Use the `letsencrypt_dns_name` that matches your provider in the list, and provide the required authentication field\(s\) as specified in the `letsencrypt_dns_settings` column.
+The Gradient installer can use Let's Encrypt to create a SSL certificate, verify it by making entries with your DNS provider, and install the certificate on your cluster to secure access to notebooks, model deployments, etc. For this to work, your domains DNS provider must be [on the supported list](../lets-encrypt-dns-providers/). To use this functionality, create a block in your `main.tf` file similar to the one in the example below. Use the `letsencrypt_dns_name` that matches your provider in the list, and provide the required authentication field\(s\) as specified in the `letsencrypt_dns_settings` column.
 
 If you don't want to use automatic SSL, use `tls_cert` and `tls_key` entries and be sure the SSL certificate files are located in the directory and filenames specified \(or change them in the `main.tf` file\).
 

@@ -1,10 +1,6 @@
 # Overview
 
-Run Gradient anywhere with just a few clicks. Gradient runs on bare metal, NVIDIA's DGX-1, with a public cloud provider, or on your private cloud. Bridge workloads across hybrid environments from a single account.
+Gradient clusters are private clusters that run machine learning workloads. Gradient clusters can be set up on any cloud provider \(AWS, GCP, Azure\) or on your own private cloud or on-premise cluster.
 
-Find out more about Gradient multi-cloud capabilities [here](https://gradient.paperspace.com/clusters).
-
-
-
-
+Find out more about Gradient's multi-cloud capabilities [here](https://gradient.paperspace.com/clusters).
 

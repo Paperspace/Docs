@@ -22,6 +22,7 @@ datasets: [
     },
 ]
 ```
+
 {% hint style="info" %}
 We highly recommend the use of the secrets feature on S3 datasets as the values get passed in as plain text. Using secrets as `secret:<some_secret_name` ensure that your credentials are encrypted and protected. You can learn more about using secrets [here](https://docs.paperspace.com/gradient/secrets/using-secrets).
 {% endhint %}
@@ -38,8 +39,7 @@ $ gradient experiments run singlenode
 --datasetAwsAccessKeyId secret:<some_secret_name> 
 --datasetAwsSecretAccessKey secret:<some_other_secret_name>
 --datasetName fashion
---datasetUri s3://my-bucket-name/fashion-mnist.zip 
-
+--datasetUri s3://my-bucket-name/fashion-mnist.zip
 ```
 
 When launching an experiment using the config.yaml, pass in the multiple datasets using the following structure.
@@ -65,14 +65,14 @@ datasetEtag:
 {% endtab %}
 
 {% tab title="SDK" %}
-```
+```text
 env = {
         "EPOCHS_EVAL":"10",
         "TRAIN_EPOCHS":"40",
         "MAX_STEPS":"50000",
         "EVAL_SECS":"600",
         "BATCH_SIZE":"100",
-        
+
     }
 
 single_node_parameters = { 
