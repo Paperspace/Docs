@@ -1,15 +1,17 @@
 # Gradient Installer CLI
 
-Gradient Installer is a CLI to setup and manage Gradient private clusters on AWS, GCP, Azure, NVIDIA DGX-1, and bare metal
+Gradient Installer is a CLI to setup and manage Gradient private clusters on AWS, GCP, Azure, NVIDIA DGX-1, and bare metal.
 
 Terraform is used under the hood to setup all the infrastructure. Terraform modules can also be used directly to integrate Gradient into an existing Terraform setup.
 
-## Prerequistes
+## Prerequisites
 
-* A Paperspace account with an appropriate billing plan and API key
-* An AWS S3 bucket to store Terraform state \[[https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html)\]
+* Paperspace account with an appropriate billing plan and API key
+* [AWS S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) to store Terraform state
 
 ## Installation
+
+To install the Gradient Installer CLI, run the following command:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paperspace/gradient-installer/master/bin/install)"
@@ -23,7 +25,7 @@ gradient-installer update
 
 ## **Usage**
 
-Things to have beforehand:
+### Additional Prerequisites
 
 * AWS credentials to an S3 bucket to store cluster state information
 * From [Pre-installation steps](pre-installation-steps.md): artifacts bucket and credentials, SSL certificates or Let's Encrypt Settings
