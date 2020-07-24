@@ -1,8 +1,6 @@
 # Pre-installation steps
 
-There's several steps that are common to all installed environments. After completing these steps you'll find
-
-## Artifacts storage
+## 1. Setup artifact storage
 
 Create an AWS S3 bucket for artifacts. Next, add CORS permissions to the bucket you created:
 
@@ -53,11 +51,9 @@ Next, create a dedicated IAM user with Programmatic Access for read/write access
 
 On the user's Security Credentials tab, create an access key for this user, which will be used when registering your cluster in the Paperspace web console.
 
-## Cluster registration
 
-Next, you'll need to register a new cluster in the [Paperspace web console](https://www.paperspace.com/console/clusters). After you've registered a cluster you'll be provided an API key and cluster handle, which, along with the cluster name you provided, will be used later in the install process.
 
-## SSL certificate
+## 2. SSL
 
 Gradient uses a wildcard SSL certificate to secure HTTP traffic into your processing site. The installer can provide an automatic certificate if you have a supported DNS provider \([supported DNS providers](lets-encrypt-dns-providers.md)\) or you can provide your own.
 
