@@ -1,6 +1,6 @@
 # Install on NVIDIA DGX
 
-This version should be used for NVIDIA DGX-1 hosts. Terraform, running inside a Docker container, will be used to provision a Kubernetes cluster on the hosts and will require ssh access to all hosts in order to connect. Note that in this scenario auto-scaling is not available – all nodes will be running at all times.
+This version should be used for NVIDIA DGX hosts. Terraform, running inside a Docker container, will be used to provision a Kubernetes cluster on the hosts and will require ssh access to all hosts in order to connect. Note that in this scenario auto-scaling is not available – all nodes will be running at all times.
 
 Be sure to follow the [pre-installation steps](../pre-installation-steps.md), and then run this:
 
@@ -13,7 +13,7 @@ ssh-keygen -f gradient-cluster/gradient_rsa
 
 On the computer where you plan to run the Gradient installer, you must have Docker installed with a user that has access to /var/run/docker.sock.
 
-For the NVIDIA DGX-1 hosts:
+For the NVIDIA DGX hosts:
 
 * Ubuntu 18.04
 * NFS server available to all nodes
