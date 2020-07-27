@@ -12,7 +12,7 @@ To create a self-hosted Gradient cluster, use the [Gradient Installer CLI](gradi
 
 Click Private Clusters under Gradientº in the side nav.
 
-Then click the **+** tile to launch the Create managed cluster flow, seen below in step 4.
+Then click the **+** tile to start creating a Managed Gradient cluster.
 
 ![](../../.gitbook/assets/screen-shot-2020-07-23-at-9.16.56-pm.png)
 
