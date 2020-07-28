@@ -21,6 +21,8 @@
 
 * [Overview](notebooks/about.md)
 * [Using Notebooks](notebooks/create-a-notebook/README.md)
+  * [The Notebook interface](notebooks/create-a-notebook/the-notebook-interface.md)
+  * [Notebook metrics](notebooks/create-a-notebook/notebook-metrics.md)
   * [Share a Notebook](notebooks/create-a-notebook/share-a-notebook.md)
   * [Fork a Notebook](notebooks/create-a-notebook/fork-a-notebook.md)
   * [Notebook Directories](notebooks/create-a-notebook/notebooks-directories.md)
