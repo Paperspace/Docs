@@ -251,48 +251,10 @@ To stop a _Running_ Deployment by ID, use the `stop` subcommand:
 
 ```bash
 gradient deployments stop --id <your-deployment-id>
+
 ```
 {% endtab %}
 {% endtabs %}
-
-## Deployment Autoscaling 
-
-To autoscale your Model Deployment  you can add autoscaling parameters to the during update or create.
-
-{% tabs %}
-{% tab title="CLI" %}
-```text
- --minInstanceCount TEXT         Minimal instance count
-  --maxInstanceCount TEXT         Maximal instance count
-  --scaleCooldownPeriod TEXT      Scale cooldown period
-  --metric TEXT                   Autoscaling metrics. Example:
-                                  my_metric/targetAverage:21.37
-
-  --resource TEXT                 Autoscaling resources. Example:
-                                  cpu/target:60
-```
-{% endtab %}
-{% endtabs %}
-
- Example of autoscaling based on CPU resorce set to 90% average utilisation: 
-
-```text
-gradient deployments create --deploymentType TFServing --modelId mosiezohgsqpsz2 --name "autoscalingtest1" --machineType c5.xlarge --minInstanceCount 1 --maxInstanceCount 5 --resource cpuPercentage/targetAverage:90 --imageUrl tensorflow/serving --instanceCount 1 --clusterId <someCluster>
-
-```
-
-### **Algorithm Details**
-
- From the most basic perspective, the Model Deployment Autoscaler operates on the ratio between desired metric value and current metric value:  
-  
- desired amount of replicas  = currentReplicas \* \( currentMetricValue / desiredMetricValue \)  
-  
- For example, if the current metric value is 100, and the desired value is 50, the number of replicas will be doubled, since 100.0 / 50.0 == 2.0 If the current value is instead 25, we’ll halve the number of replicas, since 25 / 50 == 0.5. We’ll skip scaling if the ratio is sufficiently close to 1.0 \(within a globally-configurable tolerance, lets say 10%\).  
-  
- When a targetAverage  is specified, the currentMetricValue is computed by taking the average of the given metric across all replicas in the Model Deployment Autoscaler’s scale target. Before checking the tolerance and deciding on the final values, we take pod readiness and missing metrics into consideration  
-  
-If a particular deployment pod replica is missing metrics, it is set aside for later; Deployment replicas with missing metrics will be used to adjust the final scaling amount.  
-
 
 ## Edit a Deployment
 

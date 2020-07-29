@@ -6,7 +6,7 @@ Gradient provides the ability to use any public or private Docker container.  Th
 
 {% tabs %}
 {% tab title="Web UI" %}
-![](../../.gitbook/assets/image%20%2883%29.png)
+![](../../.gitbook/assets/image%20%2894%29.png)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -14,10 +14,10 @@ Gradient provides the ability to use any public or private Docker container.  Th
 | Registry Username | Username used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g. Docker Hub. |
 | Registry Password | Password used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g. Docker Hub. |
 | Image Server | Docker image server eg https://index.docker.io/v1 |
-| Port |  |
 | Container Model Path | Path to the model within the container |
-| Method |  |
-| Container URL Path |  |
+| Method | Method |
+| Port | Ports to open up eg 80:8080 |
+| Container URL Path | Docker image for model serving |
 | Endpoint URL Path |  |
 | Docker Arguments \(CSV\) |  |
 | Environment Variables \(JSON\) |  |
@@ -98,12 +98,18 @@ Options:
 
 ### Running Custom Container from Private Registry
 
-To run custom container on a private registry you need to specify following fields:
+To run a custom container on a private registry, you need to specify the following fields:
 
 {% tabs %}
+{% tab title="Web UI" %}
+Populate the Container Name, Image Server, Registry Username, Registry Password fields \(plus any other optional fields\) to pull a container from your private registry. 
+
+![](../../.gitbook/assets/image%20%2891%29.png)
+{% endtab %}
+
 {% tab title="CLI" %}
 ```bash
- --imageUrl TEXT                 Docker image for model serving
+  --imageUrl TEXT                 Docker image for model serving
                                   [required]
   --imageUsername TEXT            Username used to access docker image
   --imagePassword TEXT            Password used to access docker image
@@ -112,7 +118,7 @@ To run custom container on a private registry you need to specify following fiel
 {% endtab %}
 {% endtabs %}
 
-### Example of running a flask server using deployments
+### Example of running a flask server using the deployments CLI
 
 ```text
 gradient deployments create 
@@ -123,8 +129,6 @@ gradient deployments create
 --instanceCount 1 
 --clusterId <someCluster>
 --port 80:8080
-
-
 ```
 
 

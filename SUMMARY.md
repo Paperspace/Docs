@@ -92,6 +92,7 @@
 * [Managing Deployments](deployments/managing-deployments/README.md)
   * [Deployment States](deployments/managing-deployments/deployment-states.md)
   * [A Deployed Model's RESTful API](deployments/managing-deployments/deployment-restful-api.md)
+  * [Deployment Autoscaling](deployments/managing-deployments/deployment-autoscaling.md)
   * [Optimize Models for Inference](deployments/managing-deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment Containers](deployments/deployment-containers/README.md)
   * [Custom Deployment Containers](deployments/deployment-containers/custom-deployment-containers.md)
