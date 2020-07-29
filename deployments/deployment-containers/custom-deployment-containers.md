@@ -34,21 +34,26 @@ Usage: gradient deployments create [OPTIONS]
 Options:
   --deploymentType [TFServing|ONNX|Custom|Flask|TensorRT]
                                   Model deployment type  [required]
-  --modelId TEXT                  ID of a trained model  [required]
+  --projectId TEXT                Project ID
+  --modelId TEXT                  ID of a trained model
   --name TEXT                     Human-friendly name for new model deployment
                                   [required]
+
   --machineType TEXT              Type of machine for new deployment
                                   [required]
+
   --imageUrl TEXT                 Docker image for model serving
                                   [required]
+
   --instanceCount INTEGER         Number of machine instances
                                   [required]
+
+  --command TEXT                  Deployment command
   --containerModelPath TEXT       Container model path
   --imageUsername TEXT            Username used to access docker image
   --imagePassword TEXT            Password used to access docker image
   --imageServer TEXT              Docker image server
   --containerUrlPath TEXT         Container URL path
-  --endpointUrlPath TEXT          Endpoint URL path
   --method TEXT                   Method
   --dockerArgs JSON_STRING        JSON-style list of docker args
   --env JSON_STRING               JSON-style environmental variables map
@@ -60,7 +65,67 @@ Options:
   --auth                          Generate username and password. Mutually
                                   exclusive with --authUsername and
                                   --authPassword
+
+  --tag TEXT                      One or many tags that you want to add to
+                                  model deployment job
+
+  --tags TEXT                     Separated by comma tags that you want add to
+                                  model deployment job
+
+  --workspace TEXT                Path to workspace directory, archive, S3 or
+                                  git repository
+
+  --workspaceRef TEXT             Git commit hash, branch name or tag
+  --workspaceUsername TEXT        Workspace username
+  --workspacePassword TEXT        Workspace password
+  --minInstanceCount TEXT         Minimal instance count
+  --maxInstanceCount TEXT         Maximal instance count
+  --scaleCooldownPeriod TEXT      Scale cooldown period
+  --metric TEXT                   Autoscaling metrics. Example:
+                                  my_metric/targetAverage:21.37
+
+  --resource TEXT                 Autoscaling resources. Example:
+                                  cpu/target:60
+
+  --apiKey TEXT                   API key to use this time only
+  --optionsFile PATH              Path to YAML file with predefined options
+  --createOptionsFile PATH        Generate template options file
+  --help                          Show this message and exit.
+
 ```
 {% endtab %}
 {% endtabs %}
+
+### Running Custom Container from Private Registry
+
+To run custom container on a private registry you need to specify following fields:
+
+{% tabs %}
+{% tab title="CLI" %}
+```bash
+ --imageUrl TEXT                 Docker image for model serving
+                                  [required]
+  --imageUsername TEXT            Username used to access docker image
+  --imagePassword TEXT            Password used to access docker image
+  --imageServer TEXT              Docker image server
+```
+{% endtab %}
+{% endtabs %}
+
+### Example of running a flask server using deployments
+
+```text
+gradient deployments create 
+--deploymentType Custom 
+-name "flaskserver" 
+--machineType c5.xlarge 
+--imageUrl tiangolo/uwsgi-nginx-flask 
+--instanceCount 1 
+--clusterId <someCluster>
+--port 80:8080
+
+
+```
+
+
 

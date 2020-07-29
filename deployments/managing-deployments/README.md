@@ -120,22 +120,27 @@ Usage: gradient deployments create [OPTIONS]
 Options:
   --deploymentType [TFServing|ONNX|Custom|Flask|TensorRT]
                                   Model deployment type  [required]
-  --modelId TEXT                  ID of a trained model  [required]
+  --projectId TEXT                Project ID
+  --modelId TEXT                  ID of a trained model
   --name TEXT                     Human-friendly name for new model deployment
                                   [required]
+
   --machineType TEXT              Type of machine for new deployment
                                   [required]
+
   --imageUrl TEXT                 Docker image for model serving
                                   [required]
+
   --instanceCount INTEGER         Number of machine instances
                                   [required]
-  --containerModelPath TEXT       Container model path (defaults to /models/) 
+
+  --command TEXT                  Deployment command
+  --containerModelPath TEXT       Container model path
   --imageUsername TEXT            Username used to access docker image
   --imagePassword TEXT            Password used to access docker image
   --imageServer TEXT              Docker image server
   --containerUrlPath TEXT         Container URL path
-  --endpointUrlPath TEXT          Endpoint URL path
-  --method TEXT                   Prediction Method
+  --method TEXT                   Method
   --dockerArgs JSON_STRING        JSON-style list of docker args
   --env JSON_STRING               JSON-style environmental variables map
   --apiType TEXT                  Type of API
@@ -146,10 +151,33 @@ Options:
   --auth                          Generate username and password. Mutually
                                   exclusive with --authUsername and
                                   --authPassword
+
+  --tag TEXT                      One or many tags that you want to add to
+                                  model deployment job
+
+  --tags TEXT                     Separated by comma tags that you want add to
+                                  model deployment job
+
+  --workspace TEXT                Path to workspace directory, archive, S3 or
+                                  git repository
+
+  --workspaceRef TEXT             Git commit hash, branch name or tag
+  --workspaceUsername TEXT        Workspace username
+  --workspacePassword TEXT        Workspace password
+  --minInstanceCount TEXT         Minimal instance count
+  --maxInstanceCount TEXT         Maximal instance count
+  --scaleCooldownPeriod TEXT      Scale cooldown period
+  --metric TEXT                   Autoscaling metrics. Example:
+                                  my_metric/targetAverage:21.37
+
+  --resource TEXT                 Autoscaling resources. Example:
+                                  cpu/target:60
+
   --apiKey TEXT                   API key to use this time only
   --optionsFile PATH              Path to YAML file with predefined options
   --createOptionsFile PATH        Generate template options file
-  --help                          Show this message and exit. 
+  --help                          Show this message and exit.
+
 ```
 
 Sometimes, a user will want to do inference with a custom model using a custom container. An example of this is building a Flask or Streamlit container which will use the model trained on gradient to do inference but also expose a custom dashboard for the team to use to consume the predictions for making business decisions. This is accomplished by specifying the modelType to be "Custom" & passing in the information for the custom container. 
@@ -227,6 +255,45 @@ gradient deployments stop --id <your-deployment-id>
 {% endtab %}
 {% endtabs %}
 
+## Deployment Autoscaling 
+
+To autoscale your Model Deployment  you can add autoscaling parameters to the during update or create.
+
+{% tabs %}
+{% tab title="CLI" %}
+```text
+ --minInstanceCount TEXT         Minimal instance count
+  --maxInstanceCount TEXT         Maximal instance count
+  --scaleCooldownPeriod TEXT      Scale cooldown period
+  --metric TEXT                   Autoscaling metrics. Example:
+                                  my_metric/targetAverage:21.37
+
+  --resource TEXT                 Autoscaling resources. Example:
+                                  cpu/target:60
+```
+{% endtab %}
+{% endtabs %}
+
+ Example of autoscaling based on CPU resorce set to 90% average utilisation: 
+
+```text
+gradient deployments create --deploymentType TFServing --modelId mosiezohgsqpsz2 --name "autoscalingtest1" --machineType c5.xlarge --minInstanceCount 1 --maxInstanceCount 5 --resource cpuPercentage/targetAverage:90 --imageUrl tensorflow/serving --instanceCount 1 --clusterId <someCluster>
+
+```
+
+### **Algorithm Details**
+
+ From the most basic perspective, the Model Deployment Autoscaler operates on the ratio between desired metric value and current metric value:  
+  
+ desired amount of replicas  = currentReplicas \* \( currentMetricValue / desiredMetricValue \)  
+  
+ For example, if the current metric value is 100, and the desired value is 50, the number of replicas will be doubled, since 100.0 / 50.0 == 2.0 If the current value is instead 25, we’ll halve the number of replicas, since 25 / 50 == 0.5. We’ll skip scaling if the ratio is sufficiently close to 1.0 \(within a globally-configurable tolerance, lets say 10%\).  
+  
+ When a targetAverage  is specified, the currentMetricValue is computed by taking the average of the given metric across all replicas in the Model Deployment Autoscaler’s scale target. Before checking the tolerance and deciding on the final values, we take pod readiness and missing metrics into consideration  
+  
+If a particular deployment pod replica is missing metrics, it is set aside for later; Deployment replicas with missing metrics will be used to adjust the final scaling amount.  
+
+
 ## Edit a Deployment
 
 {% tabs %}
@@ -260,22 +327,28 @@ gradient deployments update --id <your-deployment-id>
 All Deployment options can be updated with this command: 
 
 ```bash
+Usage: gradient deployments update [OPTIONS]
+
+  Modify existing deployment
+
 Options:
   --id TEXT                       ID of existing deployment
                                   [required]
+
   --deploymentType [TFServing|ONNX|Custom|Flask|TensorRT]
                                   Model deployment type
+  --projectId TEXT                Project ID
   --modelId TEXT                  ID of a trained model
   --name TEXT                     Human-friendly name for new model deployment
   --machineType TEXT              Type of machine for new deployment
   --imageUrl TEXT                 Docker image for model serving
   --instanceCount INTEGER         Number of machine instances
+  --command TEXT                  Deployment command
   --containerModelPath TEXT       Container model path
   --imageUsername TEXT            Username used to access docker image
   --imagePassword TEXT            Password used to access docker image
   --imageServer TEXT              Docker image server
   --containerUrlPath TEXT         Container URL path
-  --endpointUrlPath TEXT          Endpoint URL path
   --method TEXT                   Method
   --dockerArgs JSON_STRING        JSON-style list of docker args
   --env JSON_STRING               JSON-style environmental variables map
@@ -284,6 +357,21 @@ Options:
   --authUsername TEXT             Username
   --authPassword TEXT             Password
   --clusterId TEXT                Cluster ID
+  --workspace TEXT                Path to workspace directory, archive, S3 or
+                                  git repository
+
+  --workspaceRef TEXT             Git commit hash, branch name or tag
+  --workspaceUsername <username>  Workspace username
+  --workspacePassword TEXT        Workspace password
+  --minInstanceCount TEXT         Minimal instance count
+  --maxInstanceCount TEXT         Maximal instance count
+  --scaleCooldownPeriod TEXT      Scale cooldown period
+  --metric TEXT                   Autoscaling metrics. Example:
+                                  my_metric/targetAverage:21.37
+
+  --resource TEXT                 Autoscaling resources. Example:
+                                  cpu/target:60
+
   --apiKey TEXT                   API key to use this time only
   --optionsFile PATH              Path to YAML file with predefined options
   --createOptionsFile PATH        Generate template options file
