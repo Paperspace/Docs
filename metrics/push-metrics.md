@@ -4,7 +4,7 @@ description: How to push metrics into Gradient Metrics system
 
 # Push Metrics
 
-In order to push metrics from experiment or deployment code you have to import gradient-utils from gradient package:
+In order to push metrics from your Experiment or Deployment code, you must import gradient-utils from gradient package:
 
 ### Installing Gradient Utils
 
@@ -14,7 +14,7 @@ pip install gradient-utils
 
 ### Instrumenting
 
-Four types of metric are offered: Counter, Gauge, Summary and Histogram. See the documentation on [metric types](http://prometheus.io/docs/concepts/metric_types/) and [instrumentation best practices](https://prometheus.io/docs/practices/instrumentation/#counter-vs-gauge-summary-vs-histogram) on how to use them.
+Four types of metrics are offered: Counter, Gauge, Summary, and Histogram. 
 
 #### Counter
 
@@ -128,8 +128,6 @@ with h.time():
 
 All metrics can have labels, allowing grouping of related time series.
 
-See the best practices on [naming](http://prometheus.io/docs/practices/naming/) and [labels](http://prometheus.io/docs/practices/instrumentation/#use-labels).
-
 Taking a counter as an example:
 
 ```text
@@ -173,5 +171,7 @@ You have to remember to import MetricsLogger:
 from gradient_utils.metrics import MetricsLogger
 ```
 
+## Notes:
 
+Gradient uses [Prometheus](https://prometheus.io/) behind the scenes. See the Prometheus documentation on [metric types](http://prometheus.io/docs/concepts/metric_types/) and [instrumentation best practices](https://prometheus.io/docs/practices/instrumentation/#counter-vs-gauge-summary-vs-histogram) the best practices on [naming](http://prometheus.io/docs/practices/naming/) and [labels](http://prometheus.io/docs/practices/instrumentation/#use-labels) on how to use them.  
 

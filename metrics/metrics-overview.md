@@ -11,24 +11,24 @@ Experiments and Deployments on Gradient can record metrics which are available b
 We log three different kinds of metrics: hardware metrics, framework metrics, and custom user metrics.
 
 {% hint style="warning" %}
-**Note:** Framework and custom metrics are only available in [Gradient Enterprise](../gradient-private-cloud/about.md). [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
+**Note:** Framework and custom metrics are only available in a Gradient [Private Cluster](../gradient-private-cloud/about.md). [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
 {% endhint %}
 
-### Hardware metrics <a id="hardware-metrics"></a>
+## System metrics
 
 All Gradient workloads like Experiments and Deployments monitor and track CPU, Memory, and Network. If the machine is equipped with a GPU, this will be tracked as well.
 
 ![System Metrics showing CPU and Memory Usage](../.gitbook/assets/screenshot-metrics.jpg)
 
-### Framework metrics <a id="framework-metrics"></a>
+## Framework metrics
 
 For example, accuracy and mean squared errors are two common metrics for classification and regression, respectively.
 
 If your deployment uses TF Serving, some metrics such as`tensorflow:core:direct_session_runs`, `tensorflow:cc:saved_model:load_attempt_count` etc. will be logged automatically.
 
-### **User metrics**
+## **Custom metrics**
 
-You can log custom user metrics from inside of a experiment or deployment using the Python CLI utils. Its based on [prometheus Python Client](https://github.com/prometheus/client_python). Here's a trivial example:  
+You can log custom user metrics from inside of an experiment or deployment using the Python CLI utils. It's based on [Prometheus Python Client](https://github.com/prometheus/client_python). Here's a trivial example:  
 
 
 ```python

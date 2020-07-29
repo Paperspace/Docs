@@ -91,7 +91,10 @@
 * [Overview](deployments/about.md)
 * [Managing Deployments](deployments/managing-deployments/README.md)
   * [Deployment States](deployments/managing-deployments/deployment-states.md)
-  * [A Deployed Model's RESTful API](deployments/managing-deployments/deployment-restful-api.md)
+  * [Deployment Logs](deployments/managing-deployments/deployment-logs.md)
+  * [Deployment Metrics](deployments/managing-deployments/deployment-metrics.md)
+  * [A Deployed Model's API Endpoint](deployments/managing-deployments/a-deployed-models-api-endpoint/README.md)
+    * [Gradient + TensorFlow Serving](deployments/managing-deployments/a-deployed-models-api-endpoint/deployment-restful-api-tfserving.md)
   * [Deployment Autoscaling](deployments/managing-deployments/deployment-autoscaling.md)
   * [Optimize Models for Inference](deployments/managing-deployments/optimizing-tensorflow-models-for-inference.md)
 * [Deployment Containers](deployments/deployment-containers/README.md)
@@ -114,7 +117,7 @@
 ## Metrics
 
 * [Metrics Overview](metrics/metrics-overview.md)
-* [Query Metrics](metrics/quering-metrics.md)
+* [View and Query Metrics](metrics/quering-metrics.md)
 * [Push Metrics](metrics/push-metrics.md)
 
 ## Secrets

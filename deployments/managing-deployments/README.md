@@ -206,7 +206,7 @@ Each Deployment has its own unique RESTful API. Inference can be performed via t
 
 Congrats, you've created a Deployment and can perform inference!
 
-[Learn more about a Deployment's RESTful API here](deployment-restful-api.md).
+[Learn more about a Deployment's RESTful API here](a-deployed-models-api-endpoint/deployment-restful-api-tfserving.md).
 {% endtab %}
 
 {% tab title="CLI" %}
