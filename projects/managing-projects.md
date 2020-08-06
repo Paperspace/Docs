@@ -109,9 +109,9 @@ On the Accessors tab you will find a list of users who already have access to th
 You can also remove members' access to a Project by clicking the "Remove Access" button next to the member's name.
 
 {% hint style="info" %}
-Note: Only existing team members will be displayed in the drop-down list. Only Team admins can add additional team members.
+Note: Only existing team members will be displayed in the drop-down list. Only Team admins can add additional team members to this list.
 
-Additionally, project access can only be controlled through the wen console – Accessors cannot be added or removed through the Gradient CLI.
+Additionally, project access can only be controlled through the web console – Accessors cannot be added or removed through the Gradient CLI.
 {% endhint %}
 
 ## Deleting a Project
