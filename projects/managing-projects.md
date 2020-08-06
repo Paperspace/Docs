@@ -4,7 +4,7 @@
 
 {% tabs %}
 {% tab title="Web UI" %}
-On the Projects page, click _Create Project_ and select _Create Standalone Project_.
+On the [Projects page](https://console.paperspace.com/projects), click _Create Project_ and select _Create Standalone Project_.
 
 ![](../.gitbook/assets/image%20%2870%29.png)
 
@@ -38,7 +38,7 @@ gradient projects create --name ExampleProject [OPTIONS]
 {% tab title="Web UI" %}
 [GradientCI](gradientci-v2/) Projects allow you to connect a GitHub repository to your Project in order to automatically run experiments when you push new commits or open pull requests \(PRs\).
 
-Visit [www.paperspace.com/console/projects](https://www.paperspace.com/console/projects), click _Create Project_, and select **Create GradientCI Project**. Make sure you have installed **GradientCI** on the target repository to which you'll link your Project.
+Visit [https://console.paperspace.com/projects](https://console.paperspace.com/projects), click _Create Project_, and select **Create GradientCI Project**. Make sure you have installed **GradientCI** on the target repository to which you'll link your Project.
 
 ![](../.gitbook/assets/screen-shot-2019-05-30-at-9.11.47-pm.png)
 
@@ -95,6 +95,24 @@ gradient projects list
 ```
 {% endtab %}
 {% endtabs %}
+
+## Managing access to a Project
+
+To add other team members to a project, click any Project in the projects list to navigate to its Project details page and then click the Accessors tab:
+
+![](../.gitbook/assets/accessors.png)
+
+On the Accessors tab you will find a list of users who already have access to the Project. Add an Accessor by clicking the "Add Accessor" button on the right side of the page. Assign other team members to the Project by selecting their name in the drop-down and clicking on "Assign User":
+
+![](../.gitbook/assets/assign-user8%20%281%29.png)
+
+You can also remove members' access to a Project by clicking the "Remove Access" button next to the member's name.
+
+{% hint style="info" %}
+Note: Only existing team members will be displayed in the drop-down list. Only Team admins can add additional team members.
+
+Additionally, project access can only be controlled through the wen console – Accessors cannot be added or removed through the Gradient CLI.
+{% endhint %}
 
 ## Deleting a Project
 
