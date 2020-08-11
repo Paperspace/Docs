@@ -140,7 +140,7 @@ Options:
   --imagePassword TEXT            Password used to access docker image
   --imageServer TEXT              Docker image server
   --containerUrlPath TEXT         Container URL path
-  --method TEXT                   Method
+  --method TEXT                   Method prefix - default to '/' - If TFServing REST method prefix is ':'
   --dockerArgs JSON_STRING        JSON-style list of docker args
   --env JSON_STRING               JSON-style environmental variables map
   --apiType TEXT                  Type of API
