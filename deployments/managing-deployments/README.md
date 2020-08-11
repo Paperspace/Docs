@@ -143,7 +143,7 @@ Options:
   --method TEXT                   Method prefix - default to '/' - If TFServing REST method prefix is ':'
   --dockerArgs JSON_STRING        JSON-style list of docker args
   --env JSON_STRING               JSON-style environmental variables map
-  --apiType TEXT                  Type of API
+  --apiType TEXT                  Type of API - REST or GRPC, defaults to REST
   --ports TEXT                    Ports
   --clusterId TEXT                Cluster ID
   --authUsername TEXT             Username
