@@ -8,7 +8,7 @@ Create an AWS S3 bucket for artifacts. Next, add CORS permissions to the bucket 
 <?xml version="1.0" encoding="UTF-8"?>
 <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 <CORSRule>
-    <AllowedOrigin>https://www.paperspace.com</AllowedOrigin>
+    <AllowedOrigin>https://console.paperspace.com</AllowedOrigin>
     <AllowedMethod>GET</AllowedMethod>
     <AllowedMethod>PUT</AllowedMethod>
     <MaxAgeSeconds>3000</MaxAgeSeconds>
