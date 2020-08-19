@@ -1,10 +1,10 @@
 # Setup
 
-Gradient cluster supports installation on any cloud provider or bare metal infrastructure. There are multiple methods to setup a Gradient cluster depending on your machine learning and environment needs.
+Gradient clusters can be installed on any cloud provider or bare metal infrastructure. There are multiple ways to set up a Gradient cluster depending on your environment and your machine learning needs.
 
-* [Managed Install ](managed-installation.md) - Run Gradient cluster as a fully managed service on Paperspace Cloud
-* [Gradient Installer CLI ](gradient-installer-cli.md)- Create a Gradient cluster on AWS, GCP, Azure, or bare metal via CLI
-* [Terraform](terraform/) - Integrate a Gradient cluster directly into an existing Terraform instructure
+* [Managed Install](managed-installation.md) - Create a Gradient cluster as a fully managed service on Paperspace Cloud
+* [Gradient Installer CLI](gradient-installer-cli.md) - Create a Gradient cluster on AWS, GCP, Azure, or bare metal via the CLI
+* [Terraform](terraform/) - Install Gradient directly into existing Terraforrm infrastructure
 
 {% page-ref page="pre-installation-steps.md" %}
 
