@@ -36,6 +36,7 @@
 * [Managing Projects](projects/managing-projects.md)
 * [GradientCI](projects/gradientci-v2/README.md)
   * [GradientCI V1 \(Deprecated\)](projects/gradientci-v2/gradientci-v2.md)
+* [GitHub Badge - Run on Gradient](projects/github-badge-run-on-gradient.md)
 
 ## Experiments
 
