@@ -177,6 +177,7 @@
     * [Install on bare metal / VMs](gradient-private-cloud/setup/terraform/bare-metal-vms.md)
     * [Install on NVIDIA DGX](gradient-private-cloud/setup/terraform/install-nvidia-dgx.md)
   * [Let's Encrypt DNS Providers](gradient-private-cloud/setup/lets-encrypt-dns-providers.md)
+  * [Updating your cluster](gradient-private-cloud/setup/updating-your-cluster.md)
 * [Usage](gradient-private-cloud/usage.md)
 
 ## Paperspace Account
