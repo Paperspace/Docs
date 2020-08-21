@@ -6,7 +6,7 @@ Your clusters are available under the _Private Clusters_ [page](https://www.pape
 
 ![](../.gitbook/assets/image%20%2861%29.png)
 
-## **Using Gradient Enterprise via the Gradient CLI**
+## **Using Gradient private clusters via the Gradient CLI**
 
 ```bash
 gradient <command> ... --clusterId <your-cluster-ID>
