@@ -6,7 +6,9 @@ description: For creating a private cluster on the Paperspace Cloud.
 
 ## What is a managed private cluster?
 
-Gradient offers a multi-tenant service for running basic ML workloads as well as private clusters that offer more advanced functionality for power users.  Both managed options run on the Paperspace Cloud.  If you are looking to run Gradient on your own infrastructure, see the [self-hosted clusters](self-hosted-clusters/) section.  
+Gradient offers a multi-tenant service for running basic ML workloads as well as private clusters that offer more advanced functionality for power users.  Both managed options run on the Paperspace Cloud.  
+
+**How to choose between the multi-tenant service and a private cluster:** If you are doing distributed training, deploying models into production, or need more control over your environment, we recommend creating a private cluster.  
 
 |  | Multi-Tenant Service | Managed Private Clusters | Self-Hosted Clusters |
 | :--- | :--- | :--- | :--- |
@@ -15,7 +17,7 @@ Gradient offers a multi-tenant service for running basic ML workloads as well as
 | **Features:**  | Notebooks \(including [Free GPUs](../../instances/free-instances.md)!\), basic experiments | Notebooks, experiments, deployments, model repo, data management, GradientCI | Notebooks, experiments, deployments, model repo, data management, GradientCI |
 | **Target audience:**  | Hobbyists & students | Startups & SMBs running production workloads | Mid-market & enterprise businesses conducting ML at scale |
 
-**How to choose between the multi-tenant service and a private cluster:** If you are doing distributed training, deploying models into production, or need more control over your environment, we recommend creating a private cluster.  
+This section covers the managed private cluster option.  If you are looking to use Gradient without a private cluster, just [create an account](https://console.paperspace.com/signup?gradient=true) to get started. If you are looking to run Gradient on your own infrastructure, see the [self-hosted clusters](self-hosted-clusters/) section.  
 
 ## Overview
 
