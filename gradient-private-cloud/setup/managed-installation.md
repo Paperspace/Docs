@@ -10,13 +10,6 @@ Gradient offers a multi-tenant service for running basic ML workloads as well as
 
 **How to choose between the multi-tenant service and a private cluster:** If you are doing distributed training, deploying models into production, or need more control over your environment, we recommend creating a private cluster.  
 
-|  | Multi-Tenant Service | Managed Private Clusters | Self-Hosted Clusters |
-| :--- | :--- | :--- | :--- |
-| **Infrastructure:** | Shared, managed by Paperspace | Private, managed by Paperspace | Private, self-hosted |
-| **Setup time:**  | None | Setup time: 10 minutes | Setup time: 20-30 minutes |
-| **Features:**  | Notebooks \(including [Free GPUs](../../instances/free-instances.md)!\), basic experiments | Notebooks, experiments, deployments, model repo, data management, GradientCI | Notebooks, experiments, deployments, model repo, data management, GradientCI |
-| **Target audience:**  | Hobbyists & students | Startups & SMBs running production workloads | Mid-market & enterprise businesses conducting ML at scale |
-
 This section covers the managed private cluster option.  If you are looking to use Gradient without a private cluster, just [create an account](https://console.paperspace.com/signup?gradient=true) to get started. If you are looking to run Gradient on your own infrastructure, see the [self-hosted clusters](self-hosted-clusters/) section.  
 
 ## Overview
