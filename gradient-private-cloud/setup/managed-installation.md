@@ -1,10 +1,35 @@
-# Managed Install
+---
+description: For creating a private cluster on the Paperspace Cloud.
+---
+
+# Managed Private Clusters
+
+## What is a managed private cluster?
+
+Gradient offers a multi-tenant service for running basic ML workloads as well as private clusters that offer more advanced functionality for power users.  Both managed options run on the Paperspace Cloud.  If you are looking to run Gradient on your own infrastructure, see the [self-hosted clusters](self-hosted-clusters/) section.  
+
+|  | Multi-Tenant Service | Managed Private Clusters | Self-Hosted Clusters |
+| :--- | :--- | :--- | :--- |
+| **Infrastructure:** | Shared, managed by Paperspace | Private, managed by Paperspace | Private, self-hosted |
+| **Setup time:**  | None | Setup time: 10 minutes | Setup time: 20-30 minutes |
+| **Features:**  | Notebooks \(including [Free GPUs](../../instances/free-instances.md)!\), basic experiments | Notebooks, experiments, deployments, model repo, data management, GradientCI | Notebooks, experiments, deployments, model repo, data management, GradientCI |
+| **Target audience:**  | Hobbyists & students | Startups & SMBs running production workloads | Mid-market & enterprise businesses conducting ML at scale |
+
+**How to choose between the multi-tenant service and a private cluster:** If you are doing distributed training, deploying models into production, or need more control over your environment, we recommend creating a private cluster.  
+
+## Overview
 
 Gradient clusters can be created in just a few clicks in the Web UI as a fully managed service in Paperspace Cloud. Create and run notebooks, experiments, and deployments all in your private cluster from within the Web UI, from the CLI, or using the SDK.
 
 On this page, you'll learn how to create a managed cluster and view your managed clusters from the Web UI.
 
-To create a self-hosted Gradient cluster, use the [Gradient Installer CLI](gradient-installer-cli.md).
+{% hint style="info" %}
+**Note:** Managed clusters require a T1 or greater [subscription](https://gradient.paperspace.com/pricing).
+{% endhint %}
+
+{% hint style="warning" %}
+**Note:** If you are looking to create a _self-hosted_ Gradient cluster, see the [Gradient Installer CLI](self-hosted-clusters/gradient-installer-cli.md).
+{% endhint %}
 
 ## Create a managed cluster
 
