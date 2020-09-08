@@ -6,7 +6,9 @@ To autoscale your Model Deployment, you can add autoscaling parameters to the de
 
 {% tabs %}
 {% tab title="Web UI" %}
-UI support for deployment autoscaling is coming soon.
+In the "Instances" section of the Deployment Create or Edit forms, you can toggle a switch to enable or disable autoscaling.  If disabled, you are required to provide a static instance count.  If enabled, you must provide minimum and maximum instance counts, as well as a metric name, type, and value to scale upon.  "Scale Cooldown Period" is optional and defaulted to 120 seconds.
+
+![](../../.gitbook/assets/screen-shot-2020-09-08-at-6.33.14-pm.png)
 {% endtab %}
 
 {% tab title="CLI" %}
