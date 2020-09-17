@@ -82,9 +82,11 @@ The datasets you download in your team are also mounted inside the notebooks lau
 
 This is one the easiest way to view the datasets while developing any of your research code. 
 
-#### Supplying a Different Volume Size \(Coming soon\)
+#### Ephemeral Dataset Volumes
 
-When downloading a dataset they are by default downloaded to shared storage. There are cases when you may want an ephemeral volume that lasts for the duration of the experiment job. These volumes are 5 GB \(`"5Gi"`\) by default; if you need a larger volume you may supply a size parameter with your dataset.
+Currently only supported on AWS private clusters.
+
+When downloading a dataset they are by default downloaded to shared storage. There are cases when you may want an ephemeral volume that lasts only for the duration of the experiment job. These volumes are 5 GB \(`"5Gi"`\) by default; if you need a larger volume you may supply a size parameter with your dataset.
 
 For example, this snippet will start an experiment with a dataset that downloads to a 10 GB volume:
 
