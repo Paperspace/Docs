@@ -68,3 +68,17 @@ Once you've created any number of managed clusters, you can view them on the sam
 
 ![](../../.gitbook/assets/screen-shot-2020-07-23-at-10.48.52-pm.png)
 
+## Autoscaling Groups
+
+Managed private clusters utilize autoscaling groups so that only the machines you need are active when you need them. Autoscaling groups can be configured by viewing your private cluster.
+
+![](../../.gitbook/assets/screen-shot-2020-09-16-at-8.43.32-pm.png)
+
+Each autoscaling group has the following:
+
+* Machine - this is the machine type that the autoscaling group will manage
+* Hot Nodes - standby machines that are on at all times and can process Gradient workloads immediately
+* Max Pool Size - Maximum amount of machines that can be created by autoscaling. This value is limited by your account's maximum machine count
+
+Default autoscaling machine types: C5, C7, C10, P4000, P5000, V100
+
