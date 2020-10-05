@@ -76,11 +76,11 @@ Because shared storage datasets are stored in your team storage they are not aut
 
 #### Viewing Shared Storage with Notebooks
 
-The datasets you download in your team are also mounted inside the notebooks launched inside your team. Below is an image of the /storage/data path. There are 3 datasets visible here, one of which has the &lt;folder name&gt;-&lt;etag&gt; format & the other which was not downloaded with e-tag.  
+The datasets you download in your team are also mounted inside the notebooks launched inside your team. Below is an image of the /storage/data path. There are 3 datasets visible here, one of which has the &lt;folder name&gt;-&lt;etag&gt; format & the other which was not downloaded with e-tag.
 
 ![](../.gitbook/assets/screen-shot-2020-01-15-at-10.49.28-pm.png)
 
-This is one the easiest way to view the datasets while developing any of your research code. 
+This is one the easiest way to view the datasets while developing any of your research code.
 
 #### Ephemeral Dataset Volumes
 

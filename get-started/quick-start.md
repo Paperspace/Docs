@@ -15,7 +15,7 @@ Note: if you are a Gradient Private Cloud user, please visit the [Gradient Priva
 
 ## Create a Notebook
 
-Notebooks can be created by clicking _Create Notebook_ button on the Notebooks tab. You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own. See more info [here](../notebooks/notebook-containers/).
+Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/notebook-containers/), choose your [instance type](../instances/instance-types.md), and then click create. 
 
 {% hint style="success" %}
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
@@ -23,33 +23,51 @@ Check out the [FREE GPU](../instances/free-instances.md) option when launching N
 
 ![](../.gitbook/assets/image%20%2858%29.png)
 
-## Submit an Experiment
+{% hint style="success" %}
+Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your own account
+{% endhint %}
+
+You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own. 
+
+## Advanced MLOps
+
+### Create a cluster
+
+Clusters are where you can execute Experiments, Jobs, Deployments, and other workloads. To create a cluster, navigate to the [clusters](https://console.paperspace.com/clusters) page and create a new cluster.   
+
+### Create a Project
+
+Projects organize your work.  To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**. Then select **Create Standalone Project** and provide a project name. Now, you can use the created Project's **Project ID** in order to create Experiments in that Project via the CLI.
+
+### Running your first Experiment
 
 You can run Experiments from the web interface or CLI:
 
-### Using the Experiment Builder \(Web UI\)
+#### Using the Experiment Builder \(Web UI\)
 
 ![](../.gitbook/assets/image%20%288%29.png)
 
-### Using the CLI
+#### Using the CLI
 
-Before creating an experiment using the CLI, you must first [install the CLI ](install-the-cli.md)and [create a Project](../projects/managing-projects.md) for your Experiments to live in. To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**. Then select **Create Standalone Project** and provide a project name. Now, you can use the created Project's **Project ID** in order to create Experiments in that Project via the CLI.
+Before creating an experiment using the CLI, you must first [install the CLI](install-the-cli.md). 
 
 **Example command**
 
-The following command will work and will create and start an Experiment that will display properties of the attached GPU. Be sure to replace `<your-project-id>` with your **Project ID**.
+The following command will work and will create and start an Experiment that will display properties of the attached GPU. Be sure to replace `<your-project-id>` with your **Project ID** and `<your-cluster-id>` with your **Cluster ID**.
 
 {% hint style="info" %}
 **Note:** We recommend stashing your API key with `gradient apiKey XXXXXXXXXXXXX` or you can add your API key as an option on each Experiment. See [Connecting Your Account](install-the-cli.md#connecting-your-account).
 {% endhint %}
 
 ```bash
-gradient experiments run singlenode --projectId <your-project-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspace none --apiKey <your-api-key>
+gradient experiments run singlenode --projectId <your-project-id> --clusterId <your-cluster-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspace none --apiKey <your-api-key>
 ```
 
-You can also create `multi-node` and `hyperparameter` Experiments, and you can use the `create` command to simply create Experiments that can be started later. Explore all the advanced options [here](../experiments/using-experiments/experiment-options.md).
+![](../.gitbook/assets/image%20%28107%29.png)
 
-Behind the scenes, your Experiment will be uploaded and executed on our cluster of machines starting with the command you provided. There are [several optional Experiment parameters](../experiments/using-experiments/), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.
+Behind the scenes, your Experiment will be uploaded and executed on your cluster starting with the command you provided. There are [several optional Experiment parameters](../experiments/using-experiments/), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.  
+
+You can also create `multi-node` and leverage other advanced functionality such as [Tensorboards](../tensorboards/using-tensorboards/getting-started-with-tensorboards.md) and [Metrics](../metrics/metrics-overview.md). Explore all the advanced options [here](../experiments/using-experiments/experiment-options.md).
 
 ### Monitor your Experiment progress
 
@@ -60,4 +78,8 @@ Congratulations! You ran your first Experiment on Gradient 🚀
 ## Explore the rest of the platform
 
 From [Models](../models/about.md) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../gradient-python-sdk/gradient-python-sdk/).
+
+Here's a sample project that exercises most of the components of the platform:
+
+{% embed url="https://github.com/Paperspace/object-detection-segmentation" %}
 

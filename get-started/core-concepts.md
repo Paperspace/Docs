@@ -1,16 +1,20 @@
 # Core Concepts
 
-## Projects
-
-A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Models, and Deployments. Projects can be synced with GitHub with [GradientCI](../projects/gradientci-v2/).
-
 ## Notebooks
 
-Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.  Gradient [Notebooks](../notebooks/about.md) make it easy to explore data and coding concepts, and collaborate with other people on projects. 
+Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.  Gradient [Notebooks](../notebooks/about.md) make it easy to explore data and coding concepts and collaborate with other people on projects. 
 
 {% hint style="success" %}
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
+
+## Projects
+
+{% hint style="warning" %}
+Using advanced ML components contained within Projects requires [creating a cluster](../gradient-private-cloud/setup/managed-installation.md).   
+{% endhint %}
+
+A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Models, and Deployments. Projects can be synced with GitHub with [GradientCI](../projects/gradientci-v2/).
 
 ## Experiments
 
@@ -20,7 +24,7 @@ Experiments are part of a larger suite of tools that work seamlessly with Gradie
 
 ## Jobs
 
-[Jobs](../jobs/about.md) execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation.  Jobs are a made up of a collection of code, data, and a container that are packaged together and remotely executed.  
+[Jobs](../jobs/about.md) execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation.  Jobs are made up of a collection of code, data, and a container that are packaged together and remotely executed.  
 
 ## Data
 
@@ -47,4 +51,6 @@ You can either upload a model or generate models from experiments which can be i
 ## Deployments \(inference/model serving\)
 
 Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here](../deployments/about.md).
+
+
 

@@ -24,12 +24,6 @@ The CLI requires **Python 3.4+ \(**or **Python 2.7\)**. Be sure to use a compati
 pip install -U gradient
 ```
 
-**Using pip to install the latest prerelease**
-
-```bash
-pip install -U --pre gradient
-```
-
 ## Connecting your account
 
 You can either stash your API key on your computer or include your API key on each command.
@@ -54,13 +48,33 @@ gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 {% embed url="https://www.youtube.com/watch?v=WS\_xYiaTSIY" %}
 
-First, sign in to your [Paperspace account](https://www.paperspace.com/account/login). On the left of your home console, you will find an 'API' section. There, you'll find a form where you can create API keys. You'll use the API keys you generate here to authenticate your requests.
+Sign in to your [Paperspace account](https://www.paperspace.com/account/login) and create a new API key. You'll use the API keys you generate here to authenticate your requests.
 
-![API keys section of the console \(https://www.paperspace.com/console/account/api\)](../.gitbook/assets/image%20%2827%29%20%281%29.png)
+## Using a virtual environment
+
+For Python 3.4+
+
+First, install `virtualenv`:
+
+```bash
+pip install virtualenv
+```
+
+Create a new virtual environment:
+
+```bash
+python3 -m virtualenv <virtual_env_dir_path>
+```
+
+Activate the virtual environment:
+
+```bash
+source <virtual_env_dir_path>/bin/activate
+```
 
 ## Enable autocomplete
 
-Add following to your `.bashrc` \(or `.zshrc`\) to enable autocomplete anytime you activate your shell. If gradient was installed in a virtual environment, the following has to be added to the `activate` script:
+Add the following to your `.bashrc` \(or `.zshrc`\) to enable autocomplete anytime you activate your shell. If gradient was installed in a virtual environment, the following has to be added to the `activate` script:
 
 `eval "$(_GRADIENT_COMPLETE=source gradient)"`
 
@@ -72,38 +86,9 @@ and then add `. ~/paperspace_complete.sh` to your `.bashrc`, `.zshrc` or `activa
 
 More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/)
 
-## Using a virtual environment
-
-First, install virtualenv:
+## **Install the latest prerelease version**
 
 ```bash
-pip install virtualenv
-```
-
-Python 3.4+
-
-Create new virtual environment:
-
-```bash
-python3 -m virtualenv <virtual_env_dir_path>
-```
-
-Activate virtual environment:
-
-```bash
-source <virtual_env_dir_path>/bin/activate
-```
-
-Python 2.7 \(note that Python 2.7 will be deprecated in 2020\)  
-Create new virtual environment:
-
-```bash
-virtualenv <virtual_env_dir_path>
-```
-
-Activate virtual environment:
-
-```bash
-source <virtual_env_dir_path>/bin/activate
+pip install -U --pre gradient
 ```
 

@@ -1,5 +1,9 @@
 # Notebook Containers
 
+{% hint style="success" %}
+Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your account.
+{% endhint %}
+
 ## Base Containers
 
 When you launch a Notebook, it runs inside a container preloaded with the notebook files and dependencies.  The following is a list of containers that Paperspace maintains:
