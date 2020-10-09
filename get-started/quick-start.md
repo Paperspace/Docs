@@ -15,9 +15,9 @@ Note: if you are a Gradient Private Cloud user, please visit the [Gradient Priva
 
 ## Logging into the Paperspace Console for the first time
 
-When you first log into the Paperspace Console, you'll choose Gradient or Core, depending on whether you're here to perform machine learning or to use cloud infrastructure directly.
+When you first log into the Paperspace Console, you'll choose Gradient or Core, depending on whether you want to perform machine learning or to use cloud infrastructure directly.
 
-You can always switch products, choosing between Gradient, Core, or also visiting your Teams & Account settings, by clicking the Product Selector at the top-left of the Console.
+You can always switch products later by clicking the Product Selector at the top-left of the Console and then selecting Gradient, Core, or your Paperspace Teams & Account settings.
 
 ![](../.gitbook/assets/welcome.gif)
 
