@@ -21,7 +21,7 @@ Notebooks can be created on the Notebooks tab. Just select a [template](../noteb
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.34.06-pm%20%281%29.png)
 
 {% hint style="success" %}
 Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your own account
@@ -45,7 +45,7 @@ You can run Experiments from the web interface or CLI:
 
 #### Using the Experiment Builder \(Web UI\)
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.37.02-pm.png)
 
 #### Using the CLI
 
@@ -63,7 +63,7 @@ The following command will work and will create and start an Experiment that wil
 gradient experiments run singlenode --projectId <your-project-id> --clusterId <your-cluster-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspace none --apiKey <your-api-key>
 ```
 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.40.00-pm.png)
 
 Behind the scenes, your Experiment will be uploaded and executed on your cluster starting with the command you provided. There are [several optional Experiment parameters](../experiments/using-experiments/), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.  
 

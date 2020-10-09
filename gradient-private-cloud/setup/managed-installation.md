@@ -34,23 +34,17 @@ Click Private Clusters under Gradientº in the side nav.
 
 Then click the **+** tile to start creating a Managed Gradient cluster.
 
-![](../../.gitbook/assets/screen-shot-2020-07-23-at-9.16.56-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.51.38-pm.png)
 
 ### 2. Configure your managed cluster
 
-Select the region where your machines will be provisioned, as well whether you want a Single Node or Multi-Node cluster.
+Select the Paperspace Cloud region where your machines will be provisioned, as well whether you want a Single Node or Multi-Node cluster.
 
-![](../../.gitbook/assets/screen-shot-2020-07-23-at-9.18.17-pm%20%281%29.png)
-
-### 3. Select a Paperspace Cloud region
-
-![](../../.gitbook/assets/screen-shot-2020-09-16-at-7.14.13-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.51.43-pm.png)
 
 Once you've configured your managed cluster, click **Create Cluster**. This will begin provisioning your machines and installing Gradient, and will automatically navigate you to the Cluster Details page below.
 
-### 4. Your managed cluster details page
-
-![](../../.gitbook/assets/screen-shot-2020-09-16-at-7.14.13-pm%20%281%29.png)
+### 3. Your managed cluster details page
 
 Your cluster will show as _Provisioning_ until it completes. It currently takes about 10 minutes to provision a cluster. Plenty of time to get a chai latte, eat some pineapple, and plan your first machine learning experiment on Gradient.
 

@@ -23,25 +23,25 @@ We will also learn how to save the model for inferencing by persisting the final
 
 You can [download ](https://drive.google.com/file/d/14vO3W3l7Ap2nLcerchqm8PTfuSrQXW0e/view?usp=sharing)the completed Jupyter Notebook and upload it to the VM. 
 
-## Launching The Notebook Instance
+## Launching a Notebook Instance
 
-Click on the **Notebooks** section in the left navigation bar to launch a Jupyter Notebook.
+Select the Gradient product and then click on the **Notebooks** section in the left navigation bar to launch a Jupyter Notebook.
 
 The first step is to choose the pre-configured environment. Choose **Jupyter Notebook Data Science Stack** that comes with the core modules needed for our model.
 
-![](../.gitbook/assets/step-3-1.jpg)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.34.06-pm.png)
 
 In the next step, choose the machine type. Since we don’t need high-end machines with GPUs, we can choose a low-cost instance. Turn on the setting **Enable low-cost instances** and choose G1 machine type that comes with 1 CPU, 1.7GB RAM and 250GB SSD.
 
-![](../.gitbook/assets/step-3-2.jpg)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.43.11-pm.png)
 
 In the final step, give the Notebook instance a name and click on **Create Notebook** button.
 
-![](../.gitbook/assets/step-3-3.jpg)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.44.51-pm.png)
 
 In a few minutes, the Notebook instance is ready. Launch it by clicking on the URL shown below the status.
 
-![](../.gitbook/assets/step-3-4.jpg)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.45.27-pm.png)
 
 We are now ready to launch the Notebook. Choose Python 3 option under the  Notebooks section.
 

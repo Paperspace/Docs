@@ -14,7 +14,7 @@ You can build a Windows or Linux virtual machine quickly, choose a GPU or CPU ma
 
 To list your existing machines or create a new one via the Web UI, navigate to Core &gt; Compute &gt; Machines in the Side Nav.
 
-![Machines page in the Web UI with two sample Machines](../.gitbook/assets/screen-shot-2019-07-11-at-6.34.25-pm.png)
+![](../.gitbook/assets/screen-shot-2020-10-09-at-6.50.11-pm.png)
 
 Alternately, you can [List your Machines via the CLI](using-machines/list-machines.md).
 
