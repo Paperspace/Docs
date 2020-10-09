@@ -13,6 +13,14 @@ Now you can create Notebooks, Jobs, Projects, Experiments, Models, Deployments, 
 
 Note: if you are a Gradient Private Cloud user, please visit the [Gradient Private Cloud section](https://docs.paperspace.com/gradient/gradient-private-cloud/about) for more info on how to utilize private processing site clusters.
 
+## Logging into the Paperspace Console for the first time
+
+When you first log into the Paperspace Console, you'll choose Gradient or Core, depending on whether you're here to perform machine learning or to use cloud infrastructure directly.
+
+You can always switch products, choosing between Gradient, Core, or also visiting your Teams & Account settings, by clicking the Product Selector at the top-left of the Console.
+
+![](../.gitbook/assets/welcome.gif)
+
 ## Create a Notebook
 
 Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/notebook-containers/), choose your [instance type](../instances/instance-types.md), and then click create. 
