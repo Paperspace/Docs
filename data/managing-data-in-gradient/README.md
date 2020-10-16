@@ -16,7 +16,7 @@ When opening your notebook you will see a `/storage` folder. Clicking on the fol
 
 #### From a Virtual Machine \(VM\)
 
-To upload data into `/storage` , you can either SCP data from a local laptop/desktop to a Paperspace VM instance or use the upload functionality from within a Gradient Jupyter Notebook.  See a tutorial [here](https://support.paperspace.com/hc/en-us/articles/360005984973-Access-Persistent-Storage-from-a-VM-and-Gradient-).
+To upload data into `/storage` , you can either SCP data from a local laptop/desktop to a Paperspace VM instance or use the upload functionality from within a Gradient Jupyter Notebook.  See a tutorial [here](https://docs.paperspace.com/gradient/data/managing-data-in-gradient/managing-persistent-storage-with-vms).
 
 ### Downloading
 
