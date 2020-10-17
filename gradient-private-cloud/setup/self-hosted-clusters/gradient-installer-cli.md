@@ -23,6 +23,15 @@ To install the Gradient Installer CLI, run the following command:
 gradient-installer update
 ```
 
+## **Profiles**
+
+Gradient Installer CLI support multiple profiles. To setup the CLI with a different profile run:
+
+```text
+export PAPERSPACE_PROFILE=favorite-team
+gradient-installer setup
+```
+
 ## **Usage**
 
 ### Additional Prerequisites
