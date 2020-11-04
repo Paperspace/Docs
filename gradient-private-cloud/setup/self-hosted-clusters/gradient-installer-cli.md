@@ -40,6 +40,7 @@ gradient-installer setup
 * From [Pre-installation steps](pre-installation-steps.md): artifacts bucket and credentials, SSL certificates or Let's Encrypt Settings
 * Domain where Gradient will be accessed
 * DNS provider information to register your Gradient domain
+* (Optional): Service account credentials for a container registry such as Docker Hub. Notebook snapshots and container builds are pushed to this registry.
 
 ### Setting up a new cluster
 
