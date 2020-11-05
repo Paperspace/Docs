@@ -13,11 +13,9 @@ Terraform is used under the hood to setup all the infrastructure. Terraform modu
 
 To install the Gradient Installer CLI, run the following command:
 
-```
+```text
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paperspace/gradient-installer/master/bin/install)"
 ```
-
-#### 
 
 ```text
 gradient-installer update
@@ -40,7 +38,7 @@ gradient-installer setup
 * From [Pre-installation steps](pre-installation-steps.md): artifacts bucket and credentials, SSL certificates or Let's Encrypt Settings
 * Domain where Gradient will be accessed
 * DNS provider information to register your Gradient domain
-* (Optional): Service account credentials for a container registry such as Docker Hub. Notebook snapshots and container builds are pushed to this registry.
+* \(Optional\): Service account credentials for a container registry such as Docker Hub. Notebook snapshots and container builds are pushed to this registry.
 
 ### Setting up a new cluster
 
@@ -48,7 +46,7 @@ gradient-installer setup
 gradient-installer clusters up
 ```
 
-This will prompt you for information to register and create your private cluster. 
+This will prompt you for information to register and create your private cluster.
 
 ### Setting up or upgrading an existing cluster
 
