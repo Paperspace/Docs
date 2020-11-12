@@ -1,14 +1,4 @@
-# Private Datasets
-
-## About
-
-When executing an experiment in Gradient you may optionally supply one or more datasets that will be downloaded into your experiment's environment prior to execution. These datasets can be downloaded from an S3 object or folder \(including the full bucket\). Gradient allows teams to run reproducible machine learning experiments by taking advantage of S3 ETags and Version IDs, which combine to allow you to be sure that datasets exactly match between training sets, and to be sure which version of a dataset you are using.
-
-{% hint style="info" %}
-Gradient private datasets & versioning are a Gradient Enterprise feature. [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
-{% endhint %}
-
-### S3 Datasets
+# \(Legacy\) S3 Datasets
 
 Datasets are downloaded and mounted readonly on `/data/DATASET` within your experiment jobs using the supplied AWS credentials. The credentials are optional for public buckets. The name of the dataset is the `basename` of the last item in the s3 path, e.g. `s3://my-bucket/mnist.zip` would have the name `mnist` and `s3://my-bucket` would have the name `my-bucket`. The name maybe overridden with the optional `name` parameter.
 
@@ -78,7 +68,7 @@ Because shared storage datasets are stored in your team storage they are not aut
 
 The datasets you download in your team are also mounted inside the notebooks launched inside your team. Below is an image of the /storage/data path. There are 3 datasets visible here, one of which has the &lt;folder name&gt;-&lt;etag&gt; format & the other which was not downloaded with e-tag.
 
-![](../.gitbook/assets/screen-shot-2020-01-15-at-10.49.28-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-01-15-at-10.49.28-pm.png)
 
 This is one the easiest way to view the datasets while developing any of your research code.
 

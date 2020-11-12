@@ -42,7 +42,7 @@ The Workspace storage is typically imported from the local directory in which yo
 
 #### Private Datasets
 
-Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository.md).
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository/).
 
 ## Models
 

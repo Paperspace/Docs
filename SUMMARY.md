@@ -1,6 +1,7 @@
 # Table of contents
 
 * [About Paperspace Gradient](README.md)
+* [Untitled](untitled.md)
 
 ## Get Started
 
@@ -105,7 +106,9 @@
 ## Data
 
 * [Types of Storage](data/storage.md)
-* [Private Datasets](data/private-datasets-repository.md)
+* [Storage Providers](data/storage-providers.md)
+* [Datasets \(Preview\)](data/private-datasets-repository/README.md)
+  * [\(Legacy\) S3 Datasets](data/private-datasets-repository/legacy-s3-datasets.md)
 * [Managing Data in Gradient](data/managing-data-in-gradient/README.md)
   * [Managing Persistent Storage with VMs](data/managing-data-in-gradient/managing-persistent-storage-with-vms.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)

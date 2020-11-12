@@ -34,5 +34,5 @@ The total of Workspace storage cannot exceed the available storage on the host m
 
 ## Private Datasets
 
-Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](private-datasets-repository.md).
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](private-datasets-repository/).
 
