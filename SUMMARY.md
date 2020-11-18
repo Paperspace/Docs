@@ -1,7 +1,6 @@
 # Table of contents
 
 * [About Paperspace Gradient](README.md)
-* [Untitled](untitled.md)
 
 ## Get Started
 
