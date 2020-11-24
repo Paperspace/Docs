@@ -35,7 +35,7 @@ Committed dataset version: dst364npcw6ccok:fo5rp4m
 You can use existing Datasets or create new ones with Gradient jobs. In the below scenario the following datasets actions are specified:
 
 * **dst364npcw6ccok:fo5rp4m** will be mounted to: **/datasets/input-a**
-* **dst364npcw6ccok:fo34ram** will be mounted to: /datasets/input-b
+* **dst364npcw6ccok:fo34ram** will be mounted to: **/datasets/input-b**
 * A dataset will be mounted to: **/datasets/output-a** which will create dataset: **dst364npcw6ccok:latest**
 
 ```text
