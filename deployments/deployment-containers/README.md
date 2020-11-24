@@ -2,7 +2,7 @@
 
 ## Base Containers
 
-When you launch a Notebook, it runs inside a container preloaded with the notebook files and dependencies.  The following is a list of containers that Paperspace maintains:
+When you launch a Deployment, it runs inside a Docker container \(often referred to as a runtime.  Any Docker image hosted in a public or private container registry can be used as the Deployment's runtime.   Additionally, Gradient includes several popular runtimes out of the box:
 
 ### Popular Containers
 
