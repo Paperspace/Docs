@@ -34,8 +34,9 @@ Committed dataset version: dst364npcw6ccok:fo5rp4m
 
 You can use existing Datasets or create new ones with Gradient jobs. In the below scenario the following datasets actions are specified:
 
-* **dst364npcw6ccok:fo5rp4m** will be mounted to: **/datasets/input**
-* A dataset will be mounted to: **/datasets/output** which will create dataset: **dst364npcw6ccok:latest**
+* **dst364npcw6ccok:fo5rp4m** will be mounted to: **/datasets/input-a**
+* **dst364npcw6ccok:fo34ram** will be mounted to: /datasets/input-b
+* A dataset will be mounted to: **/datasets/output-a** which will create dataset: **dst364npcw6ccok:latest**
 
 ```text
 gradient jobs create \
@@ -44,8 +45,9 @@ gradient jobs create \
   --projectId=$PROJECT \
   --container=bash \
   --command='cat /datasets/input/hello.txt > /datasets/output/hello2.txt && date >> /datasets/output/hello2.txt' \
-  --dataset=output@dst364npcw6ccok \
-  --dataset=input@dst364npcw6ccok:fo5rp4m
+  --dataset=output-a@dst364npcw6ccok \
+  --dataset=input-a@dst364npcw6ccok:fo5rp4m \
+  --dataset=input-b@dst364npcw6ccok:fo34ram
 ```
 
 ## Viewing Datasets
