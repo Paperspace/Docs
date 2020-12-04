@@ -6,7 +6,9 @@ Storage providers are a way to connect storage to Gradient. Gradient manages thi
 
 * S3-compatible storage
 
-## Setup a storage provider
+## Configure your storage bucket
+
+From within a new or existing S3 bucket, you'll need to edit the CORS configuration so your data can be viewed within Gradient.
 
 **CORS**
 
@@ -31,7 +33,13 @@ To access an S3 compatible storage provider you may have to add CORS rules to yo
 ]
 ```
 
-A Storage Provider can be created on your team's setting's page.
+Within the bucket _permissions_ settings, you'll see an option to edit the CORS configuration. Click edit, then copy and paste the JSON above, and then save your changes. 
+
+![](../.gitbook/assets/image%20%28108%29.png)
+
+## Create the Storage Provider 
+
+A Storage Provider can be created on your team's settings page.
 
 ![](../.gitbook/assets/screen-shot-2020-10-30-at-1.09.41-pm.png)
 
