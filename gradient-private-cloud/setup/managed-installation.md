@@ -28,31 +28,43 @@ On this page, you'll learn how to create a managed cluster and view your managed
 
 ## Create a managed cluster
 
-### 1. Navigate to the Private Clusters page
+### 1. In the Gradient product menu, select **Clusters**
 
-Click Private Clusters under Gradientº in the side nav.
+![](https://blog.paperspace.com/content/images/2020/12/Screen-Shot-2020-12-03-at-9.52.27-PM.png)
 
-Then click the **+** tile to start creating a Managed Gradient cluster.
+### 2. Select Create managed cluster
 
-![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.51.38-pm.png)
+![](https://blog.paperspace.com/content/images/2020/12/Screen-Shot-2020-12-03-at-9.53.19-PM.png)
 
-### 2. Configure your managed cluster
+### 3. Configure your managed cluster
 
-Select the Paperspace Cloud region where your machines will be provisioned, as well whether you want a Single Node or Multi-Node cluster.
+Select the Paperspace Cloud region where your machines will be provisioned, accept the cost \(in this case $26/mo\), and select **Create Cluster**
 
-![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.51.43-pm.png)
+![](https://blog.paperspace.com/content/images/2020/12/Screen-Shot-2020-12-03-at-9.53.26-PM.png)
 
-Once you've configured your managed cluster, click **Create Cluster**. This will begin provisioning your machines and installing Gradient, and will automatically navigate you to the Cluster Details page below.
+### **4. Cluster provisioning**
 
-### 3. Your managed cluster details page
+You should now see that your cluster is provisioning!
 
-Your cluster will show as _Provisioning_ until it completes. It currently takes about 10 minutes to provision a cluster. Plenty of time to get a chai latte, eat some pineapple, and plan your first machine learning experiment on Gradient.
+This process may take up to 10 minutes of time -- so be prepared to take a quick stretch and use the restroom.
 
-![](../../.gitbook/assets/screen-shot-2020-07-23-at-10.58.19-pm.png)
+![](https://blog.paperspace.com/content/images/2020/12/Screen-Shot-2020-12-03-at-9.53.37-PM.png)
 
-Once it is completed, your cluster handle will show up anywhere in the Web UI that you can select a cluster, for you to create and run Notebooks, Experiments, Deployments, Tensorboards, etc.
+### 5. Your first managed cluster
 
-You can see your cluster and machine details, as well as Start and Stop your cluster machines.
+When your cluster is successfully provisioned, you will see the new machines now available for your use.
+
+![](https://blog.paperspace.com/content/images/2020/12/Screen-Shot-2020-12-03-at-10.21.13-PM.png)
+
+Once provisioning is completed, the new cluster will appear everywhere in the Web UI that you can select a cluster, including:
+
+* Running notebooks 
+* Creating experiments and jobs
+* Creating deployments
+* Creating a storage provider to connect data
+* ... and more!
+
+From the **Clusters** view, you now have access to your cluster and machine details and can Start and Stop your cluster machines manually as needed.
 
 ![](../../.gitbook/assets/screen-shot-2020-07-23-at-11.11.52-pm.png)
 
