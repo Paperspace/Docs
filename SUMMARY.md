@@ -186,6 +186,7 @@
 
 ## Paperspace Account
 
+* [Creating a Team](paperspace-account/creating-a-team.md)
 * [Overview](paperspace-account/overview.md)
 * [Public Profiles](paperspace-account/gradient-public-profiles.md)
 * [Hotkeys](paperspace-account/hotkeys.md)
