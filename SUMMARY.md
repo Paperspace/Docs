@@ -186,12 +186,12 @@
 
 ## Paperspace Account
 
-* [Creating a Team](paperspace-account/creating-a-team.md)
 * [Overview](paperspace-account/overview.md)
 * [Public Profiles](paperspace-account/gradient-public-profiles.md)
 * [Hotkeys](paperspace-account/hotkeys.md)
-* [Untitled](paperspace-account/untitled.md)
-* [Upgrading to a Team Plan](paperspace-account/upgrading-to-a-team-plan.md)
+* [Teams](paperspace-account/teams/README.md)
+  * [Creating a Team](paperspace-account/teams/creating-a-team.md)
+  * [Upgrading to a Team Plan](paperspace-account/teams/upgrading-to-a-team-plan.md)
 
 ## Release Notes
 
