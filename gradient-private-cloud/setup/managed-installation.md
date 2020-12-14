@@ -6,24 +6,16 @@ description: For creating a private cluster on the Paperspace Cloud.
 
 ## What is a managed private cluster?
 
-Gradient offers a multi-tenant service for running basic ML workloads as well as private clusters that offer more advanced functionality for power users.  Both managed options run on the Paperspace Cloud.  
-
-**How to choose between the multi-tenant service and a private cluster:** If you are doing distributed training, deploying models into production, or need more control over your environment, we recommend creating a private cluster.  
-
-This section covers the managed private cluster option.  If you are looking to use Gradient without a private cluster, just [create an account](https://console.paperspace.com/signup?gradient=true) to get started. If you are looking to run Gradient on your own infrastructure, see the [self-hosted clusters](self-hosted-clusters/) section.  
+Managed clusters provide a dedicated Kubernetes cluster hosted on the Paperspace cloud. They are a single-tenant \(fully isolated\) environment that provides more flexibility, features, and control than the default public cluster. 
 
 ## Overview
 
-Gradient clusters can be created in just a few clicks in the Web UI as a fully managed service in Paperspace Cloud. Create and run notebooks, experiments, and deployments all in your private cluster from within the Web UI, from the CLI, or using the SDK.
+Gradient clusters can be created in just a few clicks in the Web UI. Create and run notebooks, experiments, and deployments all in your private cluster from within the Web UI, from the CLI, or using the SDK.
 
 On this page, you'll learn how to create a managed cluster and view your managed clusters from the Web UI.
 
-{% hint style="info" %}
-**Note:** Managed clusters require a T1 or greater [subscription](https://gradient.paperspace.com/pricing).
-{% endhint %}
-
 {% hint style="warning" %}
-**Note:** If you are looking to create a _self-hosted_ Gradient cluster, see the [Gradient Installer CLI](self-hosted-clusters/gradient-installer-cli.md).
+**Note:** Managed clusters run on the Paperspace cloud. If you are looking to create a _self-hosted_ Gradient cluster, see the [Gradient Installer CLI](self-hosted-clusters/gradient-installer-cli.md).
 {% endhint %}
 
 ## Create a managed cluster
@@ -38,7 +30,9 @@ On this page, you'll learn how to create a managed cluster and view your managed
 
 ### 3. Configure your managed cluster
 
-Select the Paperspace Cloud region where your machines will be provisioned, accept the cost \(in this case $26/mo\), and select **Create Cluster**
+Select the Paperspace Cloud region where your machines will be provisioned. Then select **Create Cluster.**
+
+Note: cost for the Kubernetes cluster itself is $0.12/hour. You can delete your cluster at any time to stop accruing charges. 
 
 ![](https://blog.paperspace.com/content/images/2020/12/Screen-Shot-2020-12-03-at-9.53.26-PM.png)
 
@@ -46,7 +40,7 @@ Select the Paperspace Cloud region where your machines will be provisioned, acce
 
 You should now see that your cluster is provisioning!
 
-This process may take up to 10 minutes of time -- so be prepared to take a quick stretch and use the restroom.
+This process may take up to 10 minutes of time -- so be prepared to take a quick stretch and grab a coffee.
 
 ![](https://blog.paperspace.com/content/images/2020/12/Screen-Shot-2020-12-03-at-9.53.37-PM.png)
 

@@ -1,7 +1,7 @@
 # Notebook Directories
 
 {% hint style="info" %}
-**Note**: This document covers how storage works in Notebook instances only.  See our [Data](../../data/storage.md) section for a comprehensive overview of managing data in Gradient.
+**Note**: This document covers how storage works in Notebook instances only.  See our [Data](../../data/storage/) section for a comprehensive overview of managing data in Gradient.
 {% endhint %}
 
 ## Types of Notebook Storage 

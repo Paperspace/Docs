@@ -18,11 +18,11 @@ There are several ways to run a Job in Gradient: You can use the [Job Builder](a
 
 ### Optional Job features
 
-There are many features you will want to check out like outputting your model to the `/artifacts` directory, the persistent data layer at `/storage`, graphing with [Job Metrics](create-a-job/job-metrics/), sharing Jobs with the [public Jobs](public-jobs.md) feature, and more.
+There are many features you will want to check out like outputting your model to the `/artifacts` directory, the persistent data layer at `/storage`, graphing with [Job Metrics](create-a-job/job-metrics/), sharing Jobs with the [public Jobs](create-a-job/public-jobs.md) feature, and more.
 
 ## Storage
 
-Jobs have access to your persistent storage \(`/storage`\) and can output files to /artifacts. Learn more about Gradient storage [here](../data/storage.md).
+Jobs have access to your persistent storage \(`/storage`\) and can output files to /artifacts. Learn more about Gradient storage [here](../data/storage/).
 
 ## Instance Types
 

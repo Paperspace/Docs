@@ -31,7 +31,7 @@ gradient experiments run singlenode --name experiment1 \
 --command "pip install -r requirements.txt && python mnist.py"
 ```
 
-In order to run workloads on your Gradient cluster, you must specify the `clusterID` parameter on most Gradient primary commands, including:
+In order to run workloads on your Gradient cluster, you must specify the `clusterId` parameter on most Gradient primary commands, including:
 
 * experiments
 * deployments

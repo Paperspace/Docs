@@ -30,15 +30,15 @@ Experiments are part of a larger suite of tools that work seamlessly with Gradie
 
 #### Persistent Storage
 
-Persistent storage is a persistent filesystem automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage.md#persistent-storage).
+Persistent storage is a persistent filesystem automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage/#persistent-storage).
 
 #### Artifact Storage
 
-Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage.md#artifact-storage).
+Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage/#artifact-storage).
 
 #### Workspace Storage
 
-The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run.  If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage.md#workspace-storage).
+The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run.  If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage/#workspace-storage).
 
 #### Private Datasets
 

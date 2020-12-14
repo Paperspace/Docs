@@ -52,15 +52,15 @@ See this [article](hyperparameters.md) for more info.
 
 #### Persistent Storage
 
-Persistent storage is a persistent filesystem located at `/storage` which is automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage.md#persistent-storage).
+Persistent storage is a persistent filesystem located at `/storage` which is automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage/#persistent-storage).
 
 #### Artifact Storage
 
-Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage.md#artifact-storage).
+Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage/#artifact-storage).
 
 #### Workspace Storage
 
-The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run. If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage.md#workspace-storage).
+The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run. If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage/#workspace-storage).
 
 #### Private Datasets
 
@@ -70,7 +70,7 @@ Gradient provides the ability to mount S3 compatible object storage buckets to a
 
 ## **Optional Experiment features**
 
-There are many features you will want to check out like outputting your [models](../models/create-a-model/model-path.md), the [persistent data layer](../data/storage.md#persistent-storage) at `/storage`, graphing with [Experiment Metrics](using-experiments/experiment-metrics/), sharing underling Jobs with the [Public Jobs](https://github.com/dkobran/Docs/blob/master/jobs/public-jobs.md) feature, sourcing your code from [private GitHub repositories](using-experiments/experiment-options.md), and [opening ports](using-experiments/ports.md).
+There are many features you will want to check out like outputting your [models](../models/create-a-model/model-path.md), the [persistent data layer](../data/storage/#persistent-storage) at `/storage`, graphing with [Experiment Metrics](using-experiments/experiment-metrics/), sharing underling Jobs with the [Public Jobs](https://github.com/dkobran/Docs/blob/master/jobs/public-jobs.md) feature, sourcing your code from [private GitHub repositories](using-experiments/experiment-options.md), and [opening ports](using-experiments/ports.md).
 
 ## Instance Types
 

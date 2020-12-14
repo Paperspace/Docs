@@ -6,7 +6,7 @@ A Gradient Notebook gives you access to a full Jupyter Notebook environment. Wit
 
 ### Storing data
 
-Every notebook in your account automatically includes a persistent filesystem. Use this directory to store datasets, model checkpoints, and more.  Learn more [here](../../data/storage.md#persistent-storage). Gradient also includes a [public datasets repository](../../data/public-datasets-repository.md). 
+Every notebook in your account automatically includes a persistent filesystem. Use this directory to store datasets, model checkpoints, and more.  Learn more [here](../../data/storage/#persistent-storage). Gradient also includes a [public datasets repository](../../data/public-datasets-repository.md). 
 
 ![](../../.gitbook/assets/image%20%2884%29.png)
 

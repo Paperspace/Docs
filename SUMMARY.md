@@ -77,15 +77,15 @@
     * [System Metrics](jobs/create-a-job/job-metrics/system-metrics.md)
     * [Custom Metrics](jobs/create-a-job/job-metrics/custom-metrics.md)
   * [Job Artifacts](jobs/create-a-job/job-artifacts.md)
+  * [Public Jobs](jobs/create-a-job/public-jobs.md)
   * [Building Docker Containers with Jobs](jobs/create-a-job/building-docker-containers-with-jobs.md)
-* [Public Jobs](jobs/public-jobs.md)
 
 ## Models
 
 * [Overview](models/about.md)
 * [Managing Models](models/create-a-model/README.md)
+  * [Example: Prepare a TensorFlow Model for Deployments](models/create-a-model/preparing-model-for-deployment.md)
   * [Model Path, Parameters, & Metadata](models/create-a-model/model-path.md)
-* [Example: Prepare a TensorFlow Model for Deployments](models/preparing-model-for-deployment.md)
 * [Public Models](models/public-models.md)
 
 ## Deployments
@@ -104,12 +104,12 @@
 
 ## Data
 
-* [Types of Storage](data/storage.md)
+* [Types of Storage](data/storage/README.md)
+  * [Managing Data in Gradient](data/storage/managing-data-in-gradient/README.md)
+    * [Managing Persistent Storage with VMs](data/storage/managing-data-in-gradient/managing-persistent-storage-with-vms.md)
 * [Storage Providers](data/storage-providers.md)
 * [Datasets \(Preview\)](data/private-datasets-repository/README.md)
   * [\(Legacy\) S3 Datasets](data/private-datasets-repository/legacy-s3-datasets.md)
-* [Managing Data in Gradient](data/managing-data-in-gradient/README.md)
-  * [Managing Persistent Storage with VMs](data/managing-data-in-gradient/managing-persistent-storage-with-vms.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 
 ## TensorBoards
@@ -131,7 +131,7 @@
 
 ## Gradient SDK <a id="gradient-python-sdk"></a>
 
-* [Gradient SDK](gradient-python-sdk/gradient-python-sdk/README.md)
+* [Gradient SDK Overview](gradient-python-sdk/gradient-python-sdk/README.md)
   * [Projects Client](gradient-python-sdk/gradient-python-sdk/projects-client.md)
   * [Experiments Client](gradient-python-sdk/gradient-python-sdk/experiments-client.md)
   * [Models Client](gradient-python-sdk/gradient-python-sdk/models-client.md)
@@ -140,32 +140,12 @@
 * [End to end tutorial](gradient-python-sdk/sdk-tutorial.md)
 * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
 
-## Machines \(Paperspace CORE\) <a id="machines"></a>
-
-* [Overview](machines/about.md)
-* [Using Machines](machines/using-machines/README.md)
-  * [Start a Machine](machines/using-machines/start-machine.md)
-  * [Stop a Machine](machines/using-machines/stop-machine.md)
-  * [Restart a Machine](machines/using-machines/restart-machines.md)
-  * [Update a Machine](machines/using-machines/update-machine.md)
-  * [Destroy a Machine](machines/using-machines/destroy-machine.md)
-  * [List Machines](machines/using-machines/list-machines.md)
-  * [Show a Machine](machines/using-machines/show-machine.md)
-  * [Wait For a Machine](machines/using-machines/wait-for-the-machine.md)
-  * [Check a Machine's utilization](machines/using-machines/machine-utilization.md)
-  * [Check availability](machines/using-machines/check-machine-availability.md)
-
 ## Instances
 
 * [Instance Types](instances/instance-types.md)
 * [Free Instances \(Free Tier\)](instances/free-instances.md)
 * [Instance Tiers](instances/instance-tiers.md)
 * [Preemptible Instances](instances/preemptible-instances.md)
-
-## Tags
-
-* [Overview](tags/overview.md)
-* [Using Tags](tags/using-tags.md)
 
 ## Gradient Cluster <a id="gradient-private-cloud"></a>
 
@@ -183,6 +163,26 @@
     * [Let's Encrypt DNS Providers](gradient-private-cloud/setup/self-hosted-clusters/lets-encrypt-dns-providers.md)
     * [Updating your cluster](gradient-private-cloud/setup/self-hosted-clusters/updating-your-cluster.md)
 * [Usage](gradient-private-cloud/usage.md)
+
+## Tags
+
+* [Overview](tags/overview.md)
+* [Using Tags](tags/using-tags.md)
+
+## Machines \(Paperspace CORE\) <a id="machines"></a>
+
+* [Overview](machines/about.md)
+* [Using Machines](machines/using-machines/README.md)
+  * [Start a Machine](machines/using-machines/start-machine.md)
+  * [Stop a Machine](machines/using-machines/stop-machine.md)
+  * [Restart a Machine](machines/using-machines/restart-machines.md)
+  * [Update a Machine](machines/using-machines/update-machine.md)
+  * [Destroy a Machine](machines/using-machines/destroy-machine.md)
+  * [List Machines](machines/using-machines/list-machines.md)
+  * [Show a Machine](machines/using-machines/show-machine.md)
+  * [Wait For a Machine](machines/using-machines/wait-for-the-machine.md)
+  * [Check a Machine's utilization](machines/using-machines/machine-utilization.md)
+  * [Check availability](machines/using-machines/check-machine-availability.md)
 
 ## Paperspace Account
 
