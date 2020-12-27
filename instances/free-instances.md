@@ -8,17 +8,20 @@ The Free Instances are available to all _Private Workspace_ plans, i.e. G\* subs
 
 ### Instance Types available in the Free Tier
 
-**Free-CPU** — C3 CPU instance
+**Free-CPU** —
+ C3 CPU instance
 
-**Free-GPU+** — NVIDIA M4000 GPU
+**Free-GPU+** —
+ NVIDIA M4000 GPU
 
-**Free-P5000** — NVIDIA P5000 GPU
+**Free-P5000** —
+ NVIDIA P5000 GPU
 
 See the [Instance Types](instance-types.md) page for the details on these instances.
 
 ### Persistent Storage for Free Instances
 
-For your machine learning work on Free Instances, you have 5GB of dedicated Persistent Storage. This 5GB of storage persistent and upgradeable based on your subscription tier.
+For your machine learning work on Free Instances, you have 5GB of dedicated Persistent Storage. This 5GB of storage is persistent and upgradeable based on your subscription tier.
 
 Because Persistent Storage is exclusive per-region, this means that data in Persistent Storage for the Free Tier is not be accessible from paid instance types, and vice versa. However you may upgrade the storage size of your Free Tier instances based on paid subscription storage sizing.
 
