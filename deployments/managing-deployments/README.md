@@ -22,8 +22,6 @@ To create a Deployment via the UI, there are two pathways to start the Create De
 
 ![](../../.gitbook/assets/create-deployment-from-deployments.png)
 
-Using either of the above **a** or **b** approaches, will let you start the Create Deployment flow.
-
 ### Using the Create Deployment flow
 
 Now that you've started the Create Deployment flow, let's walk through the various options and deploy your Model!
@@ -32,7 +30,7 @@ Now that you've started the Create Deployment flow, let's walk through the vario
 
 If you started the flow via the Models page \(pathway **a** above\), you'll skip this step since you've already chosen a Model to deploy.
 
-If you started the flow via the Deployments page \(pathway **b** above\), you'll first need to choose a Model by clicking the Model selector dropdown and selecting the Model you want to deploy.
+If you started the flow via the Deployments page \(pathway **b** above\), you have the option to choose a Model by clicking the Model selector dropdown and selecting the Model you want to deploy. 
 
 ![](../../.gitbook/assets/create-deployment-header.png)
 
@@ -96,7 +94,7 @@ Finally, now that your Deployment is configured, click **Create Deployment** to 
 {% endtab %}
 
 {% tab title="CLI" %}
-To create a new Deployment, you must first [create a Model](../../models/create-a-model/). With a Model available, use the `create` subcommand and specify all of the following parameters you need to deploy your model.  Here's a sample command to create the same Deployment as you could do from the UI:
+Use the `create` subcommand and specify all of the following parameters you need to deploy your model.  Here's a sample command to create the same Deployment as you could do from the UI:
 
 ```bash
 gradient deployments create \
@@ -110,14 +108,9 @@ gradient deployments create \
 
 To obtain your Model ID, you can use the command `gradient models list` and copy the target Model ID from your available Models.  
   
-The full set of creation options for deployments are as follows. This enables you to use of the preset deployment types for Tensorflow Serving, ONNX Inference Runtime & TensorRT. 
+The full set of options for deployments: 
 
 ```text
-Usage: gradient deployments create [OPTIONS]
-
-  Create new deployment
-
-Options:
   --deploymentType [TFServing|ONNX|Custom|Flask|TensorRT]
                                   Model deployment type  [required]
   --projectId TEXT                Project ID
@@ -144,7 +137,7 @@ Options:
   --dockerArgs JSON_STRING        JSON-style list of docker args
   --env JSON_STRING               JSON-style environmental variables map
   --apiType TEXT                  Type of API - REST or GRPC, defaults to REST
-  --ports TEXT                    Ports
+  --ports TEXT                    Expose ports: Takes a single value eg 80
   --clusterId TEXT                Cluster ID
   --authUsername TEXT             Username
   --authPassword TEXT             Password
@@ -172,15 +165,9 @@ Options:
 
   --resource TEXT                 Autoscaling resources. Example:
                                   cpu/target:60
-
-  --apiKey TEXT                   API key to use this time only
-  --optionsFile PATH              Path to YAML file with predefined options
-  --createOptionsFile PATH        Generate template options file
-  --help                          Show this message and exit.
-
 ```
 
-Sometimes, a user will want to do inference with a custom model using a custom container. An example of this is building a Flask or Streamlit container which will use the model trained on gradient to do inference but also expose a custom dashboard for the team to use to consume the predictions for making business decisions. This is accomplished by specifying the modelType to be "Custom" & passing in the information for the custom container. 
+Sometimes, a user will want to do inference with a custom model using a custom container. An example of this is building a Flask or Streamlit container which will use the model trained on Gradient to do inference but also expose a custom dashboard for the team to use to consume the predictions for making business decisions. This is accomplished by specifying the modelType to be "Custom" & passing in the information for the custom container. 
 {% endtab %}
 {% endtabs %}
 
