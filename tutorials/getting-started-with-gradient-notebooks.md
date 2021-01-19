@@ -27,15 +27,19 @@ You can [download ](https://drive.google.com/file/d/14vO3W3l7Ap2nLcerchqm8PTfuSr
 
 Select the Gradient product and then click on the **Notebooks** tab to create a new notebook.
 
-The first step is to choose the pre-configured environment. Within the container picker, select **Filter &gt; All** and then locate the container called **Jupyter Notebook Data Science Stack.** This container will come with the core modules needed for our model.
+After naming your notebook, the next step is to choose a pre-configured environment or container.
+
+Within the container picker, select **Filter &gt; All** and then locate the container called **Jupyter Notebook Data Science Stack.** This container will come with the core modules needed for our model.
 
 ![Select Filter &amp;gt; All and then select the container named Jupyter Notebook Data Science Stack](../.gitbook/assets/screen-shot-2021-01-18-at-9.01.07-pm.png)
 
-In the next step, choose the machine type. Since we don’t need high-end machines with GPUs, we can choose a low-cost instance. Turn on the setting **Enable low-cost instances** and select the **Free GPU** cluster to access free GPU instances.
+In the next step, choose the machine type. Since we don’t need high-end machines with GPUs, we can choose a low-cost instance. Select the **Free GPU** machine to access free GPU instances.
 
 ![Enable low-cost instances and select the Free GPU cluster](../.gitbook/assets/screen-shot-2021-01-18-at-9.03.26-pm.png)
 
-The notebook will now provision. The notebook status will be **Provisioning** or **Pending** for a minute or two. 
+The notebook will now provision. The notebook status will be **Provisioning** or **Pending** for a minute or two.
+
+![The notebook needs a couple minutes to provision](../.gitbook/assets/screen-shot-2021-01-18-at-10.43.44-pm.png)
 
 ![Newly created notebooks take a minute or two to initalize](../.gitbook/assets/screen-shot-2021-01-18-at-9.04.51-pm.png)
 
