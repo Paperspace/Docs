@@ -14,7 +14,7 @@ A Gradient ****Notebook gives you access to a full Jupyter Notebook environment.
 
 ## File Storage
 
-Any data stored in `/storage` will be preserved for you, across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here](../data/storage/#persistent-storage).
+Any data stored in `/storage` will be preserved for you across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here](../data/storage/#persistent-storage).
 
 ## Containers
 

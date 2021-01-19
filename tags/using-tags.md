@@ -44,7 +44,7 @@ To find entities with a specific tag, first click the **Filter by tags** dropdow
 
 Type or select tags to filter the entity. This will result in all entities that match the selected tags.
 
-![Project results that match the tag in question](../.gitbook/assets/screen-shot-2020-02-10-at-7.25.47-pm%20%281%29.png)
+![Project results that match the tag in question](../.gitbook/assets/screen-shot-2020-02-10-at-7.25.47-pm%20%281%29%20%281%29.png)
 
 You can also add tags to filter the current entity list by clicking on any tag on any entity.
 {% endtab %}

@@ -1,4 +1,4 @@
-# Experiment Metrics
+# Experiment metrics
 
 There are two types of metrics in Gradient:
 

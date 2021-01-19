@@ -4,7 +4,7 @@ Gradient Jobs execute generic tasks on remote infrastructure and can be used to 
 
 Gradient Jobs can be created using the Web UI or via the CLI, and they form part of a larger suite of tools that work seamlessly with Gradient Notebooks and other features of the Gradient platform.
 
-![Gradient Job Runner in the Web UI](../.gitbook/assets/image%20%2881%29.png)
+![Jobs are available within a project](../.gitbook/assets/screen-shot-2021-01-18-at-9.56.58-pm.png)
 
 ### A Job consists of:
 

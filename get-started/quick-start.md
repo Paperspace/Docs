@@ -29,7 +29,7 @@ Notebooks can be created on the Notebooks tab. Just select a [template](../noteb
 Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![](../.gitbook/assets/screen-shot-2020-10-09-at-6.34.06-pm%20%281%29.png)
+![Select Notebooks &amp;gt; Create a Notebook to enter the notebook create flow](../.gitbook/assets/screen-shot-2021-01-18-at-8.39.35-pm%20%281%29.png)
 
 {% hint style="success" %}
 Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your own account
@@ -41,11 +41,15 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 
 ### Create a cluster
 
-Clusters are where you can execute Experiments, Jobs, Deployments, and other workloads. To create a cluster, navigate to the [clusters](https://console.paperspace.com/clusters) page and create a new cluster.   
+Clusters are where you can execute Experiments, Jobs, Deployments, and other workloads. To create a cluster, navigate to the [clusters](https://console.paperspace.com/clusters) page and select **Create Managed Cluster**.
+
+![Create a managed cluster in the Clusters tab](../.gitbook/assets/screen-shot-2021-01-18-at-8.44.13-pm.png)
 
 ### Create a Project
 
 Projects organize your work.  To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**. Then select **Create Standalone Project** and provide a project name. Now, you can use the created Project's **Project ID** in order to create Experiments in that Project via the CLI.
+
+![Select Projects &amp;gt; Create a Project to initiate a new machine learning project ](../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm.png)
 
 ### Running your first Experiment
 
@@ -53,7 +57,7 @@ You can run Experiments from the web interface or CLI:
 
 #### Using the Experiment Builder \(Web UI\)
 
-![](../.gitbook/assets/screen-shot-2020-10-09-at-6.37.02-pm.png)
+![Use the experiment builder to kick off a new training job](../.gitbook/assets/screen-shot-2021-01-18-at-8.48.48-pm.png)
 
 #### Using the CLI
 

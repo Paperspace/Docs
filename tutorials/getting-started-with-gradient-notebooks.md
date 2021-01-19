@@ -17,7 +17,7 @@ This example is available in our ML Showcase!  You can clone the notebook [here]
 
 Gradient provides one-click access to Jupyter Notebooks. You can choose pre-configured environments to launch Notebook instances or create a container with custom environments.
 
-In this walkthrough, we will launch a Jupyter Notebook to train a logistic regression model based on the MNIST dataset. Gradient comes with a set of datasets that are readily available at `/datasets` location. Instead of downloading the MNIST dataset to local storage, we will access the existing dataset.
+In this walkthrough, we will launch a Jupyter Notebook to train a logistic regression model based on the MNIST dataset. Gradient comes with a set of datasets that are readily available at the `/datasets` location. Instead of downloading the MNIST dataset to local storage, we will access the existing dataset.
 
 We will also learn how to save the model for inferencing by persisting the final joblib file to the `/storage` location.
 
@@ -25,23 +25,19 @@ You can [download ](https://drive.google.com/file/d/14vO3W3l7Ap2nLcerchqm8PTfuSr
 
 ## Launching a Notebook Instance
 
-Select the Gradient product and then click on the **Notebooks** section in the left navigation bar to launch a Jupyter Notebook.
+Select the Gradient product and then click on the **Notebooks** tab to create a new notebook.
 
-The first step is to choose the pre-configured environment. Choose **Jupyter Notebook Data Science Stack** that comes with the core modules needed for our model.
+The first step is to choose the pre-configured environment. Within the container picker, select **Filter &gt; All** and then locate the container called **Jupyter Notebook Data Science Stack.** This container will come with the core modules needed for our model.
 
-![](../.gitbook/assets/screen-shot-2020-10-09-at-6.34.06-pm.png)
+![Select Filter &amp;gt; All and then select the container named Jupyter Notebook Data Science Stack](../.gitbook/assets/screen-shot-2021-01-18-at-9.01.07-pm.png)
 
-In the next step, choose the machine type. Since we don’t need high-end machines with GPUs, we can choose a low-cost instance. Turn on the setting **Enable low-cost instances** and choose G1 machine type that comes with 1 CPU, 1.7GB RAM and 250GB SSD.
+In the next step, choose the machine type. Since we don’t need high-end machines with GPUs, we can choose a low-cost instance. Turn on the setting **Enable low-cost instances** and select the **Free GPU** cluster to access free GPU instances.
 
-![](../.gitbook/assets/screen-shot-2020-10-09-at-6.43.11-pm.png)
+![Enable low-cost instances and select the Free GPU cluster](../.gitbook/assets/screen-shot-2021-01-18-at-9.03.26-pm.png)
 
-In the final step, give the Notebook instance a name and click on **Create Notebook** button.
+The notebook will now provision. The notebook status will be **Provisioning** or **Pending** for a minute or two. 
 
-![](../.gitbook/assets/screen-shot-2020-10-09-at-6.44.51-pm.png)
-
-In a few minutes, the Notebook instance is ready. Launch it by clicking on the URL shown below the status.
-
-![](../.gitbook/assets/screen-shot-2020-10-09-at-6.45.27-pm.png)
+![Newly created notebooks take a minute or two to initalize](../.gitbook/assets/screen-shot-2021-01-18-at-9.04.51-pm.png)
 
 We are now ready to launch the Notebook. Choose Python 3 option under the  Notebooks section.
 
@@ -95,7 +91,7 @@ Finally, we will persist the trained model at `/storage/mnist` for accessing it 
 
 ![](../.gitbook/assets/step-5-14.jpg)
 
-You can use the Jupyter environment to navigate to the /storage/mnist directory to find the saved model.
+You can use the Jupyter environment to navigate to the `/storage/mnist` directory to find the saved model.
 
 ![](../.gitbook/assets/step-5-15.jpg)
 

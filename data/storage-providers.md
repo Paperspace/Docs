@@ -33,21 +33,21 @@ To access an S3 compatible storage provider you may have to add CORS rules to yo
 ]
 ```
 
-Within the bucket _permissions_ settings, you'll see an option to edit the CORS configuration. Click edit, then copy and paste the JSON above, and then save your changes. 
+Within the bucket _permissions_ settings, you'll see an option to edit the CORS configuration. Click edit, then copy and paste the JSON above, and then save your changes.
 
 ![](../.gitbook/assets/image%20%28108%29.png)
 
-## Create the Storage Provider 
+## Create the Storage Provider
 
 A Storage Provider can be created on your team's settings page.
 
 ![](../.gitbook/assets/screen-shot-2020-10-30-at-1.09.41-pm.png)
 
-**Note:** The "AccessKey" and SecretAccessKey" can be obtained from the "my security credentials" section of the AWS Identity and Access Management \(IAM\) portal.  See the following:
+**Note:** The "AccessKey" and SecretAccessKey" can be obtained from the "my security credentials" section of the AWS Identity and Access Management \(IAM\) portal. See the following:
 
 ![](../.gitbook/assets/image%20%28109%29.png)
 
-#### CLI
+### CLI
 
 A Storage Provider can also be created with the Gradient CLI
 

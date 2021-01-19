@@ -6,7 +6,7 @@ Public IP addresses are useful for accessing your Gradient job container from th
 
 Gradient Notebooks and Jobs automatically have public IP addresses. For Jobs, you can additionally pass in which ports you would like to open on the running Job.
 
-![Screen\_Shot\_2018-04-23\_at\_9.34.32\_AM.png](https://support.paperspace.com/hc/article_attachments/360004109593/Screen_Shot_2018-04-23_at_9.34.32_AM.png)
+![Ports may be specified for each job](../../.gitbook/assets/screen-shot-2021-01-18-at-10.08.45-pm.png)
 
 ### Opening Ports On Your Job
 

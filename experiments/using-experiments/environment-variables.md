@@ -1,4 +1,4 @@
-# Environment Variables
+# Environment variables
 
 You can configure your code to accept external parameters at runtime, overriding default any values in your code.  These parameters, called _Experiment Environment Variables_, are automatically captured and tracked in Gradient.  
 

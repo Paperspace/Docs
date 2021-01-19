@@ -6,7 +6,7 @@ Deployment logs are available in both the web UI and CLI. Logs are streamed in r
 {% tab title="Web UI" %}
 To view the Deployment logs, navigate to the Logs tab of the Deployment.
 
-![](../../.gitbook/assets/image%20%2895%29.png)
+![Logs are available for deployments](../../.gitbook/assets/screen-shot-2021-01-18-at-10.16.54-pm.png)
 {% endtab %}
 
 {% tab title="CLI" %}

@@ -14,27 +14,25 @@ Notebooks can be created by clicking _Create Notebook_ button on the Notebooks t
 
 These are the templates that are most popular on Gradient.  They include the most common ML frameworks and libraries.  [Click here](../notebook-containers/) to discover which Notebook Base Container will best suit your use case, then choose it from the options below:
 
-![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.34.06-pm.png)
+![Recommended containers](../../.gitbook/assets/screen-shot-2021-01-18-at-9.34.22-pm.png)
 
 #### All Containers \(Basic\)
 
 These are additional templates that are made available in Gradient as a 1-click option.  [Click here](../notebook-containers/) to discover which Notebook Base Container will best suit your use case, then choose it from the options below:
 
-![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.48.06-pm.png)
+![All containers](../../.gitbook/assets/screen-shot-2021-01-18-at-9.35.10-pm.png)
 
 #### Custom Containers \(Advanced\)
 
 If you need to import an existing container, visit the Custom Containers section. Learn more [here](../notebook-containers/).
 
-### 
-
-![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.48.46-pm.png)
+![Enter a custom container by enabling Advanced options](../../.gitbook/assets/screen-shot-2021-01-18-at-9.36.07-pm.png)
 
 ### Choose the instance type
 
 This is [instance type](../../instances/instance-types.md) that your notebook will run on. Our hardware is configured to work with the tools and packages in each of the provided containers.
 
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2845%29%20%281%29.png)
 
 ### Optional Settings:
 
