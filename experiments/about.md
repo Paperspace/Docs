@@ -6,21 +6,25 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](hyperparameters.md).
 
-![Experiments are visible within individual projects](../.gitbook/assets/screen-shot-2021-01-18-at-9.50.00-pm.png)
+![The Experiments view is available within each individual project](../.gitbook/assets/screen-shot-2021-01-18-at-9.50.00-pm.png)
 
 ## Creating Experiments
 
-Experiments can be run from the **Experiment Builder** web interface, our **CLI,** the **GradientCI** bot, or the **SDK**. Here is a quick overview and instructions for each option:
+Experiments can be run from the **Experiment Builder** web interface, the **CLI,** the **GradientCI** bot, or the **SDK**. Here is a quick overview and instructions for each option:
 
 The **web UI** is great for getting familiar with Experiments and running sample projects and the **CLI** \(command-line interface\) is a more advanced tool for launching Experiments. Both options are powerful, flexible, and easy-to-use.
 
 {% page-ref page="using-experiments/" %}
 
-The **SDK** let's you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
+\*\*\*\*
+
+**GradientCI** enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
 
 {% page-ref page="../projects/gradientci-v2/" %}
 
-**GradientCI** enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
+
+
+The **SDK** lets you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
 
 {% page-ref page="../gradient-python-sdk/gradient-python-sdk/" %}
 
