@@ -37,7 +37,7 @@ Within the bucket _permissions_ settings, you'll see an option to edit the CORS 
 
 ![](../.gitbook/assets/image%20%28108%29.png)
 
-## Create the Storage Provider
+## Add a Storage Provider
 
 A Storage Provider can be created on your team's settings page.
 
