@@ -1,5 +1,7 @@
 # Creating a Team
 
+{% embed url="https://youtu.be/7aUGKzGAiEA" %}
+
 To access many advanced features in Gradient, you will need to create a team workspace if you don't already have one.
 
 From the home console select the **Team** menu:
