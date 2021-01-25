@@ -1,6 +1,6 @@
 # Getting Started with Notebooks
 
-{% embed url="https://youtu.be/37QZBEtWyp0" %}
+{% embed url="https://youtu.be/i4pvLzvw2ME" %}
 
 ## **Objectives**
 

@@ -4,7 +4,7 @@
 {% tab title="Web UI" %}
 ## Create a Notebook
 
-{% embed url="https://youtu.be/37QZBEtWyp0" %}
+{% embed url="https://youtu.be/i4pvLzvw2ME" %}
 
 ### Choose your Base Container
 
