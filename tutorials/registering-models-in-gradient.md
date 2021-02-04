@@ -45,6 +45,7 @@ gradient experiments run singlenode \
   --command "python train.py --modelPath /storage/model --version 1" \
   --modelType Tensorflow \
   --modelPath "/storage/model"
+  --workspace .
 ```
 
 The above command has multiple switches that are important to the job. Let’s understand each of them.
