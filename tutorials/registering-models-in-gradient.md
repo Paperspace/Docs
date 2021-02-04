@@ -68,6 +68,8 @@ The `singlenode` parameter runs the job on a single host.
 
 `--modelPath` tells Gradient where to look for the model artifacts. This is typically `/artifacts` or `/storage` location. We are passing `/storage/model` directory which was used within the code.
 
+`--workspace .` tells Gradient to upload your current directory (`.`) to the experiment. The files in this directory will be the working directory of your experiment.
+
 Within a few seconds of running the command, you should see the logs displayed on the screen.
 
 ```bash
