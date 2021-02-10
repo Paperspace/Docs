@@ -30,6 +30,7 @@
 * [Notebook Containers](notebooks/notebook-containers/README.md)
   * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)
 * [Community \(Public\) Notebooks](notebooks/public-notebooks.md)
+* [Notebook Workspace Include Files](notebooks/notebook-include.md)
 
 ## Projects
 
