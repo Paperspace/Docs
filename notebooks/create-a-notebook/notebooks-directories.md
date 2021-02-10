@@ -12,7 +12,7 @@ This is the root filesystem of the container \(not the workspace nor persistent 
 
 ### 2. Workspace
 
-This is a **local** docker volume mounted onto `/notebooks` and currently has a hard limit of 250GB. This directory and the entirety of its contents are stored persistently on a cluster. Some files are uploaded to be visible in the console or to be accessible in forks by default this is only `.ipynb` files. See [notebook include files](../../notebook-include) for full details.
+This is a **local** docker volume mounted onto `/notebooks` and currently has a hard limit of 250GB. This directory and the entirety of its contents are stored persistently on a cluster. Some files are uploaded to be visible in the console or to be accessible in forks by default this is only `.ipynb` files. See [notebook include files](../../notebook-include.md) for full details.
 
 ### 3. /storage or /notebooks/storage
 

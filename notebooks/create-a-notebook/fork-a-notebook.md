@@ -2,7 +2,7 @@
 
 ## Fork your Notebook
 
-Forking is a great way to make a copy of your Notebook; to save a version of it that you may want to go back to in case you expect to make major changes. Forking a notebook creates a new history for your notebook. The files copied to your notebook are those listed in your [notebook include file](../../notebook-include).
+Forking is a great way to make a copy of your Notebook; to save a version of it that you may want to go back to in case you expect to make major changes. Forking a notebook creates a new history for your notebook. The files copied to your notebook are those listed in your [notebook include file](../../notebook-include.md).
 This can copy notebooks, including public notebooks, into a team.
 
 {% tabs %}
