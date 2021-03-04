@@ -16,6 +16,12 @@ Using advanced ML components contained within Projects requires [creating a clus
 
 A Gradient [Project](../projects/about.md) is a collection of Experiments, Jobs, Models, and Deployments. Projects can be synced with GitHub with [GradientCI](../projects/gradientci-v2/).
 
+
+
+## Workflows \(Private Beta\)
+
+Workflows are the newest and most powerful way to orchestrate full end-to-end machine learning application development. 
+
 ## Experiments
 
 [Experiments](../experiments/about.md) are designed for training machine learning models on GPUs \(and other chips\) without managing any infrastructure. Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
@@ -28,19 +34,23 @@ Experiments are part of a larger suite of tools that work seamlessly with Gradie
 
 ## Data
 
-#### Persistent Storage
+#### \*\*\*\*[**Versioned Datasets**](../data/private-datasets-repository/)\*\*\*\*
+
+Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Dataset version can be used as input to Gradient workloads as well as outputs.
+
+#### [Persistent Storage](../data/storage/managing-data-in-gradient/managing-persistent-storage-with-vms.md)
 
 Persistent storage is a persistent filesystem automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage/#persistent-storage).
 
-#### Artifact Storage
+#### [Artifact Storage ****](../jobs/create-a-job/job-artifacts.md)\*\*\*\*
 
 Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage/#artifact-storage).
 
-#### Workspace Storage
+#### [Workspace Storage](../notebooks/notebook-include.md)
 
 The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run.  If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage/#workspace-storage).
 
-#### Private Datasets
+#### [Private Datasets](../data/private-datasets-repository/legacy-s3-datasets.md)
 
 Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository/).
 

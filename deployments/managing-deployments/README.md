@@ -1,5 +1,9 @@
 # Managing Deployments
 
+{% hint style="info" %}
+View the full CLI/SDK Docs for **Deployments** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-deployments](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-deployments)
+{% endhint %}
+
 ## Create a Deployment
 
 {% tabs %}

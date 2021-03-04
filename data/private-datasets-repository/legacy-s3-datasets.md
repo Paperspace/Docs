@@ -1,4 +1,8 @@
-# \(Legacy\) S3 Datasets
+# S3 Datasets \(deprecated\)
+
+{% hint style="warning" %}
+S3 Datasets have been deprecated and replaced by [Versioned Datasets](./).
+{% endhint %}
 
 Datasets are downloaded and mounted readonly on `/data/DATASET` within your experiment jobs using the supplied AWS credentials. The credentials are optional for public buckets. The name of the dataset is the `basename` of the last item in the s3 path, e.g. `s3://my-bucket/mnist.zip` would have the name `mnist` and `s3://my-bucket` would have the name `my-bucket`. The name maybe overridden with the optional `name` parameter.
 

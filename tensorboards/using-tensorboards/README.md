@@ -4,8 +4,12 @@ description: How to create a Tensorboard instance in Gradient
 
 # Using Tensorboards in Gradient
 
-{% hint style="warning" %}
-Gradient TensorBoards are a Gradient private cluster feature. [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
+{% hint style="info" %}
+Gradient TensorBoards require a [Gradient Private Cluster](../../gradient-private-cloud/setup/managed-installation.md)
+{% endhint %}
+
+{% hint style="info" %}
+View the full CLI/SDK Docs for **Tensorboards** here: [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-tensorboards](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-tensorboards)
 {% endhint %}
 
 Gradient Private Cluster customers are able to create TensorBoards, as well as attach and remove Experiments to them. You can perform these operations via the web UI or the CLI.

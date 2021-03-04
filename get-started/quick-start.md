@@ -41,7 +41,7 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 
 ### Create a cluster
 
-Clusters are where you can execute Experiments, Jobs, Deployments, and other workloads. To create a cluster, navigate to the [clusters](https://console.paperspace.com/clusters) page and select **Create Managed Cluster**.
+[Gradient Private Clusters](../gradient-private-cloud/setup/managed-installation.md) allow you to execute Experiments, Jobs, Deployments, and other workloads. To create a cluster, navigate to the [clusters](https://console.paperspace.com/clusters) page and select **Create Managed Cluster**.
 
 ![Create a managed cluster in the Clusters tab](../.gitbook/assets/screen-shot-2021-01-18-at-8.44.13-pm.png)
 
@@ -49,19 +49,15 @@ Clusters are where you can execute Experiments, Jobs, Deployments, and other wor
 
 Projects organize your work.  To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**. Then select **Create Standalone Project** and provide a project name. Now, you can use the created Project's **Project ID** in order to create Experiments in that Project via the CLI.
 
-![Select Projects &amp;gt; Create a Project to initiate a new machine learning project ](../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm.png)
+![Select Projects &amp;gt; Create a Project to initiate a new machine learning project ](../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29.png)
 
 ### Running your first Experiment
 
 You can run Experiments from the web interface or CLI:
 
-#### Using the Experiment Builder \(Web UI\)
-
-![Use the experiment builder to kick off a new training job](../.gitbook/assets/screen-shot-2021-01-18-at-8.48.48-pm.png)
-
-#### Using the CLI
-
+{% hint style="info" %}
 Before creating an experiment using the CLI, you must first [install the CLI](install-the-cli.md). 
+{% endhint %}
 
 **Example command**
 

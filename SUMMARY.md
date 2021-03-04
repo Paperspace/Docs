@@ -109,8 +109,8 @@
   * [Managing Data in Gradient](data/storage/managing-data-in-gradient/README.md)
     * [Managing Persistent Storage with VMs](data/storage/managing-data-in-gradient/managing-persistent-storage-with-vms.md)
 * [Storage Providers](data/storage-providers.md)
-* [Datasets \(Preview\)](data/private-datasets-repository/README.md)
-  * [\(Legacy\) S3 Datasets](data/private-datasets-repository/legacy-s3-datasets.md)
+* [Versioned Datasets](data/private-datasets-repository/README.md)
+  * [S3 Datasets \(deprecated\)](data/private-datasets-repository/legacy-s3-datasets.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 
 ## TensorBoards

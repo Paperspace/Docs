@@ -1,5 +1,9 @@
 # Managing Models
 
+{% hint style="info" %}
+View the full CLI/SDK Docs for **Models** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-models](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-models)
+{% endhint %}
+
 ## Create a Model
 
 There are two ways to create a Model in Gradient, and both can be done via the web UI or CLI:
@@ -94,7 +98,7 @@ The following parameters can be used with the `list` subcommand:
 
 Just click on the name to rename your model.
 
-![](../../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 ## Delete a Model
 
