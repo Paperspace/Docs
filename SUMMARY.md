@@ -40,6 +40,13 @@
   * [GradientCI V1 \(Deprecated\)](projects/gradientci-v2/gradientci-v2.md)
 * [GitHub Badge - Run on Gradient](projects/github-badge-run-on-gradient.md)
 
+## Workflows
+
+* [Workflows](workflows/workflows/README.md)
+  * [Getting Started with Workflows](workflows/workflows/getting-started-with-workflows.md)
+  * [Workflow Spec](workflows/workflows/workflow-spec.md)
+  * [Gradient Actions](workflows/workflows/gradient-actions.md)
+
 ## Experiments
 
 * [Overview](experiments/about.md)

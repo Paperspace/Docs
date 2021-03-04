@@ -3,7 +3,7 @@
 ### Managing and Using Secrets
 
 {% hint style="info" %}
-View the full CLI/SDK Docs for **Deployments** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-secrets](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-secrets)
+View the full CLI/SDK Docs for **Secrets** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-secrets](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-secrets)
 {% endhint %}
 
 #### Set a Secret
