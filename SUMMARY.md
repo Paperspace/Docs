@@ -42,10 +42,10 @@
 
 ## Workflows
 
-* [Workflows](workflows/workflows/README.md)
-  * [Getting Started with Workflows](workflows/workflows/getting-started-with-workflows.md)
-  * [Workflow Spec](workflows/workflows/workflow-spec.md)
-  * [Gradient Actions](workflows/workflows/gradient-actions.md)
+* [Overview](workflows/overview/README.md)
+  * [Getting Started with Workflows](workflows/overview/getting-started-with-workflows.md)
+  * [Workflow Spec](workflows/overview/workflow-spec.md)
+  * [Gradient Actions](workflows/overview/gradient-actions.md)
 
 ## Experiments
 
