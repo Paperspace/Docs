@@ -6,9 +6,15 @@ Forking is a great way to make a copy of your Notebook; to save a version of it 
 
 {% tabs %}
 {% tab title="Web UI" %}
-Click the Fork icon to the right of a notebook:
+1. Within the Notebook IDE
 
-![](../../.gitbook/assets/image%20%2878%29.png)
+![](../../.gitbook/assets/fork.png)
+
+
+
+  2. From the notebook list view
+
+![](../../.gitbook/assets/fork-notebook-list.png)
 
 You will see an exact copy of your notebook appear at the top of your Notebooks list.
 {% endtab %}

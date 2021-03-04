@@ -16,15 +16,9 @@ Community Notebooks include notebooks that are run on the [Free Instances](../in
 
 ### Making a Notebook Public or Private
 
-Navigate to the Notebooks List by clicking "Notebooks" in the Gradient Console menu.
+Navigate to your notebook in and open the Notebook IDE. In the top right there is a "Share" button. You can then click the toggle \(pictured green already below\) to make the notebook Public or Private.
 
-Click Share on the Notebook that you wish to make Public.
-
-![](../.gitbook/assets/share-notebook.png)
-
-This will launch the "Share your Notebook" modal, where you can then click the toggle \(pictured green already below\) to make the notebook Public or Private.
-
-![](../.gitbook/assets/screen-shot-2019-10-09-at-12.19.40-am.png)
+![](../.gitbook/assets/share.png)
 
 ### Viewing a Community Notebook, & Static Versions
 
@@ -46,7 +40,7 @@ You can fork any Gradient Community Notebook by clicking the green Play button a
 
 _Note: By making your notebook Public, the underlying container will be able to be forked to other users' accounts, including if they are within a private container registry. So, as with anytime you would share a container, be sure to remove any sensitive data, such as API keys or secrets, before making that notebook Public!_
 
-### Public Profiles
+### [Public Profiles](../paperspace-account/gradient-public-profiles.md)
 
 With this launch, you can now create a [Public Profile](../paperspace-account/gradient-public-profiles.md) and a user or team handle. This is the start of social features on Gradient!
 

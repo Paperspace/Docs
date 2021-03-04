@@ -1,6 +1,6 @@
 # Notebook Workspace Include Files
 
-On notebook stop we copy some files to your storage provider so you can see your notebook files in the offline view and so other users can fork your notebook. By default the list of files is fairly restrictive and includes `.ipynb` and `.md` files and if your workspace is a git repo we will upload any files that are tracked by git. The more files you include the more time your notebook will spend "tearing down" and "setting up".
+On notebook stop we copy some files to your [storage provider](../data/storage-providers.md) so you can see your notebook files in the offline view and so other users can fork your notebook. By default the list of files is fairly restrictive and includes `.ipynb` and `.md` files and if your workspace is a git repo we will upload any files that are tracked by git. The more files you include the more time your notebook will spend "tearing down" and "setting up".
 
 You can control which files are uploaded by providing a `.notebookinclude` file at `/notebooks/.notebookinclude`. This file uses [`.gitignore`](https://git-scm.com/docs/gitignore) syntax however, the patterns _include_ files instead of ignoring them. Negative patterns are supported and _exclude_ files from being uploaded.
 
