@@ -1,4 +1,4 @@
-# GitHub Badge - Run on Gradient
+# Run on Gradient \(GitHub badge\)
 
 ![Run on Gradient Badge attached to a GitHub repo](../.gitbook/assets/screen-shot-2020-02-17-at-8.47.13-pm.png)
 
@@ -28,7 +28,7 @@ Notes:
 
 ### Does this work with private GitHub repos?
 
-Currently the 1-click "launch on gradient" button will only work with public GitHub repositories. If you would like to use a private GitHub repository or a container that is in a private registry, you can do so by clicking "Change instance type \(advanced\)" before running the notebook \(or alternatively, visiting the "Create Notebook" page in the Paperspace Console. 
+Currently, the 1-click "launch on gradient" button will only work with public GitHub repositories. If you would like to use a private GitHub repository or a container that is in a private registry, you can do so by clicking "Change instance type \(advanced\)" before running the notebook \(or alternatively, visiting the "Create Notebook" page in the Paperspace Console. 
 
 ### Where can I find the "Run on Gradient" Badge
 

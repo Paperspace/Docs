@@ -76,11 +76,11 @@ On successfully creating a hyperparameter experiment it should return something 
 Hyperparameter created with ID: <experiment_id> and started
 ```
 
-![](../.gitbook/assets/screenshot-2019-06-06-at-15.45.04.png)
+![](../../.gitbook/assets/screenshot-2019-06-06-at-15.45.04.png)
 
 For workers and parameter server you can easily access the logs and outputs of the various tasks. 
 
-![](../.gitbook/assets/screenshot-2019-06-06-at-15.47.42.png)
+![](../../.gitbook/assets/screenshot-2019-06-06-at-15.47.42.png)
 
 ### 
 

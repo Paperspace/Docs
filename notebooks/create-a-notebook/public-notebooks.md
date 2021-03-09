@@ -12,13 +12,13 @@ The goal is to offer a product that makes it free, easy, and fun to share your w
 
 Gradient Community Notebooks can be viewed by anyone, with or without a Paperspace account.
 
-Community Notebooks include notebooks that are run on the [Free Instances](../instances/free-instances.md) – these will be Public by default – as well as any notebook that you make Public by sharing, even if it's paid.
+Community Notebooks include notebooks that are run on the [Free Instances](../../instances/instance-types/free-instances.md) – these will be Public by default – as well as any notebook that you make Public by sharing, even if it's paid.
 
 ### Making a Notebook Public or Private
 
-Navigate to your notebook in and open the Notebook IDE. In the top right there is a "Share" button. You can then click the toggle \(pictured green already below\) to make the notebook Public or Private.
+Navigate to your notebook and open the Notebook IDE. In the top right there is a "Share" button. You can then click the toggle \(pictured green already below\) to make the notebook Public or Private.
 
-![](../.gitbook/assets/share.png)
+![](../../.gitbook/assets/share.png)
 
 ### Viewing a Community Notebook, & Static Versions
 
@@ -40,21 +40,21 @@ You can fork any Gradient Community Notebook by clicking the green Play button a
 
 _Note: By making your notebook Public, the underlying container will be able to be forked to other users' accounts, including if they are within a private container registry. So, as with anytime you would share a container, be sure to remove any sensitive data, such as API keys or secrets, before making that notebook Public!_
 
-### [Public Profiles](../paperspace-account/gradient-public-profiles.md)
+### [Public Profiles](../../paperspace-account/gradient-public-profiles.md)
 
-With this launch, you can now create a [Public Profile](../paperspace-account/gradient-public-profiles.md) and a user or team handle. This is the start of social features on Gradient!
+With this launch, you can now create a [Public Profile](../../paperspace-account/gradient-public-profiles.md) and a user or team handle. This is the start of social features on Gradient!
 
 ### Limitations
 
-Community Notebooks take advantage of the newly released [Free Instances](../instances/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
+Community Notebooks take advantage of the newly released [Free Instances](../../instances/instance-types/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
 
 ## More Info
 
-Learn more about [Persistent Storage for Gradient Community Notebooks on free instances](../instances/free-instances.md#persistent-storage-for-free-instances).
+Learn more about [Persistent Storage for Gradient Community Notebooks on free instances](../../instances/instance-types/free-instances.md#persistent-storage-for-free-instances).
 
-Learn more about [Free Instances](../instances/free-instances.md).
+Learn more about [Free Instances](../../instances/instance-types/free-instances.md).
 
-Learn more about the various [Instance Types](../instances/instance-types.md).
+Learn more about the various [Instance Types](../../instances/instance-types/).
 
-Learn more about our [Instance Tiers](../instances/instance-tiers.md).
+Learn more about our [Instance Tiers](../../instances/instance-types/instance-tiers.md).
 

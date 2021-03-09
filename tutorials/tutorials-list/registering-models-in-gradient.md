@@ -161,7 +161,7 @@ The project id `prioax2c4` and experiment id `e720893n7f5vx` confirm that it is 
 
 You can also visit the Models section of Gradient UI to see a list of registered models.
 
-![](../.gitbook/assets/grad-model-0.jpg)
+![](../../.gitbook/assets/grad-model-0.jpg)
 
 ## Summary
 

@@ -4,5 +4,5 @@ Click Share to generate a unique link for the Notebook.  You can make the notebo
 
 ![](../../.gitbook/assets/share.png)
 
-Learn more about public notebooks [here](../public-notebooks.md). 
+Learn more about public notebooks [here](public-notebooks.md). 
 

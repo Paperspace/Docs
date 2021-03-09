@@ -7,7 +7,7 @@
 | Option | Description |
 | :--- | :--- |
 | **Machine Type** | This is the type of instance to run your Experiment's on. Many Experiments benefit from a machine with a GPU, but some can run just using a CPU. |
-| **Container** | Experiments are run within a docker container. You can run a public or private container. Learn more [here](../containers-public-and-private.md).  |
+| **Container** | Experiments are run within a docker container. You can run a public or private container. Learn more [here](containers-public-and-private.md).  |
 | **Workspace** | The workspace is the collection of code that is run. The only option in the web UI is a Git repo \(eg [https://github.com/Paperspace/fast-style-transfer.git](https://github.com/Paperspace/fast-style-transfer.git)\).  The CLI offers more advanced options such as specifying a local directory, private Git repos, S3 buckets, and more. |
 | **Command** | The command is the entry point to the container. This is the line of code that will kick off your experiment's job. It could be a bash script `./run.sh` or `python main.py` as a few examples.  |
 | **Ports** | You have the option to attach a public IP automatically. Supports opening multiple ports simultaneously, separated by `:` . Learn more about opening ports [here](ports.md).  |
@@ -124,7 +124,7 @@
     <tr>
       <td style="text-align:left"><code>isPreemptible</code>
       </td>
-      <td style="text-align:left">Flag that specifies if the Experiment is <a href="../../instances/preemptible-instances.md">preemptible</a>.</td>
+      <td style="text-align:left">Flag that specifies if the Experiment is <a href>preemptible</a>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>container</code>

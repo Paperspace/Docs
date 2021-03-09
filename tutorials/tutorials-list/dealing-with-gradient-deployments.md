@@ -89,7 +89,7 @@ gradient deployments list
 
 The list of deployments can also be accessed from the web UI.
 
-![](../.gitbook/assets/grad-deploy-0.jpg)
+![](../../.gitbook/assets/grad-deploy-0.jpg)
 
 ## Accessing the Deployment for Inferencing
 

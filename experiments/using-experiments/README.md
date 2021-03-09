@@ -8,7 +8,7 @@ There are three modes for Experiments:
 
 **Multi-node**: Run a distributed training Experiment on more than one compute instance. This option is more advanced and is available in the CLI and SDK only. You can view examples here and the .
 
-\*\*\*\*[**Hyperparameter Search**](../hyperparameters.md): Run a search using multiple instances.  This is an advanced option and is available in the CLI and SDK only. 
+\*\*\*\*[**Hyperparameter Search**](hyperparameters.md): Run a search using multiple instances.  This is an advanced option and is available in the CLI and SDK only. 
 
 ## Creating Experiments
 

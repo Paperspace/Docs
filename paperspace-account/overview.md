@@ -1,10 +1,6 @@
 # Overview
 
-Many features of Paperspace relating to CORE and to your account are documented in our [Help Center](https://support.paperspace.com/hc/en-us/).
-
-[Visit the Paperspace Help Center](https://support.paperspace.com/hc/en-us/) to learn more!
-
-There, you'll find information on:
+Many features of Paperspace relating to CORE and to your account are documented in our [Help Center](https://support.paperspace.com/hc/en-us/). There, you'll find information on:
 
 * Billing
 * Managing teams & users

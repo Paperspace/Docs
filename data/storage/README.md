@@ -2,7 +2,7 @@
 
 ## Overview
 
-Gradient includes three types of storage that are available within the context of running an Experiment, Job or Notebook. The three storage types are **Persistent, Artifact,** and **Workspace** storage.  Additionally, there is an option to mount S3 compatible object storage datasets to a running experiment which are called **Private Datasets**.  
+Gradient includes three types of storage that are available within the context of running an Experiment, Job, or Notebook. The three storage types are **Persistent, Artifact,** and **Workspace** storage.  Additionally, there is an option to mount S3 compatible object storage datasets to a running workload which are called **Datasets**.  
 
 ## Persistent Storage
 
@@ -12,7 +12,7 @@ Persistent Storage is kept in three regions based on your machine type or tier:
 
 1. PS East Coast \(NY2\)
 2. GCP West
-3. PS West Coast \(for the [Free Tier](../../instances/free-instances.md) on Gradient\)
+3. PS West Coast \(for the [Free Tier](../../instances/instance-types/free-instances.md) on Gradient\)
 
 {% hint style="warning" %}
 Persistent Storage is specific to each region. This means that data in your Persistent Storage for the Free Tier is not be accessible from paid instance types, and vice versa.
@@ -34,5 +34,5 @@ The total of Workspace storage cannot exceed the available storage on the host m
 
 ## Private Datasets
 
-Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../private-datasets-repository/).
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../private-datasets-repository.md).
 

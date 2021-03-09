@@ -4,7 +4,7 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # Overview
 
-Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](hyperparameters.md).
+Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](using-experiments/hyperparameters.md).
 
 ![The Experiments view is available within each individual project](../.gitbook/assets/screen-shot-2021-01-18-at-9.50.00-pm.png)
 
@@ -50,7 +50,7 @@ type: "multi-mpi"
 
 ### Hyperparamater Tuning
 
-See this [article](hyperparameters.md) for more info.
+See this [article](using-experiments/hyperparameters.md) for more info.
 
 ## Storage
 
@@ -68,9 +68,9 @@ The Workspace storage is typically imported from the local directory in which yo
 
 #### Private Datasets
 
-Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime. Learn more [here](../data/private-datasets-repository/).
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime. Learn more [here](../data/private-datasets-repository.md).
 
-{% page-ref page="../data/private-datasets-repository/" %}
+{% page-ref page="../data/private-datasets-repository.md" %}
 
 ## **Optional Experiment features**
 

@@ -18,13 +18,13 @@ The Experiment generates a Python pickle file that gets stored in the shared sto
 
 After signing in, click on Gradient in the navigation bar on the left to choose Projects. Click on the Create Project button and select Create Standalone Project. Enter a name for the project when prompted.
 
-![Create a new project via Projects &amp;gt; Create a Project](../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29%20%281%29.png)
+![Create a new project via Projects &amp;gt; Create a Project](../../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29%20%281%29.png)
 
 ## Creating the Experiment
 
 Within this project, we will create an experiment that trains the model.
 
-![Create an experiment from within the project itself. We can use the CLI or the experiment builder](../.gitbook/assets/screen-shot-2021-01-18-at-9.18.37-pm.png)
+![Create an experiment from within the project itself. We can use the CLI or the experiment builder](../../.gitbook/assets/screen-shot-2021-01-18-at-9.18.37-pm.png)
 
 Experiment Builder is a wizard-style UI tool to submit a job.
 

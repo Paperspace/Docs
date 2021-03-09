@@ -10,13 +10,14 @@
 
 ## Tutorials
 
-* [Getting Started with Notebooks](tutorials/getting-started-with-gradient-notebooks.md)
-* [Train a Model with the Web UI](tutorials/train-a-model-with-the-ui.md)
-* [Train a Model with the CLI](tutorials/train-a-model-with-the-cli.md)
-* [Advanced: Distributed training sample project](tutorials/advanced-distributed-training-sample-project.md)
-* [Registering Models in Gradient](tutorials/registering-models-in-gradient.md)
-* [Using Gradient Deployments](tutorials/dealing-with-gradient-deployments.md)
-* [Using Custom Containers](tutorials/using-custom-containers-with-gradient.md)
+* [Tutorials List](tutorials/tutorials-list/README.md)
+  * [Getting Started with Notebooks](tutorials/tutorials-list/getting-started-with-gradient-notebooks.md)
+  * [Train a Model with the Web UI](tutorials/tutorials-list/train-a-model-with-the-ui.md)
+  * [Train a Model with the CLI](tutorials/tutorials-list/train-a-model-with-the-cli.md)
+  * [Advanced: Distributed training sample project](tutorials/tutorials-list/advanced-distributed-training-sample-project.md)
+  * [Registering Models in Gradient](tutorials/tutorials-list/registering-models-in-gradient.md)
+  * [Using Gradient Deployments](tutorials/tutorials-list/dealing-with-gradient-deployments.md)
+  * [Using Custom Containers](tutorials/tutorials-list/using-custom-containers-with-gradient.md)
 
 ## Notebooks
 
@@ -27,10 +28,12 @@
   * [Share a Notebook](notebooks/create-a-notebook/share-a-notebook.md)
   * [Fork a Notebook](notebooks/create-a-notebook/fork-a-notebook.md)
   * [Notebook Directories](notebooks/create-a-notebook/notebooks-directories.md)
-* [Notebook Containers](notebooks/notebook-containers/README.md)
-  * [Building a Custom Container](notebooks/notebook-containers/building-a-custom-container.md)
-* [Community \(Public\) Notebooks](notebooks/public-notebooks.md)
-* [Notebook Workspace Include Files](notebooks/notebook-include.md)
+  * [Notebook Containers](notebooks/create-a-notebook/notebook-containers/README.md)
+    * [Building a Custom Container](notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
+  * [Notebook Workspace Include Files](notebooks/create-a-notebook/notebook-include.md)
+  * [Community \(Public\) Notebooks](notebooks/create-a-notebook/public-notebooks.md)
+* [ML Showcase](notebooks/ml-showcase.md)
+* [Run on Gradient \(GitHub badge\)](notebooks/github-badge-run-on-gradient.md)
 
 ## Projects
 
@@ -38,7 +41,6 @@
 * [Managing Projects](projects/managing-projects.md)
 * [GradientCI](projects/gradientci-v2/README.md)
   * [GradientCI V1 \(Deprecated\)](projects/gradientci-v2/gradientci-v2.md)
-* [GitHub Badge - Run on Gradient](projects/github-badge-run-on-gradient.md)
 
 ## Workflows
 
@@ -51,8 +53,9 @@
 
 * [Overview](experiments/about.md)
 * [Using Experiments](experiments/using-experiments/README.md)
-  * [Experiment options](experiments/using-experiments/experiment-options.md)
+  * [Containers](experiments/using-experiments/containers-public-and-private.md)
   * [Single-node & multi-node CLI options](experiments/using-experiments/single-node-and-multi-node-cli-options.md)
+  * [Experiment options](experiments/using-experiments/experiment-options.md)
   * [Gradient Config File](experiments/using-experiments/gradient-config.yaml.md)
   * [Environment variables](experiments/using-experiments/environment-variables.md)
   * [Experiment datasets](experiments/using-experiments/experiment-datasets.md)
@@ -64,13 +67,12 @@
   * [Experiment Ports](experiments/using-experiments/ports.md)
   * [GradientCI Experiments](experiments/using-experiments/gradientci-experiments.md)
   * [Diff Viewer](experiments/using-experiments/diff-viewer.md)
+  * [Hyperparameter Tuning](experiments/using-experiments/hyperparameters.md)
 * [Distributed Training](experiments/distributed-training/README.md)
   * [Distributed Machine Learning with Tensorflow](experiments/distributed-training/multi-node-training.md)
   * [Distributed Machine Learning with MPI](experiments/distributed-training/distributed-machine-learning-with-mpi/README.md)
     * [Distributed Training using Horovod](experiments/distributed-training/distributed-machine-learning-with-mpi/distributed-training-using-horovod.md)
     * [Distributed Training Using ChainerMN](experiments/distributed-training/distributed-machine-learning-with-mpi/distributed-training-using-chainermn.md)
-* [Hyperparameter Tuning](experiments/hyperparameters.md)
-* [Containers](experiments/containers-public-and-private.md)
 
 ## Jobs
 
@@ -100,6 +102,8 @@
 
 * [Overview](deployments/about.md)
 * [Managing Deployments](deployments/managing-deployments/README.md)
+  * [Deployment Containers](deployments/managing-deployments/deployment-containers/README.md)
+    * [Custom Deployment Containers](deployments/managing-deployments/deployment-containers/custom-deployment-containers.md)
   * [Deployment States](deployments/managing-deployments/deployment-states.md)
   * [Deployment Logs](deployments/managing-deployments/deployment-logs.md)
   * [Deployment Metrics](deployments/managing-deployments/deployment-metrics.md)
@@ -107,8 +111,6 @@
     * [Gradient + TensorFlow Serving](deployments/managing-deployments/a-deployed-models-api-endpoint/deployment-restful-api-tfserving.md)
   * [Deployment Autoscaling](deployments/managing-deployments/deployment-autoscaling.md)
   * [Optimize Models for Inference](deployments/managing-deployments/optimizing-tensorflow-models-for-inference.md)
-* [Deployment Containers](deployments/deployment-containers/README.md)
-  * [Custom Deployment Containers](deployments/deployment-containers/custom-deployment-containers.md)
 
 ## Data
 
@@ -116,14 +118,13 @@
   * [Managing Data in Gradient](data/storage/managing-data-in-gradient/README.md)
     * [Managing Persistent Storage with VMs](data/storage/managing-data-in-gradient/managing-persistent-storage-with-vms.md)
 * [Storage Providers](data/storage-providers.md)
-* [Versioned Datasets](data/private-datasets-repository/README.md)
-  * [S3 Datasets \(deprecated\)](data/private-datasets-repository/legacy-s3-datasets.md)
+* [Versioned Datasets](data/private-datasets-repository.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
 
 ## TensorBoards
 
 * [Overview](tensorboards/about.md)
-* [Using Tensorboards in Gradient](tensorboards/using-tensorboards/README.md)
+* [Using Tensorboards](tensorboards/using-tensorboards/README.md)
   * [TensorBoards getting started with Tensorflow](tensorboards/using-tensorboards/getting-started-with-tensorboards.md)
 
 ## Metrics
@@ -150,10 +151,9 @@
 
 ## Instances
 
-* [Instance Types](instances/instance-types.md)
-* [Free Instances \(Free Tier\)](instances/free-instances.md)
-* [Instance Tiers](instances/instance-tiers.md)
-* [Preemptible Instances](instances/preemptible-instances.md)
+* [Instance Types](instances/instance-types/README.md)
+  * [Free Instances \(Free Tier\)](instances/instance-types/free-instances.md)
+  * [Instance Tiers](instances/instance-types/instance-tiers.md)
 
 ## Gradient Cluster <a id="gradient-private-cloud"></a>
 
@@ -196,6 +196,7 @@
 
 * [Overview](paperspace-account/overview.md)
 * [Public Profiles](paperspace-account/gradient-public-profiles.md)
+* [Billing & Subscriptions](paperspace-account/billing-and-subscriptions.md)
 * [Hotkeys](paperspace-account/hotkeys.md)
 * [Teams](paperspace-account/teams/README.md)
   * [Creating a Team](paperspace-account/teams/creating-a-team.md)

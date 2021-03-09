@@ -23,10 +23,10 @@ You can always switch products later by clicking the Product Selector at the top
 
 ## Create a Notebook
 
-Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/notebook-containers/), choose your [instance type](../instances/instance-types.md), and then click create. 
+Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../instances/instance-types/), and then click create. 
 
 {% hint style="success" %}
-Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
+Check out the [FREE GPU](../instances/instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
 ![Select Notebooks &amp;gt; Create a Notebook to enter the notebook create flow](../.gitbook/assets/screen-shot-2021-01-18-at-8.39.35-pm%20%281%29.png)

@@ -2,7 +2,7 @@
 description: How to create a Tensorboard instance in Gradient
 ---
 
-# Using Tensorboards in Gradient
+# Using Tensorboards
 
 {% hint style="info" %}
 Gradient TensorBoards require a [Gradient Private Cluster](../../gradient-private-cloud/setup/managed-installation.md)

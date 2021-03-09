@@ -5,7 +5,7 @@
 Gradient integrates with Jupyter Notebooks and Jupyter Lab, making it easy to get a coding environment provisioned in seconds.  Gradient [Notebooks](../notebooks/about.md) make it easy to explore data and coding concepts and collaborate with other people on projects. 
 
 {% hint style="success" %}
-Check out the [FREE GPU](../instances/free-instances.md) option when launching Notebooks!
+Check out the [FREE GPU](../instances/instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
 ## Projects
@@ -34,7 +34,7 @@ Experiments are part of a larger suite of tools that work seamlessly with Gradie
 
 ## Data
 
-#### \*\*\*\*[**Versioned Datasets**](../data/private-datasets-repository/)\*\*\*\*
+#### \*\*\*\*[**Versioned Datasets**](../data/private-datasets-repository.md)\*\*\*\*
 
 Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Dataset version can be used as input to Gradient workloads as well as outputs.
 
@@ -46,13 +46,13 @@ Persistent storage is a persistent filesystem automatically mounted on every Exp
 
 Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage/#artifact-storage).
 
-#### [Workspace Storage](../notebooks/notebook-include.md)
+#### [Workspace Storage](../notebooks/create-a-notebook/notebook-include.md)
 
 The Workspace storage is typically imported from the local directory in which you started your job. The contents of that directory are zipped up and uploaded to the container in which your job runs. The Workspace exists for the duration of the job run.  If you need to push code up to Gradient and run it, using the Workspace storage is the way to do it. Learn more [here](../data/storage/#workspace-storage).
 
-#### [Private Datasets](../data/private-datasets-repository/legacy-s3-datasets.md)
+#### [Private Datasets]()
 
-Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository/).
+Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](../data/private-datasets-repository.md).
 
 ## Models
 

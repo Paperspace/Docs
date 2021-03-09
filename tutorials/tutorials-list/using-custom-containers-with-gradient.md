@@ -140,7 +140,7 @@ In the next step, we will launch a Jupyter Notebook based on the container image
 
 Access the Notebooks from the left navigation bar of Gradient. Choose Custom Container to pull the Apache MXNet image that we built.
 
-![](../.gitbook/assets/grad-custom-container-0.jpg)
+![](../../.gitbook/assets/grad-custom-container-0.jpg)
 
 Under the container name, type the full container image name including the tag. If you are accessing a private registry, populate the username and password sections.
 
@@ -150,13 +150,13 @@ Follow the remaining steps involved in launching a Gradient Notebook. Refer to t
 
 After the Notebook instance is launched successfully, click on the URL to access it.
 
-![](../.gitbook/assets/grad-custom-container-1.jpg)
+![](../../.gitbook/assets/grad-custom-container-1.jpg)
 
-![](../.gitbook/assets/grad-custom-container-2.jpg)
+![](../../.gitbook/assets/grad-custom-container-2.jpg)
 
 You can upload the Notebook, `MNIST.ipynb`, cloned from the Github repo.
 
-![](../.gitbook/assets/grad-custom-container-3.jpg)
+![](../../.gitbook/assets/grad-custom-container-3.jpg)
 
 You can now train and test the CNN model based Lenet architecture trained with the popular MNIST dataset.
 

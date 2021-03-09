@@ -8,8 +8,8 @@ The steps covered in the tutorial video are also explained below.
 
 **Prerequisites:**
 
-* [Install Gradient CLI](../get-started/install-the-cli.md)
-* [Obtain an API Key](../get-started/install-the-cli.md#obtaining-an-api-key)
+* [Install Gradient CLI](../../get-started/install-the-cli.md)
+* [Obtain an API Key](../../get-started/install-the-cli.md#obtaining-an-api-key)
 
 **Steps**
 
