@@ -12,7 +12,7 @@ The Free Instances are available to all _Private Workspace_ plans, i.e. G\* subs
 
 **Free-GPU+** — NVIDIA M4000 GPU
 
-**Free-P5000** — NVIDIA P5000 GPU
+**Free-P5000** — NVIDIA P5000 GPU \(requires G1 or great subscription [plan](https://gradient.paperspace.com/pricing)\) 
 
 See the [Instance Types](./) page for the details on these instances.
 
@@ -32,5 +32,5 @@ All free instances have the same limits except for persistent storage, regardles
   * Only 1 Free Notebook can be run at a time 
 * All Notebooks will be set to public and cannot be set to private
 
-_Note: We are currently offering a limited pool of free instances so your notebook may be Pending in the queue as you wait for a free instance to become available. If you need immediate access to machines, please consider upgrading to a paid subscription plan._
+_Note: We are currently offering a limited pool of free instances so your notebook may be Pending in the queue as you wait for a free instance to become available. If you need immediate access to machines, please consider upgrading to a paid instance type._
 
