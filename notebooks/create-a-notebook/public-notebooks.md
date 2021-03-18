@@ -1,9 +1,5 @@
 # Community \(Public\) Notebooks
 
-{% hint style="info" %}
-Gradient Community Notebooks were launched as a public beta in October 2019. We'd love to hear your feedback on Community Notebooks as we work to stabilize and round out the UX of this new product offering. 
-{% endhint %}
-
 ## Gradient Community Notebooks
 
 Gradient Community Notebooks allow you to create, run, and share your Jupyter Notebooks with the world.
@@ -22,11 +18,7 @@ Navigate to your notebook and open the Notebook IDE. In the top right there is a
 
 ### Viewing a Community Notebook, & Static Versions
 
-Anyone can view a Notebook that has been made Public just by visiting the URL! :\)
-
-When you visit a Community Notebook, you'll always see the last Stopped version of that notebook. So if the notebook owner is currently running it, you'll see a message that says:`Note: You are viewing the static version of this notebook. Run the notebook to see the interactive live version.`
-
-Don't be alarmed – this is expected behavior. Due to a limitation in Jupyter notebooks, we can't show you the actively running version.
+Anyone can view a Notebook that has been made Public just by visiting the URL! 
 
 If the notebook is not currently running, you'll see the most recent Stopped version, which is what you would expect to see.
 
@@ -36,7 +28,7 @@ This means that if you're trying to share a Gradient Community Notebook via its 
 
 ### Forking Community Notebooks
 
-You can fork any Gradient Community Notebook by clicking the green Play button at the top of that Community Notebook's page. For now, this will fork the notebook into your private workspace. Soon it will allow you to fork into a team of your choice.
+You can fork any Gradient Community Notebook by clicking the fork button on the notebook page. For now, this will fork the notebook into your private workspace. Soon it will allow you to fork into a team of your choice.
 
 _Note: By making your notebook Public, the underlying container will be able to be forked to other users' accounts, including if they are within a private container registry. So, as with anytime you would share a container, be sure to remove any sensitive data, such as API keys or secrets, before making that notebook Public!_
 

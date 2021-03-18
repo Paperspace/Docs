@@ -10,7 +10,7 @@
 
 Notebooks can be created by clicking _Create Notebook_ button on the Notebooks tab.  There are three types of base containers:
 
-#### Popular Containers \(Basic\)
+#### Recommended Containers \(Basic\)
 
 These are the templates that are most popular on Gradient.  They include the most common ML frameworks and libraries.  [Click here](notebook-containers/) to discover which Notebook Base Container will best suit your use case, then choose it from the options below:
 
@@ -32,7 +32,7 @@ If you need to import an existing container, visit the Custom Containers section
 
 This is [instance type](../../instances/instance-types/) that your notebook will run on. Our hardware is configured to work with the tools and packages in each of the provided containers.
 
-![](../../.gitbook/assets/image%20%2845%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 ### Optional Settings:
 
@@ -44,11 +44,9 @@ Provide a friendly name for your Notebook in the text field
 
 If you have a [Gradient subscription](https://gradient.paperspace.com/pricing), you will have the ability to set a custom auto-shutdown interval. 
 
-If you do not have a Gradient subscription, your notebook will default to an auto-shutdown interval of 12 hours, to help avoid unexpected runtime charges. Once created, you can stop, start, fork, and swap out the instance type anytime. 
+**Workspace**
 
-**Workspaces**
-
-Additionally, you have the option to select a remote Github repository to serve as [workspace storage](https://docs.paperspace.com/gradient/data/storage#workspace-storage) for your Notebook.  If the repository is private, you need to provide access credentials \(username and a password/apiKey\).  Also, you can provide an optional Github ref that points to a specific version of the repository.
+Additionally, you have the option to select a remote Github repository to serve as the starting point for your Notebook.  If the repository is private, you need to provide access credentials \(username and a password/apiKey\).  Also, you can provide an optional Github ref that points to a specific version of the repository.
 
 ### Click Create
 
@@ -111,7 +109,7 @@ Usage: gradient notebooks create \
 {% tab title="Web UI" %}
 ## Start a Notebook
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LHZRFUkajubOAmgu6Rd%2F-LeX9E8cIJ_UtEyU8jjp%2F-LeXCI4qsQKD3diF1A78%2Fimage.png?alt=media&token=b6f49118-162d-4b0b-b638-07e767605410)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 When you click _Start_, a window will appear that presents a few options such as the name, the instance type, and the Auto-Shutdown interval.
 {% endtab %}
@@ -176,7 +174,7 @@ Click Delete to remove your Notebook. Careful - this will permanently delete you
 You can only delete a notebook once it has stopped running.
 {% endhint %}
 
-![](../../.gitbook/assets/delete-notebook.png)
+![](../../.gitbook/assets/image.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -201,11 +199,9 @@ gradient notebooks delete [options...]
 
 ## Rename a Notebook
 
-You can rename any Notebook, whether it is running or stopped, in order to help organize your work. Simply click on the notebook name in the list and it will become an editable text field; press the enter key when you are done to save it:
+You can rename any Notebook, whether it is running or stopped, in order to help organize your work. Simply click on the notebook name and it will become an editable text field; press enter to commit the change:
 
-![](../../.gitbook/assets/rename_notebook.png)
-
-
+![](../../.gitbook/assets/image%20%289%29.png)
 
 
 

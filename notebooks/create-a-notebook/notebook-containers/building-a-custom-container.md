@@ -37,12 +37,8 @@ You can make your own file \(see Requirements below\) or use one like this examp
 
 #### 3. In the same directory:
 
-* Run: `docker build -t <name of image>` 
-
-         for the example file above, you would enter: `docker build -t test-container`
-
-* Verify with docker images. It should look something like this:![Screenshot\_2018-08-23\_17.53.29.png](https://support.paperspace.com/hc/article_attachments/360011197753/Screenshot_2018-08-23_17.53.29.png)
-* Tag the image so that is can be added to a repo with the image id, your Docker Hub username, and a name for the image :
+* Run: `docker build -t <name of image>` For the example file above, you would enter: `docker build -t test-container`
+* Tag the image so that it can be added to a repo with the image id, your Docker Hub username, and a name for the image :
 
 `docker tag <image id> <dockerhub username>/test-container:latest`
 
@@ -67,42 +63,7 @@ After you've pushed your custom container to Docker or you found a public contai
 
 ### Notebooks  
 
-Select Notebooks from your left-hand navigation menu. Click the Custom Containers tab in the Base Containers section. 
+Click the advanced options toggle on the notebook create a notebook page. 
 
-**Require field:**
-
-* Container Name = Path and tags of image eg ufoym/deepo:all-jupyter-py36
-
-**Optional Parameters:**
-
-* Username = your Docker Hub username, can be left blank for public images
-* Password = your Docker Hub password, can be left blank for public images
-* Default Entrypoint = must be Jupyter compatible, defaults to 'jupyter notebook' if left blank
-* Container user = optional user, defaults to 'root' if left blank
-
-![](https://support.paperspace.com/hc/article_attachments/360011084754/mceclip1.png)
-
-Follow the rest of the steps to create your Notebook by selecting your machine type, naming your notebook, and clicking Create. 
-
-### Experiments
-
-Just pass in the container when creating your Experiment
-
-#### Using the Experiment Builder UI
-
-![](../../../.gitbook/assets/image%20%2826%29%20%282%29%20%282%29.png)
-
-#### Using the CLI
-
-```bash
-paperspace-python experiment createAndStart ... --container ufoym/deepo:all-py36 ...
-```
-
-## Private Containers
-
-If your container is hosted in a password protected repository \(you have set your Docker Image to 'Private'\), you will need to enter your Docker Hub password. Otherwise, leave this field blank. **This is not your Paperspace username and password.**
-
-Privacy settings for a given container might look something like this in Docker Hub: ![Screenshot\_2018-08-24\_15.22.39.png](https://support.paperspace.com/hc/article_attachments/360011177694/Screenshot_2018-08-24_15.22.39.png)
-
-if a Notebook image is private and the password is missing or invalid, the Notebook won't run :\(   
+Follow the rest of the steps [here](./#custom-containers) to create your Notebook by selecting your machine type, naming your notebook, and clicking Create. 
 
