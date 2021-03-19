@@ -37,6 +37,8 @@ Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of p
 
 You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own. 
 
+{% embed url="https://www.youtube.com/watch?v=i4pvLzvw2ME" caption="Learn how to create a Jupyter Notebook. 1m48s." %}
+
 ## Advanced MLOps
 
 ### Create a cluster

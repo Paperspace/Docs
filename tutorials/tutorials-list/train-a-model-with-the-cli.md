@@ -1,6 +1,6 @@
 # Train a Model with the CLI
 
-{% embed url="https://www.youtube.com/watch?v=v7M-EzaDqoU" %}
+{% embed url="https://www.youtube.com/watch?v=v7M-EzaDqoU" caption="Learn how to train a simple model from the Gradient CLI. 1m51s." %}
 
 The steps covered in the tutorial video are also explained below.
 

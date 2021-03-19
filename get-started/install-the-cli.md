@@ -6,7 +6,7 @@ description: How to install the Gradient Command Line Interface
 
 ## Installation
 
-{% embed url="https://youtu.be/t1-PqoeqFuo" caption="" %}
+{% embed url="https://youtu.be/t1-PqoeqFuo" caption="Learn how to install the Gradient CLI. 1m35s." %}
 
 The Gradient CLI is available on [pypi](https://pypi.org/project/gradient/) and works on Windows, MacOS, and Linux.
 
@@ -46,7 +46,7 @@ gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
 
 ## Obtaining an API key
 
-{% embed url="https://www.youtube.com/watch?v=WS\_xYiaTSIY" %}
+{% embed url="https://www.youtube.com/watch?v=WS\_xYiaTSIY" caption="Obtain an API key from the settings page. 1m27s." %}
 
 Sign in to your [Paperspace account](https://www.paperspace.com/account/login) and create a new API key. You'll use the API keys you generate here to authenticate your requests.
 
