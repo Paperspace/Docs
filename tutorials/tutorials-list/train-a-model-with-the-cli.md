@@ -97,7 +97,7 @@ This command does quite a bit of heavy lifting for us. It schedules the training
 Let’s analyze the steps taken by Gradient to finish the experiment.
 
 1. The CLI downloads all the files \(including the dataset\) and uploads it to Gradient
-   1. You can also run the experiment from your local system by not specifying the `--workspace` parameter! This compress all the files into a .zip file and upload it to Gradient.
+   1. You can also run the experiment from your local system by calling it with `--workspace ./`! This compress all the files into a .zip file and upload it to Gradient.
 2. Gradient pulls the container image instructed in the CLI \(`--container janakiramm/python:3`\) from the registry, which is Docker Hub for this scenario
 3. Before running the container, Gradient maps the directory with the uploaded files to the container’s working directory
 4. Gradient maps the command sent via the CLI parameter \(`--command 'python train/train.py -i ./data/sal.csv -o /storage/salary'`\) to the docker run command
