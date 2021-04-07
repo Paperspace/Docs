@@ -7,6 +7,7 @@
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
 * [Install the Gradient CLI](get-started/install-the-cli.md)
+* [Common Errors](get-started/error-codes.md)
 
 ## Tutorials
 
