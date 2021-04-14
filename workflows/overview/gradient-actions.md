@@ -16,13 +16,13 @@ In this basic example, the Gradient action called `container@v1` allows us to pi
 ### git-checkout
 
 ```yaml
+inputs:
+  repo:
+    type: volume
 uses: git-checkout@v1
 with:
   url: https://github.com/user/public-repo
   ref: 46aa59d6ecc3720ffe2454a6d9d360e6ce75acce #optional git ref
 ```
 
-
-
-
-
+In this example, the Gradient action `git-checkout@v1` clones the provided GitHub URL `https://github.com/user/public-repo` at commit `46aa59d6ecc3720ffe2454a6d9d360e6ce75acce` into a volume accessible at `inputs/<input-name>` \(in this case, `inputs/repo`\).  Subsequent jobs that specify a named input of type `volume` can also access the repository files at `inputs/<input-name>`.
