@@ -25,4 +25,4 @@ with:
   ref: 46aa59d6ecc3720ffe2454a6d9d360e6ce75acce #optional git ref
 ```
 
-In this example, the Gradient action `git-checkout@v1` clones the provided GitHub URL `https://github.com/user/public-repo` at commit `46aa59d6ecc3720ffe2454a6d9d360e6ce75acce` into a volume accessible at `inputs/<input-name>` \(in this case, `inputs/repo`\).  Subsequent jobs that specify a named input of type `volume` can also access the repository files at `inputs/<input-name>`.
+In this example, the Gradient action `git-checkout@v1` clones the GitHub URL `https://github.com/user/public-repo` at ref `46aa59d6ecc3720ffe2454a6d9d360e6ce75acce` into a volume named `repo`.  The cloned files are accessible at `inputs/<input-name>` \(in this case, `inputs/repo`\), and subsequent jobs that specify a volume input can also access the repository files at `inputs/<input-name>`.
