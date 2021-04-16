@@ -29,7 +29,7 @@ When you launch a Notebook, it runs inside a container preloaded with the notebo
 
 ## Custom Containers
 
-Custom containers feature lets you pull your own image from a container registry such as Docker Hub. This article will help you prepare a custom Docker container to use with Gradient, show you how to bring that Container into Gradient, and create a notebook with your custom container. We recommend using Docker to get the container image from your system to Gradient. 
+Custom containers feature lets you pull your own image from a container registry such as Docker Hub. This article will help you prepare a custom Docker container to use with Gradient, show you how to bring that Container into Gradient, and create a notebook with your custom container. We recommend using Docker to get the container image from your system to Gradient. You must run `jupyter` on port `8888` and allow connections from ip address `0.0.0.0`. To support our notebook ide you must also include the following flags: `--no-browser --NotebookApp.trust_xheaders=True --NotebookApp.disable_check_xsrf=False --NotebookApp.allow_remote_access=True --NotebookApp.allow_origin='*'` if your command is `jupyter notebook`, if your command is `jupyter lab` use these instead `--no-browser --LabApp.trust_xheaders=True --LabApp.disable_check_xsrf=False --LabApp.allow_remote_access=True --LabApp.allow_origin='*'`.
 
 #### Required field:
 
@@ -41,6 +41,6 @@ Custom containers feature lets you pull your own image from a container registry
 
 * Registry Username = your private container registry username, can be left blank for public images
 * Registry Password = your private container registry password, can be left blank for public images
-* Command = must be Jupyter compatible, defaults to `jupyter notebook --allow-root --ip=0.0.0.0` if left blank
+* Command = must be Jupyter compatible, defaults to `jupyter notebook --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.trust_xheaders=True --NotebookApp.disable_check_xsrf=False --NotebookApp.allow_remote_access=True --NotebookApp.allow_origin='*'` if left blank
 * Container user = optional user, defaults to 'root' if left blank
 
