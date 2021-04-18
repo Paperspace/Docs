@@ -4,7 +4,7 @@
 
 ### `defaults`
 
-At the top of the yaml workflow file  you can specify default parameters to be used throughout the entire workflow. This includes environment variables, default machine instance configuration.
+At the top of the yaml workflow file you can specify default parameters to be used throughout the entire workflow. This includes environment variables, default machine instance configuration.
 
 ### `inputs`
 
@@ -12,7 +12,7 @@ The `inputs` block allows you to specify versioned dataset to be referenced and 
 
 ### `jobs`
 
-Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A job is an individual task that executes code \(such as a training a machine learning model\) and can produce outputs \(i.e. versioned datasets\). 
+Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A job is an individual task that executes code \(such as a training a machine learning model\) and can produce outputs \(i.e. versioned datasets\).
 
 ## Sample Workflow Spec
 

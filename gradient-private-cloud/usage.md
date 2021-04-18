@@ -42,7 +42,7 @@ In order to run workloads on your Gradient cluster, you must specify the `cluste
 
 If you don't supply the `clusterId` parameter, then your command will default to run on Paperspace instances, which are not part of your private cluster environment.
 
-To avoid having to re-enter the Cluster ID, and if you want the configuration to be reusable and checked into source control, another option is using the [Gradient Config File](../experiments/using-experiments/gradient-config.yaml.md). This file can contain the `clusterID` parameter in addition to many other common settings.
+To avoid having to re-enter the Cluster ID, and if you want the configuration to be reusable and checked into source control, another option is using the [Gradient Config File](). This file can contain the `clusterID` parameter in addition to many other common settings.
 
 ## **Using Gradient clusters via the Web UI**
 

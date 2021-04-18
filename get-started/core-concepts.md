@@ -26,11 +26,11 @@ Workflows are the newest and most powerful way to orchestrate full end-to-end ma
 
 ### Experiments
 
-[Experiments](../experiments/about.md) are designed for training machine learning models on GPUs \(and other chips\) without managing any infrastructure. Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
+[Experiments]() are designed for training machine learning models on GPUs \(and other chips\) without managing any infrastructure. Experiments are used to create and start either a single Job or multiple Jobs \(eg for a hyperparameter search or distributed training\).  
 
 ### Jobs
 
-[Jobs](../jobs/about.md) execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation.  Jobs are made up of a collection of code, data, and a container that are packaged together and remotely executed.  
+[Jobs]() execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation.  Jobs are made up of a collection of code, data, and a container that are packaged together and remotely executed.  
 
 ### Models
 
@@ -52,7 +52,7 @@ Gradient provides the ability to mount S3 compatible object storage buckets to a
 
 Persistent storage is a persistent filesystem automatically mounted on every Experiment, Job, and Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../data/storage/#persistent-storage).
 
-#### [Artifact Storage ****](../jobs/create-a-job/job-artifacts.md)\*\*\*\*
+#### [Artifact Storage ****]()\*\*\*\*
 
 Artifact storage is collected and made available after the Experiment or Job run in the CLI and web interface. You can download any files that your job has placed in the `/artifacts` directory from the CLI or UI. If you need to get result data from a job run out of Gradient, use the Artifacts directory. Learn more [here](../data/storage/#artifact-storage).
 

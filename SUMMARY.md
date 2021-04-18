@@ -50,47 +50,6 @@
   * [Workflow Spec](workflows/overview/workflow-spec.md)
   * [Gradient Actions](workflows/overview/gradient-actions.md)
 
-## Experiments
-
-* [Overview](experiments/about.md)
-* [Using Experiments](experiments/using-experiments/README.md)
-  * [Containers](experiments/using-experiments/containers-public-and-private.md)
-  * [Single-node & multi-node CLI options](experiments/using-experiments/single-node-and-multi-node-cli-options.md)
-  * [Experiment options](experiments/using-experiments/experiment-options.md)
-  * [Gradient Config File](experiments/using-experiments/gradient-config.yaml.md)
-  * [Environment variables](experiments/using-experiments/environment-variables.md)
-  * [Experiment datasets](experiments/using-experiments/experiment-datasets.md)
-  * [Git Commit Tracking](experiments/using-experiments/git-commit-tracking.md)
-  * [Experiment metrics](experiments/using-experiments/experiment-metrics/README.md)
-    * [System Metrics](experiments/using-experiments/experiment-metrics/system-metrics.md)
-    * [Custom Metrics](experiments/using-experiments/experiment-metrics/custom-metrics.md)
-  * [Experiment Logs](experiments/using-experiments/experiment-logs.md)
-  * [Experiment Ports](experiments/using-experiments/ports.md)
-  * [GradientCI Experiments](experiments/using-experiments/gradientci-experiments.md)
-  * [Diff Viewer](experiments/using-experiments/diff-viewer.md)
-  * [Hyperparameter Tuning](experiments/using-experiments/hyperparameters.md)
-* [Distributed Training](experiments/distributed-training/README.md)
-  * [Distributed Machine Learning with Tensorflow](experiments/distributed-training/multi-node-training.md)
-  * [Distributed Machine Learning with MPI](experiments/distributed-training/distributed-machine-learning-with-mpi/README.md)
-    * [Distributed Training using Horovod](experiments/distributed-training/distributed-machine-learning-with-mpi/distributed-training-using-horovod.md)
-    * [Distributed Training Using ChainerMN](experiments/distributed-training/distributed-machine-learning-with-mpi/distributed-training-using-chainermn.md)
-
-## Jobs
-
-* [Overview](jobs/about.md)
-* [Using Jobs](jobs/create-a-job/README.md)
-  * [Stop a Job](jobs/create-a-job/stop-a-job.md)
-  * [Delete a Job](jobs/create-a-job/delete-a-job.md)
-  * [List Jobs](jobs/create-a-job/list-your-jobs.md)
-  * [Job Logs](jobs/create-a-job/job-logs.md)
-  * [Ports](jobs/create-a-job/ports.md)
-  * [Job Metrics](jobs/create-a-job/job-metrics/README.md)
-    * [System Metrics](jobs/create-a-job/job-metrics/system-metrics.md)
-    * [Custom Metrics](jobs/create-a-job/job-metrics/custom-metrics.md)
-  * [Job Artifacts](jobs/create-a-job/job-artifacts.md)
-  * [Public Jobs](jobs/create-a-job/public-jobs.md)
-  * [Building Docker Containers with Jobs](jobs/create-a-job/building-docker-containers-with-jobs.md)
-
 ## Models
 
 * [Overview](models/about.md)
@@ -121,12 +80,6 @@
 * [Storage Providers](data/storage-providers.md)
 * [Versioned Datasets](data/private-datasets-repository.md)
 * [Public Datasets Repository](data/public-datasets-repository.md)
-
-## TensorBoards
-
-* [Overview](tensorboards/about.md)
-* [Using Tensorboards](tensorboards/using-tensorboards/README.md)
-  * [TensorBoards getting started with Tensorflow](tensorboards/using-tensorboards/getting-started-with-tensorboards.md)
 
 ## Metrics
 
@@ -177,21 +130,6 @@
 
 * [Overview](tags/overview.md)
 * [Using Tags](tags/using-tags.md)
-
-## Machines \(Paperspace CORE\) <a id="machines"></a>
-
-* [Overview](machines/about.md)
-* [Using Machines](machines/using-machines/README.md)
-  * [Start a Machine](machines/using-machines/start-machine.md)
-  * [Stop a Machine](machines/using-machines/stop-machine.md)
-  * [Restart a Machine](machines/using-machines/restart-machines.md)
-  * [Update a Machine](machines/using-machines/update-machine.md)
-  * [Destroy a Machine](machines/using-machines/destroy-machine.md)
-  * [List Machines](machines/using-machines/list-machines.md)
-  * [Show a Machine](machines/using-machines/show-machine.md)
-  * [Wait For a Machine](machines/using-machines/wait-for-the-machine.md)
-  * [Check a Machine's utilization](machines/using-machines/machine-utilization.md)
-  * [Check availability](machines/using-machines/check-machine-availability.md)
 
 ## Paperspace Account
 

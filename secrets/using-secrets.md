@@ -102,5 +102,5 @@ If the same secret name is created for more than one scope only one will be appl
 
 #### Using Secrets
 
-See [Experiment Variables](../experiments/using-experiments/environment-variables.md#injecting-secrets) for using Secrets with Experiments.
+See [Experiment Variables]() for using Secrets with Experiments.
 

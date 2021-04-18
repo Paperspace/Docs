@@ -75,9 +75,9 @@ gradient experiments run singlenode --projectId <your-project-id> --clusterId <y
 
 ![](../.gitbook/assets/screen-shot-2020-10-09-at-6.40.00-pm.png)
 
-Behind the scenes, your Experiment will be uploaded and executed on your cluster starting with the command you provided. There are [several optional Experiment parameters](../experiments/using-experiments/), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.  
+Behind the scenes, your Experiment will be uploaded and executed on your cluster starting with the command you provided. There are [several optional Experiment parameters](), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.  
 
-You can also create `multi-node` and leverage other advanced functionality such as [Tensorboards](../tensorboards/using-tensorboards/getting-started-with-tensorboards.md) and [Metrics](../metrics/metrics-overview.md). Explore all the advanced options [here](../experiments/using-experiments/experiment-options.md).
+You can also create `multi-node` and leverage other advanced functionality such as [Tensorboards]() and [Metrics](../metrics/metrics-overview.md). Explore all the advanced options [here]().
 
 ### Monitor your Experiment progress
 
