@@ -7,7 +7,7 @@ View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/
 {% endhint %}
 
 1. Make sure you have the latest version of the [Gradient CLI](../../get-started/core-concepts/install-the-cli.md)
-2. Create a  [Gradient Project](../../get-started/about-projects/managing-projects.md) and [grab your project ID](../../get-started/about-projects/managing-projects.md#get-your-projects-id)
+2. Create a  [Gradient Project](../../get-started/managing-projects.md) and [grab your project ID](../../get-started/managing-projects.md#get-your-projects-id)
 3. Create your first workflow using the Gradient CLI
 
 ```bash

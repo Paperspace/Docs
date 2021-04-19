@@ -18,7 +18,7 @@ Check out the [FREE GPU](../../instance-types/free-instances.md) option when lau
 Using advanced ML components contained within Projects requires [creating a cluster](../../gradient-private-cloud/about/setup/managed-installation.md).   
 {% endhint %}
 
-A Gradient [Project](../about-projects/) is a collection of Workflows, Models, and Deployments. Workflows provide a pipelining capability to automate these components. 
+A Gradient [Project]() is a collection of Workflows, Models, and Deployments. Workflows provide a pipelining capability to automate these components. 
 
 ### Workflows \(Private Beta\)
 
