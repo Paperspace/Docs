@@ -80,14 +80,11 @@
 * [Instance Types](instance-types/README.md)
   * [Free Instances \(Free Tier\)](instance-types/free-instances.md)
   * [Instance Tiers](instance-types/instance-tiers.md)
-
-## Gradient SDK <a id="gradient-python-sdk"></a>
-
-* [SDK Overview](gradient-python-sdk/gradient-python-sdk/README.md)
-  * [End to end tutorial](gradient-python-sdk/gradient-python-sdk/sdk-tutorial.md)
-  * [Projects Client](gradient-python-sdk/gradient-python-sdk/projects-client.md)
-  * [Models Client](gradient-python-sdk/gradient-python-sdk/models-client.md)
-  * [Deployments Client](gradient-python-sdk/gradient-python-sdk/deployments-client.md)
+* [SDK Overview](gradient-python-sdk-1/README.md)
+  * [End to end tutorial](gradient-python-sdk-1/sdk-tutorial.md)
+  * [Projects Client](gradient-python-sdk-1/projects-client.md)
+  * [Models Client](gradient-python-sdk-1/models-client.md)
+  * [Deployments Client](gradient-python-sdk-1/deployments-client.md)
   * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
 
 ## Gradient Cluster <a id="gradient-private-cloud"></a>

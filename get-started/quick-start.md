@@ -75,5 +75,5 @@ Congratulations! You ran your first Experiment on Gradient 🚀
 
 ## Explore the rest of the platform
 
-From [Models](../models/about/) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](core-concepts/install-the-cli.md) and check out the [SDK](../gradient-python-sdk/gradient-python-sdk/).
+From [Models](../models/about/) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](core-concepts/install-the-cli.md) and check out the [SDK](../gradient-python-sdk-1/).
 
