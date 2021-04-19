@@ -8,12 +8,6 @@ description: How to query and view metrics in GUI and CLI
 
 {% tabs %}
 {% tab title="Web GUI" %}
-### Experiments and Jobs
-
-You can view metrics for Jobs by entering the "Metrics" tab.  You can view metrics for Experiments by clicking on the individual Jobs that represent worker nodes.  
-
-![](../../.gitbook/assets/screenshot-metrics.jpg)
-
 ### Deployments
 
 {% hint style="warning" %}
@@ -35,6 +29,10 @@ To view Notebook metrics, you will see a minimal version in the Notebook header 
 ![Detailed view](../../.gitbook/assets/image%20%28105%29%20%286%29%20%283%29%20%285%29.png)
 
 ![Collapsed view in Notebook header](../../.gitbook/assets/81246457-8a067200-8fcc-11ea-81c9-94fb4dea1eee.jpg)
+
+### Workflows
+
+Coming soon!
 {% endtab %}
 
 {% tab title="CLI" %}

@@ -2,7 +2,7 @@
 
 #### Who uses Gradient?
 
-Gradient is used by individual hobbyists and students, researchers, and professionals across teams small and large.  The platform is designed for novice and advanced data scientists and ML engineers. It is not well suited for "citizen data scientists" or people without any programming background.
+Gradient is used by individual hobbyists and students, researchers, and professionals across teams of all sizes.  The platform is designed for novice and advanced data scientists and ML engineers. It is not well suited for "citizen data scientists" or people without any coding background or experience with ML frameworks e.g. TensorFlow, PyTorch, etc.
 
 #### Is Gradient for research or production?
 

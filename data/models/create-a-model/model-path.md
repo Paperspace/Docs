@@ -1,6 +1,6 @@
 # Model Path, Parameters, & Metadata
 
-For an experiment to output a model in Gradient, the resulting model files need to be written to the specified or default model path.
+For a workload to output a model in Gradient, the resulting model files need to be written to the specified or default model path.
 
 ## PS\_MODEL\_PATH
 

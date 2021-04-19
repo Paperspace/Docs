@@ -8,9 +8,9 @@ View the full CLI/SDK Docs for **Models** here [https://paperspace.github.io/gra
 
 There are two ways to create a Model in Gradient, and both can be done via the web UI or CLI:
 
-### 1. Run an Experiment that generates a Model
+### 1. Run a workload that generates a Model
 
-You can do this via the UI or via the CLI by [using one of the sample Experiment commands](model-path.md); be sure to set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Model Repository](../#model-repository).
+You can do this via the by using the [SDK](../../../more/gradient-python-sdk-1/); be sure to set both `--modelPath` and `--modelType` according to those instructions. This will place your Model in your Project's [Model Repository](../#model-repository).
 
 View an [example](preparing-model-for-deployment.md) using TensorFlow.
 

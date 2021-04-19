@@ -19,7 +19,11 @@ This section of our documentation covers the private cluster options.  If you ar
 
 ## Cluster pricing
 
-### Managed 
+### Managed Service
+
+We charge per hour for compute time on _paid_ instances \(see our [free tier](../../more/instance-types/free-instances.md)\).  Optionally, you can upgrade your [subscription](https://gradient.paperspace.com/pricing) to access higher concurrency and additional features. 
+
+### Managed Private Clusters 
 
 **Compute, Storage, & Networking**  
 The Kubernetes master node, storage, and networking cost to run the cluster is $0.12/hr. Private Clusters require a minimum of one CPU node for cluster orchestration and clusters include 500GB of storage by default.  

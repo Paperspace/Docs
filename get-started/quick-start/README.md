@@ -9,9 +9,9 @@ To begin using Gradient, follow these preliminary steps:
 
 Now you can create Notebooks, Workflows, Models, Deployments, and more!  Note: if you are self-hosting Gradient, please visit the [Gradient Private Cloud ](../../gradient-private-cloud/about/setup/self-hosted-clusters/)section for more info.
 
-## Logging into the Paperspace Console for the first time
+## Logging in for the first time
 
-When you first log into the Paperspace Console, you must first select the Gradient from the product dropdown:
+When you first log into the Paperspace Console, you can select Gradient from the product dropdown:
 
 ![](../../.gitbook/assets/image%20%2832%29.png)
 
@@ -50,7 +50,7 @@ Projects organize your work.  To create a Project, navigate to **Gradient** &gt;
 You can run Workflows from the web interface or CLI:
 
 {% hint style="info" %}
-Before creating an experiment using the CLI, you must first [install the CLI](install-the-cli.md). 
+Before creating a workflow using the CLI, you must first [install the CLI](install-the-cli.md). 
 {% endhint %}
 
 **Run a sample Workflow**
