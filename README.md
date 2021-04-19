@@ -1,20 +1,16 @@
 # About Paperspace Gradient
 
-Welcome to Gradient! Get familiar with the Gradient CLI and Web UI.
+### **Welcome to Gradient!** 
 
 {% hint style="info" %}
 This is the documentation for the [Gradient](https://paperspace.com/gradient) platform. If you are looking for general information on Paperspace or to contact Support, visit our [Help Center](https://support.paperspace.com).
 {% endhint %}
 
-Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies developing, training, and deploying deep learning models. The platform provides **infrastructure automation** and a **software development kit** for machine learning developers.
+Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies developing, training, and deploying machine learning models. Whether you're a **student**, a **researcher**, or a **professional**, Gradient can make your work easier. Watch [Welcome to Gradient](https://www.youtube.com/watch?v=q_HRQxQ3kjM&ab_channel=HelloPaperspace) to learn more, or just [create an account](https://console.paperspace.com/signup?gradient=true) to get started!
 
-Gradient is comprised of the following components:
+![](.gitbook/assets/image%20%2825%29.png)
 
-* [**Console**](https://www.paperspace.com/console) ****\(Web UI\)**:** A simple yet powerful interface for managing your projects, data, users, and account.
-* [**CLI**](get-started/install-the-cli.md): An open-source command-line tool for executing Jobs from Windows, Mac, or Linux.
-* [**SDK**](gradient-python-sdk/gradient-python-sdk/): Programmatically interact with the Gradient platform.
-
-![](.gitbook/assets/image%20%282%29.png)
+Gradient is offered as a [managed service](https://console.paperspace.com/signup?gradient=true) or as a [self-hosted](gradient-private-cloud/about/setup/self-hosted-clusters/) version you can install into any existing Kubernetes cluster.  
 
 ## Getting Access
 

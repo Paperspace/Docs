@@ -1,4 +1,4 @@
-# Using Gradient Deployments
+# Using Deployments
 
 ## Objectives 
 

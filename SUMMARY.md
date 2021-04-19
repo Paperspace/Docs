@@ -5,34 +5,32 @@
 ## Get Started
 
 * [Quick Start](get-started/quick-start.md)
-* [Core Concepts](get-started/core-concepts.md)
-* [Install the Gradient CLI](get-started/install-the-cli.md)
-* [Common Errors](get-started/error-codes.md)
+* [Core Concepts](get-started/core-concepts/README.md)
+  * [Install the Gradient CLI](get-started/core-concepts/install-the-cli.md)
+  * [Common Errors](get-started/core-concepts/error-codes.md)
 
 ## Tutorials
 
 * [Tutorials List](tutorials/tutorials-list/README.md)
-  * [Getting Started with Notebooks](tutorials/tutorials-list/getting-started-with-gradient-notebooks.md)
-  * [Train a Model with the Web UI](tutorials/tutorials-list/train-a-model-with-the-ui.md)
-  * [Train a Model with the CLI](tutorials/tutorials-list/train-a-model-with-the-cli.md)
-  * [Advanced: Distributed training sample project](tutorials/tutorials-list/advanced-distributed-training-sample-project.md)
-  * [Registering Models in Gradient](tutorials/tutorials-list/registering-models-in-gradient.md)
-  * [Using Gradient Deployments](tutorials/tutorials-list/dealing-with-gradient-deployments.md)
-  * [Using Custom Containers](tutorials/tutorials-list/using-custom-containers-with-gradient.md)
+  * [Get started with Notebooks](tutorials/tutorials-list/getting-started-with-gradient-notebooks.md)
+  * [End-to-end example](tutorials/tutorials-list/end-to-end-example.md)
+  * [Workflows sample project](tutorials/tutorials-list/workflows-sample-project.md)
+  * [Managing Models](tutorials/tutorials-list/registering-models-in-gradient.md)
+  * [Using Deployments](tutorials/tutorials-list/dealing-with-gradient-deployments.md)
 
 ## Notebooks
 
-* [Overview](notebooks/about.md)
-* [Using Notebooks](notebooks/create-a-notebook/README.md)
-  * [The Notebook interface](notebooks/create-a-notebook/the-notebook-interface.md)
-  * [Notebook metrics](notebooks/create-a-notebook/notebook-metrics.md)
-  * [Share a Notebook](notebooks/create-a-notebook/share-a-notebook.md)
-  * [Fork a Notebook](notebooks/create-a-notebook/fork-a-notebook.md)
-  * [Notebook Directories](notebooks/create-a-notebook/notebooks-directories.md)
-  * [Notebook Containers](notebooks/create-a-notebook/notebook-containers/README.md)
-    * [Building a Custom Container](notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
-  * [Notebook Workspace Include Files](notebooks/create-a-notebook/notebook-include.md)
-  * [Community \(Public\) Notebooks](notebooks/create-a-notebook/public-notebooks.md)
+* [Overview](notebooks/about/README.md)
+  * [Using Notebooks](notebooks/about/create-a-notebook/README.md)
+    * [The Notebook interface](notebooks/about/create-a-notebook/the-notebook-interface.md)
+    * [Notebook metrics](notebooks/about/create-a-notebook/notebook-metrics.md)
+    * [Share a Notebook](notebooks/about/create-a-notebook/share-a-notebook.md)
+    * [Fork a Notebook](notebooks/about/create-a-notebook/fork-a-notebook.md)
+    * [Notebook Directories](notebooks/about/create-a-notebook/notebooks-directories.md)
+    * [Notebook Containers](notebooks/about/create-a-notebook/notebook-containers/README.md)
+      * [Building a Custom Container](notebooks/about/create-a-notebook/notebook-containers/building-a-custom-container.md)
+    * [Notebook Workspace Include Files](notebooks/about/create-a-notebook/notebook-include.md)
+    * [Community \(Public\) Notebooks](notebooks/about/create-a-notebook/public-notebooks.md)
 * [ML Showcase](notebooks/ml-showcase.md)
 * [Run on Gradient \(GitHub badge\)](notebooks/github-badge-run-on-gradient.md)
 
@@ -40,8 +38,6 @@
 
 * [Overview](projects/about.md)
 * [Managing Projects](projects/managing-projects.md)
-* [GradientCI](projects/gradientci-v2/README.md)
-  * [GradientCI V1 \(Deprecated\)](projects/gradientci-v2/gradientci-v2.md)
 
 ## Workflows
 
@@ -54,9 +50,9 @@
 
 * [Overview](models/about.md)
 * [Managing Models](models/create-a-model/README.md)
+  * [Public Models](models/create-a-model/public-models.md)
   * [Example: Prepare a TensorFlow Model for Deployments](models/create-a-model/preparing-model-for-deployment.md)
   * [Model Path, Parameters, & Metadata](models/create-a-model/model-path.md)
-* [Public Models](models/public-models.md)
 
 ## Deployments
 
@@ -74,34 +70,22 @@
 
 ## Data
 
-* [Types of Storage](data/storage/README.md)
-  * [Managing Data in Gradient](data/storage/managing-data-in-gradient/README.md)
-    * [Managing Persistent Storage with VMs](data/storage/managing-data-in-gradient/managing-persistent-storage-with-vms.md)
-* [Storage Providers](data/storage-providers.md)
-* [Versioned Datasets](data/private-datasets-repository.md)
-* [Public Datasets Repository](data/public-datasets-repository.md)
+* [Data Overview](data/storage/README.md)
+  * [Managing Persistent Storage](data/storage/managing-data-in-gradient.md)
+* [Versioned Datasets](data/private-datasets-repository/README.md)
+  * [Public Datasets Repository](data/private-datasets-repository/public-datasets-repository.md)
+  * [Storage Providers](data/private-datasets-repository/storage-providers.md)
 
 ## Metrics
 
-* [Metrics Overview](metrics/metrics-overview.md)
-* [View and Query Metrics](metrics/quering-metrics.md)
-* [Push Metrics](metrics/push-metrics.md)
+* [Metrics Overview](metrics/metrics-overview/README.md)
+  * [Push Metrics](metrics/metrics-overview/push-metrics.md)
+  * [View & Query Metrics](metrics/metrics-overview/quering-metrics.md)
 
 ## Secrets
 
-* [Overview](secrets/overview.md)
-* [Using Secrets](secrets/using-secrets.md)
-
-## Gradient SDK <a id="gradient-python-sdk"></a>
-
-* [Gradient SDK Overview](gradient-python-sdk/gradient-python-sdk/README.md)
-  * [Projects Client](gradient-python-sdk/gradient-python-sdk/projects-client.md)
-  * [Experiments Client](gradient-python-sdk/gradient-python-sdk/experiments-client.md)
-  * [Models Client](gradient-python-sdk/gradient-python-sdk/models-client.md)
-  * [Deployments Client](gradient-python-sdk/gradient-python-sdk/deployments-client.md)
-  * [Jobs Client](gradient-python-sdk/gradient-python-sdk/jobs-client.md)
-* [End to end tutorial](gradient-python-sdk/sdk-tutorial.md)
-* [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
+* [Secrets Overview](secrets/overview/README.md)
+  * [Using Secrets](secrets/overview/using-secrets.md)
 
 ## Instances
 
@@ -109,37 +93,41 @@
   * [Free Instances \(Free Tier\)](instances/instance-types/free-instances.md)
   * [Instance Tiers](instances/instance-types/instance-tiers.md)
 
+## Gradient SDK <a id="gradient-python-sdk"></a>
+
+* [SDK Overview](gradient-python-sdk/gradient-python-sdk/README.md)
+  * [End to end tutorial](gradient-python-sdk/gradient-python-sdk/sdk-tutorial.md)
+  * [Projects Client](gradient-python-sdk/gradient-python-sdk/projects-client.md)
+  * [Models Client](gradient-python-sdk/gradient-python-sdk/models-client.md)
+  * [Deployments Client](gradient-python-sdk/gradient-python-sdk/deployments-client.md)
+  * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
+
 ## Gradient Cluster <a id="gradient-private-cloud"></a>
 
-* [Overview](gradient-private-cloud/about.md)
-* [Setup](gradient-private-cloud/setup/README.md)
-  * [Managed Private Clusters](gradient-private-cloud/setup/managed-installation.md)
-  * [Self-Hosted Clusters](gradient-private-cloud/setup/self-hosted-clusters/README.md)
-    * [Pre-installation steps](gradient-private-cloud/setup/self-hosted-clusters/pre-installation-steps.md)
-    * [Gradient Installer CLI](gradient-private-cloud/setup/self-hosted-clusters/gradient-installer-cli.md)
-    * [Terraform](gradient-private-cloud/setup/self-hosted-clusters/terraform/README.md)
-      * [Pre-installation steps](gradient-private-cloud/setup/self-hosted-clusters/terraform/pre-installation-steps.md)
-      * [Install on AWS](gradient-private-cloud/setup/self-hosted-clusters/terraform/install-on-aws.md)
-      * [Install on bare metal / VMs](gradient-private-cloud/setup/self-hosted-clusters/terraform/bare-metal-vms.md)
-      * [Install on NVIDIA DGX](gradient-private-cloud/setup/self-hosted-clusters/terraform/install-nvidia-dgx.md)
-    * [Let's Encrypt DNS Providers](gradient-private-cloud/setup/self-hosted-clusters/lets-encrypt-dns-providers.md)
-    * [Updating your cluster](gradient-private-cloud/setup/self-hosted-clusters/updating-your-cluster.md)
-* [Usage](gradient-private-cloud/usage.md)
-
-## Tags
-
-* [Overview](tags/overview.md)
-* [Using Tags](tags/using-tags.md)
+* [Overview](gradient-private-cloud/about/README.md)
+  * [Setup](gradient-private-cloud/about/setup/README.md)
+    * [Managed Private Clusters](gradient-private-cloud/about/setup/managed-installation.md)
+    * [Self-Hosted Clusters](gradient-private-cloud/about/setup/self-hosted-clusters/README.md)
+      * [Pre-installation steps](gradient-private-cloud/about/setup/self-hosted-clusters/pre-installation-steps.md)
+      * [Gradient Installer CLI](gradient-private-cloud/about/setup/self-hosted-clusters/gradient-installer-cli.md)
+      * [Terraform](gradient-private-cloud/about/setup/self-hosted-clusters/terraform/README.md)
+        * [Pre-installation steps](gradient-private-cloud/about/setup/self-hosted-clusters/terraform/pre-installation-steps.md)
+        * [Install on AWS](gradient-private-cloud/about/setup/self-hosted-clusters/terraform/install-on-aws.md)
+        * [Install on bare metal / VMs](gradient-private-cloud/about/setup/self-hosted-clusters/terraform/bare-metal-vms.md)
+        * [Install on NVIDIA DGX](gradient-private-cloud/about/setup/self-hosted-clusters/terraform/install-nvidia-dgx.md)
+      * [Let's Encrypt DNS Providers](gradient-private-cloud/about/setup/self-hosted-clusters/lets-encrypt-dns-providers.md)
+      * [Updating your cluster](gradient-private-cloud/about/setup/self-hosted-clusters/updating-your-cluster.md)
+  * [Usage](gradient-private-cloud/about/usage.md)
 
 ## Paperspace Account
 
-* [Overview](paperspace-account/overview.md)
-* [Public Profiles](paperspace-account/gradient-public-profiles.md)
-* [Billing & Subscriptions](paperspace-account/billing-and-subscriptions.md)
-* [Hotkeys](paperspace-account/hotkeys.md)
-* [Teams](paperspace-account/teams/README.md)
-  * [Creating a Team](paperspace-account/teams/creating-a-team.md)
-  * [Upgrading to a Team Plan](paperspace-account/teams/upgrading-to-a-team-plan.md)
+* [Your Account](paperspace-account/overview/README.md)
+  * [Teams](paperspace-account/overview/teams/README.md)
+    * [Creating a Team](paperspace-account/overview/teams/creating-a-team.md)
+    * [Upgrading to a Team Plan](paperspace-account/overview/teams/upgrading-to-a-team-plan.md)
+  * [Hotkeys](paperspace-account/overview/hotkeys.md)
+  * [Billing & Subscriptions](paperspace-account/overview/billing-and-subscriptions.md)
+  * [Public Profiles](paperspace-account/overview/gradient-public-profiles.md)
 
 ## Release Notes
 

@@ -1,0 +1,12 @@
+# Secrets Overview
+
+Secrets allow you to store sensitive information at the team, private cluster, and project level. The secrets you create are available to use in experiments run on private clusters.
+
+Secrets can be created at the following levels:
+
+* Team: these secrets are applied to all projects and all clusters
+* Project: these secrets are applied to all experiments in a project
+* Cluster: these secrets are applied to all experiments in a cluster
+
+Secrets can be set from the Settings tab in the web UI or through the CLI.
+

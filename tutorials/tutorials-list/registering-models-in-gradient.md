@@ -1,4 +1,4 @@
-# Registering Models in Gradient
+# Managing Models
 
 ## **Objectives**
 

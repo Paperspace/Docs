@@ -6,7 +6,7 @@
 View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
 {% endhint %}
 
-1. Make sure you have the latest version of the [Gradient CLI](../../get-started/install-the-cli.md)
+1. Make sure you have the latest version of the [Gradient CLI](../../get-started/core-concepts/install-the-cli.md)
 2. Create a  [Gradient Project](../../projects/managing-projects.md) and [grab your project ID](../../projects/managing-projects.md#get-your-projects-id)
 3. Create your first workflow using the Gradient CLI
 
@@ -20,7 +20,7 @@ Create a workflow spec yaml file \([View the full workflow yaml spec](workflow-s
 
 **`workflow-id`** : Grab this by running `gradient workflows list` in the CLI i.e. `7634c165-5034-4f49-95fa-005fc0e7970b`
 
-**`cluster-id`** : Currently ****workflows require that you have a [Gradient Private Cluster.](../../gradient-private-cloud/setup/managed-installation.md) The cluster ID looks like this: `cla7rjbzz`
+**`cluster-id`** : Currently ****workflows require that you have a [Gradient Private Cluster.](../../gradient-private-cloud/about/setup/managed-installation.md) The cluster ID looks like this: `cla7rjbzz`
 
 ```bash
 gradient workflows run  \

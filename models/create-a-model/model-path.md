@@ -40,7 +40,7 @@ One option is to set `--modelPath "/artifacts"` and keep the checkpoint files ar
 
 **Enabling Support for Models with GradientCI**
 
-You can also specify the model path and model type parameters when running experiments with GradientCI. See [GradientCI Models](../../projects/gradientci-v2/#metrics-checks) for more info.
+You can also specify the model path and model type parameters when running experiments with GradientCI. See [GradientCI Models]() for more info.
 
 ## Custom model metadata
 
