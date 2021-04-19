@@ -8,14 +8,14 @@ description: >-
 # Public Profiles
 
 {% hint style="success" %}
-Gradient Public Profiles are still in beta. The look and feel will change during this development phase. We welcome all [feature requests](https://paperspace.canny.io/feature-requests) and [bug reports](https://paperspace.canny.io/bug-reports) to continue to make this feature more powerful and rich.
+Gradient Public Profiles are still in beta. The look and feel will change during this development phase. We welcome all feature requests and bug reports to continue to make this feature more powerful and rich.
 {% endhint %}
 
 ## Creating your public profile
 
-To create your public profile, [visit the Console](https://www.paperspace.com/console) and hover over your user/team icon at the top-right.
+To create your public profile, visit the Console and hover over your user/team icon at the top-right.
 
-There, click `Profile` in the dropdown menu. This will take you to your current public profile. By default your user or team handle is set to your auto-generated internal private workspace or team id \(e.g. `t98sga1`\).
+There, click `Profile` in the dropdown menu. This will take you to your current public profile. By default, your user or team handle is set to your auto-generated internal private workspace or team id \(e.g. `t98sga1`\).
 
 ![](../../.gitbook/assets/image%20%2819%29.png)
 
@@ -37,7 +37,7 @@ Once a notebook is made `Public` it will show up under your public profile for o
 
 ## Roadmap
 
-Gradient Public profiles are still very much a work-in-progress. Notebooks are the first feature to be enabled for showing up on profiles, but soon we will be adding [Projects](), [Models](../../data/models/create-a-model/), [Datasets](../../data/data-overview/persistent-storage.md), and more.
+Gradient Public profiles are still very much a work-in-progress. Notebooks are the first feature to be enabled for showing up on profiles, but soon we will be adding [Projects](../../get-started/managing-projects/), [Models](../../data/models/create-a-model/), [Datasets](../../data/data-overview/persistent-storage.md), and more.
 
 As always, we are eager to hear your feedback. Now go claim your user/team handle – we are excited to see what you build!  🙌
 

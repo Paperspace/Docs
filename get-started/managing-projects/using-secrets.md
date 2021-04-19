@@ -110,7 +110,3 @@ gradient secrets delete cluster --id=<cluster_id> --name=<name>
 
 If the same secret name is created for more than one scope only one will be applied. Secrets have the following precedence: Project &gt; Cluster &gt; Team.
 
-#### Using Secrets
-
-See [Experiment Variables]() for using Secrets with Experiments.
-

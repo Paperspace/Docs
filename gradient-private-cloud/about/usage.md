@@ -15,7 +15,7 @@ gradient <command> ... --clusterId <your-cluster-ID>
 `--clusterId string` Cluster ID for this processing site, e.g. "clxxxxxxx". 
 
 {% hint style="info" %}
-You will need to provide your API key to authenticate your requests. Learn how to obtain and set your API key [here](../../get-started/core-concepts/install-the-cli.md#obtaining-an-api-key).
+You will need to provide your API key to authenticate your requests. Learn how to obtain and set your API key [here](../../get-started/quick-start/install-the-cli.md#obtaining-an-api-key).
 {% endhint %}
 
 A complete example of utilizing Gradient features on a cluster might look like this:

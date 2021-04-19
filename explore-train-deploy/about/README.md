@@ -18,9 +18,7 @@ Any data stored in `/storage` will be preserved for you across restarts. Persist
 
 ## Containers
 
-Because everything is running in a Docker container behind the scenes, we support any kernel you would like. We have a handful of pre-built containers and you can easily add a custom container or build one from a base template, such as the Jupyter R stack.  
-
-View the list of pre-built containers [here](create-a-notebook/notebook-containers/).
+Notebooks run within Docker containers behind the scenes. Gradient includes a handful of pre-built containers and you can easily use a custom container as well.  View the list of pre-built containers [here](create-a-notebook/notebook-containers/).
 
 ## Environment Variables
 

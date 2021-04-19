@@ -8,7 +8,7 @@ This is the documentation for the [Gradient](https://paperspace.com/gradient) pl
 
 Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies developing, training, and deploying machine learning models. Whether you're a **student**, a **researcher**, or a **professional**, Gradient can make your work easier. Watch [Welcome to Gradient](https://www.youtube.com/watch?v=q_HRQxQ3kjM&ab_channel=HelloPaperspace) to learn more, or just [create an account](https://console.paperspace.com/signup?gradient=true) to get started!
 
-![](.gitbook/assets/image%20%2825%29.png)
+![](.gitbook/assets/image%20%2837%29.png)
 
 Gradient is offered as a [managed service](https://console.paperspace.com/signup?gradient=true) or as a [self-hosted](gradient-private-cloud/about/setup/self-hosted-clusters/) version you can install into any existing Kubernetes cluster.  
 
@@ -24,7 +24,7 @@ Prefer a guided tour? [Click here](https://info.paperspace.com/contact-sales) to
 
 The best way to discover Gradient is to try it out. You can get started in seconds with the following guide:
 
-{% page-ref page="get-started/quick-start.md" %}
+{% page-ref page="get-started/quick-start/" %}
 
 ## Other Resources
 

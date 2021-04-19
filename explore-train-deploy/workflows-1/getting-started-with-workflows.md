@@ -6,7 +6,7 @@
 View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
 {% endhint %}
 
-1. Make sure you have the latest version of the [Gradient CLI](../../get-started/core-concepts/install-the-cli.md)
+1. Make sure you have the latest version of the [Gradient CLI](../../get-started/quick-start/install-the-cli.md)
 2. Create a  [Gradient Project](../../get-started/managing-projects/) and [grab your project ID](../../get-started/managing-projects/#get-your-projects-id)
 3. Create your first workflow using the Gradient CLI
 

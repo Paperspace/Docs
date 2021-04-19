@@ -38,7 +38,7 @@ With this launch, you can now create a [Public Profile](../../../more/overview/g
 
 ### Limitations
 
-Community Notebooks take advantage of the newly released [Free Instances](../../../more/instance-types/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
+Community Notebooks take advantage of the [Free Instances](../../../more/instance-types/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
 
 ## More Info
 

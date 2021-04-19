@@ -6,7 +6,7 @@ description: There are two types of storage offered in Gradient
 
 ## Datasets
 
-Gradient provides the ability to mount S3 compatible object storage buckets to an experiment at runtime.  Learn more [here](private-datasets-repository/).
+Gradient provides the ability to mount S3 compatible object storage buckets to workloads at runtime.  Learn more [here](private-datasets-repository/).
 
 ## Persistent Storage
 

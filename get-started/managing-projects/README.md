@@ -8,11 +8,11 @@ A Gradient Project is a workspace for you or your team to run Workflows, store M
 {% tab title="Web UI" %}
 On the [Projects page](https://console.paperspace.com/projects), click _Create Project_.
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 Provide a name and then click _Create Project_.
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2830%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -58,7 +58,7 @@ gradient projects list
 
 To add other team members to a project, click any Project in the projects list to navigate to its Project details page and then click the Accessors tab:
 
-![](../../.gitbook/assets/accessors.png)
+![](../../.gitbook/assets/screen-shot-2021-04-18-at-10.25.23-pm.png)
 
 On the Accessors tab you will find a list of users who already have access to the Project. Add an Accessor by clicking the "Add Accessor" button on the right side of the page. Assign other team members to the Project by selecting their name in the drop-down and clicking on "Assign User":
 

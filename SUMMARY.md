@@ -4,10 +4,11 @@
 
 ## Get Started
 
-* [Quick Start](get-started/quick-start.md)
+* [Quick Start](get-started/quick-start/README.md)
+  * [Install the Gradient CLI](get-started/quick-start/install-the-cli.md)
 * [Core Concepts](get-started/core-concepts/README.md)
-  * [Install the Gradient CLI](get-started/core-concepts/install-the-cli.md)
   * [Common Errors](get-started/core-concepts/error-codes.md)
+* [FAQ](get-started/faq.md)
 * [Organizing Projects](get-started/managing-projects/README.md)
   * [Secrets](get-started/managing-projects/using-secrets.md)
 * [Tutorials](get-started/tutorials-list/README.md)
@@ -23,11 +24,11 @@
   * [Run on Gradient \(GitHub badge\)](explore-train-deploy/about/github-badge-run-on-gradient.md)
   * [ML Showcase](explore-train-deploy/about/ml-showcase.md)
   * [Using Notebooks](explore-train-deploy/about/create-a-notebook/README.md)
-    * [The Notebook interface](explore-train-deploy/about/create-a-notebook/the-notebook-interface.md)
+    * [Notebook basics](explore-train-deploy/about/create-a-notebook/notebook-basics.md)
     * [Notebook metrics](explore-train-deploy/about/create-a-notebook/notebook-metrics.md)
     * [Share a Notebook](explore-train-deploy/about/create-a-notebook/share-a-notebook.md)
     * [Fork a Notebook](explore-train-deploy/about/create-a-notebook/fork-a-notebook.md)
-    * [Notebook Directories](explore-train-deploy/about/create-a-notebook/notebooks-directories.md)
+    * [Persistent Storage](explore-train-deploy/about/create-a-notebook/notebooks-storage.md)
     * [Notebook Containers](explore-train-deploy/about/create-a-notebook/notebook-containers/README.md)
       * [Building a Custom Container](explore-train-deploy/about/create-a-notebook/notebook-containers/building-a-custom-container.md)
     * [Notebook Workspace Include Files](explore-train-deploy/about/create-a-notebook/notebook-include.md)
