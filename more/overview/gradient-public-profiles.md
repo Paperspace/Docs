@@ -29,7 +29,7 @@ Your user/team handle follows a GitHub-style convention and will be accessible a
 
 ## **Sharing public notebooks**
 
-[Public notebooks](../../using-gradient/about/create-a-notebook/public-notebooks.md) are a new feature in Gradient.  They allow you to run a [Jupyter notebook](https://jupyter.org/) and easily share it with others. A Gradient Notebook is actually an entire self-contained container with all libraries, dependencies, and files contained within it. This means that you can easily create complex ML applications without worrying about having others run install scripts, run into dependency management issues, and more.
+[Public notebooks](../../explore-train-deploy/about/create-a-notebook/public-notebooks.md) are a new feature in Gradient.  They allow you to run a [Jupyter notebook](https://jupyter.org/) and easily share it with others. A Gradient Notebook is actually an entire self-contained container with all libraries, dependencies, and files contained within it. This means that you can easily create complex ML applications without worrying about having others run install scripts, run into dependency management issues, and more.
 
 ![](../../.gitbook/assets/image%20%2823%29%20%281%29.png)
 

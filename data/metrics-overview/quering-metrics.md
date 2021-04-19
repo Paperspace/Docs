@@ -12,7 +12,7 @@ description: How to query and view metrics in GUI and CLI
 
 You can view metrics for Jobs by entering the "Metrics" tab.  You can view metrics for Experiments by clicking on the individual Jobs that represent worker nodes.  
 
-![](../.gitbook/assets/screenshot-metrics.jpg)
+![](../../.gitbook/assets/screenshot-metrics.jpg)
 
 ### Deployments
 
@@ -22,7 +22,7 @@ Deployment metrics are a Gradient Private Cluster feature. [Contact Sales](https
 
 To view Deployment metrics, navigate to the Metrics tab of the individual deployment.
 
-![](../.gitbook/assets/image%20%2899%29%20%283%29%20%283%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%2899%29%20%283%29%20%283%29%20%281%29.png)
 
 ### Notebooks
 
@@ -32,9 +32,9 @@ Notebook metrics are a Gradient Private Cluster feature. [Contact Sales](https:/
 
 To view Notebook metrics, you will see a minimal version in the Notebook header and you can also open a more robust display with detailed information.  
 
-![Detailed view](../.gitbook/assets/image%20%28105%29%20%286%29%20%283%29%20%285%29.png)
+![Detailed view](../../.gitbook/assets/image%20%28105%29%20%286%29%20%283%29%20%285%29.png)
 
-![Collapsed view in Notebook header](../.gitbook/assets/81246457-8a067200-8fcc-11ea-81c9-94fb4dea1eee.jpg)
+![Collapsed view in Notebook header](../../.gitbook/assets/81246457-8a067200-8fcc-11ea-81c9-94fb4dea1eee.jpg)
 {% endtab %}
 
 {% tab title="CLI" %}

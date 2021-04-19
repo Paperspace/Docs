@@ -30,7 +30,7 @@ If you need to import an existing container, visit the Custom Containers section
 
 ### Choose the instance type
 
-This is [instance type](../../../instance-types/) that your notebook will run on. Our hardware is configured to work with the tools and packages in each of the provided containers.
+This is [instance type](../../../more/instance-types/) that your notebook will run on. Our hardware is configured to work with the tools and packages in each of the provided containers.
 
 ![](../../../.gitbook/assets/image%20%287%29.png)
 

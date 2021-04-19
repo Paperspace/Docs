@@ -4,21 +4,21 @@ description: >-
   view them.
 ---
 
-# Metrics Overview
+# Metrics
 
 Gradient workloads can record metrics that are available both in realtime or after the workload is complete. Gradient will display these metrics in the web UI and they can also be queried or streamed in the CLI.
 
 Gradient can log three different kinds of metrics: hardware metrics, framework metrics, and custom user metrics.
 
 {% hint style="warning" %}
-**Note:** Framework and custom metrics are only available in a Gradient [Private Cluster](../gradient-private-cloud/about/). [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
+**Note:** Framework and custom metrics are only available in a Gradient [Private Cluster](../../gradient-private-cloud/about/). [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
 {% endhint %}
 
 ## System metrics
 
 All Gradient workloads like Experiments and Deployments monitor and track CPU, Memory, and Network. If the machine is equipped with a GPU, this will be tracked as well.
 
-![System Metrics showing CPU and Memory Usage](../.gitbook/assets/screenshot-metrics.jpg)
+![System Metrics showing CPU and Memory Usage](../../.gitbook/assets/screenshot-metrics.jpg)
 
 ## Framework metrics
 

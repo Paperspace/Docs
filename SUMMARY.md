@@ -17,39 +17,40 @@
   * [Managing Models](get-started/tutorials-list/registering-models-in-gradient.md)
   * [Using Deployments](get-started/tutorials-list/dealing-with-gradient-deployments.md)
 
-## Primary Components <a id="using-gradient"></a>
+## Explore, train, deploy
 
-* [Notebooks](using-gradient/about/README.md)
-  * [Run on Gradient \(GitHub badge\)](using-gradient/about/github-badge-run-on-gradient.md)
-  * [ML Showcase](using-gradient/about/ml-showcase.md)
-  * [Using Notebooks](using-gradient/about/create-a-notebook/README.md)
-    * [The Notebook interface](using-gradient/about/create-a-notebook/the-notebook-interface.md)
-    * [Notebook metrics](using-gradient/about/create-a-notebook/notebook-metrics.md)
-    * [Share a Notebook](using-gradient/about/create-a-notebook/share-a-notebook.md)
-    * [Fork a Notebook](using-gradient/about/create-a-notebook/fork-a-notebook.md)
-    * [Notebook Directories](using-gradient/about/create-a-notebook/notebooks-directories.md)
-    * [Notebook Containers](using-gradient/about/create-a-notebook/notebook-containers/README.md)
-      * [Building a Custom Container](using-gradient/about/create-a-notebook/notebook-containers/building-a-custom-container.md)
-    * [Notebook Workspace Include Files](using-gradient/about/create-a-notebook/notebook-include.md)
-    * [Community \(Public\) Notebooks](using-gradient/about/create-a-notebook/public-notebooks.md)
-* [Workflows](using-gradient/workflows-1/README.md)
-  * [Getting Started with Workflows](using-gradient/workflows-1/getting-started-with-workflows.md)
-  * [Workflow Spec](using-gradient/workflows-1/workflow-spec.md)
-  * [Gradient Actions](using-gradient/workflows-1/gradient-actions.md)
-* [Deployments](using-gradient/deployments-overview/README.md)
-  * [Managing Deployments](using-gradient/deployments-overview/managing-deployments/README.md)
-    * [Deployment Containers](using-gradient/deployments-overview/managing-deployments/deployment-containers/README.md)
-      * [Custom Deployment Containers](using-gradient/deployments-overview/managing-deployments/deployment-containers/custom-deployment-containers.md)
-    * [Deployment States](using-gradient/deployments-overview/managing-deployments/deployment-states.md)
-    * [Deployment Logs](using-gradient/deployments-overview/managing-deployments/deployment-logs.md)
-    * [Deployment Metrics](using-gradient/deployments-overview/managing-deployments/deployment-metrics.md)
-    * [A Deployed Model's API Endpoint](using-gradient/deployments-overview/managing-deployments/a-deployed-models-api-endpoint/README.md)
-      * [Gradient + TensorFlow Serving](using-gradient/deployments-overview/managing-deployments/a-deployed-models-api-endpoint/deployment-restful-api-tfserving.md)
-    * [Deployment Autoscaling](using-gradient/deployments-overview/managing-deployments/deployment-autoscaling.md)
-    * [Optimize Models for Inference](using-gradient/deployments-overview/managing-deployments/optimizing-tensorflow-models-for-inference.md)
+* [Notebooks](explore-train-deploy/about/README.md)
+  * [Run on Gradient \(GitHub badge\)](explore-train-deploy/about/github-badge-run-on-gradient.md)
+  * [ML Showcase](explore-train-deploy/about/ml-showcase.md)
+  * [Using Notebooks](explore-train-deploy/about/create-a-notebook/README.md)
+    * [The Notebook interface](explore-train-deploy/about/create-a-notebook/the-notebook-interface.md)
+    * [Notebook metrics](explore-train-deploy/about/create-a-notebook/notebook-metrics.md)
+    * [Share a Notebook](explore-train-deploy/about/create-a-notebook/share-a-notebook.md)
+    * [Fork a Notebook](explore-train-deploy/about/create-a-notebook/fork-a-notebook.md)
+    * [Notebook Directories](explore-train-deploy/about/create-a-notebook/notebooks-directories.md)
+    * [Notebook Containers](explore-train-deploy/about/create-a-notebook/notebook-containers/README.md)
+      * [Building a Custom Container](explore-train-deploy/about/create-a-notebook/notebook-containers/building-a-custom-container.md)
+    * [Notebook Workspace Include Files](explore-train-deploy/about/create-a-notebook/notebook-include.md)
+    * [Community \(Public\) Notebooks](explore-train-deploy/about/create-a-notebook/public-notebooks.md)
+* [Workflows](explore-train-deploy/workflows-1/README.md)
+  * [Getting Started with Workflows](explore-train-deploy/workflows-1/getting-started-with-workflows.md)
+  * [Workflow Spec](explore-train-deploy/workflows-1/workflow-spec.md)
+  * [Gradient Actions](explore-train-deploy/workflows-1/gradient-actions.md)
+* [Deployments](explore-train-deploy/deployments-overview/README.md)
+  * [Managing Deployments](explore-train-deploy/deployments-overview/managing-deployments/README.md)
+    * [Deployment Containers](explore-train-deploy/deployments-overview/managing-deployments/deployment-containers/README.md)
+      * [Custom Deployment Containers](explore-train-deploy/deployments-overview/managing-deployments/deployment-containers/custom-deployment-containers.md)
+    * [Deployment States](explore-train-deploy/deployments-overview/managing-deployments/deployment-states.md)
+    * [Deployment Logs](explore-train-deploy/deployments-overview/managing-deployments/deployment-logs.md)
+    * [Deployment Metrics](explore-train-deploy/deployments-overview/managing-deployments/deployment-metrics.md)
+    * [A Deployed Model's API Endpoint](explore-train-deploy/deployments-overview/managing-deployments/a-deployed-models-api-endpoint/README.md)
+      * [Gradient + TensorFlow Serving](explore-train-deploy/deployments-overview/managing-deployments/a-deployed-models-api-endpoint/deployment-restful-api-tfserving.md)
+    * [Deployment Autoscaling](explore-train-deploy/deployments-overview/managing-deployments/deployment-autoscaling.md)
+    * [Optimize Models for Inference](explore-train-deploy/deployments-overview/managing-deployments/optimizing-tensorflow-models-for-inference.md)
 
-## Secondary Components <a id="data"></a>
+## Artifacts <a id="data"></a>
 
+* [Code](data/code.md)
 * [Data](data/data-overview/README.md)
   * [Versioned Datasets](data/data-overview/private-datasets-repository/README.md)
     * [Public Datasets Repository](data/data-overview/private-datasets-repository/public-datasets-repository.md)
@@ -60,6 +61,9 @@
     * [Public Models](data/models/create-a-model/public-models.md)
     * [Example: Prepare a TensorFlow Model for Deployments](data/models/create-a-model/preparing-model-for-deployment.md)
     * [Model Path, Parameters, & Metadata](data/models/create-a-model/model-path.md)
+* [Metrics](data/metrics-overview/README.md)
+  * [Push Metrics](data/metrics-overview/push-metrics.md)
+  * [View & Query Metrics](data/metrics-overview/quering-metrics.md)
 
 ## Gradient Cluster <a id="gradient-private-cloud"></a>
 
@@ -78,36 +82,23 @@
       * [Updating your cluster](gradient-private-cloud/about/setup/self-hosted-clusters/updating-your-cluster.md)
   * [Usage](gradient-private-cloud/about/usage.md)
 
----
-
-* [Metrics Overview](metrics-overview/README.md)
-  * [Push Metrics](metrics-overview/push-metrics.md)
-  * [View & Query Metrics](metrics-overview/quering-metrics.md)
-* [Instance Types](instance-types/README.md)
-  * [Free Instances \(Free Tier\)](instance-types/free-instances.md)
-  * [Instance Tiers](instance-types/instance-tiers.md)
-* [SDK Overview](gradient-python-sdk-1/README.md)
-  * [End to end tutorial](gradient-python-sdk-1/sdk-tutorial.md)
-  * [Projects Client](gradient-python-sdk-1/projects-client.md)
-  * [Models Client](gradient-python-sdk-1/models-client.md)
-  * [Deployments Client](gradient-python-sdk-1/deployments-client.md)
-  * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
-
-## Paperspace Account
-
-* [Your Account](paperspace-account/overview/README.md)
-  * [Teams](paperspace-account/overview/teams/README.md)
-    * [Creating a Team](paperspace-account/overview/teams/creating-a-team.md)
-    * [Upgrading to a Team Plan](paperspace-account/overview/teams/upgrading-to-a-team-plan.md)
-  * [Hotkeys](paperspace-account/overview/hotkeys.md)
-  * [Billing & Subscriptions](paperspace-account/overview/billing-and-subscriptions.md)
-  * [Public Profiles](paperspace-account/overview/gradient-public-profiles.md)
-
----
-
-* [Release notes](https://updates.paperspace.com/)
-
 ## More
 
-* [Untitled](more/untitled.md)
+* [SDK](more/gradient-python-sdk-1/README.md)
+  * [End to end tutorial](more/gradient-python-sdk-1/sdk-tutorial.md)
+  * [Projects Client](more/gradient-python-sdk-1/projects-client.md)
+  * [Models Client](more/gradient-python-sdk-1/models-client.md)
+  * [Deployments Client](more/gradient-python-sdk-1/deployments-client.md)
+  * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
+* [Instance Types](more/instance-types/README.md)
+  * [Free Instances \(Free Tier\)](more/instance-types/free-instances.md)
+  * [Instance Tiers](more/instance-types/instance-tiers.md)
+* [Your Account](more/overview/README.md)
+  * [Teams](more/overview/teams/README.md)
+    * [Creating a Team](more/overview/teams/creating-a-team.md)
+    * [Upgrading to a Team Plan](more/overview/teams/upgrading-to-a-team-plan.md)
+  * [Hotkeys](more/overview/hotkeys.md)
+  * [Billing & Subscriptions](more/overview/billing-and-subscriptions.md)
+  * [Public Profiles](more/overview/gradient-public-profiles.md)
+* [Release notes](https://updates.paperspace.com/)
 

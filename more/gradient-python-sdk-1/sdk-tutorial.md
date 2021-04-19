@@ -3,7 +3,7 @@
 In this example, we are showcasing how to use the SDK to create an end-to-end pipeline.  We'll train a model, watch the state transitions, stream the logs, inspect it's accuracy, and then deploy it as a RESTful API endpoint behind a multi-instance, load-balanced GPU cluster.  
 
 {% hint style="info" %}
-The SDK is bundled with the Gradient CLI.  You'll need the latest version which you can download by adding `--pre` when [installing \(or upgrading\) the CLI](../get-started/core-concepts/install-the-cli.md).  
+The SDK is bundled with the Gradient CLI.  You'll need the latest version which you can download by adding `--pre` when [installing \(or upgrading\) the CLI](../../get-started/core-concepts/install-the-cli.md).  
 {% endhint %}
 
 {% hint style="success" %}
