@@ -19,7 +19,7 @@ You can always switch products later by clicking the Product Selector at the top
 
 ## Create a Notebook
 
-Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/about/create-a-notebook/notebook-containers/), choose your [instance type](../instance-types/), and then click create. 
+Notebooks can be created on the Notebooks tab. Just select a [template](../using-gradient/about/create-a-notebook/notebook-containers/), choose your [instance type](../instance-types/), and then click create. 
 
 {% hint style="success" %}
 Check out the [FREE GPU](../instance-types/free-instances.md) option when launching Notebooks!
@@ -75,5 +75,5 @@ Congratulations! You ran your first Experiment on Gradient 🚀
 
 ## Explore the rest of the platform
 
-From [Models](../models/about/) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](core-concepts/install-the-cli.md) and check out the [SDK](../gradient-python-sdk-1/).
+From [Models](../data/models/) to [Deployments](../using-gradient/deployments-overview/), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](core-concepts/install-the-cli.md) and check out the [SDK](../gradient-python-sdk-1/).
 

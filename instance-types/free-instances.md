@@ -2,7 +2,7 @@
 
 ## About
 
-Gradient offers a Free Tier of free GPU and CPU instances, available to all users of [Gradient Community Notebooks](../notebooks/about/create-a-notebook/public-notebooks.md) \(currently in beta\).
+Gradient offers a Free Tier of free GPU and CPU instances, available to all users of [Gradient Community Notebooks](../using-gradient/about/create-a-notebook/public-notebooks.md) \(currently in beta\).
 
 The Free Instances are available to all _Private Workspace_ plans, i.e. G\* subscriptions \(not T\*\).
 

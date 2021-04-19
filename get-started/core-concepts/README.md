@@ -2,7 +2,7 @@
 
 ## Notebooks
 
-Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../../notebooks/about/) make it easy to explore data and coding concepts and collaborate with other people on projects. 
+Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../../using-gradient/about/) make it easy to explore data and coding concepts and collaborate with other people on projects. 
 
 * No configuration required
 * Free access to CPU and GPU instances
@@ -26,19 +26,19 @@ Workflows are the newest and most powerful way to orchestrate full end-to-end ma
 
 ### Models
 
-You can either upload a model or generate models from experiments which can be interpreted and stored in the [Gradient Model Repository](../../models/about/).  
+You can either upload a model or generate models from experiments which can be interpreted and stored in the [Gradient Model Repository](../../data/models/).  
 
 ### Deployments \(inference/model serving\)
 
-Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here](../../deployments/about.md).
+Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here](../../using-gradient/deployments-overview/).
 
 ## Data
 
-#### \*\*\*\*[**Versioned Datasets**](../../data/private-datasets-repository/)\*\*\*\*
+#### \*\*\*\*[**Versioned Datasets**](../../data/data-overview/private-datasets-repository/)\*\*\*\*
 
-Datasets have immutable versions that can be used to track your data as it changes. Datasets can be used as input to Gradient workloads as well as outputs. Gradient provides the ability to mount S3 compatible object storage buckets at runtime.  Learn more [here](../../data/private-datasets-repository/).
+Datasets have immutable versions that can be used to track your data as it changes. Datasets can be used as input to Gradient workloads as well as outputs. Gradient provides the ability to mount S3 compatible object storage buckets at runtime.  Learn more [here](../../data/data-overview/private-datasets-repository/).
 
-#### [Persistent Storage](../../data/storage/#persistent-storage) \(legacy\)
+#### [Persistent Storage](../../data/data-overview/#persistent-storage) \(legacy\)
 
-Persistent storage is a persistent filesystem automatically mounted on every Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../../data/storage/#persistent-storage).
+Persistent storage is a persistent filesystem automatically mounted on every Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../../data/data-overview/#persistent-storage).
 
