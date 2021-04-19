@@ -10,5 +10,5 @@ Gradient subscription info, including information about our different plans, is 
 
 ### Paid instance types & free tier
 
-See this [article](../../instances/instance-types/) for info Gradient instance pricing. Information about the free plan \(including free GPUs\), is listed [here](../../instances/instance-types/free-instances.md).  
+See this [article](../../instance-types/) for info Gradient instance pricing. Information about the free plan \(including free GPUs\), is listed [here](../../instance-types/free-instances.md).  
 

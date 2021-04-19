@@ -16,7 +16,7 @@ Persistent Storage is kept in three regions based on your machine type or tier:
 
 1. PS East Coast \(NY2\)
 2. GCP West
-3. PS West Coast \(for the [Free Tier](../../instances/instance-types/free-instances.md) on Gradient\)
+3. PS West Coast \(for the [Free Tier](../../instance-types/free-instances.md) on Gradient\)
 
 {% hint style="warning" %}
 Persistent Storage is specific to each region. This means that data in your Persistent Storage for the Free Tier is not be accessible from paid instance types, and vice versa.

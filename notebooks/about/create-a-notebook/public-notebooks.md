@@ -8,7 +8,7 @@ The goal is to offer a product that makes it free, easy, and fun to share your w
 
 Gradient Community Notebooks can be viewed by anyone, with or without a Paperspace account.
 
-Community Notebooks include notebooks that are run on the [Free Instances](../../../instances/instance-types/free-instances.md) – these will be Public by default – as well as any notebook that you make Public by sharing, even if it's paid.
+Community Notebooks include notebooks that are run on the [Free Instances](../../../instance-types/free-instances.md) – these will be Public by default – as well as any notebook that you make Public by sharing, even if it's paid.
 
 ### Making a Notebook Public or Private
 
@@ -38,15 +38,15 @@ With this launch, you can now create a [Public Profile](../../../paperspace-acco
 
 ### Limitations
 
-Community Notebooks take advantage of the newly released [Free Instances](../../../instances/instance-types/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
+Community Notebooks take advantage of the newly released [Free Instances](../../../instance-types/free-instances.md) on Gradient. This means that they will be Public-only and will auto-shutdown after 6 hours.
 
 ## More Info
 
-Learn more about [Persistent Storage for Gradient Community Notebooks on free instances](../../../instances/instance-types/free-instances.md#persistent-storage-for-free-instances).
+Learn more about [Persistent Storage for Gradient Community Notebooks on free instances](../../../instance-types/free-instances.md#persistent-storage-for-free-instances).
 
-Learn more about [Free Instances](../../../instances/instance-types/free-instances.md).
+Learn more about [Free Instances](../../../instance-types/free-instances.md).
 
-Learn more about the various [Instance Types](../../../instances/instance-types/).
+Learn more about the various [Instance Types](../../../instance-types/).
 
-Learn more about our [Instance Tiers](../../../instances/instance-types/instance-tiers.md).
+Learn more about our [Instance Tiers](../../../instance-types/instance-tiers.md).
 

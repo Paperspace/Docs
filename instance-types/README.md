@@ -5,11 +5,11 @@ description: Pricing for Gradient Managed instances
 # Instance Types
 
 {% hint style="success" %}
-Customers using the [Self-Hosted](../../gradient-private-cloud/about/) version can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.  The following list is specific to our managed instances.  
+Customers using the [Self-Hosted](../gradient-private-cloud/about/) version can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.  The following list is specific to our managed instances.  
 {% endhint %}
 
 {% hint style="info" %}
-Managed [_Private Clusters_](../../gradient-private-cloud/about/) include a compute premium. Learn more [here](https://gradient.paperspace.com/private-cluster-utilization-premium). 
+Managed [_Private Clusters_](../gradient-private-cloud/about/) include a compute premium. Learn more [here](https://gradient.paperspace.com/private-cluster-utilization-premium). 
 {% endhint %}
 
 ## CPU Instances

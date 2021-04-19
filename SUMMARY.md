@@ -8,15 +8,14 @@
 * [Core Concepts](get-started/core-concepts/README.md)
   * [Install the Gradient CLI](get-started/core-concepts/install-the-cli.md)
   * [Common Errors](get-started/core-concepts/error-codes.md)
-
-## Tutorials
-
-* [Tutorials List](tutorials/tutorials-list/README.md)
-  * [Get started with Notebooks](tutorials/tutorials-list/getting-started-with-gradient-notebooks.md)
-  * [End-to-end example](tutorials/tutorials-list/end-to-end-example.md)
-  * [Workflows sample project](tutorials/tutorials-list/workflows-sample-project.md)
-  * [Managing Models](tutorials/tutorials-list/registering-models-in-gradient.md)
-  * [Using Deployments](tutorials/tutorials-list/dealing-with-gradient-deployments.md)
+* [Projects](get-started/about-projects/README.md)
+  * [Managing Projects](get-started/about-projects/managing-projects.md)
+* [Tutorials](get-started/tutorials-list/README.md)
+  * [Get started with Notebooks](get-started/tutorials-list/getting-started-with-gradient-notebooks.md)
+  * [End-to-end example](get-started/tutorials-list/end-to-end-example.md)
+  * [Workflows sample project](get-started/tutorials-list/workflows-sample-project.md)
+  * [Managing Models](get-started/tutorials-list/registering-models-in-gradient.md)
+  * [Using Deployments](get-started/tutorials-list/dealing-with-gradient-deployments.md)
 
 ## Notebooks
 
@@ -34,11 +33,6 @@
 * [ML Showcase](notebooks/ml-showcase.md)
 * [Run on Gradient \(GitHub badge\)](notebooks/github-badge-run-on-gradient.md)
 
-## Projects
-
-* [Overview](projects/about.md)
-* [Managing Projects](projects/managing-projects.md)
-
 ## Workflows
 
 * [Overview](workflows/overview/README.md)
@@ -48,11 +42,11 @@
 
 ## Models
 
-* [Overview](models/about.md)
-* [Managing Models](models/create-a-model/README.md)
-  * [Public Models](models/create-a-model/public-models.md)
-  * [Example: Prepare a TensorFlow Model for Deployments](models/create-a-model/preparing-model-for-deployment.md)
-  * [Model Path, Parameters, & Metadata](models/create-a-model/model-path.md)
+* [Overview](models/about/README.md)
+  * [Managing Models](models/about/create-a-model/README.md)
+    * [Public Models](models/about/create-a-model/public-models.md)
+    * [Example: Prepare a TensorFlow Model for Deployments](models/about/create-a-model/preparing-model-for-deployment.md)
+    * [Model Path, Parameters, & Metadata](models/about/create-a-model/model-path.md)
 
 ## Deployments
 
@@ -76,22 +70,16 @@
   * [Public Datasets Repository](data/private-datasets-repository/public-datasets-repository.md)
   * [Storage Providers](data/private-datasets-repository/storage-providers.md)
 
-## Metrics
+---
 
-* [Metrics Overview](metrics/metrics-overview/README.md)
-  * [Push Metrics](metrics/metrics-overview/push-metrics.md)
-  * [View & Query Metrics](metrics/metrics-overview/quering-metrics.md)
-
-## Secrets
-
-* [Secrets Overview](secrets/overview/README.md)
-  * [Using Secrets](secrets/overview/using-secrets.md)
-
-## Instances
-
-* [Instance Types](instances/instance-types/README.md)
-  * [Free Instances \(Free Tier\)](instances/instance-types/free-instances.md)
-  * [Instance Tiers](instances/instance-types/instance-tiers.md)
+* [Metrics Overview](metrics-overview/README.md)
+  * [Push Metrics](metrics-overview/push-metrics.md)
+  * [View & Query Metrics](metrics-overview/quering-metrics.md)
+* [Secrets Overview](overview/README.md)
+  * [Using Secrets](overview/using-secrets.md)
+* [Instance Types](instance-types/README.md)
+  * [Free Instances \(Free Tier\)](instance-types/free-instances.md)
+  * [Instance Tiers](instance-types/instance-tiers.md)
 
 ## Gradient SDK <a id="gradient-python-sdk"></a>
 

@@ -12,7 +12,7 @@ View the full CLI/SDK Docs for **Secrets** here [https://paperspace.github.io/gr
 {% tab title="Web UI" %}
 Navigate to the project, cluster, or team page and click the **Secrets** tab. Click the **Create Secret** button, enter the secret name and value, and click the **Create Secret** button to save.
 
-![Secrets are located in Settings &amp;gt; Secrets](../../.gitbook/assets/screen-shot-2021-01-18-at-10.25.39-pm.png)
+![Secrets are located in Settings &amp;gt; Secrets](../.gitbook/assets/screen-shot-2021-01-18-at-10.25.39-pm.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -42,7 +42,7 @@ gradient secrets set cluster --id=<cluster_id> --name=<name> --value=<secret>
 {% tab title="Web UI" %}
 Navigate to the project or team page and click the **Secrets** tab.
 
-![Secrets are available in settings for projects and teams](../../.gitbook/assets/screen-shot-2021-01-18-at-10.28.24-pm.png)
+![Secrets are available in settings for projects and teams](../.gitbook/assets/screen-shot-2021-01-18-at-10.28.24-pm.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -72,7 +72,7 @@ gradient secrets list cluster --id=<cluster_id>
 {% tab title="Web UI" %}
 Navigate to the project, cluster, or team page and click the **Secrets** tab. Click the **Delete** button and confirm the dialog.
 
-![](../../.gitbook/assets/secret-delete.png)
+![](../.gitbook/assets/secret-delete.png)
 {% endtab %}
 
 {% tab title="CLI" %}

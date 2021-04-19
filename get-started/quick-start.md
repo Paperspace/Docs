@@ -6,12 +6,8 @@ To begin using Gradient, follow these preliminary steps:
 
 1. [Create a Paperspace account ](https://www.paperspace.com/account/signup)
 2. [Create a team to invite collaborators](https://support.paperspace.com/hc/en-us/articles/360010359213-Creating-and-Managing-Paperspace-Teams)
-3. ~~~~[~~Install the Gradient CLI~~ ](core-concepts/install-the-cli.md#installation)~~~~
-4. ~~~~[~~Connecting your account~~](core-concepts/install-the-cli.md#connecting-your-account)~~~~
 
-Now you can create Notebooks, Projects, Workflows, Models, Deployments, and more! 
-
-Note: if you are self-hosting Gradient, please visit the [Gradient Private Cloud section](https://docs.paperspace.com/gradient/gradient-private-cloud/about) for more info.
+Now you can create Notebooks, Projects, Workflows, Models, Deployments, and more!  Note: if you are self-hosting Gradient, please visit the [Gradient Private Cloud section](https://docs.paperspace.com/gradient/gradient-private-cloud/about) for more info.
 
 ## Logging into the Paperspace Console for the first time
 
@@ -23,10 +19,10 @@ You can always switch products later by clicking the Product Selector at the top
 
 ## Create a Notebook
 
-Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/about/create-a-notebook/notebook-containers/), choose your [instance type](../instances/instance-types/), and then click create. 
+Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/about/create-a-notebook/notebook-containers/), choose your [instance type](../instance-types/), and then click create. 
 
 {% hint style="success" %}
-Check out the [FREE GPU](../instances/instance-types/free-instances.md) option when launching Notebooks!
+Check out the [FREE GPU](../instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
 ![Select Notebooks &amp;gt; Create a Notebook to enter the notebook create flow](../.gitbook/assets/screen-shot-2021-01-18-at-8.39.35-pm%20%281%29.png)
@@ -79,5 +75,5 @@ Congratulations! You ran your first Experiment on Gradient 🚀
 
 ## Explore the rest of the platform
 
-From [Models](../models/about.md) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](core-concepts/install-the-cli.md) and check out the [SDK](../gradient-python-sdk/gradient-python-sdk/).
+From [Models](../models/about/) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](core-concepts/install-the-cli.md) and check out the [SDK](../gradient-python-sdk/gradient-python-sdk/).
 

@@ -37,7 +37,7 @@ Once a notebook is made `Public` it will show up under your public profile for o
 
 ## Roadmap
 
-Gradient Public profiles are still very much a work-in-progress. Notebooks are the first feature to be enabled for showing up on profiles, but soon we will be adding [Projects](../../projects/about.md), [Models](../../models/create-a-model/), [Datasets](../../data/storage/managing-data-in-gradient.md), and more.
+Gradient Public profiles are still very much a work-in-progress. Notebooks are the first feature to be enabled for showing up on profiles, but soon we will be adding [Projects](../../get-started/about-projects/), [Models](../../models/about/create-a-model/), [Datasets](../../data/storage/managing-data-in-gradient.md), and more.
 
 As always, we are eager to hear your feedback. Now go claim your user/team handle – we are excited to see what you build!  🙌
 
