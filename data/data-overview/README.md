@@ -6,19 +6,17 @@ description: There are two types of storage offered in Gradient
 
 ## Datasets
 
-Gradient provides the ability to mount S3 compatible object storage buckets to workloads at runtime.  Learn more [here](private-datasets-repository/).
+Gradient provides the ability to mount S3 compatible object storage buckets to workloads at runtime.  Datasets have immutable versions that can be used to track your data as it changes.  Learn more [here](private-datasets-repository/).
 
-## Persistent Storage
-
-Persistent storage is a high-performance storage directory located at `/storage` where you can read and write files. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Anything you store in the `/storage` directory will be accessible across multiple runs of Experiments, Jobs and Notebooks in a given storage region. 
-
-Persistent Storage is kept in three regions based on your machine type or tier:
-
-1. PS East Coast \(NY2\)
-2. GCP West
-3. PS West Coast \(for the [Free Tier](../../more/instance-types/free-instances.md) on Gradient\)
+## Persistent Storage 
 
 {% hint style="warning" %}
+Persistent storage is only available in the managed service or private clusters.
+{% endhint %}
+
+Persistent storage is a high-performance storage directory located at `/storage` within Notebooks where you can read and write files. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Anything you store in the `/storage` directory will be accessible across multiple runs of Notebooks in a given storage region. 
+
+{% hint style="info" %}
 Persistent Storage is specific to each region. This means that data in your Persistent Storage for the Free Tier is not be accessible from paid instance types, and vice versa.
 {% endhint %}
 
