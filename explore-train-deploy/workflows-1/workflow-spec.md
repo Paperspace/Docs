@@ -4,15 +4,17 @@
 
 ### `defaults`
 
-At the top of the yaml workflow file you can specify default parameters to be used throughout the entire workflow. This includes environment variables, default machine instance configuration.
+At the top of the yaml workflow file, you can specify default parameters to be used throughout the entire workflow. This includes environment variables and default machine instance configuration.
 
 ### `inputs`
 
-The `inputs` block allows you to specify versioned dataset to be referenced and consumed by your jobs. Note, you can also collect these in a separate `inputs.yaml` file and reference this file when creating a workflow run.
+The `inputs` block allows you to specify named inputs \(e.g. a [versioned dataset](../../data/data-overview/private-datasets-repository/README.md)\) to be referenced and consumed by your jobs.  Note: you can also collect inputs in a separate yaml and reference this file as an `inputPath` when creating a workflow run.
+
+Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a genereated value or ID that may be outtputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).    
 
 ### `jobs`
 
-Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A job is an individual task that executes code \(such as a training a machine learning model\) and can produce outputs \(i.e. versioned datasets\).
+Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A job is an individual task that executes code \(such as a training a machine learning model\) and can consume inputs and produce outputs.
 
 ## Sample Workflow Spec
 
