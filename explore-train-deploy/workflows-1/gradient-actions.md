@@ -56,7 +56,7 @@ outputs:
 uses: create-model@v1
 with:
   name: my-model-name
-  type: Tensorflow
+  type: Tensorflow #Tensorflow, ONNX, or Custom
 ```
 
 In this example, the `create-model@v1` action takes a dataset input named `model` and outputs a string ID \(named `model-id`\) that references a [Gradient model](../../data/models/README.md).  With this reference, the created model can be tested, edited, or deployed in future jobs.
