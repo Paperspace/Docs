@@ -29,7 +29,7 @@ In this example, the Gradient action `git-checkout@v1` clones the public GitHub 
 
 Note: to clone a private repository, add your username as an action parameter, [set a Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret) with a [GitHub access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) value, and add your password as an environment variable named `GIT_PASSWORD` \(example below\).
 
-```
+```yaml
 inputs:
   repo:
     type: volume
