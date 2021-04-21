@@ -5,7 +5,6 @@
 ## **Objectives**
 
 * Launch a Jupyter Notebook with a single click
-* Access existing datasets available within Gradient
 * Train a machine learning model
 * Save the model for inferencing
 

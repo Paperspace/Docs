@@ -14,7 +14,7 @@ Gradient Workflows are currently in **private beta**. **A public beta is schedul
 
 Workflows are the newest \(and most powerful\) way to create machine learning projects. Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax to easily create powerful automation.
 
-Workflows allow you to build complex, real-world machine learning projects. Note, this is an advanced topic so if you are still early in your ML journey, it might make more sense to start with [notebooks](../../get-started/tutorials-list/getting-started-with-gradient-notebooks.md) first.
+Workflows allow you to build complex, real-world machine learning projects. Note, this is an advanced topic so if you are still early in your ML journey, it might make more sense to start with [notebooks](../../get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md) first.
 
 Workflows are based on the [Argo runtime engine](https://argoproj.github.io/projects/argo/) which is a container-native continuous delivery tool for Kubernetes. 
 

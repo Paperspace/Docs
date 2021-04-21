@@ -8,9 +8,9 @@ At the top of the yaml workflow file, you can specify default parameters to be u
 
 ### `inputs`
 
-The `inputs` block allows you to specify named inputs \(e.g. a [versioned dataset](../../data/data-overview/private-datasets-repository/README.md)\) to be referenced and consumed by your jobs.  Note: you can also collect inputs in a separate yaml and reference this file as an `inputPath` when creating a workflow run.
+The `inputs` block allows you to specify named inputs \(e.g. a [versioned dataset](../../data/data-overview/private-datasets-repository/)\) to be referenced and consumed by your jobs. Note: you can also collect inputs in a separate yaml and reference this file as an `inputPath` when creating a workflow run.
 
-Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a genereated value or ID that may be outtputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).    
+Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a genereated value or ID that may be outtputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).
 
 ### `jobs`
 

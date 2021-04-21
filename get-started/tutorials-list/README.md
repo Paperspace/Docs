@@ -2,7 +2,7 @@
 
 The following tutorials cover the main entities within Gradient.  We also host several sample projects in our [GitHub repo](https://github.com/paperspace).
 
-{% page-ref page="getting-started-with-gradient-notebooks.md" %}
+{% page-ref page="getting-started-with-gradient-notebooks-old.md" %}
 
 {% page-ref page="end-to-end-example.md" %}
 
