@@ -40,9 +40,9 @@ A Project's ID is a required parameter for several commands within Gradient.
 
 {% tabs %}
 {% tab title="Web UI" %}
-To find the ID, click any Project in the Projects List to navigate to its Project Details page, and then click the Project ID to copy the value to your clipboard:
+To find the ID, click the ID in the Projects list to copy it to your clipboard:
 
-![](../../.gitbook/assets/project-id.gif)
+![](../../.gitbook/assets/screen-shot-2021-04-22-at-1.07.32-pm.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -58,9 +58,9 @@ gradient projects list
 
 To add other team members to a project, click any Project in the projects list to navigate to its Project details page and then click the Accessors tab:
 
-![](../../.gitbook/assets/screen-shot-2021-04-18-at-10.25.23-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-04-22-at-1.11.40-pm.png)
 
-On the Accessors tab you will find a list of users who already have access to the Project. Add an Accessor by clicking the "Add Accessor" button on the right side of the page. Assign other team members to the Project by selecting their name in the drop-down and clicking on "Assign User":
+On the Accessors tab you will find a list of users who already have access to the Project. Add an Accessor by clicking the "Manage" button on the right side of the page. Assign other team members to the Project by selecting their name in the drop-down and clicking on "Assign User":
 
 ![](../../.gitbook/assets/assign-user8%20%281%29.png)
 
@@ -78,9 +78,7 @@ Additionally, project access can only be controlled through the web console â€“Â
 {% tab title="Web UI" %}
 You can delete a project by visiting the project's `Settings` page and hitting the `Delete Project` button.  
 
-![](../../.gitbook/assets/project-settings.jpg)
-
-![](../../.gitbook/assets/deleteproject.jpg)
+![](../../.gitbook/assets/screen-shot-2021-04-22-at-1.13.14-pm.png)
 {% endtab %}
 
 {% tab title="CLI" %}

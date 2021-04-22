@@ -1,5 +1,7 @@
 # Code
 
+Notebooks, Workflows, and Deployments include source code integrations to connect and track your code.  
+
 {% hint style="info" %}
 GradientCI is **not** yet supported in Workflows — [stay tuned](https://updates.paperspace.com/) for updates.  This feature is scheduled to be released in Q2 2021.
 {% endhint %}

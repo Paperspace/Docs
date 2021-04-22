@@ -12,6 +12,10 @@ A Gradient ****Notebook gives you access to a full Jupyter Notebook environment.
 **NEW!**  Visit the new [ML Showcase](https://ml-showcase.paperspace.com/) for a list of sample projects you can fork into your own account.
 {% endhint %}
 
+### Tutorial
+
+View a quick tutorial on creating a notebook [here](../../get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md).
+
 ## File Storage
 
 Any data stored in `/storage` will be preserved for you across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here](../../data/data-overview/#persistent-storage).
@@ -22,5 +26,5 @@ Notebooks run within Docker containers behind the scenes. Gradient includes a ha
 
 ## Environment Variables
 
-There are a number of environment variables loaded into a notebook's environment, which you can access and use. Probably most common is is `PS_API_KEY` , which will contain your most recently created API key \(if you've created one\). In combination with the Gradient SDK, this allows you to programmatically interact with Gradient.
+There are a number of environment variables loaded into a notebook's environment, which you can access and use. Probably most common is is `PS_API_KEY` , which will contain your most recently created API key \(if you've created one\). In combination with the [Gradient SDK](../../more/gradient-python-sdk-1/), this allows you to programmatically interact with Gradient.
 
