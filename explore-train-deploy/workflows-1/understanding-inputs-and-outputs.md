@@ -16,11 +16,31 @@ The dataset type leverages the Gradient platform native [dataset](../../data/dat
 
 Scenario 1: Consuming a dataset that already exists within Gradient.  
 
-\[SAMPLE CODE\]
+```yaml
+inputs:
+    my-dataset: 
+        type: dataset
+        with:
+            id: my-dataset-id
+```
 
 Scenario 2: Generating a new dataset version from a Workflow step
 
-\[SAMPLE CODE\]
+```yaml
+my-job:
+  uses: container@v1
+  with:
+    args:
+      - bash
+      - '-c'
+      - cp -R /my-trained-model /outputs/my-dataset
+    image: bash:5
+  outputs:
+    my-dataset:
+      type: dataset
+      with:
+        id: my-dataset-id
+```
 
 ### Volumes
 
@@ -28,7 +48,11 @@ Unlike, e.g. GitHub Actions, it is likely that multiple Gradient Steps/Actions w
 
 Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout).  
 
-\[SAMPLE CODE\]
+```yaml
+inputs:
+    my-volume-name:
+        type: volume
+```
 
 ### Strings
 
