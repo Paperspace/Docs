@@ -8,7 +8,7 @@ GradientCI is **not** yet supported in Workflows — [stay tuned](https://update
 
 **Git tracking in GradientCI**
 
-![](../.gitbook/assets/image%20%2846%29.png)
+![](../.gitbook/assets/image%20%2854%29.png)
 
 **Inline Git diffing**
 

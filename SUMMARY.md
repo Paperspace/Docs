@@ -52,16 +52,16 @@
 
 ## Artifacts <a id="data"></a>
 
-* [Code](data/code.md)
 * [Data](data/data-overview/README.md)
   * [Versioned Datasets](data/data-overview/private-datasets-repository/README.md)
     * [Public Datasets Repository](data/data-overview/private-datasets-repository/public-datasets-repository.md)
     * [Storage Providers](data/data-overview/private-datasets-repository/storage-providers.md)
   * [Persistent Storage](data/data-overview/persistent-storage.md)
+* [Code](data/code.md)
 * [Models](data/models/README.md)
   * [Managing Models](data/models/create-a-model/README.md)
     * [Example: Prepare a TensorFlow Model for Deployments](data/models/create-a-model/preparing-model-for-deployment.md)
-    * [Model Path, Parameters, & Metadata](data/models/create-a-model/model-path.md)
+    * [Model Types & Metadata](data/models/create-a-model/model-types-metadata.md)
     * [Public Models](data/models/create-a-model/public-models.md)
 * [Metrics](data/metrics-overview/README.md)
   * [Push Metrics](data/metrics-overview/push-metrics.md)

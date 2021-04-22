@@ -9,6 +9,10 @@ To begin using Gradient, follow these preliminary steps:
 
 Now you can create Notebooks, Workflows, Models, Deployments, and more!  Note: if you are self-hosting Gradient, please visit the [Gradient Private Cloud ](../../gradient-private-cloud/about/setup/self-hosted-clusters/)section for more info.
 
+{% hint style="info" %}
+In order to unlock Workflows, Models, and Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team. 
+{% endhint %}
+
 ## Logging in for the first time
 
 When you first log into the Paperspace Console, you can select Gradient from the product dropdown:
@@ -36,40 +40,45 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 ## Advanced MLOps
 
 {% hint style="warning" %}
-Using advanced ML components contained within Projects requires [creating a cluster](../../gradient-private-cloud/about/setup/managed-installation.md).   
+In order to unlock Workflows, Models, and Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team. 
 {% endhint %}
 
 ### Create a Project
 
 Projects organize your work.  To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**, provide a name, and click **create**. 
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](../../.gitbook/assets/screen-shot-2021-04-22-at-11.46.07-am.png)
 
 ### Running your first Workflow
 
-You can run Workflows from the web interface or CLI:
-
-{% hint style="info" %}
-Before creating a workflow using the CLI, you must first [install the CLI](install-the-cli.md). 
+{% hint style="warning" %}
+Using Workflows requires [creating a cluster](../../gradient-private-cloud/about/setup/managed-installation.md).  
 {% endhint %}
 
-**Run a sample Workflow**
+You can run Workflows from the web interface or CLI. The first step is to create a new Workflow.
 
-The following command will work and will create and start an Experiment that will display properties of the attached GPU. Be sure to replace `<your-project-id>` with your **Project ID** and `<your-cluster-id>` with your **Cluster ID**.
+![](../../.gitbook/assets/screen-shot-2021-04-22-at-12.06.01-pm.png)
+
+### **Steps**
+
+1. \*\*\*\*[**Install the CLI**](install-the-cli.md)\*\*\*\*
+2. **Download or copy the sample Workflow YAML file to your computer**
+3. **Run the Workflow from the CLI**
+
+```bash
+gradient workflows run  \ 
+--id <your-workflow-id>  \
+--clusterId <your-cluster-id>  \
+--path ./workflow.yaml 
+```
 
 {% hint style="info" %}
 **Note:** We recommend stashing your API key with `gradient apiKey XXXXXXXXXXXXX` or you can add your API key as an option on each Experiment. See [Connecting Your Account](install-the-cli.md#connecting-your-account).
 {% endhint %}
 
-```bash
-gradient workflows run --projectId <your-project-id> --clusterId <your-cluster-id> --container 'Test-Container' --machineType P4000 --command 'nvidia-smi' --name 'test-01' --workspace none --apiKey <your-api-key>
-```
+The following command will create and start a Workflow that will run a sample project. Be sure to replace `<your-workflow-id>` with your **Workflow ID** and `<your-cluster-id>` with your **Cluster ID**.
 
-![](../../.gitbook/assets/screen-shot-2020-10-09-at-6.40.00-pm.png)
-
-Behind the scenes, your Workflow will be executed on your cluster starting with the command you provided. You can always use the `--help` option after any command in the CLI for more info.  
-
-Congratulations! You ran your first Experiment on Gradient 🚀
+Behind the scenes, your Workflow will be executed on your cluster. Congratulations! You ran your first Workflow on Gradient 🚀
 
 ## Explore the rest of the platform
 
