@@ -30,22 +30,45 @@ Committed dataset version: dst364npcw6ccok:fo5rp4m
 
 ## Using Datasets
 
-You can use existing Datasets or create new ones. In the below scenario, the following datasets actions are specified:
+You can use existing Datasets or create new ones. In the below scenarios, the following dataset actions are specified:
 
-* **dst364npcw6ccok:fo5rp4m** will be mounted to: **/datasets/input-a**
-* **dst364npcw6ccok:fo34ram** will be mounted to: **/datasets/input-b**
-* A dataset will be mounted to: **/datasets/output-a** which will create dataset: **dst364npcw6ccok:latest**
+* **dst123abc:latest** will be mounted to: **/inputs/my-dataset**
 
-```text
-gradient jobs create \
-  --clusterId=$CLUSTER \
-  --machineType=$MACHINE_TYPE \
-  --projectId=$PROJECT \
-  --container=bash \
-  --command='cat /datasets/input/hello.txt > /datasets/output/hello2.txt && date >> /datasets/output/hello2.txt' \
-  --dataset=output-a@dst364npcw6ccok \
-  --dataset=input-a@dst364npcw6ccok:fo5rp4m \
-  --dataset=input-b@dst364npcw6ccok:fo34ram
+```yaml
+job-1:
+  inputs:
+    my-dataset:
+      type: dataset
+      with:
+        id: dst123abc
+   uses: container@v1
+   with:
+    image: bash:5
+    args: ["bash", "-c", "ls /inputs/my-dataset"]
+```
+
+* **dst123abc:latest** will be created by job-1 and mounted to job-2 at: **/inputs/my-created-dataset**
+
+```yaml
+job-1:
+  outputs:
+    my-dataset:
+      type: dataset
+      with:
+        id: dst123abc
+  uses: container@v1
+  with:
+    image: bitnami/git
+    args: ["bash", "-c", "git clone https://github.com/username/repo /outputs/my-dataset"]
+job-2:
+  needs:
+    - job-1
+  inputs:
+    my-created-dataset: job-1.outputs.my-dataset
+  uses: container@v1
+    with:
+      image: bash:5
+      args: ["bash", "-c", "ls /inputs/my-created-dataset"]
 ```
 
 ## Viewing Datasets
