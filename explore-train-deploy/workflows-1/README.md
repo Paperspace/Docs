@@ -4,8 +4,6 @@ description: Automate from idea to production
 
 # Workflows
 
-
-
 {% hint style="info" %}
 Gradient Workflows are currently in **private beta**. **A public beta is scheduled for Q2/2021**
 {% endhint %}

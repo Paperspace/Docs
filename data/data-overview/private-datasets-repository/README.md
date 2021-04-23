@@ -30,9 +30,7 @@ Committed dataset version: dst364npcw6ccok:fo5rp4m
 
 ## Using Datasets
 
-### Jobs
-
-You can use existing Datasets or create new ones with Gradient jobs. In the below scenario the following datasets actions are specified:
+You can use existing Datasets or create new ones. In the below scenario, the following datasets actions are specified:
 
 * **dst364npcw6ccok:fo5rp4m** will be mounted to: **/datasets/input-a**
 * **dst364npcw6ccok:fo34ram** will be mounted to: **/datasets/input-b**
