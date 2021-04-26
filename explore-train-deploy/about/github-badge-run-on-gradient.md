@@ -1,6 +1,8 @@
 # Run on Gradient \(GitHub badge\)
 
-![Run on Gradient Badge attached to a GitHub repo](../../.gitbook/assets/screen-shot-2020-02-17-at-8.47.13-pm.png)
+
+
+![Run on Gradient is a badge for GitHub repos that makes any .ipynb file launchable in a Gradient Notebook](../../.gitbook/assets/screen-shot-2020-02-17-at-8.47.13-pm.png)
 
 
 
@@ -12,15 +14,23 @@ The Run on Gradient badge allows you to run a Gradient Notebook from any public 
 
 ## How it Works
 
-The "Run on Gradient" badge allows you to run a Gradient Notebook from any GitHub repository. Clicking the badge will take you to a static page where you can view the full contents of the notebook. From this page, you can either sign in or create an account to run the notebook for free. Making an account is completely free and can be done in a few clicks by signing up with Google, GitHub, or email. Then just select “Run Notebook on a Free GPU” and Gradient will spin up a free, fully interactive notebook instance.
+The "Run on Gradient" badge allows you to run a Gradient Notebook from any GitHub repository. 
 
-![](../../.gitbook/assets/screen-shot-2020-08-19-at-9.47.39-am.png)
+Clicking the badge brings the user to a static page where they can view the full contents of a notebook generated from the repository .ipynb file. 
 
-![](../../.gitbook/assets/screen-shot-2020-08-19-at-9.47.54-am.png)
+From this page, the user can either sign in or create an account to run the notebook for free.
 
-## Using the "Run on Gradient" badge
+Paperspace accounts are free and access to a free-tier GPU-backed notebook does not require a credit card.
 
-Simply add the following code snippet to your `Readme.md` on your public GitHub repo:
+![Run on Gradient badges bring interactivity to GitHub repos](../../.gitbook/assets/screen-shot-2021-04-25-at-9.23.54-pm.png)
+
+![Clicking the badge brings the user to a static notebook page where they may run the notebook](../../.gitbook/assets/screen-shot-2021-04-25-at-9.26.22-pm.png)
+
+![New users may quickly signup for a free Paperspace account to run the notebook](../../.gitbook/assets/screen-shot-2021-04-25-at-9.28.48-pm.png)
+
+## Using the Run on Gradient badge
+
+To use the badge, add the following code snippet to `README.md` in a **public** GitHub repo:
 
 ```text
 [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/huggingface/nlp/blob/master/notebooks/Overview.ipynb)
@@ -34,7 +44,19 @@ The HTML equivalent is:
 </a>
 ```
 
-Remember to replace the notebook URL in this template with the notebook you want to link to.
+Remember to replace the notebook URL in this template with the notebook you want to link.
+
+The formula for the link is as follows:
+
+```text
+https://console.paperspace.com/github/{github_file_path}.ipynb
+```
+
+Therefore if a file is located at [https://github.com/gradient-ai/GauGAN/blob/main/GauGAN\_ML\_Showcase/GauGAN\_ML\_showcase.ipynb](https://github.com/gradient-ai/GauGAN/blob/main/GauGAN_ML_Showcase/GauGAN_ML_showcase.ipynb) then the correct Run on Gradient link would be:
+
+```text
+https://console.paperspace.com/github/gradient-ai/GauGAN/blob/main/GauGAN_ML_Showcase/GauGAN_ML_showcase.ipynb
+```
 
 ### **Notes**
 

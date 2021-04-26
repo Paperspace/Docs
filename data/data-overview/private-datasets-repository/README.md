@@ -18,7 +18,7 @@ Datasets have multiple versions that can be referenced. You can specify a messag
 
 ### Committed state
 
-Dataset versions have a uncommittted and committed state. When a Dataset is uncommitted, you can modify or add files freely. When a Dataset is committed it will be immutable \(will not allow any modifications\). This allows workloads to be repeatable and deterministic with the provided Datasets. 
+Dataset versions have a uncommittted and committed state. When a Dataset is uncommitted, you can modify or add files freely. When a Dataset is committed it will be immutable \(will not allow any modifications\). This allows workloads to be repeatable and deterministic with the provided Datasets.
 
 ## Creating a Dataset and Dataset Version
 
