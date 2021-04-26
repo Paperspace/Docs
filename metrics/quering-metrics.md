@@ -22,7 +22,7 @@ Deployment metrics are a Gradient Private Cluster feature. [Contact Sales](https
 
 To view Deployment metrics, navigate to the Metrics tab of the individual deployment.
 
-![](../.gitbook/assets/image%20%2899%29%20%283%29%20%283%29%20%283%29%20%283%29%20%281%29.png)
+![](../.gitbook/assets/image%20%2899%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%281%29.png)
 
 ### Notebooks
 
