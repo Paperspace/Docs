@@ -2,9 +2,9 @@
 
 ## Finding your Cluster ID
 
-Your clusters are available under the _Private Clusters_ [page](https://www.paperspace.com/console/clusters) in the Paperspace console.  Here you can find information about your cluster, including your cluster ID – you will need to specify this ID in order to designate your private cluster as the place to run experiments, notebooks, etc. 
+Your clusters are available under the __Clusters tab.  Here you can find information about your cluster, including your cluster ID – you will need to specify this ID in order to designate your private cluster as the place to run Workflows, Deployments, etc. 
 
-![](../../.gitbook/assets/image%20%2861%29.png)
+![](../../.gitbook/assets/screen-shot-2021-04-23-at-5.15.47-pm.png)
 
 ## **Using Gradient private clusters via the Gradient CLI**
 
@@ -21,28 +21,20 @@ You will need to provide your API key to authenticate your requests. Learn how t
 A complete example of utilizing Gradient features on a cluster might look like this:
 
 ```bash
-gradient experiments run singlenode --name experiment1 \
---projectId prgydf45k \
---clusterId cl53waq2x \
---machineType c5.xlarge \
---container tensorflow/tensorflow:1.13.1-py3 \
---experimentEnv "{\"EPOCHS_EVAL\":\"5\",\"TRAIN_EPOCHS\":\"10\",\"MAX_STEPS\":\"1000\",\"EVAL_SECS\":\"10\"}" \
---workspaceUrl https://github.com/Paperspace/mnist-sample.git \
---command "pip install -r requirements.txt && python mnist.py"
+gradient workflows run \
+--id 01f00ea6-6f78-4ad9-b5ca-f56006e64193 \
+--clusterId cl8pwu9qn \ 
+--path ./workflow.yaml 
 ```
 
-In order to run workloads on your Gradient cluster, you must specify the `clusterId` parameter on most Gradient primary commands, including:
+In order to run workloads on your Gradient cluster, you must specify the `clusterId` parameter on most Gradient commands, including:
 
-* experiments
+* workflows
 * deployments
-* jobs
 * models
 * notebooks
-* tensorboards
 
 If you don't supply the `clusterId` parameter, then your command will default to run on Paperspace instances, which are not part of your private cluster environment.
-
-To avoid having to re-enter the Cluster ID, and if you want the configuration to be reusable and checked into source control, another option is using the [Gradient Config File](). This file can contain the `clusterID` parameter in addition to many other common settings.
 
 ## **Using Gradient clusters via the Web UI**
 

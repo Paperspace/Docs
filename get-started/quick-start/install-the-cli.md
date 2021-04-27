@@ -86,7 +86,7 @@ and then add `. ~/paperspace_complete.sh` to your `.bashrc`, `.zshrc` or `activa
 
 More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/)
 
-## **Install the latest prerelease version**
+## **Install the latest pre-release version**
 
 ```bash
 pip install -U --pre gradient

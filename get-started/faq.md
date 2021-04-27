@@ -12,11 +12,11 @@ As an end-to-end platform, Gradient is suited for the early research and data ex
 
 See more info about pricing [here](https://gradient.paperspace.com/pricing).
 
-#### What is Paperspace?
-
-Paperspace is the company behind Gradient. We are a cloud computing company designed for developing compute-intensive applications. Gradient is one of our flagship products. Check out our products overview [here](https://paperspace.com/products).
-
 #### What are the differences between the managed service, private clusters, and the self-hosted version?
 
 The primary difference is where workloads run and the degree of control you have over the environment. You can learn more about these differences [here](../gradient-private-cloud/about/#choosing-between-our-managed-service-managed-private-clusters-and-self-hosting-gradient).
+
+#### What is Paperspace?
+
+Paperspace is the company behind Gradient. Paperspace is a cloud computing platform designed for developing compute-intensive applications. Gradient is one of our flagship products. Check out our products overview [here](https://paperspace.com/products).
 

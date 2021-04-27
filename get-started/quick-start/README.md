@@ -73,7 +73,7 @@ gradient workflows run  \
 ```
 
 {% hint style="info" %}
-**Note:** We recommend stashing your API key with `gradient apiKey XXXXXXXXXXXXX` or you can add your API key as an option on each Experiment. See [Connecting Your Account](install-the-cli.md#connecting-your-account).
+**Note:** We recommend stashing your API key with `gradient apiKey XXXXXXXXXXXXX` or you can add your API key as an option on each command. See [Connecting Your Account](install-the-cli.md#connecting-your-account).
 {% endhint %}
 
 The following command will create and start a Workflow that will run a sample project. Be sure to replace `<your-workflow-id>` with your **Workflow ID** and `<your-cluster-id>` with your **Cluster ID**.

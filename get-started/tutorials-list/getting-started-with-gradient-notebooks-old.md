@@ -22,7 +22,7 @@ Gradient provides one-click access to Jupyter Notebooks that run on a variety of
 
 Notebooks run within a Docker container so they are lightweight, portable, and easy to work with. You can start your Notebook with one of our [pre-configured templates](../../explore-train-deploy/about/create-a-notebook/notebook-containers/) or use a custom docker image. 
 
-Your runtime behaves like a traditional operating system: You can download files and install and run any package with standard tools available in Linux e.g. `wget`, `pip`, etc. from within the provided terminal or within a Jupyter cell.  
+Your runtime behaves like a traditional operating system: You can download files and install and run any package with standard tools available in Linux e.g. `wget`, `pip`, etc. from within the provided terminal or within a Jupyter cell.  Any changes to your environment are persisted across multiple sessions.  
 
 #### Workspace \(optional\)
 
@@ -34,9 +34,9 @@ Gradient provides a [persistent storage directory](../../explore-train-deploy/ab
 
 ## Launching a Notebook Instance
 
-On the **Notebooks** tab to create a new notebook. After naming your notebook, the next step is to choose a pre-configured environment or container. Within the container picker, select **Filter &gt; All** and then locate the container called **Jupyter Notebook Data Science Stack.** This container will come with the core modules needed for our model.
+Open the **Notebooks** tab to create a new notebook. After naming your notebook, the next step is to choose a pre-configured template or custom container. We'll select **PyTorch** which includes the PyTorch framework and the necessary NVIDIA libaries to enable GPU support. You can learn about using custom containers [here](../../explore-train-deploy/about/create-a-notebook/notebook-containers/#custom-containers).
 
-![Select Filter &amp;gt; All and then select the container named Jupyter Notebook Data Science Stack](../../.gitbook/assets/screen-shot-2021-01-18-at-9.01.07-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-04-26-at-12.29.48-pm.png)
 
 In the next step, choose the machine type. Since we don’t need high-end machines with GPUs, we can choose a low-cost instance. Select the **Free GPU** machine to access free GPU instances.
 
