@@ -38,11 +38,19 @@ Open the **Notebooks** tab to create a new notebook. After naming your notebook,
 
 ![](../../.gitbook/assets/screen-shot-2021-04-26-at-12.29.48-pm.png)
 
-In the next step, choose the machine type. Since we don’t need high-end machines with GPUs, we can choose a low-cost instance. Select the **Free GPU** machine to access free GPU instances.
+In the next step, choose the machine type. Here you can choose from the managed service or your [private cluster](../../gradient-private-cloud/about/) instances if you have created a private cluster. Select the **Free GPU** machine to access free GPU instances. On this step, you can also select auto-shutdown which is especially useful when using paid instances.  Finally, you can toggle the Notebook to be [public](../../explore-train-deploy/about/create-a-notebook/public-notebooks.md) or private.   
 
-![Enable low-cost instances and select the Free GPU cluster](../../.gitbook/assets/screen-shot-2021-01-18-at-9.03.26-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-04-27-at-1.12.12-pm.png)
 
-The notebook will now provision. The notebook status will be **Provisioning** or **Pending** for a minute or two.
+The last \(optional\) step is to customize the **Workspace** and the **Container**.  The Workspace option provides the ability to pull down files into the notebook when it's created.  A common example is to pull a GitHub repository \(see image below\).  The [container option ](../../explore-train-deploy/about/create-a-notebook/notebook-containers/#custom-containers)allows you to provide a custom Docker image from a public or private container registry.  
+
+![](../../.gitbook/assets/screen-shot-2021-04-27-at-1.18.59-pm.png)
+
+The final step is to click **start notebook**.
+
+## The Notebook interface
+
+Once your Notebook is online, you will 
 
 
 

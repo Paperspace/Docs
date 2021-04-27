@@ -9,7 +9,7 @@ Customers using the [Self-Hosted](../../gradient-private-cloud/about/) version c
 {% endhint %}
 
 {% hint style="info" %}
-Managed [_Private Clusters_](../../gradient-private-cloud/about/) include a compute premium. Learn more [here](https://gradient.paperspace.com/private-cluster-utilization-premium). 
+Managed [Private Clusters](../../gradient-private-cloud/about/) include a compute premium. Learn more [here](https://gradient.paperspace.com/private-cluster-utilization-premium). 
 {% endhint %}
 
 ## CPU Instances
@@ -27,9 +27,9 @@ A range of dedicated GPU instances with single and multi-GPU configurations.
 
 | Name | Description | GPU | Memory | vCPUs | Price |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **GPU+ \(M4000\)** | Low-cost instance with 8GB GPU, 8 vCPU, 30GB RAM | 8 GB | 30 GB | 8 vCPU | $0.45/hr |
-| **P4000** | Low-cost instance with 8GB GPU, 8 vCPU, 30GB RAM | 8 GB | 30 GB | 8 vCPU | $0.51/hr |
-| **P5000** | Mid-range instance with 16GB Pascal GPU, 8 vCPU, 30GB RAM | 16 GB | 30 GB | 8 vCPU | $0.78/hr |
-| **P6000** | High-performance instance with 24GB Pascal GPU, 8 vCPU, 30GB RAM | 24 GB | 30 GB | 8 vCPUs | $1.10/hr |
-| **V100** | Ultra high-performance instance with 16GB Volta GPU, 8 vCPU, 30GB RAM | 16 GB | 30 GB | 8 vCPUs | $2.30/hr |
+| **GPU+** \(M4000\) | Low-cost instance with 8GB NVIDIA Maxwell GPU | 8 GB | 30 GB | 8 vCPU | $0.45/hr |
+| **P4000** | Low-cost instance with 8GB NVIDIA Pascal GPU | 8 GB | 30 GB | 8 vCPU | $0.51/hr |
+| **P5000** | Mid-range instance with 16GB NVIDIA Pascal GPU | 16 GB | 30 GB | 8 vCPU | $0.78/hr |
+| **P6000** | High-performance instance with 24GB NVIDIA Pascal GPU | 24 GB | 30 GB | 8 vCPUs | $1.10/hr |
+| **V100** | Ultra high-performance instance with 16GB NVIDIA Volta GPU | 16 GB | 30 GB | 8 vCPUs | $2.30/hr |
 
