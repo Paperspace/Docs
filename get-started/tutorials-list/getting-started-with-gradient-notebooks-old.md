@@ -2,21 +2,19 @@
 
 {% embed url="https://youtu.be/i4pvLzvw2ME" caption="Jupyter notebooks are quick and easy to launch. 1m48s. " %}
 
-## **Objectives**
-
-* Launch a Jupyter Notebook with a single click
-* Train a machine learning model
-* Save the model for inferencing
-
 {% hint style="success" %}
-This example is available in our ML Showcase!  You can clone the notebook [here](https://ml-showcase.paperspace.com/projects/logistic-regression-with-scikit-learn). 
+Check out Notebook examples in the [ML Showcase](https://ml-showcase.paperspace.com/)!
 {% endhint %}
 
 ## **Key Concepts**
 
+**Supported languages & file types**
+
+Any Jupyter notebook \(`.ipynb` file\) is supported natively.   You can also treat a Notebook as a full IDE and both write and execute code written in other languages such as Python.   
+
 #### Compute options
 
-Gradient provides one-click access to Jupyter Notebooks that run on a variety of [instance types](../../more/instance-types/), including our [free tier](../../more/instance-types/free-instances.md). 
+Gradient provides one-click access to Jupyter Notebooks that run on a variety of [instance types](../../more/instance-types/), including our [free tier](../../more/instance-types/free-instances.md), as well your own [compute clusters](../../gradient-private-cloud/about/setup/self-hosted-clusters/) e.g. your AWS account. 
 
 #### Runtime 
 
@@ -34,7 +32,7 @@ Gradient provides a [persistent storage directory](../../explore-train-deploy/ab
 
 ## Launching a Notebook Instance
 
-Open the **Notebooks** tab to create a new notebook. After naming your notebook, the next step is to choose a pre-configured template or custom container. We'll select **PyTorch** which includes the PyTorch framework and the necessary NVIDIA libaries to enable GPU support. You can learn about using custom containers [here](../../explore-train-deploy/about/create-a-notebook/notebook-containers/#custom-containers).
+Open the **Notebooks** tab to create a new notebook. After naming your notebook, the next step is to choose a pre-configured template or custom container. We'll select **PyTorch** which includes the PyTorch framework and the necessary NVIDIA libraries to enable GPU support. You can learn about using custom containers [here](../../explore-train-deploy/about/create-a-notebook/notebook-containers/#custom-containers).
 
 ![](../../.gitbook/assets/screen-shot-2021-04-26-at-12.29.48-pm.png)
 
@@ -50,7 +48,15 @@ The final step is to click **start notebook**.
 
 ## The Notebook interface
 
-Once your Notebook is online, you will 
+On the **files** tab, you can create, rename, and delete files and folders.  Once your Notebook is online, you can edit and run notebook or other code files. 
+
+Jupyter operations, such as adding and removing cells, are fully supported.  You can right-click on cells to view additional options.
+
+![The Jupyter interface](../../.gitbook/assets/screen-shot-2021-04-29-at-1.04.16-pm.png)
+
+Standard code files are also supported with full syntax highlighting.
+
+![Syntax highlighting in code files](../../.gitbook/assets/screen-shot-2021-04-29-at-1.12.54-pm.png)
 
 
 
