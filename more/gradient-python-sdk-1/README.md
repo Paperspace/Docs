@@ -6,7 +6,7 @@
 Read the [announcement](https://blog.paperspace.com/new-gradient-sdk/) on our blog which includes a [sample project](https://ml-showcase.paperspace.com/projects/gradient-python-sdk-end-to-end-example) you can run!
 {% endhint %}
 
-The SDK let's you programmatically interact with the Gradient platform.  The SDK is designed for maximum flexibility and is useful in many different scenarios.  Some examples include interactively launching [Workflows](../../explore-train-deploy/workflows-1/) and [Deployments](../../explore-train-deploy/deployments-overview/) \(model serving\), or incorporating the SDK into your python project to build sophisticated pipelines.  
+The SDK let's you programmatically interact with the Gradient platform.  The SDK is designed for maximum flexibility and is useful in many different scenarios.  Some examples include interactively launching [Workflows](../../explore-train-deploy/workflows/) and [Deployments](../../explore-train-deploy/deployments/) \(model serving\), or incorporating the SDK into your python project to build sophisticated pipelines.  
 
 The SDK is fully compatible with our [CLI](../../get-started/quick-start/install-the-cli.md) which uses this SDK under the hood.  
 

@@ -1,6 +1,6 @@
 # SDK Examples
 
-In this example, we'll run through a few basic commands using the SDK.  We'll import the SDK, create a [Project](../../get-started/managing-projects/), and launch a [Workflow](../../explore-train-deploy/workflows-1/).  
+In this example, we'll run through a few basic commands using the SDK.  We'll import the SDK, create a [Project](../../get-started/managing-projects/), and launch a [Workflow](../../explore-train-deploy/workflows/).  
 
 {% hint style="info" %}
 The SDK is bundled with the [Gradient CLI](../../get-started/quick-start/install-the-cli.md).   

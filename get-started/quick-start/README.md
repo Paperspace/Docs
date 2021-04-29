@@ -21,7 +21,7 @@ When you first log into the Paperspace Console, you can select Gradient from the
 
 ## Create a Notebook
 
-Notebooks can be created on the Notebooks tab. Just select a [template](../../explore-train-deploy/about/create-a-notebook/notebook-containers/), choose your [instance type](../../more/instance-types/), and then click create. 
+Notebooks can be created on the Notebooks tab. Just select a [template](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../../more/instance-types/), and then click create. 
 
 {% hint style="success" %}
 Check out the [FREE GPU](../../more/instance-types/free-instances.md) option when launching Notebooks!
@@ -82,5 +82,5 @@ Behind the scenes, your Workflow will be executed on your cluster. Congratulatio
 
 ## Explore the rest of the platform
 
-From [Models](../../data/models/) to [Deployments](../../explore-train-deploy/deployments-overview/), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../../more/gradient-python-sdk-1/).
+From [Models](../../data/models/) to [Deployments](../../explore-train-deploy/deployments/), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../../more/gradient-python-sdk-1/).
 

@@ -58,7 +58,7 @@ inputs:
 
 In some cases, you may need to pass a single value between Workflow steps. The string type makes this possible.
 
-Scenario 1: Passing a generated model ID to a subsequent [Deployment](../deployments-overview/) step
+Scenario 1: Passing a generated model ID to a subsequent [Deployment](../deployments/) step
 
 {% hint style="info" %}
 NOTE: There is no native Gradient Actions for Model Deployments today. Instead, you can use the [Gradient SDK](../../more/gradient-python-sdk-1/) to create and manage your inference endpoints.

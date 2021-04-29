@@ -2,7 +2,7 @@
 
 ## Notebooks
 
-Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../../explore-train-deploy/about/) make it easy to explore data and coding concepts and collaborate with other people on projects. 
+Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../../explore-train-deploy/notebooks/) make it easy to explore data and coding concepts and collaborate with other people on projects. 
 
 * No configuration required
 * Free access to CPU and GPU instances
@@ -30,7 +30,7 @@ You can either upload a model or generate models from your training workloads wh
 
 ### Deployments \(inference/model serving\)
 
-Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here](../../explore-train-deploy/deployments-overview/).
+Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here](../../explore-train-deploy/deployments/).
 
 ## Data
 

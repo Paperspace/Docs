@@ -6,7 +6,7 @@ There are two ways to create a Model in Gradient, and both can be done via the w
 
 ### 1. Run a workload that generates a Model
 
-You can do this via the by using a [Gradient Action](../../../explore-train-deploy/workflows-1/gradient-actions.md#model-create) or the [SDK](../../../more/gradient-python-sdk-1/). This will place your Model in your Project's [Model Repository](../#model-repository).
+You can do this via the by using a [Gradient Action](../../../explore-train-deploy/workflows/gradient-actions.md#model-create) or the [SDK](../../../more/gradient-python-sdk-1/). This will place your Model in your Project's [Model Repository](../#model-repository).
 
 {% hint style="info" %}
 View the full CLI/SDK Docs for **Models** [here](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-models). 

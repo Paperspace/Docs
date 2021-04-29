@@ -51,7 +51,7 @@ Click the advanced options toggle on the notebook create a notebook page. Follow
 
 ### Workflows
 
-Just specify the path of the container e.g. `paperspace/gradient-sdk` from within a Workflow step using `image`. Learn more [here](../../../workflows-1/).
+Just specify the path of the container e.g. `paperspace/gradient-sdk` from within a Workflow step using `image`. Learn more [here](../../../workflows/).
 
 ### Deployments
 
