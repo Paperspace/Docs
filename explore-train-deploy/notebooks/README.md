@@ -2,11 +2,11 @@
 
 ## What is a Notebook?
 
-Gradient notebooks are an interactive environment \(based on the open source [Jupyter project](https://jupyter.org/)\) for developing and running code. You can run Jupyter notebooks on CPU or GPU instances. 
+Gradient notebooks are an interactive environment for developing and running code. Jupyter notebooks \(`.ipynb` files\) are supported natively.  You can also treat a Notebook as a full IDE and both write and execute code written in other languages such as Python.  You can run Notebook on CPU or GPU instances. 
 
-![](../../.gitbook/assets/5d9e969e1a0436e128ff6b4b_shot-2019-09-23-at-11.13.38-am4.png)
+![The Notebook interface](../../.gitbook/assets/screen-shot-2021-04-29-at-1.04.16-pm.png)
 
-A Gradient ****Notebook gives you access to a full Jupyter Notebook environment. Within the Notebook, you can store an unlimited number of documents and other files. You can think of a Gradient Notebook as your persistent, on-demand workspace in the cloud.
+Within the Notebook, you can store an unlimited number of documents and other files. You can think of a Gradient Notebook as your persistent, on-demand workspace in the cloud.
 
 {% hint style="info" %}
 **NEW!**  Visit the new [ML Showcase](https://ml-showcase.paperspace.com/) for a list of sample projects you can fork into your own account.
@@ -14,7 +14,7 @@ A Gradient ****Notebook gives you access to a full Jupyter Notebook environment.
 
 ## File Storage
 
-Any data stored in `/storage` will be preserved for you across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Learn more about persistent storage [here](../../data/data-overview/#persistent-storage).
+Any data stored in `/storage` will be preserved for you across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints, etc.  Learn more about persistent storage [here](create-a-notebook/notebooks-storage.md).
 
 ## Containers
 
