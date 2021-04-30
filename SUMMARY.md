@@ -38,6 +38,7 @@
   * [Understanding Inputs & Outputs](explore-train-deploy/workflows/understanding-inputs-and-outputs.md)
   * [Workflow Spec](explore-train-deploy/workflows/workflow-spec.md)
   * [Gradient Actions](explore-train-deploy/workflows/gradient-actions.md)
+  * [Using YAML for Data Science](explore-train-deploy/workflows/using-yaml-for-data-science.md)
 * [Deployments](explore-train-deploy/deployments/README.md)
   * [Managing Deployments](explore-train-deploy/deployments/managing-deployments/README.md)
     * [Deployment Containers](explore-train-deploy/deployments/managing-deployments/deployment-containers/README.md)
