@@ -89,6 +89,7 @@
   * [Projects Client](more/gradient-python-sdk-1/projects-client.md)
   * [Models Client](more/gradient-python-sdk-1/models-client.md)
   * [Deployments Client](more/gradient-python-sdk-1/deployments-client.md)
+  * [Workflows Client](more/gradient-python-sdk-1/workflows-client.md)
   * [SDK Examples](more/gradient-python-sdk-1/sdk-tutorial.md)
   * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
 * [Instance Types](more/instance-types/README.md)
