@@ -35,7 +35,7 @@
     * [Community \(Public\) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
 * [Workflows](explore-train-deploy/workflows/README.md)
   * [Getting Started with Workflows](explore-train-deploy/workflows/getting-started-with-workflows.md)
-  * [Understanding inputs & outputs](explore-train-deploy/workflows/understanding-inputs-and-outputs.md)
+  * [Understanding Inputs & Outputs](explore-train-deploy/workflows/understanding-inputs-and-outputs.md)
   * [Workflow Spec](explore-train-deploy/workflows/workflow-spec.md)
   * [Gradient Actions](explore-train-deploy/workflows/gradient-actions.md)
 * [Deployments](explore-train-deploy/deployments/README.md)

@@ -24,10 +24,10 @@ Workflows are based on the [Argo runtime engine](https://argoproj.github.io/proj
 * \*\*\*\*[**Workflow Spec:**](workflow-spec.md) ****a JSON or YAML list of jobs that is converted into an Argo template and run on the Gradient distributed runtime engine.
 * \*\*\*\*[**Job**](workflow-spec.md#jobs)**:** self-contained part of a workflow spec that is similar to an Argo step
   * jobs can define inputs, outputs, and their own environment variables
-* * jobs can require other jobs via "needs" and collect/pass info between jobs
+  * jobs can require other jobs via "needs" and collect/pass info between jobs
   * jobs can be implemented with an action via "use"
 * \*\*\*\*[**Action**](gradient-actions.md)**:** A self-contained, composable set of code building blocks that can perform specific actions within a machine learning project. 
-* * actions can receive parameters \(e.g. args, image\) within the job step via the "with" argument
+  * actions can receive parameters \(e.g. args, image\) within the job step via the "with" argument
   * e.g. `container@v1` action = run a container, load inputs, and produce outputs
 * \*\*\*\*[**Workflow Run**](workflow-spec.md#example-workflow-run-output): the implementation of a workflow
   * the most basic run requires a `workflowId` and `clusterId` - most will also include a workflowSpec and the inputs to be passed into the workflow

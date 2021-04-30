@@ -10,7 +10,7 @@ At the top of the yaml workflow file, you can specify default parameters to be u
 
 The `inputs` block allows you to specify named inputs \(e.g. a [versioned dataset](../../data/data-overview/private-datasets-repository/)\) to be referenced and consumed by your jobs. Note: you can also collect inputs in a separate yaml and reference this file as an `inputPath` when creating a workflow run.
 
-Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a genereated value or ID that may be outtputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).
+Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a generated value or ID that may be outputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).
 
 ### `jobs`
 
@@ -29,8 +29,8 @@ defaults:
     instance-type: metal-cpu
 
 # workflow takes two inputs, neither of which have defaults. This means that
-# when the workflow is run corresponding input corresponding for these values
-# are required, example:
+# when the workflow is run corresponding input for these values are required,
+# for example:
 #
 # {"inputs": {"echo": {"value": "hello world"}, "data": {"id": "test-one"}}}
 #
@@ -42,7 +42,7 @@ inputs:
 
 jobs:
   job-1:
-    # These are inputs for the "job-1" job, they are "aliases" to the
+    # These are inputs for the "job-1" job; they are "aliases" to the
     # workflow inputs
     #
     # All inputs are placed in the "/inputs/<name>" path of the run
@@ -66,11 +66,11 @@ jobs:
         type: dataset
         with:
           id: test-two
-       # The container is responsible creating th file "/outputs/<name>" with the
+       # The container is responsible creating the file "/outputs/<name>" with the
       # content being a small-ish utf-8 encoded string.
       echo2:
         type: string
-     # Set job specific environment variables
+     # Set job-specific environment variables
     env:
       FOOBAR: test
     # Set action
@@ -84,7 +84,7 @@ jobs:
       image: bash:5
   job-2:
     inputs:
-      # these inputs use job-1 outputs instead of workflow inputs, you must
+      # these inputs use job-1 outputs instead of workflow inputsou must
       # specify job-1 in the needs section to reference them here
       data2: job-1.outputs.data2
       echo2: job-1.outputs.echo2
