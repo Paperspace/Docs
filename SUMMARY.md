@@ -53,7 +53,7 @@
 ## Artifacts <a id="data"></a>
 
 * [Data](data/data-overview/README.md)
-  * [Versioned Datasets](data/data-overview/private-datasets-repository/README.md)
+  * [Versioned Data](data/data-overview/private-datasets-repository/README.md)
     * [Public Datasets Repository](data/data-overview/private-datasets-repository/public-datasets-repository.md)
     * [Storage Providers](data/data-overview/private-datasets-repository/storage-providers.md)
   * [Persistent Storage](data/data-overview/persistent-storage.md)

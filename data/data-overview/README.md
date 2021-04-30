@@ -4,9 +4,15 @@ description: There are two types of storage offered in Gradient
 
 # Data
 
-## Datasets
+## [Versioned Data](private-datasets-repository/)
 
-Gradient provides the ability to mount S3 compatible object storage buckets to workloads at runtime.  Datasets have immutable versions that can be used to track your data as it changes.  Learn more [here](private-datasets-repository/).
+Gradient provides the ability to mount S3 compatible object storage buckets to workloads at runtime.  Datasets have immutable versions that can be used to track your data as it changes.  
+
+### Quickstart: Using the web UI uploader
+
+The easiest way to get data into Gradient is to use the web-based uploader. To understand how versioned data works within Gradient and learn about connecting to additional data sources, click [here](private-datasets-repository/).
+
+![](../../.gitbook/assets/2021-04-29-23-33-22.2021-04-29-23_41_13.gif)
 
 ## Persistent Storage 
 
