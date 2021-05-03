@@ -16,7 +16,6 @@ Jobs can be submitted via the Job Builder.  There are a variety of optional and 
 * **Container.** Jobs are run within a docker container. You can run a public or private container. Learn more [here](https://support.paperspace.com/hc/en-us/articles/360003415434). 
 * **Workspace.** The workspace is the collection of code that is run. It can be a Git repository \(public or private\), your local working directory \(if you are using the CLI\) which is uploaded to the docker container during the job running process, or `none` \(default value\). 
 * **Command.** The command is the entry point to the container. This is the line of code that will kick off your Job. It could be a bash script `./run.sh` or `python main.py` as just some examples. 
-* **Ports.** You have the option to attach a public IP automatically. Supports opening multiple ports simultaneously, separated by `:` . Learn more about opening ports [here](https://support.paperspace.com/hc/en-us/articles/360003412574). 
 * **Custom Metrics.** Enter a list of custom metrics to use with Gradient's [statd client](job-metrics/custom-metrics.md), such as `percent_failure` or `percent_success`.
 
 Once you have examined or specified the parameters, hit "Submit Job" and watch the Job run!
@@ -97,16 +96,6 @@ gradient jobs create \
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Job command/entrypoint</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>ports</code>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">An optional list of port mappings to open on the job cluster machine while
-        the job is running. The port mappings are specified as &apos;XXXX:YYYY&apos;
-        where XXXX is an external port number and YYYY is an internal port number.
-        Multiple port mappings can be provided as a comma separated list. Port
-        numbers must be greater than 1023. Note: only /tcp protocol usage is supported.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>workspace</code>

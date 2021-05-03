@@ -83,7 +83,6 @@
   * [Delete a Job](jobs/create-a-job/delete-a-job.md)
   * [List Jobs](jobs/create-a-job/list-your-jobs.md)
   * [Job Logs](jobs/create-a-job/job-logs.md)
-  * [Ports](jobs/create-a-job/ports.md)
   * [Job Metrics](jobs/create-a-job/job-metrics/README.md)
     * [System Metrics](jobs/create-a-job/job-metrics/system-metrics.md)
     * [Custom Metrics](jobs/create-a-job/job-metrics/custom-metrics.md)

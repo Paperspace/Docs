@@ -36,7 +36,6 @@ You'll now have arrived at the Experiment Builder, so you can click the "Fast St
 * **Container.** Experiments are run within a docker container. You can run a public or private container. Learn more [here](https://support.paperspace.com/hc/en-us/articles/360003415434). 
 * **Workspace.** The workspace is the collection of code that is run. It can be a Git repository \(public or private\), your local working directory \(if you are using the CLI\) which is uploaded to the docker container during the job running process, or `none` \(default value\). 
 * **Command.** The command is the entry point to the container. This is the line of code that will kick off your experiment's job. It could be a bash script `./run.sh` or `python main.py` as just some examples. 
-* **Ports.** You have the option to attach a public IP automatically. Supports opening multiple ports simultaneously, separated by `:` . Learn more about opening ports [here](https://support.paperspace.com/hc/en-us/articles/360003412574). 
 * **Custom Metrics.** Enter a list of custom metrics to use with Gradient's statd client, such as `percent_failure` or `percent_success`.
 
 Once you have examined or specified the parameters, hit "Submit Experiment" and watch the Experiment run!

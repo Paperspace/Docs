@@ -10,7 +10,6 @@
 | **Container** | Experiments are run within a docker container. You can run a public or private container. Learn more [here](containers-public-and-private.md).  |
 | **Workspace** | The workspace is the collection of code that is run. The only option in the web UI is a Git repo \(eg [https://github.com/Paperspace/fast-style-transfer.git](https://github.com/Paperspace/fast-style-transfer.git)\).  The CLI offers more advanced options such as specifying a local directory, private Git repos, S3 buckets, and more. |
 | **Command** | The command is the entry point to the container. This is the line of code that will kick off your experiment's job. It could be a bash script `./run.sh` or `python main.py` as a few examples.  |
-| **Ports** | You have the option to attach a public IP automatically. Supports opening multiple ports simultaneously, separated by `:` . Learn more about opening ports [here](ports.md).  |
 | **Custom Metrics** | Enter a list of custom metrics to use with Gradient's statd client, such as percent\_failure or percent\_success. |
 {% endtab %}
 
@@ -29,16 +28,6 @@
       <td style="text-align:left"><code>name</code>
       </td>
       <td style="text-align:left">Experiment name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>ports</code>
-      </td>
-      <td style="text-align:left">An optional list of port mappings to open on the instance while the job
-        is running. The port mappings are specified as &apos;XXXX:YYYY&apos; where
-        XXXX is an external port number and YYYY is an internal port number. Multiple
-        port mappings can be provided as a comma separated list. Port numbers must
-        be greater than 1023. Note: only /tcp protocol usage is supported. Learn
-        more <a href="ports.md">here</a>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>workspace</code>
