@@ -7,11 +7,26 @@ Gradient Actions are composable building blocks for creating reproducible machin
 ```yaml
 uses: container@v1
 with:
-  image: bash:3
+  image: bash:5
   args: ["echo", "hello", "world"]
 ```
 
 In this basic example, the Gradient action called `container@v1` allows us to pick an arbitrary docker container \(in this case the lightweight `bash` container\) and pass arguments directly to it.
+
+## script
+
+```yaml
+uses: script@v1
+with:
+  script: |-
+    echo 'hello world'
+    echo $RANDOM
+  image: bash:5
+```
+
+If you want to run multiple commands, the `script@v1` action allows you to pass a `script` in a [literal-style HereDoc](https://lzone.de/cheat-sheet/YAML#yaml-heredoc-multiline-strings) denoted by `|-`. The pipe will preserve newlines and the dash will remove extra newlines after the block.
+
+Note: The image you provide will need to have `bash` available in it's PATH.
 
 ## git-checkout
 
