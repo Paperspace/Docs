@@ -16,7 +16,7 @@ Navigate to your notebook and open the Notebook IDE. In the top right there is a
 
 ![](../../../.gitbook/assets/share.png)
 
-### Viewing a Community Notebook, & Static Versions
+### Viewing a Community Notebook, and Static Versions
 
 Anyone can view a Notebook that has been made Public just by visiting the URL! 
 

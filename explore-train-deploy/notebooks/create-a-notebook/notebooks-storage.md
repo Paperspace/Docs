@@ -8,5 +8,5 @@ Every notebook in your account automatically includes a persistent filesystem. U
 
 ### `/storage` directory
 
-This is persistent storage which is an NFS mount of a volume on a storage server. This quota/size is determined by the team subscription so can range from 5GB up to 1TB. [Contact sales](https://info.paperspace.com/contact-sales) if you need to increase this limit beyond what is available with the default subscription plans\).
+This is persistent storage which is an NFS mount of a volume on a storage server. This quota/size is determined by the team subscription so can range from 5GB up to 1TB. [Contact sales](https://info.paperspace.com/contact-sales) if you need to increase this limit beyond what is available with the default subscription plans.
 

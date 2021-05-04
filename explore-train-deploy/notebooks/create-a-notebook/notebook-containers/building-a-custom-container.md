@@ -2,10 +2,10 @@
 
 ## About
 
-The Custom Containers feature lets you pull your own image from a container registry e.g. Docker Hub. This article will help you prepare a custom Docker container and show you how to bring that Container into Gradient by creating either a Notebook, Workflow, or Deployment with your custom container. 
+The Custom Containers feature lets you pull your own image from a container registry e.g., Docker Hub. This section will help you prepare a custom Docker container and show you how to bring that Container into Gradient by creating either a Notebook, Workflow, or Deployment with your custom container. 
 
 {% hint style="info" %}
-**ProTip!** Using a Custom Container does not require building one from scratch.  See this [article](./) for using one of the many freely available and up-to-date containers hosted on various container registries \(eg [Docker Hub](https://hub.docker.com/), [NGC](https://ngc.nvidia.com/catalog/landing) etc.\).
+**ProTip!** Using a Custom Container does not require building one from scratch.  See this [article](./) for using one of the many freely available and up-to-date containers hosted on various container registries \(e.g., [Docker Hub](https://hub.docker.com/), [NGC](https://ngc.nvidia.com/catalog/landing) etc.\).
 {% endhint %}
 
 ## Build a Custom Container Locally
@@ -22,7 +22,7 @@ You can make your own file \(see Requirements below\) or use one like this examp
 #### 3. In the same directory:
 
 * Run: `docker build -t <name of image>` For the example file above, you would enter: `docker build -t test-container`
-* Tag the image so that it can be added to a repo with the image id, your Docker Hub username, and a name for the image :
+* Tag the image so that it can be added to a repo with the image id, your Docker Hub username, and a name for the image:
 
 `docker tag <image id> <dockerhub username>/test-container:latest`
 
@@ -33,17 +33,17 @@ You can make your own file \(see Requirements below\) or use one like this examp
 ###  Requirements of Custom Notebooks
 
 * Python
-* Jupyter and all of Jupyter dependencies must be installed:
+* Jupyter and all of Jupyter's dependencies must be installed:
 
 [        http://jupyter.org/install](http://jupyter.org/install)
 
 `conda install -c conda-forge jupyterlab`
 
-If you don't specify a user, your container user will be 'root' 
+If you don't specify a user, your container user will be 'root'.
 
 ## Bringing your Custom Container to Gradient
 
-After you've pushed your custom container to Docker Hub, NGC, etc. or you found a public container that is already there, it's time to pull it into Gradient!
+After you've pushed your custom container to Docker Hub, NGC, etc., or you found a public container that is already there, it's time to pull it into Gradient!
 
 ### Notebooks  
 
@@ -51,7 +51,7 @@ Click the advanced options toggle on the notebook create a notebook page. Follow
 
 ### Workflows
 
-Just specify the path of the container e.g. `paperspace/gradient-sdk` from within a Workflow step using `image`. Learn more [here](../../../workflows/).
+Just specify the path of the container e.g., `paperspace/gradient-sdk` from within a Workflow step using `image`. Learn more [here](../../../workflows/).
 
 ### Deployments
 

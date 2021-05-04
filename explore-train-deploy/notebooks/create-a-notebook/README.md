@@ -95,7 +95,7 @@ Usage: gradient notebooks create \
 | `registryPassword` | Registry password |
 | `shutdownTimeout` | Shutdown timeout in hours |
 | `isPreemptible` | Use a preemptible instance type |
-| `tag` |  One or multiple tags that you want to add to the notebook |
+| `tag` | One or multiple tags that you want to add to the notebook |
 | `workspace` | S3 url or git repository. Directory uploads are not yet supported`apiKey` |
 | `workspacePassword` | Workspace password |
 | `workspaceRef` | Git commit hash, branch name or tag |
@@ -130,9 +130,9 @@ gradient notebooks start [options...]
 |   Option | Description |
 | :--- | :--- |
 | `id` | Notebook ID \[required\] |
-| `machineType` |  Virtual Machine type label e.g. P5000 \[required\] |
-| `clusterId` |  Cluster ID |
-| `name` |  Notebook name |
+| `machineType` | Virtual Machine type label e.g. P5000 \[required\] |
+| `clusterId` | Cluster ID |
+| `name` | Notebook name |
 | `shutdownTimeout` | Shutdown timeout in hours |
 {% endtab %}
 {% endtabs %}
