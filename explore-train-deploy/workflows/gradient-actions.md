@@ -42,7 +42,7 @@ with:
 
 In this example, the Gradient action `git-checkout@v1` clones the public GitHub URL `https://github.com/user/my-public-repo` at ref `46aa...` into a volume named `repo`. The cloned files are accessible at `inputs/<input-name>` \(in this case, `inputs/repo`\), and subsequent jobs that specify a volume input can also access the repository files at `inputs/<input-name>`.
 
-Note: to clone a private repository, add your username as an action parameter, [set a Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret) with a [GitHub access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) value, and add your password as an environment variable named `GIT_PASSWORD` \(example below\).
+Note: to clone a private repository, add your username as an action parameter, [set a Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret) with a [GitHub access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) value, and add a password parameter \(example below\).
 
 ```yaml
 inputs:
@@ -52,8 +52,7 @@ uses: git-checkout@v1
 with:
   url: https://github.com/user/my-private-repo
   username: paperspace
-env:
-  GIT_PASSWORD: secret:<MY_SECRET_NAME>
+  password: secret:<MY_SECRET_NAME>
 ```
 
 ## model-create
