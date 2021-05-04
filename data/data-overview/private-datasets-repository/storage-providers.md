@@ -1,6 +1,6 @@
 # Storage Providers
 
-Storage providers are a way to connect storage to Gradient. Gradient manages this storage provider to ensure that your data is verified and immutable. Gradient will create a folder with your Paperspace team handle at this storage provider. Gradient does not provide general s3 capabilities through the storage provider interface it is merely a way to manage credentials and the storage of specific Gradient features such as models, notebook workspaces and datasets currently only available on private and managed clusters.
+Storage providers are a way to connect storage to Gradient. Gradient manages this storage provider to ensure that your data is verified and immutable. Gradient will create a folder with your Paperspace team handle at this storage provider. Gradient does not provide general S3 capabilities through the storage provider interface: it is merely a way to manage credentials and the storage of specific Gradient features such as models, notebook workspaces and datasets currently only available on private and managed clusters.
 
 **Supported types:**
 
@@ -12,7 +12,7 @@ From within a new or existing S3 bucket, you'll need to edit the CORS configurat
 
 **CORS**
 
-To access an S3 compatible storage provider you may have to add CORS rules to your bucket
+To access an S3-compatible storage provider you may have to add CORS rules to your bucket
 
 ```text
 [
