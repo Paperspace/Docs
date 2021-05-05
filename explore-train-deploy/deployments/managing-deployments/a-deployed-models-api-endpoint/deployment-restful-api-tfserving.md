@@ -212,7 +212,7 @@ Use this format to specify your input tensors, if individual named inputs do not
 
 In the columnar format, inputs are keyed to the **inputs** key in the JSON request.
 
-The value for **inputs** key can either a single input tensor or a map of input name/tensors key-value pairs \(listed in their natural nested form\). Each input can have an arbitrary shape and does not need to share the same 0-th dimension \(aka batch size\) as required by the row format described above.
+The value for **inputs** key can either a single input tensor or a map of input name/tensors key-value pairs \(listed in their natural nested form\). Each input can have an arbitrary shape and does not need to share the same 0-th dimension \(aka. batch size\) as required by the row format described above.
 
 Columnar representation of the previous example is as follows:
 

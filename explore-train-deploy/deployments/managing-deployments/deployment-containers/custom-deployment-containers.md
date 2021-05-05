@@ -10,13 +10,13 @@ Gradient provides the ability to use any public or private Docker container.  Th
 
 | Parameter | Description |
 | :--- | :--- |
-| Container Name | The path to the container eg `tensorflow/serving:latest-gpu` |
-| Registry Username | Username used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g. Docker Hub. |
-| Registry Password | Password used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g. Docker Hub. |
-| Image Server | Docker image server eg https://index.docker.io/v1 |
+| Container Name | The path to the container, e.g., `tensorflow/serving:latest-gpu` |
+| Registry Username | Username used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g., Docker Hub. |
+| Registry Password | Password used to access docker image.  This field is only required if your container originates from somewhere that is password-protected, e.g., Docker Hub. |
+| Image Server | Docker image server, e.g., https://index.docker.io/v1 |
 | Container Model Path | Path to the model within the container |
 | Method | Method |
-| Port | Ports to open up eg 80:8080 |
+| Port | Ports to open up, e.g., 80:8080 |
 | Container URL Path | Docker image for model serving |
 | Endpoint URL Path |  |
 | Docker Arguments \(CSV\) |  |
@@ -104,7 +104,7 @@ To run a custom container on a private registry, you need to specify the followi
 {% tab title="Web UI" %}
 Populate the Container Name, Image Server, Registry Username, Registry Password fields \(plus any other optional fields\) to pull a container from your private registry. 
 
-![](../../../../.gitbook/assets/image%20%2893%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![](../../../../.gitbook/assets/image%20%2893%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
