@@ -191,3 +191,13 @@ GetCatImageDatabase:
 
 then run another workflow and output a different file to the same ID, say the MD5 sum of the data instead of the data itself, then it won't update the earlier dataset and add the new file alongside the first one, but create a copy under a new `id:version` that does not contain the previous file. This is the behavior you want for a production setup, with things versioned and often immutable, but it requires remembering how it is working when setting things up.
 
+### Test whether a Python import will work
+
+To see if a Python module is present on the container you are using without having to run a Python script, run, e.g.,
+
+```yaml
+- bash
+- -c
+- python3 -c "import <name of module>"
+```
+
