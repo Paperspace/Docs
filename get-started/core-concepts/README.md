@@ -20,13 +20,13 @@ Using advanced ML components contained within Projects requires [creating a clus
 
 A Gradient [Project](../managing-projects/) is a collection of Workflows, Models, and Deployments. 
 
-### Workflows \(Private Beta\)
+### Workflows
 
 Workflows are the newest and most powerful way to orchestrate full end-to-end machine learning application development.  Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax to easily create powerful automation.
 
 ### Models
 
-You can either upload a model or generate models from your training workloads which can be interpreted and stored in the [Gradient Model Repository](../../data/models/).  
+You can either upload a model or generate models from your training workloads which can be stored in the [Gradient Model Repository](../../data/models/).  
 
 ### Deployments \(inference/model serving\)
 
@@ -34,7 +34,7 @@ Once a model is created, you can easily serve the model high-performance, low-la
 
 ## Data
 
-#### \*\*\*\*[**Versioned Datasets**](../../data/data-overview/private-datasets-repository/)\*\*\*\*
+#### \*\*\*\*[**Versioned Data**](../../data/data-overview/private-datasets-repository/)\*\*\*\*
 
 Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Datasets can be used as input to Gradient workloads as well as outputs. Gradient provides the ability to mount S3 compatible object storage buckets at runtime.  Learn more [here](../../data/data-overview/private-datasets-repository/).
 

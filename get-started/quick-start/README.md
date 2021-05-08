@@ -45,7 +45,7 @@ In order to unlock Workflows, Models, and Deployments, please [contact](https://
 
 ### Create a Project
 
-Projects organize your work.  To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**, provide a name, and click **create**. 
+Projects organize your work.  To create a Project, navigate to **Projects** and click **Create Project**, provide a name, and click **create**. 
 
 ![](../../.gitbook/assets/screen-shot-2021-04-22-at-11.46.07-am.png)
 
@@ -62,8 +62,9 @@ You can run Workflows from the web interface or CLI. The first step is to create
 ### **Steps**
 
 1. \*\*\*\*[**Install the CLI**](install-the-cli.md)\*\*\*\*
-2. **Download or copy the sample Workflow YAML file to your computer**
-3. **Run the Workflow from the CLI**
+2. \*\*\*\*[**Connect your account**](install-the-cli.md#connecting-your-account)\*\*\*\*
+3. **Download or copy the sample Workflow YAML file to your computer**
+4. **Run the Workflow from the CLI**
 
 ```bash
 gradient workflows run  \ 

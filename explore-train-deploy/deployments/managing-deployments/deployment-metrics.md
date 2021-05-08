@@ -1,7 +1,7 @@
 # Deployment Metrics
 
 {% hint style="warning" %}
-Deployment metrics are a Gradient Private Cluster feature. [Contact Sales](https://info.paperspace.com/contact-sales) for inquiries!
+Deployment metrics are a Gradient Private Cluster feature. [Contact Sales](https://info.paperspace.com/contact-sales-gradient) for inquiries!
 {% endhint %}
 
 ![](../../../.gitbook/assets/image%20%2899%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29%20%281%29.png)

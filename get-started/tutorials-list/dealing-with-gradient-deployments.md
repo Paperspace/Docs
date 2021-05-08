@@ -11,9 +11,9 @@ Gradient Deployments enable a hassle-free, automatic “push to deploy” option
 
 Gradient deployments come with out-of-the-box integration with TensorFlow models, which can be easily extended to serve other types of models and data. The deployments support a variety of GPU & CPU machine types with per-second billing. Deployments can be scaled to multiple instances running behind a load balancer that exposes a dedicated endpoint.
 
-In this tutorial, we will create a deployment from an existing TensorFlow model. This guide is a continuation of the tutorial, Registering Models in Gradient.
+In this tutorial, we will create a deployment from an existing TensorFlow model. This guide is a continuation of the tutorial, [Registering Models](registering-models-in-gradient.md).
 
-Clone the repo [https://github.com/janakiramm/fashionmnist](https://github.com/janakiramm/fashionmnist) that contains the code for training and inferencing the model.
+Clone the repo [https://github.com/gradient-ai/fashionmnist](https://github.com/gradient-ai/fashionmnist) to access the inference code.
 
 ## Turning a Registered Model into a Deployment 
 
@@ -26,21 +26,21 @@ gradient models list
 ```
 
 ```text
-+------+-----------------+------------+------------+----------------+ 
-| Name | ID              | Model Type | Project ID | Experiment ID  | 
-+------+-----------------+------------+------------+----------------+ 
-| None | mosdnkkv1o1xuem | Tensorflow | prioax2c4  | e720893n7f5vx  | 
-+------+-----------------+------------+------------+----------------+
++------+-----------------+------------+------------+
+| Name | ID              | Model Type | Project ID |
++------+-----------------+------------+------------+
+| None | mosdnkkv1o1xuem | Tensorflow | prioax2c4  |
++------+-----------------+------------+------------+
 ```
 
-Run the below command to convert the registered model into a scalable deployment.
+Run the below command to convert the registered model into a scalable deployment. Note: You can also perform the same operations from the user interface.
 
 ```bash
 gradient deployments create \
     --deploymentType TFServing \
     --modelId mosdnkkv1o1xuem \
     --name "Fashion MNIST Model" \
-    --machineType G1 \
+    --machineType C5 \
     --imageUrl tensorflow/serving \
     --instanceCount 1
 ```
@@ -73,7 +73,7 @@ This should return:
 Deployment started
 ```
 
-You can list all the deployments with gradient Deployments list command.
+You can list all the deployments with the Gradient Deployments list command.
 
 ```bash
 gradient deployments list
@@ -93,15 +93,19 @@ The list of deployments can also be accessed from the web UI.
 
 ## Accessing the Deployment for Inferencing
 
-Each Gradient Deployment results in a endpoint URL that’s compatible with Tensorfow Serving scheme. The last step of this tutorial generated an endpoint URL [https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict](https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict)   
-that can be used for inference.
+Each Gradient Deployment results in an endpoint URL that’s compatible with TensorFlow Serving scheme. The last step of this tutorial generated an endpoint URL [https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict](https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict) that can be used for inference.
 
-Switch to the infer folder of the cloned repo and execute the following command:
+Switch to the infer folder of the cloned repo and execute the following commands:
 
 ```text
 export SERVE_URL=https://services.paperspace.io/model-serving/deslid8n74p4bvs:predict
+```
+
+```text
 python infer.py
 ```
+
+You should see the following output:
 
 ```text
 The model predicted this as a Ankle boot, and it was actually a Ankle boot

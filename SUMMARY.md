@@ -11,11 +11,12 @@
 * [FAQ](get-started/faq.md)
 * [Organizing Projects](get-started/managing-projects/README.md)
   * [Secrets](get-started/managing-projects/using-secrets.md)
+  * [Storing an API key as a Secret](get-started/managing-projects/storing-an-api-key-as-a-secret.md)
 * [Tutorials](get-started/tutorials-list/README.md)
   * [Get started with Notebooks](get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md)
   * [End-to-end example](get-started/tutorials-list/end-to-end-example.md)
   * [Workflows sample project](get-started/tutorials-list/workflows-sample-project.md)
-  * [Managing Models](get-started/tutorials-list/registering-models-in-gradient.md)
+  * [Registering Models in Gradient](get-started/tutorials-list/registering-models-in-gradient.md)
   * [Using Deployments](get-started/tutorials-list/dealing-with-gradient-deployments.md)
 
 ## Explore, train, deploy
