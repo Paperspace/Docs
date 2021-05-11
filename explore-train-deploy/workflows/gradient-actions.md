@@ -52,8 +52,25 @@ uses: git-checkout@v1
 with:
   url: https://github.com/user/my-private-repo
   username: paperspace
-  password: secret:<MY_SECRET_NAME>
+  password: secret:MY_SECRET_NAME
 ```
+
+## s3-download
+
+```yaml
+inputs:
+  s3:
+    type: volume
+uses: s3-download@v1
+with:
+  url: s3://bucket/path/
+  access-key: MYACCESSKEY
+  secret-access-key: secret:MY_SECRET_NAME
+```
+
+The `s3-download@v1` Gradient action copies the contents of an s3 bucket into a volume (in this example, the volume is named `s3`).  Subsequent jobs that specify an input of `type: volume` can access the downloaded files within that job at `inputs/<input-name>`.
+
+Note: `access-key` and `secret-access-key` are required parameters, and the latter must be a [Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret).  Optional parameters include `region` (for AWS buckets) and `endpoint` (for non-AWS buckets).
 
 ## model-create
 
