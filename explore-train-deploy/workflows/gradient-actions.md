@@ -79,14 +79,14 @@ inputs:
   model:
     type: dataset
     with:
-      id: my-dataset
+      ref: dsr8k5qzn401lb5:klfoyy9 # Example dataset ref
 outputs:
   model-id:
     type: string
 uses: create-model@v1
 with:
   name: my-model-name
-  type: Tensorflow #Tensorflow, ONNX, or Custom
+  type: Tensorflow # Tensorflow, ONNX, or Custom
 ```
 
 In this example, the `create-model@v1` action takes a dataset input named `model` and outputs a string ID \(named `model-id`\) that references a [Gradient model](../../data/models/). With this reference, the created model can be tested, edited, or deployed in future jobs.
