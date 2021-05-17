@@ -79,7 +79,7 @@ inputs:
   model:
     type: dataset
     with:
-      id: my-dataset
+      ref: dsr8k5qzn401lb5:klfoyy9
 outputs:
   model-id:
     type: string
