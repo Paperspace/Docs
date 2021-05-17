@@ -40,7 +40,7 @@ job-1:
     my-dataset:
       type: dataset
       with:
-        id: dst123abc
+        ref: dst123abc
    uses: container@v1
    with:
     image: bash:5
@@ -55,7 +55,7 @@ job-1:
     my-dataset:
       type: dataset
       with:
-        id: dst123abc
+        ref: dst123abc
   uses: container@v1
   with:
     image: bitnami/git
