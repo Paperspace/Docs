@@ -22,6 +22,37 @@ Dataset versions have an uncommitted and committed state. When a Dataset is unco
 
 ## Creating a Dataset and Dataset Version
 
+{% tabs %}
+{% tab title="GUI" %}
+To create a new dataset \(one that does not yet have an ID\) in the GUI, go to the Data tab in your team's page and click "Create a Dataset". This brings up a window to give it a name, optional description, and select the storage provider on which it will be created.
+
+![Creation of new dataset](../../../.gitbook/assets/image%20%2874%29.png)
+
+If the team already has datasets, there is a similar "Add" button. The resulting screen after creation allows you to upload files, or you can just retrieve the dataset ID for use elsewhere.
+
+![Optional importing of data](../../../.gitbook/assets/image%20%2860%29.png)
+
+Importing data, or adding it in some other way such as a Workflow output, will create a new version of the dataset.
+{% endtab %}
+
+{% tab title="CLI" %}
+To create a new dataset \(one that does not yet have an ID\) in the CLI, use gradient datasets create with a command like
+
+```text
+$ gradient datasets create --name democli --storageProviderId ssfe843ndkjdsnr
+Created dataset: dsr5zdx0thjhfe2
+```
+
+To create a new dataset version, use, e.g.,
+
+```text
+$ gradient datasets versions create --id=dst364npcw6ccok --source-path=./some-data/
+Created dataset version: dst364npcw6ccok:fo5rp4m
+Committed dataset version: dst364npcw6ccok:fo5rp4m
+```
+{% endtab %}
+{% endtabs %}
+
 ```text
 $ gradient datasets versions create --id=dst364npcw6ccok --source-path=./some-data/
 Created dataset version: dst364npcw6ccok:fo5rp4m

@@ -68,9 +68,9 @@ with:
   secret-access-key: secret:MY_SECRET_NAME
 ```
 
-The `s3-download@v1` Gradient action copies the contents of an s3 bucket into a volume (in this example, the volume is named `s3`).  Subsequent jobs that specify an input of `type: volume` can access the downloaded files within that job at `inputs/<input-name>`.
+The `s3-download@v1` Gradient action copies the contents of an s3 bucket into a volume \(in this example, the volume is named `s3`\). Subsequent jobs that specify an input of `type: volume` can access the downloaded files within that job at `inputs/<input-name>`.
 
-Note: `access-key` and `secret-access-key` are required parameters, and the latter must be a [Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret).  Optional parameters include `region` (for AWS buckets) and `endpoint` (for non-AWS buckets).
+Note: `access-key` and `secret-access-key` are required parameters, and the latter must be a [Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret). Optional parameters include `region` \(for AWS buckets\) and `endpoint` \(for non-AWS buckets\).
 
 ## model-create
 
