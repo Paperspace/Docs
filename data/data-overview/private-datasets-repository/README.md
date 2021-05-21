@@ -53,12 +53,6 @@ Committed dataset version: dst364npcw6ccok:fo5rp4m
 {% endtab %}
 {% endtabs %}
 
-```text
-$ gradient datasets versions create --id=dst364npcw6ccok --source-path=./some-data/
-Created dataset version: dst364npcw6ccok:fo5rp4m
-Committed dataset version: dst364npcw6ccok:fo5rp4m
-```
-
 ## Using Datasets
 
 You can use existing Datasets or create new ones. In the below scenarios, the following dataset actions are specified:
