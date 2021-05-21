@@ -8,7 +8,7 @@ The code can be run by the user to create this project, or used as a starting po
 
 ### **Setup**
 
-Assuming you are [signed up for Gradient](https://console.paperspace.com/signup?gradient=true) and [logged in](https://docs.paperspace.com/gradient/get-started/quick-start#logging-in-for-the-first-time), to get started, clone the [workflows sample project repo](https://github.com/gradient-ai/StyleGAN2-with-Workflows), which will give you the files `stylegan-2-download-and-extract-data.yaml` and  `stylegan2-train-and-evaluate-model.yaml`. These two YAML files specify the two workflows that make up this project, and can be run in the usual way that Gradient Workflows are run. The files are also shown [here](https://docs.paperspace.com/gradient/get-started/tutorials-list/workflows-sample-project/yaml-files-for-stylegan2-workflow) for reference.
+Assuming you are [signed up for Gradient](https://console.paperspace.com/signup?gradient=true) and [logged in](https://docs.paperspace.com/gradient/get-started/quick-start#logging-in-for-the-first-time), to get started, clone the [workflows sample project repo](https://github.com/gradient-ai/StyleGAN2-with-Workflows), which will give you the files `stylegan-2-download-and-extract-data.yaml` and  `stylegan2-train-and-evaluate-model.yaml`. These two YAML files specify the two workflows that make up this project, and can be run in the usual way that Gradient Workflows are run. The files are also shown [here](https://docs.paperspace.com/gradient/get-started/tutorials-list/workflows-sample-project/yaml-file-for-stylegan2-workflow) for reference.
 
 Currently, the way to run Gradient Workflows is to use the command line interface \(CLI\), with a command like
 
