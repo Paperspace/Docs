@@ -1,4 +1,4 @@
-# YAML file for StyleGAN2 workflow
+# YAML file for StyleGAN2 workflows
 
 These are the YAML files used for the Workflows sample project based on StyleGAN2.
 
