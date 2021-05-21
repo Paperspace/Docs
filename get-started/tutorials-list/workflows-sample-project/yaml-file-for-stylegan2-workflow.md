@@ -24,10 +24,10 @@ These are the YAML files used for the Workflows sample project based on StyleGAN
 #
 # The user needs to create their own Gradient managed datasets for job outputs to replace the IDs this file contains:
 #
-# getCatImageDatabase -> "dsr5spfj2aqzlfg"
-# extractImages       -> "dsts5p5o8fe86j3"
+# getCatImageDatabase -> "dstlbm17s9ib1ld"
+# extractImages       -> "dstfq4pfrtz4fav"
 #
-# Last updated: May 19th 2021
+# Last updated: May 20th 2021
 
 # Our download and extract steps do not require a GPU, so we default to a C5 machine for all steps
 
@@ -49,7 +49,7 @@ jobs:
       catImageDatabase:
         type: dataset
         with:
-          id: "dsr5spfj2aqzlfg"
+          id: "dstlbm17s9ib1ld"
     uses: container@v1
     with:
       args:
@@ -99,15 +99,12 @@ jobs:
     inputs:
       repo:
         type: volume
-      catImageDatabase:
-        type: dataset
-        with:
-          id: "dsr5spfj2aqzlfg"
+      catImageDatabase: getCatImageDatabase.outputs.catImageDatabase
     outputs:
       extractedImages:
         type: dataset
         with:
-          id: "dsts5p5o8fe86j3"
+          id: "dstfq4pfrtz4fav"
     uses: container@v1
     with:
       args:
@@ -193,12 +190,12 @@ jobs:
 #
 # The user needs to create their own Gradient managed datasets for job outputs to replace the IDs this file contains:
 #
-# getPretrainedModel            -> "dst02bn9qv63h46"
-# evaluatePretrainedModel       -> "dsrdiy8ajemxovu"
-# generateImagesPretrainedModel -> "dsrbtaba4wavm85"
-# trainOurModel                 -> "dsri7a3fbpwoy80"
-# evaluateOurModel              -> "dsr7al5kfbi6avo"
-# generateImagesOurModel        -> "dsr0nwue2rcqrcz"
+# getPretrainedModel            -> "dsr4si1mzvjyls8"
+# evaluatePretrainedModel       -> "dsr7sry8b6mkzmi"
+# generateImagesPretrainedModel -> "dsrtxabxfqmjbrw"
+# trainOurModel                 -> "dsrso5rn4vtjlf4"
+# evaluateOurModel              -> "dstp3of0i4tr38s"
+# generateImagesOurModel        -> "dstba8lqk9g2x7v"
 #
 # The ID for the Gradient managed dataset should correspond to the ID and version output from running the first workflow
 # of the pair in this project (stylegan2-download-and-extract-data.yaml)
@@ -206,7 +203,7 @@ jobs:
 # We create different datasets for the output from each job because jobs can run in parallel and if their outputs were
 # put into the same dataset it would create clashing versions.
 #
-# Last updated: May 19th 2021
+# Last updated: May 20th 2021
 
 jobs:
 
@@ -235,7 +232,7 @@ jobs:
       pretrainedNetwork:
         type: dataset
         with:
-          id: "dst02bn9qv63h46"
+          id: "dsr4si1mzvjyls8"
     uses: container@v1
     with:
       args:
@@ -263,13 +260,13 @@ jobs:
       extractedImagesForTraining:
         type: dataset
         with:
-          id: "dsts5p5o8fe86j3:dcoh1po" # New one is 6qstm0t
+          id: "dstfq4pfrtz4fav:17dcxcj"
       pretrainedNetwork: getPretrainedModel.outputs.pretrainedNetwork
     outputs:
       evaluationPretrained:
         type: dataset
         with:
-          id: "dsrdiy8ajemxovu"
+          id: "dsr7sry8b6mkzmi"
     uses: container@v1
     with:
       args:
@@ -312,7 +309,7 @@ jobs:
       generatedCatsPretrained:
         type: dataset
         with:
-          id: "dsrbtaba4wavm85"
+          id: "dsrtxabxfqmjbrw"
     uses: container@v1
     with:
       args:
@@ -345,14 +342,14 @@ jobs:
       extractedImagesForTraining:
         type: dataset
         with:
-          id: "dsts5p5o8fe86j3:dcoh1po" # New one is 6qstm0t
+          id: "dstfq4pfrtz4fav:17dcxcj"
       repo:
         type: volume
     outputs:
       ourTrainedNetwork:
         type: dataset
         with:
-          id: "dsri7a3fbpwoy80"
+          id: "dsrso5rn4vtjlf4"
     uses: container@v1
     with:
       args:
@@ -378,7 +375,7 @@ jobs:
             --result-dir=/outputs/ourTrainedNetwork
           cd /outputs/ourTrainedNetwork/00000-stylegan2-cat-1gpu-config-f
           gzip network-final.pkl
-          split -a 3 -b 20m network-final.pkl.gz network-final_
+          split -a 3 -b 100m network-final.pkl.gz network-final_
           rm network-final.pkl.gz network-snapshot-*
           ls "-aFlR" /outputs
       image: tensorflow/tensorflow:1.14.0-gpu-py3
@@ -400,13 +397,13 @@ jobs:
       extractedImagesForTraining:
         type: dataset
         with:
-          id: "dsts5p5o8fe86j3:dcoh1po"
+          id: "dstfq4pfrtz4fav:17dcxcj"
       ourTrainedNetwork: trainOurModel.outputs.ourTrainedNetwork
     outputs:
       evaluationOurs:
         type: dataset
         with:
-          id: "dsr7al5kfbi6avo"
+          id: "dstp3of0i4tr38s"
     uses: container@v1
     with:
       args:
@@ -453,7 +450,7 @@ jobs:
       generatedCatsOurs:
         type: dataset
         with:
-          id: "dsr0nwue2rcqrcz"
+          id: "dstba8lqk9g2x7v"
     uses: container@v1
     with:
       args:
