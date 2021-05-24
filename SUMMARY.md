@@ -33,6 +33,7 @@
     * [Persistent Storage](explore-train-deploy/notebooks/create-a-notebook/notebooks-storage.md)
     * [Notebook Containers](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/README.md)
       * [Building a Custom Container](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
+    * [Notebook versioning](explore-train-deploy/notebooks/create-a-notebook/notebook-versioning-1.md)
     * [Notebook Workspace Include Files](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
     * [Community \(Public\) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
 * [Workflows](explore-train-deploy/workflows/README.md)
