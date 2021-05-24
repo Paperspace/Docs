@@ -74,8 +74,7 @@ CloneCatRepo:
   with:
     url: https://github.com/nmb-paperspace/cat-subsample
     username: nmb-paperspace
-  env:
-    GIT_PASSWORD: secret:GIT_PASSWORD
+    password: secret:GIT_PASSWORD
 ```
 
 but then the repo content, here `cat_images_tfrecords.tgz` is put directly into `/inputs`, so the path is `/inputs/repoCat/cat_images_tfrecords.tgz`, without the original repo URL.
