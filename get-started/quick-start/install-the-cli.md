@@ -36,10 +36,11 @@ First, [obtain an API Key](install-the-cli.md#obtaining-an-api-key), and then:
 gradient apiKey XXXXXXXXXXXXXXXXXXX
 ```
 
-Alternatively, you can include your API key with each command:
+Alternatively, you can set the environment variable `PAPERSPACE_API_KEY` temporarily to override your configured api key.
 
 ```bash
-gradient experiments run ... --apiKey XXXXXXXXXXXXXXXXXXX
+export PAPERSPACE_API_KEY=XXXX
+gradient experiments run ...
 ```
 
 **Note:** You can reveal your current API key with `cat ~/.paperspace/config.json`
