@@ -72,6 +72,8 @@ DeployModel:
       - UploadModel
     inputs:
       model-id: UploadModel.outputs.model-id
+    env:
+      PAPERSPACE_API_KEY: secret:MY_API_KEY
     uses: container@v1
     with:
       args:
@@ -81,11 +83,10 @@ DeployModel:
             printenv && gradient deployments create \
             --deploymentType TFServing \
             --modelId $(cat inputs/model-id) \
-            --name "Sample Model"
-            --machineType K80
-            --imageUrl tensorflow/serving:latest-gpu
+            --name "Sample Model" \
+            --machineType K80 \
+            --imageUrl tensorflow/serving:latest-gpu \
             --instanceCount 2
-            --apiKey ${apiKey}
       image: paperspace/gradient-sdk
 ```
 
