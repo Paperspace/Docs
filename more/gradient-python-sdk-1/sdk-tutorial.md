@@ -12,14 +12,11 @@ The SDK is bundled with the [Gradient CLI](../../get-started/quick-start/install
 
 ## Getting Started
 
+This assumes that you have the environment variable `PAPERSPACE_API_KEY` set to your api key. If you are using a Paperspace environment it is recommend to [use a secret to pass it to your workload](https://docs.paperspace.com/gradient/get-started/managing-projects/storing-an-api-key-as-a-secret). If you are using an interactive environment use the `gradient apiKey` command to securely configure your api key.
+
 ```python
 #Import the SDK Client from the gradient package
 from gradient import sdk_client
-```
-
-```python
-#create a API Key
-api_key = "API_KEY_HERE"
 ```
 
 ```python
@@ -30,15 +27,15 @@ cluster = "cl8pwu9qn" # Set your cluster
 
 ```python
 #Set your SDK client 
-deployment_client = sdk_client.DeploymentsClient(api_key)
-models_client = sdk_client.ModelsClient(api_key)
-jobs_client = sdk_client.JobsClient(api_key)
-projects_client = ProjectsClient(api_key)
-experiment_client = sdk_client.ExperimentsClient(api_key)
-workflows_client = sdk_client.WorkflowsClient(api_key)
+deployment_client = sdk_client.DeploymentsClient()
+models_client = sdk_client.ModelsClient()
+jobs_client = sdk_client.JobsClient()
+projects_client = ProjectsClient()
+experiment_client = sdk_client.ExperimentsClient()
+workflows_client = sdk_client.WorkflowsClient()
 
 #or access them all from a single client
-#client = sdk_client.SdkClient(api_key)
+#client = sdk_client.SdkClient()
 ```
 
 ## Print list of projects
