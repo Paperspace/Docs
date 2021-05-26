@@ -95,6 +95,18 @@ Since your Deployment will run as a continuous web service on the public interne
 Finally, now that your Deployment is configured, click **Create Deployment** to create it:
 
 ![](../../../.gitbook/assets/create%20%282%29.png)
+
+#### Environment variables
+
+When running a custom container you can set environment variables for your deployment.
+
+![](../../../.gitbook/assets/image%20%2877%29.png)
+
+Enter them as a 1 level deep JSON object. Environment variables can reference secrets stored on your project, team or cluster using the subsitution syntax: `secret:my-secret` for example:
+
+```text
+{"DB_CONNECTION_STRING": "secret:MY_DB_CONNECTION", "MY_APP_LOG_LEVEL": "debug"}
+```
 {% endtab %}
 
 {% tab title="CLI" %}

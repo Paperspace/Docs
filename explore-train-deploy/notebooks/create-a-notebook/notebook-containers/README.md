@@ -40,7 +40,7 @@ The custom containers feature lets you pull your own image from a container regi
 #### Optional fields:
 
 * Registry Username = your private container registry username; can be left blank for public images
-* Registry Password = your private container registry password; can be left blank for public images
+* Registry Password = your private container registry password; can be left blank for public images. You can use secrets in this fields using the substitution syntax `secret:`
 * Command = must be Jupyter compatible; defaults to `jupyter notebook --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.trust_xheaders=True --NotebookApp.disable_check_xsrf=False --NotebookApp.allow_remote_access=True --NotebookApp.allow_origin='*'` if left blank
 * Container user = optional user; defaults to 'root' if left blank
 

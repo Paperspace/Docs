@@ -46,7 +46,7 @@ If you have a [Gradient subscription](https://gradient.paperspace.com/pricing), 
 
 **Workspace**
 
-Additionally, you have the option to select a remote Github repository to serve as the starting point for your Notebook.  If the repository is private, you need to provide access credentials \(username and a password/apiKey\).  Also, you can provide an optional Github ref that points to a specific version of the repository.
+Additionally, you have the option to select a remote git repository to serve as the starting point for your Notebook.  If the repository is private, you need to provide access credentials \(username and a password/apiKey\). The password field supports subsitution using the `secret:` syntax. Also, you can provide an optional git ref that points to a specific version of the repository.
 
 ### Click Create
 
@@ -92,14 +92,14 @@ Usage: gradient notebooks create \
 | `command` | Command \(executed as `/bin/sh -c 'YOUR COMMAND'`\) |
 | `clusterId` | ID of the cluster to run the notebook. |
 | `registryUsername` | Registry username |
-| `registryPassword` | Registry password |
+| `registryPassword` | Registry password. Supports secrets subsitution with `secret:` syntax |
 | `shutdownTimeout` | Shutdown timeout in hours |
 | `isPreemptible` | Use a preemptible instance type |
 | `tag` | One or multiple tags that you want to add to the notebook |
 | `workspace` | S3 url or git repository. Directory uploads are not yet supported`apiKey` |
-| `workspacePassword` | Workspace password |
+| `workspacePassword` | Workspace password. Supports secrets subsitution with `secret:` syntax |
 | `workspaceRef` | Git commit hash, branch name or tag |
-| `environment` | Environment variables |
+| `environment` | Environment variables. Secret subsitution is preformed on environment variable with keys like `secret:` |
 | `shutdownTimeout`  | Shutdown timeout in hours |
 | `apiKey` | API key to use this time only |
 {% endtab %}
