@@ -15,17 +15,30 @@ YAML requires precise indentation, and tabs are not allowed. The Gradient Notebo
 Many jobs within a workflow spec will not be complex enough to require a script to be imported, but will need several commands. The YAML syntax `|-` \(pipe, dash\) sequence allows this to be laid out such that they don't all have to be on one line, and can be written with their arguments.
 
 ```yaml
-    uses: container@v1
-    with:
-      args:
-        - bash
-        - -c
-        - |-
-          pip install scipy==1.3.3
-          pip install requests==2.22.0
-          pip install Pillow==6.2.1
-          cp -R /inputs/repo/stylegan2 /stylegan2
-          cd /stylegan2
+uses: container@v1
+with:
+  args:
+    - bash
+    - -c
+    - |-
+      pip install scipy==1.3.3
+      pip install requests==2.22.0
+      pip install Pillow==6.2.1
+      cp -R /inputs/repo/stylegan2 /stylegan2
+      cd /stylegan2
+```
+
+Alternatively, Gradient's script action achieves a similar effect:
+
+```yaml
+uses: script@v1
+with:
+  script: |-
+    pip install scipy==1.3.3
+    pip install requests==2.22.0
+    pip install Pillow==6.2.1
+    cp -R /inputs/repo/stylegan2 /stylegan2
+    cd /stylegan2
 ```
 
 ### Directory names
