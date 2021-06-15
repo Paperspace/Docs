@@ -89,7 +89,7 @@ A read-only collection of sample datasets datasets are provided for free for use
         </p>
       </td>
       <td style="text-align:left">
-        <p></p>
+        <p>COCO is a large-scale object detection, segmentation, and captioning dataset.</p>
         <p>
           <br />Source: <a href="http://cocodataset.org/">http://cocodataset.org/</a>
         </p>
@@ -112,13 +112,13 @@ A read-only collection of sample datasets datasets are provided for free for use
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><em><b>StyleGan</b></em>
+        <p><em><b>StyleGAN</b></em>
         </p>
         <p><code>/datasets/stylegan</code>
         </p>
       </td>
       <td style="text-align:left">
-        <p>StyleGan is a Style-Based Generator Architecture for Generative Adversarial
+        <p>StyleGAN is a Style-Based Generator Architecture for Generative Adversarial
           Networks. This dataset allows for photographs of people to be produced
           by the generator.</p>
         <p>
@@ -148,10 +148,11 @@ A read-only collection of sample datasets datasets are provided for free for use
         </p>
       </td>
       <td style="text-align:left">
-        <p>A dataset by comma.ai that includes over 33 hours of commute in California&apos;s
-          280 highway.</p>
+        <p>A dataset by comma.ai that includes over 33 hours of commute on California&apos;s
+          I280 freeway.</p>
         <p>
-          <br />Source: https://github.com/commaai/comma2k19</p>
+          <br />Source: <a href="https://github.com/commaai/comma2k19">https://github.com/commaai/comma2k19</a>
+        </p>
       </td>
     </tr>
     <tr>

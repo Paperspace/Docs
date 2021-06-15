@@ -12,9 +12,9 @@ Gradient datasets require a private [Gradient Cluster](../../../gradient-private
 
 Datasets have multiple versions that can be referenced. You can specify a message with a new dataset version to provide info around a newly created dataset version. In addition, you can tag a specific dataset version with a custom name as well. Here are the available ways to reference a dataset:
 
-* \[dataset-id\]:latest, this will use the latest version of your dataset
-* \[dataset-id\]:\[dataset-version\], this will the use the specified dataset-version
-* \[dataset-id\]:\[dataset-tag\], this will use the specified  dataset version that the dataset-tag points to
+* `[dataset-id]:latest` : this will use the latest version of your dataset
+* `[dataset-id]:[dataset-version]`: this will the use the specified dataset-version
+* `[dataset-id]:[dataset-tag]` : this will use the specified  dataset version that the dataset-tag points to
 
 ### Committed state
 
