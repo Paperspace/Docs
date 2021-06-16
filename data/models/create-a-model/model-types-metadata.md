@@ -12,7 +12,7 @@ To store Models in the Models list, add the following Model-specific parameters 
 | :--- | :--- |
 | `"Tensorflow"` | TensorFlow compatible model outputs |
 | `"ONNX"` | ONNX model outputs |
-| `"Custom"` | Custom model type \(e.g., a simple flask server\) |
+| `"Custom"` | Custom model type \(e.g., a simple Flask server\) |
 
 ## Custom model metadata
 

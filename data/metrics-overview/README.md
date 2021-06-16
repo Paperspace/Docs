@@ -24,7 +24,7 @@ All Gradient workloads like Experiments and Deployments monitor and track CPU, M
 
 For example, accuracy and mean squared errors are two common metrics for classification and regression, respectively.
 
-If your deployment uses TF Serving, some metrics such as`tensorflow:core:direct_session_runs`, `tensorflow:cc:saved_model:load_attempt_count` etc. will be logged automatically.
+If your deployment uses TF Serving, some metrics such as`tensorflow:core:direct_session_runs`, `tensorflow:cc:saved_model:load_attempt_count` , etc. will be logged automatically.
 
 ## **Custom metrics**
 

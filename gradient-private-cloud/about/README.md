@@ -21,7 +21,7 @@ This section of our documentation covers the private cluster options.  If you ar
 
 ### Managed Service
 
-We charge per hour for compute time on _paid_ instances \(see our [free tier](../../more/instance-types/free-instances.md)\).  Optionally, you can upgrade your [subscription](https://gradient.paperspace.com/pricing) to access higher concurrency and additional features. 
+We charge per hour for compute time on _paid_ instances \(see our [free tier](../../more/instance-types/free-instances.md)\). Optionally, you can upgrade your [subscription](https://gradient.paperspace.com/pricing) to access higher concurrency and additional features. 
 
 ### Managed Private Clusters 
 
@@ -33,8 +33,8 @@ In addition, instances used to run workloads are charged at the regular rate \(s
 ### Self-Hosted
 
 **Compute, Storage, & Networking**  
-Customers are responsible for their infrastructure costs.  Gradient does not bill for any compute, storage, and networking costs other than the [compute premium](https://gradient.paperspace.com/private-cluster-utilization-premium).  
+Customers are responsible for their infrastructure costs. Gradient does not bill for any compute, storage, and networking costs other than the [compute premium](https://gradient.paperspace.com/private-cluster-utilization-premium).  
 
 **Subscription**  
-Gradient Private Clusters require a Essentials or great [subscription](https://gradient.paperspace.com/pricing).  
+Gradient Private Clusters require an Essentials or great [subscription](https://gradient.paperspace.com/pricing).  
 

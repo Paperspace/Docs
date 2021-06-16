@@ -6,7 +6,7 @@ There are two ways to create a Model in Gradient, and both can be done via the w
 
 ### 1. Run a workload that generates a Model
 
-You can do this via the by using a [Gradient Action](../../../explore-train-deploy/workflows/gradient-actions.md#model-create) or the [SDK](../../../more/gradient-python-sdk-1/). This will place your Model in your Project's [Model Repository](../#model-repository).
+You can do this via using a [Gradient Action](../../../explore-train-deploy/workflows/gradient-actions.md#model-create) or the [SDK](../../../more/gradient-python-sdk-1/). This will place your Model in your Project's [Model Repository](../#model-repository).
 
 {% hint style="info" %}
 View the full CLI/SDK Docs for **Models** [here](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-models). 
@@ -22,7 +22,7 @@ From there, click **Upload a Model +**
 
 ![](../../../.gitbook/assets/click-upload.png)
 
-This will open up a modal to **Upload a Model**, where you can drag 'n drop a Model file from your local machine \(or click to find it locally\), as well as select the model **Type** and provide a **Name**, custom **Summary**, and any **Additional Notes** as metadata.  Additionally, you can click "Or Upload a directory" to select a local folder.
+This will open up a modal to **Upload a Model**, where you can drag 'n' drop a Model file from your local machine \(or click to find it locally\), as well as select the model **Type** and provide a **Name**, custom **Summary**, and any **Additional Notes** as metadata.  Additionally, you can click "Or Upload a directory" to select a local folder.
 
 ![](../../../.gitbook/assets/screen-shot-2020-06-04-at-1.15.11-pm.png)
 
