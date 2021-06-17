@@ -20,7 +20,7 @@ print("project_id: "+project_id)
 project_id: prg8149k1
 ```
 
-This returns the project id of the newly created project. Saving this is useful to pass in as input or filter for other queries you make.
+This returns the project ID of the newly created project. Saving this is useful to pass in as input or filter for other queries you make.
 
 ### Listing Projects
 

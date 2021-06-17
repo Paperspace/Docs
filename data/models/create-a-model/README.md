@@ -110,7 +110,7 @@ Navigate to **Models** in the side nav to see your list of trained Models.  From
 {% endtab %}
 
 {% tab title="CLI" %}
-You can delete model using the CLI with the following command:
+You can delete a model using the CLI with the following command:
 
 ```bash
 gradient models delete --id <your model id>

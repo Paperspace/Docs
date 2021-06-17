@@ -2,7 +2,7 @@
 
 Many features in Paperspace Gradient are available only to Team and higher subscription plans.
 
-These include features such as **Private Clusters**, **Datasets**, and **Unlimited Jobs** and plans start at $12/user/month.
+These include features such as **Private Clusters**, **Datasets**, and **Unlimited Jobs.** Plans start at $12/user/month.
 
 To upgrade to a team plan, you will first need to create a team:
 

@@ -1,6 +1,6 @@
 # Custom Deployment Containers
 
-Gradient provides the ability to use any public or private Docker container.  There are several parameters that can be used to maximize the flexibility of this managed service.  
+Gradient provides the ability to use any public or private Docker container.  There are several parameters that can be used to maximize the flexibility of this managed service.
 
 ### Parameters
 

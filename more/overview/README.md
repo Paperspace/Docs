@@ -4,7 +4,7 @@ Many features of Paperspace relating to CORE and to your account are documented 
 
 * Billing
 * Managing teams & users
-* Pricing, payments, subscriptions, & tracking utilization
+* Pricing, payments, subscriptions, and tracking utilization
 * Virtual machines
 * API
 

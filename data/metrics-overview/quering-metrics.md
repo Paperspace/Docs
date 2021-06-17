@@ -36,7 +36,7 @@ Coming soon!
 {% endtab %}
 
 {% tab title="CLI" %}
-To query the metrics for a given workload using the CLI.  Here's an example using Experiments \(the Deployments and Notebooks syntax are the same\).
+To query the metrics for a given workload using the CLI, here's an example using Experiments \(the Deployments and Notebooks syntax are the same\).
 
 ```text
 Usage: gradient experiments metrics [OPTIONS] COMMAND [ARGS]...
