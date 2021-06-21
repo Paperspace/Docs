@@ -237,7 +237,7 @@ gradient deployments list
 For example, to view all running Deployments in your team, run:
 
 ```bash
-gradient list --state RUNNING
+gradient deployments list --state RUNNING
 ```
 
 ## Start a Deployment
