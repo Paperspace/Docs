@@ -2,7 +2,7 @@
 
 ## Notebooks
 
-Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../../explore-train-deploy/notebooks/) make it easy to explore data and coding concepts and collaborate with other people on projects. 
+Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../../explore-train-deploy/notebooks/) make it easy to explore data and coding concepts, experiment with machine learning models, and collaborate with other people on projects. 
 
 * No configuration required
 * Free access to CPU and GPU instances
@@ -18,11 +18,11 @@ Check out the [FREE GPU](../../more/instance-types/free-instances.md) option whe
 Using advanced ML components contained within Projects requires [creating a cluster](../../gradient-private-cloud/about/setup/managed-installation.md).   
 {% endhint %}
 
-A Gradient [Project](../managing-projects/) is a collection of Workflows, Models, and Deployments. 
+A Gradient [Project](../managing-projects/) is a collection of Workflows, Models, and Deployments. It provides a more rigorous approach that is suitable for more established problems, and provides a path to production.
 
 ### Workflows
 
-Workflows are the newest and most powerful way to orchestrate full end-to-end machine learning application development.  Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax to easily create powerful automation.
+Workflows are the newest and most powerful way to orchestrate full end-to-end machine learning application development. Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax to easily create powerful automation.
 
 ### Models
 
