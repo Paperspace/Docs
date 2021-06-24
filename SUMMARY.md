@@ -23,11 +23,10 @@
 ## Explore, train, deploy
 
 * [Notebooks](explore-train-deploy/notebooks/README.md)
-  * [Run on Gradient \(GitHub badge\)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
-  * [ML Showcase](explore-train-deploy/notebooks/ml-showcase.md)
   * [Using Notebooks](explore-train-deploy/notebooks/create-a-notebook/README.md)
     * [Share a Notebook](explore-train-deploy/notebooks/create-a-notebook/share-a-notebook.md)
     * [Fork a Notebook](explore-train-deploy/notebooks/create-a-notebook/fork-a-notebook.md)
+    * [Notebook terminals](explore-train-deploy/notebooks/create-a-notebook/notebook-terminals.md)
     * [Notebook versioning](explore-train-deploy/notebooks/create-a-notebook/notebook-versioning.md)
     * [Notebook metrics](explore-train-deploy/notebooks/create-a-notebook/notebook-metrics.md)
     * [Persistent Storage](explore-train-deploy/notebooks/create-a-notebook/notebooks-storage.md)
@@ -35,6 +34,8 @@
       * [Building a Custom Container](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
     * [Notebook Workspace Include Files](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
     * [Community \(Public\) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
+  * [Run on Gradient \(GitHub badge\)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
+  * [ML Showcase](explore-train-deploy/notebooks/ml-showcase.md)
 * [Workflows](explore-train-deploy/workflows/README.md)
   * [Getting Started with Workflows](explore-train-deploy/workflows/getting-started-with-workflows.md)
   * [Understanding Inputs & Outputs](explore-train-deploy/workflows/understanding-inputs-and-outputs.md)
