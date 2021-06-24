@@ -24,6 +24,7 @@
 
 * [Notebooks](explore-train-deploy/notebooks/README.md)
   * [Using Notebooks](explore-train-deploy/notebooks/create-a-notebook/README.md)
+    * [File organization](explore-train-deploy/notebooks/create-a-notebook/file-organization.md)
     * [Share a Notebook](explore-train-deploy/notebooks/create-a-notebook/share-a-notebook.md)
     * [Fork a Notebook](explore-train-deploy/notebooks/create-a-notebook/fork-a-notebook.md)
     * [Notebook terminals](explore-train-deploy/notebooks/create-a-notebook/notebook-terminals.md)
