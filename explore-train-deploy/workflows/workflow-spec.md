@@ -23,23 +23,27 @@ defaults:
   # default environment variables for all jobs, can use any supported
   # substitution syntax (named secrets, ephemeral secrets, etc...)
   env:
+    # this env var uses a Gradient secret called "hello"
     HELLO: secret:hello
   # default instance type for all jobs
   resources:
-    instance-type: metal-cpu
+    instance-type: metal-gpu
 
 # workflow takes two inputs, neither of which have defaults. This means that
 # when the workflow is run corresponding input for these values are required,
 # for example:
 #
-# {"inputs": {"echo": {"value": "hello world"}, "data": {"id": "test-one"}}}
+# {"inputs": {"data": {"id": "test-one"}, "echo": {"value": "hello world"}}}
 #
 inputs:
   data:
     type: dataset
+    with:
+      id: test-one
   echo:
     type: string
-
+    with:
+      value: "hello world"
 jobs:
   job-1:
     # These are inputs for the "job-1" job; they are "aliases" to the
@@ -50,29 +54,29 @@ jobs:
     # and "/inputs/echo".
     inputs:
       # The "/inputs/data" directory would contain the contents for the dataset
-      # version.
+      # version. id here refers to the name of the dataset, not its dataset id.
       data: workflow.inputs.data
       # The "/inputs/echo" file would contain the string of the workflow input
       # "echo".
       echo: workflow.inputs.echo
-     # These are outputs for the "job-1" job.
+    # These are outputs for the "job-1" job.
     #
     # All outputs are read from the "/outputs/<name>" path.
     outputs:
-       # A directory will automatically be created for output datasets and
+      # A directory will automatically be created for output datasets and
       # any content written to that directory will be committed to a newly
       # created dataset version when the jobs completes.
       data2:
         type: dataset
         with:
           id: test-two
-       # The container is responsible creating the file "/outputs/<name>" with the
+      # The container is responsible creating the file "/outputs/<name>" with the
       # content being a small-ish utf-8 encoded string.
       echo2:
         type: string
-     # Set job-specific environment variables
+    # Set job-specific environment variables
     env:
-      FOOBAR: test
+      TSTVAR: test
     # Set action
     uses: container@v1
     # Set action arguments
@@ -80,11 +84,11 @@ jobs:
       args:
       - bash
       - -c
-      - find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $FOOBAR > /outputs/echo2
+      - find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $TSTVAR > /outputs/echo2
       image: bash:5
   job-2:
     inputs:
-      # these inputs use job-1 outputs instead of workflow inputsou must
+      # these inputs use job-1 outputs instead of workflow inputs, you must
       # specify job-1 in the needs section to reference them here
       data2: job-1.outputs.data2
       echo2: job-1.outputs.echo2
@@ -101,7 +105,7 @@ jobs:
       args:
       - bash
       - -c
-      - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt
+      - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt; cat /inputs/echo2
       image: bash:5
 ```
 
@@ -119,7 +123,7 @@ jobs:
                 "HELLO": "secret:hello"
             },
             "resources": {
-                "instance-type": "metal-cpu"
+                "instance-type": "metal-gpu"
             }
         },
         "inputs": {
@@ -155,7 +159,7 @@ jobs:
                     "args": [
                         "bash",
                         "-c",
-                        "find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $FOOBAR > /outputs/echo2"
+                        "find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $TSTVAR > /outputs/echo2"
                     ],
                     "image": "bash:5"
                 }
