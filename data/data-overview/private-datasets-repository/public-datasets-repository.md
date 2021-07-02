@@ -60,10 +60,9 @@ A read-only collection of sample datasets datasets are provided for free for use
         <p>Contains around one million labeled images for each of 10 scene categories
           and 20 object categories.</p>
         <p>
-          <br />Source: <a href="http://lsun.cs.princeton.edu/2017/">http://lsun.cs.princeton.edu/2017/</a>
+          <br />Source: <a href="http://www.yf.io/p/lsun">http://www.yf.io/p/lsun</a>
         </p>
-        <p><a href="http://www.yf.io/p/lsun">http://www.yf.io/p/lsun</a>
-        </p>
+        <p>(also http://lsun.cs.princeton.edu/2017; link no longer active)</p>
       </td>
     </tr>
     <tr>
@@ -106,8 +105,9 @@ A read-only collection of sample datasets datasets are provided for free for use
         <p>Selfie dataset contains 46,836 selfie images annotated with 36 different
           attributes divided into several categories.</p>
         <p>
-          <br />Source: <a href="http://crcv.ucf.edu/data/Selfie/"> http://crcv.ucf.edu/data/Selfie/</a>
+          <br />Source: <a href="https://www.crcv.ucf.edu/data/Selfie/">https://www.crcv.ucf.edu/data/Selfie/</a>
         </p>
+        <p>(was http://crcv.ucf.edu/data/Selfie )</p>
       </td>
     </tr>
     <tr>
