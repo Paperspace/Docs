@@ -10,7 +10,7 @@ Deployment metrics provide insight into system utilization and model performance
 
 You can learn more about Deployment metrics here:
 
-{% page-ref page="deployment-metrics.md" %}
+{% page-ref page="../../../data/metrics-overview/quering-metrics.md" %}
 
 
 

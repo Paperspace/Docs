@@ -100,7 +100,7 @@ Finally, now that your Deployment is configured, click **Create Deployment** to 
 
 When running a custom container you can set environment variables for your deployment.
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 
 Enter them as a 1 level deep JSON object. Environment variables can reference secrets stored on your project, team or cluster using the subsitution syntax: `secret:my-secret` for example:
 
