@@ -10,13 +10,16 @@ At the top of the yaml workflow file, you can specify default parameters to be u
 
 The `inputs` block allows you to specify named inputs \(e.g. a [versioned dataset](../../data/data-overview/private-datasets-repository/)\) to be referenced and consumed by your jobs. Note: you can also collect inputs in a separate yaml and reference this file as an `inputPath` when creating a workflow run.
 
-Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a generated value or ID that may be outputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).
+Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a generated value or ID that may be outputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).  Note: datasets must be defined in advance of being referenced in a workflow. See the [dataset](../../data/data-overview/) documentation for more info.
 
 ### `jobs`
 
 Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A job is an individual task that executes code \(such as a training a machine learning model\) and can consume inputs and produce outputs.
 
 ## Sample Workflow Spec
+
+To run this workflow, define datasets named 'test-one', 'test-two', and 'test-three' as described in the [dataset](../../data/data-overview/) documentation.
+Also, to make use of the secret named 'hello' in the inputs section, define a secret as described [here](../../get-started/managing-projects/using-secrets.md).
 
 ```yaml
 defaults:
@@ -84,7 +87,7 @@ jobs:
       args:
       - bash
       - -c
-      - find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $TSTVAR > /outputs/echo2
+      - find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $TSTVAR > /outputs/echo2; cat /outputs/data2/list.txt /outputs/echo2
       image: bash:5
   job-2:
     inputs:
@@ -105,7 +108,7 @@ jobs:
       args:
       - bash
       - -c
-      - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt; cat /inputs/echo2
+      - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt; cat /inputs/echo2; cat /outputs/data3/summary.txt /inputs/echo2
       image: bash:5
 ```
 
