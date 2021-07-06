@@ -87,7 +87,7 @@ jobs:
       args:
       - bash
       - -c
-      - find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $TSTVAR > /outputs/echo2; cat /inputs/echo /outputs/data2/list.txt /outputs/echo2
+      - find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $TSTVAR > /outputs/echo2; cat /inputs/echo; echo; cat /outputs/data2/list.txt /outputs/echo2
       image: bash:5
   job-2:
     inputs:
@@ -108,7 +108,7 @@ jobs:
       args:
       - bash
       - -c
-      - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt; cat /inputs/echo2 /outputs/data3/summary.txt
+      - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt; cat /outputs/data3/summary.txt /inputs/echo2
       image: bash:5
 ```
 
