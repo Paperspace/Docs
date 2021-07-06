@@ -12,7 +12,7 @@ There are three types of inputs and outputs. Understanding how these function wi
 
 ## Datasets
 
-The dataset type leverages the Gradient platform native [dataset](../../data/data-overview/) primitive. Information stored within datasets is not limited to any single type of data. In fact, a generic dataset can include anything from pretrained models to generated images to configuration files. Inherent to datasets is the notion of versions. Workflows can consume and produce new datasets as well as tag new versions of existing datasets.
+The dataset type leverages the Gradient platform native [dataset](../../data/data-overview/) primitive. Information stored within datasets is not limited to any single type of data. In fact, a generic dataset can include anything from pretrained models to generated images to configuration files. Inherent to datasets is the notion of versions. Workflows can consume and produce new dataset versions as well as tag new versions of existing datasets.  Note: datasets must be defined in advance of being referenced in a workflow. See the [dataset](../../data/data-overview/) documentation for more info.
 
 Scenario 1: Consuming a dataset that already exists within Gradient
 
