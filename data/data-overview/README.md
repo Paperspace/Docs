@@ -14,7 +14,7 @@ The easiest way to get data into Gradient is to use the web-based uploader. To u
 
 ![](../../.gitbook/assets/2021-04-29-23-33-22.2021-04-29-23_41_13.gif)
 
-## Persistent Storage 
+## [Persistent Storage](persistent-storage.md) 
 
 Persistent storage is a high-performance storage directory located at `/storage` within Notebooks where you can read and write files. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints etc.  Anything you store in the `/storage` directory will be accessible across multiple runs of Notebooks in a given storage region. 
 
