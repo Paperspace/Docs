@@ -10,7 +10,7 @@ At the top of the yaml workflow file, you can specify default parameters to be u
 
 The `inputs` block allows you to specify named inputs \(e.g. a [versioned dataset](../../data/data-overview/private-datasets-repository/)\) to be referenced and consumed by your jobs. Note: you can also collect inputs in a separate yaml and reference this file as an `inputPath` when creating a workflow run.
 
-Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a generated value or ID that may be outputted from another job\) or volume \(a temporary workspace mounted onto a job's container\).  Note: datasets must be defined in advance of being referenced in a workflow. See the [dataset](../../data/data-overview/) documentation for more info.
+Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g. a generated value or ID that may be outputted from another job\) or volume \(a temporary workspace mounted onto a job's container\). Note: datasets must be defined in advance of being referenced in a workflow. See the [dataset](../../data/data-overview/) documentation for more info.
 
 ### `jobs`
 
@@ -18,8 +18,7 @@ Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A j
 
 ## Sample Workflow Spec
 
-To run this workflow, define datasets named 'test-one', 'test-two', and 'test-three' as described in the [dataset](../../data/data-overview/) documentation.
-Also, to make use of the secret named 'hello' in the inputs section, define a secret as described [here](../../get-started/managing-projects/using-secrets.md).
+To run this workflow, define datasets named 'test-one', 'test-two', and 'test-three' as described in the [dataset](../../data/data-overview/) documentation. Also, to make use of the secret named 'hello' in the inputs section, define a secret as described [here](../../get-started/managing-projects/using-secrets.md).
 
 ```yaml
 defaults:

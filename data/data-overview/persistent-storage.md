@@ -2,19 +2,25 @@
 
 ## Persistent Storage
 
-[Persistent Storage](./#persistent-storage) is accessible across your Gradient Notebooks.  Uploading and downloading data is possible from any of these endpoints. 
+Persistent Storage is accessible across your Gradient Notebooks.  Uploading and downloading data is possible from any of these endpoints. 
 
-### Uploading
+## Importing data
 
-#### From A Notebook
+When uploading data, the files will be uploaded to a directory matching the ID of the notebook.  The root \(one level up\) is `/storage` where all your notebook data resides. 
 
-{% embed url="https://youtu.be/FqMClvLnpRQ" %}
+### From your computer
 
-When opening your notebook you will see a `/storage` folder. Clicking on the folder will take you to Persistent Storage where you can upload your data.  If there are a large amount of files, it's advisable to zip them up first. 
+Just click the upload icon to import data from your computer.  If there are a large number of files, it's advisable to zip them up first. **Note:** Your notebook must be running in order to import data. 
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/image%20%2879%29.png)
 
-### Downloading
+### Importing data from the web
 
-Downloading data to `/storage` is as simple as using `curl` or `wget` from a Notebook.  
+Downloading data to `/storage` is as simple as using `curl` or `wget` from a Notebook [terminal](../../explore-train-deploy/notebooks/create-a-notebook/notebook-terminals.md) or Jupyter cell.  
+
+## Exporting data
+
+Downloading files is as simple as clicking the menu icon on a file \(the three vertical dots\) and clicking Download. **Note:** Your notebook must be running in order to download data. 
+
+![](../../.gitbook/assets/image%20%2877%29.png)
 
