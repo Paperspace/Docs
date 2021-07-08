@@ -29,7 +29,7 @@ defaults:
     HELLO: secret:hello
   # default instance type for all jobs
   resources:
-    instance-type: metal-gpu
+    instance-type: P4000
 
 # workflow takes two inputs, neither of which have defaults. This means that
 # when the workflow is run corresponding input for these values are required,
