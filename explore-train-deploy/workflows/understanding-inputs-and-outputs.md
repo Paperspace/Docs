@@ -46,13 +46,59 @@ my-job:
 
 Unlike, e.g. GitHub Actions, it is likely that multiple Gradient Steps/Actions will execute on multiple compute nodes. To facilitate the passing of data between these nodes, Gradient Actions exposes the notion of volumes and volume passing.
 
-Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout).
+Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout).  Volumes can be defined as input volumes or output volumes or both.  Volumes currently need to be specified in jobs, but in the future they will also be specified as workflow resources.  Here is a simple output volume:
 
 ```yaml
-inputs:
-    my-volume-name:
+    outputs:
+      my-volume:
         type: volume
 ```
+
+In this example a volume is first created as an output and then used as an input in a subsequent job step:
+
+```yaml
+defaults:
+  resources:
+    instance-type: P4000
+
+jobs:
+  job1:
+    uses: container@v1
+    with:
+      args:
+      - bash
+      - -c
+      - echo hello > /outputs/my-volume/testfile1; echo "wrote testfile1 to volume"
+      image: bash
+    outputs:
+      my-volume:
+        type: volume
+  job2:
+    needs:
+    - job1
+    uses: container@v1
+    with:
+      args:
+      - bash
+      - -c
+      - cat /inputs/my-volume/testfile1
+      image: bash
+    inputs:
+      my-volume: job1.outputs.my-volume
+```
+
+The same volume can be used as both an input and an output for cases where you want to modify the contents of an existing volume and pass it to a subsequent step.
+To do this use the same name for the volume in both the inputs and outputs section of the job:
+
+```yaml
+    inputs:
+      my-volume: setup-job.outputs.my-volume
+    outputs:
+      my-volume:
+        type: volume
+```
+
+Note: currently there is only unique volume per job. If more than one volume define in a job they will all refer to the same underlying storage. (We plan to remove this restriction in a future version.)
 
 ## Strings
 
