@@ -98,7 +98,7 @@ To do this use the same name for the volume in both the inputs and outputs secti
         type: volume
 ```
 
-Note: currently there is only unique volume per job. If more than one volume define in a job they will all refer to the same underlying storage. (We plan to remove this restriction in a future version.)
+Note: currently there is only one unique volume per job. If more than one volume is define in a job they will all refer to the same underlying storage. (We plan to remove this restriction in a future version.)
 
 ## Strings
 
