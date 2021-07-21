@@ -161,7 +161,7 @@ jobs:
       my-string: job-1.outputs.my-string
 ```
 
-Scenario 3: Receiving generated model ID as a string in a subsequent [Deployment](../deployments/) step
+Scenario 3: Receiving a model ID as a string in a subsequent [Deployment](../deployments/) step
 
 {% hint style="info" %}
 NOTE: There is no native Gradient Actions for Model Deployments today. Instead, you can use the [Gradient SDK](../../more/gradient-python-sdk-1/) to create and manage your inference endpoints.
@@ -200,7 +200,7 @@ jobs:
       - -c
       - >-
        gradient deployments create
-       --clusterId cl12345678
+       --clusterId cl1234567
        --deploymentType TFServing
        --modelId $(cat inputs/model-id)
        --name "Sample Model"
