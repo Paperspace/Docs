@@ -104,37 +104,108 @@ Note: currently there is only one unique volume per job. If more than one volume
 
 In some cases, you may need to pass a single value between Workflow steps. The string type makes this possible.
 
-Scenario 1: Passing a generated model ID to a subsequent [Deployment](../deployments/) step
+Scenario 1: Passing a string from as a workflow-level input
+
+```yaml
+inputs:
+  my-string:
+    type: string
+    with:
+      value: "my string value"
+
+jobs:
+  job-1:
+    resources:
+      instance-type: P4000
+    uses: container@v1
+    with:
+      args:
+      - bash
+      - -c
+      - cat /inputs/my-string
+      image: bash:5
+    inputs:
+      my-string: workflow.inputs.my-string
+```
+        
+Scenario 2: Passing a string between job steps
+
+```yaml
+defaults:
+  resources:
+    instance-type: P4000
+
+jobs:
+  job-1:
+    uses: container@v1
+    with:
+      args:
+      - bash
+      - -c
+      - echo "string output from job-1" > /outputs/my-string; echo job-1 finished
+      image: bash:5
+    outputs:
+      my-string:
+        type: string
+  job-2:
+    uses: container@v1
+    with:
+      args:
+      - bash
+      - -c
+      - cat /inputs/my-string
+      image: bash:5
+    needs:
+     - job-1
+    inputs:
+      my-string: job-1.outputs.my-string
+```
+
+Scenario 3: Receiving generated model ID as a string in a subsequent [Deployment](../deployments/) step
 
 {% hint style="info" %}
 NOTE: There is no native Gradient Actions for Model Deployments today. Instead, you can use the [Gradient SDK](../../more/gradient-python-sdk-1/) to create and manage your inference endpoints.
 {% endhint %}
 
 ```yaml
-DeployModel:
-    resources:
-      instance-type: P4000
+defaults:
+  resources:
+    instance-type: P4000
+
+jobs:
+  UploadModel:
+    uses: container@v1
+    with:
+      args:
+      - bash
+      - -c
+      - echo m12345678901234 > /outputs/model-id
+      image: bash:5
+    env:
+      PAPERSPACE_API_KEY: secret:MY_API_KEY
+    outputs:
+      model-id:
+        type: string
+  DeployModel:
     needs:
-      - UploadModel
+    - UploadModel
     inputs:
       model-id: UploadModel.outputs.model-id
     env:
       PAPERSPACE_API_KEY: secret:MY_API_KEY
     uses: container@v1
     with:
+      command: bash
       args:
-        - bash
-        - "-c"
-        - >-
-            printenv && gradient deployments create \
-            --deploymentType TFServing \
-            --modelId $(cat inputs/model-id) \
-            --name "Sample Model" \
-            --machineType K80 \
-            --imageUrl tensorflow/serving:latest-gpu \
-            --instanceCount 2
+      - -c
+      - >-
+       gradient deployments create
+       --clusterId cl12345678
+       --deploymentType TFServing
+       --modelId $(cat inputs/model-id)
+       --name "Sample Model"
+       --machineType P4000
+       --imageUrl tensorflow/serving:latest-gpu
+       --instanceCount 2
       image: paperspace/gradient-sdk
 ```
-
-More sample code coming soon!
-
