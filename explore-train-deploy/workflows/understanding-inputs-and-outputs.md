@@ -168,9 +168,9 @@ NOTE: There is no native Gradient Actions for Model Deployments today. Instead, 
 {% endhint %}
 
 To run this example you will need to
-a) create a dataset named test-model and upload your model files to it,
-b) define a secret named MY_API_KEY with your gradient-cli api-key,
-c) substitute your clusterId in the deployment create step.
+a) create a dataset named `test-model` and upload valid tensorflow model files to it,
+b) define a secret named `MY_API_KEY` with your gradient-cli api-key,
+c) substitute your `clusterId` in the deployment create step.
 
 ```yaml
 defaults:
