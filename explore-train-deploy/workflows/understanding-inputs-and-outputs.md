@@ -208,9 +208,9 @@ jobs:
        --clusterId cl1234567
        --deploymentType TFServing
        --modelId $(cat inputs/model-id)
-       --name "Sample Model"
+       --name "Sample Deployment"
        --machineType P4000
        --imageUrl tensorflow/serving:latest-gpu
-       --instanceCount 2
+       --instanceCount 1
       image: paperspace/gradient-sdk
 ```
