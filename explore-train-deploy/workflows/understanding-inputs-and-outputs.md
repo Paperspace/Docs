@@ -161,11 +161,16 @@ jobs:
       my-string: job-1.outputs.my-string
 ```
 
-Scenario 3: Receiving a model ID as a string in a subsequent [Deployment](../deployments/) step
+Scenario 3: Creating a model from a dataset and passing the model ID as a string to a [Deployment](../deployments/) step
 
 {% hint style="info" %}
 NOTE: There is no native Gradient Actions for Model Deployments today. Instead, you can use the [Gradient SDK](../../more/gradient-python-sdk-1/) to create and manage your inference endpoints.
 {% endhint %}
+
+To run this example you will need to
+a) create a dataset named test-model and upload your model files to it,
+b) define a secret named MY_API_KEY with your gradient-cli api-key,
+c) substitute your clusterId in the deployment create step.
 
 ```yaml
 defaults:
@@ -174,15 +179,15 @@ defaults:
 
 jobs:
   UploadModel:
-    uses: container@v1
+    uses: create-model@v1
     with:
-      args:
-      - bash
-      - -c
-      - echo m12345678901234 > /outputs/model-id
-      image: bash:5
-    env:
-      PAPERSPACE_API_KEY: secret:MY_API_KEY
+      name: my-model
+      type: Tensorflow
+    inputs:
+      model:
+        type: dataset
+        with:
+          id: test-model
     outputs:
       model-id:
         type: string
