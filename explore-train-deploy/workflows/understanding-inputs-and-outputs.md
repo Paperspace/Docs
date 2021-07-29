@@ -46,7 +46,7 @@ my-job:
 
 Unlike, e.g. GitHub Actions, it is likely that multiple Gradient Steps/Actions will execute on multiple compute nodes. To facilitate the passing of data between these nodes, Gradient Actions exposes the notion of volumes and volume passing.
 
-Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout).  Volumes can be defined as input volumes or output volumes or both.  Volumes currently need to be specified in jobs, but in the future they will also be specified as workflow resources.  Here is a simple output volume:
+Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout). Volumes can be defined as input volumes or output volumes or both. When a volume is an `output` it is mounted in `/outputs` and is writeable. When a volume is an `input` it is mounted in `/inputs` and is _read only_.
 
 ```yaml
     outputs:
@@ -87,18 +87,7 @@ jobs:
       my-volume: job1.outputs.my-volume
 ```
 
-The same volume can be used as both an input and an output for cases where you want to modify the contents of an existing volume and pass it to a subsequent step.
-To do this use the same name for the volume in both the inputs and outputs section of the job:
-
-```yaml
-    inputs:
-      my-volume: setup-job.outputs.my-volume
-    outputs:
-      my-volume:
-        type: volume
-```
-
-Note: currently there is only one unique volume per job. If more than one volume is define in a job they will all refer to the same underlying storage. (We plan to remove this restriction in a future version.)
+Volumes cannot currently be used as an output after the job they were created with, this limitation is planned to be removed in the future.
 
 ## Strings
 
@@ -127,7 +116,7 @@ jobs:
     inputs:
       my-string: workflow.inputs.my-string
 ```
-        
+
 Scenario 2: Passing a string between job steps
 
 ```yaml
@@ -167,10 +156,7 @@ Scenario 3: Creating a model from a dataset and passing the model ID as a string
 NOTE: There is no native Gradient Actions for Model Deployments today. Instead, you can use the [Gradient SDK](../../more/gradient-python-sdk-1/) to create and manage your inference endpoints.
 {% endhint %}
 
-To run this example you will need to
-a) create a dataset named `test-model` and upload valid tensorflow model files to it,
-b) define a secret named `MY_API_KEY` with your gradient-cli api-key,
-c) substitute your `clusterId` in the deployment create step.
+To run this example you will need to a\) create a dataset named `test-model` and upload valid tensorflow model files to it, b\) define a secret named `MY_API_KEY` with your gradient-cli api-key, c\) substitute your `clusterId` in the deployment create step.
 
 ```yaml
 defaults:
@@ -214,3 +200,4 @@ jobs:
        --instanceCount 1
       image: paperspace/gradient-sdk
 ```
+
