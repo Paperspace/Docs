@@ -18,7 +18,7 @@ A range of affordable and high-end CPU-only instances.
 
 | Name | Description | GPU | Memory | vCPUs | Price |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **C3** | Low-cost instance with 1 vCPU, 1GB RAM | - | 2 GB | 2 vCPU | $0.018/hr |
+| **C5** | Low-cost instance with 1 vCPU, 1GB RAM | - | 8 GB | 4 vCPU | $0.08/hr |
 | **C7** | Mid-range instance with 12 vCPU, 30GB RAM | - | 30 GB | 12 vCPU | $0.30/hr |
 
 ## GPU Instances
@@ -27,7 +27,6 @@ A range of dedicated GPU instances with single and multi-GPU configurations.
 
 | Name | Description | GPU | Memory | vCPUs | Price |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **GPU+** \(M4000\) | Low-cost instance with 8GB NVIDIA Maxwell GPU | 8 GB | 30 GB | 8 vCPU | $0.45/hr |
 | **P4000** | Low-cost instance with 8GB NVIDIA Pascal GPU | 8 GB | 30 GB | 8 vCPU | $0.51/hr |
 | **P5000** | Mid-range instance with 16GB NVIDIA Pascal GPU | 16 GB | 30 GB | 8 vCPU | $0.78/hr |
 | **P6000** | High-performance instance with 24GB NVIDIA Pascal GPU | 24 GB | 30 GB | 8 vCPUs | $1.10/hr |
