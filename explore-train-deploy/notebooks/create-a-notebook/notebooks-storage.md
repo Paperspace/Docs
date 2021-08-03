@@ -12,7 +12,7 @@ Your account will have a `/storage` directory automatically generated in your ac
 
 ### Storage size
 
-This quota/size is determined by the team subscription so can range from 5GB up to 1TB. [Contact sales](https://info.paperspace.com/contact-sales-gradient) if you need to increase this limit beyond what is available with the default subscription plans.
+This quota/size is determined by the team subscription so can range from 5GB up to 1TB. [Contact sales](https://info.paperspace.com/contact-sales-gradient) if you need to increase this limit beyond what is available with the default subscription plans. **Note:** Overage charges are incurred when users exceed the amount of data included in their subscription plan. Users who exceed that limit will be charged $0.29 for every additional GB used.
 
 ## Importing data
 
