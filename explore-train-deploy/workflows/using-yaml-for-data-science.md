@@ -65,7 +65,7 @@ my-job:
 
 ### Inputs directory is not writable
 
-The inputs to a job are in the /inputs directory, and this directory is not writeable. So to change the contents of this directory it needs to be copied out of /inputs. For example, the StyleGAN2 onboarding workflow job to generate images contains the commands
+The inputs to a job are in the `/inputs` directory, and this directory is not writeable. So to change the contents of this directory it needs to be copied out of `/inputs`. For example, the StyleGAN2 onboarding workflow job to generate images contains the commands
 
 ```yaml
 cp -R /inputs/repo/stylegan2 /stylegan2
@@ -80,7 +80,7 @@ An example of a not-necessarily-intuitive path is when the `git-checkout@v1` act
 
 ```yaml
 CloneCatRepo:
-  inputs:
+  outputs:
     repoCat:
       type: volume
   uses: git-checkout@v1
@@ -90,7 +90,13 @@ CloneCatRepo:
     password: secret:GIT_PASSWORD
 ```
 
-but then the repo content, here `cat_images_tfrecords.tgz` is put directly into `/inputs`, so the path is `/inputs/repoCat/cat_images_tfrecords.tgz`, without the original repo URL.
+but then the repo content, here `cat_images_tfrecords.tgz` is put directly into `/outputs`, so the path is `/outputs/repoCat/cat_images_tfrecords.tgz`, without the original repo URL. This can be remedied by adding the path explicitly, via `path:`, e.g.,
+
+```yaml
+  path: /outputs/repo/subfolder
+```
+
+in the `with:` section.
 
 ### Dataset identifiers
 
@@ -100,7 +106,7 @@ Currently there is an artifact in the system where a dataset must be referred to
 
 ### Dataset versions
 
-Datasets can be referred to by their versions \(like `defghijklmnopqr:abcdef`\), or just by identifier \(i.e., `defghijklmnopqr`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding step or workflow.
+Datasets can be referred to by their versions \(like `defghijklmnopqr:abcdef`\), or just by identifier \(i.e., `defghijklmnopqr`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding workflow.
 
 ### Some GitHub action syntax is not supported
 
