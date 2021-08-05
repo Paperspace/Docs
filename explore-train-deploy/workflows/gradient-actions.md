@@ -74,7 +74,7 @@ outputs:
   ds:
     type: dataset
     with:
-      id: d1234
+      ref: d1234
 uses: git-checkout@v1
 with:
   url: https://github.com/user/my-public-repo

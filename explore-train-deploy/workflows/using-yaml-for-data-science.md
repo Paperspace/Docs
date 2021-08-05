@@ -60,7 +60,7 @@ my-job:
     my-dataset:
       type: dataset
       with:
-        id: my-dataset-id  
+        ref: my-dataset-id  
 ```
 
 ### Inputs directory is not writable
@@ -106,7 +106,7 @@ Currently there is an artifact in the system where a dataset must be referred to
 
 ### Dataset versions
 
-Datasets can be referred to by their versions \(like `defghijklmnopqr:abcdef`\), or just by identifier \(i.e., `defghijklmnopqr`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding workflow.
+Datasets can be referred to by their their version \(e.g. `datasetId:version`\), or just by identifier \(e.g. `datasetId`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding workflow.  Additionally, you can reference a dataset by team namespace \(e.g. `namespace/datasetId:version`\).
 
 ### Some GitHub action syntax is not supported
 
@@ -171,7 +171,7 @@ inputs:
   catImagesUnzipped:
     type: dataset
     with:
-      id: "dstoyg0pdyysyxj"
+      ref: "dstoyg0pdyysyxj"
 ```
 
 the run will fail because it is expecting an input from outside the workflow, which in this case does not exist. However, using the dot syntax
@@ -189,7 +189,7 @@ outputs:
   catImagesUnzipped:
     type: dataset
     with:
-      id: "dstoyg0pdyysyxj"
+      ref: "dstoyg0pdyysyxj"
 ```
 
 \(the dots correspond to indentation\), which, assuming that job succeeded, does exist.
@@ -204,7 +204,7 @@ GetCatImageDatabase:
     catImageDatabase:
       type: dataset
       with:
-        id: "dsr5spfj2aqzlfg"
+        ref: "dsr5spfj2aqzlfg"
 ```
 
 then run another workflow and output a different file to the same ID, say the MD5 sum of the data instead of the data itself, then it won't update the earlier dataset and add the new file alongside the first one, but create a copy under a new `id:version` that does not contain the previous file. This is the behavior you want for a production setup, with things versioned and often immutable, but it requires remembering how it is working when setting things up.

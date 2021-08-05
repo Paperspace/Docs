@@ -21,7 +21,7 @@ inputs:
     my-dataset: 
         type: dataset
         with:
-            id: my-dataset-id
+            ref: my-dataset-id
 ```
 
 Scenario 2: Generating a new dataset version from a Workflow step
@@ -39,12 +39,12 @@ my-job:
     my-dataset:
       type: dataset
       with:
-        id: my-dataset-id
+        ref: my-dataset-id
 ```
 
 ## Volumes
 
-Unlike, e.g. GitHub Actions, it is likely that multiple Gradient Steps/Actions will execute on multiple compute nodes. To facilitate the passing of data between these nodes, Gradient Actions exposes the notion of volumes and volume passing.
+Unlike, e.g. GitHub Actions, it is likely that multiple Gradient Steps/Actions will execute on multiple compute nodes. To facilitate the passing of data between these nodes, Gradient Actions expose the notion of volumes and volume passing.
 
 Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout). Volumes can be defined as input volumes or output volumes or both. When a volume is an `output` it is mounted in `/outputs` and is writeable. When a volume is an `input` it is mounted in `/inputs` and is _read only_.
 
@@ -173,7 +173,7 @@ jobs:
       model:
         type: dataset
         with:
-          id: test-model
+          ref: test-model
     outputs:
       model-id:
         type: string

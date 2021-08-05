@@ -41,7 +41,7 @@ inputs:
   data:
     type: dataset
     with:
-      id: test-one
+      ref: test-one
   echo:
     type: string
     with:
@@ -98,7 +98,7 @@ jobs:
       data3:
         type: dataset
         with:
-          id: test-three
+          ref: test-three
     # List of job-id's that must complete before this job runs
     needs:
     - job-1
@@ -149,7 +149,7 @@ jobs:
                     "data2": {
                         "type": "dataset",
                         "with": {
-                            "id": "test-two"
+                            "ref": "test-two"
                         }
                     },
                     "echo2": {
@@ -178,7 +178,7 @@ jobs:
                     "data3": {
                         "type": "dataset",
                         "with": {
-                            "id": "test-three"
+                            "ref": "test-three"
                         }
                     }
                 },
@@ -199,10 +199,10 @@ jobs:
         "inputs": {
             "data": {
                 "dataset": {
-                    "id": "test-one:qdwlyje"
+                    "ref": "test-one:qdwlyje"
                 },
                 "with": {
-                    "id": "test-one"
+                    "ref": "test-one"
                 }
             },
             "echo": {
@@ -218,7 +218,7 @@ jobs:
                 "outputs": {
                     "data2": {
                         "dataset": {
-                            "id": "test-two:zfk5vqx",
+                            "ref": "test-two:zfk5vqx",
                             "isCommitted": true
                         }
                     }
@@ -232,7 +232,7 @@ jobs:
                 "outputs": {
                     "data3": {
                         "dataset": {
-                            "id": "test-three:atef63i",
+                            "ref": "test-three:atef63i",
                             "isCommitted": true
                         }
                     }

@@ -4,7 +4,7 @@
 This feature is only available in the managed Gradient version.
 {% endhint %}
 
-A read-only collection of sample datasets datasets are provided for free for use within Gradient.
+A read-only collection of sample datasets datasets are provided for free for use within Gradient notebooks.
 
 ### List of Public Datasets
 
