@@ -84,7 +84,7 @@ Gradient Workflows is still a new product \(beta stage\), and as such there are 
 
 If the workflow runs correctly, for the second workflow you will see a DAG that looks like this:
 
-![DAG of second Workflow after a successful run of StyleGAN2](../../../.gitbook/assets/image%20%2876%29.png)
+![DAG of second Workflow after a successful run of StyleGAN2](../../../.gitbook/assets/stylegan_dag.png)
 
 You can then explore in the usual way in the GUI the output logs of each job, the YAML, and the contents of the output directories. For the project here, this allows us to compare the results from our trained model to those from the pretrained one.
 
