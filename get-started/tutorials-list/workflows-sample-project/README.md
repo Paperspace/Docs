@@ -25,7 +25,7 @@ This in turn requires you to
 * [Create a project](https://docs.paperspace.com/gradient/get-started/managing-projects#create-a-project) and optionally [get its ID](https://docs.paperspace.com/gradient/get-started/managing-projects#get-your-projects-id)
 * [Generate an API key](https://docs.paperspace.com/gradient/get-started/quick-start/install-the-cli#obtaining-an-api-key) for your project to allow access
 * [Install the Gradient CLI ](https://docs.paperspace.com/gradient/get-started/quick-start/install-the-cli)on your machine
-* Use or create a [Gradient Private cluster](https://docs.paperspace.com/gradient/gradient-private-cloud/about/setup/managed-installation) and [its ID](https://docs.paperspace.com/gradient/gradient-private-cloud/about/usage#finding-your-cluster-id)
+* Optionally \[1\], use or create a [Gradient Private cluster](https://docs.paperspace.com/gradient/gradient-private-cloud/about/setup/managed-installation) and [its ID](https://docs.paperspace.com/gradient/gradient-private-cloud/about/usage#finding-your-cluster-id)
 * [Create the two workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#creating-gradient-workflows) via CLI or GUI and [get their IDs](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#running-your-first-workflow-run)
 * [Create output datasets](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository#creating-a-dataset-and-dataset-version) for the two workflows
 * [Import a placeholder file](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository#creating-a-dataset-and-dataset-version) into each created output dataset
@@ -34,9 +34,11 @@ This is quite a lot of steps, and will simplify in the future as the Workflows p
 
 Finally, you will need to edit the YAML to correspond to the IDs of your copies of the Gradient managed datasets that are output. This is because this is a production-grade MLOps system and everything must be versioned and specified exactly.
 
+\[1\] If a cluster is not created, or its ID not specified, the Gradient public cluster is used
+
 ### Workflow time to run: Autoscaling
 
-In the second workflow, `stylegan2-train-and-evaluate-model.yaml`, because it is training and evaluating a StyleGAN neural network, and our purpose here is to show a realistic example, it typically takes about an hour to run. The type of machine used can affect this quite significantly, so for best performance, you can use [autoscaling](https://docs.paperspace.com/gradient/gradient-private-cloud/about/setup/managed-installation#autoscaling-groups) with hot nodes enabled. With two each of C5, P4000, and V100, the resources specified in the YAML file are enabled and do not need to be spun up:
+In the second workflow, `stylegan2-train-and-evaluate-model.yaml`, because it is training and evaluating a StyleGAN neural network, and our purpose here is to show a realistic example, it typically takes about an hour to run. The type of machine used can affect this quite significantly, so, if you are using a private cluster, for best performance, you can use [autoscaling](https://docs.paperspace.com/gradient/gradient-private-cloud/about/setup/managed-installation#autoscaling-groups) with hot nodes enabled. With two each of C5, P4000, and V100, the resources specified in the YAML file are enabled and do not need to be spun up:
 
 | Step number | Step name | Machine type |
 | :--- | :--- | :--- |
@@ -53,6 +55,8 @@ We want two of each machine because steps 1 & 2, 3 & 5, and 4 & 7 can run in par
 If you want to avoid complexity and use a simpler resource list, defaulting all steps to V100 will run in the same time, or it will run in 3-4 hours if all machines are P4000.
 
 For a shorter runtime, see the sample workflow shown when creating a new workflow in the Gradient GUI.
+
+Note that if you are using the public cluster, hot nodes for oneself are not available, and the availability of machine types may be different. In this case, the simpler setup like all-P4000 should be OK.
 
 ### **What the workflow is doing**
 
@@ -72,12 +76,11 @@ To keep this tutorial tractable with a workflow runtime of hours and not days, w
 
 Gradient Workflows is still a new product \(beta stage\), and as such there are some caveats to this tutorial. All of these will go away as the Workflows product matures.
 
-* _Requirement for Gradient private cluster:_ Current Workflows usage requires a Gradient private cluster. A public cluster for Workflows is being added to the Paperspace infrastructure that will remove this requirement.
-* _Autoscaling:_ For best performance, autoscaling hot nodes can be configured. When using the public cluster, this will not be needed.
+* _Autoscaling:_ For best performance, autoscaling hot nodes can be configured. When using the public cluster, this is not needed.
 * _Invoke workflow from CLI only:_ Workflows must be invoked from the command line. In future, Workflows will be able to be invoked from CLI, SDK, or GUI, either manually, or automatically based on a trigger.
 * _Create output datasets in GUI before running:_ Gradient managed datasets must be created before running a Workflow so that their IDs can be referenced. We plan that a new dataset ID will be able to be referenced in the workflow, and it will create the dataset if it does not exist.
 * _Created dataset must contain placeholder file:_ Similarly, a newly created dataset must contain an imported file, e.g., a small text file as a placeholder. Otherwise the workflow will fail saying dataset cannot be referenced.
-* _Workflows contain workaround code to avoid large files in their /output directories:_ We use the sequence gzip/split/cat/gunzip to break up the large files of images, extracted multi-resolution images in TFRecords format, and trained network, due to a machine memory usage issue. This is temporary, and gigabyte+ files will be able to be handled without needing this sequence. \(Files larger than machine memory will still need some kind of streaming, however, as one would expect.\)
+* _Workflows contain workaround code to avoid large files in their /output directories:_ We use the sequence `gzip/split/cat/gunzip` to break up the large files of images, extracted multi-resolution images in TFRecords format, and trained network, due to a machine memory usage issue. This is temporary, and gigabyte+ files will be able to be handled without needing this sequence. \(Files larger than machine memory will still need some kind of streaming, however, as one would expect.\)
 * _Download data before running:_ The existing second part of the workflow, `stylegan2-train-and-evaluate-model.yaml`, can refer to a Gradient managed dataset, but a dataset containing that data is not yet public. So the user needs to run the first workflow, `stylegan-2-download-and-extract-data.yaml`, to enable their second workflow access the data. The public cluster will remove this requirement, and the user will be able to either run both workflows, or just run the second one and refer to our Gradient managed dataset containing the output from the first one.
 
 ### **Results**
@@ -88,7 +91,7 @@ If the workflow runs correctly, for the second workflow you will see a DAG that 
 
 You can then explore in the usual way in the GUI the output logs of each job, the YAML, and the contents of the output directories. For the project here, this allows us to compare the results from our trained model to those from the pretrained one.
 
-By viewing the output files of the `generateImagesPretrainedModel`, and `generateImagesOutputModel`          YAML jobs, we can see the quality of the images that the models generate. As expected, the pretrained model generates realistic looking cats:
+By viewing the output files of the `generateImagesPretrainedModel`, and `generateImagesOutputModel` YAML jobs, we can see the quality of the images that the models generate. As expected, the pretrained model generates realistic looking cats:
 
 ![Generated cat from pretrained model](../../../.gitbook/assets/image%20%2813%29.png)
 
@@ -128,7 +131,7 @@ As mentioned, Gradient Workflows is still a new product, and as such, aside from
 * Deployment, monitoring, and triggering model retraining
 * GradientCI projects
 
-Further YAML actions such as managed model creation \(as opposed to upload\), run a script, and managed deploy, are being added too.
+Further YAML actions such as managed deployment, are being added too.
 
 Once these are available, the code here will be straightforwardly alterable or extensible to take advantage of them.
 
