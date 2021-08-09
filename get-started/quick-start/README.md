@@ -77,7 +77,8 @@ From here, following the instructions on the page, you can either run the workfl
    --projectId <your-project-id>
    ```
 
-   (To see a list of your projects and `projectIds` you can run `gradient projects list`. To see a list of Workflows within a project you can run `gradient workflows list --projectId <your-project-id>`.)
+   (To see a list of your projects and `projectIds` you can run `gradient projects list`.  
+   To see a list of Workflows within a project run `gradient workflows list --projectId <your-project-id>`.)
 
 4. **Download or copy the sample Workflow Spec from the web interface to your computer**
 
