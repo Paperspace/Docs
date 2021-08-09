@@ -1,12 +1,9 @@
-# Versioned Data
+# Versioned Dataset
 
 ### Overview
 
 Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Dataset version can be used as input to Gradient workloads as well as outputs. Data is stored at a [Storage Provider](storage-providers.md) and will be cached on a Gradient cluster's shared storage for a period of time so that data will be available readily on repeated usage.
 
-{% hint style="info" %}
-Gradient datasets require a private [Gradient Cluster](../../../gradient-private-cloud/about/).
-{% endhint %}
 
 ### Versions, Tags, and Messages
 
