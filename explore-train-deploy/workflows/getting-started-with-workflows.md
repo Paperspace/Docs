@@ -1,5 +1,7 @@
 # Getting Started with Workflows
 
+The following sections describe creating and running workflows, and authoring new workflow yaml specs.  To get going quickly with workflows follow the steps in the  [https://docs.paperspace.com/gradient/get-started/quick-start#advanced-mlops](quick-start guide) and then return here for the details.
+
 ## Creating Gradient Workflows
 
 {% hint style="info" %}
