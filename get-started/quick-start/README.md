@@ -67,9 +67,9 @@ From here you can either run the workflow as-is, or download the Workflow spec t
 
 1. \*\*\*\*[**Install the Gradient CLI**](install-the-cli.md)\*\*\*\*
 2. \*\*\*\*[**Connect your account**](install-the-cli.md#connecting-your-account)\*\*\*\*
-3. **Create a  Workflow**
+3. **Create a Workflow**
 
-Specify a name for the Workflow and a projectId.  You can use the projectId from project created earlier.
+   Specify a name for the Workflow and a projectId.  You can use the projectId from project created earlier.
 
 ```bash
 gradient workflows create  \ 
@@ -77,13 +77,13 @@ gradient workflows create  \
 --projectId <your-project-id>
 ```
 
-4. **Download or copy the sample Workflow YAML file from the web interface to your computer**
+4. **Download or copy the sample Workflow Spec from the web interface to your computer**
 
-Place the contents in a file named `workflow.yaml`.
+   Place the contents in a file named `workflow.yaml`.
 
 5. **Run the Workflow from the CLI**
 
-The following command will run an instance of the Workflow in your project. Be sure to replace `<your-workflow-id>` with your **Workflow ID**.
+   The following command will run an instance of the Workflow in your project. Be sure to replace `<your-workflow-id>` with your **Workflow ID**.
 
 ```bash
 gradient workflows run  \ 
@@ -96,7 +96,7 @@ gradient workflows run  \
 {% endhint %}
 
 
-Behind the scenes, your Workflow will be executed on the Gradient public cluster. Congratulations! You ran your first Workflow on Gradient 🚀
+  Behind the scenes, your Workflow will be executed on the Gradient public cluster. Congratulations! You ran your first Workflow on Gradient 🚀
 
 ## Explore the rest of the platform
 
