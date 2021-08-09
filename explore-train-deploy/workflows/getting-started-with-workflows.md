@@ -1,6 +1,6 @@
-# Getting Started with Workflows
+# Creating and Running Workflows
 
-The following sections describe the details behing creating and running workflows, and authoring new workflow yaml specs.  If you have never run a workflow before check out the Workflows [quick-start](https://docs.paperspace.com/gradient/get-started/quick-start#advanced-mlops) then return here for more details.
+The following sections cover creating and running workflows, and authoring new workflow yaml specs.  If you have never run a workflow before check out the Workflows [quick-start](https://docs.paperspace.com/gradient/get-started/quick-start#advanced-mlops) then return here for more details.
 
 ## Creating Gradient Workflows
 
@@ -28,3 +28,4 @@ gradient workflows run  \
     --path ./workflow.yaml
 ```
 
+The next sections cover the syntax and concepts behind authoring new workflow yaml specs for MLops applications.
