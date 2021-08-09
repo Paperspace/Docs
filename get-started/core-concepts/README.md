@@ -34,7 +34,7 @@ Once a model is created, you can easily serve the model high-performance, low-la
 
 Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Datasets can be used as input to Gradient workloads as well as outputs. Gradient provides the ability to mount S3 compatible object storage buckets at runtime.  Learn more [here](../../data/data-overview/private-datasets-repository/).
 
-#### [Persistent Storage](../../data/data-overview/#persistent-storage) \(legacy\)
+#### [Persistent Storage](../../data/data-overview/#persistent-storage)
 
 Persistent storage is a persistent filesystem automatically mounted on every Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Gradient Dataset versions are automatically cached to persistent storage for performance.  Learn more [here](../../data/data-overview/#persistent-storage).
 
