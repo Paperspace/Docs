@@ -1,6 +1,6 @@
 # Creating and Running Workflows
 
-The following sections cover creating and running workflows, and authoring new workflow yaml specs.  If you have never run a workflow before check out the Workflows protion of the [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) then return here for more details.
+The following sections cover creating and running workflows, and authoring new workflow yaml specs.  If you have never run a workflow before we recommend you step through the workflows demo in the [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) then return here for more details.
 
 ## Creating Gradient Workflows
 
