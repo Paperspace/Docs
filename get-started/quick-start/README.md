@@ -80,10 +80,10 @@ From here, following the instructions on the page, you can either run the workfl
    (To see a list of your projects and `projectIds` you can run `gradient projects list`.  
    To see a list of Workflows within a project run `gradient workflows list --projectId <your-project-id>`.)
 
+
 4. **Download or copy the sample Workflow Spec from the web interface to your computer**
 
    Here is the Workflow Spec for reference:
-
    ```yaml
    jobs:
      CloneRepo:
@@ -122,8 +122,8 @@ From here, following the instructions on the page, you can either run the workfl
              --result-dir=/outputs/generatedFaces
          image: tensorflow/tensorflow:1.14.0-gpu-py3
    ```
-
    Place the contents in a file named `workflow.yaml`.
+
 
 5. **Run the Workflow from the CLI**
 
@@ -140,6 +140,7 @@ From here, following the instructions on the page, you can either run the workfl
 
 
   Behind the scenes, your Workflow will be executed on the Gradient public cluster. Congratulations! You ran your first Workflow on Gradient 🚀
+
 
 ## Explore the rest of the platform
 
