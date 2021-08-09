@@ -4,7 +4,7 @@ description: Set up continuous integration between your GitHub repository and Gr
 
 # GradientCI V1 \(Deprecated\)
 
-![gradientci logo](../../.gitbook/assets/gradientci%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.gif)
+![gradientci logo](../../.gitbook/assets/gradientci%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.gif)
 
 ## Set Up GradientCI
 
