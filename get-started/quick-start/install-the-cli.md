@@ -10,7 +10,7 @@ description: How to install the Gradient Command Line Interface
 
 The Gradient CLI is available on [pypi](https://pypi.org/project/gradient/) and works on Windows, MacOS, and Linux.
 
-The CLI requires **Python 3.4+ \(**or **Python 2.7\)**. Be sure to use a compatible version of **pip** \(or **pip3**\) depending on your Python version.
+The CLI requires **Python 3.4+** \(or Python 2.7\). Be sure to use a compatible version of **pip** \(or **pip3**\) depending on your Python version.
 
 {% hint style="info" %}
 **Pro Tip!** We highly recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**. [See below](install-the-cli.md#using-a-virtual-environment) for more instructions.
@@ -89,6 +89,7 @@ More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.pal
 
 ## **Install the latest pre-release version**
 
+If you need a pre-release version of the CLI use the following command to install it.
 ```bash
 pip install -U --pre gradient
 ```
