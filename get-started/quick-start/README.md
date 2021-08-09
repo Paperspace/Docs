@@ -57,19 +57,19 @@ Make a note of the projectId, for example `pr1234567`.
 
 You can run Workflows from the web interface or CLI. First you need to create a new Workflow. This will allow you to keep track of related runs of the Workflow.
 
-If you have never run a workflow before you can create and run a demo workflow all in one step in the web interface, by clicking on the Workflows tab within the project, then clicking the **Create Your First Workflow** button.
+If you have never run a workflow before you can create and run a demo workflow all in one step in the web interface, by clicking on the Workflows tab within the project, then clicking the **Create Your First Workflow** button.  This will create a Workflow named `demo workflow`.
 
 ![](../../.gitbook/assets/screen-shot-2021-04-22-at-12.06.01-pm.png)
 
-From here you can either run the workflow as-is, or download the Workflow spec to your workstations and run it from the CLI.
+From here, following the instructions on the page, you can either run the workflow as-is, or download the Workflow spec to your workstations and run it from the CLI.
 
 ### **Steps to create and run a Workflow from the CLI**
 
 1. \*\*\*\*[**Install the Gradient CLI**](install-the-cli.md)\*\*\*\*
 2. \*\*\*\*[**Connect your account**](install-the-cli.md#connecting-your-account)\*\*\*\*
 3. **Create a Workflow**
-
-   Specify a name for the Workflow and a projectId.  You can use the projectId from the project you created earlier.
+   
+   This step is only needed if you didn't create a default `demo workflow` in the web interface.  Specify a name for the Workflow and a `projectId`.  Use the `projectId` from the project you created earlier.
 
    ```bash
    gradient workflows create  \ 
@@ -77,7 +77,50 @@ From here you can either run the workflow as-is, or download the Workflow spec t
    --projectId <your-project-id>
    ```
 
+   (To see a list of your projects and `projectIds` you can run `gradient projects list`. To see a list of Workflows within a project you can run `gradient workflows list --projectId <your-project-id>`.)
+
 4. **Download or copy the sample Workflow Spec from the web interface to your computer**
+
+   Here is the Workflow Spec for reference:
+
+   ```yaml
+   jobs:
+     CloneRepo:
+       resources:
+         instance-type: C5
+       outputs:
+         repo:
+           type: volume
+       uses: git-checkout@v1
+       with:
+      url: https://github.com/NVlabs/stylegan2.git
+     StyleGan2:
+       resources:
+         instance-type: P4000
+       needs:
+         - CloneRepo
+       inputs:
+         repo: CloneRepo.outputs.repo
+       outputs:
+         generatedFaces:
+           type: dataset
+           with:
+             ref: dsrlylvgje7q6zl
+       uses: script@v1
+       with:
+         script: |-
+           pip install scipy==1.3.3
+           pip install requests==2.22.0
+           pip install Pillow==6.2.1
+           cp -R /inputs/repo /stylegan2
+           cd /stylegan2
+           python run_generator.py generate-images \
+             --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
+             --seeds=6600-6605 \
+             --truncation-psi=0.5 \
+             --result-dir=/outputs/generatedFaces
+         image: tensorflow/tensorflow:1.14.0-gpu-py3
+   ```
 
    Place the contents in a file named `workflow.yaml`.
 
