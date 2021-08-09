@@ -58,14 +58,15 @@ jobs:
           --result-dir=/outputs/generatedFaces
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 ```
-
 You will also need a
 **`workflow-id`** from the previously created workflow. (You can also get one by running `gradient workflows list` in the CLI.)
+
+Run the workflow with the specified workflow yaml spec file and workflow ID:
 ```bash
 gradient workflows run  \
     --id <worklow-id> \ 
     --path ./workflow.yaml
 ```
-A workflow run can be performed multiple times, each with the same or a different workflow yaml spec.  The workflow spec is recorded as part of the workflow run so that you can distinguish the different runs.
+A workflow can be run multiple times, each with the same or a different workflow yaml spec.  The workflow spec is recorded as part of the workflow run so you can distinguish different runs.
 
-The next sections cover the syntax and concepts behind authoring new workflow yaml specs for MLops applications.
+The next sections cover the syntax for authoring new workflow yaml specs for MLops applications.
