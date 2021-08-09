@@ -108,5 +108,5 @@ gradient secrets delete cluster --id=<cluster_id> --name=<name>
 
 #### **Secret scoping**
 
-If the same secret name is created for more than one scope only one will be applied. Secrets have the following precedence: Project &gt; Cluster &gt; Team.
+If the same secret name is created for more than one scope only one will be applied. Secret with the same name have the following precedence: Cluster secrets take precedence over Team secrets; Project secrets take precedence over both Cluster secrets and Team secrets.
 
