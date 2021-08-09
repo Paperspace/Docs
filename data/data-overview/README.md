@@ -21,8 +21,3 @@ Persistent storage is a high-performance storage directory located at `/storage`
 {% hint style="info" %}
 Persistent Storage is specific to each region. 
 {% endhint %}
-
-{% hint style="info" %}
-Persistent storage is only available in the managed service or private clusters.
-{% endhint %}
-
