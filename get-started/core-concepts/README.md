@@ -30,7 +30,7 @@ Once a model is created, you can easily serve the model high-performance, low-la
 
 ## Data
 
-#### [**Versioned Datasets**](../../data/data-overview/private-datasets-repository/)
+#### [**Versioned Data**](../../data/data-overview/private-datasets-repository/)
 
 Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Datasets can be used as input to Gradient workloads as well as outputs. Gradient provides the ability to mount S3 compatible object storage buckets at runtime.  Learn more [here](../../data/data-overview/private-datasets-repository/).
 
