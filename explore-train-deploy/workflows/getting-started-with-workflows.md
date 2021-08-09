@@ -20,14 +20,8 @@ Create a workflow spec yaml file \([View the full workflow yaml spec](workflow-s
 
 **`workflow-id`** : Grab this by running `gradient workflows list` in the CLI, i.e., `7634c165-5034-4f49-95fa-005fc0e7970b`
 
-**`cluster-id`** : Currently ****workflows require that you have a [Gradient Private Cluster.](../../gradient-private-cloud/about/setup/managed-installation.md) The cluster ID looks like this: `cla7rjbzz`
-
 ```bash
 gradient workflows run  \
     --id <worklow-id> \ 
-    --clusterId <cluster-id> \
     --path ./workflow.yaml 
 ```
-
-## 
-
