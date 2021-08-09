@@ -23,5 +23,6 @@ Create a workflow spec yaml file \([View the full workflow yaml spec](workflow-s
 ```bash
 gradient workflows run  \
     --id <worklow-id> \ 
-    --path ./workflow.yaml 
+    --path ./workflow.yaml
 ```
+

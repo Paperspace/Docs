@@ -12,9 +12,9 @@ These are the YAML files used for the Workflows sample project based on StyleGAN
 #
 # See that URL for details on how to run the project.
 #
-# We assume the reader is familiar with the basics of workflows, and here wishes to use them for real projects.
+# We assume the reader is familiar with the basics of Workflows, and here wishes to use them for real projects.
 #
-# Workflow steps
+# Steps performed by the Workflow
 #
 # 1. Download the cat image database as a .zip file
 # 2. Clone StyleGAN2 repo for script that extracts images from the LMDB-format database
@@ -22,12 +22,14 @@ These are the YAML files used for the Workflows sample project based on StyleGAN
 #
 # Dataset IDs
 #
-# The user needs to create their own Gradient managed datasets for job outputs to replace the IDs this file contains:
+# The user needs to create their own Gradient managed dataset for job outputs, using the same names as here.
+# See the project GitHub documentation for details on how to do this.
 #
-# getCatImageDatabase -> "dstlbm17s9ib1ld"
-# extractImages       -> "dstfq4pfrtz4fav"
+# Job name               Gradient managed dataset name
+# getCatImageDatabase -> stylegan-w1of2-cat-image-database
+# extractImages       -> stylegan-w1of2-extracted-images
 #
-# Last updated: May 20th 2021
+# Last updated: Aug 08th 2021
 
 # Our download and extract steps do not require a GPU, so we default to a C5 machine for all steps
 
@@ -49,32 +51,29 @@ jobs:
       catImageDatabase:
         type: dataset
         with:
-          id: "dstlbm17s9ib1ld"
-    uses: container@v1
+          ref: stylegan-w1of2-cat-image-database
+    uses: script@v1
     with:
-      args:
-        - bash
-        - -c
-        - |-
-          curl -o /outputs/catImageDatabase/cat.zip.md5 'http://dl.yf.io/lsun/objects/cat.zip.md5'
-          curl -C - -o /outputs/catImageDatabase/cat.zip 'http://dl.yf.io/lsun/objects/cat.zip'
-          cd /outputs/catImageDatabase
-          split -a 3 -b 100m cat.zip cat_files_
-          echo "MD5 sum from downloaded file:"
-          md5sum cat.zip
-          echo "MD5 sum from website:"
-          cat /outputs/catImageDatabase/cat.zip.md5
-          rm cat.zip
-          ls "-aFlR" /outputs/catImageDatabase
+      script: |-
+        curl -o /outputs/catImageDatabase/cat.zip.md5 'http://dl.yf.io/lsun/objects/cat.zip.md5'
+        curl -C - -o /outputs/catImageDatabase/cat.zip 'http://dl.yf.io/lsun/objects/cat.zip'
+        cd /outputs/catImageDatabase
+        split -a 3 -b 100m cat.zip cat_files_
+        echo "MD5 sum from downloaded file:"
+        md5sum cat.zip
+        echo "MD5 sum from website:"
+        cat /outputs/catImageDatabase/cat.zip.md5
+        rm cat.zip
+        ls "-aFlR" /outputs/catImageDatabase
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 
   # 2. Clone StyleGAN2 repo for script that extracts images from the LMDB-format database
 
-  # Checkout results in an output volume, so we don't need the "outputs:" field
+  # The checkout results in an output volume
   # The repo is public so the "username:" field, and "env:" field containing a Git password are not needed
 
   cloneStyleGAN2Repo:
-    inputs:
+    outputs:
       repo:
         type: volume
     uses: git-checkout@v1
@@ -88,7 +87,7 @@ jobs:
   # The extracted images then become the Gradient managed dataset that can be referred to in later steps
   # This avoids having to download the images again in those steps
   # The needed installations could also be done via a requirements.txt
-  # /inputs is read-only so we do copy not move as move's delete step will fail
+  # /inputs is read-only so we do copy not move (mv) as move's delete step will fail
   # Note the repo gets put in /inputs/repo, not /inputs/repo/stylegan2
   # Note the Python and bash syntaxes that are placing those commands on one line within the "|-" script
 
@@ -97,54 +96,50 @@ jobs:
       - getCatImageDatabase
       - cloneStyleGAN2Repo
     inputs:
-      repo:
-        type: volume
+      repo: cloneStyleGAN2Repo.outputs.repo
       catImageDatabase: getCatImageDatabase.outputs.catImageDatabase
     outputs:
       extractedImages:
         type: dataset
         with:
-          id: "dstfq4pfrtz4fav"
-    uses: container@v1
+          ref: stylegan-w1of2-extracted-images
+    uses: script@v1
     with:
-      args:
-        - bash
-        - -c
-        - |-
-          cd /inputs/catImageDatabase
-          mkdir -p /cat_workspace/catImagesReconstructed
-          mkdir /cat_workspace/catImagesUnzipped
-          cat cat_files_* > /cat_workspace/catImagesReconstructed/cat_reconstructed.zip
-          md5sum /cat_workspace/catImagesReconstructed/cat_reconstructed.zip
-          unzip /cat_workspace/catImagesReconstructed/cat_reconstructed.zip -d /cat_workspace/catImagesUnzipped
-          rm /cat_workspace/catImagesReconstructed/cat_reconstructed.zip
-          pip install --upgrade pip
-          pip install scipy==1.3.3
-          pip install requests==2.22.0
-          pip install Pillow==6.2.1
-          pip install lmdb==1.2.1
-          pip install python-lmdb==1.0.0b1
-          apt-get update
-          apt-get install ffmpeg libsm6 libxext6  -y
-          pip install opencv-python==4.5.1.48
-          cp -R /inputs/repo /stylegan2
-          cd /stylegan2
-          python dataset_tool.py create_lsun \
-            /outputs/extractedImages/cat_images_tfrecords \
-            /cat_workspace/catImagesUnzipped/cat \
-            --resolution=256 \
-            --max_images=1000
-          rm -r /cat_workspace/catImagesUnzipped
-          cd /outputs/extractedImages/cat_images_tfrecords
-          mkdir cat
-          mv *.tfrecords cat
-          cd cat
-          for res in 2 3 4 5 6 7 8; do \
-            gzip cat_images_tfrecords-r0$res.tfrecords; \
-            split -a 3 -b 100m cat_images_tfrecords-r0$res.tfrecords.gz cat_images_tfrecords-r0${res}_; \
-          done
-          rm cat_images_tfrecords-r0?.tfrecords.gz
-          ls "-aFlR" /outputs/extractedImages
+      script: |-
+        cd /inputs/catImageDatabase
+        mkdir -p /cat_workspace/catImagesReconstructed
+        mkdir /cat_workspace/catImagesUnzipped
+        cat cat_files_* > /cat_workspace/catImagesReconstructed/cat_reconstructed.zip
+        md5sum /cat_workspace/catImagesReconstructed/cat_reconstructed.zip
+        unzip /cat_workspace/catImagesReconstructed/cat_reconstructed.zip -d /cat_workspace/catImagesUnzipped
+        rm /cat_workspace/catImagesReconstructed/cat_reconstructed.zip
+        pip install --upgrade pip
+        pip install scipy==1.3.3
+        pip install requests==2.22.0
+        pip install Pillow==6.2.1
+        pip install lmdb==1.2.1
+        pip install python-lmdb==1.0.0b1
+        apt-get update
+        apt-get install ffmpeg libsm6 libxext6  -y
+        pip install opencv-python==4.5.1.48
+        cp -R /inputs/repo /stylegan2
+        cd /stylegan2
+        python dataset_tool.py create_lsun \
+          /outputs/extractedImages/cat_images_tfrecords \
+          /cat_workspace/catImagesUnzipped/cat \
+          --resolution=256 \
+          --max_images=1000
+        rm -r /cat_workspace/catImagesUnzipped
+        cd /outputs/extractedImages/cat_images_tfrecords
+        mkdir cat
+        mv *.tfrecords cat
+        cd cat
+        for res in 2 3 4 5 6 7 8; do \
+          gzip cat_images_tfrecords-r0$res.tfrecords; \
+          split -a 3 -b 100m cat_images_tfrecords-r0$res.tfrecords.gz cat_images_tfrecords-r0${res}_; \
+        done
+        rm cat_images_tfrecords-r0?.tfrecords.gz
+        ls "-aFlR" /outputs/extractedImages
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 
   # Appendix: Extra details
@@ -156,7 +151,6 @@ jobs:
   #    LSUN's download script is for their scene categories dataset, not object categories
   #  - getCatImageDatabase uses TensorFlow image because alpine:latest doesn't have bash, and bash:5 doesn't have curl
   #  - /cat_workspace is acting like a temporary volume (copy files to it then rm), which could be done more formally
-  #  - The "|-" bash script form could also use the new script@v1 Gradient action
   #  - pip install --upgrade pip helps the opencv install go considerably faster
   #  - lmdb, python-lmdb, and opencv are required for dataset_tool.py create_lsun
   #  - The apt-get commands are needed for OpenCV on this container
@@ -176,7 +170,7 @@ jobs:
 #
 # We assume the reader is familiar with the basics of workflows, and here wishes to use them for real projects.
 #
-# Workflow steps
+# Steps performed by the Workflow
 #
 # 1. Clone StyleGAN repo into managed storage provider dataset
 # 2. Get pretrained cat model
@@ -188,22 +182,24 @@ jobs:
 #
 # Dataset IDs
 #
-# The user needs to create their own Gradient managed datasets for job outputs to replace the IDs this file contains:
+# The user needs to create their own Gradient managed dataset for job outputs, using the same names as here.
+# See the project GitHub documentation for details on how to do this.
 #
-# getPretrainedModel            -> "dsr4si1mzvjyls8"
-# evaluatePretrainedModel       -> "dsr7sry8b6mkzmi"
-# generateImagesPretrainedModel -> "dsrtxabxfqmjbrw"
-# trainOurModel                 -> "dsrso5rn4vtjlf4"
-# evaluateOurModel              -> "dstp3of0i4tr38s"
-# generateImagesOurModel        -> "dstba8lqk9g2x7v"
+# Job name                         Gradient managed dataset name
+# getPretrainedModel            -> stylegan2-w2of2-pretrained-network
+# evaluatePretrainedModel       -> stylegan2-w2of2-evaluation-pretrained
+# generateImagesPretrainedModel -> stylegan2-w2of2-generated-cats-pretrained
+# trainOurModel                 -> stylegan2-w2of2-our-trained-network
+# evaluateOurModel              -> stylegan2-w2of2-evaluation-ours
+# generateImagesOurModel        -> stylegan2-w2of2-generated-cats-ours
 #
-# The ID for the Gradient managed dataset should correspond to the ID and version output from running the first workflow
-# of the pair in this project (stylegan2-download-and-extract-data.yaml)
+# The ID for the Gradient managed dataset should correspond to the ID output from running the first workflow of the pair
+# in this project (stylegan2-download-and-extract-data.yaml).
 #
 # We create different datasets for the output from each job because jobs can run in parallel and if their outputs were
 # put into the same dataset it would create clashing versions.
 #
-# Last updated: May 20th 2021
+# Last updated: Aug 08th 2021
 
 jobs:
 
@@ -212,7 +208,7 @@ jobs:
   cloneStyleGAN2Repo:
     resources:
       instance-type: C5
-    inputs:
+    outputs:
       repo:
         type: volume
     uses: git-checkout@v1
@@ -232,7 +228,7 @@ jobs:
       pretrainedNetwork:
         type: dataset
         with:
-          id: "dsr4si1mzvjyls8"
+          ref: stylegan2-w2of2-pretrained-network
     uses: container@v1
     with:
       args:
@@ -245,52 +241,49 @@ jobs:
   # 3. Run evaluation on pretrained cat model
 
   # The temporary workaround using gzip/split/cat/gunzip is visible here and in steps 5-7
-  # dsts5p5o8fe86j3:6qstm0t refers to the specific dataset version that we want here
+  # The input extracted images dataset reference refers to the latest version from Workflow 1
+  # A particular version of the input extracted images can also be specified, via <dataset ID>:<dataset version>
   # (Also available are no version (latest), v1 (etc.), :latest, or :<dataset-tag>)
 
   evaluatePretrainedModel:
     resources:
-      instance-type: V100
+      instance-type: P6000
     needs:
       - cloneStyleGAN2Repo
       - getPretrainedModel
     inputs:
-      repo:
-        type: volume
+      repo: cloneStyleGAN2Repo.outputs.repo
       extractedImagesForTraining:
         type: dataset
         with:
-          id: "dstfq4pfrtz4fav:17dcxcj"
+          ref: stylegan2-w1of2-extracted-images
       pretrainedNetwork: getPretrainedModel.outputs.pretrainedNetwork
     outputs:
       evaluationPretrained:
         type: dataset
         with:
-          id: "dsr7sry8b6mkzmi"
-    uses: container@v1
+          ref: stylegan2-w2of2-evaluation-pretrained
+    uses: script@v1
     with:
-      args:
-        - bash
-        - -c
-        - |-
-          pip install scipy==1.3.3
-          pip install requests==2.22.0
-          pip install Pillow==6.2.1
-          cp -R /inputs/repo /stylegan2
-          cp -R /inputs/extractedImagesForTraining/cat_images_tfrecords /stylegan2
-          cd /stylegan2/cat_images_tfrecords/cat
-          for res in 2 3 4 5 6 7 8; do \
-            cat cat_images_tfrecords-r0${res}_* > cat_images_tfrecords-r0$res.tfrecords.gz; \
-            gunzip cat_images_tfrecords-r0$res.tfrecords.gz; \
-          done
-          cd /stylegan2
-          python run_metrics.py \
-            --data-dir=/stylegan2/cat_images_tfrecords \
-            --network=/inputs/pretrainedNetwork/stylegan2-cat-config-f.pkl \
-            --metrics=fid50k,ppl2_wend \
-            --dataset=cat \
-            --result-dir=/outputs/evaluationPretrained
-          ls "-aFlR" /outputs
+      script: |-
+        pip install scipy==1.3.3
+        pip install requests==2.22.0
+        pip install Pillow==6.2.1
+        cp -R /inputs/repo /stylegan2
+        cp -R /inputs/extractedImagesForTraining/cat_images_tfrecords /stylegan2
+        cd /stylegan2/cat_images_tfrecords/cat
+        for res in 2 3 4 5 6 7 8; do \
+          cat cat_images_tfrecords-r0${res}_* > cat_images_tfrecords-r0$res.tfrecords.gz; \
+          gunzip cat_images_tfrecords-r0$res.tfrecords.gz; \
+        done
+        cd /stylegan2
+        python run_metrics.py \
+          --data-dir=/stylegan2/cat_images_tfrecords \
+          --network=/inputs/pretrainedNetwork/stylegan2-cat-config-f.pkl \
+          --metrics=fid50k,ppl2_wend \
+          --dataset=cat \
+          --result-dir=/outputs/evaluationPretrained
+        ls "-aFlR" /outputs
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 
   # 4. Show generating images using pretrained cat model
@@ -302,82 +295,74 @@ jobs:
       - cloneStyleGAN2Repo
       - getPretrainedModel
     inputs:
-      repo:
-        type: volume
+      repo: cloneStyleGAN2Repo.outputs.repo
       pretrainedNetwork: getPretrainedModel.outputs.pretrainedNetwork
     outputs:
       generatedCatsPretrained:
         type: dataset
         with:
-          id: "dsrtxabxfqmjbrw"
-    uses: container@v1
+          ref: stylegan2-w2of2-generated-cats-pretrained
+    uses: script@v1
     with:
-      args:
-        - bash
-        - -c
-        - |-
-          pip install scipy==1.3.3
-          pip install requests==2.22.0
-          pip install Pillow==6.2.1
-          cp -R /inputs/repo /stylegan2
-          cd /stylegan2
-          python run_generator.py generate-images \
-            --network=/inputs/pretrainedNetwork/stylegan2-cat-config-f.pkl \
-            --seeds=6600-6605 \
-            --truncation-psi=0.5 \
-            --result-dir=/outputs/generatedCatsPretrained
-          ls "-aFlR" /outputs
+      script: |-
+        pip install scipy==1.3.3
+        pip install requests==2.22.0
+        pip install Pillow==6.2.1
+        cp -R /inputs/repo /stylegan2
+        cd /stylegan2
+        python run_generator.py generate-images \
+          --network=/inputs/pretrainedNetwork/stylegan2-cat-config-f.pkl \
+          --seeds=6600-6605 \
+          --truncation-psi=0.5 \
+          --result-dir=/outputs/generatedCatsPretrained
+        ls "-aFlR" /outputs
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 
   # 5. Train our model on image subsample
 
-  # This could be extended to a larger image set by passing it in instead of dsts5p5o8fe86j3:6qstm0t
+  # This could be extended to a larger image set by passing it in instead
 
   trainOurModel:
     resources:
-      instance-type: V100
+      instance-type: P6000
     needs:
       - cloneStyleGAN2Repo
     inputs:
       extractedImagesForTraining:
         type: dataset
         with:
-          id: "dstfq4pfrtz4fav:17dcxcj"
-      repo:
-        type: volume
+          ref: getPretrainedModel.outputs.pretrainedNetwork
+      repo: cloneStyleGAN2Repo.outputs.repo
     outputs:
       ourTrainedNetwork:
         type: dataset
         with:
-          id: "dsrso5rn4vtjlf4"
-    uses: container@v1
+          ref: stylegan2-w2of2-our-trained-network
+    uses: script@v1
     with:
-      args:
-        - bash
-        - -c
-        - |-
-          pip install scipy==1.3.3
-          pip install requests==2.22.0
-          pip install Pillow==6.2.1
-          cp -R /inputs/repo /stylegan2
-          cp -R /inputs/extractedImagesForTraining/cat_images_tfrecords /stylegan2
-          cd /stylegan2/cat_images_tfrecords/cat
-          for res in 2 3 4 5 6 7 8; do \
-            cat cat_images_tfrecords-r0${res}_* > cat_images_tfrecords-r0$res.tfrecords.gz; \
-            gunzip cat_images_tfrecords-r0$res.tfrecords.gz; \
-          done
-          cd /stylegan2
-          python run_training.py \
-            --data-dir=/stylegan2/cat_images_tfrecords \
-            --config=config-f \
-            --dataset=cat \
-            --total-kimg=10 \
-            --result-dir=/outputs/ourTrainedNetwork
-          cd /outputs/ourTrainedNetwork/00000-stylegan2-cat-1gpu-config-f
-          gzip network-final.pkl
-          split -a 3 -b 100m network-final.pkl.gz network-final_
-          rm network-final.pkl.gz network-snapshot-*
-          ls "-aFlR" /outputs
+      script: |-
+        pip install scipy==1.3.3
+        pip install requests==2.22.0
+        pip install Pillow==6.2.1
+        cp -R /inputs/repo /stylegan2
+        cp -R /inputs/extractedImagesForTraining/cat_images_tfrecords /stylegan2
+        cd /stylegan2/cat_images_tfrecords/cat
+        for res in 2 3 4 5 6 7 8; do \
+          cat cat_images_tfrecords-r0${res}_* > cat_images_tfrecords-r0$res.tfrecords.gz; \
+          gunzip cat_images_tfrecords-r0$res.tfrecords.gz; \
+        done
+        cd /stylegan2
+        python run_training.py \
+          --data-dir=/stylegan2/cat_images_tfrecords \
+          --config=config-f \
+          --dataset=cat \
+          --total-kimg=10 \
+          --result-dir=/outputs/ourTrainedNetwork
+        cd /outputs/ourTrainedNetwork/00000-stylegan2-cat-1gpu-config-f
+        gzip network-final.pkl
+        split -a 3 -b 100m network-final.pkl.gz network-final_
+        rm network-final.pkl.gz network-snapshot-*
+        ls "-aFlR" /outputs
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 
   # 6. Run evaluation on our trained model
@@ -387,51 +372,47 @@ jobs:
 
   evaluateOurModel:
     resources:
-      instance-type: V100
+      instance-type: P6000
     needs:
       - cloneStyleGAN2Repo
       - trainOurModel
     inputs:
-      repo:
-        type: volume
+      repo: cloneStyleGAN2Repo.outputs.repo
       extractedImagesForTraining:
         type: dataset
         with:
-          id: "dstfq4pfrtz4fav:17dcxcj"
+          ref: getPretrainedModel.outputs.pretrainedNetwork
       ourTrainedNetwork: trainOurModel.outputs.ourTrainedNetwork
     outputs:
       evaluationOurs:
         type: dataset
         with:
-          id: "dstp3of0i4tr38s"
-    uses: container@v1
+          ref: stylegan2-w2of2-evaluation-ours
+    uses: script@v1
     with:
-      args:
-        - bash
-        - -c
-        - |-
-          pip install scipy==1.3.3
-          pip install requests==2.22.0
-          pip install Pillow==6.2.1
-          cp -R /inputs/repo /stylegan2
-          cp -R /inputs/extractedImagesForTraining/cat_images_tfrecords /stylegan2
-          cd /stylegan2/cat_images_tfrecords/cat
-          for res in 2 3 4 5 6 7 8; do \
-            cat cat_images_tfrecords-r0${res}_* > cat_images_tfrecords-r0$res.tfrecords.gz; \
-            gunzip cat_images_tfrecords-r0$res.tfrecords.gz; \
-          done
-          mkdir /ourTrainedNetwork
-          cd /ourTrainedNetwork
-          cat /inputs/ourTrainedNetwork/00000-stylegan2-cat-1gpu-config-f/network-final_* > network-final.pkl.gz
-          gunzip network-final.pkl.gz
-          cd /stylegan2
-          python run_metrics.py \
-            --data-dir=/stylegan2/cat_images_tfrecords \
-            --network=/ourTrainedNetwork/network-final.pkl \
-            --metrics=fid50k,ppl2_wend \
-            --dataset=cat \
-            --result-dir=/outputs/evaluationOurs
-          ls "-aFlR" /outputs
+      script: |-
+        pip install scipy==1.3.3
+        pip install requests==2.22.0
+        pip install Pillow==6.2.1
+        cp -R /inputs/repo /stylegan2
+        cp -R /inputs/extractedImagesForTraining/cat_images_tfrecords /stylegan2
+        cd /stylegan2/cat_images_tfrecords/cat
+        for res in 2 3 4 5 6 7 8; do \
+          cat cat_images_tfrecords-r0${res}_* > cat_images_tfrecords-r0$res.tfrecords.gz; \
+          gunzip cat_images_tfrecords-r0$res.tfrecords.gz; \
+        done
+        mkdir /ourTrainedNetwork
+        cd /ourTrainedNetwork
+        cat /inputs/ourTrainedNetwork/00000-stylegan2-cat-1gpu-config-f/network-final_* > network-final.pkl.gz
+        gunzip network-final.pkl.gz
+        cd /stylegan2
+        python run_metrics.py \
+          --data-dir=/stylegan2/cat_images_tfrecords \
+          --network=/ourTrainedNetwork/network-final.pkl \
+          --metrics=fid50k,ppl2_wend \
+          --dataset=cat \
+          --result-dir=/outputs/evaluationOurs
+        ls "-aFlR" /outputs
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 
   # 7. Show generating images with our trained model
@@ -443,35 +424,31 @@ jobs:
       - cloneStyleGAN2Repo
       - trainOurModel
     inputs:
-      repo:
-        type: volume
+      repo: cloneStyleGAN2Repo.outputs.repo
       ourTrainedNetwork: trainOurModel.outputs.ourTrainedNetwork
     outputs:
       generatedCatsOurs:
         type: dataset
         with:
-          id: "dstba8lqk9g2x7v"
-    uses: container@v1
+          ref: stylegan2-w2of2-generated-cats-ours
+    uses: script@v1
     with:
-      args:
-        - bash
-        - -c
-        - |-
-          pip install scipy==1.3.3
-          pip install requests==2.22.0
-          pip install Pillow==6.2.1
-          cp -R /inputs/repo /stylegan2
-          mkdir /ourTrainedNetwork
-          cd /ourTrainedNetwork
-          cat /inputs/ourTrainedNetwork/00000-stylegan2-cat-1gpu-config-f/network-final_* > network-final.pkl.gz
-          gunzip network-final.pkl.gz
-          cd /stylegan2
-          python run_generator.py generate-images \
-            --network=/ourTrainedNetwork/network-final.pkl \
-            --seeds=6600-6605 \
-            --truncation-psi=0.5 \
-            --result-dir=/outputs/generatedCatsOurs
-          ls "-aFlR" /outputs
+      script: |-
+        pip install scipy==1.3.3
+        pip install requests==2.22.0
+        pip install Pillow==6.2.1
+        cp -R /inputs/repo /stylegan2
+        mkdir /ourTrainedNetwork
+        cd /ourTrainedNetwork
+        cat /inputs/ourTrainedNetwork/00000-stylegan2-cat-1gpu-config-f/network-final_* > network-final.pkl.gz
+        gunzip network-final.pkl.gz
+        cd /stylegan2
+        python run_generator.py generate-images \
+          --network=/ourTrainedNetwork/network-final.pkl \
+          --seeds=6600-6605 \
+          --truncation-psi=0.5 \
+          --result-dir=/outputs/generatedCatsOurs
+        ls "-aFlR" /outputs
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 
 ```

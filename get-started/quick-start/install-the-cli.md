@@ -90,6 +90,7 @@ More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.pal
 ## **Install the latest pre-release version**
 
 If you need a pre-release version of the CLI use the following command to install it.
+
 ```bash
 pip install -U --pre gradient
 ```

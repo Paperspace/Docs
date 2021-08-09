@@ -1,6 +1,6 @@
 # Secrets
 
-### Managing and Using Secrets
+## Managing and Using Secrets
 
 Secrets allow you to store sensitive information at the team, private cluster, and project level. The secrets you create are available to use in experiments run on private clusters.
 
@@ -16,7 +16,7 @@ Secrets can be set from the Settings tab in the web UI or through the CLI.
 View the full CLI/SDK Docs for **Secrets** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-secrets](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-secrets)
 {% endhint %}
 
-#### Set a Secret
+### Set a Secret
 
 {% tabs %}
 {% tab title="Web UI" %}
@@ -46,7 +46,7 @@ gradient secrets set cluster --id=<cluster_id> --name=<name> --value=<secret>
 {% endtab %}
 {% endtabs %}
 
-#### List Secrets
+### List Secrets
 
 {% tabs %}
 {% tab title="Web UI" %}
@@ -76,7 +76,7 @@ gradient secrets list cluster --id=<cluster_id>
 {% endtab %}
 {% endtabs %}
 
-#### Delete a Secret
+### Delete a Secret
 
 {% tabs %}
 {% tab title="Web UI" %}
@@ -106,7 +106,7 @@ gradient secrets delete cluster --id=<cluster_id> --name=<name>
 {% endtab %}
 {% endtabs %}
 
-#### **Secret scoping**
+### **Secret scoping**
 
 If the same secret name is created for more than one scope only one will be applied. Secret with the same name have the following precedence: Cluster secrets take precedence over Team secrets; Project secrets take precedence over both Cluster secrets and Team secrets.
 

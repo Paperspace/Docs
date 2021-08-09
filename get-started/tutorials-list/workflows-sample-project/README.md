@@ -20,21 +20,40 @@ gradient workflows run \
   --apiKey <your API key>
 ```
 
-This in turn requires you to
+The `--clusterID` argument is optional, and is not needed if you are using the Gradient public cluster.
+
+The Workflow usage in turn requires you to
 
 * [Create a project](https://docs.paperspace.com/gradient/get-started/managing-projects#create-a-project) and optionally [get its ID](https://docs.paperspace.com/gradient/get-started/managing-projects#get-your-projects-id)
 * [Generate an API key](https://docs.paperspace.com/gradient/get-started/quick-start/install-the-cli#obtaining-an-api-key) for your project to allow access
 * [Install the Gradient CLI ](https://docs.paperspace.com/gradient/get-started/quick-start/install-the-cli)on your machine
-* Optionally \[1\], use or create a [Gradient Private cluster](https://docs.paperspace.com/gradient/gradient-private-cloud/about/setup/managed-installation) and [its ID](https://docs.paperspace.com/gradient/gradient-private-cloud/about/usage#finding-your-cluster-id)
-* [Create the two workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#creating-gradient-workflows) via CLI or GUI and [get their IDs](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#running-your-first-workflow-run)
+* Optionally, use or create a [Gradient Private cluster](https://docs.paperspace.com/gradient/gradient-private-cloud/about/setup/managed-installation) and [its ID](https://docs.paperspace.com/gradient/gradient-private-cloud/about/usage#finding-your-cluster-id) \[1\]
+* [Create the two workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#creating-gradient-workflows) and [get their IDs](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#running-your-first-workflow-run)
 * [Create output datasets](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository#creating-a-dataset-and-dataset-version) for the two workflows
-* [Import a placeholder file](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository#creating-a-dataset-and-dataset-version) into each created output dataset
-
-This is quite a lot of steps, and will simplify in the future as the Workflows product matures. \(See the caveats section below for more details.\)
-
-Finally, you will need to edit the YAML to correspond to the IDs of your copies of the Gradient managed datasets that are output. This is because this is a production-grade MLOps system and everything must be versioned and specified exactly.
 
 \[1\] If a cluster is not created, or its ID not specified, the Gradient public cluster is used
+
+The create Workflow and create output Dataset steps can be done via the GUI or CLI.
+
+The CLI commands look like
+
+`gradient workflows create --name StyleGAN2-Download-and-Extract-Data --projectId <your project ID> --apiKey <your API key>`
+
+with the same for `StyleGAN2-Train-and-Evaluate-Model`
+
+Then
+
+`gradient datasets create --name stylegan2-w1of2-cat-image-database --storageProviderId sp68mc1rjhfs2q2 --apiKey <your API key>`
+
+and the same for 
+
+`stylegan2-w1of2-extracted-images, stylegan2-w2of2-pretrained-network, stylegan2-w2of2-evaluation-pretrained, stylegan2-w2of2-generated-cats-pretrained, stylegan2-w2of2-our-trained-network, stylegan2-w2of2-evaluation-ours, and stylegan2-w2of2-generated-cats-ours`
+
+where `sp68mc1rjhfs2q2` is the current Gradient public cluster storage provider ID. Substitute the storage provider ID for your private cluster if you are using one and it is different.
+
+The usage of `--apiKey` on the command line is optional: you can also store a key in a JSON file, e.g., `~/.paperspace/config.json` to avoid having to add it to each command. Here we leave it present. Another option is the environment variable `PAPERSPACE_API_KEY`. See [connecting your account](https://docs.paperspace.com/gradient/get-started/quick-start/install-the-cli#connecting-your-account) for more details.
+
+This is quite a lot of steps, and will simplify in the future as the Workflows product matures. See the caveats section below for more details.
 
 ### Workflow time to run: Autoscaling
 
@@ -77,7 +96,7 @@ To keep this tutorial tractable with a workflow runtime of hours and not days, w
 Gradient Workflows is still a new product \(beta stage\), and as such there are some caveats to this tutorial. All of these will go away as the Workflows product matures.
 
 * _Autoscaling:_ For best performance, autoscaling hot nodes can be configured. When using the public cluster, this is not needed.
-* _Invoke workflow from CLI only:_ Workflows must be invoked from the command line. In future, Workflows will be able to be invoked from CLI, SDK, or GUI, either manually, or automatically based on a trigger.
+* _Invoke workflow from CLI only:_ Workflows must be invoked from the command line. In future, Workflows will be able to be invoked from CLI or GUI, either manually, or automatically based on a trigger. They can also be invoked from a Notebook via the SDK.
 * _Create output datasets in GUI before running:_ Gradient managed datasets must be created before running a Workflow so that their IDs can be referenced. We plan that a new dataset ID will be able to be referenced in the workflow, and it will create the dataset if it does not exist.
 * _Created dataset must contain placeholder file:_ Similarly, a newly created dataset must contain an imported file, e.g., a small text file as a placeholder. Otherwise the workflow will fail saying dataset cannot be referenced.
 * _Workflows contain workaround code to avoid large files in their /output directories:_ We use the sequence `gzip/split/cat/gunzip` to break up the large files of images, extracted multi-resolution images in TFRecords format, and trained network, due to a machine memory usage issue. This is temporary, and gigabyte+ files will be able to be handled without needing this sequence. \(Files larger than machine memory will still need some kind of streaming, however, as one would expect.\)
