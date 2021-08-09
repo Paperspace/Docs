@@ -10,7 +10,7 @@ To begin using Gradient, follow these preliminary steps:
 Now you can create Notebooks, Workflows, Models, Deployments, and more!  Note: if you are self-hosting Gradient, please visit the [Gradient Private Cloud ](../../gradient-private-cloud/about/setup/self-hosted-clusters/)section for more info.
 
 {% hint style="info" %}
-In order to unlock Workflows, Models, and Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team. 
+In order to unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team. 
 {% endhint %}
 
 ## Logging in for the first time
@@ -39,8 +39,10 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 
 ## Advanced MLOps
 
+You can perform advanced MLOps functions using Workflows, Models and Deployments. Workflows allow you to work with Data, Models, and Deployment in a reproducible and fully tracked manner.  You can define a workflow one time using a text editor and use it repeatedly to perform simple or complext ML activities, such as pre-processing data, training a model, creating a deployment, or performing inference.
+
 {% hint style="warning" %}
-In order to unlock Workflows, Models, and Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team. 
+In order to unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team. 
 {% endhint %}
 
 ### Create a Project
@@ -49,27 +51,43 @@ Projects organize your work.  To create a Project, navigate to **Projects** and 
 
 ![](../../.gitbook/assets/screen-shot-2021-04-22-at-11.46.07-am.png)
 
+Make a note of the projectId, for example `pr1234567`.
+
 ### Running your first Workflow
 
-{% hint style="warning" %}
-Using Workflows requires [creating a cluster](../../gradient-private-cloud/about/setup/managed-installation.md).  
-{% endhint %}
+You can run Workflows from the web interface or CLI. First you need to create a new Workflow. This will allow you to keep track of related runs of the Workflow.
 
-You can run Workflows from the web interface or CLI. The first step is to create a new Workflow.
+If you have never run a workflow before you can create and run a demo workflow all in one step in the web interface, by clicking on the Workflows tab within the project, then clicking the **Create Your First Workflow** button.
 
 ![](../../.gitbook/assets/screen-shot-2021-04-22-at-12.06.01-pm.png)
 
-### **Steps**
+From here you can either run the workflow as-is, or download the Workflow spec to your workstations and run it from the CLI.
 
-1. \*\*\*\*[**Install the CLI**](install-the-cli.md)\*\*\*\*
+### **Steps to create and run a Workflow from the CLI**
+
+1. \*\*\*\*[**Install the Gradient CLI**](install-the-cli.md)\*\*\*\*
 2. \*\*\*\*[**Connect your account**](install-the-cli.md#connecting-your-account)\*\*\*\*
-3. **Download or copy the sample Workflow YAML file to your computer**
-4. **Run the Workflow from the CLI**
+3. **Create a  Workflow**
+
+Specify a name for the Workflow and a projectId.  You can use the projectId from project created earlier.
+
+```bash
+gradient workflows create  \ 
+--name <your-workflow-name>  \
+--projectId <your-project-id>
+```
+
+4. **Download or copy the sample Workflow YAML file from the web interface to your computer**
+
+Place the contents in a file named `workflow.yaml`.
+
+5. **Run the Workflow from the CLI**
+
+The following command will run an instance of the Workflow in your project. Be sure to replace `<your-workflow-id>` with your **Workflow ID**.
 
 ```bash
 gradient workflows run  \ 
 --id <your-workflow-id>  \
---clusterId <your-cluster-id>  \
 --path ./workflow.yaml 
 ```
 
@@ -77,9 +95,8 @@ gradient workflows run  \
 **Note:** We recommend stashing your API key with `gradient apiKey XXXXXXXXXXXXX` or you can add your API key as an option on each command. See [Connecting Your Account](install-the-cli.md#connecting-your-account).
 {% endhint %}
 
-The following command will create and start a Workflow that will run a sample project. Be sure to replace `<your-workflow-id>` with your **Workflow ID** and `<your-cluster-id>` with your **Cluster ID**.
 
-Behind the scenes, your Workflow will be executed on your cluster. Congratulations! You ran your first Workflow on Gradient 🚀
+Behind the scenes, your Workflow will be executed on the Gradient public cluster. Congratulations! You ran your first Workflow on Gradient 🚀
 
 ## Explore the rest of the platform
 
