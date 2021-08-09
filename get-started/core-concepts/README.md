@@ -14,11 +14,7 @@ Check out the [FREE GPU](../../more/instance-types/free-instances.md) option whe
 
 ## Projects
 
-{% hint style="warning" %}
-Using advanced ML components contained within Projects requires [creating a cluster](../../gradient-private-cloud/about/setup/managed-installation.md).   
-{% endhint %}
-
-A Gradient [Project](../managing-projects/) is a collection of Workflows, Models, and Deployments. It provides a more rigorous approach that is suitable for more established problems, and provides a path to production.
+A Gradient [Project](../managing-projects/) is a collection of Workflows, Models, and Deployments. It provides a way to organize your Gradient workload into related groups for manitenance and sharing within a team.
 
 ### Workflows
 
@@ -40,5 +36,5 @@ Versioned Datasets are used to manage the flow of data with your machine learnin
 
 #### [Persistent Storage](../../data/data-overview/#persistent-storage) \(legacy\)
 
-Persistent storage is a persistent filesystem automatically mounted on every Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Learn more [here](../../data/data-overview/#persistent-storage).
+Persistent storage is a persistent filesystem automatically mounted on every Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Gradient Dataset versions are automatically cached to persistent storage for performance.  Learn more [here](../../data/data-overview/#persistent-storage).
 
