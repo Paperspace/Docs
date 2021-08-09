@@ -61,15 +61,15 @@ If you have never run a workflow before you can create and run a demo workflow a
 
 ![](../../.gitbook/assets/screen-shot-2021-04-22-at-12.06.01-pm.png)
 
-From here, following the instructions on the page, you can either run the workflow as-is, or download the Workflow spec to your workstations and run it from the CLI.
+Follow the instructions on the page to run the workflow as is, or download the Workflow Spec and run it from the CLI.
 
-### **Steps to create and run a Workflow from the CLI**
+### **Run Workflow from the CLI**
 
 1. \*\*\*\*[**Install the Gradient CLI**](install-the-cli.md)\*\*\*\*
 2. \*\*\*\*[**Connect your account**](install-the-cli.md#connecting-your-account)\*\*\*\*
 3. **Create a Workflow**
    
-   This step is only needed if you didn't create a default `demo workflow` in the web interface.  Specify a name for the Workflow and a `projectId`.  Use the `projectId` from the project you created earlier.
+   This step is only needed if you didn't already create a default `demo workflow` in the web interface.  Specify a name for the Workflow and a `projectId`.  Use the `projectId` from the project you created earlier.
 
    ```bash
    gradient workflows create  \ 
@@ -77,8 +77,8 @@ From here, following the instructions on the page, you can either run the workfl
    --projectId <your-project-id>
    ```
 
-   (To see a list of your projects and `projectIds` you can run `gradient projects list`.  
-   To see a list of Workflows within a project run `gradient workflows list --projectId <your-project-id>`.)
+   To see a list of your projects and `projectIds` you can run `gradient projects list`.  
+   For a list of Workflows within a project run `gradient workflows list --projectId <your-project-id>`.
 
 
 4. **Download or copy the sample Workflow Spec from the web interface to your computer**
