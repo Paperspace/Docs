@@ -77,7 +77,7 @@ Follow the instructions on the page to run the workflow as is, or download the W
    --projectId <your-project-id>
    ```
 
-   To see a list of your projects and `projectIds` you can run `gradient projects list`.  
+   To see a list of your projects and `projectIds` run `gradient projects list`. 
    For a list of Workflows within a project run `gradient workflows list --projectId <your-project-id>`.
 
 
