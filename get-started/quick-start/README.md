@@ -69,13 +69,13 @@ From here you can either run the workflow as-is, or download the Workflow spec t
 2. \*\*\*\*[**Connect your account**](install-the-cli.md#connecting-your-account)\*\*\*\*
 3. **Create a Workflow**
 
-   Specify a name for the Workflow and a projectId.  You can use the projectId from project created earlier.
+   Specify a name for the Workflow and a projectId.  You can use the projectId from the project you created earlier.
 
-```bash
-gradient workflows create  \ 
---name <your-workflow-name>  \
---projectId <your-project-id>
-```
+   ```bash
+   gradient workflows create  \ 
+   --name <your-workflow-name>  \
+   --projectId <your-project-id>
+   ```
 
 4. **Download or copy the sample Workflow Spec from the web interface to your computer**
 
@@ -84,12 +84,11 @@ gradient workflows create  \
 5. **Run the Workflow from the CLI**
 
    The following command will run an instance of the Workflow in your project. Be sure to replace `<your-workflow-id>` with your **Workflow ID**.
-
-```bash
-gradient workflows run  \ 
---id <your-workflow-id>  \
---path ./workflow.yaml 
-```
+   ```bash
+   gradient workflows run  \ 
+   --id <your-workflow-id>  \
+   --path ./workflow.yaml 
+   ```
 
 {% hint style="info" %}
 **Note:** We recommend stashing your API key with `gradient apiKey XXXXXXXXXXXXX` or you can add your API key as an option on each command. See [Connecting Your Account](install-the-cli.md#connecting-your-account).
