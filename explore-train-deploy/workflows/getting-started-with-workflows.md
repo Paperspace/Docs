@@ -13,15 +13,14 @@ View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/
 3. Create your first workflow using the Gradient CLI
 
 ```bash
-gradient workflows create --name <MY_FIRST_WORKFLOW> --projectId <project-id>
+gradient workflows create --name <my-workflow-name> --projectId <project-id>
 ```
 
 ## Running your first workflow run
 
-Create a workflow spec yaml file \([View the full workflow yaml spec](workflow-spec.md)\). You will also need:
+Create a workflow spec yaml file \([View a sample workflow yaml spec](workflow-spec.md)\). You will also need:
 
-**`workflow-id`** : Grab this by running `gradient workflows list` in the CLI, i.e., `7634c165-5034-4f49-95fa-005fc0e7970b`
-
+**`workflow-id`** from the create command, for example, `7634c165-5034-4f49-95fa-005fc0e7970b`.  (You can also get this by running `gradient workflows list` in the CLI.)
 ```bash
 gradient workflows run  \
     --id <worklow-id> \ 
