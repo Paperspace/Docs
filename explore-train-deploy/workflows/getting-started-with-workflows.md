@@ -67,13 +67,12 @@ The command will return an ID for the workflow, for example, `7634c165-5034-4f49
      --name demo-dataset \
      --storageProviderId sp6htughugnd5rz
    ```
-   The `storageProviderId` *`sp6htughugnd5rz`* is the Gradient Managed storage provider. Your account should automatically have access to this storage provider.
+   The storageProviderId **`sp6htughugnd5rz`** is the **Gradient Managed** storage provider. Your account automatically has access to this storage provider.
    For more information about Datasets see [Versioned Data](https://docs.paperspace.com/gradient/data/data-overview#versioned-data).
+   
 
-   To run the workflow you will also need the
-   **`workflow-id`** from the previously created workflow. (You can also get one by running `gradient workflows list` in the CLI.)  
-
-3. Run the workflow with the specified workflow yaml spec file and workflow ID:
+3. Run the workflow with the specified workflow spec file and the **`workflow-id`** from the previously created workflow.
+  (You can also get a list of workflows by running `gradient workflows list`.)
    ```bash
    gradient workflows run \
        --id <worklow-id> \ 
