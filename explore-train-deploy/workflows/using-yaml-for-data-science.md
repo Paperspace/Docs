@@ -192,7 +192,7 @@ outputs:
       ref: "dstoyg0pdyysyxj"
 ```
 
-\(the dots correspond to indentation\), which, assuming that job succeeded, does exist.
+does exist \(assuming the job succeeded\).  The dots correspond to indentation in this context.
 
 ### Datasets are _versioned_
 
@@ -207,7 +207,7 @@ GetCatImageDatabase:
         ref: "dsr5spfj2aqzlfg"
 ```
 
-then run another workflow and output a different file to the same ID, say the MD5 sum of the data instead of the data itself, then it won't update the earlier dataset version and add the new file alongside the first one, but it will instead create a new dataset version, `id:version`, that does not contain the previous file. This is the behavior you want for a production setup, with things versioned and often immutable, but it requires remembering how it is working when setting things up.
+then run another workflow and output an additional file to the same dataset ID, it won't update the earlier dataset version add the new file alongside the first one. Instead a new dataset version is created, with a new **dataset-ID:version-ID**, that intentionally does not include the previous file. This behavior is so that everything is versioned and immutable which is desireable in a production setting. However this does require you to have a good understanding of when new dataset versions are created implicitly.
 
 ### Test whether a Python import will work
 
