@@ -11,6 +11,10 @@ Gradient Deployments enable a hassle-free, automatic “push to deploy” option
 
 Gradient deployments come with out-of-the-box integration with TensorFlow models, which can be easily extended to serve other types of models and data. The deployments support a variety of GPU & CPU machine types with per-second billing. Deployments can be scaled to multiple instances running behind a load balancer that exposes a dedicated endpoint.
 
+{% hint style="warning" %}
+In order to unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
+{% endhint %}
+
 In this tutorial, we will create a deployment from an existing TensorFlow model. This guide is a continuation of the tutorial, [Registering Models](registering-models-in-gradient.md).
 
 Clone the repo [https://github.com/gradient-ai/fashionmnist](https://github.com/gradient-ai/fashionmnist) to access the inference code.
