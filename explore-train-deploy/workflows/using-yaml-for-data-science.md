@@ -215,7 +215,7 @@ GetCatImageDatabase:
         ref: "dsr5spfj2aqzlfg"
 ```
 
-then run another workflow and output an additional file to the same dataset ID, it won't update the earlier dataset version add the new file alongside the first one. Instead a new dataset version is created, with a new `datasetId:version`, that intentionally does not include the previous file. This behavior is so that everything is versioned and immutable which is desireable in a production setting. However this does require you to have a good understanding of when new dataset versions are created implicitly.
+then run another workflow and output an additional file to the same dataset ID, it won't update the earlier dataset version add the new file alongside the first one. Instead a new dataset version is created, with a new `datasetId:version`, that intentionally does not include the previous file. This behavior is so that everything is versioned and immutable, which is desireable in a production setting. However this does require you to have a good understanding of when new dataset versions are created implicitly.
 
 ### Test whether a Python import will work
 
