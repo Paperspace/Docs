@@ -65,8 +65,8 @@ Follow the instructions on the page to run the workflow as is, or download the W
 
 ### **Run Workflow from the CLI**
 
-1. \*\*\*\*[**Install the Gradient CLI**](install-the-cli.md)\*\*\*\*
-2. \*\*\*\*[**Connect your account**](install-the-cli.md#connecting-your-account)\*\*\*\*
+1. [**Install the Gradient CLI**](install-the-cli.md)
+2. [**Connect your account**](install-the-cli.md#connecting-your-account)
 3. **Create a Workflow**
 
    This step is only needed if you didn't already create a default `demo workflow` in the web interface. Specify a name for the Workflow and a `projectId`. Use the `projectId` from the project you created earlier.
