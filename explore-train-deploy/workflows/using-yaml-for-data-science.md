@@ -100,9 +100,17 @@ in the `with:` section.
 
 ### Dataset identifiers
 
-Daataset must be referred to by their names or IDs within the YAML file. The dataset must therefore be created outside of YAML file currently. This can be done in the GUI under the Data tab by clicking Add, or using the CLI command `gradient datasets create ...`.
+Daataset must be referred to by their names or IDs within the YAML file. The dataset must therefore be created outside of YAML file currently. This can be done in the GUI under the Data tab by clicking Add:
 
 ![](../../.gitbook/assets/create_dataset.png)
+
+Alternatively the dataset can be created using the CLI command:
+```bash
+gradient datasets create \
+  --name <my-dataset-name> \
+  --storageProviderId <storage-provider-id`
+```
+See [Versioned Data](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository) for more information on creating datasets.
 
 ### Dataset versions
 
@@ -207,7 +215,7 @@ GetCatImageDatabase:
         ref: "dsr5spfj2aqzlfg"
 ```
 
-then run another workflow and output an additional file to the same dataset ID, it won't update the earlier dataset version add the new file alongside the first one. Instead a new dataset version is created, with a new **dataset-ID:version-ID**, that intentionally does not include the previous file. This behavior is so that everything is versioned and immutable which is desireable in a production setting. However this does require you to have a good understanding of when new dataset versions are created implicitly.
+then run another workflow and output an additional file to the same dataset ID, it won't update the earlier dataset version add the new file alongside the first one. Instead a new dataset version is created, with a new `datasetId:version`, that intentionally does not include the previous file. This behavior is so that everything is versioned and immutable which is desireable in a production setting. However this does require you to have a good understanding of when new dataset versions are created implicitly.
 
 ### Test whether a Python import will work
 
