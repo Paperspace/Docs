@@ -2,7 +2,7 @@
 
 The following sections cover creating and running workflows, and authoring new workflow yaml specs.  If you have never run a workflow before we recommend you step through the workflows demo in the [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) then return here for more details.
 
-## Creating a Workflow
+## Create a Workflow
 
 {% hint style="info" %}
 View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
@@ -17,9 +17,9 @@ gradient workflows create --name <my-workflow-name> --projectId <project-id>
 ```
 The command will return an ID for the workflow, for example, `7634c165-5034-4f49-95fa-005fc0e7970b`.
 
-## Creating a Workflow Spec
+## Create a Workflow Spec
 
-Create a valid workflow spec yaml file.  Below is an example **workflow.yaml** spec.
+Create a valid workflow spec in a text file using a text editor.  Workflows are typically defined in yaml, although JSON can also be used.  Below is an example **workflow.yaml** spec.  You will learn more about writing workflow specs on the following pages.
 ```yaml
 jobs:
   CloneRepo:
