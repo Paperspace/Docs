@@ -4,10 +4,6 @@ description: Automate from idea to production
 
 # Workflows
 
-{% hint style="info" %}
-Gradient Workflows are currently in **private beta**. **A public beta is scheduled for Q2/2021**
-{% endhint %}
-
 ![](../../.gitbook/assets/screen-shot-2021-03-04-at-4.15.25-pm.png)
 
 Workflows are the newest \(and most powerful\) way to create machine learning projects. Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax to easily create powerful automation.
