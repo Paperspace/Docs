@@ -64,7 +64,7 @@ jobs:
       trained-model:
         type: dataset
         with:
-          id: dsrvw1m30ymhiyt #Replace this id with your own dataset id
+          ref: dsrvw1m30ymhiyt #Replace this id with your own dataset id
     uses: container@v1
     with:
       args:
