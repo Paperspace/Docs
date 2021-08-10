@@ -58,22 +58,24 @@ The command will return an ID for the workflow, for example, `7634c165-5034-4f49
              --result-dir=/outputs/generatedFaces
          image: tensorflow/tensorflow:1.14.0-gpu-py3
    ```
-2. Create any datasets that workflow spec depends on. Notice that above workflow creates a new output dataset version in the dataset named `demo-dataset`. 
-   Before running this workflow yaml spec you need to created the dataset. 
-   If you did completed the worflows [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) 
-   you will already have a dataset with this name in your account. If not you can create this dataset using the following command:
+2. Create any datasets that workflow spec depends on. The above workflow creates a new output dataset version in the dataset named `demo-dataset`. 
+   Before running this workflow make sure a dataset with that name already exists.  You can run this command to list your datasets: `gradient datasets list`. 
+   If you completed the worflows [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) 
+   you will already have a dataset with this name. If not you can create it using the following command:
    ```bash
-   gradient datasets create --name demo-dataset --storageProviderId sp6htughugnd5rz
+   gradient datasets create \
+     --name demo-dataset \
+     --storageProviderId sp6htughugnd5rz
    ```
    The `storageProviderId` *`sp6htughugnd5rz`* is the Gradient Managed storage provider. Your account should automatically have access to this storage provider.
    For more information about Datasets see [Versioned Data](https://docs.paperspace.com/gradient/data/data-overview#versioned-data).
 
    To run the workflow you will also need the
-   **`workflow-id`** from the previously created workflow. (You can also get one by running `gradient workflows list` in the CLI.)
+   **`workflow-id`** from the previously created workflow. (You can also get one by running `gradient workflows list` in the CLI.)  
 
 3. Run the workflow with the specified workflow yaml spec file and workflow ID:
    ```bash
-   gradient workflows run  \
+   gradient workflows run \
        --id <worklow-id> \ 
        --path ./workflow.yaml
    ```
