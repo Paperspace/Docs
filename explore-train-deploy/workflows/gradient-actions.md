@@ -11,7 +11,7 @@ with:
   args: ["echo", "hello", "world"]
 ```
 
-In this basic example, the Gradient action called `container@v1` allows us to pick an arbitrary docker container \(in this case the lightweight `bash` container\) and pass arguments directly to it.
+The Gradient action called `container@v1` allows you to use an arbitrary docker container image \(in this case the lightweight `bash` container image\) and pass arguments directly to it.
 
 ## script
 
@@ -24,9 +24,9 @@ with:
   image: bash:5
 ```
 
-If you want to run multiple commands, the `script@v1` action allows you to pass a `script` in a [literal-style HereDoc](https://lzone.de/cheat-sheet/YAML#yaml-heredoc-multiline-strings) denoted by `|-`. The pipe will preserve newlines and the dash will remove extra newlines after the block.
+If you want to run multiple commands, the `script@v1` action allows you to pass a `script` in a [literal-style HereDoc](https://lzone.de/cheat-sheet/YAML#yaml-heredoc-multiline-strings) denoted by `|-`. The pipe character will preserve newlines and the dash will remove extra newlines after the block.
 
-Note: The image you provide will need to have `bash` available in it's PATH.
+Note: The image you provide will need to have `bash` available in its PATH.
 
 ## git-checkout
 
@@ -52,7 +52,7 @@ with:
   args: ['ls', '/inputs/repo']
 ```
 
-Note: to clone a private repository, add your username as an action parameter, [set a Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret) with a [GitHub access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) value, and add a password parameter \(example below\).
+Note: to clone a private repository, add your username as parameter, [set a Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret) with a [GitHub access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) value, and add a password parameter \(example below\).
 
 ```yaml
 outputs:
@@ -74,7 +74,7 @@ outputs:
   ds:
     type: dataset
     with:
-      ref: d1234
+      ref: my-dataset
 uses: git-checkout@v1
 with:
   url: https://github.com/user/my-public-repo
