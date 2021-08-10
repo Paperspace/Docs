@@ -105,7 +105,7 @@ Follow the instructions on the page to run the workflow as is, or download the W
          generatedFaces:
            type: dataset
            with:
-             ref: dsrlylvgje7q6zl
+             ref: demo-dataset
        uses: script@v1
        with:
          script: |-
