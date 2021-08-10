@@ -100,13 +100,13 @@ in the `with:` section.
 
 ### Dataset identifiers
 
-Currently there is an artifact in the system where a dataset must be referred to by its ID, but its ID is not known until the dataset is generated. The dataset must therefore be generated outside the given YAML file. This can be done in the GUI under the Data tab by clicking Add.
+Daataset must be referred to by their names or IDs within the YAML file. The dataset must therefore be created outside of YAML file currently. This can be done in the GUI under the Data tab by clicking Add, or using the CLI command `gradient datasets create ...`.
 
 ![](../../.gitbook/assets/create_dataset.png)
 
 ### Dataset versions
 
-Datasets can be referred to by their their version \(e.g. `datasetId:version`\), or just by identifier \(e.g. `datasetId`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding workflow.  Additionally, you can reference a dataset by team namespace \(e.g. `namespace/datasetId:version`\).
+Datasets can be referred to by their version \(e.g. `datasetId:version`\), or just by name or ID \(e.g. `datasetId`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding workflow.  Additionally, you can reference a dataset by team namespace \(e.g. `namespace/datasetId:version`\).
 
 ### Some GitHub action syntax is not supported
 
@@ -163,7 +163,7 @@ but
 
 ### Creating and referring to a dataset in the same workflow
 
-An example of information implicit in the workflow that might not match intuition is that there is a difference between referring to a dataset under `inputs: type: dataset`, and the dot syntax. So if one populates the dataset `dstoyg0pdyysyxj` for the first time in the current workflow \(modulo the GUI creation step above to get the ID\), and then tries to refer to it with
+An example of information implicit in the workflow that might not match intuition is that there is a difference between referring to a dataset under `inputs: type: dataset`, and the dot syntax. So if you populates the dataset `dstoyg0pdyysyxj` for the first time in the current workflow \(not including the GUI creation step above to get the ID\), and then try to refer to it with
 
 ```yaml
 inputs:
@@ -207,7 +207,7 @@ GetCatImageDatabase:
         ref: "dsr5spfj2aqzlfg"
 ```
 
-then run another workflow and output a different file to the same ID, say the MD5 sum of the data instead of the data itself, then it won't update the earlier dataset and add the new file alongside the first one, but create a copy under a new `id:version` that does not contain the previous file. This is the behavior you want for a production setup, with things versioned and often immutable, but it requires remembering how it is working when setting things up.
+then run another workflow and output a different file to the same ID, say the MD5 sum of the data instead of the data itself, then it won't update the earlier dataset version and add the new file alongside the first one, but it will instead create a new dataset version, `id:version`, that does not contain the previous file. This is the behavior you want for a production setup, with things versioned and often immutable, but it requires remembering how it is working when setting things up.
 
 ### Test whether a Python import will work
 
