@@ -4,6 +4,10 @@ description: Overview of machine learning Models in Gradient
 
 # Overview
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 The Gradient model repository is a hub for importing, managing, and deploying ML models. Gradient offers the ability to create your own **custom models** and in addition to launching pre-trained **public models**.
 
 ![Models are available within projects](../.gitbook/assets/screen-shot-2021-01-18-at-10.12.57-pm%20%281%29.png)
