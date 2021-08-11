@@ -1,5 +1,9 @@
 # Overview
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 Gradient clusters are private clusters that run machine learning workloads. Gradient clusters can be [created](setup/managed-installation.md) on Paperspace Cloud, on any other cloud provider \(AWS, GCP, Azure\), or on your own servers via the [Gradient Installer](setup/self-hosted-clusters/).
 
 Find out more about Gradient's multi-cloud capabilities [here](https://gradient.paperspace.com/clusters).
