@@ -1,5 +1,9 @@
 # Overview
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 ## What is a Notebook?
 
 Gradient notebooks are an interactive environment \(based on [Jupyter Notebook](https://jupyter.org/) or [Jupyter Lab](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906)\) for developing and running code. You can run Jupyter notebooks on a GPU, CPU, or even a TPU. 
