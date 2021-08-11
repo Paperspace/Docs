@@ -15,7 +15,7 @@ Deploy any model as a high-performance, low-latency micro-service with a RESTful
 
 Gradient makes it easy to deploy your trained model into production so that you can start generating predictions for real-time or batch data. Just specify the type of instance and the autoscaling behavior and Gradient takes care of the rest. Gradient will launch the instances, deploy your model, and set up the secure HTTPS endpoint for your application.  
 
-## Current Capabilities
+## Capabilities
 
 * Out-of-the-box integration with TensorFlow, ONNX, and TensorRT, as well as Flask for Custom models
 * A variety of GPU & CPU types to deploy on
