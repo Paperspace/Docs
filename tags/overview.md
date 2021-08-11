@@ -4,6 +4,10 @@ description: 'Add, edit, and filter on tags across all of a team''s Gradient ent
 
 # Overview
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 Tagging is a powerful feature in Gradient that allows teams to organize and track machine learning work.
 
 A tag is an alphanumeric word or phrase scoped to a team, which team members can add to any taggable entity type: Projects, Experiments, Notebooks, Jobs, Models, and Deployments.
