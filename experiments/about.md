@@ -4,6 +4,8 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # Overview
 
+{% hint style="warning" %} Experiments have been replaced by a more general framework called Workflows. For the latest info go to Workflows. {% endhint %}
+
 Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](using-experiments/hyperparameters.md).
 
 ![The Experiments view is available within each individual project](../.gitbook/assets/screen-shot-2021-01-18-at-9.50.00-pm.png)
