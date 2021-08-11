@@ -1,5 +1,9 @@
 # Types of Storage
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 ## Overview
 
 Gradient includes three types of storage that are available within the context of running an Experiment, Job, or Notebook. The three storage types are **Persistent, Artifact,** and **Workspace** storage.  Additionally, there is an option to mount S3 compatible object storage datasets to a running workload which are called **Datasets**.  
