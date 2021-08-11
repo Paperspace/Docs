@@ -66,13 +66,28 @@ Datasets referenced in the workflow spec need to be created before running the w
 The above workflow creates a new output dataset version in the dataset named `demo-dataset`.  So before running this workflow make sure a dataset with that name already exists.  You can run this command to list your datasets: `gradient datasets list`. 
 
 If you completed the worflows demo in the [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) 
-you will already have a dataset with this name. If not you can create it using the following command:
+you will already have a dataset with this name. If not you can create it using the following commands.
+
+First get a list of storage providers that are already part of your account. You should have at least one called **Gradient Managed**.
+
+```bash
+gradient storageProviders list
++------------------+-----------------+------+------------------------------------------+
+| Name             | ID              | Type | Config                                   |
++------------------+-----------------+------+------------------------------------------+
+| Gradient Managed | splXXXXXXXXXXXX | s3   | accessKey: XXXXXXXXXXXXXXXXXXXX          |
+|                  |                 |      | bucket: XXXXXXXXX                        |
+|                  |                 |      | endpoint: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+|                  |                 |      | secretAccessKey: ********                |
++------------------+-----------------+------+------------------------------------------+
+```
+Then create a dataset named **demo-dataset** using the **Gradient Managed** storage provider ID:
+
 ```bash
 gradient datasets create \
   --name demo-dataset \
-  --storageProviderId sp6htughugnd5rz
+  --storageProviderId splXXXXXXXXXXXX
 ```
-The storageProviderId **`sp6htughugnd5rz`** is the **Gradient Managed** storage provider. Your account automatically has access to this storage provider.
 
 
 ## Run the Workflow
