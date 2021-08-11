@@ -18,7 +18,8 @@ A range of affordable and high-end CPU-only instances.
 
 | Name | Description | GPU | Memory | vCPUs | Price |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **C5** | Low-cost instance with 1 vCPU, 1GB RAM | - | 8 GB | 4 vCPU | $0.08/hr |
+| **C3** | Very Low-cost instance with 2 vCPU, 2GB RAM | - | 2 GB | 2 vCPU | $0.018/hr |
+| **C5** | Low-cost instance with 4 vCPU, 8GB RAM | - | 8 GB | 4 vCPU | $0.08/hr |
 | **C7** | Mid-range instance with 12 vCPU, 30GB RAM | - | 30 GB | 12 vCPU | $0.30/hr |
 
 ## GPU Instances
