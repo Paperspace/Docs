@@ -2,6 +2,10 @@
 
 ## Prerequisites
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 To begin using Gradient, follow these preliminary steps:
 
 1. [Create a Paperspace account ](https://www.paperspace.com/account/signup)
