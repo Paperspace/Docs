@@ -1,5 +1,9 @@
 # Gradient SDK Overview
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 ## About
 
 {% hint style="info" %}
