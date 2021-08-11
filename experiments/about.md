@@ -4,7 +4,7 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # Overview
 
-{% hint style="warning" %} Experiments have been replaced by a more general framework called Workflows. For the latest info go to Workflows. {% endhint %}
+{% hint style="warning" %} Experiments have been replaced by a more general framework called Workflows. For the latest info go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows). {% endhint %}
 
 Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](using-experiments/hyperparameters.md).
 
