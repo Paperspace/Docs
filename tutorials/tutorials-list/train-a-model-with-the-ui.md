@@ -1,5 +1,9 @@
 # Train a Model with the Web UI
 
+{% hint style="info" %}
+This section of the documentation covers the previous experiments interface for training. Experiments have been replaced by a more general framework called Workflows. For the latest info on training in Gradient go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows).
+{% endhint %}
+
 ### **Objectives**
 
 * Explore Gradient Projects
