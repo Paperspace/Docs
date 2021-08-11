@@ -1,5 +1,9 @@
 # Core Concepts
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
 ## Notebooks
 
 Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../notebooks/about.md) make it easy to explore data and coding concepts and collaborate with other people on projects. 
