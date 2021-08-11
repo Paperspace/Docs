@@ -1,8 +1,6 @@
 # Using Jobs
 
-{% hint style="warning" %}
-This feature is currently only available to our Gradient Managed service. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. 
-{% endhint %}
+{% hint style="warning" %} Jobs have been replaced by a more general framework called Workflows. For the latest info go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows). {% endhint %}
 
 ## Creating a Job
 
