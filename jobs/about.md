@@ -1,6 +1,6 @@
 # Overview
 
-{% hint style="warning" %} Job have been replaced by a more general framework called Workflows. For the latest info go to Workflows. {% endhint %}
+{% hint style="warning" %} Experiments have been replaced by a more general framework called Workflows. For the latest info go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows). {% endhint %}
 
 Gradient Jobs execute generic tasks on remote infrastructure and can be used to perform a variety of functions from compiling a model to running an ETL operation. When you run an Experiment within Gradient, a job is created and executed \(or multiple jobs in the case of distributed training or a hyperparameter sweep\).
 
