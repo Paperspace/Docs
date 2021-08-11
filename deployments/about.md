@@ -5,9 +5,11 @@ description: >-
   “end-to-end” services, from R&D to production.
 ---
 
-# Overview
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
 
-## Overview
+# Overview
 
 Deploy any model as a high-performance, low-latency micro-service with a RESTful API. Easily monitor, scale, and version deployments. Deployments take a trained model and expose them as a persistent service at a known, secure URL endpoint.
 
