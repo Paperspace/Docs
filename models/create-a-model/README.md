@@ -56,7 +56,7 @@ You can view your team's Models in your Model Repository via the Web UI or CLI, 
 {% tab title="Web UI" %}
 Navigate to **Models** in the side nav to see your list of trained Models:
 
-![Models are available within projects](../../.gitbook/assets/screen-shot-2021-01-18-at-10.12.57-pm.png)
+![Models are available within projects](../../.gitbook/assets/screen-shot-2021-01-18-at-10.12.57-pm%20%281%29.png)
 
 ![A single Model card in your Models list](../../.gitbook/assets/screen-shot-2019-06-25-at-2.30.08-am.png)
 

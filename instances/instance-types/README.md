@@ -2,21 +2,23 @@
 description: Pricing for Gradient Managed instances
 ---
 
-{% hint style="warning" %}
-This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
-{% endhint %}
-
 # Instance Types
 
+{% hint style="warning" %}
+This section of the documentation covers our previous generation of Gradient. For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+{% endhint %}
+
+## Instance Types
+
 {% hint style="success" %}
-Customers using the [Self-Hosted](../../gradient-private-cloud/about.md) version can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more.  The following list is specific to our managed instances.  
+Customers using the [Self-Hosted](../../gradient-private-cloud/about.md) version can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. The following list is specific to our managed instances.
 {% endhint %}
 
 {% hint style="info" %}
-Managed [_Private Clusters_](../../gradient-private-cloud/about.md) include a compute premium. Learn more [here](https://gradient.paperspace.com/private-cluster-utilization-premium). 
+Managed [_Private Clusters_](../../gradient-private-cloud/about.md) include a compute premium. Learn more [here](https://gradient.paperspace.com/private-cluster-utilization-premium).
 {% endhint %}
 
-## CPU Instances
+### CPU Instances
 
 A range of affordable and high-end CPU-only instances.
 
@@ -25,7 +27,7 @@ A range of affordable and high-end CPU-only instances.
 | **C3** | Low-cost instance with 1 vCPU, 1GB RAM | - | 2 GB | 2 vCPU | $0.018/hr |
 | **C7** | Mid-range instance with 12 vCPU, 30GB RAM | - | 30 GB | 12 vCPU | $0.30/hr |
 
-## GPU Instances
+### GPU Instances
 
 A range of dedicated GPU instances with single and multi-GPU configurations.
 

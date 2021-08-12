@@ -1,6 +1,8 @@
 # Using Jobs
 
-{% hint style="warning" %} Jobs have been replaced by a more general framework called Workflows. For the latest info go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows). {% endhint %}
+{% hint style="warning" %}
+Jobs have been replaced by a more general framework called Workflows. For the latest info go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows).
+{% endhint %}
 
 ## Creating a Job
 
@@ -8,7 +10,7 @@
 {% tab title="Web UI" %}
 ![](../../.gitbook/assets/image%20%2845%29.png)
 
-Jobs can be submitted via the Job Builder.  There are a variety of optional and required options for your job including the instance type, the command, the container, etc.  Note: At the top of the screen, you'll see a few job presets which will give a sense for how these options work.  
+Jobs can be submitted via the Job Builder. There are a variety of optional and required options for your job including the instance type, the command, the container, etc. Note: At the top of the screen, you'll see a few job presets which will give a sense for how these options work.
 
 * **Machine Type.** What type of instance to run your Job on. We recommend starting with a GPU+. Many Jobs benefit from a machine with a GPU, but some can run just using a CPU.
 * **Container.** Jobs are run within a docker container. You can run a public or private container. Learn more [here](https://support.paperspace.com/hc/en-us/articles/360003415434). 
@@ -18,7 +20,7 @@ Jobs can be submitted via the Job Builder.  There are a variety of optional and 
 
 Once you have examined or specified the parameters, hit "Submit Job" and watch the Job run!
 
-The Job Builder is great for getting started with basic tasks.  For more advanced workflows, we recommend using the CLI which offers more flexibility.
+The Job Builder is great for getting started with basic tasks. For more advanced workflows, we recommend using the CLI which offers more flexibility.
 {% endtab %}
 
 {% tab title="CLI" %}

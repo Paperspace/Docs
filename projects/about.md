@@ -1,7 +1,7 @@
 # Overview
 
 {% hint style="warning" %}
-This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+This section of the documentation covers our previous generation of Gradient. For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
 {% endhint %}
 
 A Gradient Project is a workspace for you or your team to run Experiments and Jobs, store Artifacts such as Models, and manage Deployments \(deployed models\). You can create a basic "standalone" project or a [GradientCI](https://github.com/Paperspace/Docs/tree/dace77bbd70b824f1dfd4bf27fc24deef5218d16/projects/gradientci.md) project which provides more advanced CI/CD pipelining capabilities.

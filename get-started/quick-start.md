@@ -3,7 +3,7 @@
 ## Prerequisites
 
 {% hint style="warning" %}
-This section of the documentation covers our previous generation of Gradient.  For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
+This section of the documentation covers our previous generation of Gradient. For the current version go to [Gradient Next](https://docs.paperspace.com/gradient).
 {% endhint %}
 
 To begin using Gradient, follow these preliminary steps:
@@ -13,7 +13,7 @@ To begin using Gradient, follow these preliminary steps:
 3. [Install the Gradient CLI ](install-the-cli.md#installation)
 4. [Connecting your account](install-the-cli.md#connecting-your-account)
 
-Now you can create Notebooks, Jobs, Projects, Experiments, Models, Deployments, and more! 
+Now you can create Notebooks, Jobs, Projects, Experiments, Models, Deployments, and more!
 
 Note: if you are a Gradient Private Cloud user, please visit the [Gradient Private Cloud section](https://docs.paperspace.com/gradient/gradient-private-cloud/about) for more info on how to utilize private processing site clusters.
 
@@ -27,19 +27,19 @@ You can always switch products later by clicking the Product Selector at the top
 
 ## Create a Notebook
 
-Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../instances/instance-types/), and then click create. 
+Notebooks can be created on the Notebooks tab. Just select a [template](../notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../instances/instance-types/), and then click create.
 
 {% hint style="success" %}
 Check out the [FREE GPU](../instances/instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![Select Notebooks &amp;gt; Create a Notebook to enter the notebook create flow](../.gitbook/assets/screen-shot-2021-01-18-at-8.39.35-pm%20%281%29.png)
+![Select Notebooks &amp;gt; Create a Notebook to enter the notebook create flow](../.gitbook/assets/screen-shot-2021-01-18-at-8.39.35-pm.png)
 
 {% hint style="success" %}
 Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your own account
 {% endhint %}
 
-You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own. 
+You can stop, start, fork, and swap out the instance type anytime. Choose from a wide selection of pre-configured templates or bring your own.
 
 {% embed url="https://www.youtube.com/watch?v=i4pvLzvw2ME" caption="Learn how to create a Jupyter Notebook. 1m48s." %}
 
@@ -53,7 +53,7 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 
 ### Create a Project
 
-Projects organize your work.  To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**. Then select **Create Standalone Project** and provide a project name. Now, you can use the created Project's **Project ID** in order to create Experiments in that Project via the CLI.
+Projects organize your work. To create a Project, navigate to **Gradient** &gt; **Projects** in the UI and click **Create Project**. Then select **Create Standalone Project** and provide a project name. Now, you can use the created Project's **Project ID** in order to create Experiments in that Project via the CLI.
 
 ![Select Projects &amp;gt; Create a Project to initiate a new machine learning project ](../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29.png)
 
@@ -62,7 +62,7 @@ Projects organize your work.  To create a Project, navigate to **Gradient** &gt;
 You can run Experiments from the web interface or CLI:
 
 {% hint style="info" %}
-Before creating an experiment using the CLI, you must first [install the CLI](install-the-cli.md). 
+Before creating an experiment using the CLI, you must first [install the CLI](install-the-cli.md).
 {% endhint %}
 
 **Example command**
@@ -79,7 +79,7 @@ gradient experiments run singlenode --projectId <your-project-id> --clusterId <y
 
 ![](../.gitbook/assets/screen-shot-2020-10-09-at-6.40.00-pm.png)
 
-Behind the scenes, your Experiment will be uploaded and executed on your cluster starting with the command you provided. There are [several optional Experiment parameters](../experiments/using-experiments/), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.  
+Behind the scenes, your Experiment will be uploaded and executed on your cluster starting with the command you provided. There are [several optional Experiment parameters](../experiments/using-experiments/), such as to specify your **workspace** \(the additional files to be used in your experiment\). You can always use the `--help` option after any command in the CLI for more info.
 
 You can also create `multi-node` and leverage other advanced functionality such as [Tensorboards](../tensorboards/using-tensorboards/getting-started-with-tensorboards.md) and [Metrics](../metrics/metrics-overview.md). Explore all the advanced options [here](../experiments/using-experiments/experiment-options.md).
 
@@ -91,9 +91,9 @@ Congratulations! You ran your first Experiment on Gradient 🚀
 
 ## Explore the rest of the platform
 
-From [Models](../models/about.md) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform.  We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../gradient-python-sdk/gradient-python-sdk/).
+From [Models](../models/about.md) to [Deployments](../deployments/about.md), there's a lot more to the Gradient platform. We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../gradient-python-sdk/gradient-python-sdk/).
 
 Here's a sample project that exercises most of the components of the platform:
 
-{% embed url="https://github.com/Paperspace/object-detection-segmentation" %}
+{% embed url="https://github.com/Paperspace/object-detection-segmentation" caption="" %}
 

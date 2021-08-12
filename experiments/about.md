@@ -4,7 +4,9 @@ description: For multi-node Jobs such as distributed training and hyperparameter
 
 # Overview
 
-{% hint style="warning" %} Experiments have been replaced by a more general framework called Workflows. For the latest info go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows). {% endhint %}
+{% hint style="warning" %}
+Experiments have been replaced by a more general framework called Workflows. For the latest info go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows).
+{% endhint %}
 
 Experiments are used to train machine learning models. Gradient supports single-node experiments as well as distributed training through multi-node experiments. Gradient also supports [Hyperparameter Search](using-experiments/hyperparameters.md).
 
@@ -23,8 +25,6 @@ The **web UI** is great for getting familiar with Experiments and running sample
 **GradientCI** enables you to submit Experiments directly from a GitHub commit \(or branch\). You can launch Experiments without ever leaving your code.
 
 {% page-ref page="../projects/gradientci-v2/" %}
-
-
 
 The **SDK** lets you programmatically interact with the Gradient platform. The SDK can be incorporated into any python project and enables more advanced ML pipelines.
 
@@ -100,5 +100,5 @@ An experiment goes through a number of "states" between being submitted to Gradi
 | `EXPERIMENT_STATE_CANCELLED` | Cancelled |
 | `EXPERIMENT_STATE_ERROR` | Error |
 
-![](../.gitbook/assets/image%20%2859%29%20%282%29%20%281%29%20%281%29%20%281%29.png)
+![](../.gitbook/assets/image%20%2859%29%20%282%29%20%281%29%20%281%29.png)
 

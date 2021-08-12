@@ -22,7 +22,7 @@ The Experiment generates a Python pickle file that gets stored in the shared sto
 
 After signing in, click on Gradient in the navigation bar on the left to choose Projects. Click on the Create Project button and select Create Standalone Project. Enter a name for the project when prompted.
 
-![Create a new project via Projects &amp;gt; Create a Project](../../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29%20%281%29.png)
+![Create a new project via Projects &amp;gt; Create a Project](../../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29%20%282%29.png)
 
 ## Creating the Experiment
 
@@ -32,7 +32,7 @@ Within this project, we will create an experiment that trains the model.
 
 Experiment Builder is a wizard-style UI tool to submit a job.
 
-The first step is to choose a machine type for scheduling the Experiment. Gradient takes advantage of Google Compute Engine’s preemptible instances to provide low-cost infrastructure. Make sure you check  **Enable low-cost instances**. Choose G1 machine type that comes with 1 CPU core, 1.7GB RAM, and 250GB SDD. This configuration is sufficient for the Scikit-learn training job. For TensorFlow and PyTorch, you can select a GPU-based machine type for accelerating the job.
+The first step is to choose a machine type for scheduling the Experiment. Gradient takes advantage of Google Compute Engine’s preemptible instances to provide low-cost infrastructure. Make sure you check **Enable low-cost instances**. Choose G1 machine type that comes with 1 CPU core, 1.7GB RAM, and 250GB SDD. This configuration is sufficient for the Scikit-learn training job. For TensorFlow and PyTorch, you can select a GPU-based machine type for accelerating the job.
 
 ![](https://camo.githubusercontent.com/743a7881fbf7e75aae721624c78f6be01de29bc5/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f666641796a413950534e337a2d533779654435637369683446426851414958437a626b6c6571656549527958474b73544d7a6f326133543933485559703859464e31586169574b36707543634b4a454d64696f69447662622d75695931367a63666679685635774e4b4678467337574253513469334959586256776476516b577443396a49354e69)
 

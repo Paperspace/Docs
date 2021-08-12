@@ -5,7 +5,7 @@ description: Automate from idea to production
 # Overview
 
 {% hint style="info" %}
-This section of the documentation was for the **Worlflows (BETA)**. For the latest info on training in Gradient go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows).
+This section of the documentation was for the **Worlflows \(BETA\)**. For the latest info on training in Gradient go to [Workflows](https://docs.paperspace.com/gradient/explore-train-deploy/workflows).
 {% endhint %}
 
 ![](../../.gitbook/assets/screen-shot-2021-03-04-at-4.15.25-pm.png)
@@ -14,9 +14,9 @@ Workflows are the newest \(and most powerful\) way to create machine learning pr
 
 Workflows allow you to build complex, real-world machine learning projects. Note, this is an advanced topic so if you are still early in your ML journey, it might make more sense to start with [notebooks](../../tutorials/tutorials-list/getting-started-with-gradient-notebooks.md) first.
 
-Workflows are based on the [Argo runtime engine](https://argoproj.github.io/projects/argo/) which is a container-native continuous delivery tool for Kubernetes. 
+Workflows are based on the [Argo runtime engine](https://argoproj.github.io/projects/argo/) which is a container-native continuous delivery tool for Kubernetes.
 
-### Key Terminology
+## Key Terminology
 
 * **Workflow**: 
   * a named or unnamed entity that belongs to a team and project
@@ -32,10 +32,4 @@ Workflows are based on the [Argo runtime engine](https://argoproj.github.io/proj
 * [**Workflow Run**](workflow-spec.md#example-workflow-run-output): the implementation of a workflow
   * the most basic run requires a `workflowId` and `clusterId` - most will also include a workflowSpec and the inputs to be passed into the workflow
   * the workflow run contains everything needed for the workflow to actually be executed; i.e. what \(`workflowId`\), where \(`clusterId`\), how \(`workflowSpec`\) with \([inputs](workflow-spec.md#inputs), etc.\)
-
-
-
-
-
-
 
