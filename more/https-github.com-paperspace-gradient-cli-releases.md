@@ -1,2 +1,0 @@
-# CLI/SDK Release notes
-
