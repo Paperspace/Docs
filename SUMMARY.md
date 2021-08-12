@@ -106,4 +106,5 @@
   * [Billing & Subscriptions](more/overview/billing-and-subscriptions.md)
   * [Public Profiles](more/overview/gradient-public-profiles.md)
 * [Release notes](https://updates.paperspace.com/)
+* [Roadmap](https://www.paperspace.com/docs#roadmap)
 
