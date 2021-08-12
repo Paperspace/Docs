@@ -4,13 +4,13 @@ YAML provides a powerful and precise configuration for a data science pipeline t
 
 We therefore collect here some examples likely to come up in practice when implementing data science workflows.
 
-### Indentation & syntax highlighting
+## Indentation & syntax highlighting
 
 YAML requires precise indentation, and tabs are not allowed. The Gradient Notebook allows easy creation and editing of YAML files, with aids such as visual prompts for indentation, and syntax highlighting.
 
 ![](../../.gitbook/assets/yaml_highlighting.png)
 
-### Multi-line commands
+## Multi-line commands
 
 Many jobs within a workflow spec will not be complex enough to require a script to be imported, but will need several commands. The YAML syntax `|-` \(pipe, dash\) sequence allows this to be laid out such that they don't all have to be on one line, and can be written with their arguments.
 
@@ -41,7 +41,7 @@ with:
     cd /stylegan2
 ```
 
-### Directory names
+## Directory names
 
 Jobs have inputs and outputs which results in some standard directory names that need to be given correctly. The inputs to a job are in `/inputs`, and the outputs from a job are in `/outputs`. The outputs from one job can become the inputs to the next, so what was, e.g., `/outputs/my_directory` becomes `/inputs/my_directory` in the next job.
 
@@ -60,10 +60,10 @@ my-job:
     my-dataset:
       type: dataset
       with:
-        ref: my-dataset-id  
+        ref: my-dataset-id
 ```
 
-### Inputs directory is not writable
+## Inputs directory is not writable
 
 The inputs to a job are in the `/inputs` directory, and this directory is not writeable. So to change the contents of this directory it needs to be copied out of `/inputs`. For example, the StyleGAN2 onboarding workflow job to generate images contains the commands
 
@@ -72,7 +72,7 @@ cp -R /inputs/repo/stylegan2 /stylegan2
 cd /stylegan2
 ```
 
-### Directory paths may be unexpected
+## Directory paths may be unexpected
 
 A wrong directory path will cause the workflow to fail with `No such file or directory`, or some related consequence, so it is important to be pointing to the right places.
 
@@ -98,33 +98,35 @@ but then the repo content, here `cat_images_tfrecords.tgz` is put directly into 
 
 in the `with:` section.
 
-### Dataset identifiers
+## Dataset identifiers
 
 Daataset must be referred to by their names or IDs within the YAML file. The dataset must therefore be created outside of YAML file currently. This can be done in the GUI under the Data tab by clicking Add:
 
 ![](../../.gitbook/assets/create_dataset.png)
 
 Alternatively the dataset can be created using the CLI command:
+
 ```bash
 gradient datasets create \
   --name <my-dataset-name> \
   --storageProviderId <storage-provider-id`
 ```
+
 See [Versioned Data](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository) for more information on creating datasets.
 
-### Dataset versions
+## Dataset versions
 
-Datasets can be referred to by their version \(e.g. `datasetId:version`\), or just by name or ID \(e.g. `datasetId`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding workflow.  Additionally, you can reference a dataset by team namespace \(e.g. `namespace/datasetId:version`\).
+Datasets can be referred to by their version \(e.g. `datasetId:version`\), or just by name or ID \(e.g. `datasetId`\). The latter can be useful when you want to refer to the latest version of a dataset, perhaps produced in a preceding workflow. Additionally, you can reference a dataset by team namespace \(e.g. `namespace/datasetId:version`\).
 
-### Some GitHub action syntax is not supported
+## Some GitHub action syntax is not supported
 
 Gradient Workflows overlap with GitHub Actions, but are not a duplicate of them. We do some things it doesn't do, such as parallel processing, but not all of its keywords are supported by us, so for example, using `name:` will fail.
 
-### Linting
+## Linting
 
 YAML is flexible with its syntax in some ways, for example comments can be placed somewhat freely. But some arrangements don't work and will cause a syntax error, often manifesting as some other error like`Failed to fetch data`. If desired, you can check that their YAML is valid in a syntactical sense by using one of several YAML checkers online, for example [https://yamllint.com](https://yamllint.com) , before expending compute resources on running a job.
 
-### Commands that contain YAML special characters
+## Commands that contain YAML special characters
 
 Supplying commands in YAML can sometimes conflict with what it deems to be special characters, for example this command to download a large file using curl:
 
@@ -150,7 +152,7 @@ will fail with `Failed to fetch data: "spec.jobs.TestCommands.with.args[2]" must
 
 In this case one could also use the `|-` script syntax as detailed above.
 
-### Command multiple arguments
+## Command multiple arguments
 
 Often when constructing a workflow you may want to sanity check what is being done, e.g., what files are where. But this can hit YAML syntax too: `ls -a` will work, but `ls -al` will fail with `TypeError: Object of type bytes is not JSON serializable`. As with special characters, a solution is to use the script formulation, so not
 
@@ -169,7 +171,7 @@ but
   ls "-al"
 ```
 
-### Creating and referring to a dataset in the same workflow
+## Creating and referring to a dataset in the same workflow
 
 An example of information implicit in the workflow that might not match intuition is that there is a difference between referring to a dataset under `inputs: type: dataset`, and the dot syntax. So if you populates the dataset `dstoyg0pdyysyxj` for the first time in the current workflow \(not including the GUI creation step above to get the ID\), and then try to refer to it with
 
@@ -200,9 +202,9 @@ outputs:
       ref: "dstoyg0pdyysyxj"
 ```
 
-does exist \(assuming the job succeeded\).  The dots correspond to indentation in this context.
+does exist \(assuming the job succeeded\). The dots correspond to indentation in this context.
 
-### Datasets are _versioned_
+## Datasets are _versioned_
 
 So if you run one workflow and output to a dataset ID:
 
@@ -217,7 +219,7 @@ GetCatImageDatabase:
 
 then run another workflow and output an additional file to the same dataset ID, it won't update the earlier dataset version add the new file alongside the first one. Instead a new dataset version is created, with a new `datasetId:version`, that intentionally does not include the previous file. This behavior is so that everything is versioned and immutable, which is desireable in a production setting. However this does require you to have a good understanding of when new dataset versions are created implicitly.
 
-### Test whether a Python import will work
+## Test whether a Python import will work
 
 To see if a Python module is present on the container you are using without having to run a Python script, run, e.g.,
 

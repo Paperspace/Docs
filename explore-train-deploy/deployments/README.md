@@ -13,7 +13,7 @@ Deploy any model as a high-performance, low-latency micro-service with a RESTful
 
 ![](../../.gitbook/assets/image%20%2880%29.png)
 
-Gradient makes it easy to deploy your trained model into production so that you can start generating predictions for real-time or batch data. Just specify the type of instance and the autoscaling behavior and Gradient takes care of the rest. Gradient will launch the instances, deploy your model, and set up the secure HTTPS endpoint for your application.  
+Gradient makes it easy to deploy your trained model into production so that you can start generating predictions for real-time or batch data. Just specify the type of instance and the autoscaling behavior and Gradient takes care of the rest. Gradient will launch the instances, deploy your model, and set up the secure HTTPS endpoint for your application.
 
 {% hint style="warning" %}
 In order to unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.

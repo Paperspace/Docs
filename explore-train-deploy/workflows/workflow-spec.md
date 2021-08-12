@@ -110,3 +110,4 @@ jobs:
       - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt; cat /outputs/data3/summary.txt /inputs/echo2
       image: bash:5
 ```
+

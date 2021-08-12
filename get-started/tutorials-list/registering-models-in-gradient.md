@@ -18,7 +18,7 @@ This repo [https://github.com/gradient-ai/fashionmnist](https://github.com/gradi
 
 ## Create a Project for Fashion MNIST
 
-We will start by creating a project that can contain multiple Workflows we may run during the training. We'll use the CLI here but you can perform the action in the user interface.  
+We will start by creating a project that can contain multiple Workflows we may run during the training. We'll use the CLI here but you can perform the action in the user interface.
 
 ```text
 gradient projects create --name Fashion
@@ -36,7 +36,7 @@ We will now start a Workflow run within the Workflow created above. Make a note 
 
 ### Get the training code
 
-[Download](https://github.com/gradient-ai/fashionmnist/blob/master/workflow.yaml) or copy the YAML training code to your computer. 
+[Download](https://github.com/gradient-ai/fashionmnist/blob/master/workflow.yaml) or copy the YAML training code to your computer.
 
 ```yaml
 defaults:
@@ -99,9 +99,9 @@ The `secret:api_key` parameter masks your API key so it is not visible to others
 
 `image` is a parameter that points the step to a Docker image used to execute the step. Note: This same training code can run on a GPU instance which would require using the following image: `tensorflow/tensorflow:1.9.0-gpu`
 
-`TrainModel` takes an `outputs` parameter which stores the model artifacts within a Gradient dataset. You must create a dataset before running the Workflow and add the id on this line.  
+`TrainModel` takes an `outputs` parameter which stores the model artifacts within a Gradient dataset. You must create a dataset before running the Workflow and add the id on this line.
 
-`UploadModel` takes a `type` parameter that specifies the format of the model. In this case, we are passing in `TensorFlow` as the type.  Frameworks other than TensorFlow are supported such as `ONNX`, `TensorRT`, and `Custom`.
+`UploadModel` takes a `type` parameter that specifies the format of the model. In this case, we are passing in `TensorFlow` as the type. Frameworks other than TensorFlow are supported such as `ONNX`, `TensorRT`, and `Custom`.
 
 ### Create a Workflow run
 
@@ -114,16 +114,16 @@ gradient workflows run \
 
 ## Verifying the Creation of Model
 
-We can check if the output of the job is registered as a valid TensorFlow model with the following command. 
+We can check if the output of the job is registered as a valid TensorFlow model with the following command.
 
 ```bash
 gradient models list
 ```
 
-`+------+-----------------+------------+  
+`+------+-----------------+------------+    
 | Name | ID | Model Type | Project ID |    
-+------+-----------------+------------+  
-| None | mosdnkkv1o1xuem | Tensorflow |  
++------+-----------------+------------+    
+| None | mosdnkkv1o1xuem | Tensorflow |    
 +------+-----------------+------------+`
 
 You can also visit the Models section of Gradient UI to see a list of registered models.

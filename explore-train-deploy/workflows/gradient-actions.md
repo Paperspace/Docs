@@ -97,7 +97,7 @@ with:
 
 The `s3-download@v1` Gradient action copies the contents of an s3 bucket into an output \(in this example, the volume is named `s3`\). Subsequent jobs that specify an input that reference the `s3-download` job's volume output can access the downloaded files within that job at `/inputs/<input-name>`.
 
-Note: `access-key` and `secret-access-key` are required parameters, and the latter must be a [Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret). Optional parameters include `region` \(for AWS buckets\), `endpoint` \(for non-AWS buckets\), and `path`  \(to disambiguate target outputs or to download to a subfolder\).
+Note: `access-key` and `secret-access-key` are required parameters, and the latter must be a [Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret). Optional parameters include `region` \(for AWS buckets\), `endpoint` \(for non-AWS buckets\), and `path` \(to disambiguate target outputs or to download to a subfolder\).
 
 ## model-create
 

@@ -1,6 +1,6 @@
 # Using Deployments
 
-## Objectives 
+## Objectives
 
 * Understand the workflow involved in deploying models 
 * Consuming a deployment URL for model inferencing
@@ -19,7 +19,7 @@ In this tutorial, we will create a deployment from an existing TensorFlow model.
 
 Clone the repo [https://github.com/gradient-ai/fashionmnist](https://github.com/gradient-ai/fashionmnist) to access the inference code.
 
-## Turning a Registered Model into a Deployment 
+## Turning a Registered Model into a Deployment
 
 Once a model is registered and available in Gradient, it can be used for model serving and inferencing.
 
@@ -119,13 +119,13 @@ The model predicted this as a Trouser, and it was actually a Trouser
 The model predicted this as a Shirt, and it was actually a Shirt
 ```
 
-For inferencing, we load the test data along with the associated labels and send the first five images to the Tensorflow Serving REST endpoint. 
+For inferencing, we load the test data along with the associated labels and send the first five images to the Tensorflow Serving REST endpoint.
 
 From the output, it is clear that the model is performing well in predicting the type of apparel.
 
 Feel free to explore [infer.py](https://github.com/janakiramm/fashionmnist/blob/master/infer/infer.py) as an example of how to perform inferencing with Gradient Deployments based on Tensorflow Serving.
 
-## Summary 
+## Summary
 
 Gradient Deployments provide a highly scalable one-click deployment of machine learning models.
 

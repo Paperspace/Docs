@@ -15,8 +15,6 @@
 * [Tutorials](get-started/tutorials-list/README.md)
   * [Get started with Notebooks](get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md)
   * [End-to-end example: Deep Learning Recommenders in TensorFlow](get-started/tutorials-list/end-to-end-example.md)
-  * [Workflows sample project: StyleGAN2](get-started/tutorials-list/workflows-sample-project/README.md)
-    * [YAML file for StyleGAN2 workflows](get-started/tutorials-list/workflows-sample-project/yaml-file-for-stylegan2-workflow.md)
   * [Registering Models in Gradient](get-started/tutorials-list/registering-models-in-gradient.md)
   * [Using Deployments](get-started/tutorials-list/dealing-with-gradient-deployments.md)
 
