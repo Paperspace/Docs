@@ -31,5 +31,6 @@ The best way to discover Gradient is to try it out. You can get started in secon
 * Our [Help Center](https://support.paperspace.com) is a great resource for general Paperspace information.
 * Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a curated list of interactive ML sample projects.
 * View the Gradient [release notes](https://updates.paperspace.com/) and subscribe to product updates. 
+* For for a preview of upcoming features see our [Roadmap](https://www.paperspace.com/docs#roadmap). 
 * Please visit the [Community](http://community.paperspace.com/) to view and post questions or tutorials.
 
