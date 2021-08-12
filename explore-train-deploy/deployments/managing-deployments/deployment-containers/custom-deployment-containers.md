@@ -104,7 +104,7 @@ To run a custom container on a private registry, you need to specify the followi
 {% tab title="Web UI" %}
 Populate the Container Name, Image Server, Registry Username, Registry Password fields \(plus any other optional fields\) to pull a container from your private registry. 
 
-![](../../../../.gitbook/assets/image%20%2893%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![](../../../../.gitbook/assets/image%20%2893%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 {% endtab %}
 
 {% tab title="CLI" %}
