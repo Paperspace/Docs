@@ -106,4 +106,5 @@
   * [Billing & Subscriptions](more/overview/billing-and-subscriptions.md)
   * [Public Profiles](more/overview/gradient-public-profiles.md)
 * [Release notes](https://updates.paperspace.com/)
+* [CLI/SDK Release notes](more/https-github.com-paperspace-gradient-cli-releases.md)
 
