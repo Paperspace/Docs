@@ -10,9 +10,9 @@ Many online demonstrations also either focus on the model, neglecting the data p
 
 The tutorial consists of
 
-* A self-contained **Notebook** that presents the project end-to-end. We include extensive commentary so that the reader can follow along without having to refer to other material.
+* A self-contained [**Notebook**](https://github.com/gradient-ai/Deep-Learning-Recommender-TF/blob/main/deep_learning_recommender_tf.ipynb) that presents the project end-to-end. We include extensive commentary so that the reader can follow along without having to refer to other material.
 * Two **Workflows** that are called by the Notebook, to train and deploy the model respectively.
-[**GitHub repository**](https://github.com/gradient-ai/Deep-Learning-Recommender-TF), containing the [Notebook](https://github.com/gradient-ai/Deep-Learning-Recommender-TF/blob/main/deep_learning_recommender_tf.ipynb), Workflows, and other files.
+[**GitHub repository**](https://github.com/gradient-ai/Deep-Learning-Recommender-TF), containing the Notebook, Workflows, and other files.
 * Accompanying [**6-part blog series**](https://blog.paperspace.com), that explains the project end-to-end in a manner accessible to a broader readership.
 
 **Running the Tutorial**
