@@ -20,7 +20,7 @@ The command will return an ID for the workflow, for example, `7634c165-5034-4f49
 
 ## Create a Workflow Spec
 
-Create a workflow spec in [yaml](https://yaml.org/about.html) using a text editor. Note: even though YAML and JSON are closely releated, Gradient workflows need to be formatted as YAML and not JSON. Below is an example of a valid **workflow.yaml** spec. You will learn more about writing workflow specs on the following pages.
+Create a workflow spec in [yaml](https://yaml.org) using a text editor. Note: even though YAML and JSON are closely releated, Gradient workflows need to be formatted as YAML and not JSON. Below is an example of a valid **workflow.yaml** spec. You will learn more about writing workflow specs on the following pages.
 
 ```yaml
 jobs:
