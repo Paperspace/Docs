@@ -4,6 +4,8 @@ The following tutorials cover the main entities within Gradient. We also host se
 
 {% page-ref page="getting-started-with-gradient-notebooks-old.md" %}
 
+{% page-ref page="gradient-next/get-started/tutorials-list/get-started-with-workflows.md" %}
+
 {% page-ref page="end-to-end-example.md" %}
 
 {% page-ref page="registering-models-in-gradient.md" %}
