@@ -37,7 +37,7 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 
 {% embed url="https://www.youtube.com/watch?v=i4pvLzvw2ME" caption="Learn how to create a Jupyter Notebook. 1m48s." %}
 
-## Workflows and MLOps
+## Create a Workflow
 
 You can perform advanced MLOps functions using Workflows, Models and Deployments. Workflows allow you to work with Data, Models, and Deployments in a reproducible and fully tracked manner. You can define a workflow one time using a text editor and use it repeatedly to perform simple or complex MLOps activities, such as pre-processing data, training models, creating/updating deployments, and/or performing inference.
 
@@ -45,7 +45,7 @@ You can perform advanced MLOps functions using Workflows, Models and Deployments
 In order to unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
 {% endhint %}
 
-### Create a Project
+### First Create a Project
 
 Projects organize your work. To create a Project, navigate to **Projects** and click **Create Project**, provide a name, and click **create**.
 
@@ -53,7 +53,7 @@ Projects organize your work. To create a Project, navigate to **Projects** and c
 
 Make a note of the projectId, for example `pr1234567`.
 
-### Running your first Workflow
+### Run your Workflow
 
 You can run Workflows from the web interface or CLI. First you need to create a new Workflow. This will allow you to keep track of related runs of the Workflow.
 
@@ -63,7 +63,7 @@ If you have never run a workflow before you can create and run a demo workflow a
 
 Follow the instructions on the page to run the workflow as is, or download the Workflow Spec and run it from the CLI.
 
-### **Run Workflow from the CLI**
+### **Run a Workflow from the CLI**
 
 1. [**Install the Gradient CLI**](install-the-cli.md)
 2. [**Connect your account**](install-the-cli.md#connecting-your-account)
