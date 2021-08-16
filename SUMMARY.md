@@ -14,6 +14,7 @@
   * [Storing an API key as a Secret](get-started/managing-projects/storing-an-api-key-as-a-secret.md)
 * [Tutorials](get-started/tutorials-list/README.md)
   * [Get started with Notebooks](get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md)
+  * [Get started with Workflows](get-started/tutorials-list/get-started-with-workflows.md)
   * [End-to-end example: Deep Learning Recommenders in TensorFlow](get-started/tutorials-list/end-to-end-example.md)
   * [Registering Models in Gradient](get-started/tutorials-list/registering-models-in-gradient.md)
   * [Using Deployments](get-started/tutorials-list/dealing-with-gradient-deployments.md)
