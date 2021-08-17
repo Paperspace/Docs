@@ -15,7 +15,7 @@ The tutorial consists of
 
 * A [**GitHub repository**](https://github.com/gradient-ai/Deep-Learning-Recommender-TF), containing the Notebook, Workflows, and other files.
 
-* Accompanying 6-part blog series \(coming soon!\) on the [**Paperspace blog**](https://blog.paperspace.com), that explains the project end-to-end in a manner accessible to a broader readership.
+* Accompanying 6-part blog series entitled [**End-to-End Recommender System with Gradient**](https://blog.paperspace.com/end-to-end-recommender-system-part-1-business-problem/), that explains the project end-to-end in a manner accessible to a broader readership.
 
 **Running the Tutorial**
 
