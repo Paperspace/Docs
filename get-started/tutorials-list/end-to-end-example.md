@@ -12,9 +12,7 @@ The tutorial consists of
 
 * A self-contained [**Notebook**](https://github.com/gradient-ai/Deep-Learning-Recommender-TF/blob/main/deep_learning_recommender_tf.ipynb) that presents the project end-to-end. We include extensive commentary so that the reader can follow along without having to refer to other material.
 * Two Workflow specs, [workflow-train-model.yaml](https://github.com/gradient-ai/Deep-Learning-Recommender-TF/blob/main/workflow-train-model.yaml) and [workflow-deploy-model.yaml](https://github.com/gradient-ai/Deep-Learning-Recommender-TF/blob/main/workflow-deploy-model.yaml), that are called by the Notebook, to train and deploy the model respectively.
-
 * A [**GitHub repository**](https://github.com/gradient-ai/Deep-Learning-Recommender-TF), containing the Notebook, Workflows, and other files.
-
 * Accompanying 6-part blog series entitled [**End-to-End Recommender System with Gradient**](https://blog.paperspace.com/end-to-end-recommender-system-part-1-business-problem/), that explains the project end-to-end in a manner accessible to a broader readership.
 
 **Running the Tutorial**
@@ -24,7 +22,7 @@ Assuming you are [signed up for Gradient](https://console.paperspace.com/signup?
 * In the Gradient GUI, create a Notebook with the following settings:
   * Name = Deep Learning Recommender \(or any allowed name\)
   * Select a runtime = TensorFlow 2.4.1
-  * Select a machine = C5 or P4000
+  * Select a machine = C3 \(C5, P4000, etc., will also work\)
   * Public/private = set to preferred option
   * Under Advanced options, change the Workspace URL field from `https://github.com/gradient-ai/TF2.4.1.git` to `https://github.com/gradient-ai/Deep-Learning-Recommender-TF` to point to this repository. The other options can remain the same.
   * Start the Notebook
