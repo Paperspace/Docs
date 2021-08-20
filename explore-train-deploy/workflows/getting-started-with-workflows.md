@@ -4,10 +4,6 @@ The following sections cover creating and running workflows, and authoring new w
 
 ## Create a Workflow
 
-{% hint style="info" %}
-View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
-{% endhint %}
-
 1. Make sure you have the latest version of the [Gradient CLI](../../get-started/quick-start/install-the-cli.md)
 2. Create a [Gradient Project](../../get-started/managing-projects/) and [grab your project ID](../../get-started/managing-projects/#get-your-projects-id)
 3. Create your first workflow using the Gradient CLI
@@ -20,7 +16,7 @@ The command will return an ID for the workflow, for example, `7634c165-5034-4f49
 
 ## Create a Workflow Spec
 
-Create a workflow spec in [yaml](https://yaml.org) using a text editor. Note: even though YAML and JSON are closely releated, Gradient workflows need to be formatted as YAML and not JSON. Below is an example of a valid **workflow.yaml** spec. You will learn more about writing workflow specs on the following pages.
+Create a workflow spec in [yaml](https://yaml.org) using a text editor. Note: even though YAML and JSON are closely related, Gradient workflows need to be formatted as YAML and not JSON. Below is an example of a valid **workflow.yaml** spec. You will learn more about writing workflow specs on the following pages.
 
 ```yaml
 jobs:
@@ -69,7 +65,7 @@ The above workflow creates a new output dataset version in the dataset named `de
 
 If you completed the worflows demo in the [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) you will already have a dataset with this name. If not you can create it using the following commands.
 
-First get a list of storage providers that are already part of your account. You should have at least one called **Gradient Managed**.
+First, get a list of storage providers that are already part of your account. You should have at least one called **Gradient Managed**.
 
 ```bash
 gradient storageProviders list
@@ -104,4 +100,8 @@ gradient workflows run \
 A workflow can be run multiple times, each with the same or a different workflow yaml spec. The workflow spec is recorded as part of the workflow run so you can distinguish different runs.
 
 The next sections cover the syntax for authoring new workflow specs, inputs and outputs to workflow steps, and various workflow actions.
+
+{% hint style="info" %}
+View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
+{% endhint %}
 

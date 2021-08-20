@@ -2,7 +2,7 @@
 
 A read-only collection of sample datasets datasets are provided for free for use within Gradient notebooks.
 
-### List of Public Datasets
+## List of Public Datasets
 
 <table>
   <thead>
@@ -23,7 +23,6 @@ A read-only collection of sample datasets datasets are provided for free for use
         <p>Paperspace&apos;s Fast.ai template is built for getting up and running
           with the enormously popular Fast.ai online MOOC called Practical Deep Learning
           for Coders.</p>
-        <p></p>
         <p>Source: <a href="http://files.fast.ai/data/">http://files.fast.ai/data/</a>
         </p>
       </td>
@@ -118,7 +117,7 @@ A read-only collection of sample datasets datasets are provided for free for use
           Networks. This dataset allows for photographs of people to be produced
           by the generator.</p>
         <p>
-          <br />Source: <a href="https://github.com/NVlabs/stylegan">https://github.com/NVlabs/stylegan</a> 
+          <br />Source: <a href="https://github.com/NVlabs/stylegan">https://github.com/NVlabs/stylegan</a>
         </p>
       </td>
     </tr>
