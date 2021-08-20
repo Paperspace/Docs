@@ -1,6 +1,6 @@
 # Tutorials
 
-The following tutorials cover the main entities within Gradient. We also host several sample projects in our [GitHub repo](https://github.com/paperspace).
+The following tutorials cover the main entities within Gradient. We also host several sample projects in our [GitHub repo](https://github.com/gradient-ai).
 
 {% page-ref page="getting-started-with-gradient-notebooks-old.md" %}
 
@@ -11,4 +11,10 @@ The following tutorials cover the main entities within Gradient. We also host se
 {% page-ref page="registering-models-in-gradient.md" %}
 
 {% page-ref page="dealing-with-gradient-deployments.md" %}
+
+View the ML Showcase to try sample Gradient Notebooks
+
+{% embed url="https://ml-showcase.paperspace.com/" %}
+
+
 
