@@ -10,7 +10,7 @@ Workflows are the newest \(and most powerful\) way to create machine learning pr
 
 Workflows allow you to build complex, real-world machine learning projects. Note, this is an advanced topic so if you are still early in your ML journey, it might make more sense to start with [notebooks](../../get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md) first.
 
-Workflows are based on the [Argo runtime engine](https://argoproj.github.io/projects/argo/) which is a container-native continuous delivery tool for Kubernetes.
+Workflows are based on the [Argo runtime engine](https://github.com/argoproj) which is a container-native continuous delivery tool for Kubernetes.
 
 ## Key Terminology
 
