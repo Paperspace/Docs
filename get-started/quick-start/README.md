@@ -42,7 +42,7 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 You can perform advanced MLOps functions using Workflows, Models and Deployments. Workflows allow you to work with Data, Models, and Deployments in a reproducible and fully tracked manner. You can define a workflow one time using a text editor and use it repeatedly to perform simple or complex MLOps activities, such as pre-processing data, training models, creating/updating deployments, and/or performing inference.
 
 {% hint style="warning" %}
-In order to unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
+To unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
 {% endhint %}
 
 ### First Create a Project
@@ -53,7 +53,7 @@ If you are part of the early evaluation community for **Github projects** you wi
 
 ![](../../.gitbook/assets/image%20%2882%29.png)
 
-From here you can install the Gradient **Github App** into your Gihub account, and select git repos you want to associate with Gradient.  Alternatively you can select one of the Gradient sample repos from the tiles on the right.  There is also a link on the page above to create a standalone project \(not Github connected\) if you prefer.
+From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project.  Alternatively you can select one of the **sample repos** from the tiles on the right.  There is also a link on the **Create Project** page to create a **standalone project** \(not Github connected\) if desired.
 
 If you are not part of the early experience group, navigate to **Projects** and click **Create Project**, provide a name, and click **create**.
 
