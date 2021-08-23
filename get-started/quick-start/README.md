@@ -53,9 +53,9 @@ If you are part of the early evaluation community for **Github projects** you wi
 
 ![](../../.gitbook/assets/image%20%2882%29.png)
 
-There is also a link on the page above to create a standalone project \(not Github connected\) if you prefer.
+From here you can install the Gradient **Github App** into your Gihub account, and select git repos you want to associate with Gradient.  Alternatively you can select one of the Gradient sample repos from the tiles on the right.  There is also a link on the page above to create a standalone project \(not Github connected\) if you prefer.
 
-Alternatively, if you are not part of the early experience group, navigate to **Projects** and click **Create Project**, provide a name, and click **create**.
+If you are not part of the early experience group, navigate to **Projects** and click **Create Project**, provide a name, and click **create**.
 
 ![](../../.gitbook/assets/screen-shot-2021-04-22-at-11.46.07-am.png)
 
