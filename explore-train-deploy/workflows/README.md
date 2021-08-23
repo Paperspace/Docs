@@ -17,7 +17,7 @@ Workflows are based on the [Argo runtime engine](https://github.com/argoproj/arg
 * **Workflow**: 
   * a named or unnamed entity that belongs to a team and project
   * named workflows can be re-run with a default `workflow spec`, or be passed a new spec every time
-* [**Workflow Spec:**](workflow-spec.md): a YAML list of jobs that is converted into an Argo template and run on the Gradient distributed runtime engine.
+* [**Workflow Spec**](workflow-spec.md): a YAML list of jobs that is converted into an Argo template and run on the Gradient distributed runtime engine.
 * [**Job**](workflow-spec.md#jobs): self-contained part of a workflow spec that is similar to an Argo step
   * jobs can define inputs, outputs, and their own environment variables
   * jobs can require other jobs via "needs" and collect/pass info between jobs
