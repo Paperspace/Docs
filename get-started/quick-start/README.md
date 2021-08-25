@@ -41,19 +41,23 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 
 You can perform advanced MLOps functions using Workflows, Models and Deployments. Workflows allow you to work with Data, Models, and Deployments in a reproducible and fully tracked manner. You can define a workflow one time using a text editor and use it repeatedly to perform simple or complex MLOps activities, such as pre-processing data, training models, creating/updating deployments, and/or performing inference.
 
-{% hint style="warning" %}
-To unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
+{% hint style="info" %}
+In order to unlock Deployments, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
 {% endhint %}
 
 ### First Create a Project
 
-Projects organize your work. You can create a project that integrates with a Github project or a standalone project.  Use a **Github project** if you already have code you are working with in **Github** and you want to use it with **Gradient** via a **Workflow**.  
+Projects help organize your work. You can create a project that integrates with a Github project or a standalone project.  Use a **Github project** if you already have code you are working with in **Github** and you want to use it with **Gradient** via a **Workflow**.  
   
 If you are part of the early evaluation for **Github projects** you will see this screen when you navigate to the **Projects** tab:
 
 ![](../../.gitbook/assets/image%20%2882%29.png)
 
 From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project.  Alternatively you can select one of the **sample repos** from the tiles on the right.  There is also a link on the **Create Project** page to create a **standalone project** \(not Github connected\) if desired.
+
+{% hint style="info" %}
+To join the  early evaluation of **Github projects**, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
+{% endhint %}
 
 If you are not part of the early evaluation, navigate to **Projects** and click **Create Project**, then provide a name, and click **create**.
 
