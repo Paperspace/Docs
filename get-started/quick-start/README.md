@@ -47,7 +47,7 @@ In order to unlock Deployments, please [contact](https://info.paperspace.com/con
 
 ### First Create a Project
 
-Projects help organize your work. You can create a project that integrates with a Github project or a standalone project. Use a **Github project** if you already have code you are working with in **Github** and you want to use it with **Gradient** via a **Workflow**.
+Projects help organize your work. You can create a project that integrates with a Github repo or a standalone project. Use a **Github project** if you already have code you are working with in **Github** and you want to use it with **Gradient** **Workflows**.
 
 If you are part of the early evaluation for **Github projects** you will see this screen when you navigate to the **Projects** tab:
 
