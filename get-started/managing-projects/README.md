@@ -10,7 +10,7 @@ If you are part of the early evaluation for **Github projects** you will see thi
 
 From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project.  Alternatively you can select one of the **sample repos** from the tiles on the right.  There is also a link on the **Create Project** page to create a **standalone project** \(not Github connected\) if desired.
 
-If you are not part of the early evaluation for **Github projects**, navigate to **Projects** and follow these instructions.  Otherwise, continue with **Get** Y**our Project's ID**.
+If you are not part of the early evaluation for **Github projects**, navigate to **Projects** and follow these instructions.  Otherwise, continue with **Get Your Project's ID** below.
 
 ## Create a Project
 
