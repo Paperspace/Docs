@@ -47,15 +47,15 @@ To unlock Deployments, please [contact](https://info.paperspace.com/contact-sale
 
 ### First Create a Project
 
-Projects organize your work. You can create a project that integrates with a Github project \(coming soon\) or a standalone project.  Use a **Github project** if you already have code you are working with in **Github** and you want to using it with **Gradient** via a **Workflow**.  
+Projects organize your work. You can create a project that integrates with a Github project or a standalone project.  Use a **Github project** if you already have code you are working with in **Github** and you want to using it with **Gradient** via a **Workflow**.  
   
-If you are part of the early evaluation community for **Github projects** you will see this screen when you navigate to the **Projects** tab:
+If you are part of the early evaluation for **Github projects** you will see this screen when you navigate to the **Projects** tab:
 
 ![](../../.gitbook/assets/image%20%2882%29.png)
 
 From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project.  Alternatively you can select one of the **sample repos** from the tiles on the right.  There is also a link on the **Create Project** page to create a **standalone project** \(not Github connected\) if desired.
 
-If you are not part of the early experience group, navigate to **Projects** and click **Create Project**, provide a name, and click **create**.
+If you are not part of the early evaluation, navigate to **Projects** and click **Create Project**, then provide a name, and click **create**.
 
 ![](../../.gitbook/assets/screen-shot-2021-04-22-at-11.46.07-am.png)
 
