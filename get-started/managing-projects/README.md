@@ -2,6 +2,16 @@
 
 A Gradient Project is a workspace for you or your team to run Workflows, store Models, and manage Deployments. Projects create an additional isolation layer of organization and control \(e.g. managing access\) within your team.  You can [create a project](./#create-a-project) in the web UI or the CLI.
 
+You can create a project that integrates with a Github project or a standalone project.  Use a **Github project** if you already have code you are working with in **Github** and you want to using it with **Gradient** via a **Workflow**.  
+  
+If you are part of the early evaluation for **Github projects** you will see this screen when you navigate to the **Projects** tab:
+
+![](../../.gitbook/assets/image%20%2882%29.png)
+
+From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project.  Alternatively you can select one of the **sample repos** from the tiles on the right.  There is also a link on the **Create Project** page to create a **standalone project** \(not Github connected\) if desired.
+
+If you are not part of the early evaluation for **Github projects**, navigate to **Projects** and follow these instructions.  Otherwise, continue with **Get** Y**our Project's ID**.
+
 ## Create a Project
 
 {% tabs %}
