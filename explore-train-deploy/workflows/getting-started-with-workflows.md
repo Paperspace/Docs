@@ -5,7 +5,7 @@ The following sections cover creating and running workflows, and authoring new w
 ## Create a Workflow
 
 1. Make sure you have the latest version of the [Gradient CLI](../../get-started/quick-start/install-the-cli.md)
-2. Create a [Gradient Project](../../get-started/managing-projects/) and [grab your project ID](../../get-started/managing-projects/#get-your-projects-id)
+2. Create a [Gradient Project](../../get-started/managing-projects/) and [grab your project ID](../../get-started/managing-projects/#get-your-projects-id). You can create a project that integrates with a Github repo or a create a standalone project. Use a **Github project** if you already have code you are working with in **Github** and you want to using it with **Gradient** via a **Workflow**.
 3. Create your first workflow using the Gradient CLI
 
 ```bash
