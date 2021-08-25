@@ -4,11 +4,11 @@ A Gradient Project is a workspace for you or your team to run Workflows, store M
 
 You can create a project that integrates with a Github repo or a standalone project. Use a **Github project** if you already have code you are working with in **Github** and you want to use it with **Gradient** **Workflows**.
 
-If you are part of the early evaluation for **Github projects** you will see this screen when you navigate to the **Projects** tab:
+If you are part of the early evaluation for **Github projects** you will see this page when you navigate to the **Projects** tab:
 
 ![](../../.gitbook/assets/image%20%2882%29.png)
 
-From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project. Alternatively you can select one of the **sample repos** from the tiles on the right. There is also a link on the **Create Project** page to create a **standalone project** \(not Github connected\) if desired.
+From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project. Alternatively you can select one of the **sample repos** from the tiles on the right. There is also a link on the page to create a **standalone project** \(not Github connected\) if desired.
 
 {% hint style="info" %}
 To join the early evaluation of **Github projects**, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
