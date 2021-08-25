@@ -53,7 +53,7 @@ If you are part of the early evaluation for **Github projects** you will see thi
 
 ![](../../.gitbook/assets/image%20%2882%29.png)
 
-From here follow the instructions on the page to install the Gradient **Github App** into your Github account, and select git repo you want to associate with project. Alternatively you can select one of the **sample repos** from the tiles on the right. There is also a link on the **Create Project** page to create a **standalone project** \(not Github connected\) if desired.
+Follow the instructions on the page to install the Gradient **Github App** into your Github account, and select the git repo you want to associate with project. Alternatively you can select one of the **sample repos** from the tiles on the right. There is also a link on the page to create a **standalone project** \(not Github connected\) if desired.
 
 {% hint style="info" %}
 To join the early evaluation of **Github projects**, please [contact](https://info.paperspace.com/contact-sales-gradient) our solutions team.
