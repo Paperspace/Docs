@@ -56,37 +56,37 @@ You can use existing Datasets or create new ones. In the below scenarios, the fo
 * **dst123abc:latest** will be mounted to: **/inputs/my-dataset**
 
 ```yaml
-job-1:
-  inputs:
-    my-dataset:
-      type: dataset
-      with:
-        ref: dst123abc
-   uses: container@v1
-   with:
-    image: bash:5
-    args: ["bash", "-c", "ls /inputs/my-dataset"]
+  job-1:
+    inputs:
+      my-dataset:
+        type: dataset
+        with:
+          ref: dst123abc
+     uses: container@v1
+     with:
+      image: bash:5
+      args: ["bash", "-c", "ls /inputs/my-dataset"]
 ```
 
 * **dst123abc:latest** will be created by job-1 and mounted to job-2 at: **/inputs/my-created-dataset**
 
 ```yaml
-job-1:
-  outputs:
-    my-dataset:
-      type: dataset
-      with:
-        ref: dst123abc
-  uses: container@v1
-  with:
-    image: bitnami/git
-    args: ["bash", "-c", "git clone https://github.com/username/repo /outputs/my-dataset"]
-job-2:
-  needs:
-    - job-1
-  inputs:
-    my-created-dataset: job-1.outputs.my-dataset
-  uses: container@v1
+  job-1:
+    outputs:
+      my-dataset:
+        type: dataset
+        with:
+          ref: dst123abc
+    uses: container@v1
+    with:
+      image: bitnami/git
+      args: ["bash", "-c", "git clone https://github.com/username/repo /outputs/my-dataset"]
+  job-2:
+    needs:
+      - job-1
+    inputs:
+      my-created-dataset: job-1.outputs.my-dataset
+    uses: container@v1
     with:
       image: bash:5
       args: ["bash", "-c", "ls /inputs/my-created-dataset"]
