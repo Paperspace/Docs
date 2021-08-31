@@ -114,8 +114,9 @@ Gradient requires a minimal level of policy permissions to access the bucket. Sa
     ]
 }
 ```
-Customize the above policy definition for your specific bucket name in the `AllowListBucket` and `AllowBucketAccess` **Resource** fields.
 Place the policy definition in a file, e.g, `gradient-storage-provider-access-policy.json`.
+
+Edit the file and replace `my-gradient-storage-provider-bucket` with your actual bucket name in the `AllowListBucket` and `AllowBucketAccess` **Resource** fields.
 
 **Create Policy**
 
