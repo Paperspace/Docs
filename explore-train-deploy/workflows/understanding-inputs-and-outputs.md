@@ -48,6 +48,12 @@ Unlike, e.g. GitHub Actions, it is likely that multiple Gradient Steps/Actions w
 
 Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout). Volumes can be defined as input volumes or output volumes or both. When a volume is an `output` it is mounted in `/outputs` and is writeable. When a volume is an `input` it is mounted in `/inputs` and is _read only_.
 
+{% hint style="warning" %}
+Note: Volumes are limited to 5GB of data currently. If you need more space we recommend using **Datasets**.
+{% endhint %}
+
+Here is how you would define an output volume:
+
 ```yaml
     outputs:
       my-volume:
