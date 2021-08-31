@@ -31,7 +31,7 @@ Gradient will create folders and objects inside this bucket, once configured.
 
 From within a new or existing S3 bucket, you'll need to edit the CORS configuration so your data can be viewed within Gradient.
 
-As a best practice you should create a dedicated user identity and access key/secret key pair for accessing the bucket. You should also set a restricted access policy on this user identity so that is is limited to working only with the contents of the bucket.
+As a best practice you should create a dedicated user identity and access key/secret key pair for accessing the bucket. You should also set a restricted access policy on the user identity so it is limited this bucket.
 
 **Assign CORS Rules**
 
@@ -56,11 +56,11 @@ Add CORS rules to your bucket:
 ]
 ```
 
-In AWS S3 console the bucket _permissions_ settings, you'll see an option to edit the CORS configuration. Click edit, then copy and paste the JSON above, and then save your changes.
+In the AWS S3 console bucket _permissions_ settings, you'll see an option to edit the CORS configuration. Click edit, then copy and paste the JSON above, and then save your changes.
 
 ![](../../../.gitbook/assets/image%20%28108%29.png)
 
-You can also apply them using the AWS CLI:
+Alternatively you can apply them using the AWS CLI:
 ```
 aws s3api put-bucket-cors --bucket my-gradient-storage-provider-bucket --cors-configuration '{
   "CORSRules": [
@@ -76,7 +76,7 @@ aws s3api put-bucket-cors --bucket my-gradient-storage-provider-bucket --cors-co
 
 **Create a Restricted User and Access Key/Secret Key**
 
-Create a restricted user identity and access key/secret key for accessing your bucket.
+Create a restricted user identity and access key/secret key for accessing the bucket.
 
 Here we create these using the AWS CLI:
 ```
@@ -114,11 +114,12 @@ Gradient requires a minimal level of policy permissions to access the bucket. Sa
     ]
 }
 ```
-Be sure to customize the above policy definition for your specific bucket name in the `AllowListBucket` and `AllowBucketAccess` **Resource** fields.
+Customize the above policy definition for your specific bucket name in the `AllowListBucket` and `AllowBucketAccess` **Resource** fields.
+Place the policy definition in a file, e.g, `gradient-storage-provider-access-policy.json`.
 
 **Create Policy**
 
-Using the AWS S3 CLI you can place definition in a file, e.g, `gradient-storage-provider-access-policy.json` then create the policy object from it:
+Using the AWS CLI create a policy object from the policy definition file:
 ```
 aws iam create-policy --policy-name gradient-storage-provider-access-policy \
   --policy-document file://gradient-storage-provider-access-policy.json
