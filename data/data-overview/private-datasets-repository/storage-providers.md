@@ -20,8 +20,9 @@ Choose a public storage provider, such as AWS S3, Google GCS, minio, or similar.
 
 Create a bucket within your storage provider, and a set of read/write credentials for accessing the data \(usually an access key and secret key\). Note the bucket name, and endpoint url, as well as access key and secret key.
 
-For AWS S3 you can define a bucket using the AWS CLI.  Here we create a bucket named `my-gradient-storage-provider-bucket`.
-```
+For AWS S3 you can define a bucket using the AWS CLI. Here we create a bucket named `my-gradient-storage-provider-bucket`.
+
+```text
 aws s3api create-bucket --bucket my-gradient-storage-provider-bucket --region us-east-1
 ```
 
@@ -61,7 +62,8 @@ In the AWS S3 console bucket _permissions_ settings, you'll see an option to edi
 ![](../../../.gitbook/assets/image%20%28108%29.png)
 
 Alternatively you can apply them using the AWS CLI:
-```
+
+```text
 aws s3api put-bucket-cors --bucket my-gradient-storage-provider-bucket --cors-configuration '{
   "CORSRules": [
     {
@@ -79,17 +81,20 @@ aws s3api put-bucket-cors --bucket my-gradient-storage-provider-bucket --cors-co
 Create a restricted user identity and access key/secret key for accessing the bucket.
 
 Here we create these using the AWS CLI:
-```
+
+```text
 aws iam create-user --user-name gradient-storage-provider-user
 
 aws iam create-access-key --user-name gradient-storage-provider-user
 ```
+
 Note the returned `AccessKeyId` and `SecretAccessKey` values as they will only appear once.
 
 **Create Bucket Access Policy**
 
 Gradient requires a minimal level of policy permissions to access the bucket. Sample permissions for a bucket named `my-gradient-storage-provider-bucket` are as follows:
-```
+
+```text
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -114,6 +119,7 @@ Gradient requires a minimal level of policy permissions to access the bucket. Sa
     ]
 }
 ```
+
 Place the policy definition in a file, e.g, `gradient-storage-provider-access-policy.json`.
 
 Edit the file and replace `my-gradient-storage-provider-bucket` with your actual bucket name in the `AllowListBucket` and `AllowBucketAccess` **Resource** fields.
@@ -121,10 +127,12 @@ Edit the file and replace `my-gradient-storage-provider-bucket` with your actual
 **Create Policy**
 
 Using the AWS CLI create a policy object from the policy definition file:
-```
+
+```text
 aws iam create-policy --policy-name gradient-storage-provider-access-policy \
   --policy-document file://gradient-storage-provider-access-policy.json
 ```
+
 Note the returned policy `"Arn"` value, which is used when assigning the policy to the user identity.
 
 **Attach Policy to User**
@@ -132,7 +140,8 @@ Note the returned policy `"Arn"` value, which is used when assigning the policy 
 Attach the policy object to the restricted user identity.
 
 Using the AWS CLI:
-```
+
+```text
 aws iam attach-user-policy --user-name gradient-storage-provider-user \
   --policy-arn "arn:aws:iam::XXXXXXXXXXXX:policy/gradient-storage-provider-access-policy"
 ```

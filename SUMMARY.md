@@ -33,6 +33,7 @@
     * [Notebook Containers](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/README.md)
       * [Building a Custom Container](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
     * [Notebook Workspace Include Files](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
+    * [Notebook TensorBoards](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
     * [Community \(Public\) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
   * [Run on Gradient \(GitHub badge\)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
   * [ML Showcase](explore-train-deploy/notebooks/ml-showcase.md)
