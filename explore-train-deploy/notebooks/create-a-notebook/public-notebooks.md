@@ -1,4 +1,4 @@
-# Community \(Public\) Notebooks
+# Community \(public\) Notebooks
 
 ## Gradient Community Notebooks
 

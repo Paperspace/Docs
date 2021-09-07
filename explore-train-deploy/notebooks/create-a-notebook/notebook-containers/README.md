@@ -1,4 +1,4 @@
-# Notebook Containers
+# Notebook containers
 
 {% hint style="success" %}
 Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your account.

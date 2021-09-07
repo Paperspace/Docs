@@ -1,4 +1,4 @@
-# Fork a Notebook
+# Forking Notebooks
 
 ## Fork your Notebook
 

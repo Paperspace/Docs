@@ -1,4 +1,4 @@
-# Share a Notebook
+# Sharing Notebooks
 
 Click Share to generate a unique link for the Notebook.  You can make the notebook private by toggling the button on the Share your Notebook dialogue.
 
