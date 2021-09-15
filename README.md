@@ -8,7 +8,7 @@ Gradient is a [Paperspace ](https://www.paperspace.com/)product that simplifies 
 This is the documentation for the [Gradient](https://paperspace.com/gradient) platform. If you are looking for general information on Paperspace or to contact Support, visit our [Help Center](https://support.paperspace.com).
 {% endhint %}
 
-![](.gitbook/assets/image%20%2837%29.png)
+![Gradient Workflows &#x2014; Automate from idea to production](.gitbook/assets/screen-shot-2021-06-16-at-11.17.23-am.png)
 
 Gradient is offered as a [managed service](https://console.paperspace.com/signup?gradient=true) or as a [self-hosted](gradient-private-cloud/about/setup/self-hosted-clusters/) version you can install into any existing Kubernetes cluster.
 
