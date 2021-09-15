@@ -22,7 +22,7 @@ The Experiment generates a Python pickle file that gets stored in the shared sto
 
 After signing in, click on Gradient in the navigation bar on the left to choose Projects. Click on the Create Project button and select Create Standalone Project. Enter a name for the project when prompted.
 
-![Create a new project via Projects &amp;gt; Create a Project](../../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
+![Create a new project via Projects &amp;gt; Create a Project](../../.gitbook/assets/screen-shot-2021-01-18-at-8.47.38-pm%20%281%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
 
 ## Creating the Experiment
 
