@@ -4,7 +4,7 @@ You can run Tensorboard and access it via this URL scheme `https://tensorboard.N
 
 The notebook ID can be found on the notebook list view or from the notebook page in the URL. The ID is after `/notebook/...`. 
 
-The default notebook cluster ID is `clw6rxq2s`. If using a private cluster, you can grab the id from the clusters page. 
+The default notebook cluster ID is `clw6rxq2s`. \(If using a private cluster, you can grab the ID from the clusters page.\) 
 
 Here’s an example:
 
