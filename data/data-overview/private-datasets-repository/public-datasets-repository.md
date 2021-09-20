@@ -1,6 +1,9 @@
 # Public Datasets Repository
 
-A read-only collection of sample datasets datasets are provided for free for use within Gradient notebooks.
+A read-only collection of sample datasets datasets are provided for free for use within Gradient.
+
+* For **Notebooks**, they are available in the directory `/datasets`, e.g., `/datasets/mnist`.
+* For **Workflows**, they are in the Gradient namespace, e.g., in YAML, `ref: gradient/mnist`.
 
 ## List of Public Datasets
 
@@ -18,30 +21,17 @@ A read-only collection of sample datasets datasets are provided for free for use
         </p>
         <p><code>/datasets/fastai/</code>
         </p>
+        <p><code>ref: gradient/fastai</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>Paperspace&apos;s Fast.ai template is built for getting up and running
           with the enormously popular Fast.ai online MOOC called Practical Deep Learning
           for Coders.</p>
-        <p>Source: <a href="http://files.fast.ai/data/">http://files.fast.ai/data/</a>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><em><b>CelebA</b></em>
-        </p>
-        <p><code>/datasets/celebA/</code>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p>CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes
-          dataset with more than 200K celebrity images, each with 40 attribute annotations.
-          <br
-          />
-        </p>
-        <p>Source: <a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html">http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html</a>
-        </p>
+        <p></p>
+        <p>Source: <a href="https://registry.opendata.aws/">https://registry.opendata.aws/</a> (previously
+          <a
+          href="http://files.fast.ai/data/">http://files.fast.ai/data/</a>)</p>
       </td>
     </tr>
     <tr>
@@ -50,6 +40,8 @@ A read-only collection of sample datasets datasets are provided for free for use
         </p>
         <p><code>/datasets/lsun/</code>
         </p>
+        <p><code>ref: gradient/lsun</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>Contains around one million labeled images for each of 10 scene categories
@@ -57,7 +49,7 @@ A read-only collection of sample datasets datasets are provided for free for use
         <p>
           <br />Source: <a href="http://www.yf.io/p/lsun">http://www.yf.io/p/lsun</a>
         </p>
-        <p>(also http://lsun.cs.princeton.edu/2017; link no longer active)</p>
+        <p>(was http://lsun.cs.princeton.edu/2017; link no longer active)</p>
       </td>
     </tr>
     <tr>
@@ -65,6 +57,8 @@ A read-only collection of sample datasets datasets are provided for free for use
         <p><em><b>MNIST</b></em>
         </p>
         <p><code>/datasets/mnist/</code>
+        </p>
+        <p><code>ref: gradient/mnist</code>
         </p>
       </td>
       <td style="text-align:left">
@@ -81,6 +75,8 @@ A read-only collection of sample datasets datasets are provided for free for use
         </p>
         <p><code>/datasets/coco</code>
         </p>
+        <p><code>ref: gradient/coco</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>COCO is a large-scale object detection, segmentation, and captioning dataset.</p>
@@ -94,6 +90,8 @@ A read-only collection of sample datasets datasets are provided for free for use
         <p><em><b>Selfie</b></em>
         </p>
         <p><code>/datasets/selfie</code>
+        </p>
+        <p><code>ref: gradient/selfie</code>
         </p>
       </td>
       <td style="text-align:left">
@@ -127,9 +125,12 @@ A read-only collection of sample datasets datasets are provided for free for use
         </p>
         <p><code>/datasets/openslr</code>
         </p>
+        <p><code>ref: gradient/openslr</code>
+        </p>
       </td>
       <td style="text-align:left">
-        <p>Open Speech and Language Resources.</p>
+        <p>Open Speech and Language Resources. This is dataset number 12, the LibriSpeech
+          ASR corpus.</p>
         <p>
           <br />Source: <a href="https://www.openslr.org/resources.php">https://www.openslr.org/resources.php</a>
         </p>
@@ -156,6 +157,8 @@ A read-only collection of sample datasets datasets are provided for free for use
         </p>
         <p><code>/datasets/sentiment140</code>
         </p>
+        <p><code>ref: gradient/sentiment140</code>
+        </p>
       </td>
       <td style="text-align:left">
         <p>Sentiment140 allows you to discover the sentiment of a brand, product,
@@ -170,6 +173,8 @@ A read-only collection of sample datasets datasets are provided for free for use
         <p><em><b>Tiny-imagenet-200</b></em>
         </p>
         <p><code>/datasets/tiny-imagenet-200</code>
+        </p>
+        <p><code>ref: gradient/tiny-imagenet-200</code>
         </p>
       </td>
       <td style="text-align:left">
