@@ -93,5 +93,25 @@ You can manage the state of your deployment by updating your spec file and updat
 gradient deployments update --id [deployment-id] --spec update-deployment.yaml
 ```
 
+## Using deployments in a workflow
+
+You can manage deployments in a workflow using the Gradient CLI. Your paperspace API key and project id are available as environment variables
+
+```text
+jobs:
+  createdDeployment:
+    uses: script@v1
+    with:
+      script: |
+        cat > ./deployment.yaml <<EOF
+        image: paperspace/first-order-model:server
+        port: 8000
+        resources:
+          replicas: 1
+          instanceType: P5000
+        gradient deployments create --name my-deployment --projectId ${PROJECT_ID} --spec ./deployment.yaml
+      image: paperspace/gradient-sdk
+```
+
 
 
