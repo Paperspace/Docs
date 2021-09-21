@@ -8,7 +8,7 @@ You can [create a managed cluster ](https://console.paperspace.com/clusters/crea
 
 ## Choosing between our managed service, managed private clusters, and self-hosting Gradient
 
-|  | Managed Service \(multi-tenant\) | Managed Private Clusters | Self-Hosted Clusters |
+|  | Managed Service  | Managed Private Clusters | Self-Hosted Clusters |
 | :--- | :--- | :--- | :--- |
 | **Infrastructure:** | Shared, managed by Paperspace | Private, managed by Paperspace | Private, self-hosted |
 | **Setup time:**  | None | Setup time: 10 minutes | Setup time: 20-30 minutes |
