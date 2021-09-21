@@ -1,4 +1,4 @@
-# About Paperspace Gradient
+# About Gradient
 
 ### **Welcome to Gradient!**
 
