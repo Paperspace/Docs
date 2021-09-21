@@ -1,5 +1,9 @@
 # Core Concepts
 
+## Projects
+
+A Gradient [Project](../managing-projects/) is a collection of Notebooks, Workflows, Models, Deployments, and Data. It provides a way to organize your Gradient workloads into related groups and sharing within a team.
+
 ## Notebooks
 
 Launch a Jupyter Notebook that includes all the frameworks, libraries, and drivers you need for machine learning. Gradient [Notebooks](../../explore-train-deploy/notebooks/) make it easy to explore data and coding concepts, experiment with machine learning models, and collaborate with other people on projects.
@@ -12,21 +16,17 @@ Launch a Jupyter Notebook that includes all the frameworks, libraries, and drive
 Check out the [FREE GPU](../../more/instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-## Projects
+## Workflows
 
-A Gradient [Project](../managing-projects/) is a collection of Workflows, Models, and Deployments. It provides a way to organize your Gradient workload into related groups for manitenance and sharing within a team.
+Workflows provide automation for machine learning tasks such as orchestrating full end-to-end machine learning application development. Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax to easily create powerful automation.
 
-### Workflows
-
-Workflows are the newest and most powerful way to orchestrate full end-to-end machine learning application development. Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax to easily create powerful automation.
-
-### Models
-
-You can either upload a model or generate models from your training workloads which can be stored in the [Gradient Model Repository](../../data/models/).
-
-### Deployments \(inference/model serving\)
+## Deployments \(inference/model serving\)
 
 Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here](../../explore-train-deploy/deployments/).
+
+## Models
+
+You can either upload a model or generate models from your training workloads which can be stored in the [Gradient Model Repository](../../data/models/).
 
 ## Data
 
