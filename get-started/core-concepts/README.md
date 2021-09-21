@@ -22,7 +22,7 @@ Workflows provide automation for machine learning tasks such as orchestrating fu
 
 ## Deployments \(inference/model serving\)
 
-Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here](../../explore-train-deploy/deployments/).
+Once a model is created, you can easily serve the model high-performance, low-latency micro-service with a RESTful API. Learn more [here]().
 
 ## Models
 

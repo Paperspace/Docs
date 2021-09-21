@@ -128,5 +128,5 @@ Behind the scenes, your Workflow will be executed on the Gradient public cluster
 
 ## Explore the rest of the platform
 
-From [Models](../../data/models/) to [Deployments](../../explore-train-deploy/deployments/), there's a lot more to the Gradient platform. We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../../more/gradient-python-sdk-1/).
+From [Models](../../data/models/) to [Deployments](), there's a lot more to the Gradient platform. We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../../more/gradient-python-sdk-1/).
 

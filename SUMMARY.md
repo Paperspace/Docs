@@ -48,17 +48,6 @@
 * [Deployments \(Preview\)](explore-train-deploy/deployments-preview/README.md)
   * [Getting started with Deployments](explore-train-deploy/deployments-preview/getting-started-with-deployments.md)
   * [Deployment Spec](explore-train-deploy/deployments-preview/deployment-spec.md)
-* [Deployments](explore-train-deploy/deployments/README.md)
-  * [Managing Deployments](explore-train-deploy/deployments/managing-deployments/README.md)
-    * [Deployment Containers](explore-train-deploy/deployments/managing-deployments/deployment-containers/README.md)
-      * [Custom Deployment Containers](explore-train-deploy/deployments/managing-deployments/deployment-containers/custom-deployment-containers.md)
-    * [Deployment States](explore-train-deploy/deployments/managing-deployments/deployment-states.md)
-    * [Deployment Logs](explore-train-deploy/deployments/managing-deployments/deployment-logs.md)
-    * [Deployment Metrics](explore-train-deploy/deployments/managing-deployments/deployment-metrics.md)
-    * [A Deployed Model's API Endpoint](explore-train-deploy/deployments/managing-deployments/a-deployed-models-api-endpoint/README.md)
-      * [Gradient + TensorFlow Serving](explore-train-deploy/deployments/managing-deployments/a-deployed-models-api-endpoint/deployment-restful-api-tfserving.md)
-    * [Deployment Autoscaling](explore-train-deploy/deployments/managing-deployments/deployment-autoscaling.md)
-    * [Optimize Models for Inference](explore-train-deploy/deployments/managing-deployments/optimizing-tensorflow-models-for-inference.md)
 
 ## Artifacts <a id="data"></a>
 

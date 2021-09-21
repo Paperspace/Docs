@@ -156,7 +156,7 @@ jobs:
       my-string: job-1.outputs.my-string
 ```
 
-Scenario 3: Creating a model from a dataset and passing the model ID as a string to a [Deployment](../deployments/) step
+Scenario 3: Creating a model from a dataset and passing the model ID as a string to a [Deployment]() step
 
 {% hint style="info" %}
 NOTE: There is no native Gradient Actions for Model Deployments today. Instead, you can use the [Gradient SDK](../../more/gradient-python-sdk-1/) to create and manage your inference endpoints.
