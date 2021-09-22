@@ -109,6 +109,7 @@ jobs:
         resources:
           replicas: 1
           instanceType: P5000
+        EOF
         gradient deployments create --name my-deployment --projectId ${PROJECT_ID} --spec ./deployment.yaml
       image: paperspace/gradient-sdk
 ```
