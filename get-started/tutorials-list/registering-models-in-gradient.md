@@ -134,5 +134,3 @@ You can also visit the Models section of Gradient UI to see a list of registered
 
 After registering the model, we can turn that into a Deployment to perform inferencing:
 
-{% page-ref page="dealing-with-gradient-deployments.md" %}
-

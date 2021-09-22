@@ -1,7 +1,5 @@
 # Get started with Notebooks
 
-{% embed url="https://youtu.be/i4pvLzvw2ME" caption="Jupyter notebooks are quick and easy to launch. 1m48s. " %}
-
 {% hint style="success" %}
 Check out Notebook examples in the [ML Showcase](https://ml-showcase.paperspace.com/)!
 {% endhint %}
