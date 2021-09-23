@@ -34,6 +34,7 @@
     * [Sharing Notebooks](explore-train-deploy/notebooks/create-a-notebook/share-a-notebook.md)
     * [Notebook file whitelist](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
     * [Notebook TensorBoards](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
+    * [Using VSCode \(experimental\)](explore-train-deploy/notebooks/create-a-notebook/using-vscode-experimental.md)
     * [Community \(public\) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
   * [Run on Gradient \(GitHub badge\)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
   * [ML Showcase](explore-train-deploy/notebooks/ml-showcase.md)
