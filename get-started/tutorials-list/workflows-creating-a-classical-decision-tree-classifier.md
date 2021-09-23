@@ -8,13 +8,13 @@ description: >-
 
 ### Overview
 
-This tutorial breaks down how to create and use a classical decision tree classifier for the [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris) using Gradient Workflows with the Workflows UI and the Gradient CLI. This project was constructed to provide a framework for new users to create their first custom Workflow after following our sample Workflow tutorial. 
+This tutorial breaks down how to create and use a classical decision tree classifier for the [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris) using Gradient Workflows with the Workflows UI and the Gradient CLI. This project was constructed to provide a framework for new users to create their first custom Workflow after following our [sample Workflow tutorial](https://app.gitbook.com/@paperspace/s/gradient/get-started/tutorials-list/build-and-run-sample-workflow). 
 
 ### Context 
 
 Workflows are designed to help you automate machine learning tasks. Workflows can be used independently or in conjunction with Notebooks and Deployments. 
 
-For this tutorial, we will assume that we've done some initial exploration and cleaning up of the dataset, a popular and pre-set up dataset provided by Sci-Kit Learn, in Notebooks and we now want to take our findings to the training or production phase in Workflows. 
+For this tutorial, we will assume that we've done some initial exploration and cleaning up of the Iris dataset, a popular and pre-set up dataset provided by Sci-Kit Learn, in Notebooks and we now want to take our findings to the training or production phase in Workflows. 
 
 Iris classification is often one of the first ML tasks given to new data scientists. Use this process of setting up a simple Iris Decision Tree Classifier to learn how you can apply Workflows to assess your ML pipelines prior to deployment.
 
@@ -22,11 +22,11 @@ You can find a link for the repo you will be using [here](https://github.com/gra
 
 ### What You Will Learn
 
-In this tutorial, we will show how to apply Notebook findings to an automatic, iterative training process using Workflows and the accompanying [YAML Workflow spec](../../explore-train-deploy/workflows/using-yaml-for-data-science.md). After running a successful Workflow, we will discuss possibilities for expanding the tutorial to include additional Workflow steps.
+In this tutorial, we will show how to apply Notebook findings to an automatic, iterative training process using Workflows and the accompanying [YAML Workflow spec](../../explore-train-deploy/workflows/using-yaml-for-data-science.md). After running a successful Workflow, we will discuss possibilities for expanding the Workflow spec to include additional steps.
 
 ### Getting Started
 
-Go to the [sample repo](https://github.com/gradient-ai/iris-workflow-demo) and fork it to your GitHub. You will need these files later to recreate the Workflow.
+Go to the [sample repo](https://github.com/gradient-ai/iris-workflow-demo) and fork it to your GitHub. You will need these files later to modify the Workflow.
 
 {% hint style="info" %}
 If you want to skip ahead to a more advanced tutorial, we recommend you try [Deep Learning Recommenders in TensorFlow,](end-to-end-example.md) which is an end-to-end tutorial with a deeper focus on data preparation and transformation.
@@ -46,7 +46,7 @@ After installing the CLI, you will need to [generate an API key](../managing-pro
 gradient apiKey your_api_key
 ```
 
-If you need help finding your API keys, you can use the pull down menu in the top right of the Gradient user interface and select `Team Settings` &gt; `API Keys`.
+To find your API keys, use the pull down menu in the top right of the Gradient user interface and select `Team Settings` &gt; `API Keys`.
 
 ![Create your project](../../.gitbook/assets/screen-shot-2021-09-20-at-2.56.15-pm.png)
 
@@ -56,9 +56,9 @@ Next, go into the terminal and navigate to where you want your directory to be o
 
 Within this repo are three files of interest:  trainModel.py, model\_iris.py, and workflow.yaml. These three files will dictate our Workflow.
 
-* trainModel.py: this script instantiates a decision tree classifier, fits it to the Iris dataset, and pickles the model.
-* model\_iris.py: takes in the pickled model from trainModel, generates predicted values for the target feature, and outputs them in a DataFrame along with the actual values for the target.
-* workflow.yaml: consists of three jobs: cloning the iris-workflow-demo repo, training the model, and generating the predictions and outputting the results. 
+* `trainModel.py`: this script instantiates a decision tree classifier, fits it to the Iris dataset, and pickles the model.
+* `model_iris.py`: takes in the pickled model from trainModel, generates predicted values for the target feature, and outputs them in a DataFrame along with the actual values for the target.
+* `workflow.yaml`: consists of three jobs: cloning the iris-workflow-demo repo, training the model, and generating the predictions and outputting the results. 
 
 ### Create a Project
 
@@ -78,15 +78,15 @@ Go back to the browser. Navigate to the Workflows tab, once you are in your new 
 
 ![Set up your Workflow connection to GitHub](../../.gitbook/assets/screen-shot-2021-09-20-at-3.25.01-pm.png)
 
-Select your GitHub account in the "Select account or organization" box, and enter in your forked repo as the repository name. In the "Select a template" section, click the link "insert an existing repository" to be taken to a drop down menu where you can select your new repo. Import your repo.
+Select the relevant GitHub account in the "Select account or organization" box, and enter in the forked repo as the repository name. In the "Select a template" section, click the link "insert an existing repository" to be taken to a drop down menu where the new repo can be selected. Import the repo.
 
-From there, you will be taken to the "Let's create a Workflow" page. This is where you can begin to customize the Workflow.
+From there, we will be taken to the "Let's create a Workflow" page. 
 
 ### Instantiating the Data Store
 
 Now we will instantiate our data store using [persistent storage](../../data/data-overview/persistent-storage.md) for the dataset. 
 
-You may create an Iris dataset in storage by entering the following into the the terminal:
+You may instantiate storage for the dataset in Gradient Managed by entering the following into the the terminal:
 
 ```text
 gradient datasets create --name iris --storageProviderId splpgnqdraabg8u
@@ -94,13 +94,13 @@ gradient datasets create --name iris --storageProviderId splpgnqdraabg8u
 
 Note: `splpgnqdraabg8u` is the id corresponding to Gradient persistent storage. You can use other storage providers with S3 compatible object storage buckets, AWS S3, Google GCS, MinIO, or similar. 
 
-The terminal will return a dataset id like so:
+Once ran, the terminal will return a dataset id like so:
 
 ```text
 Created dataset: your_dataset_id
 ```
 
-Be sure to save this dataset id: you will need it to store your outputted dataset. 
+Be sure to save this dataset id: you will need it to store your outputted dataset in the Workflow. 
 
 ## Executing the Workflow
 
@@ -112,23 +112,23 @@ Finally, we can execute our Workflow run. You can do this by entering the follow
 gradient workflows create -projectID your_prokect_id --name your_workflow_name
 ```
 
-This should the output your new Workflow like so:
+This should output the name and id for our new Workflow like so:
 
 ![](../../.gitbook/assets/screen-shot-2021-09-20-at-4.10.35-pm.png)
 
 ### Run the Workflow
 
-Now, to run the Workflow, all you need to do is enter "gradient workflows run" with your new Workflow id and path into the terminal. 
+Now, to run the Workflow, all we need to do is enter "gradient workflows run" with the new Workflow id and path into the terminal. 
 
 ```text
 gradient workflows run --id your_workflow_id --path ./workflow.yaml
 ```
 
-You can then look at your Workflow in the browser, and it should look like so:
+We can then look at our Workflow in the browser, and it should look like so:
 
 ![Successful run of the iris workflow demo](../../.gitbook/assets/screen-shot-2021-09-20-at-4.11.35-pm.png)
 
-To look at your outputted data, select the "workflow-test" job and navigate to it's data tab. Then select the link within the iris store to download your csv of the actual vs. predicted target values for the Iris classification task. 
+To look at the outputted data, select the "workflow-test" job and navigate to it's data tab. Then select the link within the iris store to download your csv of the actual vs. predicted target values for the Iris classification task. 
 
 ## Customizing the Workflow
 
@@ -144,7 +144,7 @@ Examples of potential modifications
 
 ### Modifying the scripts
 
-The two script based jobs outlined in the yaml file for the above Workflow is to train a decision tree classifier on the iris data set and then use that model to generate a prediction for the target. By adjusting the python in these two files, we could make our Workflow perform differently in a number of ways. 
+The two script based jobs outlined in the yaml file for the above Workflow is to train a decision tree classifier on the Iris data set and then use that model to generate a prediction for the target. By adjusting the python scripts in these two files, we could make our Workflow perform differently in any number of ways. 
 
 For example, in trainModel could be given hyperparameters for tuning the model differently, or, in model\_iris, the outputted data set could be set to include the other features of the dataset, in addition to the target and prediction.
 
@@ -152,16 +152,16 @@ Try adjusting some of the scripts to see how your Workflow is affected.
 
 ### Next Steps
 
-Congratulations! You've run your first Workflow. At this point here is everything we've done:
+Congratulations! We have run our first Workflow. At this point here is everything we've done:
 
 * Learned how to create a project and workflow using the Gradient CLI
 * How to interact with and use Gradient Managed persistent storage with data in Workflows
 * How to monitor and execute Workflows using the Gradient CLI
 
-With these results, you're now able to classify the various records in the iris dataset with high precision using Sci-Kit Learn's Decision Tree Classifier. Using the framework given above, you can now create your own Gradient Workflow!
+With these results, we're now able to classify the various records in the iris dataset with high precision using Sci-Kit Learn's Decision Tree Classifier. Using the framework given above, any user can create their own custom Gradient Workflow!
 
 ### Further Reading
 
-* If you feel comfortable with this classical ML implementation of Workflows and are ready to move on to using more advanced or deep learning techniques, work through the tutorial on creating a [recommender system using Notebooks and Workflows](https://docs.paperspace.com/gradient/get-started/tutorials-list/end-to-end-example)
-* Learn how to deploy your new models created using Workflows in our[ Using Deployments ](https://docs.paperspace.com/gradient/get-started/tutorials-list/dealing-with-gradient-deployments)doc
+* Users who are comfortable with this classical ML implementation of Workflows and are ready to move on to using more advanced or deep learning techniques, should work through the tutorial on creating an end-to-end [recommender system using Notebooks and Workflows](https://docs.paperspace.com/gradient/get-started/tutorials-list/end-to-end-example) with TensorFlow.
+* Learn how to deploy your new models created using Workflows in our[ Using Deployments](https://docs.paperspace.com/gradient/get-started/tutorials-list/dealing-with-gradient-deployments)
 
