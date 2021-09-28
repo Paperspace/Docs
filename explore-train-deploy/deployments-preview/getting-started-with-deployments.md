@@ -6,7 +6,7 @@ You can create deployments using the[ Gradient CLI](../../get-started/quick-star
 
 ### Web UI
 
-![](../../.gitbook/assets/screen-shot-2021-09-28-at-3.55.54-am.png)
+![](../../.gitbook/assets/screen-shot-2021-09-28-at-4.03.53-am.png)
 
 ### Gradient CLI
 
@@ -97,9 +97,9 @@ You can manage the state of your deployment by updating your spec file and updat
 
 ### Web UI
 
-You can clicked the edit button in the Web UI to update your deployment spec to change the number of desired replicas.
+You can clicked the edit button in the Web UI to update your deployment spec to change the number of desired replicas as well as the other parts of the spec.
 
-![](../../.gitbook/assets/screen-shot-2021-09-28-at-4.01.33-am.png)
+![](../../.gitbook/assets/screen-shot-2021-09-28-at-4.06.05-am.png)
 
 ### Gradient CLI
 
