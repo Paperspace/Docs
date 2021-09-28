@@ -10,15 +10,15 @@ The following tutorials cover the main entities within Gradient.
 
 ### Gradient Workflows Tutorials
 
-{% page-ref page="end-to-end-example.md" %}
+{% page-ref page="build-and-run-sample-workflow.md" %}
 
 {% page-ref page="workflows-creating-a-classical-decision-tree-classifier.md" %}
 
-{% page-ref page="registering-models-in-gradient.md" %}
-
-{% page-ref page="build-and-run-sample-workflow.md" %}
+{% page-ref page="example-workflow-nlp-text-generator.md" %}
 
 {% page-ref page="workflows-sample-project-stylegan2/" %}
+
+{% page-ref page="registering-models-in-gradient.md" %}
 
 ### Gradient End-to-End Tutorial
 
