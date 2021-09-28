@@ -1,4 +1,4 @@
-# Get started with Notebooks
+# Getting Started: Launch a Notebook
 
 {% hint style="success" %}
 Check out Notebook examples in the [ML Showcase](https://ml-showcase.paperspace.com/)!

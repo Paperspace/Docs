@@ -1,4 +1,4 @@
-# Getting Started: Build and Run a Sample Workflow
+# Getting Started: Run a Sample Workflow
 
 ## Overview
 

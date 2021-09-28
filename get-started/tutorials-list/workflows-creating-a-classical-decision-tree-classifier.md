@@ -4,7 +4,7 @@ description: >-
   and the Gradient CLI
 ---
 
-# Getting Started: Build and Run a Custom Workflow
+# Getting Started: Run a Custom Workflow
 
 ### Overview
 

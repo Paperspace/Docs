@@ -1,4 +1,4 @@
-# End-to-end example: Deep Learning Recommenders in TensorFlow
+# End-to-End Sample Project: Deep Learning Recommender with TensorFlow
 
 This tutorial shows by example how to use Gradient Notebooks and Workflows, and the interaction between them. The project is an end-to-end demonstration of building a recommender system then adding deep learning to it.
 

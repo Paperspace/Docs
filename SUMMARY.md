@@ -13,14 +13,14 @@
   * [Secrets](get-started/managing-projects/using-secrets.md)
   * [Storing an API key as a Secret](get-started/managing-projects/storing-an-api-key-as-a-secret.md)
 * [Tutorials](get-started/tutorials-list/README.md)
-  * [Get started with Notebooks](get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md)
-  * [Getting Started: Build and Run a Sample Workflow](get-started/tutorials-list/build-and-run-sample-workflow.md)
-  * [Example Workflow: NLP Text Generator](get-started/tutorials-list/example-workflow-nlp-text-generator.md)
-  * [Workflows sample project: StyleGAN2](get-started/tutorials-list/workflows-sample-project-stylegan2/README.md)
+  * [Getting Started: Launch a Notebook](get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md)
+  * [Getting Started: Run a Sample Workflow](get-started/tutorials-list/build-and-run-sample-workflow.md)
+  * [Getting Started: Run a Custom Workflow](get-started/tutorials-list/workflows-creating-a-classical-decision-tree-classifier.md)
+  * [Workflows Sample Project: NLP Text Generator](get-started/tutorials-list/example-workflow-nlp-text-generator.md)
+  * [Workflows Sample Project: StyleGAN2](get-started/tutorials-list/workflows-sample-project-stylegan2/README.md)
     * [YAML files for StyleGAN2 workflows](get-started/tutorials-list/workflows-sample-project-stylegan2/yaml-files-for-stylegan2-workflows.md)
-  * [Getting Started: Build and Run a Custom Workflow](get-started/tutorials-list/workflows-creating-a-classical-decision-tree-classifier.md)
-  * [End-to-end example: Deep Learning Recommenders in TensorFlow](get-started/tutorials-list/end-to-end-example.md)
-  * [Registering Models in Gradient](get-started/tutorials-list/registering-models-in-gradient.md)
+  * [Workflows Sample Project: Registering a Model](get-started/tutorials-list/registering-models-in-gradient.md)
+  * [End-to-End Sample Project: Deep Learning Recommender with TensorFlow](get-started/tutorials-list/end-to-end-example.md)
 
 ## Explore, train, deploy
 

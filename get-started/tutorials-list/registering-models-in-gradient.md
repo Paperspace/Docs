@@ -1,4 +1,4 @@
-# Registering Models in Gradient
+# Workflows Sample Project: Registering a Model
 
 ## **Objectives**
 

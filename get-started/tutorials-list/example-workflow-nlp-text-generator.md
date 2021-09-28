@@ -1,4 +1,4 @@
-# Example Workflow: NLP Text Generator
+# Workflows Sample Project: NLP Text Generator
 
 This is our NLP Text Generation Tutorial example. It runs the GPT-2 model from HuggingFace: [https://huggingface.co/gpt2](https://huggingface.co/gpt2) . The corresponding Git repository is at [https://github.com/gradient-ai/NLP-Text-Generation](https://github.com/gradient-ai/NLP-Text-Generation) .
 
