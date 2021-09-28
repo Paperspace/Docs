@@ -15,6 +15,7 @@
 * [Tutorials](get-started/tutorials-list/README.md)
   * [Get started with Notebooks](get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md)
   * [Getting Started: Build and Run a Sample Workflow](get-started/tutorials-list/build-and-run-sample-workflow.md)
+  * [Example Workflow: NLP Text Generator](get-started/tutorials-list/example-workflow-nlp-text-generator.md)
   * [Getting Started: Build and Run a Custom Workflow](get-started/tutorials-list/workflows-creating-a-classical-decision-tree-classifier.md)
   * [End-to-end example: Deep Learning Recommenders in TensorFlow](get-started/tutorials-list/end-to-end-example.md)
   * [Registering Models in Gradient](get-started/tutorials-list/registering-models-in-gradient.md)
