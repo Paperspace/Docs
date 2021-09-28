@@ -1,4 +1,4 @@
-# Tutorials
+# 📚 Tutorials
 
 The following tutorials cover the main entities within Gradient. 
 
