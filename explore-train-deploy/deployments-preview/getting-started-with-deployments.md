@@ -4,6 +4,12 @@
 
 You can create deployments using the[ Gradient CLI](../../get-started/quick-start/install-the-cli.md) and linking an API key. You will also need an existing project to run your deployment.
 
+### Web UI
+
+![](../../.gitbook/assets/screen-shot-2021-09-28-at-3.55.54-am.png)
+
+### Gradient CLI
+
 #### 1. Create a YAML spec to manage your deployment
 
 ```yaml
@@ -85,9 +91,17 @@ gradient deployments get --id [deployment-id]
 }
 ```
 
-## Scaling your deployment
+## Scaling your deployments
 
-You can manage the state of your deployment by updating your spec file and updating the deployment. To stop your deployment from running you can set the replicas to 0, which turn off all workloads.
+You can manage the state of your deployment by updating your spec file and updating the deployment. To stop your deployment from running you can set the replicas to 0, which turn off all workloads. You are able to edit your deployment spec from the Web UI or using the Gradient CLI
+
+### Web UI
+
+You can clicked the edit button in the Web UI to update your deployment spec to change the number of desired replicas.
+
+![](../../.gitbook/assets/screen-shot-2021-09-28-at-4.01.33-am.png)
+
+### Gradient CLI
 
 ```text
 gradient deployments update --id [deployment-id] --spec update-deployment.yaml
