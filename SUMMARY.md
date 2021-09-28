@@ -12,7 +12,7 @@
 * [Organizing Projects](get-started/managing-projects/README.md)
   * [Secrets](get-started/managing-projects/using-secrets.md)
   * [Storing an API key as a Secret](get-started/managing-projects/storing-an-api-key-as-a-secret.md)
-* [📚 Tutorials](get-started/tutorials-list/README.md)
+* [Tutorials](get-started/tutorials-list/README.md)
   * [Getting Started: Launch a Notebook](get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md)
   * [Getting Started: Run a Sample Workflow](get-started/tutorials-list/build-and-run-sample-workflow.md)
   * [Getting Started: Run a Custom Workflow](get-started/tutorials-list/workflows-creating-a-classical-decision-tree-classifier.md)
