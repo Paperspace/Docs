@@ -17,6 +17,7 @@ Note: Free plans do not guarantee capacity and have [certain limits](free-instan
 | Free A4000 🆕 |  |  | ✔️ |
 | Free A5000 🆕 |  |  | ✔️ |
 | Free A6000 🆕 |  |  | ✔️ |
+| Free A100 🆕 |  |  | ✔️ |
 
 ### Paid instances
 
