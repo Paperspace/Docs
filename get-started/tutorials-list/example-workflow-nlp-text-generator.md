@@ -1,6 +1,6 @@
 # Workflows Sample Project: NLP Text Generator
 
-This is our NLP Text Generation Tutorial example. It runs the GPT-2 model from HuggingFace: [https://huggingface.co/gpt2](https://huggingface.co/gpt2) . The corresponding Git repository is at [https://github.com/gradient-ai/NLP-Text-Generation](https://github.com/gradient-ai/NLP-Text-Generation) .
+This is our NLP Text Generation Tutorial example, which we consider to be **intermediate level** in our tutorials range. It runs the GPT-2 model from HuggingFace: [https://huggingface.co/gpt2](https://huggingface.co/gpt2) . The corresponding Git repository is at [https://github.com/gradient-ai/NLP-Text-Generation](https://github.com/gradient-ai/NLP-Text-Generation) .
 
 The example shows a short Workflow that is quick to run, with the primary aim of helping you to quickly get going with Gradient repo-linked projects with a modern use case. It includes:
 
@@ -18,21 +18,35 @@ The Workflow runs on the Paperspace HuggingFace NLP container \(`paperspace/tran
 
 ### Steps to run this tutorial
 
-_Via cloning the example repository_
+_Easiest way: clone the example repository_
 
-Assuming you are [up and running with Gradient](https://docs.paperspace.com/gradient/get-started/quick-start), this project runs as a sample repository, available when [creating a repo-linked project](https://docs.paperspace.com/gradient/get-started/quick-start#first-create-a-project) under the Projects tab. In the illustrated list of projects in the right-hand panel, select the one for NLP Text Generation and follow the instructions to run the YAML.
+Assuming you are [up and running with Gradient](https://docs.paperspace.com/gradient/get-started/quick-start), and have the **GitHub app** installed to your GitHub username, this Project runs as a sample repository.
 
-_Alternative: create your own fork of the repository_
+* [Create a Project](https://docs.paperspace.com/gradient/get-started/quick-start#first-create-a-project)
+* Under the Workflows tab of the Project, click Create a Workflow
+* In the illustrated list of Projects in the central panel, select the one for "NLP Text Generation"
+* Select your GitHub username from the Account and Organizations dropdown list
+* Choose a repository name
+* Click "Create Project"
 
-You can also fork your own copy of this repo, then create a repo-linked project that points to the fork:
+The Workflow will then run.
+
+_Alternative method: create your own repo fork first_
+
+You can also fork your own copy of this tutorial repo, then create a repo-linked Workflow that points to the fork:
 
 * Navigate to [https://github.com/gradient-ai/NLP-Text-Generation](https://github.com/gradient-ai/NLP-Text-Generation) in your browser
 * In the resulting GitHub GUI page, click "Fork" in the top right
 * Follow the usual GitHub procedure by selecting your GitHub account to fork the repo to
-* Create a Project in Gradient that is linked to this repo, e.g., under the GUI Project tab, instead of the right-hand side illustrated boxes, use the left-hand side and select your repo from the dropdown list. This assumes that account has the Paperspace Gradient app installed, the same as in the fork-a-sample-repo method above.
-* Change any of the files in your repo to trigger the `nlp_text_generation.yaml` file under `.gradient/workflows/` to run. For example, add a few characters to the readme.md. The result should be the same as above.
+* [Create a Project](https://docs.paperspace.com/gradient/get-started/quick-start#first-create-a-project)
+* Under the Workflows tab of the Project, click Create a Workflow
+* Instead of selecting the sample repo for "NLP Text Generation", click "import an existing gradient repository"
+* Choose the repo fork you just created from the dropdown list
+* This will take you to the "Let's create a Workflow" screen. Change any of the files in your forked repo to trigger the `nlp_text_generation.yaml` file under `.gradient/workflows/` to run. For example, add a few characters to the `README.md`.
 
-_Note_: When running the Workflow from a project linked to your own fork of the repo, it will still be cloning from the original location [https://github.com/gradient-ai/NLP-Text-Generation](https://github.com/gradient-ai/NLP-Text-Generation), unless you choose to alter it, which is optional.
+The result should be the same as above.
+
+_Note_: When running the Workflow from a project linked to your own fork of the repo, it will still be cloning from the original location [https://github.com/gradient-ai/NLP-Text-Generation](https://github.com/gradient-ai/NLP-Text-Generation), unless you choose to alter the location that the Workflow points to, which is optional.
 
 #### Altering the model settings and triggering a Workflow rerun
 
