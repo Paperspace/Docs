@@ -23,13 +23,13 @@ Projects help organize your work. To get started, just choose a name and click c
 
 ## Create a Notebook
 
-Notebooks can be created on the Notebooks tab. Just select a [template](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../../more/instance-types/), and then click create.
+After creating a project, Notebooks can be created on the Notebooks tab within the project. Just select a [template](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../../more/instance-types/), and then click create.
 
 {% hint style="success" %}
 Check out the [FREE GPU](../../more/instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![Select Notebooks &amp;gt; Create a Notebook to enter the notebook create flow](../../.gitbook/assets/screen-shot-2021-04-18-at-10.00.21-pm.png)
+![Select Notebooks -&amp;gt; Create a Notebook to enter the notebook create flow](../../.gitbook/assets/screen-shot-2021-04-18-at-10.00.21-pm.png)
 
 {% hint style="success" %}
 Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your own account
@@ -45,7 +45,7 @@ You can automate machine learning tasks using Workflows. You can define a workfl
 
 ### Run a Workflow from a GitHub trigger \(recommended\)
 
-Follow the instructions on the page to install the Gradient **Github App** into your Github account, and select the git repo you want to associate with project. Alternatively you can select one of the **sample repos.**  
+This requires the project to be linked to a GitHub repository. Follow the instructions on the page to install the Gradient **Github App** into your Github account, and select the git repo you want to associate with project. Alternatively you can select one of the **sample repos.**  
 
 If you choose to use your own git repo, you will be prompted to add a YAML file to your repo that defines the Workflow steps. 
 
@@ -128,5 +128,5 @@ Behind the scenes, your Workflow will be executed on the Gradient public cluster
 
 ## Explore the rest of the platform
 
-From [Models](../../data/models/) to [Deployments](), there's a lot more to the Gradient platform. We recommend using the Web UI to explore the primary components and also be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../../more/gradient-python-sdk-1/).
+From [Models](../../data/models/) to [Deployments](https://docs.paperspace.com/gradient/explore-train-deploy/deployments-preview), there's a lot more to the Gradient platform. We recommend using the Web UI to explore the primary components, including Notebooks, and basic usage of Workflows & Deployments. For more advanced non-GUI-based usage, be sure to install the [CLI](install-the-cli.md) and check out the [SDK](../../more/gradient-python-sdk-1/).
 

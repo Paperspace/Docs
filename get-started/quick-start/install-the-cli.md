@@ -4,11 +4,13 @@ description: How to install the Gradient Command Line Interface
 
 # Install the Gradient CLI
 
+This is an optional procedure for those who wish to interact with Gradient via the command line interface \(CLI\), in addition to the GUI or SDK.
+
 ## Installation
 
 {% embed url="https://youtu.be/t1-PqoeqFuo" caption="Learn how to install the Gradient CLI. 1m35s." %}
 
-The Gradient CLI is available on [pypi](https://pypi.org/project/gradient/) and works on Windows, MacOS, and Linux.
+The Gradient CLI is available on [PyPI](https://pypi.org/project/gradient/) and works on Windows, MacOS, and Linux.
 
 The CLI requires **Python 3.4+** \(or Python 2.7\). Be sure to use a compatible version of **pip** \(or **pip3**\) depending on your Python version.
 
@@ -24,9 +26,19 @@ The CLI requires **Python 3.4+** \(or Python 2.7\). Be sure to use a compatible 
 pip install -U gradient
 ```
 
+The `-U` option upgrades all specified packages to the newest available version.
+
+You can verify that it is working by running
+
+```bash
+gradient version
+```
+
+which will output a version like `v1.8.6`.
+
 ## Connecting your account
 
-You can either stash your API key on your computer or include your API key on each command.
+You can either stash your API key on your computer or include your API key on each command. The latter can be useful if you are working on several teams at the same time, as each team has its own API key.
 
 ### Set your active API key
 
@@ -40,7 +52,7 @@ Alternatively, you can set the environment variable `PAPERSPACE_API_KEY` tempora
 
 ```bash
 export PAPERSPACE_API_KEY=XXXX
-gradient experiments run ...
+gradient workflows run ...
 ```
 
 **Note:** You can reveal your current API key with `cat ~/.paperspace/config.json`
@@ -73,23 +85,25 @@ Activate the virtual environment:
 source <virtual_env_dir_path>/bin/activate
 ```
 
+Virtualenvs can also be run in other ways, e.g., using `conda`.
+
 ## Enable autocomplete
 
-Add the following to your `.bashrc` \(or `.zshrc`\) to enable autocomplete anytime you activate your shell. If gradient was installed in a virtual environment, the following has to be added to the `activate` script:
+Add the following to your `.bashrc` \(or `.zshrc`\) to enable autocomplete anytime you activate your shell. If Gradient was installed in a virtual environment, the following has to be added to the `activate` script:
 
 `eval "$(_GRADIENT_COMPLETE=source gradient)"`
 
-Alternatively, you can create activation script by:
+Alternatively, you can create an activation script by:
 
 `(_GRADIENT_COMPLETE=source gradient) > ~/paperspace_complete.sh`
 
 and then add `. ~/paperspace_complete.sh` to your `.bashrc`, `.zshrc` or `activate` script.
 
-More: [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/)
+For more, see [https://click.palletsprojects.com/en/7.x/bashcomplete/](https://click.palletsprojects.com/en/7.x/bashcomplete/) .
 
 ## **Install the latest pre-release version**
 
-If you need a pre-release version of the CLI use the following command to install it.
+If you need a pre-release version of the CLI use the following command to install it:
 
 ```bash
 pip install -U --pre gradient
