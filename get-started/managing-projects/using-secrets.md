@@ -2,27 +2,33 @@
 
 ## Managing and Using Secrets
 
-Secrets allow you to store sensitive information at the team, private cluster, and project level. The secrets you create are available to use in experiments run on private clusters.
+Secrets allow you to store sensitive information at the team, private cluster, and project level. The secrets you create are available to use in Workflows run on private clusters.
 
 Secrets can be created at the following levels:
 
 * Team: these secrets are applied to all projects and all clusters
-* Project: these secrets are applied to all experiments in a project
-* Cluster: these secrets are applied to all experiments in a cluster
+* Project: these secrets are applied to all Workflows in a project
+* Cluster: these secrets are applied to all Workflows in a cluster
 
 Secrets can be set from the Settings tab in the web UI or through the CLI.
 
 {% hint style="info" %}
-View the full CLI/SDK Docs for **Secrets** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-secrets](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-secrets)
+View the full CLI/SDK Docs for **Secrets** here: [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-secrets](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-secrets)
 {% endhint %}
 
 ### Set a Secret
 
 {% tabs %}
 {% tab title="Web UI" %}
-Navigate to the project, cluster, or team page and click the **Secrets** tab. Click the **Create Secret** button, enter the secret name and value, and click the **Create Secret** button to save.
+Navigate to one of:
 
-![Secrets are located in Settings &amp;gt; Secrets](../../.gitbook/assets/screen-shot-2021-01-18-at-10.25.39-pm.png)
+* The Secrets tab under Team settings
+* The Settings tab under a Project
+* The Secrets tab in the details of a Cluster under the Team settings Clusters tab
+
+These correspond to Team, Project, and Cluster secrets respectively. Type in the name and value of the secret, and click Add to save.
+
+![](../../.gitbook/assets/secrets.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -50,9 +56,9 @@ gradient secrets set cluster --id=<cluster_id> --name=<name> --value=<secret>
 
 {% tabs %}
 {% tab title="Web UI" %}
-Navigate to the project or team page and click the **Secrets** tab.
+Navigate to the Project, Team, or Cluster page, as with setting a secret above. The names of secrets in that scope that are already stored are listed.
 
-![Secrets are available in settings for projects and teams](../../.gitbook/assets/screen-shot-2021-01-18-at-10.28.24-pm.png)
+![](../../.gitbook/assets/secrets_list.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -65,13 +71,13 @@ gradient secrets list team
 List project secrets
 
 ```text
-gradient secrets list project --id=<project_id>
+gradient secrets list project --id=<Project ID>
 ```
 
 List cluster secrets
 
 ```text
-gradient secrets list cluster --id=<cluster_id>
+gradient secrets list cluster --id=<Cluster ID>
 ```
 {% endtab %}
 {% endtabs %}
@@ -80,9 +86,9 @@ gradient secrets list cluster --id=<cluster_id>
 
 {% tabs %}
 {% tab title="Web UI" %}
-Navigate to the project, cluster, or team page and click the **Secrets** tab. Click the **Delete** button and confirm the dialog.
+Navigate to the Project, Team, or Cluster page, as with setting a secret above. Click the **Delete** button and confirm the dialog.
 
-![](../../.gitbook/assets/secret-delete.png)
+![](../../.gitbook/assets/secrets_delete.png)
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -95,18 +101,23 @@ gradient secrets delete team --name=<name>
 Delete project secret
 
 ```text
-gradient secrets delete project --id=<project_id> --name=<name>
+gradient secrets delete project --id=<Project ID> --name=<name>
 ```
 
 Delete cluster secrets
 
 ```text
-gradient secrets delete cluster --id=<cluster_id> --name=<name>
+gradient secrets delete cluster --id=<Cluster ID> --name=<name>
 ```
 {% endtab %}
 {% endtabs %}
 
 ### **Secret scoping**
 
-If the same secret name is created for more than one scope only one will be applied. Secret with the same name have the following precedence: Cluster secrets take precedence over Team secrets; Project secrets take precedence over both Cluster secrets and Team secrets.
+If the same secret name is created for more than one scope, only one will be applied.
+
+Secrets with the same name have the following precedence:
+
+* Cluster secrets take precedence over Team secrets
+* Project secrets take precedence over both Cluster secrets and Team secrets.
 
