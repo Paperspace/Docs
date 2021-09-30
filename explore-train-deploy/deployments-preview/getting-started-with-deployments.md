@@ -1,8 +1,8 @@
 # Getting started with Deployments
 
-## Create a deployment
+## Create a Deployment
 
-You can create deployments using the[ Gradient CLI](../../get-started/quick-start/install-the-cli.md) and linking an API key. You will also need an existing project to run your deployment.
+You can create deployments using the[ Gradient CLI](../../get-started/quick-start/install-the-cli.md) and linking an API key. You will also need an existing Project to run your deployment.
 
 ### Web UI
 
@@ -91,13 +91,13 @@ gradient deployments get --id [deployment-id]
 }
 ```
 
-## Scaling your deployments
+## Scaling your Deployments
 
-You can manage the state of your deployment by updating your spec file and updating the deployment. To stop your deployment from running you can set the replicas to 0, which turn off all workloads. You are able to edit your deployment spec from the Web UI or using the Gradient CLI
+You can manage the state of your deployment by updating your spec file and updating the deployment. To stop your deployment from running you can set the replicas to 0, which turns off all workloads. You are able to edit your deployment spec from the Web UI, or using the Gradient CLI
 
 ### Web UI
 
-You can clicked the edit button in the Web UI to update your deployment spec to change the number of desired replicas as well as the other parts of the spec.
+You can click the edit button in the Web UI to update your deployment spec to change the number of desired replicas as well as the other parts of the spec.
 
 ![](../../.gitbook/assets/screen-shot-2021-09-28-at-4.06.05-am.png)
 
@@ -107,9 +107,9 @@ You can clicked the edit button in the Web UI to update your deployment spec to 
 gradient deployments update --id [deployment-id] --spec update-deployment.yaml
 ```
 
-## Using deployments in a workflow
+## Using Deployments in a Workflow
 
-You can manage deployments in a workflow using the Gradient CLI. Your paperspace API key and project id are available as environment variables
+You can manage deployments in a workflow using the Gradient CLI. Your Paperspace API key and Project ID are available as environment variables
 
 ```text
 jobs:
