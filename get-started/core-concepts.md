@@ -10,11 +10,11 @@ This page focuses on concepts specific to Gradient. For a more general overview 
 
 ## Projects
 
-A Gradient [Project](../managing-projects/) is a collection of Notebooks, Workflows, Deployments, Models, and Data. It provides a way to organize your Gradient workloads into related groups and sharing within a team.
+A Gradient [Project](managing-projects/) is a collection of Notebooks, Workflows, Deployments, Models, and Data. It provides a way to organize your Gradient workloads into related groups and sharing within a team.
 
 The layout of the tabs within a Project in the GUI reflects this:
 
-![](../../.gitbook/assets/project_tabs.png)
+![](../.gitbook/assets/project_tabs.png)
 
 Projects can be created standalone, or linked to a GitHub repository.
 
@@ -29,7 +29,7 @@ Launching a Notebook includes all the frameworks, libraries, and drivers you nee
 * Easy sharing
 
 {% hint style="success" %}
-Check out the [FREE GPU](../../more/instance-types/free-instances.md) option when launching Notebooks!
+Check out the [FREE GPU](../more/instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
 ## Workflows
@@ -57,7 +57,7 @@ Once a model is created, you can easily serve the model high-performance, low-la
 
 A [machine learning model](https://docs.paperspace.com/machine-learning/wiki/machine-learning-models-explained) is a file or collection of files that describe an arbitrary transformation to be made on an input dataset to produce an output. Often, the transformation is in the form of a mapping from a set of input features to an output such as a prediction, recommendation, text, or image.
 
-You can either upload a model or generate models from your training workloads which can be stored in the [Gradient Model Repository](../../data/models/). Models in the repository are versioned.
+You can either upload a model or generate models from your training workloads which can be stored in the [Gradient Model Repository](../data/models/). Models in the repository are versioned.
 
 We support common model formats including TensorFlow, ONNX, or custom.
 
@@ -65,13 +65,13 @@ We support common model formats including TensorFlow, ONNX, or custom.
 
 In Gradient, a Dataset refers to a versioned collection of files, which in turn might be individual datasets. These of course can be much larger than the other common method of curating a set of versioned files, a GitHub repository.
 
-#### [**Versioned Data**](../../data/data-overview/private-datasets-repository/)
+#### [**Versioned Data**](../data/data-overview/private-datasets-repository/)
 
-Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Datasets can be used as input to Gradient workloads as well as outputs. Gradient provides the ability to mount S3 compatible object storage buckets at runtime. Learn more [here](../../data/data-overview/private-datasets-repository/).
+Versioned Datasets are used to manage the flow of data with your machine learning workloads. Datasets have immutable versions that can be used to track your data as it changes. Datasets can be used as input to Gradient workloads as well as outputs. Gradient provides the ability to mount S3 compatible object storage buckets at runtime. Learn more [here](../data/data-overview/private-datasets-repository/).
 
-#### [Persistent Storage](../../data/data-overview/#persistent-storage)
+#### [Persistent Storage](../data/data-overview/#persistent-storage)
 
-Persistent storage is a persistent filesystem automatically mounted on every Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Gradient Dataset versions are automatically cached to persistent storage for performance. Learn more [here](../../data/data-overview/#persistent-storage).
+Persistent storage is a persistent filesystem automatically mounted on every Notebook and is ideal for storing data like images, datasets, model checkpoints, and more. Gradient Dataset versions are automatically cached to persistent storage for performance. Learn more [here](../data/data-overview/#persistent-storage).
 
 ## Other concepts
 

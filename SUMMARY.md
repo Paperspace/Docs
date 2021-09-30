@@ -6,8 +6,7 @@
 
 * [Quick Start](get-started/quick-start/README.md)
   * [Install the Gradient CLI](get-started/quick-start/install-the-cli.md)
-* [Core Concepts](get-started/core-concepts/README.md)
-  * [Common Errors](get-started/core-concepts/error-codes.md)
+* [Core Concepts](get-started/core-concepts.md)
 * [Organizing Projects](get-started/managing-projects/README.md)
   * [Secrets](get-started/managing-projects/using-secrets.md)
   * [Storing an API key as a Secret](get-started/managing-projects/storing-an-api-key-as-a-secret.md)
@@ -21,6 +20,7 @@
   * [Workflows Sample Project: Registering a Model](get-started/tutorials-list/registering-models-in-gradient.md)
   * [End-to-End Sample Project: Deep Learning Recommender with TensorFlow](get-started/tutorials-list/end-to-end-example.md)
 * [FAQ](get-started/faq.md)
+* [Common Errors](get-started/error-codes.md)
 
 ## Explore, train, deploy
 
