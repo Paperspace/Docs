@@ -8,7 +8,6 @@
   * [Install the Gradient CLI](get-started/quick-start/install-the-cli.md)
 * [Core Concepts](get-started/core-concepts/README.md)
   * [Common Errors](get-started/core-concepts/error-codes.md)
-* [FAQ](get-started/faq.md)
 * [Organizing Projects](get-started/managing-projects/README.md)
   * [Secrets](get-started/managing-projects/using-secrets.md)
   * [Storing an API key as a Secret](get-started/managing-projects/storing-an-api-key-as-a-secret.md)
@@ -21,6 +20,7 @@
     * [YAML files for StyleGAN2 workflows](get-started/tutorials-list/workflows-sample-project-stylegan2/yaml-files-for-stylegan2-workflows.md)
   * [Workflows Sample Project: Registering a Model](get-started/tutorials-list/registering-models-in-gradient.md)
   * [End-to-End Sample Project: Deep Learning Recommender with TensorFlow](get-started/tutorials-list/end-to-end-example.md)
+* [FAQ](get-started/faq.md)
 
 ## Explore, train, deploy
 
