@@ -49,6 +49,8 @@ Set cluster secret
 ```text
 gradient secrets set cluster --id=<cluster_id> --name=<name> --value=<secret>
 ```
+
+For the full list of options, see the [CLI reference](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-secrets).
 {% endtab %}
 {% endtabs %}
 

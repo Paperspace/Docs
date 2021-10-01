@@ -6,6 +6,10 @@ description: How to install the Gradient Command Line Interface
 
 This is an optional procedure for those who wish to interact with Gradient via the command line interface \(CLI\), in addition to the GUI or SDK.
 
+{% hint style="info" %}
+For a full reference on all CLI commands, check out the [command reference](https://paperspace.github.io/gradient-cli/gradient.cli.html)
+{% endhint %}
+
 ## Installation
 
 {% embed url="https://youtu.be/t1-PqoeqFuo" caption="Learn how to install the Gradient CLI. 1m35s." %}

@@ -19,17 +19,17 @@ When you first log into the Paperspace Console, you can select Gradient from the
 
 Projects help organize your work. To get started, just choose a name and click create.
 
-![](../../.gitbook/assets/screen-shot-2021-04-22-at-11.46.07-am.png)
+![](../../.gitbook/assets/project_create_2.png)
 
 ## Create a Notebook
 
-After creating a project, Notebooks can be created on the Notebooks tab within the project. Just select a [template](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../../more/instance-types/), and then click create.
+After creating a Project, Notebooks can be created on the Notebooks tab within the Project. Just select a [template](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../../more/instance-types/), and then click create.
 
 {% hint style="success" %}
 Check out the [FREE GPU](../../more/instance-types/free-instances.md) option when launching Notebooks!
 {% endhint %}
 
-![Select Notebooks -&amp;gt; Create a Notebook to enter the notebook create flow](../../.gitbook/assets/screen-shot-2021-04-18-at-10.00.21-pm.png)
+![](../../.gitbook/assets/notebook_create.png)
 
 {% hint style="success" %}
 Check out the [ML Showcase](https://ml-showcase.paperspace.com/) for a list of projects you can fork into your own account
@@ -41,7 +41,7 @@ You can stop, start, fork, and swap out the instance type anytime. Choose from a
 
 You can automate machine learning tasks using Workflows. You can define a workflow once and use it repeatedly to perform simple or complex MLOps activities, such as pre-processing data, training models, and creating or updating deployments.
 
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](../../.gitbook/assets/workflow_create.png)
 
 ### Run a Workflow from a GitHub trigger \(recommended\)
 

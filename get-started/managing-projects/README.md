@@ -26,7 +26,7 @@ For a project name with spaces in it, enclose the name in quotes, as in `--name 
 
 You will need to be logged into Gradient via having run `gradient apiKey <your API key>`, or pass the `--apiKey` argument, along with your key, to the command.
 
-For other command line options, see `gradient projects create --help`.
+For other command line options, see the [CLI command reference](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-projects), or `gradient projects create --help`
 {% endtab %}
 {% endtabs %}
 
