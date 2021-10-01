@@ -1,6 +1,6 @@
 # Gradient Actions
 
-Gradient Actions are composable building blocks for creating reproducible machine learning workflows. Actions use the `uses` and `with` syntax to specify how a job step executes.
+Gradient Actions are composable building blocks for creating reproducible machine learning Workflows. Actions use the `uses` and `with` syntax to specify how a job step executes.
 
 ## container
 
@@ -11,7 +11,7 @@ with:
   args: ["echo", "hello", "world"]
 ```
 
-The Gradient action called `container@v1` allows you to use an arbitrary docker container image \(in this case the lightweight `bash` container image\) and pass arguments directly to it.
+The Gradient Action called `container@v1` allows you to use an arbitrary Docker container image \(in this case the lightweight `bash` container image\) and pass arguments directly to it.
 
 ## script
 
@@ -26,7 +26,7 @@ with:
 
 If you want to run multiple commands, the `script@v1` action allows you to pass a `script` in a [literal-style HereDoc](https://lzone.de/cheat-sheet/YAML#yaml-heredoc-multiline-strings) denoted by `|-`. The pipe character will preserve newlines and the dash will remove extra newlines after the block.
 
-Note: The image you provide will need to have `bash` available in its PATH.
+_Note:_ The image you provide will need to have `bash` available in its PATH.
 
 ## git-checkout
 
@@ -37,11 +37,11 @@ outputs:
 uses: git-checkout@v1
 with:
   url: https://github.com/user/my-public-repo
-  ref: 46aa59d6ecc3720ffe2454a6d9d360e6ce75acce #optional git ref
-  path: /outputs/repo # optional, defaults to exactly one output volume or dataset
+  ref: 46aa59d6ecc3720ffe2454a6d9d360e6ce75acce # Optional git ref
+  path: /outputs/repo # Optional, defaults to exactly one output volume or dataset
 ```
 
-In this example, the Gradient action `git-checkout@v1` clones the public GitHub URL `https://github.com/user/my-public-repo` at ref `46aa...` into a volume named `repo`. The cloned files are accessible at `/outputs/<output-name>` \(in this case, `/outputs/repo`\), and subsequent jobs that specify a the checkout job's volume as an input can also access the as repository files as read-only at `/inputs/<input-name>`.
+In this example, the Gradient Action `git-checkout@v1` clones the public GitHub URL `https://github.com/user/my-public-repo` at ref `46aa...` into a volume named `repo`. The cloned files are accessible at `/outputs/<output-name>` \(in this case, `/outputs/repo`\), and subsequent jobs that specify the checkout job's volume as an input can also access the repository files as read-only at `/inputs/<input-name>`.
 
 ```yaml
 inputs:
@@ -52,7 +52,7 @@ with:
   args: ['ls', '/inputs/repo']
 ```
 
-Note: to clone a private repository, add your username as parameter, [set a Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret) with a [GitHub access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) value, and add a password parameter \(example below\).
+_Note:_ To clone a private repository, add your username as a parameter, [set a Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret) with a [GitHub access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) value, and add a password parameter:
 
 ```yaml
 outputs:
@@ -65,7 +65,7 @@ with:
   password: secret:MY_SECRET_NAME
 ```
 
-Using `path` to pick an output target
+You can also use `path` to pick an output target:
 
 ```yaml
 outputs:
@@ -78,7 +78,7 @@ outputs:
 uses: git-checkout@v1
 with:
   url: https://github.com/user/my-public-repo
-  ref: 46aa59d6ecc3720ffe2454a6d9d360e6ce75acce #optional git ref
+  ref: 46aa59d6ecc3720ffe2454a6d9d360e6ce75acce # Optional git ref
   path: /outputs/repo/subfolder
 ```
 
@@ -95,9 +95,9 @@ with:
   secret-access-key: secret:MY_SECRET_NAME
 ```
 
-The `s3-download@v1` Gradient action copies the contents of an s3 bucket into an output \(in this example, the volume is named `s3`\). Subsequent jobs that specify an input that reference the `s3-download` job's volume output can access the downloaded files within that job at `/inputs/<input-name>`.
+The `s3-download@v1` Gradient Action copies the contents of an Amazon S3 bucket into an output \(in this example, the volume is named `s3`\). Subsequent jobs that specify an input that reference the `s3-download` job's volume output can access the downloaded files within that job at `/inputs/<input-name>`.
 
-Note: `access-key` and `secret-access-key` are required parameters, and the latter must be a [Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret). Optional parameters include `region` \(for AWS buckets\), `endpoint` \(for non-AWS buckets\), and `path` \(to disambiguate target outputs or to download to a subfolder\).
+_Note:_ `access-key` and `secret-access-key` are required parameters, and the latter must be a [Gradient secret](../../get-started/managing-projects/using-secrets.md#set-a-secret). Optional parameters include `region` \(for AWS buckets\), `endpoint` \(for non-AWS buckets\), and `path` \(to disambiguate target outputs or to download to a subfolder\).
 
 ## model-create
 

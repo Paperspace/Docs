@@ -12,7 +12,9 @@ There are three types of inputs and outputs. Understanding how these function wi
 
 ## Datasets
 
-The dataset type leverages the Gradient platform native [dataset](../../data/data-overview/) primitive. Information stored within datasets is not limited to any single type of data. In fact, a generic dataset can include anything from pretrained models to generated images to configuration files. Inherent to datasets is the notion of versions. Workflows can consume and produce new dataset versions as well as tag new versions of existing datasets. Note: datasets must be defined in advance of being referenced in a workflow. See the [dataset](../../data/data-overview/) documentation for more info.
+The dataset type leverages the Gradient platform native [dataset](../../data/data-overview/) primitive. Information stored within datasets is not limited to any single type of data. In fact, a generic dataset can include anything from pretrained models to generated images to configuration files. Inherent to datasets is the notion of versions. Workflows can consume and produce new dataset versions as well as tag new versions of existing datasets.
+
+_Note:_ datasets must be defined in advance of being referenced in a workflow. See [Create Datasets for the Workflow](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#create-datasets-for-the-workflow) for more information.
 
 Scenario 1: Consuming a dataset that already exists within Gradient
 
@@ -42,9 +44,11 @@ my-job:
         ref: my-dataset-id
 ```
 
+`my-dataset-id` can be the actual ID of the dataset, a 15 character string that looks like `def123ghi456jkl` \(or appended with a version ID too\), or a name for the dataset.
+
 ## Volumes
 
-Unlike, e.g. GitHub Actions, it is likely that multiple Gradient Steps/Actions will execute on multiple compute nodes. To facilitate the passing of data between these nodes, Gradient Actions expose the notion of volumes and volume passing.
+Unlike, e.g., GitHub Actions, it is likely that multiple Gradient Steps/Actions will execute on multiple compute nodes. To facilitate the passing of data between these nodes, Gradient Actions expose the notion of volumes and volume passing.
 
 Volumes enable actions such as the [@git-checkout action](gradient-actions.md#git-checkout). Volumes can be defined as input volumes or output volumes or both. When a volume is an `output` it is mounted in `/outputs` and is writeable. When a volume is an `input` it is mounted in `/inputs` and is _read only_.
 
@@ -93,13 +97,13 @@ jobs:
       my-volume: job1.outputs.my-volume
 ```
 
-Volumes cannot currently be used as an output after the job they were created with, this limitation is planned to be removed in the future.
+Volumes cannot currently be used as an output after the job they were created with. This limitation is planned to be removed in the future.
 
 ## Strings
 
 In some cases, you may need to pass a single value between Workflow steps. The string type makes this possible.
 
-Scenario 1: Passing a string from as a workflow-level input
+Scenario 1: Passing a string as a Workflow-level input
 
 ```yaml
 inputs:
@@ -156,13 +160,13 @@ jobs:
       my-string: job-1.outputs.my-string
 ```
 
-Scenario 3: Creating a model from a dataset and passing the model ID as a string to a [Deployment]() step
+Scenario 3: Creating a model from a dataset and passing the model ID as a string to a [Deployment](https://docs.paperspace.com/gradient/explore-train-deploy/deployments-preview) step
 
 {% hint style="info" %}
 NOTE: There is no native Gradient Actions for Model Deployments today. Instead, you can use the [Gradient SDK](../../more/gradient-python-sdk-1/) to create and manage your inference endpoints.
 {% endhint %}
 
-To run this example you will need to a\) create a dataset named `test-model` and upload valid tensorflow model files to it, b\) define a secret named `MY_API_KEY` with your gradient-cli api-key, c\) substitute your `clusterId` in the deployment create step.
+To run this example you will need to a\) create a dataset named `test-model` and upload valid TensorFlow model files to it; b\) define a secret named `MY_API_KEY` with your gradient-cli api-key; c\) substitute your `clusterId` in the deployment create step.
 
 ```yaml
 defaults:
