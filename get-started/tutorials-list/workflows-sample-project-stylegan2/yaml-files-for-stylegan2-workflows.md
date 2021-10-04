@@ -4,7 +4,7 @@ These are the two YAML files used for the Workflows sample project based on Styl
 
 #### Download and extract data
 
-```text
+```yaml
 # StyleGAN2 Workflow 1 of 2: Download and extract data
 #
 # This is the YAML file used to run the Gradient download and extract data Workflow for the sample project based on
@@ -30,7 +30,7 @@ These are the two YAML files used for the Workflows sample project based on Styl
 # getCatImageDatabase -> stylegan2-wsp-cat-img-db
 # extractImages       -> stylegan2-wsp-extr-img
 #
-# Last updated: Sep 17th 2021
+# Last updated: Sep 16th 2021
 
 # Trigger Workflow to run on any update (commit) to the repository when linked to a Gradient project
 # (uncomment to activate)
@@ -38,10 +38,10 @@ These are the two YAML files used for the Workflows sample project based on Styl
 # An example of a change is to change the number of images extracted in the --max_images=1000 argument to the
 # python dataset_tool.py create_lsun command in job 3 (extractImages) below
 
-on:
-  github:
-    branches:
-      only: main
+#on:
+#  github:
+#    branches:
+#      only: main
 
 # Our download and extract steps do not require a GPU, so we default to a C3 machine for all steps
 
@@ -159,7 +159,7 @@ jobs:
 
 #### Train and evaluate model
 
-```text
+```yaml
 # StyleGAN2 Workflow 2 of 2: Train and evaluate model
 #
 # This is the YAML file used to run the Gradient modeling Workflow for the sample project based on StyleGAN2 at
