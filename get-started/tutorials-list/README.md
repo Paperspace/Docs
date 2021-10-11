@@ -4,35 +4,51 @@ The following tutorials cover the main entities within Gradient.
 
 ### Introduction to Gradient
 
+{% content-ref url="../../" %}
+[..](../../)
+{% endcontent-ref %}
+
 ### Gradient Notebooks Tutorials
 
-{% page-ref page="getting-started-with-gradient-notebooks-old.md" %}
+{% content-ref url="getting-started-with-gradient-notebooks-old.md" %}
+[getting-started-with-gradient-notebooks-old.md](getting-started-with-gradient-notebooks-old.md)
+{% endcontent-ref %}
 
 ### Gradient Workflows Tutorials
 
-{% page-ref page="build-and-run-sample-workflow.md" %}
+{% content-ref url="build-and-run-sample-workflow.md" %}
+[build-and-run-sample-workflow.md](build-and-run-sample-workflow.md)
+{% endcontent-ref %}
 
-{% page-ref page="workflows-creating-a-classical-decision-tree-classifier.md" %}
+{% content-ref url="workflows-creating-a-classical-decision-tree-classifier.md" %}
+[workflows-creating-a-classical-decision-tree-classifier.md](workflows-creating-a-classical-decision-tree-classifier.md)
+{% endcontent-ref %}
 
-{% page-ref page="example-workflow-nlp-text-generator.md" %}
+{% content-ref url="example-workflow-nlp-text-generator.md" %}
+[example-workflow-nlp-text-generator.md](example-workflow-nlp-text-generator.md)
+{% endcontent-ref %}
 
-{% page-ref page="workflows-sample-project-stylegan2/" %}
+{% content-ref url="workflows-sample-project-stylegan2/" %}
+[workflows-sample-project-stylegan2](workflows-sample-project-stylegan2/)
+{% endcontent-ref %}
 
-{% page-ref page="registering-models-in-gradient.md" %}
+{% content-ref url="registering-models-in-gradient.md" %}
+[registering-models-in-gradient.md](registering-models-in-gradient.md)
+{% endcontent-ref %}
 
 ### Gradient End-to-End Tutorial
 
-{% page-ref page="end-to-end-example.md" %}
+{% content-ref url="end-to-end-example.md" %}
+[end-to-end-example.md](end-to-end-example.md)
+{% endcontent-ref %}
 
 ### Additional Tutorials
 
-Gradient hosts an [ML Showcase ](https://ml-showcase.paperspace.com/)which contains a wide variety of starter Notebooks and Workflows:
+Gradient hosts an [ML Showcase ](https://ml-showcase.paperspace.com)which contains a wide variety of starter Notebooks and Workflows:
 
 {% embed url="https://ml-showcase.paperspace.com/" %}
 
 There are also a number of starter project repos available in the [Gradient AI](https://github.com/gradient-ai) organization on GitHub:
 
 {% embed url="https://github.com/gradient-ai" %}
-
-
 
