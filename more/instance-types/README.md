@@ -16,11 +16,10 @@ Managed [Private Clusters](../../gradient-private-cloud/about/) include a comput
 
 A range of affordable and high-end CPU-only instances.
 
-| Name   | GPU | Memory | vCPUs   | Price     |
-| ------ | --- | ------ | ------- | --------- |
-| **C3** | -   | 2 GB   | 2 vCPU  | $0.018/hr |
-| **C5** | -   | 8 GB   | 4 vCPU  | $0.08/hr  |
-| **C7** | -   | 30 GB  | 12 vCPU | $0.30/hr  |
+| Name   | GPU | Memory | vCPUs   | Price    |
+| ------ | --- | ------ | ------- | -------- |
+| **C5** | -   | 8 GB   | 4 vCPU  | $0.08/hr |
+| **C7** | -   | 30 GB  | 12 vCPU | $0.30/hr |
 
 ## GPU Instances
 
