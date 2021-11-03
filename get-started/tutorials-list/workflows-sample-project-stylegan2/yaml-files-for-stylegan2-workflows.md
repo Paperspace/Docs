@@ -43,11 +43,11 @@ These are the two YAML files used for the Workflows sample project based on Styl
 #    branches:
 #      only: main
 
-# Our download and extract steps do not require a GPU, so we default to a C3 machine for all steps
+# Our download and extract steps do not require a GPU, so we default to a C4 machine for all steps
 
 defaults:
   resources:
-    instance-type: C3 # C5 will run these steps faster if available, but costs more
+    instance-type: C4 # C5 will run these steps faster if available, but costs more
 
 jobs:
 
@@ -218,7 +218,7 @@ jobs:
 
   cloneStyleGAN2Repo:
     resources:
-      instance-type: C3
+      instance-type: C4
     outputs:
       repo:
         type: volume
@@ -234,7 +234,7 @@ jobs:
 
   getPretrainedModel:
     resources:
-      instance-type: C3
+      instance-type: C4
     outputs:
       pretrainedNetwork:
         type: dataset
@@ -448,4 +448,3 @@ jobs:
         ls "-aFlR" /outputs
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 ```
-
