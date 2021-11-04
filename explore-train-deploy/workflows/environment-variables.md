@@ -58,7 +58,7 @@ Here, the number of epochs to train the final model, `HP_FINAL_EPOCHS: '50'`, an
 
 To utilize the values of the Workflow environment variables in a script, the user parses them as part of their code. In the recommender case here we pass them to variables in the code:
 
-```
+```python
 hp_final_epochs = int(os.environ.get('HP_FINAL_EPOCHS'))
 hp_final_lr = float(os.environ.get('HP_FINAL_LR'))
 ```
