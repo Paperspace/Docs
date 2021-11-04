@@ -69,13 +69,7 @@ Python's `os.environ` reads the values, and we need to cast them to the correct 
 
 For more advanced situations, Python has libraries such as [env\_config](https://pypi.org/project/env\_config). This overlaps somewhat with what Workflows can do, because it allows you to declare environment variables as well. But it has clearer handling of issues like data types and errors, and can handle variables that are lists (useful for hyperparameter tuning), or more complex structures.
 
-It can read declared variables from a file, e.g., test.sh, from env\_config's GitHub page
-
-It can read declared variables from a file, e.g., test.s
-
-
-
-&#x20;(from env\_config's GitHub page)h
+It can read declared variables from a file, e.g., `test.sh`, from `env_config`'s [GitHub page](https://github.com/flowpl/env\_config):
 
 ```bash
 #!/usr/bin/env bash
