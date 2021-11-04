@@ -37,21 +37,22 @@
     * [Sharing Notebooks](explore-train-deploy/notebooks/create-a-notebook/share-a-notebook.md)
     * [Notebook file whitelist](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
     * [Notebook TensorBoards](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
-    * [Using VSCode \(experimental\)](explore-train-deploy/notebooks/create-a-notebook/using-vscode-experimental.md)
-    * [Community \(public\) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
-  * [Run on Gradient \(GitHub badge\)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
+    * [Using VSCode (experimental)](explore-train-deploy/notebooks/create-a-notebook/using-vscode-experimental.md)
+    * [Community (public) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
+  * [Run on Gradient (GitHub badge)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
   * [ML Showcase](explore-train-deploy/notebooks/ml-showcase.md)
 * [Workflows](explore-train-deploy/workflows/README.md)
   * [Getting Started with Workflows](explore-train-deploy/workflows/getting-started-with-workflows.md)
   * [Understanding Inputs & Outputs](explore-train-deploy/workflows/understanding-inputs-and-outputs.md)
   * [Workflow Spec](explore-train-deploy/workflows/workflow-spec.md)
   * [Gradient Actions](explore-train-deploy/workflows/gradient-actions.md)
+  * [Environment Variables](explore-train-deploy/workflows/environment-variables.md)
   * [Using YAML for Data Science](explore-train-deploy/workflows/using-yaml-for-data-science.md)
-* [Deployments \(Preview\)](explore-train-deploy/deployments-preview/README.md)
+* [Deployments (Preview)](explore-train-deploy/deployments-preview/README.md)
   * [Getting started with Deployments](explore-train-deploy/deployments-preview/getting-started-with-deployments.md)
   * [Deployment Spec](explore-train-deploy/deployments-preview/deployment-spec.md)
 
-## Artifacts <a id="data"></a>
+## Artifacts <a href="data" id="data"></a>
 
 * [Data](data/data-overview/README.md)
   * [Versioned Data](data/data-overview/private-datasets-repository/README.md)
@@ -67,7 +68,7 @@
   * [Push Metrics](data/metrics-overview/push-metrics.md)
   * [View & Query Metrics](data/metrics-overview/quering-metrics.md)
 
-## Gradient Cluster <a id="gradient-private-cloud"></a>
+## Gradient Cluster <a href="gradient-private-cloud" id="gradient-private-cloud"></a>
 
 * [Overview](gradient-private-cloud/about/README.md)
   * [Setup](gradient-private-cloud/about/setup/README.md)
@@ -92,10 +93,10 @@
   * [Deployments Client](more/gradient-python-sdk-1/deployments-client.md)
   * [Workflows Client](more/gradient-python-sdk-1/workflows-client.md)
   * [SDK Examples](more/gradient-python-sdk-1/sdk-tutorial.md)
-  * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api_sdk.clients.html)
+  * [Full SDK Reference](https://paperspace.github.io/gradient-cli/gradient.api\_sdk.clients.html)
 * [Instance Types](more/instance-types/README.md)
   * [Instance Tiers](more/instance-types/instance-tiers.md)
-  * [Free Instances \(Free Tier\)](more/instance-types/free-instances.md)
+  * [Free Instances (Free Tier)](more/instance-types/free-instances.md)
 * [Your Account](more/overview/README.md)
   * [Teams](more/overview/teams/README.md)
     * [Creating a Team](more/overview/teams/creating-a-team.md)
@@ -103,6 +104,5 @@
   * [Hotkeys](more/overview/hotkeys.md)
   * [Billing & Subscriptions](more/overview/billing-and-subscriptions.md)
   * [Public Profiles](more/overview/gradient-public-profiles.md)
-* [Release notes](https://updates.paperspace.com/)
+* [Release notes](https://updates.paperspace.com)
 * [Roadmap](https://www.paperspace.com/docs#roadmap)
-
