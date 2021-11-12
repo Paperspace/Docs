@@ -29,7 +29,7 @@ Assuming you are [signed up for Gradient](https://console.paperspace.com/signup?
     * Set the Container name field to `tensorflow/tensorflow:2.4.1-gpu-jupyter`
     * Set the Container command to `jupyter notebook --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.trust_xheaders=True --NotebookApp.disable_check_xsrf=False --NotebookApp.allow_remote_access=True --NotebookApp.allow_origin='*'`
     * The other options can remain the same.
-  * Start the Notebook
+* Start the Notebook
 * Once the Notebook has started, click`deep_learning_recommender_tf.ipynb` to run in the usual way by clicking `Run` under each cell in turn.
 
 Notebook creation can also be done on the command line if desired, via `gradient notebooks create`. For more details on Notebooks, see the [documentation](https://docs.paperspace.com/gradient/explore-train-deploy/notebooks).
