@@ -19,12 +19,16 @@ The tutorial consists of
 
 Assuming you are [signed up for Gradient](https://console.paperspace.com/signup?gradient=true) and [logged in](https://docs.paperspace.com/gradient/get-started/quick-start#logging-in-for-the-first-time), to run the tutorial, run the Notebook. To do this using Gradient:
 
-* In the Gradient GUI, create a Notebook with the following settings:
-  * Name = Deep Learning Recommender (or any allowed name)
-  * Select a runtime = TensorFlow 2.4.1
+* In the Gradient GUI, create a Project with a name, e.g., Deep Learning Recommender
+* Within the project, create a Notebook with the following settings:
+  * Don't select any of the boxes under Select a runtime
   * Select a machine = C4 (C5, P4000, etc., will also work)
   * Public/private = set to preferred option
-  * Under Advanced options, change the Workspace URL field from `https://github.com/gradient-ai/TF2.4.1.git` to `https://github.com/gradient-ai/Deep-Learning-Recommender-TF` to point to this repository. The other options can remain the same.
+  * Under Advanced options:
+    * Set the Workspace URL field to `https://github.com/gradient-ai/Deep-Learning-Recommender-TF` to point to this repository.
+    * Set the Container name field to `tensorflow/tensorflow:2.4.1-gpu-jupyter`
+    * Set the Container command to `jupyter notebook --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.trust_xheaders=True --NotebookApp.disable_check_xsrf=False --NotebookApp.allow_remote_access=True --NotebookApp.allow_origin='*'`
+    * The other options can remain the same.
   * Start the Notebook
 * Once the Notebook has started, click`deep_learning_recommender_tf.ipynb` to run in the usual way by clicking `Run` under each cell in turn.
 
