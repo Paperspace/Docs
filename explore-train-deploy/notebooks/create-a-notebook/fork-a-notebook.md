@@ -12,7 +12,7 @@ Forking is a great way to make a copy of your Notebook, to save a version of it 
 
 
 
-  2. From the notebook list view
+&#x20; 2\. From the notebook list view
 
 ![](../../../.gitbook/assets/fork-notebook-list.png)
 
@@ -29,4 +29,3 @@ gradient notebooks fork [OPTIONS]
 ```
 {% endtab %}
 {% endtabs %}
-

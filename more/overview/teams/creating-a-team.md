@@ -1,6 +1,8 @@
 # Creating a Team
 
-{% embed url="https://youtu.be/7aUGKzGAiEA" caption="How to create a team. 1m33s." %}
+{% embed url="https://youtu.be/7aUGKzGAiEA" %}
+How to create a team. 1m33s.
+{% endembed %}
 
 To access many advanced features in Gradient, you will need to create a team workspace if you don't already have one.
 
@@ -30,7 +32,7 @@ Give your new team a **Name**:
 
 That's it! You should now have a new team available in the Gradient console. The next step is to invite teammates to the workspace to collaborate -- or else to begin using Team features like Clusters and Datasets.
 
-{% embed url="https://youtu.be/q4KvF2w8JmU" caption="Joining a team. 0m45s." %}
-
-
+{% embed url="https://youtu.be/q4KvF2w8JmU" %}
+Joining a team. 0m45s.
+{% endembed %}
 

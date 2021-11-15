@@ -2,17 +2,19 @@
 
 Many features in Paperspace Gradient are available only to Team and higher subscription plans.
 
-These include features such as **Private Clusters**, **Datasets**, and **Unlimited Jobs.** Plans start at $12/user/month.
+These include features such as **Private Clusters**, **Datasets**, and **Unlimited Jobs. **Plans start at $12/user/month.
 
 To upgrade to a team plan, you will first need to create a team:
 
-{% page-ref page="creating-a-team.md" %}
+{% content-ref url="creating-a-team.md" %}
+[creating-a-team.md](creating-a-team.md)
+{% endcontent-ref %}
 
 
 
 Once you have upgraded to a team plan, you will need to add a payment card to your team workspace and select your new subscription plan.
 
-First navigate to your team **Billing** page. Note that this is NOT the same as your individual billing page. 
+First navigate to your team **Billing** page. Note that this is NOT the same as your individual billing page.&#x20;
 
 You know you're in the right place when the team indicator says the name of your team rather than Personal Workspace.
 
@@ -26,7 +28,7 @@ The next step is to upgrade your subscription. Once you select **Upgrade Subscri
 
 
 
-At this point if you would like a self-hosted cluster \(rather than a managed cluster\), you will see an option to contact sales.
+At this point if you would like a self-hosted cluster (rather than a managed cluster), you will see an option to contact sales.
 
 However for our purposes we will be selecting the **T1** upgrade and will be asked to confirm our order.
 
@@ -40,5 +42,4 @@ Now select continue:
 
 
 
-And that's it! You are now officially upgraded to a team plan within Gradient. 
-
+And that's it! You are now officially upgraded to a team plan within Gradient.&#x20;
