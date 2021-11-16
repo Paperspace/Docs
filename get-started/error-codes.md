@@ -47,10 +47,6 @@ We encountered an internal error uploading `/notebook` for offline viewing and f
 
 We were unable to pull your container. Temporary network errors are often the cause of this failure, particularly for large containers. Trying to start your notebook again should have better luck.
 
-#### Error caching notebook image
-
-We were unable to take a snapshot of your notebook environment. Files that are not in `/storage` or `/notebooks `created during this run of the notebook may not have uploaded. These files are usually newly installed `apt` or `pip` packages. Your next run will use the last successful snapshot.
-
 #### Notebook was terminated Early
 
 Your notebook was preempted before teardown could begin. Usually, this error message appears because the machine your notebook was on has crashed.

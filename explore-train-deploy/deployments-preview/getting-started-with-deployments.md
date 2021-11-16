@@ -31,13 +31,13 @@ gradient deployments create --name [deployment-name] --projectId [project-id] --
 
 #### 3. View your running deployments and logs
 
-You can view your running deployment in the console UI, which will information on the current spec applied and the current status of your deployment. 
+You can view your running deployment in the console UI, which will information on the current spec applied and the current status of your deployment.&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2021-09-21-at-1.52.29-pm.png)
 
 You can also see the status of your deployment via the CLI
 
-```text
+```
 gradient deployments get --id [deployment-id]
 
 {
@@ -103,7 +103,7 @@ You can click the edit button in the Web UI to update your deployment spec to ch
 
 ### Gradient CLI
 
-```text
+```
 gradient deployments update --id [deployment-id] --spec update-deployment.yaml
 ```
 
@@ -111,7 +111,7 @@ gradient deployments update --id [deployment-id] --spec update-deployment.yaml
 
 You can manage deployments in a workflow using the Gradient CLI. Your Paperspace API key and Project ID are available as environment variables
 
-```text
+```
 jobs:
   createdDeployment:
     uses: script@v1
@@ -127,6 +127,4 @@ jobs:
         gradient deployments create --name my-deployment --projectId ${PROJECT_ID} --spec ./deployment.yaml
       image: paperspace/gradient-sdk
 ```
-
-
 

@@ -15,4 +15,3 @@ resources:
   replicas: 1 # number of replicas used for your deployment
   instanceType: C3 # instance type that your deployment will run on
 ```
-
