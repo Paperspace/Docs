@@ -5,7 +5,7 @@ description: >-
   instances.
 ---
 
-# 📚 Gradient Notebooks Tutorial
+# Gradient Notebooks Tutorial
 
 ## **Introduction**
 
@@ -155,13 +155,21 @@ Now let's go ahead and create a notebook with a custom runtime.&#x20;
 
 For this notebook we'll be using an implementation of [CLIP](https://openai.com/blog/clip/) from OpenAI which allows us to create synthetic artwork from a text prompt that we ourselves input.
 
-In this demo implementation we'll use a text prompt from [one of our favorite books](https://en.wikipedia.org/wiki/Dune\_\(novel\)) (and now a major Hollywood film) and we'll see what the image generator can come up with in response.&#x20;
+In this demo implementation we use the following text prompt:
 
-Pretty cool! Let's get started.
+```
+On the desert planet of Arrakis, the spice must flow!
+```
+
+And we generated the following piece of clip-art:
+
+![The end result of our demonstration of generative pixel art on Gradient.](<../../.gitbook/assets/spice (1).png>)
+
+Pretty cool! Let's show you how to do this yourself.
 
 ### Using custom runtime parameters to create a notebook
 
-First we need to build our notebook. But _instead_ of using a prebuilt runtime tile, we're going to ignore the tiles and go right for the instance type. Let's select the highest GPU instance that we have available.&#x20;
+Let's build our notebook. But _instead_ of using a prebuilt runtime tile, we're going to ignore the tiles and go right for the instance type. Let's select the highest GPU instance that we have available.&#x20;
 
 Next, we're going to toggle the `Advanced options` and enter the following parameters:
 
@@ -190,7 +198,7 @@ The next thing we're going to do is look at the prompt we're using in the `pixel
 Paperspace.com helps you do machine learning #pixelart
 ```
 
-We're going to go ahead and change that. We can change the sentence to anything we like. In the animation below, we'll change the prompt to something that reminds us the sand-covered planet from Dune:
+As mentioned, we're going to go ahead and change that. We can change the sentence to anything we like. In the animation below, we'll change the prompt to something that reminds us of [one of our favorite books](https://en.wikipedia.org/wiki/Dune\_\(novel\)):
 
 ```
 On the desert planet of Arrakis, the spice must flow!
@@ -212,11 +220,11 @@ Depending on what GPU instance you are using, this can take anywhere from 8 minu
 
 ![It can take a while for a clip-art piece to generate while using CLIP but the results are usually worth it.](<../../.gitbook/assets/clipit loading dark.gif>)
 
-After all that waiting, we are able to generate a surprisingly complex scene with some sophisticated imagery:
+After all that waiting, once again we have our little scene that looks like it's made out of Legos.
 
 ![The clip-art we generated in response to the prompt: On the desert planet of Arrakis, the spice must flow!](../../.gitbook/assets/spice.png)
 
-As we can see CLIP was able to interpret a desert setting, an ominous building, a mysterious person, and the object of the person's gaze -- some kind of container with something colorful inside of it and/or on top of it.&#x20;
+As we can see CLIP was able to interpret a desert setting, an ominous building, a mysterious person, and the object of the person's gaze -- some kind of container with something colorful inside of it and on top of it.&#x20;
 
 Fantastic!
 
