@@ -1,6 +1,6 @@
 # Tutorials
 
-The following tutorials cover the main entities within Gradient. 
+The following tutorials cover the main entities within Gradient.&#x20;
 
 ### Introduction to Gradient
 
@@ -10,8 +10,8 @@ The following tutorials cover the main entities within Gradient.
 
 ### Gradient Notebooks Tutorials
 
-{% content-ref url="getting-started-with-gradient-notebooks-old.md" %}
-[getting-started-with-gradient-notebooks-old.md](getting-started-with-gradient-notebooks-old.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Gradient Workflows Tutorials

@@ -26,4 +26,4 @@ You can easily generate a link to [share your Notebook](create-a-notebook/share-
 
 ## Tutorial
 
-View a quick tutorial on creating a notebook [here](../../get-started/tutorials-list/getting-started-with-gradient-notebooks-old.md).
+View a quick tutorial on creating a notebook [here](broken-reference).
