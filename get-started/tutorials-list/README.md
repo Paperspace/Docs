@@ -8,10 +8,10 @@ The following tutorials cover the main entities within Gradient.&#x20;
 [..](../../)
 {% endcontent-ref %}
 
-### Gradient Notebooks Tutorials
+### Gradient Notebooks Tutorial
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="gradient-notebooks-tutorial.md" %}
+[gradient-notebooks-tutorial.md](gradient-notebooks-tutorial.md)
 {% endcontent-ref %}
 
 ### Gradient Workflows Tutorials
