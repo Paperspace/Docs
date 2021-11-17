@@ -13,5 +13,23 @@ env: # environment variables that are applied at run time
     value: VAR
 resources:
   replicas: 1 # number of replicas used for your deployment
-  instanceType: C3 # instance type that your deployment will run on
+  instanceType: C4 # instance type that your deployment will run on
+```
+
+### Model integration
+
+```yaml
+image: tensorflow/serving
+port: 8501
+models:
+  - id: model-id
+    path: "/opt/models/my-tf-model"
+command:
+  - "--model_base_path"
+  - "/opt/models"
+  - "--model-name"
+  - "my-tf-model"
+resources:
+  replicas: 1
+  instanceType: C4
 ```

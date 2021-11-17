@@ -4,7 +4,7 @@
 
 * Understand the process involved in registering models
 * Passing environment variables to Gradient Workflows
-* Registering Tensorflow Models in Gradient&#x20;
+* Registering Tensorflow Models in Gradient 
 
 ## **Introduction**
 
@@ -20,7 +20,7 @@ This repo [https://github.com/gradient-ai/fashionmnist](https://github.com/gradi
 
 We will start by creating a project that can contain multiple Workflows we may run during the training. We'll use the CLI here but you can perform the action in the user interface.
 
-```
+```text
 gradient projects create --name Fashion
 ```
 
@@ -120,11 +120,11 @@ We can check if the output of the job is registered as a valid TensorFlow model 
 gradient models list
 ```
 
-`+------+-----------------+------------+  `\
-`| Name | ID | Model Type | Project ID |  `\
-`+------+-----------------+------------+  `\
-`| None | mosdnkkv1o1xuem | Tensorflow |  `\
-`+------+-----------------+------------+`
+`+------+-----------------+------------+    
+| Name | ID | Model Type | Project ID |    
++------+-----------------+------------+    
+| None | mosdnkkv1o1xuem | Tensorflow |    
++------+-----------------+------------+`
 
 You can also visit the Models section of Gradient UI to see a list of registered models.
 
@@ -134,6 +134,3 @@ You can also visit the Models section of Gradient UI to see a list of registered
 
 After registering the model, we can turn that into a Deployment to perform inferencing:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}

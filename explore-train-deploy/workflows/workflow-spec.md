@@ -10,17 +10,17 @@ At the top of the YAML Workflow file, you can specify default parameters to be u
 
 ### `inputs`
 
-The `inputs` block allows you to specify named inputs (e.g., a [versioned dataset](../../data/data-overview/private-datasets-repository/)) to be referenced and consumed by your jobs.
+The `inputs` block allows you to specify named inputs \(e.g., a [versioned dataset](../../data/data-overview/private-datasets-repository/)\) to be referenced and consumed by your jobs.
 
-_Note: _you can also collect inputs in a separate YAML and reference this file as an `inputPath` when creating a Workflow run.
+_Note:_ you can also collect inputs in a separate YAML and reference this file as an `inputPath` when creating a Workflow run.
 
-Workflow and job-level inputs can be of type: dataset (a persistent, versioned collection of data), string (e.g., a generated value or ID that may be output from another job) or volume (a temporary workspace mounted onto a job's container).
+Workflow and job-level inputs can be of type: dataset \(a persistent, versioned collection of data\), string \(e.g., a generated value or ID that may be output from another job\) or volume \(a temporary workspace mounted onto a job's container\).
 
-_Note: _datasets must be defined in advance of being referenced in a workflow. See [Create Datasets for the Workflow](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#create-datasets-for-the-workflow) for more information.
+_Note:_ datasets must be defined in advance of being referenced in a workflow. See [Create Datasets for the Workflow](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#create-datasets-for-the-workflow) for more information.
 
 ### `jobs`
 
-Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A job is an individual task that executes code (such as a training a machine learning model) and can consume inputs and produce outputs.
+Jobs are also sometimes referred to as "steps" within the Gradient Workflow. A job is an individual task that executes code \(such as a training a machine learning model\) and can consume inputs and produce outputs.
 
 ## Sample Workflow Spec
 
@@ -116,3 +116,4 @@ jobs:
       - wc -l /inputs/data2/list.txt > /outputs/data3/summary.txt; cat /outputs/data3/summary.txt /inputs/echo2
       image: bash:5
 ```
+

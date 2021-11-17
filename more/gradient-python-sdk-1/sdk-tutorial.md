@@ -1,13 +1,13 @@
 # SDK Examples
 
-In this example, we'll run through a few basic commands using the SDK.  We'll import the SDK, create a [Project](../../get-started/managing-projects/), and launch a [Workflow](../../explore-train-deploy/workflows/). &#x20;
+In this example, we'll run through a few basic commands using the SDK.  We'll import the SDK, create a [Project](../../get-started/managing-projects/), and launch a [Workflow](../../explore-train-deploy/workflows/).  
 
 {% hint style="info" %}
-The SDK is bundled with the [Gradient CLI](../../get-started/quick-start/install-the-cli.md).  &#x20;
+The SDK is bundled with the [Gradient CLI](../../get-started/quick-start/install-the-cli.md).   
 {% endhint %}
 
 {% hint style="success" %}
-**NOTE: **We'll be adding a Jupyter Notebook template that you can run on your own.&#x20;
+**NOTE:** We'll be adding a Jupyter Notebook template that you can run on your own. 
 {% endhint %}
 
 ## Getting Started
@@ -80,3 +80,4 @@ workflow_param = {
 
 run_id = workflows_client.run_workflow(**workflow_param)
 ```
+

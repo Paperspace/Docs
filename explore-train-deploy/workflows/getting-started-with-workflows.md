@@ -4,7 +4,7 @@ The following sections cover creating and running Workflows, and authoring new W
 
 ## Create a Workflow
 
-Workflows can be created via the GUI / Web UI, or command line (CLI).
+Workflows can be created via the GUI / Web UI, or command line \(CLI\).
 
 {% tabs %}
 {% tab title="Web UI" %}
@@ -12,28 +12,28 @@ Workflows can be created via the GUI / Web UI, or command line (CLI).
 * 2: Navigate to its main page by clicking on its entry in the projects list
 * 3: Click the Workflows tab, which gives this screen
 
-![](../../.gitbook/assets/workflow\_create.png)
+![](../../.gitbook/assets/workflow_create.png)
 
-* 4: Choose one of the illustrated boxes under **Select a template** (basic), or click **import an existing gradient repository** (advanced)
+* 4: Choose one of the illustrated boxes under **Select a template** \(basic\), or click **import an existing gradient repository** \(advanced\)
 
 If you did **Select a template**:
 
-* 5: Choose your GitHub username from the dropdown list under **Account and Organizations** \[1]
+* 5: Choose your GitHub username from the dropdown list under **Account and Organizations** \[1\]
 * 6: Give your repository a name
-* 7: Click **Create Workflow. **This will create and run the Workflow in your new repository.
+* 7: Click **Create Workflow.** This will create and run the Workflow in your new repository.
 
 If you did **import an existing gradient repository:**
 
-* 5: Choose your GitHub username from the dropdown list under Account and Organizations in the **Import existing repository** window that pops up \[1]
+* 5: Choose your GitHub username from the dropdown list under Account and Organizations in the **Import existing repository** window that pops up \[1\]
 
-![](../../.gitbook/assets/import\_existing\_repo.png)
+![](../../.gitbook/assets/import_existing_repo.png)
 
 * 6: Choose the repository to import
 * 7: This will take you to the **Let's create a Workflow** screen, where you can follow its instructions to create one, or run an existing Workflow.
 
 See [Run the Workflow](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#run-the-workflow) below for more details on how Workflows run.
 
-\[1] If your username doesn't show up, try clicking the **x** in the circle on the right of the dropdown, or if it still isn't there, make sure you have the Gradient GitHub app installed from the [Quick Start](https://docs.paperspace.com/gradient/get-started/quick-start) section, and configured so that it can see your repositories.
+\[1\] If your username doesn't show up, try clicking the **x** in the circle on the right of the dropdown, or if it still isn't there, make sure you have the Gradient GitHub app installed from the [Quick Start](https://docs.paperspace.com/gradient/get-started/quick-start) section, and configured so that it can see your repositories.
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -144,7 +144,7 @@ Workflows can be triggered to run from Gradient by placing them in the `.gradien
 
 Within the Workflow YAML, the `on:` field is used to indicate that this Workflow is to be triggered to run when the given conditions are met. For the general case of any change to the repo triggering the Workflow to run, the YAML lines are
 
-```
+```text
 on:
   github:
     branches:
@@ -155,7 +155,7 @@ Currently, this is the condition set that works, so to prevent a Workflow being 
 {% endtab %}
 
 {% tab title="CLI" %}
-Run the Workflow with the specified Workflow spec file and the **`workflow-id`** from the previously created Workflow. (You can also get a list of Workflows by running `gradient workflows list`.)
+Run the Workflow with the specified Workflow spec file and the **`workflow-id`** from the previously created Workflow. \(You can also get a list of Workflows by running `gradient workflows list`.\)
 
 ```bash
 gradient workflows run \
@@ -170,5 +170,6 @@ A Workflow can be run multiple times, each with the same or a different Workflow
 The next sections cover the syntax for authoring new Workflow specs, inputs and outputs to Workflow steps, and various Workflow actions.
 
 {% hint style="info" %}
-View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
+View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
 {% endhint %}
+

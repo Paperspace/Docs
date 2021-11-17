@@ -28,7 +28,7 @@ If your deployment uses TF Serving, some metrics such as`tensorflow:core:direct_
 
 ## **Custom metrics**
 
-You can log custom user metrics from inside of an experiment or deployment using the Python CLI utils. It's based on [Prometheus Python Client](https://github.com/prometheus/client\_python). Here's a trivial example:\
+You can log custom user metrics from inside of an experiment or deployment using the Python CLI utils. It's based on [Prometheus Python Client](https://github.com/prometheus/client_python). Here's a trivial example:  
 
 
 ```python
@@ -47,4 +47,6 @@ while datetime.now() <= endAt:
     logger["Counter"].inc()
     logger.push_metrics()
 ```
+
+
 
