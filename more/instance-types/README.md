@@ -12,6 +12,10 @@ Customers using the [Self-Hosted](../../gradient-private-cloud/about/) version c
 Managed [Private Clusters](../../gradient-private-cloud/about/) include a compute premium. Learn more [here](https://gradient.paperspace.com/private-cluster-utilization-premium).
 {% endhint %}
 
+{% hint style="info" %}
+For more info on instance type system specs, view [this page](https://support.paperspace.com/hc/en-us/articles/236361368-What-types-of-virtual-machines-does-Paperspace-offer-).&#x20;
+{% endhint %}
+
 ## CPU Instances
 
 A range of affordable and high-end CPU-only instances.
