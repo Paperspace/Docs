@@ -6,18 +6,18 @@ The types of instances available on your account are based on your subscription 
 
 Note: Free plans do not guarantee capacity and have [certain limits](free-instances.md).&#x20;
 
-| Instance Type     | Free | Pro plan | Growth plan |
-| ----------------- | :--: | :------: | :---------: |
-| Free CPU (C4)     |  ✔️  |    ✔️    |      ✔️     |
-| Free GPU+ (M4000) |  ✔️  |    ✔️    |      ✔️     |
-| Free P4000        |      |    ✔️    |      ✔️     |
-| Free RTX4000      |      |    ✔️    |      ✔️     |
-| Free P5000        |      |    ✔️    |      ✔️     |
-| Free RTX5000      |      |    ✔️    |      ✔️     |
-| Free A4000 🆕     |      |          |      ✔️     |
-| Free A5000 🆕     |      |          |      ✔️     |
-| Free A6000 🆕     |      |          |      ✔️     |
-| Free A100 🆕      |      |          |      ✔️     |
+| Instance Type     | Free | Pro plan |      Growth plan      |
+| ----------------- | :--: | :------: | :-------------------: |
+| Free CPU (C4)     |  ✔️  |    ✔️    |           ✔️          |
+| Free GPU+ (M4000) |  ✔️  |    ✔️    |           ✔️          |
+| Free P4000        |      |    ✔️    |           ✔️          |
+| Free RTX4000      |      |    ✔️    |           ✔️          |
+| Free P5000        |      |    ✔️    |           ✔️          |
+| Free RTX5000      |      |    ✔️    |           ✔️          |
+| Free A4000 🆕     |      |          | :zap:Coming Soon:zap: |
+| Free A5000 🆕     |      |          | :zap:Coming Soon:zap: |
+| Free A6000 🆕     |      |          | :zap:Coming Soon:zap: |
+| Free A100 🆕      |      |          | :zap:Coming Soon:zap: |
 
 ### Paid instances
 
