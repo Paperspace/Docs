@@ -4,7 +4,7 @@ description: How to install the Gradient Command Line Interface
 
 # Install the Gradient CLI
 
-This is an optional procedure for those who wish to interact with Gradient via the command line interface \(CLI\), in addition to the GUI or SDK.
+This is an optional procedure for those who wish to interact with Gradient via the command line interface (CLI), in addition to the GUI or SDK.
 
 {% hint style="info" %}
 For a full reference on all CLI commands, check out the [command reference](https://paperspace.github.io/gradient-cli/gradient.cli.html)
@@ -12,11 +12,13 @@ For a full reference on all CLI commands, check out the [command reference](http
 
 ## Installation
 
-{% embed url="https://youtu.be/t1-PqoeqFuo" caption="Learn how to install the Gradient CLI. 1m35s." %}
+{% embed url="https://youtu.be/t1-PqoeqFuo" %}
+Learn how to install the Gradient CLI. 1m35s.
+{% endembed %}
 
 The Gradient CLI is available on [PyPI](https://pypi.org/project/gradient/) and works on Windows, MacOS, and Linux.
 
-The CLI requires **Python 3.4+** \(or Python 2.7\). Be sure to use a compatible version of **pip** \(or **pip3**\) depending on your Python version.
+The CLI requires **Python 3.4+** (or Python 2.7). Be sure to use a compatible version of **pip** (or **pip3**) depending on your Python version.
 
 {% hint style="info" %}
 **Pro Tip!** We highly recommend installing and using the CLI within a Python virtual environment. This will minimize conflicts with existing libraries on your computer. We recommend **virtualenv**. [See below](install-the-cli.md#using-a-virtual-environment) for more instructions.
@@ -63,7 +65,9 @@ gradient workflows run ...
 
 ## Obtaining an API key
 
-{% embed url="https://www.youtube.com/watch?v=WS\_xYiaTSIY" caption="Obtain an API key from the settings page. 1m27s." %}
+{% embed url="https://www.youtube.com/watch?v=WS_xYiaTSIY" %}
+Obtain an API key from the settings page. 1m27s.
+{% endembed %}
 
 Sign in to your [Paperspace account](https://www.paperspace.com/account/login) and create a new API key. You'll use the API keys you generate here to authenticate your requests.
 
@@ -93,7 +97,7 @@ Virtualenvs can also be run in other ways, e.g., using `conda`.
 
 ## Enable autocomplete
 
-Add the following to your `.bashrc` \(or `.zshrc`\) to enable autocomplete anytime you activate your shell. If Gradient was installed in a virtual environment, the following has to be added to the `activate` script:
+Add the following to your `.bashrc` (or `.zshrc`) to enable autocomplete anytime you activate your shell. If Gradient was installed in a virtual environment, the following has to be added to the `activate` script:
 
 `eval "$(_GRADIENT_COMPLETE=source gradient)"`
 
@@ -112,4 +116,3 @@ If you need a pre-release version of the CLI use the following command to instal
 ```bash
 pip install -U --pre gradient
 ```
-

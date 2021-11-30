@@ -2,13 +2,13 @@
 
 ## Persistent Storage
 
-Persistent Storage is accessible across your Gradient Notebooks.  Uploading and downloading data is possible from any of these endpoints. 
+Persistent Storage is accessible across your Gradient Notebooks.  Uploading and downloading data is possible from any of these endpoints.&#x20;
 
 Learn more here:
 
-{% page-ref page="../../explore-train-deploy/notebooks/create-a-notebook/notebooks-storage.md" %}
-
-
+{% content-ref url="../../more/overview/billing-and-subscriptions/notebooks-storage.md" %}
+[notebooks-storage.md](../../more/overview/billing-and-subscriptions/notebooks-storage.md)
+{% endcontent-ref %}
 
 
 

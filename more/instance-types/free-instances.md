@@ -28,12 +28,12 @@ For example, you can be on a G2 subscription plan with 1TB of Persistent Storage
 
 There are certain limits on free instances that assist in keeping the capacity for free notebooks available for all users who want access.&#x20;
 
-**Auto-Shutdown: **The maximum auto-shutdown limit for any free-instance is 6 hours
+**Auto-Shutdown:** The maximum auto-shutdown limit for any free-instance is 6 hours
 
-**Inactivity: **Any notebook that is inactive for 1 hour will auto-shutdown. This is to keep free instance capacity available for the Paperspace community.
+**Inactivity:** Any notebook that is inactive for 1 hour will auto-shutdown. This is to keep free instance capacity available for the Paperspace community.
 
-**Notebook Limit: **Only 1 Notebook with a free instance can be running at a given time.
+**Notebook Limit:** Only 1 Notebook with a free instance can be running at a given time.
 
-**Public: **On free subscriptions, notebooks with free instances will always be set to public. Ugrade to Pro/Growth if you would like to set free instances to private.
+**Public:** On free subscriptions, notebooks with free instances will always be set to public. Ugrade to Pro/Growth if you would like to set free instances to private.
 
 _Note: We are currently offering a limited pool of free instances so your notebook may be Pending in the queue as you wait for a free instance to become available. If you need immediate access to machines, please consider upgrading to a paid instance type._

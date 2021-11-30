@@ -10,7 +10,7 @@ You can [create a managed cluster ](https://console.paperspace.com/clusters/crea
 
 | **Infrastructure:**   | Shared, managed by Paperspace | Private, managed by Paperspace               | Private, self-hosted                                      |
 | --------------------- | ----------------------------- | -------------------------------------------- | --------------------------------------------------------- |
-| **Setup time: **      | None                          | Setup time: 10 minutes                       | Setup time: 20-30 minutes                                 |
+| **Setup time:**       | None                          | Setup time: 10 minutes                       | Setup time: 20-30 minutes                                 |
 | **Target audience:**  | Hobbyists & students          | Startups & SMBs running production workloads | Mid-market & enterprise businesses conducting ML at scale |
 
 This section of our documentation covers the private cluster options.  If you are looking to use our managed service, just [create an account](https://console.paperspace.com/signup?gradient=true) to get started right away.&#x20;

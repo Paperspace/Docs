@@ -48,7 +48,7 @@ Multi-GPU instances include 2x, 4x, or 8x the system resources of the single GPU
 
 | Instance Type                         |
 | ------------------------------------- |
-| **P4000x2**,** P4000x4**              |
+| **P4000x2**, **P4000x4**              |
 | **P5000x2**, **P5000x4**              |
 | **P6000x2**, **P6000x4**              |
 | **RTX4000x2**, **RTX4000x4**          |

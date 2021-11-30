@@ -2,7 +2,7 @@
 
 ## Finding your Cluster ID
 
-Your clusters are available under the __Clusters tab.  Here you can find information about your cluster, including your cluster ID – you will need to specify this ID in order to designate your private cluster as the place to run Workflows, Deployments, etc. 
+Your clusters are available under the __ Clusters tab.  Here you can find information about your cluster, including your cluster ID – you will need to specify this ID in order to designate your private cluster as the place to run Workflows, Deployments, etc.&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2021-04-23-at-5.15.47-pm.png)
 
@@ -12,7 +12,7 @@ Your clusters are available under the __Clusters tab.  Here you can find informa
 gradient <command> ... --clusterId <your-cluster-ID>
 ```
 
-`--clusterId string` Cluster ID for this processing site, e.g. "clxxxxxxx". 
+`--clusterId string` Cluster ID for this processing site, e.g. "clxxxxxxx".&#x20;
 
 {% hint style="info" %}
 You will need to provide your API key to authenticate your requests. Learn how to obtain and set your API key [here](../../get-started/quick-start/install-the-cli.md#obtaining-an-api-key).
@@ -41,4 +41,3 @@ If you don't supply the `clusterId` parameter, then your command will default to
 When creating a notebook, an experiment, or a model deployment, select your private cluster in the console, then select an instance type that's available in your cluster.
 
 ![](../../.gitbook/assets/private-cluster-gui.png)
-

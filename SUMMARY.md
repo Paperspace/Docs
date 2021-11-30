@@ -27,7 +27,6 @@
 * [Notebooks](explore-train-deploy/notebooks/README.md)
   * [Using Notebooks](explore-train-deploy/notebooks/create-a-notebook/README.md)
     * [File organization](explore-train-deploy/notebooks/create-a-notebook/file-organization.md)
-    * [Persistent Storage](explore-train-deploy/notebooks/create-a-notebook/notebooks-storage.md)
     * [Forking Notebooks](explore-train-deploy/notebooks/create-a-notebook/fork-a-notebook.md)
     * [Notebook terminals](explore-train-deploy/notebooks/create-a-notebook/notebook-terminals.md)
     * [Notebook versioning](explore-train-deploy/notebooks/create-a-notebook/notebook-versioning.md)
@@ -52,7 +51,7 @@
   * [Getting started with Deployments](explore-train-deploy/deployments-preview/getting-started-with-deployments.md)
   * [Deployment Spec](explore-train-deploy/deployments-preview/deployment-spec.md)
 
-## Artifacts <a href="data" id="data"></a>
+## Artifacts <a href="#data" id="data"></a>
 
 * [Data](data/data-overview/README.md)
   * [Versioned Data](data/data-overview/private-datasets-repository/README.md)
@@ -68,7 +67,7 @@
   * [Push Metrics](data/metrics-overview/push-metrics.md)
   * [View & Query Metrics](data/metrics-overview/quering-metrics.md)
 
-## Gradient Cluster <a href="gradient-private-cloud" id="gradient-private-cloud"></a>
+## Gradient Cluster <a href="#gradient-private-cloud" id="gradient-private-cloud"></a>
 
 * [Overview](gradient-private-cloud/about/README.md)
   * [Setup](gradient-private-cloud/about/setup/README.md)
@@ -102,7 +101,8 @@
     * [Creating a Team](more/overview/teams/creating-a-team.md)
     * [Upgrading to a Team Plan](more/overview/teams/upgrading-to-a-team-plan.md)
   * [Hotkeys](more/overview/hotkeys.md)
-  * [Billing & Subscriptions](more/overview/billing-and-subscriptions.md)
+  * [Billing & Subscriptions](more/overview/billing-and-subscriptions/README.md)
+    * [Storage Billing](more/overview/billing-and-subscriptions/notebooks-storage.md)
   * [Public Profiles](more/overview/gradient-public-profiles.md)
 * [Release notes](https://updates.paperspace.com)
 * [Roadmap](https://www.paperspace.com/docs#roadmap)
