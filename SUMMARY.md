@@ -34,7 +34,7 @@
     * [Notebook containers](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/README.md)
       * [Building a Custom Container](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
     * [Sharing Notebooks](explore-train-deploy/notebooks/create-a-notebook/share-a-notebook.md)
-    * [Notebook file whitelist](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
+    * [Notebook offline view](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
     * [Notebook TensorBoards](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
     * [Using VSCode (experimental)](explore-train-deploy/notebooks/create-a-notebook/using-vscode-experimental.md)
     * [Community (public) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
