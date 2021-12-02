@@ -18,17 +18,19 @@ resources:
 
 ### Model integration
 
+You can also automatically pull in any models that you have registered through the Gradient Model Registry at runtime. To do this, we just add a `models` parameter to our deployment spec where we can specify the model(s) we want to pull in by their ID, and optionally also the filepath inside our deployed container where we want to mount them into. If the path is not specified, it will default to `/opt/models`.
+
 ```yaml
 image: tensorflow/serving
 port: 8501
 models:
   - id: model-id
-    path: "/opt/models/my-tf-model"
-command:
-  - "--model_base_path"
-  - "/opt/models"
-  - "--model-name"
-  - "my-tf-model"
+    path: /opt/models
+env:
+  - name: MODEL_BASE_PATH
+    value: /opt/models
+  - name: MODEL_NAME
+    value: my-tf-model
 resources:
   replicas: 1
   instanceType: C4
