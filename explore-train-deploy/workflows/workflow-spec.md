@@ -28,6 +28,9 @@ To run this Workflow, define datasets named `test-one`, `test-two`, and `test-th
 
 ```yaml
 defaults:
+  # clusterId defaults to the NY2 public cluster, setting this parameter this is equaivalent to using the `--clusterId` flag on the command line.
+  # This parameter often used for github triggered workflows running on private clusters.
+  clusterId: clusterId 
   # Default environment variables for all jobs. Can use any supported
   # substitution syntax (named secrets, ephemeral secrets, etc.).
   env:
