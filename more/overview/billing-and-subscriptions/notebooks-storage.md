@@ -27,11 +27,11 @@ For more information about team volumes go to the Storage tab in the Team Settin
 
 ### Volume storage billing
 
-The amount of volume storage you have access to is dictated by your Gradient subscription tier as shown below.&#x20;
+The amount of volume storage you have access to is dictated by your Gradient subscription tier as shown below. These storage limit are on a per notebook basis.
 
 Any storage over these limits will be charged at $.29/GB/month.&#x20;
 
-These charges are accrued hourly at the current usage of the bucket. For example, if a user goes over the 2GB limit for 3 days then the account will only be charged for the 3 days of usage over the free limit.&#x20;
+These charges are accrued hourly at the current usage of the bucket. For example, if a user with a free subscription, goes over the 5GB limit for 3 days then the account will only be charged for the 3 days of usage over the free limit.&#x20;
 
 | Subscription | Volume Storage |
 | ------------ | -------------- |
@@ -39,7 +39,7 @@ These charges are accrued hourly at the current usage of the bucket. For example
 | Pro          | 15GB           |
 | Growth       | 50GB           |
 
-****
+
 
 ### **Bucket** storage
 
