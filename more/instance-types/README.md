@@ -42,18 +42,18 @@ A range of dedicated GPU instances with single and multi-GPU configurations.
 | **A6000**   | 48 GB | 45 GB  | 8 vCPUs  | 🔜       |
 | **A100**    | 40 GB | 90 GB  | 12 vCPUs | $3.09/hr |
 
-## Multi-GPU instances
+## Pricing and availability of multi-GPU instances
 
-Multi-GPU instances include 2x, 4x, or 8x the system resources of the single GPU instances.&#x20;
-
-| Instance Type                         |
-| ------------------------------------- |
-| **P4000x2**, **P4000x4**              |
-| **P5000x2**, **P5000x4**              |
-| **P6000x2**, **P6000x4**              |
-| **RTX4000x2**, **RTX4000x4**          |
-| **RTX5000x2**, **RTX5000x4**          |
-| **A4000x2**, **A4000x4** 🆕           |
-| **A5000x2**, **A5000x4** 🔜           |
-| **A6000x2**, **A6000x4** 🔜           |
-| **A100x2**, **A100x4**, **A100x8** 🆕 |
+| GPU                                                                                             | Price on Core                                                                                      | Availability on Gradient                                                         |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| <p><strong>M4000</strong></p><ul><li>M4000</li></ul>                                            | <p><br></p><ul><li>$0.45 / hr</li></ul>                                                            | <p><br></p><ul><li>✅ (All subscription tiers)</li></ul>                          |
+| <p><strong>P4000</strong></p><ul><li>P4000</li><li>P4000x2</li><li>P4000x4</li></ul>            | <p><br></p><ul><li>$0.51 / hr</li><li>$1.02 / hr</li><li>$2.02 / hr</li></ul>                      | <p><br></p><ul><li>✅ (All tiers)</li><li>🔜</li><li>🔜</li></ul>                 |
+| <p><strong>P5000</strong></p><ul><li>P5000</li><li>P5000x2</li><li>p5000x4</li></ul>            | <p><br></p><ul><li>$0.78 / hr</li><li>$1.56 / hr</li><li>$3.12 / hr</li></ul>                      | <p><br></p><ul><li>✅ (Pro or Growth)</li><li>🔜</li><li>🔜</li></ul>             |
+| <p><strong>P6000</strong></p><ul><li>P6000</li><li>P6000x2</li><li>P6000x4</li></ul>            | <p><br></p><ul><li>$1.10 / hr</li><li>$2.20 / hr</li><li>$4.40 / hr</li></ul>                      | <p><br></p><ul><li>✅ (Pro or Growth)</li><li>🔜</li><li>🔜</li></ul>             |
+| <p><strong>RTX4000</strong></p><ul><li>RTX4000</li><li>RTX4000x2</li><li>RTX4000x4</li></ul>    | <p><br></p><ul><li>$0.56 / hr</li><li>$1.12 / hr</li><li>$2.24 / hr</li></ul>                      | <p><br></p><ul><li>✅ (All tiers)</li><li>🔜</li><li>🔜</li></ul>                 |
+| <p><strong>RTX5000</strong></p><ul><li>RTX5000</li><li>RTX5000x2</li><li>RTX5000x4</li></ul>    | <p><br></p><ul><li>$0.82 / hr</li><li>$1.64 /hr</li><li>$3.28 / hr</li></ul>                       | <p><br></p><ul><li>✅ (Pro or Growth)</li><li>🔜</li><li>🔜</li></ul>             |
+| <p><strong>A4000</strong></p><ul><li>A4000</li><li>A4000x2</li><li>A4000x4</li></ul>            | <p><br></p><ul><li>$0.76 / hr</li><li>$1.52 / hr</li><li>$3.04 / hr</li></ul>                      | <p><br></p><ul><li>✅ (Pro or Growth)</li><li>✅ (Growth)</li><li>🔜</li></ul>     |
+| <p><strong>A5000</strong></p><ul><li>A5000</li><li>A5000x2</li><li>A5000x4</li></ul>            | <p><br></p><ul><li>$1.38 / hr</li><li>$2.76 / hr</li><li>$5.52 / hr</li></ul>                      | <p><br></p><ul><li>✅ (Growth)</li><li>✅ (Growth)</li><li>🔜</li></ul>            |
+| <p><strong>A6000</strong></p><ul><li>A6000</li><li>A6000x2</li><li>A6000x4</li></ul>            | <p><br></p><ul><li>$1.89 / hr</li><li>$3.78 / hr</li><li>$7.56 / hr</li></ul>                      | <p><br></p><ul><li>✅ (Growth)</li><li>✅ (Growth)</li><li>🔜</li></ul>            |
+| <p><strong>A100</strong></p><ul><li>A100</li><li>A100x2</li><li>A100x4</li><li>A100x8</li></ul> | <p><br></p><ul><li>$3.09 / hr</li><li>$6.18 / hr</li><li>$12.36 / hr</li><li>$24.72 / hr</li></ul> | <p><br></p><ul><li>✅ (Growth)</li><li>✅ (Growth)</li><li>🔜</li><li>🔜</li></ul> |
+| <p><strong>V100</strong></p><ul><li>V100</li></ul>                                              | <p><br></p><ul><li>$2.30 / hr</li></ul>                                                            | <p><br></p><ul><li>✅ (Growth)</li></ul>                                          |
