@@ -373,10 +373,28 @@ We've now seen how to take a workflow and make changes to the YAML file to add c
 
 ## What's next?
 
-For more information on YAML syntax, we recommend checking out this link:
+From here, we should feel like we have the tools and resources to get started building modifying the YAML spec to build our own Gradient Workflows.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+As we develop our own Gradient Workflows, we might notice that a git commit does not trigger a  workflow run. When this happens, we'll want to pay attention to the errors generated in GitHub when making a commit.&#x20;
 
-##
+If we are successful triggering a workflow run, but the workflow itself is erroring, we'll want to read through the logs generated in the Gradient console. We should remember to inspect each job in the DAG and read the logs independently in order to troubleshoot.
+
+If you have any questions or need a hand getting something to work -- please let us know! You can [file a support ticket](https://support.paperspace.com/hc/en-us/requests/new) or reach us on Twitter [@hellopaperspace](https://twitter.com/hellopaperspace).
+
+## Reference reading
+
+* Read through the [Gradient Workflows](../../explore-train-deploy/workflows/) documentation
+* In particular, read through the [Gradient Workflows spec](../../explore-train-deploy/workflows/workflow-spec.md)
+* Browse a large number of Gradient tutorials and walkthroughs available on the [Paperspace blog](https://blog.papae)
+
+## Additional tutorials
+
+* [Gradient Notebooks Tutorial](gradient-notebooks-tutorial.md)
+* End-to-end StyleGAN2 tutorial [blogpost](https://blog.paperspace.com/end-to-end-data-science-with-gradient-workflows-stylegan2/) and [GitHub repo](https://github.com/gradient-ai/StyleGAN2-with-Workflows)
+* End-to-end recommender system tutorial&#x20;
+  * [Part 1: Posing a business problem](https://blog.paperspace.com/end-to-end-recommender-system-part-1-business-problem/)
+  * [Part 2: Preparing the data](https://blog.paperspace.com/end-to-end-recommender-system-part-2-data-preparation/)
+  * [Part 3: Building a TensorFlow model](https://blog.paperspace.com/end-to-end-recommender-system-part-3-building-tensorflow-model/)
+  * [Part 4: Tuning the model for best performance](https://blog.paperspace.com/end-to-end-recommender-system-part-4-tuning-model-best-performance/)
+  * [Part 5: Deploying the model into production](https://blog.paperspace.com/end-to-end-recommender-system-part-5-deploying-model-production/)
+  * [Part 6: Conclusion and next steps](https://blog.paperspace.com/end-to-end-recommender-system-part-6-conclusion-next-steps/)
