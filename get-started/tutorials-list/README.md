@@ -14,11 +14,15 @@ The following tutorials cover the main entities within Gradient.&#x20;
 [gradient-notebooks-tutorial.md](gradient-notebooks-tutorial.md)
 {% endcontent-ref %}
 
-### Gradient Workflows Tutorials
+### Gradient Workflows Tutorial
 
 {% content-ref url="gradient-workflows-tutorial.md" %}
 [gradient-workflows-tutorial.md](gradient-workflows-tutorial.md)
 {% endcontent-ref %}
+
+### Gradient Deployments Tutorial
+
+Coming soon!
 
 ### Additional Tutorials
 
