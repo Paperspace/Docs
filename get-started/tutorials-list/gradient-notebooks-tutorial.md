@@ -29,7 +29,7 @@ Notebooks are an [increasingly popular](https://storage.googleapis.com/kaggle-me
 
 Yet notebooks are not for everybody. It's common for a data scientist and a machine learning engineer to have divergent views on the usefulness of a notebook. That's perfectly OK.&#x20;
 
-Gradient Notebooks is designed to be the simplest entry point into Gradient but it's not the only one. If you're more interested in MLOps capabilities enabled by [Gradient Workflows](workflows-sample-project-stylegan2/) or [Gradient Deployments](broken-reference), we invite you to skip ahead to those tutorials.&#x20;
+Gradient Notebooks is designed to be the simplest entry point into Gradient but it's not the only one. If you're more interested in MLOps capabilities enabled by [Gradient Workflows](broken-reference) or [Gradient Deployments](broken-reference), we invite you to skip ahead to those tutorials.&#x20;
 
 Meanwhile, if you don't know where to start -- start with Gradient Notebooks. There's no faster way to begin building a powerful ML application than within the friendly confines of a GPU-backed notebook. We'll aim to demonstrate that fact to you right here in this tutorial.
 

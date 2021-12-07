@@ -375,8 +375,8 @@ We've now seen how to take a workflow and make changes to the YAML file to add c
 
 For more information on YAML syntax, we recommend checking out this link:
 
-{% content-ref url="workflows-sample-project-stylegan2/yaml-files-for-stylegan2-workflows.md" %}
-[yaml-files-for-stylegan2-workflows.md](workflows-sample-project-stylegan2/yaml-files-for-stylegan2-workflows.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ##

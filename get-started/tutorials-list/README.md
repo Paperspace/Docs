@@ -16,30 +16,30 @@ The following tutorials cover the main entities within Gradient.&#x20;
 
 ### Gradient Workflows Tutorials
 
-{% content-ref url="build-and-run-sample-workflow.md" %}
-[build-and-run-sample-workflow.md](build-and-run-sample-workflow.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="workflows-creating-a-classical-decision-tree-classifier.md" %}
-[workflows-creating-a-classical-decision-tree-classifier.md](workflows-creating-a-classical-decision-tree-classifier.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="example-workflow-nlp-text-generator.md" %}
-[example-workflow-nlp-text-generator.md](example-workflow-nlp-text-generator.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="workflows-sample-project-stylegan2/" %}
-[workflows-sample-project-stylegan2](workflows-sample-project-stylegan2/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="registering-models-in-gradient.md" %}
-[registering-models-in-gradient.md](registering-models-in-gradient.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Gradient End-to-End Tutorial
 
-{% content-ref url="end-to-end-example.md" %}
-[end-to-end-example.md](end-to-end-example.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Additional Tutorials
