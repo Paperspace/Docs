@@ -16,30 +16,8 @@ The following tutorials cover the main entities within Gradient.&#x20;
 
 ### Gradient Workflows Tutorials
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-### Gradient End-to-End Tutorial
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="gradient-workflows-tutorial.md" %}
+[gradient-workflows-tutorial.md](gradient-workflows-tutorial.md)
 {% endcontent-ref %}
 
 ### Additional Tutorials
