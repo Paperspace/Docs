@@ -35,7 +35,7 @@ Meanwhile, if you don't know where to start -- start with Gradient Notebooks. Th
 
 Let's get started.
 
-## **Setting up our first notebook to run Fast.ai**
+## **Part 1: Running Fast.ai as our first notebook**
 
 In the first part of this tutorial, we will create a Gradient Notebook to run the latest version of the popular [Practical Deep Learning for Coders](https://course.fast.ai) course from [Fast.ai](https://www.fast.ai).
 
@@ -105,7 +105,7 @@ When it's time to stop the notebook, we can let the auto-shutdown timer expire o
 
 If we do _not_ stop the instance manually, the auto-shutdown timer will turn off the `Free-GPU` instance at the 6-hour mark. Paid instances will auto-shutdown if an auto-shutdown interval has been specified. The default is 12 hours for paid instances.
 
-## Setting up our second notebook and running CLIP-PixelDraw
+## Part 2: Running a custom CLIP-PixelDraw notebook
 
 Now that we understand how to set up a basic notebook in Gradient, let's try a more advanced notebook configuration. Our goal this time around will be to use [CLIP and PixelDraw](https://github.com/gradient-ai/ClipIt-PixelDraw) to generate an imaginative clip-art piece from a string of text that we will input.&#x20;
 
@@ -253,5 +253,6 @@ If you have any questions, you can reach us any time at **hello@paperspace.com**
 
 ## Additional tutorials
 
-* Gradient Workflows
-* Gradient Deployments
+{% content-ref url="gradient-workflows-tutorial.md" %}
+[gradient-workflows-tutorial.md](gradient-workflows-tutorial.md)
+{% endcontent-ref %}
