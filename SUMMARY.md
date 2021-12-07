@@ -12,6 +12,7 @@
   * [Storing an API key as a Secret](get-started/managing-projects/storing-an-api-key-as-a-secret.md)
 * [Tutorials](get-started/tutorials-list/README.md)
   * [Gradient Notebooks Tutorial](get-started/tutorials-list/gradient-notebooks-tutorial.md)
+  * [Gradient Workflows Tutorial](get-started/tutorials-list/gradient-workflows-tutorial.md)
   * [Getting Started: Run a Sample Workflow](get-started/tutorials-list/build-and-run-sample-workflow.md)
   * [Getting Started: Run a Custom Workflow](get-started/tutorials-list/workflows-creating-a-classical-decision-tree-classifier.md)
   * [Workflows Sample Project: NLP Text Generator](get-started/tutorials-list/example-workflow-nlp-text-generator.md)
