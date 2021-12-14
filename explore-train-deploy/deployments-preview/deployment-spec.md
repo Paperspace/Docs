@@ -4,6 +4,7 @@ A deployment is maintained by a spec file which is used to change the state of t
 
 ```yaml
 image: lucone83/streamlit-nginx # container image used to run your deployment
+containerRegistry: container-registry-name # optional reference to a private container registry
 command: # optional command to override the container image's default command
   - my
   - command
@@ -22,6 +23,31 @@ You can also automatically pull in any models that you have registered through t
 
 ```yaml
 image: tensorflow/serving
+port: 8501
+models:
+  - id: model-id
+    path: /opt/models
+env:
+  - name: MODEL_BASE_PATH
+    value: /opt/models
+  - name: MODEL_NAME
+    value: my-tf-model
+resources:
+  replicas: 1
+  instanceType: C4
+```
+
+### Container Registry integration
+
+Private Docker images can be used by referencing your Container Registry which contains credentials to access that image.
+
+To configure a Container Registry, follow this short [guide](../../data/containers.md).
+
+Once configured, we add a `containerRegistry` parameter to our deployment spec and specify the name of the Container Registry.
+
+```yaml
+image: paperspace/ml_server
+containerRegistry: dockerhub-prod
 port: 8501
 models:
   - id: model-id
