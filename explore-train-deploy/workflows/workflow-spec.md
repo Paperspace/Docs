@@ -100,9 +100,6 @@ jobs:
       - find /inputs/data > /outputs/data2/list.txt; echo ENV $HELLO $TSTVAR > /outputs/echo2; cat /inputs/echo; echo; cat /outputs/data2/list.txt /outputs/echo2
       image: bash:5
   job-2:
-    resources:
-      container-registries: # optional, overrides the registries specified in `defaults`
-       - my-registry-override
     inputs:
       # These inputs use job-1 outputs instead of Workflow inputs. You must
       # specify job-1 in the needs section to reference them here.
