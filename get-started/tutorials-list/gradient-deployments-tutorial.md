@@ -10,7 +10,7 @@ description: >-
 
 [Gradient Deployments](https://gradient.run/deployments) helps us perform effortless model serving to an API endpoint. During this tutorial we'll learn how to use Gradient to deploy a machine learning model using a high-performance, low-latency microservice with a RESTful API.
 
-![This deployment provides an endpoint to reach a hosted Streamlit application.](<../../.gitbook/assets/image (90).png>)
+![This deployment provides an endpoint to reach a hosted Streamlit application.](<../../.gitbook/assets/image (90) (1).png>)
 
 Gradient Deployments makes it easy to deploy a container image to an API endpoint for hosting or inference.&#x20;
 
@@ -90,7 +90,7 @@ That's all there is to it! For more information on the deployment spec, be sure 
 
 Meanwhile, let's see the result of our deployment:
 
-![Loading Streamlit on our Gradient endpoint.](<../../.gitbook/assets/image (91).png>)
+![Loading Streamlit on our Gradient endpoint.](<../../.gitbook/assets/image (91) (1).png>)
 
 Excellent! It takes about 30 seconds for our deployment to come up, but once it does the UI state changes to `Ready` and the link to our Streamlit deployment brings us to a hosted endpoint where we can demo a number of Streamlit features.&#x20;
 
