@@ -10,7 +10,7 @@ description: >-
 
 [Gradient Deployments](https://gradient.run/deployments) helps us perform effortless model serving to an API endpoint. During this tutorial we'll learn how to use Gradient to deploy a machine learning model using a high-performance, low-latency microservice with a RESTful API.
 
-![This deployment provides an endpoint to reach a hosted Streamlit application.](<../../.gitbook/assets/image (90) (1).png>)
+![This deployment provides an endpoint to reach a hosted Streamlit application.](<../../.gitbook/assets/image (90) (1) (1).png>)
 
 Gradient Deployments makes it easy to deploy a container image to an API endpoint for hosting or inference.&#x20;
 
@@ -38,7 +38,7 @@ If we haven't already created a project in the Gradient console, we'll need to d
 
 Here we've named our new project `Deployments Tutorial` because everything we're going to do in this project is related to this very tutorial.
 
-![If we haven't made a Project yet in Gradient, we'll create a new one now. We're calling our Project Deployments Tutorial.](<../../.gitbook/assets/image (92).png>)
+![If we haven't made a Project yet in Gradient, we'll create a new one now. We're calling our Project Deployments Tutorial.](<../../.gitbook/assets/image (92) (1).png>)
 
 Great! We should now have a new project in Gradient with the name `Deployments Tutorial`.
 

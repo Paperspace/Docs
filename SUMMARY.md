@@ -28,6 +28,7 @@
     * [Notebook metrics](explore-train-deploy/notebooks/create-a-notebook/notebook-metrics.md)
     * [Notebook containers](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/README.md)
       * [Building a Custom Container](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
+      * [Notebook Kernel](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/notebook-kernel.md)
     * [Sharing Notebooks](explore-train-deploy/notebooks/create-a-notebook/share-a-notebook.md)
     * [Notebook offline view](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
     * [Notebook TensorBoards](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
