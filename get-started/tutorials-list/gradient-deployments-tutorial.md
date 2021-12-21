@@ -52,7 +52,7 @@ Let's go ahead and create a deployment within our project. Once we're within the
 
 Let's name our new deployment `Streamlit deployment` and then press the big button `Create Deployment`.&#x20;
 
-![We create a new deployment and name it Streamlit deployment to make it easy to find later.](<../../.gitbook/assets/image (86).png>)
+![We create a new deployment and name it Streamlit deployment to make it easy to find later.](<../../.gitbook/assets/image (86) (1).png>)
 
 Excellent! While our deployment is spinning-up, let's take a look at the deployment spec that we just ran:
 

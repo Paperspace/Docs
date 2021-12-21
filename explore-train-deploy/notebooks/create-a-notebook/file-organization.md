@@ -30,4 +30,4 @@ Downloading data to `/storage` is as simple as using `curl` or `wget` from a Not
 
 Downloading files is as simple as clicking the menu icon on a file (the three vertical dots) and clicking Download. **Note:** Your notebook must be running in order to download data.&#x20;
 
-![](<../../../.gitbook/assets/image (86) (1).png>)
+![](<../../../.gitbook/assets/image (86) (1) (1).png>)

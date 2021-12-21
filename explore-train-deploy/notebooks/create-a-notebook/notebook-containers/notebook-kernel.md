@@ -14,8 +14,8 @@ Each time you create, upload or run a .ipynb file, a new kernel is created to ma
 
 If you want to stop or restart a kernel you can do that within the sub-menu of the .ipynb file or from the restart kernel option in the top right of the IDE.
 
-![Kernel Restart and Stop](<../../../../.gitbook/assets/image (92).png>)
+![Kernel Management](<../../../../.gitbook/assets/image (96).png>)
 
 Additionally, users can stop all kernels in the top menu of the IDE.
 
-![Stop all kernels](<../../../../.gitbook/assets/image (93).png>)
+![Stop all kernels](<../../../../.gitbook/assets/image (86).png>)
