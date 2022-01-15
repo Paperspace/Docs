@@ -5,42 +5,60 @@
 The Custom Containers feature lets you pull your own image from a container registry e.g., Docker Hub. This section will help you prepare a custom Docker container and show you how to bring that Container into Gradient by creating either a Notebook, Workflow, or Deployment with your custom container.&#x20;
 
 {% hint style="info" %}
-**ProTip!** Using a Custom Container does not require building one from scratch.  See this [article](./) for using one of the many freely available and up-to-date containers hosted on various container registries (e.g., [Docker Hub](https://hub.docker.com), [NGC](https://ngc.nvidia.com/catalog/landing) etc.).
+**ProTip!** Using a Custom Container does not require building one from scratch.  See this [article](./) to access many freely available and up-to-date containers hosted on various container registries (e.g., [Docker Hub](https://hub.docker.com), [NGC](https://ngc.nvidia.com/catalog/landing) etc.).
 {% endhint %}
 
 ## Build a Custom Container Locally
 
-#### 1. To get started, you’ll need:
+### Getting started
 
-* An Ubuntu computer with [DockerCE](https://github.com/docker/docker-ce), [NVIDIA-docker](https://github.com/NVIDIA/nvidia-docker), and NVIDIA Drivers installed (if you don’t have a Linux machine, use a Paperspace Linux VM!).
-* From that machine, you'll need to be logged into your [Docker Hub](https://hub.docker.com) account \
-  `docker login -u <username> -p <password>`
+A computer with [DockerCE](https://github.com/docker/docker-ce), [NVIDIA-docker](https://github.com/NVIDIA/nvidia-docker), and NVIDIA Drivers installed (if you don’t have a Linux machine, use a [Paperspace Linux VM](https://www.paperspace.com/pricing)!).
 
-#### 2. Add a Docker file to a working directory on your system
+From that machine, you'll need to be logged into your [Docker Hub](https://hub.docker.com) account in the terminal. \
+`docker login -u <username> -p <password>`
 
-You can make your own file (see Requirements below) or use one like this example: [https://github.com/Paperspace/tensorflow-python](https://github.com/Paperspace/tensorflow-python)
+You can make your own Docker file from scratch (see "Requirements for for Custom Notebooks" below) or use another as a basis, such as this [example](https://github.com/gradient-ai/tensorflow-python/blob/master/Dockerfile). For now, let's follow along this provided sample.
 
-#### 3. In the same directory:
+### Adding a Docker file to a working directory on your system
 
-* Run: `docker build -t <name of image>` For the example file above, you would enter: `docker build -t test-container`
-* Tag the image so that it can be added to a repo with the image id, your Docker Hub username, and a name for the image:
+First, clone the repo, and navigate to the corresponding directory in your terminal.&#x20;
 
-`docker tag <image id> <dockerhub username>/test-container:latest`
+Open the Docker file into your IDE of choice, and make edits as necessary. The provided Docker file sample above pulls from DockerHub a Paperspace-made TensorFlow image designed to run TensorFlow 2.0 for GPUs on Gradient. You can do so with the `FROM` instruction.
 
-#### 4. Push the image to Docker Hub with your username:
+Example: `FROM docker.io/tensorflow/tensorflow:latest-gpu-jupyter`
 
-`docker push <username>/test-container:latest`
+Once your Dockerfile is written, save it, and navigate back to the terminal.
 
-### &#x20;Requirements of Custom Notebooks
+### Building the Docker image
 
-* Python
-* Jupyter and all of Jupyter's dependencies must be installed:
+Now that the Docker file is written, we can build the image by running:
 
-[        http://jupyter.org/install](http://jupyter.org/install)
+&#x20;`docker build -t <Name of image>`&#x20;
 
-`conda install -c conda-forge jupyterlab`
+For the example file above, you could enter:&#x20;
 
-If you don't specify a user, your container user will be 'root'.
+`docker build test-container`
+
+Once you have created the image, you need to tag it so that it can be added to Docker Hub. Tag the image using the image id, your Docker Hub username, and a name for the image in the following format:
+
+`docker tag <Image id> <Docker username>/test-container:<Tag>`
+
+### Pushing to Docker Hub
+
+Now that we have created and tagged out container, we can push it to Docker Hub for use with our Gradient resources. Use the following `docker push` command to do so:&#x20;
+
+`docker push <Docker username>/test-container:<tag>`
+
+### &#x20;Requirements to use with Custom Notebooks&#x20;
+
+The following should be included in your Docker file to ensure the Notebook will set up and run properly.&#x20;
+
+* Python: \
+  `RUN apt-get update && apt-get install -y` `python3 python3-pip`
+* Jupyter and all of Jupyter's dependencies: \
+  `RUN pip install jupyterlab`\
+  ``(For more details, see [http://jupyter.org/install](http://jupyter.org/install))
+* If you don't specify a user, your container user will be 'root'
 
 ## Bringing your Custom Container to Gradient
 
