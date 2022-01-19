@@ -60,7 +60,27 @@ Note that if you are using a private Git repository, you can configure authentic
 
 You must also have already created a [Gradient Dataset](../../data/data-overview/private-datasets-repository/) to use this feature. We clone your repository into a Dataset for local storage and access within the cluster by your Deployment and are not able to automatically create one for you at this time.
 
-For example, let's say that I want to clone two repositories, one that is public, and one that is private and requires a username and password. I might use a spec like the following
+For example, let's say that I want to clone two repositories, one that is public, and one that is private and requires a username and password. I might use a spec like the following:
+
+```
+image: ubuntu:20.04
+port: 8501
+resources:
+  replicas: 1
+  instanceType: C4
+repositories:
+  dataset: dstflhstfexl6w3
+  mountPath: /opt/repositories
+  repositories:
+    - url: https://github.com/tensorflow/serving.git
+      name: tf-serving
+    - url: https://github.com/paperspace/ml-private.git
+      name: paperspace-ml
+      username: paperspace-user
+      password: SECRET:paperspace-github-token
+```
+
+Once this completes, I will have access to the TensorFlow Serving repository at `/opt/repos/tf-serving`, and to a repo of private ML code at `/opt/repos/paperspace-ml`.
 
 ### Container Registry integration
 
