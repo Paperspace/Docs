@@ -20,6 +20,7 @@ repositories:
   mountPath: /opt/repos # the  local filepath you want to sync the repos to inside your deployment
   repositories:
     - url: https://github.com/tensorflow/serving.git # the URL of the repository
+      ref: main # optionally, a git branch, commit, or tag to check out
       name: tf-serving # the folder name you want to clone the repo into
       username: example # optionally, the username to authenticate to the repo with
       password: SECRET:secret_name # optionally, the Gradient Secret containing the password for your Git user
