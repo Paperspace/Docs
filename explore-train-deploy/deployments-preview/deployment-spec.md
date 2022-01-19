@@ -12,6 +12,17 @@ port: 8080 # local container port that your service is running on
 env: # environment variables that are applied at run time
   - name: ENV
     value: VAR
+models:
+  - id: model-handle # the handle of a model from the Gradient Model Registry
+    path: /opt/models # the local filepath you want to sync it to inside your deployment
+repositories:
+  dataset: dataset-ref # the ID of the dataset you want to sync the repository with
+  mountPath: /opt/repos # the  local filepath you want to sync the repos to inside your deployment
+  repositories:
+    - url: https://github.com/tensorflow/serving.git # the URL of the repository
+      name: tf-serving # the folder name you want to clone the repo into
+      username: example # optionally, the username to authenticate to the repo with
+      password: SECRET:secret_name # optionally, the Gradient Secret containing the password for your Git user
 resources:
   replicas: 1 # number of replicas used for your deployment
   instanceType: C4 # instance type that your deployment will run on
@@ -36,6 +47,20 @@ resources:
   replicas: 1
   instanceType: C4
 ```
+
+### Cloning Repositories into a Deployment
+
+If you don't want to package everything into a Docker container, you can also clone any one or more Git repositories into your Deployment at runtime. To do this, just supply the optional `repositories` configuration in your deployment spec, and specify:
+
+* the dataset ID you want to use to sync the repositories into;
+* the folder that you want to access your repositories from within the Deployment; and
+* the URL for one or more Git repositories that you want to clone
+
+Note that if you are using a private Git repository, you can configure authenticated access by also supplying the optional `username` and `password` parameters. The password field will need to reference a [Gradient Secret](../../get-started/managing-projects/using-secrets.md) and should not contain the plaintext password itself.
+
+You must also have already created a [Gradient Dataset](../../data/data-overview/private-datasets-repository/) to use this feature. We clone your repository into a Dataset for local storage and access within the cluster by your Deployment and are not able to automatically create one for you at this time.
+
+For example, let's say that I want to clone two repositories, one that is public, and one that is private and requires a username and password. I might use a spec like the following
 
 ### Container Registry integration
 
