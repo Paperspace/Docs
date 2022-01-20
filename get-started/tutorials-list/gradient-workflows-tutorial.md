@@ -169,6 +169,7 @@ Excellent! As we'll come to learn, this YAML file contains instructions for each
 Here are the steps we'll be taking to modify our workflow:
 
 * Clone our existing connected GitHub repository to our local machine
+* Create empty datasets for the workflow
 * Copy some new text into the YAML file
 * Push the updated repository to GitHub to trigger a new workflow run
 * Repeat the process once again to add another step
@@ -273,6 +274,49 @@ One of the best parts of Gradient Workflows is that we can schedule an arbitrary
 We can run a job with no dependencies, or external dependencies, or we can require that a job wait for a previous job to complete before running. Each job can consume different types of inputs, produce different types of outputs, and accept different arguments at runtime. Workflows even allows each job to load a distinct Docker image from a public or private repo!&#x20;
 
 Our next step is to push our local repo to the GitHub remote repository to kick off a new training run. Let's do that now.
+
+### Creating datasets for our workflow
+
+One of the things we may have noticed in the YAML file is the appearance of  Gradient Datasets. Here's an example from `#2 Get pretrained cat model`:&#x20;
+
+```
+outputs:
+      pretrainedNetwork:
+        type: dataset
+        with:
+          ref: stylegan2-wsp-cats-pretrained-network
+```
+
+In this code block, Gradient is expecting to see a Gradient Dataset called `stylegan2-wsp-cats-pretrained-network` -- so we'll have to create it!
+
+We'll quickly create QTY 4 datasets now, which should only take a minute or two.&#x20;
+
+First we'll navigate over to the `Data` tab in Gradient. It should look like this:
+
+![The Data tab is where we can store files and directories for use in Gradient Workflows.](../../.gitbook/assets/data.png)
+
+Next, we'll create our new empty dataset. If we read through the YAML file, we can see that we'll need a total of QTY 4 empty datasets.
+
+Those are as follows:
+
+```
+stylegan2-wsp-cats-pretrained-network
+stylegan2-wsp-cats-generated
+stylegan2-wsp-cars-pretrained-network
+stylegan2-wsp-cars-generated
+```
+
+We create the empty dataset like so:
+
+![We'll need to create an empty dataset for each of the QTY4 referenced datasets that appear in our YAML file.](<../../.gitbook/assets/empty dataset.gif>)
+
+All we're doing here is using each of the QTY 4 references listed above as the `Name` parameter when creating a new dataset.&#x20;
+
+For the `Storage Provider` parameter, we're using **Gradient Managed**, which is the name of the default Gradient cluster.&#x20;
+
+![We create QTY 4 empty datasets each with the name of one of the referenced datasets from our YAML file.](<../../.gitbook/assets/Screen Shot 2022-01-19 at 6.50.45 PM.png>)
+
+Once we have these empty datasets created, it's time to kickoff the workflow!
 
 ### Push to GitHub to run the workflow
 
