@@ -308,7 +308,7 @@ stylegan2-wsp-cars-generated
 
 We create the empty dataset like so:
 
-![We'll need to create an empty dataset for each of the QTY4 referenced datasets that appear in our YAML file.](<../../.gitbook/assets/empty dataset.gif>)
+![We create QTY 4 empty datasets -- one for each of the referenced datasets in the YAML file. To do so we visit the Data tab in Gradient, provide the name of each dataset (listed above), and select for our Storage Provider the value Gradient Managed.](<../../.gitbook/assets/empty dataset (1).gif>)
 
 All we're doing here is using each of the QTY 4 references listed above as the `Name` parameter when creating a new dataset.&#x20;
 
