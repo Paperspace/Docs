@@ -21,6 +21,7 @@
 
 * [Notebooks](explore-train-deploy/notebooks/README.md)
   * [Using Notebooks](explore-train-deploy/notebooks/create-a-notebook/README.md)
+    * [Keyboard Shortcuts](explore-train-deploy/notebooks/create-a-notebook/keyboard-shortcuts.md)
     * [File organization](explore-train-deploy/notebooks/create-a-notebook/file-organization.md)
     * [Forking Notebooks](explore-train-deploy/notebooks/create-a-notebook/fork-a-notebook.md)
     * [Notebook terminals](explore-train-deploy/notebooks/create-a-notebook/notebook-terminals.md)
