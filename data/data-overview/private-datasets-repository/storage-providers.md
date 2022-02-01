@@ -18,11 +18,11 @@ Choose a public storage provider, such as AWS S3, Google GCS, minio, or similar.
 
 ## Define a storage bucket
 
-Create a bucket within your storage provider, and a set of read/write credentials for accessing the data \(usually an access key and secret key\). Note the bucket name, and endpoint url, as well as access key and secret key.
+Create a bucket within your storage provider, and a set of read/write credentials for accessing the data (usually an access key and secret key). Note the bucket name, and endpoint url, as well as access key and secret key.
 
 For AWS S3 you can define a bucket using the AWS CLI. Here we create a bucket named `my-gradient-storage-provider-bucket`.
 
-```text
+```
 aws s3api create-bucket --bucket my-gradient-storage-provider-bucket --region us-east-1
 ```
 
@@ -34,11 +34,11 @@ From within a new or existing S3 bucket, you'll need to edit the CORS configurat
 
 As a best practice you should create a dedicated user identity and access key/secret key pair for accessing the bucket. You should also set a restricted access policy on the user identity so it is limited this bucket.
 
-**Assign CORS Rules**
+**Assign CORS Rules (AWS)**
 
 Add CORS rules to your bucket:
 
-```text
+```
 [
     {
         "AllowedHeaders": [
@@ -59,11 +59,11 @@ Add CORS rules to your bucket:
 
 In the AWS S3 console bucket _permissions_ settings, you'll see an option to edit the CORS configuration. Click edit, then copy and paste the JSON above, and then save your changes.
 
-![](../../../.gitbook/assets/image%20%28108%29.png)
+![](<../../../.gitbook/assets/image (108).png>)
 
 Alternatively you can apply them using the AWS CLI:
 
-```text
+```
 aws s3api put-bucket-cors --bucket my-gradient-storage-provider-bucket --cors-configuration '{
   "CORSRules": [
     {
@@ -76,13 +76,37 @@ aws s3api put-bucket-cors --bucket my-gradient-storage-provider-bucket --cors-co
 }'
 ```
 
+**Assign CORS Rules (GCS)**
+
+Create a `cors.json` file with the follow contents
+
+```
+[
+    {
+        "responseHeader": [
+            "*"
+        ],
+        "method": [
+            "GET",
+            "PUT"
+        ],
+        "origin": [
+            "https://console.paperspace.com"
+        ],
+        "maxAgeSeconds": 3000
+    }
+]
+```
+
+Apply it to your bucket `gsutil cors set cors.json gs://`my-storage-provider-bucket
+
 **Create a Restricted User and Access Key/Secret Key**
 
 Create a restricted user identity and access key/secret key for accessing the bucket.
 
 Here we create these using the AWS CLI:
 
-```text
+```
 aws iam create-user --user-name gradient-storage-provider-user
 
 aws iam create-access-key --user-name gradient-storage-provider-user
@@ -94,7 +118,7 @@ Note the returned `AccessKeyId` and `SecretAccessKey` values as they will only a
 
 Gradient requires a minimal level of policy permissions to access the bucket. Sample permissions for a bucket named `my-gradient-storage-provider-bucket` are as follows:
 
-```text
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -128,7 +152,7 @@ Edit the file and replace `my-gradient-storage-provider-bucket` with your actual
 
 Using the AWS CLI create a policy object from the policy definition file:
 
-```text
+```
 aws iam create-policy --policy-name gradient-storage-provider-access-policy \
   --policy-document file://gradient-storage-provider-access-policy.json
 ```
@@ -141,7 +165,7 @@ Attach the policy object to the restricted user identity.
 
 Using the AWS CLI:
 
-```text
+```
 aws iam attach-user-policy --user-name gradient-storage-provider-user \
   --policy-arn "arn:aws:iam::XXXXXXXXXXXX:policy/gradient-storage-provider-access-policy"
 ```
@@ -152,16 +176,15 @@ A Storage Provider can be created on your team's settings page.
 
 ![](../../../.gitbook/assets/screen-shot-2020-10-30-at-1.09.41-pm.png)
 
-**Note:** The "AccessKey" and "SecretAccessKey" can be obtained from the "My security credentials" section of the AWS Identity and Access Management \(IAM\) portal. See the following:
+**Note:** The "AccessKey" and "SecretAccessKey" can be obtained from the "My security credentials" section of the AWS Identity and Access Management (IAM) portal. See the following:
 
-![](../../../.gitbook/assets/image%20%28109%29.png)
+![](<../../../.gitbook/assets/image (109).png>)
 
 ### CLI
 
 A Storage Provider can also be created with the Gradient CLI
 
-```text
+```
 $ gradient storageProviders create s3 --name test --bucket my-bucket --accessKey=access-key --secretAccessKey=secret-key
 Created storage provider: splgct3arqdh77c
 ```
-
