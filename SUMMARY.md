@@ -17,12 +17,12 @@
 * [FAQ](get-started/faq.md)
 * [Common Errors](get-started/error-codes.md)
 
-## Explore, train, deploy
+## Gradient Platform <a href="#explore-train-deploy" id="explore-train-deploy"></a>
 
-* [Notebooks](explore-train-deploy/notebooks/README.md)
+* [Gradient Notebooks](explore-train-deploy/notebooks/README.md)
+  * [Files and storage volumes](explore-train-deploy/notebooks/file-organization.md)
   * [Using Notebooks](explore-train-deploy/notebooks/create-a-notebook/README.md)
     * [Keyboard Shortcuts](explore-train-deploy/notebooks/create-a-notebook/keyboard-shortcuts.md)
-    * [File organization](explore-train-deploy/notebooks/create-a-notebook/file-organization.md)
     * [Forking Notebooks](explore-train-deploy/notebooks/create-a-notebook/fork-a-notebook.md)
     * [Notebook terminals](explore-train-deploy/notebooks/create-a-notebook/notebook-terminals.md)
     * [Notebook versioning](explore-train-deploy/notebooks/create-a-notebook/notebook-versioning.md)

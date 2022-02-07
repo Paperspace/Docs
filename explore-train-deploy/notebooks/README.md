@@ -1,8 +1,42 @@
-# Notebooks
+---
+description: Gradient Notebooks is a web-based Jupyter IDE with free GPUs.
+---
 
-## What is a Notebook?
+# Gradient Notebooks
 
-Gradient notebooks are an interactive environment for developing and running code. Jupyter notebooks (`.ipynb` files) are supported natively.  You can also treat a Notebook as a full IDE and both write and execute code written in other languages such as Python.  You can run Notebook on CPU or GPU instances.&#x20;
+## Overview
+
+A notebook is an interactive environment for developing and running code. Gradient Notebooks is based on [Jupyter](https://jupyter.org), which is an open source project behind the majority of popular cloud-hosted notebook platforms.
+
+What differentiates a notebook in Gradient is the ability to access fast and inexpensive GPUs and to extend the use of platform well beyond the notebook phase.
+
+## What is a notebook?
+
+A notebook is a web-based Jupyter interactive development environment. Notebooks are often used by data scientists, data analysts, machine learning engineers, and others to explore code and data.&#x20;
+
+
+
+## Notebook architecture
+
+Notebooks are Jupyter kernels that are running on a Kubernetes host ...&#x20;
+
+
+
+## How to use these docs
+
+List of docs:
+
+1. How to ...
+2. How to ...
+3. How to ...
+
+## What are the limitations of a notebook? &#x20;
+
+
+
+
+
+re an interactive environment for developing and running code. Jupyter notebooks (`.ipynb` files) are supported natively.  You can also treat a Notebook as a full IDE and both write and execute code written in other languages such as Python.  You can run Notebook on CPU or GPU instances.&#x20;
 
 ![The Notebook interface](../../.gitbook/assets/screen-shot-2021-04-29-at-1.04.16-pm.png)
 
