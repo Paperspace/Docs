@@ -14,38 +14,6 @@ What differentiates a notebook in Gradient is the ability to access fast and ine
 
 A notebook is a web-based Jupyter interactive development environment. Notebooks are often used by data scientists, data analysts, machine learning engineers, and others to explore code and data.&#x20;
 
-
-
-## Notebook architecture
-
-Notebooks are Jupyter kernels that are running on a Kubernetes host ...&#x20;
-
-
-
-## How to use these docs
-
-List of docs:
-
-1. How to ...
-2. How to ...
-3. How to ...
-
-## What are the limitations of a notebook? &#x20;
-
-
-
-
-
-re an interactive environment for developing and running code. Jupyter notebooks (`.ipynb` files) are supported natively.  You can also treat a Notebook as a full IDE and both write and execute code written in other languages such as Python.  You can run Notebook on CPU or GPU instances.&#x20;
-
-![The Notebook interface](../../.gitbook/assets/screen-shot-2021-04-29-at-1.04.16-pm.png)
-
-Within the Notebook, you can store an unlimited number of documents and other files. You can think of a Gradient Notebook as your persistent, on-demand workspace in the cloud.
-
-{% hint style="info" %}
-**NEW!**  Visit the new [ML Showcase](https://ml-showcase.paperspace.com) for a list of sample projects you can fork into your own account.
-{% endhint %}
-
 ## File Storage
 
 Any data stored in `/storage` will be preserved for you across restarts. Persistent storage is backed by a filesystem and is ideal for storing data like images, datasets, model checkpoints, etc.  Learn more about persistent storage [here](../../more/overview/billing-and-subscriptions/notebooks-storage.md).
