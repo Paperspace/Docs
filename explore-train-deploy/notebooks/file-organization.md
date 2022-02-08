@@ -166,18 +166,18 @@ Note that a notebook must be in the **Running** or online state to upload data.
 
 ## How to upload large files and folders
 
-To upload a large number of files or a large amount of data, it is better to use command-line libraries such as [curl](https://curl.se), [Wget](https://www.gnu.org/software/wget/), or [gdown](https://github.com/wkentaro/gdown).
+To upload a large number of files or a large amount of data, it is recommended to use command-line libraries such as [curl](https://curl.se), [Wget](https://www.gnu.org/software/wget/), or [gdown](https://github.com/wkentaro/gdown).
 
-Since it is difficult to&#x20;
+These libraries are simple to run in a notebook cell using line magic or in the terminal and they provide a level of reliability for large data transfers beyond that which the GUI can provide.
 
+![Using wget to download a large set of files within a notebook.](<../../.gitbook/assets/stanford dogs.gif>)
 
-
-
-
-Downloading data to `/storage` is as simple as using `curl` or `wget` from a Notebook [terminal](create-a-notebook/notebook-terminals.md) or Jupyter cell. &#x20;
+To upload data to shared persistent storage, try changing into a directory within `/storage` before running the upload command.
 
 ### Exporting files and data
 
-Downloading files is as simple as clicking the menu icon on a file (the three vertical dots) and clicking Download. **Note:** Your notebook must be running in order to download data.&#x20;
+Downloading files is as simple as clicking the menu icon on a file (the three vertical dots) and clicking Download.&#x20;
 
-![](<../../.gitbook/assets/image (86) (1) (1).png>)
+Note that the notebook must be in the **Running** state in order to download data.&#x20;
+
+![Download data with the 3-dot menu within a running notebook.](../../.gitbook/assets/download.png)

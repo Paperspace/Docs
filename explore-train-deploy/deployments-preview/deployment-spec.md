@@ -87,7 +87,7 @@ Once this completes, I will have access to the TensorFlow Serving repository at 
 
 Private Docker images can be used by referencing your Container Registry which contains credentials to access that image.
 
-To configure a Container Registry, follow this short [guide](../../data/containers.md).
+To configure a Container Registry, follow this short [guide](../../data/containers/).
 
 Once configured, we add a `containerRegistry` parameter to our deployment spec and specify the name of the Container Registry.
 

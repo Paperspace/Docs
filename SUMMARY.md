@@ -21,20 +21,19 @@
 
 * [Gradient Notebooks](explore-train-deploy/notebooks/README.md)
   * [Files and storage volumes](explore-train-deploy/notebooks/file-organization.md)
+  * [Runtimes](explore-train-deploy/notebooks/notebook-containers.md)
   * [Using Notebooks](explore-train-deploy/notebooks/create-a-notebook/README.md)
     * [Keyboard Shortcuts](explore-train-deploy/notebooks/create-a-notebook/keyboard-shortcuts.md)
     * [Forking Notebooks](explore-train-deploy/notebooks/create-a-notebook/fork-a-notebook.md)
     * [Notebook terminals](explore-train-deploy/notebooks/create-a-notebook/notebook-terminals.md)
     * [Notebook versioning](explore-train-deploy/notebooks/create-a-notebook/notebook-versioning.md)
     * [Notebook metrics](explore-train-deploy/notebooks/create-a-notebook/notebook-metrics.md)
-    * [Notebook containers](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/README.md)
-      * [Building a Custom Container](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/building-a-custom-container.md)
-      * [Notebook Kernel](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/notebook-kernel.md)
     * [Sharing Notebooks](explore-train-deploy/notebooks/create-a-notebook/share-a-notebook.md)
     * [Notebook offline view](explore-train-deploy/notebooks/create-a-notebook/notebook-include.md)
     * [Notebook TensorBoards](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
     * [Using VSCode (experimental)](explore-train-deploy/notebooks/create-a-notebook/using-vscode-experimental.md)
     * [Community (public) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
+    * [Notebook Kernel](explore-train-deploy/notebooks/create-a-notebook/notebook-kernel.md)
   * [Run on Gradient (GitHub badge)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
   * [ML Showcase](explore-train-deploy/notebooks/ml-showcase.md)
 * [Workflows](explore-train-deploy/workflows/README.md)
@@ -50,7 +49,8 @@
 
 ## Artifacts <a href="#data" id="data"></a>
 
-* [Container Management](data/containers.md)
+* [Container Management](data/containers/README.md)
+  * [Custom Containers](data/containers/custom-containers.md)
 * [Data](data/data-overview/README.md)
   * [Versioned Data](data/data-overview/private-datasets-repository/README.md)
     * [Public Datasets Repository](data/data-overview/private-datasets-repository/public-datasets-repository.md)

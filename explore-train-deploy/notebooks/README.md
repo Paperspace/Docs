@@ -20,7 +20,7 @@ Any data stored in `/storage` will be preserved for you across restarts. Persist
 
 ## Containers
 
-Notebooks run within Docker containers behind the scenes. Gradient includes a handful of pre-built containers and you can easily use a custom container as well.  View the list of pre-built containers [here](create-a-notebook/notebook-containers/).
+Notebooks run within Docker containers behind the scenes. Gradient includes a handful of pre-built containers and you can easily use a custom container as well.  View the list of pre-built containers [here](notebook-containers.md).
 
 ### Sharing Notebooks
 
