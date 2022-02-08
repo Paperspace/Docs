@@ -247,7 +247,7 @@ If you have any questions, you can reach us any time at **hello@paperspace.com**
 ## Reference reading
 
 * Browse a collection of starter notebooks created for Gradient called [ML Showcase](https://ml-showcase.paperspace.com)
-* Learn more about [custom notebook containers](../../explore-train-deploy/notebooks/notebook-containers.md)
+* Learn more about [custom notebook containers](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/)
 * Learn more about [instance types](../../more/instance-types/), including [free tier](../../more/instance-types/free-instances.md) instances
 * Learn more about [persistent storage](../../more/overview/billing-and-subscriptions/notebooks-storage.md) which is automatically mounted at `/storage`
 

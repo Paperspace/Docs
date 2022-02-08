@@ -23,7 +23,7 @@ Projects help organize your work. To get started, just choose a name and click c
 
 ## Create a Notebook
 
-After creating a Project, Notebooks can be created on the Notebooks tab within the Project. Just select a [template](../../explore-train-deploy/notebooks/notebook-containers.md), choose your [instance type](../../more/instance-types/), and then click create.
+After creating a Project, Notebooks can be created on the Notebooks tab within the Project. Just select a [template](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/), choose your [instance type](../../more/instance-types/), and then click create.
 
 {% hint style="success" %}
 Check out the [FREE GPU](../../more/instance-types/free-instances.md) option when launching Notebooks!

@@ -1,7 +1,7 @@
 ---
 description: >-
-  This guide explains the system Gradient Notebooks uses to load workspaces and
-  containers
+  This guide explains the system used by Gradient Notebooks to load workspaces
+  and containers
 ---
 
 # Runtimes
@@ -14,7 +14,7 @@ A workspace is the set of files managed by the Gradient Notebooks IDE while a co
 
 A runtime does **not** specify a particular machine or instance type. One great benefit of Gradient Notebooks is that runtimes can be swapped across a wide variety of instances.
 
-![Gradient Notebooks offers a list of Recommended runtimes. We can also select the All option to view a more expansive list of runtimes that work out of the box.](../../.gitbook/assets/runtimes.png)
+![Gradient Notebooks offers a list of Recommended runtimes. We can also select the All option to view a more expansive list of runtimes that work out of the box.](../../../../.gitbook/assets/runtimes.png)
 
 When creating a new notebook, Gradient offers a list of runtimes to select sorted by `Recommended` and `All`.  We can use these runtime tiles or we can create our own runtimes.
 
@@ -24,7 +24,7 @@ To explore the details of a particular runtime provided by Gradient, expand the 
 
 In this example, we will explore the PyTorch 1.10 runtime tile:
 
-![A runtime combines a specific workspace with a specific container. We can adjust either property in the Advanced options tab when creating a new notebook.](<../../.gitbook/assets/runtimes explanation.png>)
+![A runtime combines a specific workspace with a specific container. We can adjust either property in the Advanced options tab when creating a new notebook.](<../../../../.gitbook/assets/runtimes explanation.png>)
 
 The PyTorch 1.10 tile consists of the following:
 
@@ -39,7 +39,7 @@ When we select `Start Notebook`, Gradient imports the file(s) located in the `Wo
 
 In this example, our new PyTorch 1.10 notebook contains the files from [https://github.com/gradient-ai/PyTorch](https://github.com/gradient-ai/PyTorch) running on the container from nvcr.io/nvidia/pytorch:21.10-py3.
 
-![The top box highlights the files in the file manager while the bottom box highlights the container. ](<../../.gitbook/assets/runtime workspace and container (1).png>)
+![The top box highlights the files in the file manager while the bottom box highlights the container. ](<../../../../.gitbook/assets/runtime workspace and container (1).png>)
 
 We can confirm this fact by noticing that our file manager is populated with the contents from the GitHub repository (in this case a single file) and that the bottom bar is displaying the name of the container image as expected.
 
@@ -47,7 +47,7 @@ We can confirm this fact by noticing that our file manager is populated with the
 
 Paperspace maintains a number of runtimes that make it easy to get started with preloaded notebook files and dependencies. These runtimes are provided as tiles when creating a new notebook in Gradient.
 
-![A number of runtime tiles are provided when creating a new notebook. Tiles are sortable by Recommended or All using the blue sorting button.](<../../.gitbook/assets/example of runtime tiles.png>)
+![A number of runtime tiles are provided when creating a new notebook. Tiles are sortable by Recommended or All using the blue sorting button.](<../../../../.gitbook/assets/example of runtime tiles.png>)
 
 ### Recommended runtimes
 
@@ -81,19 +81,19 @@ Let's say we're interested in working with [GFP-GAN](https://github.com/gradient
 
 All we need to do is specify the GFP-GAN GitHub repo in the `Workspace URL` parameter of `Advanced options` during notebook creation.&#x20;
 
-![To import a GitHub repository when creating a notebook we can include the repo URL in the Workspace URL field.](<../../.gitbook/assets/copy paste workspace.gif>)
+![To import a GitHub repository when creating a notebook we can include the repo URL in the Workspace URL field.](<../../../../.gitbook/assets/copy paste workspace.gif>)
 
 Gradient automatically copies all of the files from the GitHub repo into the notebook IDE.&#x20;
 
 The resulting notebook looks like this:
 
-![GFPGAN files have successfully imported into the notebook.](../../.gitbook/assets/GFPGAN.png)
+![GFPGAN files have successfully imported into the notebook.](../../../../.gitbook/assets/GFPGAN.png)
 
 A custom workspace can be specified at the time of notebook creation only.
 
 It's also possible to pull files from private or password-protected repositories by filling in `Workspace Username` and `Workspace Password` fields.&#x20;
 
-![The Workspace Username and Workspace Password fields are useful for pulling files from private GitHub repositories.](<../../.gitbook/assets/runtime advanced options.png>)
+![The Workspace Username and Workspace Password fields are useful for pulling files from private GitHub repositories.](<../../../../.gitbook/assets/runtime advanced options.png>)
 
 The same logic can be applied to containers, which is demonstrated in the next section.
 
@@ -103,7 +103,7 @@ A container is a disk image pre-loaded with files and dependencies. Gradient pro
 
 In this example, we'll tell Gradient to pull the latest container from [NVIDIA RAPIDS](https://rapids.ai/start.html#get-rapids) by specifying the Docker image in the `Container Name` field.
 
-![To pull the latest NVIDIA RAPIDS image, we can specify the DockerHub address in the Container Name field.](<../../.gitbook/assets/pull rapids container.gif>)
+![To pull the latest NVIDIA RAPIDS image, we can specify the DockerHub address in the Container Name field.](<../../../../.gitbook/assets/pull rapids container.gif>)
 
 Note that the larger the container, the longer it will take for Gradient to pull it into a notebook.
 
@@ -131,7 +131,7 @@ The following fields are available in the `Container` section of `Advanced optio
 
 
 
-![The Container section of Advanced options in the Create a notebook flow in Gradient.](<../../.gitbook/assets/image (8).png>)
+![The Container section of Advanced options in the Create a notebook flow in Gradient.](<../../../../.gitbook/assets/image (8).png>)
 
 | Field             | Required | Description                                                                                                                                                                                                                                                     |
 | ----------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

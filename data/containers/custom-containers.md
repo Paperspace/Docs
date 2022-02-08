@@ -5,7 +5,7 @@
 The Custom Containers feature lets you pull your own image from a container registry e.g., Docker Hub. This section will help you prepare a custom Docker container and show you how to bring that Container into Gradient by creating either a Notebook, Workflow, or Deployment with your custom container.&#x20;
 
 {% hint style="info" %}
-**ProTip!** Using a Custom Container does not require building one from scratch.  See this [article](../../explore-train-deploy/notebooks/notebook-containers.md) to access many freely available and up-to-date containers hosted on various container registries (e.g., [Docker Hub](https://hub.docker.com), [NGC](https://ngc.nvidia.com/catalog/landing) etc.).
+**ProTip!** Using a Custom Container does not require building one from scratch.  See this [article](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/) to access many freely available and up-to-date containers hosted on various container registries (e.g., [Docker Hub](https://hub.docker.com), [NGC](https://ngc.nvidia.com/catalog/landing) etc.).
 {% endhint %}
 
 ## Build a Custom Container Locally
@@ -66,7 +66,7 @@ After you've pushed your custom container to Docker Hub, NGC, etc., or you found
 
 ### Notebooks &#x20;
 
-Click the advanced options toggle on the notebook create a notebook page. Follow the rest of the steps [here](../../explore-train-deploy/notebooks/notebook-containers.md#custom-containers) to create your Notebook by selecting your machine type, naming your notebook, and clicking Create.&#x20;
+Click the advanced options toggle on the notebook create a notebook page. Follow the rest of the steps [here](../../explore-train-deploy/notebooks/create-a-notebook/notebook-containers/#custom-containers) to create your Notebook by selecting your machine type, naming your notebook, and clicking Create.&#x20;
 
 ### Workflows
 

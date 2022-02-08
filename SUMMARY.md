@@ -20,8 +20,9 @@
 ## Gradient Platform <a href="#explore-train-deploy" id="explore-train-deploy"></a>
 
 * [Gradient Notebooks](explore-train-deploy/notebooks/README.md)
-  * [Files and storage volumes](explore-train-deploy/notebooks/file-organization.md)
-  * [Runtimes](explore-train-deploy/notebooks/notebook-containers.md)
+  * [Runtimes](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/README.md)
+  * [Files and storage](explore-train-deploy/notebooks/file-organization.md)
+  * [Instances](explore-train-deploy/notebooks/instances.md)
   * [Using Notebooks](explore-train-deploy/notebooks/create-a-notebook/README.md)
     * [Keyboard Shortcuts](explore-train-deploy/notebooks/create-a-notebook/keyboard-shortcuts.md)
     * [Forking Notebooks](explore-train-deploy/notebooks/create-a-notebook/fork-a-notebook.md)
@@ -33,7 +34,7 @@
     * [Notebook TensorBoards](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
     * [Using VSCode (experimental)](explore-train-deploy/notebooks/create-a-notebook/using-vscode-experimental.md)
     * [Community (public) Notebooks](explore-train-deploy/notebooks/create-a-notebook/public-notebooks.md)
-    * [Notebook Kernel](explore-train-deploy/notebooks/create-a-notebook/notebook-kernel.md)
+    * [Notebook Kernel](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/notebook-kernel.md)
   * [Run on Gradient (GitHub badge)](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
   * [ML Showcase](explore-train-deploy/notebooks/ml-showcase.md)
 * [Workflows](explore-train-deploy/workflows/README.md)
@@ -49,7 +50,7 @@
 
 ## Artifacts <a href="#data" id="data"></a>
 
-* [Container Management](data/containers/README.md)
+* [Container Management](data/containers.md)
   * [Custom Containers](data/containers/custom-containers.md)
 * [Data](data/data-overview/README.md)
   * [Versioned Data](data/data-overview/private-datasets-repository/README.md)
