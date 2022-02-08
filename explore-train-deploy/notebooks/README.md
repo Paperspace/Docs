@@ -24,7 +24,7 @@ Notebooks run within Docker containers behind the scenes. Gradient includes a ha
 
 ### Sharing Notebooks
 
-You can easily generate a link to [share your Notebook](create-a-notebook/share-a-notebook.md) with friends and colleagues or the general public. Public Notebooks can be forked by others into their own account. To learn more about how Notebooks work, you can fork a public demo Notebook [here](https://console.paperspace.com/ps-dan/notebook/pr3k0bq87).  The [ML Showcase](https://ml-showcase.paperspace.com) **** includes several working examples of projects you can run with a couple clicks (project [submissions welcome](https://blog.paperspace.com/write-for-paperspace/)!)
+You can easily generate a link to [share your Notebook](share-a-notebook.md) with friends and colleagues or the general public. Public Notebooks can be forked by others into their own account. To learn more about how Notebooks work, you can fork a public demo Notebook [here](https://console.paperspace.com/ps-dan/notebook/pr3k0bq87).  The [ML Showcase](https://ml-showcase.paperspace.com) **** includes several working examples of projects you can run with a couple clicks (project [submissions welcome](https://blog.paperspace.com/write-for-paperspace/)!)
 
 ## Tutorial
 
