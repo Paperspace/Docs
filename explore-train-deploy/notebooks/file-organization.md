@@ -4,7 +4,7 @@ description: >-
   Notebooks
 ---
 
-# Files and storage volumes
+# Files and storage
 
 ## Introduction to the file structure of Gradient Notebooks
 
@@ -174,7 +174,7 @@ These libraries are simple to run in a notebook cell using line magic or in the 
 
 To upload data to shared persistent storage, try changing into a directory within `/storage` before running the upload command.
 
-### Exporting files and data
+## How to export files and data
 
 Downloading files is as simple as clicking the menu icon on a file (the three vertical dots) and clicking Download.&#x20;
 
