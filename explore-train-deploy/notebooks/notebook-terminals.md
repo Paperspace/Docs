@@ -10,7 +10,7 @@ Terminals are useful for interacting with the underlying OS environment to perfo
 
 ![The terminal is available on Pro and Growth plan subscriptions in Gradient.](<../../.gitbook/assets/terminal command.gif>)
 
-The terminal has root access in the notebook, which can be useful for a variety of tasks.
+In Gradient Notebooks, the terminal has root access to the underlying machine, which can be useful for a variety of tasks.
 
 ## How to gain terminal access in Gradient Notebooks
 
@@ -39,19 +39,4 @@ bash
 ![To use bash in the terminal enter the bash command in the default terminal shell.](../../.gitbook/assets/bash.gif)
 
 The terminal is now using bash.
-
-## How to SSH into a notebook from a local terminal
-
-{% hint style="warning" %}
-WARNING: This is an experimental feature, please use at your own risk.
-{% endhint %}
-
-Steps to access a Gradient Notebook remotely using VSCode&#x20;
-
-1. Start a notebook in the console. Right-click the jupyter icon and copy the URL (e.g.`https://nuv5vbc7ck.clg07azjl.paperspacegradient.com/?token=d4e87987b69a4480038673d1368e07e2`
-2. Open VSCode
-3. Type `cmd`+`shift`+`p` to open the Command Pallette
-4. Choose `Jupyter specify local or remote....`
-5. Paste in the URL
-6. Open an `.ipynb` in VSCode. You will see the connection up top.
 
