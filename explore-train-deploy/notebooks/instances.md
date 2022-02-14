@@ -68,9 +68,11 @@ It is currently not possible to alter the auto-shutdown interval after it has be
 
 ## How to view kernel state
 
+By default, all .ipynb files are run on a python3 kernel with a number of preinstalled packages depending on the [runtime](create-a-notebook/notebook-containers/) you choose. This is meant to provide an environment that works right out of the box for the majority of projects.
+
 Gradient allows the user to start an arbitrary number of kernels within the notebooks IDE. A kernel is [a programming language specific process](https://docs.jupyter.org/en/latest/projects/kernels.html) that runs independently of other kernels on a virtualized machine. Gradient uses the [IPython](https://ipython.readthedocs.io/en/stable/index.html#ipython-documentation) Jupyter kernel.&#x20;
 
-In Gradient Notebooks, the kernel state is visible in the file manager as well as in the top bar.
+Each time a .ipynb file is created, uploaded or run,a new kernel is created to manage that file. The kernel state is visible in the file manager as well as in the top bar.&#x20;
 
 ![Kernel state is visible in the file manager as well as in the top bar.](../../.gitbook/assets/kernels.png)
 
