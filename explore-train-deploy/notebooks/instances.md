@@ -20,11 +20,11 @@ Gradient Notebooks makes it easy to swap out an instance for a different instanc
 
 ## How to select an instance when creating a notebook
 
-When creating a new notebook, the `Select a machine` section provides a list of GPU-backed and CPU-backed machines available for use.
+When creating a new notebook, the `Select a machine` section of the notebook create workflow provides a list of GPU-backed and CPU-backed machines available for use.
 
 ![When creating a new notebook, we can select from a long list of GPU and CPU-backed machines.](<../../.gitbook/assets/gpu and cpu machines.gif>)
 
-If a machine is available for use it will be listed under the `Available` heading. If a machine is out of capacity it means that all instances are currently being used by other Paperspace users.
+If a machine is available for use it will be listed under the `Available` heading. If a machine is out of capacity it means that all instances are currently being used by other Paperspace users.&#x20;
 
 ## How to swap instances in an existing notebook
 
@@ -46,7 +46,7 @@ If an instance type is at capacity it will be listed as `Unavailable`. Popular i
 
 ![When instances are at capacity, they are marked as Currently Unavailable. It's recommended to wait a few minutes and check back to see if capacity has opened up or else to try a different machine type that is available.](<../../.gitbook/assets/unavailable instances.png>)
 
-If the machine type that we require is listed as unavailable, we'll need to wait until capacity frees up. We should first try waiting a few minutes and refreshing the page. If capacity is still not available, we might wait a little while longer or else try a different instance with better availability or come back during a less busy time of day.
+If the machine type that we require is listed as unavailable, we'll need to wait until capacity frees up. We should first try waiting a few minutes and refreshing the page. If capacity is still not available, we might try a different instance with better availability or come back during a less busy time of day.
 
 {% hint style="info" %}
 Free GPU instances in particular are often in high demand. Try using popular free resources outside of peak hours (MF 9:00AM - 5:00PM ET) or try using more powerful paid instances.
@@ -56,7 +56,7 @@ Paperspace is constantly adding capacity to its datacenters. The [Changelog](htt
 
 ## How to use the auto-shutdown timer
 
-The auto-shutdown timer is a useful feature that automatically shuts down a notebook after a pre-determined amount of time. The timer starts from the moment that the notebook is started -- **not** from the moment of last use.
+The auto-shutdown timer is a useful feature that automatically shuts down a notebook after a pre-determined amount of time. The timer starts from the moment that the notebook is started.
 
 ![Setting the auto-shutdown timer to 4 hours.](<../../.gitbook/assets/autoshutdown timer.gif>)
 
