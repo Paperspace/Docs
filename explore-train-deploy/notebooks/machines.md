@@ -2,23 +2,23 @@
 description: This guide explains how instances and kernels are used in Gradient Notebooks
 ---
 
-# Instances
+# Machines
 
-## Introduction to notebook instances
+## Introduction to notebook machines
 
-Gradient makes a wide variety of instances available for use with notebooks. A full list of instances provided by Gradient is available here:
+Gradient makes a wide variety of machines available for use with notebooks. A full list of instance types provided by Gradient is available here:
 
 {% content-ref url="../../more/instance-types/" %}
 [instance-types](../../more/instance-types/)
 {% endcontent-ref %}
 
-The first opportunity to select an instance is in the `Select a machine` section when creating a new notebook.
+The first opportunity to select a machine is in the `Select a machine` section when creating a new notebook.
 
-![Gradient makes instances available in the Select a machine section when creating a notebook.](<../../.gitbook/assets/create a notebook instance type.gif>)
+![Gradient makes machines available in the Select a machine section when creating a notebook.](<../../.gitbook/assets/create a notebook instance type.gif>)
 
-Gradient Notebooks makes it easy to swap out an instance for a different instance at any time -- so keep that in mind when deciding what instance to select. It's common to start with a less powerful instance and upgrade as needed over time.
+Gradient Notebooks makes it easy to swap out a machine for a different machine at any time -- so keep that in mind when deciding what machine to select. It's common to start with a less powerful machine and upgrade as needed over time.
 
-## How to select an instance when creating a notebook
+## How to select a machine when creating a notebook
 
 When creating a new notebook, the `Select a machine` section of the notebook create workflow provides a list of GPU-backed and CPU-backed machines available for use.
 
@@ -26,7 +26,7 @@ When creating a new notebook, the `Select a machine` section of the notebook cre
 
 If a machine is available for use it will be listed under the `Available` heading. If a machine is out of capacity it means that all instances are currently being used by other Paperspace users.&#x20;
 
-## How to swap instances in an existing notebook
+## How to swap machines in an existing notebook
 
 To swap instances in an existing notebook, use the **Instance** selector available on the left side of the notebook.&#x20;
 
@@ -34,7 +34,7 @@ If the notebook is currently in the **Running** state, it will first need to be 
 
 ![Use the Instance tab on the left side of the notebook to manage compute instances.](<../../.gitbook/assets/stop instance.gif>)
 
-After the instance is stopped, a new instance can be selected from the list of available instances.
+After the instance is stopped, a new instance can be selected from the list of available machines.
 
 ![Select a new instance using the instance selector available on the left side of the notebook.](<../../.gitbook/assets/instances available in notebook.gif>)
 
@@ -44,15 +44,15 @@ The top bar will indicate when a notebook is again in the **Running** state.
 
 If an instance type is at capacity it will be listed as `Unavailable`. Popular instance types, such as instances providing free gpus, sometimes reach capacity during busy periods.&#x20;
 
-![When instances are at capacity, they are marked as Currently Unavailable. It's recommended to wait a few minutes and check back to see if capacity has opened up or else to try a different machine type that is available.](<../../.gitbook/assets/unavailable instances.png>)
+![When machines are at capacity, they are marked as Currently Unavailable. It's recommended to wait a few minutes and check back to see if capacity has opened up or else to try a different machine type that is available.](<../../.gitbook/assets/unavailable instances.png>)
 
 If the machine type that we require is listed as unavailable, we'll need to wait until capacity frees up. We should first try waiting a few minutes and refreshing the page. If capacity is still not available, we might try a different instance with better availability or come back during a less busy time of day.
 
 {% hint style="info" %}
-Free GPU instances in particular are often in high demand. Try using popular free resources outside of peak hours (MF 9:00AM - 5:00PM ET) or try using more powerful paid instances.
+Free GPU instances in particular are often in high demand. Try using popular free resources outside of peak hours (MF 9:00AM - 5:00PM ET) or try using more powerful paid machines.
 {% endhint %}
 
-Paperspace is constantly adding capacity to its datacenters. The [Changelog](https://updates.paperspace.com) is a good resource to hear about capacity upgrades. If you are repeatedly running into capacity issues with a particular instance, please [let us know](https://support.paperspace.com/hc/en-us/requests/new).&#x20;
+Paperspace is constantly adding capacity to its datacenters. The [Changelog](https://updates.paperspace.com) is a good resource to hear about capacity upgrades. If you are repeatedly running into capacity issues with a particular machine type, please [let us know](https://support.paperspace.com/hc/en-us/requests/new).&#x20;
 
 ## How to use the auto-shutdown timer
 

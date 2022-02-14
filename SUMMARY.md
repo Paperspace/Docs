@@ -22,7 +22,7 @@
 * [Gradient Notebooks](explore-train-deploy/notebooks/README.md)
   * [Runtimes](explore-train-deploy/notebooks/create-a-notebook/notebook-containers/README.md)
   * [Files and storage](explore-train-deploy/notebooks/file-organization.md)
-  * [Instances](explore-train-deploy/notebooks/instances.md)
+  * [Machines](explore-train-deploy/notebooks/machines.md)
   * [Terminal](explore-train-deploy/notebooks/notebook-terminals.md)
   * [History](explore-train-deploy/notebooks/notebook-versioning.md)
   * [Shortcuts](explore-train-deploy/notebooks/shortcuts.md)
