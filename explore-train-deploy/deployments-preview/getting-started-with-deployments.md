@@ -1,14 +1,24 @@
-# Getting started with Deployments
+---
+description: >-
+  This guide provides an introduction to creating, scaling, and using Gradient
+  Deployments.
+---
 
-## Create a Deployment
+# Basic operations
 
-You can create deployments using the[ Gradient CLI](../../get-started/quick-start/install-the-cli.md) and linking an API key. You will also need an existing Project to run your deployment.
+## Overview
 
-### Web UI
+Gradient Deployments can be created in the Gradient console or via the Gradient CLI.&#x20;
+
+![The default YAML spec deployment available in the Gradient console.](<../../.gitbook/assets/default-yaml-spec-deployments (1).png>)
+
+## How to create a deployment in the Gradient console
 
 ![](../../.gitbook/assets/screen-shot-2021-09-28-at-4.03.53-am.png)
 
-### Gradient CLI
+## How to create a deployment using the Gradient CLI
+
+You can create deployments using the[ Gradient CLI](../../get-started/quick-start/install-the-cli.md) and linking an API key. You will also need an existing Project to run your deployment.
 
 #### 1. Create a YAML spec to manage your deployment
 
@@ -91,7 +101,7 @@ gradient deployments get --id [deployment-id]
 }
 ```
 
-## Scaling your Deployments
+## How to scale a deployment
 
 You can manage the state of your deployment by updating your spec file and updating the deployment. To stop your deployment from running you can set the replicas to 0, which turns off all workloads. You are able to edit your deployment spec from the Web UI, or using the Gradient CLI
 
@@ -107,7 +117,7 @@ You can click the edit button in the Web UI to update your deployment spec to ch
 gradient deployments update --id [deployment-id] --spec update-deployment.yaml
 ```
 
-## Using Deployments in a Workflow
+## How to use a deployment within Gradient Workflows
 
 You can manage deployments in a workflow using the Gradient CLI. Your Paperspace API key and Project ID are available as environment variables
 

@@ -35,8 +35,8 @@
   * [Gradient Actions](explore-train-deploy/workflows/gradient-actions.md)
   * [Environment Variables](explore-train-deploy/workflows/environment-variables.md)
   * [Using YAML for Data Science](explore-train-deploy/workflows/using-yaml-for-data-science.md)
-* [Deployments (Preview)](explore-train-deploy/deployments/README.md)
-  * [Getting started with Deployments](explore-train-deploy/deployments-preview/getting-started-with-deployments.md)
+* [Gradient Deployments](explore-train-deploy/deployments/README.md)
+  * [Basic operations](explore-train-deploy/deployments-preview/getting-started-with-deployments.md)
   * [Deployment Spec](explore-train-deploy/deployments-preview/deployment-spec.md)
 
 ## Artifacts <a href="#data" id="data"></a>

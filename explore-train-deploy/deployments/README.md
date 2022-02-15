@@ -2,13 +2,33 @@
 description: Gradient Deployments helps you perform effortless model serving.
 ---
 
-# Deployments (Preview)
+# Gradient Deployments
 
-After Notebooks and Workflows, the other major component of Gradient's end-to-end data science platform is Deployments.
+{% hint style="info" %}
+Gradient Deployments is currently in **Preview**. If you would like to provide feedback on the deployments product, please [reach out](https://support.paperspace.com/hc/en-us/requests/new).&#x20;
+{% endhint %}
 
-A Deployment is used to run container images and to serve your machine learning models using a high-performance, low-latency micro-service with a RESTful API. This allows the model to be run on new unseen data in production, also known as model inference.
+## Overview
 
-![](<../../.gitbook/assets/screen-shot-2021-09-21-at-1.52.29-pm (1).png>)
+After Notebooks and Workflows, the third major component of the Gradient Platform is Deployments.
+
+![Creating a new deployment in the Gradient console.](<../../.gitbook/assets/create-new-deployment (1).gif>)
+
+Deployments is used to run container images and to serve machine learning models using a high-performance, low-latency micro-service with a RESTful API.&#x20;
+
+This allows the model to be run on new unseen data in production, also known as model inference.
+
+![Example deployment with YAML spec.](<../../.gitbook/assets/screen-shot-2021-09-21-at-1.52.29-pm (1).png>)
+
+## Where to start
+
+The best place to start learning how to deploy models on Gradient is the official Gradient Deployments Tutorial:
+
+{% content-ref url="../../get-started/tutorials-list/gradient-deployments-tutorial.md" %}
+[gradient-deployments-tutorial.md](../../get-started/tutorials-list/gradient-deployments-tutorial.md)
+{% endcontent-ref %}
+
+
 
 ## Key concepts
 
