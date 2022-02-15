@@ -1,20 +1,44 @@
+---
+description: This guide explains how to share and/or fork Gradient Notebooks
+---
+
 # Sharing
 
-Click Share to generate a unique link for the Notebook.  You can make the notebook private by toggling the button on the Share your Notebook dialogue.
+## Introduction to sharing and forking notebooks
 
-![](../../.gitbook/assets/share.png)
+Gradient Notebooks makes it easy to collaborate with teammates. Notebooks are shared at the team level and can take advantage of [shared persistent storage](file-organization.md) at the team level. Notebooks can also be made public or private.&#x20;
 
-Learn more about public notebooks [here](broken-reference).&#x20;
+## How to share a notebook
 
+The `Share` button in the notebook IDE provides a quick and easy way to generate a shareable link for a notebook.
 
+![Use the Share button in the notebook IDE to generate a unique link for a notebook.](<../../.gitbook/assets/share button.png>)
 
-When a Gradient Notebook is offline, some files are copied to the [storage provider](../../data/data-overview/private-datasets-repository/storage-providers.md) so you can see your notebook files in the offline view and so other users can fork your notebook. By default, the list of files includes `.ipynb` and `.md` files and if your workspace is a git repo we will upload any files that are tracked by git. The more files you include the more time your notebook will spend "tearing down" and "setting up".
+If public access is granted, anyone with the link will be able to view the contents of the notebook.
 
-You can control which files are uploaded by providing a `.notebookinclude` file at `/notebooks/.notebookinclude`. This file uses [`.gitignore`](https://git-scm.com/docs/gitignore) syntax however, the patterns _include_ files instead of ignoring them. Negative patterns are supported and _exclude_ files from being uploaded.
+## How to fork a notebook
 
-## Default File
+Forking is useful to clone a public notebook into our workspace or to duplicate a notebook that is already in our workspace. Forking a notebook creates a new history for the notebook.
 
-The default patterns are always provided and if you supply any user patterns it is like they are appended to the following ignore file:
+Fork a notebook from within the notebook IDE by using the hamburger menu in the top left of the IDE:
+
+![Notebooks can be forked using the menu within the notebook IDE.](../../.gitbook/assets/fork-notebook.png)
+
+Fork a notebook from the Gradient Notebooks console using the 3-dot menu:
+
+![Notebooks may also be forked using the menu in the Gradient Notebooks console.](<../../.gitbook/assets/fork-notebook-list (1).png>)
+
+The files copied to the notebook are those listed in the [notebook include file](https://github.com/Paperspace/Docs/tree/9f5869e1aef4b75067075530e65c9764279782bf/notebook-include.md), which is explained in the next section.
+
+## How to configure a notebook for forking
+
+When a notebook is offline, some files are copied to the [storage provider](../../data/data-overview/private-datasets-repository/storage-providers.md) to enable offline viewing. By default, the list of files includes `.ipynb` and `.md` files. Additionally, if the notebook was instantiated using a git repo as a workspace, Gradient will upload any files that are tracked by git.&#x20;
+
+It's possible to specify exactly which files should be available offline by providing a `.notebookinclude` file in the `/notebooks` [directory](file-organization.md).&#x20;
+
+The file is similar to syntax found in a [`.gitignore`](https://git-scm.com/docs/gitignore) file, however in this case we will be _including_ files instead of ignoring them. Negative patterns are supported.&#x20;
+
+The default `.notebookinclude` file looks like this:
 
 ```
 *.md
@@ -23,36 +47,29 @@ The default patterns are always provided and if you supply any user patterns it 
 # and all of the files from `git ls-files`
 ```
 
-## Examples
-
-### Upload all pngs but skip my dataset
+In the following example, we tell gradient to upload all `.png` files to the storage provider while skipping dataset files:
 
 ```
 *.png # include all png files
 !datasets/**/*.png # exclude the ones in my datasets
 ```
 
-### Change the default rules
-
-This file will upload `.ipynb` files but skip `.md` files:
+Now we will use a negative example to exclude `.md` files:
 
 ```
 !*.md
 ```
 
-## Full Specification
+## Reference for operations within .notebookinclude file
 
-* A blank line matches no files, so it can serve as a separator for readability.
-* A line starting with # serves as a comment. Put a backslash ("`\`") in front of the first hash for patterns that begin with a hash.
-* Trailing spaces are ignored unless they are quoted with backslash ("`\`").
-* An optional prefix "`!`" which negates the pattern; any matching file included by a previous pattern will become excluded again. Put a backslash ("`\`") in front of the first "`!`" for patterns that begin with a literal "`!`", for example, "`\!important!.txt`".
-* The slash `/` is used as the directory separator. Separators may occur at the beginning, middle or end of the `.notebookinclude` search pattern.
-* If there is a separator at the beginning or middle (or both) of the pattern, then the pattern is relative to the directory level of the particular `.notebookinclude` file itself. Otherwise the pattern may also match at any level below the `.notebookinclude` level.
-* If there is a separator at the end of the pattern then the pattern will only match directories, otherwise the pattern can match both files and directories.
-* For example, a pattern `doc/frotz/` matches `doc/frotz` directory, but not `a/doc/frotz` directory; however `frotz/` matches `frotz` and `a/frotz` that is a directory (all paths are relative from the `.notebookinclude` file).
-* An asterisk "`\*`" matches anything except a slash. The character "`?`" matches any one character except "`/`". The range notation, e.g. `[a-zA-Z]`, can be used to match one of the characters in a range. See `fnmatch(3)` and the `FNM_PATHNAME` flag for a more detailed description.
-* Two consecutive asterisks ("`\*\*`") in patterns matched against full pathname may have special meaning:
-  * A leading "`**`" followed by a slash means match in all directories. For example, "`**/foo`" matches file or directory "`foo`" anywhere, the same as pattern "`foo`". "`\*\*/foo/bar`" matches file or directory "`bar`" anywhere that is directly under directory "`foo`".
-  * A trailing "`/**`" matches everything inside. For example, "`abc/**`" matches all files inside directory "`abc`", relative to the location of the `.notebookinclude` file, with infinite depth.
-  * A slash followed by two consecutive asterisks then a slash matches zero or more directories. For example, "`a/\*\*/b`" matches "`a/b`", "`a/x/b`", "`a/x/y/b`" and so on.
-  * Other consecutive asterisks are considered regular asterisks and will match according to the previous rules.
+| Item       | Description                                        |
+| ---------- | -------------------------------------------------- |
+| `#`        | Comments out the line                              |
+| `!`        | Negates the pattern                                |
+| `/`        | Directory separator                                |
+| `\*`       | Wildcard                                           |
+| `?`        | Wildcard exactly one character                     |
+| `[a-zA-Z]` | Range notation to match a character in the range   |
+| `**/`      | Match in all directories                           |
+| `/**`      | Match all files within a directory                 |
+| `a\*\*/b`  | Match zero or more directories between `a` and `b` |

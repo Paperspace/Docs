@@ -1,8 +1,10 @@
 ---
-description: Automate from idea to production
+description: Gradient Workflows provides a simple way to automate machine learning tasks.
 ---
 
-# Workflows
+# Gradient Workflows
+
+## Overview
 
 Workflows are the newest (and most powerful) way to create machine learning projects. Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax via [YAML](https://en.wikipedia.org/wiki/YAML) files to easily create powerful automation.
 

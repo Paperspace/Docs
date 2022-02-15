@@ -1,14 +1,20 @@
-# Keyboard Shortcuts
+---
+description: >-
+  This guide references the keyboard shortcuts available to users of Gradient
+  Notebooks
+---
 
-### Command Palette
+# Shortcuts
 
-When you are in the console, use the command palette to easily look up keyboard shortcuts for various actions.
+## How to bring up the command palette
+
+Toggle the command palette from the console using the following commands
 
 | Action                 | Mac                | Windows/Linux            |
 | ---------------------- | ------------------ | ------------------------ |
 | Access Command Palette | ⌘ + K **OR** ⌘ + P | ctrl + K **OR** ctrl + P |
 
-### Cell Controls
+## List of keyboard shortcuts
 
 | Action                                                                                           | Mac                                                                        | Windows/Linux                                                              |
 | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |

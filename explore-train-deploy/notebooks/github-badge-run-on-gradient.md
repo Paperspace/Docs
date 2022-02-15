@@ -1,20 +1,22 @@
-# Run on Gradient (GitHub badge)
+---
+description: >-
+  This guide explains how to create your own Run on Gradient badge to make any
+  notebook file in a GitHub repo work automatically on Gradient
+---
 
+# Run on Gradient
 
+## Overview
 
-![Run on Gradient is a badge for GitHub repos that makes any .ipynb file launchable in a Gradient Notebook](../../.gitbook/assets/screen-shot-2020-02-17-at-8.47.13-pm.png)
+**Run on Gradient** is a badge for that makes any .ipynb file in a public git repo launchable in a notebook on Gradient equipped with a free GPU.&#x20;
 
+![Example Run on Gradient badge.](../../.gitbook/assets/screen-shot-2020-02-17-at-8.47.13-pm.png)
 
-
-
-
-## What is it?
-
-The Run on Gradient badge allows you to run a Gradient Notebook from any public GitHub repository on a free GPU. Gradient Notebooks are a hosted Jupyter notebook service from Paperspace that requires no setup and provides free access to computing resources including GPUs.
+Gradient Notebooks is a hosted Jupyter notebook service from Paperspace that requires no setup and provides free access to computing resources including GPUs.
 
 ## How it Works
 
-The "Run on Gradient" badge allows you to run a Gradient Notebook from any GitHub repository.&#x20;
+The **Run on Gradient** badge allows you to run a Gradient Notebook from any GitHub repository.&#x20;
 
 Clicking the badge brings the user to a static page where they can view the full contents of a notebook generated from the repository .ipynb file.&#x20;
 
@@ -58,7 +60,7 @@ Therefore if a file is located at [https://github.com/gradient-ai/GauGAN/blob/ma
 https://console.paperspace.com/github/gradient-ai/GauGAN/blob/main/GauGAN_ML_Showcase/GauGAN_ML_showcase.ipynb
 ```
 
-### **Notes**
+## **Notes**
 
 **Workspace**: When you launch a new notebook from this button, Gradient will pull in the individual `.ipynb` file (specified in the snippet above) as a workspace. Optionally, if you would like to pull in the entire cloned GitHub repo as a workspace, append a `?clone=true` query parameter.\
 \
