@@ -41,6 +41,8 @@ In the first part of this tutorial, we will create a Gradient Notebook to run th
 
 To start, we'll need to create a Gradient Project if we haven't done so already. For the sake of this tutorial we've named our project `Fast.ai: Practical Deep Learning for Coders`. Later on we'll change the name of our project when we add a second notebook.
 
+{% embed url="https://youtu.be/Nglj0OY2rIc" %}
+
 ### Creating the notebook
 
 While in our new project, let's tab over to the `Notebooks` tab and select the button that says `Create` .
@@ -112,6 +114,8 @@ Now that we understand how to set up a basic notebook in Gradient, let's try a m
 Before we start, if we are on the Gradient free tier, we'll need to [stop the notebook instance](gradient-notebooks-tutorial.md#stopping-the-notebook) that we launched in the first example so as not to exceed the limit of QTY 1 concurrent running notebooks on the free plan. If we have upgraded our Gradient account, we can ignore this step.
 
 More information on Gradient tier limits is available [here](https://gradient.run/pricing) under `Compare Plans`.
+
+{% embed url="https://youtu.be/iv5re-8_iR0" %}
 
 ### Create a new notebook
 
