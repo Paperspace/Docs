@@ -6,11 +6,23 @@ description: Gradient Workflows provides a simple way to automate machine learni
 
 ## Overview
 
-Workflows are the newest (and most powerful) way to create machine learning projects. Workflows let you use a [GitHub-action](https://docs.github.com/en/actions) style syntax via [YAML](https://en.wikipedia.org/wiki/YAML) files to easily create powerful automation.
+Gradient Workflows is a new and powerful way to build-out machine learning applications. Workflows utilize  [GitHub-action](https://docs.github.com/en/actions) style syntax via [YAML](https://en.wikipedia.org/wiki/YAML) files to easily create powerful automation.
 
-Workflows allow you to build complex, real-world machine learning projects. Note, this is an advanced topic so if you are still early in your ML journey, it might make more sense to start with [Notebooks](../../get-started/tutorials-list/gradient-notebooks-tutorial.md) first.
+Workflows is based on the [Argo runtime engine](https://github.com/argoproj/argo-workflows#what-is-argo-workflows), which is a container-native continuous delivery tool for Kubernetes, and makes it easy to build complex and scalable projects with an arbitrary number of discrete steps.&#x20;
 
-Workflows are based on the [Argo runtime engine](https://github.com/argoproj/argo-workflows#what-is-argo-workflows) which is a container-native continuous delivery tool for Kubernetes.
+![Examining the logs from a simple workflow.](<../../.gitbook/assets/reading workflow logs dark.gif>)
+
+Workflows is used by ML Engineers to build-out deterministic machine learning pipelines.&#x20;
+
+## Where to start
+
+The best tutorial is the canonical Gradient Workflows Tutorial:
+
+{% content-ref url="../../get-started/tutorials-list/gradient-workflows-tutorial.md" %}
+[gradient-workflows-tutorial.md](../../get-started/tutorials-list/gradient-workflows-tutorial.md)
+{% endcontent-ref %}
+
+
 
 ![Gradient Workflows — Automate from idea to production](../../.gitbook/assets/screen-shot-2021-06-16-at-11.17.23-am.png)
 

@@ -29,7 +29,7 @@
   * [TensorBoard](explore-train-deploy/notebooks/create-a-notebook/notebook-tensorboards.md)
   * [Run on Gradient](explore-train-deploy/notebooks/github-badge-run-on-gradient.md)
 * [Gradient Workflows](explore-train-deploy/workflows/README.md)
-  * [Getting Started with Workflows](explore-train-deploy/workflows/getting-started-with-workflows.md)
+  * [Basic operations](explore-train-deploy/workflows/getting-started-with-workflows.md)
   * [Understanding Inputs & Outputs](explore-train-deploy/workflows/understanding-inputs-and-outputs.md)
   * [Workflow Spec](explore-train-deploy/workflows/workflow-spec.md)
   * [Gradient Actions](explore-train-deploy/workflows/gradient-actions.md)

@@ -1,63 +1,64 @@
-# Getting Started with Workflows
+---
+description: This guide explains how to create and run new Gradient Workflows.
+---
 
-The following sections cover creating and running Workflows, and authoring new Workflow YAML specs. If you have never run a Workflow before we recommend you step through the Workflows demo in the [quick-start guide](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) then return here for more details.
+# Basic operations
 
-## Create a Workflow
+## Overview
 
-Workflows can be created via the GUI / Web UI, or command line \(CLI\).
+The fastest way to become acquainted with Gradient Workflows is to run the sample workflow described in the [Gradient Workflows Tutorial](../../get-started/tutorials-list/gradient-workflows-tutorial.md).&#x20;
 
-{% tabs %}
-{% tab title="Web UI" %}
-* 1: Create a [Gradient Project](../../get-started/managing-projects/)
-* 2: Navigate to its main page by clicking on its entry in the projects list
-* 3: Click the Workflows tab, which gives this screen
+![Starting with a sample workflow in the Gradient Workflows Tutorial.](<../../.gitbook/assets/start workflow dark.gif>)
 
-![](../../.gitbook/assets/workflow_create.png)
+After running through the tutorial, this guide will provide additional details on how to create and manage new workflows.
 
-* 4: Choose one of the illustrated boxes under **Select a template** \(basic\), or click **import an existing gradient repository** \(advanced\)
+## How to create a workflow in the Gradient console
 
-If you did **Select a template**:
+A new workflow may be created via the Gradient console or via the Gradient CLI. The simplest way to create a new workflow is to use the templates available in the console.
 
-* 5: Choose your GitHub username from the dropdown list under **Account and Organizations** \[1\]
-* 6: Give your repository a name
-* 7: Click **Create Workflow.** This will create and run the Workflow in your new repository.
+The first step is to create a [Gradient Project](../../get-started/managing-projects/) or select an existing project.&#x20;
 
-If you did **import an existing gradient repository:**
+Next, navigate to the `Workflows` tab and choose one of the starter tiles in the `Select a template` section.&#x20;
 
-* 5: Choose your GitHub username from the dropdown list under Account and Organizations in the **Import existing repository** window that pops up \[1\]
+![The Workflows tab should look something like this.](../../.gitbook/assets/workflow\_create.png)
 
-![](../../.gitbook/assets/import_existing_repo.png)
+In the `Select account or organization` section, we will be connecting this workflow to GitHub. The GitHub connection is required to run a workflow because it allows Gradient to trigger workflow runs when new code is pushed to the repository, thus providing the basis for CI/CD.
 
-* 6: Choose the repository to import
-* 7: This will take you to the **Let's create a Workflow** screen, where you can follow its instructions to create one, or run an existing Workflow.
+All that remains is to give the workflow a name in the `Repository name` section, and that's it. Go ahead and select `Create workflow` to get up and running.
 
-See [Run the Workflow](https://docs.paperspace.com/gradient/explore-train-deploy/workflows/getting-started-with-workflows#run-the-workflow) below for more details on how Workflows run.
+## How to create a workflow in the CLI
 
-\[1\] If your username doesn't show up, try clicking the **x** in the circle on the right of the dropdown, or if it still isn't there, make sure you have the Gradient GitHub app installed from the [Quick Start](https://docs.paperspace.com/gradient/get-started/quick-start) section, and configured so that it can see your repositories.
-{% endtab %}
+It is also possible to create a workflow using the [Gradient CLI](../../get-started/quick-start/install-the-cli.md).&#x20;
 
-{% tab title="CLI" %}
-1. Make sure you have the latest version of the [Gradient CLI](../../get-started/quick-start/install-the-cli.md)
-2. Create a [Gradient Project](../../get-started/managing-projects/) and [grab your project ID](../../get-started/managing-projects/#get-your-projects-id). You can create a project that integrates with a Github repo or a create a standalone project. Use a **Github project** if you already have code you are working with in **Github**.
-3. Create your first Workflow using the Gradient CLI
+The first step is to make sure the CLI is up to date by running the following command:
+
+```
+pip install -U gradient
+```
+
+The next step is to create a [Gradient Project](../../get-started/managing-projects/) and [grab your project ID](../../get-started/managing-projects/#get-your-projects-id). You can create a project that integrates with a Github repo or a create a standalone project. Use a GitHub project if you already have code you are working with in GitHub.
+
+Now it's time to run a workflow using the CLI:
 
 ```bash
 gradient workflows create --name <my-workflow-name> --projectId <project-id>
 ```
 
-The command will return an ID for the Workflow, for example, `7634c165-5034-4f49-95fa-005fc0e7970b`
-{% endtab %}
-{% endtabs %}
+The command will return an ID for the workflow (for example) `7634c165-5034-4f49-95fa-005fc0e7970b` and the new workflow should now be visible in the Gradient console.
 
-## Create a Workflow Spec
+## How to import a workflow
 
-To write your own Workflow, create a Workflow spec in [YAML](https://yaml.org) using a text editor. There is one in the [Gradient Notebook](https://docs.paperspace.com/gradient/explore-train-deploy/notebooks) interface, or you can use your own.
+To import an existing Gradient repository, head to the Gradient console, select the `Workflows` tab, and create a new workflow.&#x20;
 
-_Note:_ even though YAML and JSON are closely related, Gradient Workflows need to be formatted as YAML and not JSON.
+Next, select the text link that says `Import an existing gradient repository` and select an existing Gradient project from GitHub.
+
+![Import workflow ](<../../.gitbook/assets/import-workflow (1).gif>)
+
+This will take you to the **Let's create a Workflow** screen, where you can follow its instructions to create one, or run an existing workflow.
+
+## How to write a workflow spec
 
 Below is an example of a valid **workflow.yaml** spec. It clones the repository from `https://github.com/NVlabs/stylegan2`, generates images from the repo script `run_generator.py`, and outputs the results to the Gradient-managed dataset `demo-dataset`.
-
-You will learn more about writing Workflow specs on the following pages.
 
 ```yaml
 jobs:
@@ -98,9 +99,13 @@ jobs:
       image: tensorflow/tensorflow:1.14.0-gpu-py3
 ```
 
-## Create Datasets for the Workflow
+For more details on writing valid workflow YAML files, check out the [Workflows spec](workflow-spec.md) reference guide.
 
-Datasets referenced in the Workflow spec need to be created before running the Workflow for the first time. On subsequent runs of the Workflow the Datasets will be used again, but different **Dataset versions** will be created for each output Dataset. For more information about Datasets see [Versioned Data](https://docs.paperspace.com/gradient/data/data-overview#versioned-data).
+## How to create a dataset for workflows
+
+Datasets referenced in the workflows spec need to be created before running the workflow for the first time. On subsequent runs of the workflow the dataset will be used again, but different **Dataset versions** will be created for each output Dataset.&#x20;
+
+For more information about Datasets see [Versioned Data](https://docs.paperspace.com/gradient/data/data-overview#versioned-data).
 
 The above Workflow creates a new output Dataset version in the Dataset named `demo-dataset`. So before running this Workflow make sure a Dataset with that name already exists. You can run this command to list your Datasets: `gradient datasets list`.
 
@@ -144,7 +149,7 @@ Workflows can be triggered to run from Gradient by placing them in the `.gradien
 
 Within the Workflow YAML, the `on:` field is used to indicate that this Workflow is to be triggered to run when the given conditions are met. For the general case of any change to the repo triggering the Workflow to run, the YAML lines are
 
-```text
+```
 on:
   github:
     branches:
@@ -155,7 +160,7 @@ Currently, this is the condition set that works, so to prevent a Workflow being 
 {% endtab %}
 
 {% tab title="CLI" %}
-Run the Workflow with the specified Workflow spec file and the **`workflow-id`** from the previously created Workflow. \(You can also get a list of Workflows by running `gradient workflows list`.\)
+Run the Workflow with the specified Workflow spec file and the **`workflow-id`** from the previously created Workflow. (You can also get a list of Workflows by running `gradient workflows list`.)
 
 ```bash
 gradient workflows run \
@@ -170,6 +175,5 @@ A Workflow can be run multiple times, each with the same or a different Workflow
 The next sections cover the syntax for authoring new Workflow specs, inputs and outputs to Workflow steps, and various Workflow actions.
 
 {% hint style="info" %}
-View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html\#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
+View the full CLI/SDK Docs for **Workflows** here [https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows](https://paperspace.github.io/gradient-cli/gradient.cli.html#gradient-workflows)
 {% endhint %}
-
