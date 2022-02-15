@@ -30,6 +30,8 @@ As we progress through the tutorial, we'll start with a basic use case and add c
 
 Let's get started!
 
+{% embed url="https://youtu.be/_Qzd1xVACqI" %}
+
 ## Part 1: Setting up our first Workflow
 
 The first task in this tutorial will be to create and run a sample workflow on Gradient. We will use one of the starter workflows that Gradient provides in the console.
