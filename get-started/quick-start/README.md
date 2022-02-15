@@ -9,6 +9,8 @@ To begin using Gradient, follow these preliminary steps:
 
 Now you can create Notebooks, Workflows, Deployments, and more!&#x20;
 
+{% embed url="https://youtu.be/XW1RyPZ_b0g" %}
+
 ## Logging in for the first time
 
 When you first log into the Paperspace Console, you can select Gradient from the product dropdown:
