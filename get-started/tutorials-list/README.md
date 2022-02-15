@@ -22,7 +22,9 @@ The following tutorials cover the main entities within Gradient.&#x20;
 
 ### Gradient Deployments Tutorial
 
-Coming soon!
+{% content-ref url="gradient-deployments-tutorial.md" %}
+[gradient-deployments-tutorial.md](gradient-deployments-tutorial.md)
+{% endcontent-ref %}
 
 ### Additional Tutorials
 
