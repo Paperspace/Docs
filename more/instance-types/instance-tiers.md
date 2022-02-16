@@ -1,12 +1,12 @@
-# Instance Tiers
+# Machine Tiers
 
-The types of instances available on your account are based on your subscription [plan](https://gradient.paperspace.com/pricing). &#x20;
+The types of machines available on your account are based on your subscription [plan](https://gradient.paperspace.com/pricing). &#x20;
 
-### Free Instances
+### Free Machines
 
 Note: Free plans do not guarantee capacity and have [certain limits](free-instances.md).&#x20;
 
-| Instance Type     | Free | Pro plan |      Growth plan      |
+| Machine Type      | Free | Pro plan |      Growth plan      |
 | ----------------- | :--: | :------: | :-------------------: |
 | Free CPU (C4)     |  ✔️  |    ✔️    |           ✔️          |
 | Free GPU+ (M4000) |  ✔️  |    ✔️    |           ✔️          |
@@ -19,28 +19,28 @@ Note: Free plans do not guarantee capacity and have [certain limits](free-instan
 | Free A6000 🆕     |      |          | :zap:Coming Soon:zap: |
 | Free A100 🆕      |      |          | :zap:Coming Soon:zap: |
 
-### Paid instances
+### Paid Machines
 
 #### CPU & Single GPU
 
-| Instance Type | <p>Low</p><p>Credit card on file</p> | <p>Mid </p><p>Pro plan</p> | <p>High <br>Growth &#x26; Enterprise plans</p> |
-| ------------- | :----------------------------------: | :------------------------: | :--------------------------------------------: |
-| C5            |                  ✔️                  |             ✔️             |                       ✔️                       |
-| C7            |                  ✔️                  |             ✔️             |                       ✔️                       |
-| P4000         |                  ✔️                  |             ✔️             |                       ✔️                       |
-| RTX4000       |                  ✔️                  |             ✔️             |                       ✔️                       |
-| A4000 🆕      |                                      |             ✔️             |                       ✔️                       |
-| P5000         |                                      |             ✔️             |                       ✔️                       |
-| RTX5000       |                                      |             ✔️             |                       ✔️                       |
-| P6000         |                                      |             ✔️             |                       ✔️                       |
-| A5000 🔜      |                                      |                            |                       ✔️                       |
-| A6000 🔜      |                                      |                            |                       ✔️                       |
-| V100          |                                      |                            |                       ✔️                       |
-| A100 🆕       |                                      |                            |                       ✔️                       |
+| Machine Type | <p>Low</p><p>Credit card on file</p> | <p>Mid </p><p>Pro plan</p> | <p>High <br>Growth &#x26; Enterprise plans</p> |
+| ------------ | :----------------------------------: | :------------------------: | :--------------------------------------------: |
+| C5           |                  ✔️                  |             ✔️             |                       ✔️                       |
+| C7           |                  ✔️                  |             ✔️             |                       ✔️                       |
+| P4000        |                  ✔️                  |             ✔️             |                       ✔️                       |
+| RTX4000      |                  ✔️                  |             ✔️             |                       ✔️                       |
+| A4000 🆕     |                                      |             ✔️             |                       ✔️                       |
+| P5000        |                                      |             ✔️             |                       ✔️                       |
+| RTX5000      |                                      |             ✔️             |                       ✔️                       |
+| P6000        |                                      |             ✔️             |                       ✔️                       |
+| A5000 🔜     |                                      |                            |                       ✔️                       |
+| A6000 🔜     |                                      |                            |                       ✔️                       |
+| V100         |                                      |                            |                       ✔️                       |
+| A100 🆕      |                                      |                            |                       ✔️                       |
 
-### Multi-GPU instances
+### Multi-GPU Machines
 
-| Instance Type             | <p>High <br>Growth &#x26; Enterprise plans</p> |
+| Machine Type              | <p>High <br>Growth &#x26; Enterprise plans</p> |
 | ------------------------- | :--------------------------------------------: |
 | P4000x2, P4000x4          |                       ✔️                       |
 | RTX4000x2, RTX4000x4      |                       ✔️                       |

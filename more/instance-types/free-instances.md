@@ -1,39 +1,39 @@
-# Free Instances (Free Tier)
+# Free Machines (Free Tier)
 
 ## About
 
-Gradient offers a Free Tier of free GPU and CPU instances, available to all users of [Gradient Community Notebooks](broken-reference) (currently in beta).
+Gradient offers a Free Tier of free GPU and CPU machines, available to all users of [Gradient Community Notebooks](broken-reference) (currently in beta).
 
-The Free Instances are available to all _Private Workspace_ plans, i.e. G\* subscriptions (not T\*).
+The Free machines are available to all _Private Workspace_ plans, i.e. G\* subscriptions (not T\*).
 
-## Instance Types available in the Free Tier
+## Machine Types available in the Free Tier
 
-**Free-CPU** — C4 CPU instance
+**Free-CPU** — C4 CPU machine
 
 **Free-GPU+** — NVIDIA M4000 GPU
 
 **Free-P5000** — NVIDIA P5000 GPU (requires G1 or great subscription [plan](https://gradient.paperspace.com/pricing))&#x20;
 
-See the [Instance Types](./) page for the details on these instances.
+See the [Machine Types](./) page for the details on these machines.
 
-## Persistent Storage for Free Instances
+## Persistent Storage for Free Machines
 
-For your machine learning work on Free Instances, you have 5GB of dedicated Persistent Storage. This 5GB of storage is persistent and upgradeable based on your subscription tier.
+For your machine learning work on Free machines, you have 5GB of dedicated Persistent Storage. This 5GB of storage is persistent and upgradeable based on your subscription tier.
 
-Because Persistent Storage is exclusive per-region, this means that data in Persistent Storage for the Free Tier is not accessible from paid instance types, and vice versa. However, you may upgrade the storage size of your Free Tier instances based on paid subscription storage sizing.
+Because Persistent Storage is exclusive per-region, this means that data in Persistent Storage for the Free Tier is not accessible from paid machine types, and vice versa. However, you may upgrade the storage size of your Free Tier machines based on paid subscription storage sizing.
 
-For example, you can be on a G2 subscription plan with 1TB of Persistent Storage, which will be used for your paid work, and any Free Instances that you use (which you will still have access to) will also have access to their dedicated 1TB of persistent storage. This storage, however, cannot be shared between instance types.
+For example, you can be on a G2 subscription plan with 1TB of Persistent Storage, which will be used for your paid work, and any Free Machines that you use (which you will still have access to) will also have access to their dedicated 1TB of persistent storage. This storage, however, cannot be shared between machine types.
 
-## Limits of Free Instances
+## Limits of Free Machines
 
-There are certain limits on free instances that assist in keeping the capacity for free notebooks available for all users who want access.&#x20;
+There are certain limits on free machines that assist in keeping the capacity for free notebooks available for all users who want access.&#x20;
 
-**Auto-Shutdown:** The maximum auto-shutdown limit for any free-instance is 6 hours
+**Auto-Shutdown:** The maximum auto-shutdown limit for any free-machine is 6 hours
 
-**Inactivity:** Any notebook that is inactive for 1 hour will auto-shutdown. This is to keep free instance capacity available for the Paperspace community.
+**Inactivity:** Any notebook that is inactive for 1 hour will auto-shutdown. This is to keep free machine capacity available for the Paperspace community.
 
-**Notebook Limit:** Only 1 Notebook with a free instance can be running at a given time.
+**Notebook Limit:** Only 1 Notebook with a free machine can be running at a given time.
 
-**Public:** On free subscriptions, notebooks with free instances will always be set to public. Ugrade to Pro/Growth if you would like to set free instances to private.
+**Public:** On free subscriptions, notebooks with free machines will always be set to public. Upgrade to Pro/Growth if you would like to set free machines to private.
 
-_Note: We are currently offering a limited pool of free instances so your notebook may be Pending in the queue as you wait for a free instance to become available. If you need immediate access to machines, please consider upgrading to a paid instance type._
+_Note: We are currently offering a limited pool of free machines so your notebook may be Pending in the queue as you wait for a free machine to become available. If you need immediate access to machines, please consider upgrading to a paid machine type._

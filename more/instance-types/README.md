@@ -1,11 +1,11 @@
 ---
-description: Pricing for Gradient Managed instances
+description: Pricing for Gradient Managed machines
 ---
 
-# Instance Types
+# Machine Types
 
 {% hint style="success" %}
-Customers using the [Self-Hosted](../../gradient-private-cloud/about/) version can define their own instances. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. The following list is specific to our managed instances.
+Customers using the [Self-Hosted](../../gradient-private-cloud/about/) version can define their own machines. [Contact Sales](https://info.paperspace.com/contact-sales) to learn more. The following list is specific to our managed machines.
 {% endhint %}
 
 {% hint style="info" %}
@@ -13,21 +13,21 @@ Managed [Private Clusters](../../gradient-private-cloud/about/) include a comput
 {% endhint %}
 
 {% hint style="info" %}
-For more info on instance type system specs, view [this page](https://support.paperspace.com/hc/en-us/articles/236361368-What-types-of-virtual-machines-does-Paperspace-offer-).&#x20;
+For more info on machine type system specs, view [this page](https://support.paperspace.com/hc/en-us/articles/236361368-What-types-of-virtual-machines-does-Paperspace-offer-).&#x20;
 {% endhint %}
 
-## CPU Instances
+## CPU Machines
 
-A range of affordable and high-end CPU-only instances.
+A range of affordable and high-end CPU-only machines.
 
 | Name   | GPU | Memory | vCPUs   | Price    |
 | ------ | --- | ------ | ------- | -------- |
 | **C5** | -   | 8 GB   | 4 vCPU  | $0.08/hr |
 | **C7** | -   | 30 GB  | 12 vCPU | $0.30/hr |
 
-## GPU Instances
+## GPU Machines
 
-A range of dedicated GPU instances with single and multi-GPU configurations.
+A range of dedicated GPU machines with single and multi-GPU configurations.
 
 | Name        | GPU   | Memory | vCPUs    | Price    |
 | ----------- | ----- | ------ | -------- | -------- |
@@ -42,7 +42,7 @@ A range of dedicated GPU instances with single and multi-GPU configurations.
 | **A6000**   | 48 GB | 45 GB  | 8 vCPUs  | 🔜       |
 | **A100**    | 40 GB | 90 GB  | 12 vCPUs | $3.09/hr |
 
-## Pricing and availability of multi-GPU instances
+## Pricing and availability of multi-GPU machines
 
 | GPU                                                                                             | Price on Core                                                                                      | Availability on Gradient                                                         |
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
